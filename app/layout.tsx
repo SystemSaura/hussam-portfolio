@@ -6,23 +6,23 @@ import { ReactNode } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Hussam Baaka - Creative Content Architect | GCC Markets',
-  description: "I'm Hussam, your go-to content strategist who transforms ideas into compelling narratives. I architect experiences that connect, convert, and captivate audiences across the GCC region.",
-  keywords: 'content marketing, creative writing, SEO, Arabic content writer, GCC marketing, Saudi Arabia marketing, social media management, translation services, brand storytelling',
+  title: 'Hussam Baaka - Marketing Expert | GCC Region',
+  description: "Marketing expert who helps GCC businesses grow. I create content that drives sales and builds brands across Saudi Arabia, UAE, and the Gulf region.",
+  keywords: 'marketing expert, GCC marketing, Saudi Arabia marketing, UAE marketing, content marketing, social media marketing, Arabic marketing, Gulf region marketing',
   authors: [{ name: 'Hussam Baaka' }],
   creator: 'Hussam Baaka',
   publisher: 'Hussam Baaka',
   openGraph: {
-    title: 'Hussam Baaka - Creative Content Architect',
-    description: "I craft stories that sell. Expert content strategist for GCC markets with 5+ years of experience.",
+    title: 'Hussam Baaka - Marketing Expert GCC',
+    description: "Marketing expert who helps GCC businesses grow with proven strategies.",
     url: 'https://hussambaaka.com',
     siteName: 'Hussam Baaka Portfolio',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hussam Baaka - Creative Content Architect',
-    description: "I craft stories that sell. Expert content strategist for GCC markets.",
+    title: 'Hussam Baaka - Marketing Expert GCC',
+    description: "Marketing expert who helps GCC businesses grow with proven strategies.",
   },
   robots: {
     index: true,

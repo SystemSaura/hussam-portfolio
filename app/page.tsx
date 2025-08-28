@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import './home.css';
 
 interface Service {
   icon: string;
@@ -24,8 +25,6 @@ export default function HomePage() {
   
   const cursorRef = useRef<HTMLDivElement>(null);
   const cursorFollowerRef = useRef<HTMLDivElement>(null);
-
-  // random test line
 
   // Check if mobile on client side
   useEffect(() => {
@@ -136,41 +135,41 @@ export default function HomePage() {
   const services: Service[] = [
     {
       icon: 'strategy',
-      title: 'Strategic Content Planning',
-      description: "I don't just create content—I architect comprehensive strategies that align with your business goals and audience needs."
+      title: 'Marketing Strategy',
+      description: "I build marketing plans that work. No fluff, just clear steps to reach your customers and grow your business."
     },
     {
       icon: 'social',
-      title: 'Social Media Mastery',
-      description: 'From viral posts to community building, I create social content that sparks conversations and builds loyal communities.'
+      title: 'Social Media Marketing',
+      description: 'I create social posts that get noticed and drive sales. From Instagram to LinkedIn, I know what works in the GCC.'
     },
     {
       icon: 'writing',
-      title: 'Premium Copywriting',
-      description: "Every word matters. I craft copy that doesn't just inform—it persuades, inspires, and drives action."
+      title: 'Content Writing',
+      description: "I write copy that sells. Whether it's your website, emails, or ads - I make your message clear and convincing."
     },
     {
       icon: 'translate',
-      title: 'Arabic-English Bridge',
-      description: 'Seamless translation that captures not just words, but cultural context, tone, and emotional resonance.'
+      title: 'Arabic Marketing',
+      description: 'I speak your market. Perfect Arabic content that connects with GCC audiences and respects local culture.'
     },
     {
       icon: 'seo',
-      title: 'SEO Content Excellence',
-      description: 'Content that ranks high and reads even better. I balance search optimization with human connection.'
+      title: 'SEO & Online Visibility',
+      description: 'I get your business found on Google. SEO content that ranks high and brings in real customers.'
     },
     {
       icon: 'brand',
-      title: 'Brand Storytelling',
-      description: 'From company profiles to case studies, I help businesses tell their story in ways that build trust and drive sales.'
+      title: 'Brand Building',
+      description: 'I help you stand out from competitors. Clear messaging that makes customers choose you over others.'
     }
   ];
-
-  const stats: Stat[] = [
-    { number: '50+', label: 'Happy Clients' },
-    { number: '5+', label: 'Years Crafting' },
-    { number: '15+', label: 'Industries Mastered' },
-    { number: '100%', label: 'Passion Driven' }
+  
+  const stats = [
+    { number: '50+', label: 'GCC Businesses Helped' },
+    { number: '200+', label: 'Marketing Campaigns' },
+    { number: '15+', label: 'Industries Covered' },
+    { number: '5+', label: 'Years in GCC Markets' }
   ];
 
   return (
@@ -217,6 +216,7 @@ export default function HomePage() {
             <li><button onClick={() => scrollToSection('home')} className="nav-link">Home</button></li>
             <li><button onClick={() => scrollToSection('about')} className="nav-link">About</button></li>
             <li><button onClick={() => scrollToSection('services')} className="nav-link">Services</button></li>
+            <li><button onClick={() => scrollToSection('portfolio')} className="nav-link">Portfolio</button></li>
             <li><button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button></li>
           </ul>
         </nav>
@@ -228,14 +228,13 @@ export default function HomePage() {
           <div className="hero-bg"></div>
           <div className="hero-content">
             <div className="hero-text">
-              <h1 className="hero-title">I Craft Stories That Sell</h1>
-              <p className="hero-subtitle">Creative Content Architect for GCC Markets</p>
+              <h1 className="hero-title">Marketing That Actually Works</h1>
+              <p className="hero-subtitle">GCC Marketing Expert</p>
               <p className="hero-description">
-                Hey there! I&apos;m Hussam, your go-to content strategist who transforms ideas into compelling narratives. 
-                I don&apos;t just write content—I architect experiences that connect, convert, and captivate audiences across the GCC region.
+                Your marketing should bring customers, not just likes. I help GCC businesses get real results - more sales, stronger brands, better ROI.
               </p>
               <button onClick={() => scrollToSection('contact')} className="cta-button">
-                <span>Let&apos;s Create Magic</span>
+                <span>Grow Your Business</span>
                 <div className="button-arrow">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -265,9 +264,9 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <div className="capability-tags">
-                  <span className="capability-tag">Strategy</span>
+                  <span className="capability-tag">Results</span>
                   <span className="capability-tag">Growth</span>
-                  <span className="capability-tag">Impact</span>
+                  <span className="capability-tag">ROI</span>
                 </div>
               </div>
             </div>
@@ -277,20 +276,15 @@ export default function HomePage() {
         {/* About Section */}
         <section id="about" className="about">
           <div className="about-content fade-in">
-            <h2>My Story</h2>
+            <h2>Why Choose Me</h2>
             <p>
-              I believe every brand has a unique voice waiting to be discovered. Over the past 5+ years, 
-              I&apos;ve helped businesses across the GCC region find their authentic voice and translate it into content that actually moves people.
+              I know the GCC market inside out. For 5+ years, I've helped businesses across Saudi Arabia, UAE, and the Gulf region get more customers and grow faster.
             </p>
             <p>
-              My approach isn&apos;t just about pretty words—it&apos;s about understanding your audience&apos;s pulse, 
-              their desires, their pain points, and crafting messages that resonate on a deeper level. 
-              Whether it&apos;s Arabic content that captures cultural nuances or English copy that converts globally, 
-              I bring both linguistic expertise and strategic thinking to every project.
+              My marketing works because I understand your customers. I know what makes them buy, what makes them trust, and what makes them choose you over competitors.
             </p>
             <p>
-              <strong>My philosophy?</strong> No work left behind. I don&apos;t just deliver—I over-deliver, 
-              because your success is my success.
+              <strong>My promise:</strong> I deliver results, not excuses. Your success is how I measure mine.
             </p>
           </div>
           <div className="stats fade-in">
@@ -306,10 +300,13 @@ export default function HomePage() {
         {/* Services Section */}
         <section id="services" className="services">
           <div className="services-content">
-            <h2 className="fade-in">What I Do Best</h2>
+            <h2 className="fade-in">How I Help You Grow</h2>
             <div className="services-rows">
               {services.map((service, index) => (
-                <div key={index} className="service-row fade-in">
+                <div 
+                key={index} 
+                className="service-row fade-in" style={{ animationDelay: `${index * 0.1}s` }}
+                >
                   <div className="row-header">
                     <div className="service-number">0{index + 1}</div>
                     <h3 className="service-title">{service.title}</h3>
@@ -328,14 +325,125 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+      
+        {/* Portfolio Section */}
+        <section id="portfolio" className="portfolio-section">
+          <div className="portfolio-content">
+            <h2 className="fade-in">My Results</h2>
+            <p className="portfolio-intro fade-in">
+              Real businesses, real growth. Here's how I've helped GCC companies win more customers.
+            </p>
+            
+            {/* Portfolio Stats */}
+            <div className="portfolio-stats fade-in">
+              <div className="portfolio-stat">
+                <div className="stat-number">200+</div>
+                <div className="stat-label">Successful Campaigns</div>
+              </div>
+              <div className="portfolio-stat">
+                <div className="stat-number">50+</div>
+                <div className="stat-label">Growing Businesses</div>
+              </div>
+              <div className="portfolio-stat">
+                <div className="stat-number">15+</div>
+                <div className="stat-label">Industries</div>
+              </div>
+              <div className="portfolio-stat">
+                <div className="stat-number">6</div>
+                <div className="stat-label">Core Services</div>
+              </div>
+            </div>
+
+            {/* Featured Case Studies */}
+            <div className="featured-work">
+              <h3 className="fade-in">Client Wins</h3>
+              <div className="case-studies-grid">
+                <div className="case-study-card fade-in">
+                  <div className="case-study-header">
+                    <div className="industry-badge">Healthcare</div>
+                    <div className="service-tags">
+                      <span>Content Strategy</span>
+                      <span>Email Marketing</span>
+                    </div>
+                  </div>
+                  <h4>Al Nahdi Pharmacy</h4>
+                  <p>Built their content strategy and email campaigns. Helped them speak to customers in both Arabic and English across the GCC.</p>
+                  <div className="case-study-footer">
+                    <span className="project-type">Multi-Market Campaign</span>
+                  </div>
+                </div>
+
+                <div className="case-study-card fade-in">
+                  <div className="case-study-header">
+                    <div className="industry-badge">HR Tech</div>
+                    <div className="service-tags">
+                      <span>Social Media</span>
+                      <span>LinkedIn</span>
+                    </div>
+                  </div>
+                  <h4>Shiftat HR Platform</h4>
+                  <p>Took them from unknown to industry leaders on LinkedIn. Built their social presence and positioned them as the go-to HR solution.</p>
+                  <div className="case-study-footer">
+                    <span className="project-type">Brand Building</span>
+                  </div>
+                </div>
+
+                <div className="case-study-card fade-in">
+                  <div className="case-study-header">
+                    <div className="industry-badge">Real Estate</div>
+                    <div className="service-tags">
+                      <span>Website Copy</span>
+                      <span>SEO</span>
+                    </div>
+                  </div>
+                  <h4>Real Estate Portfolio</h4>
+                  <p>Rewrote websites for Goodwill, Akkar, and Empire Real Estate. Made their properties sell faster with better copy.</p>
+                  <div className="case-study-footer">
+                    <span className="project-type">Sales-Focused Copy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Industry Expertise */}
+            <div className="industry-expertise">
+              <h3 className="fade-in">Industries I Know</h3>
+              <div className="expertise-grid">
+                <div className="expertise-item fade-in">
+                  <h4>Healthcare</h4>
+                  <p>Al Nahdi, Rehabs Club, MindTales, YCC & NCMH</p>
+                </div>
+                <div className="expertise-item fade-in">
+                  <h4>Real Estate</h4>
+                  <p>Goodwill, Akkar, Empire Real Estate</p>
+                </div>
+                <div className="expertise-item fade-in">
+                  <h4>Education</h4>
+                  <p>Hayat Mohamadia, Maarif Schools, Bonyan</p>
+                </div>
+                <div className="expertise-item fade-in">
+                  <h4>Government</h4>
+                  <p>KAPSARC, RCMC, Makkah Bus</p>
+                </div>
+                <div className="expertise-item fade-in">
+                  <h4>Business Services</h4>
+                  <p>Shiftat HR, SAEQ Logistics, Saudi Signs Media</p>
+                </div>
+                <div className="expertise-item fade-in">
+                  <h4>Technology</h4>
+                  <p>FieldBio Security, LDPlayer Gaming, Reviva Recycling</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Contact Section */}
         <section id="contact" className="contact">
           <div className="contact-content">
-            <h2 className="fade-in">Ready to Start Something Amazing?</h2>
+            <h2 className="fade-in">Ready to Grow?</h2>
             <p className="fade-in">
-              I&apos;m always excited to collaborate on projects that challenge creativity and drive real results. 
-              Let&apos;s discuss how we can take your content strategy to the next level.
+              Let&apos;s talk about your business goals. I&apos;ll show you exactly how marketing can help you get more customers and increase sales.
             </p>
             <div className="contact-form fade-in">
               <div className="form-group">
@@ -347,808 +455,23 @@ export default function HomePage() {
                 <input type="email" id="email" name="email" required />
               </div>
               <div className="form-group">
-                <label htmlFor="project">Tell Me About Your Project</label>
+                <label htmlFor="project">Tell Me About Your Business</label>
                 <textarea 
                   id="project" 
                   name="project" 
                   rows={5}
-                  placeholder="What's your vision? What challenges are you facing? Let's start the conversation..."
+                  placeholder="What do you sell? Who are your customers? What's your biggest marketing challenge?"
                 />
               </div>
               <button onClick={handleSubmit} className="submit-button" disabled={formStatus === 'sending'}>
-                {formStatus === 'sending' && 'Sending Magic... ✨'}
-                {formStatus === 'sent' && 'Message Sent! 🎉'}
-                {!formStatus && "Let's Make It Happen 🚀"}
+                {formStatus === 'sending' && 'Sending...'}
+                {formStatus === 'sent' && 'Message Sent!'}
+                {!formStatus && "Let's Talk Business"}
               </button>
             </div>
           </div>
         </section>
       </main>
-
-      <style jsx>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-        
-        .portfolio {
-          font-family: 'Inter', sans-serif;
-          line-height: 1.6;
-          color: #0D0D0D;
-          background: #F8F9FA;
-          overflow-x: hidden;
-        }
-
-        /* Custom Cursor */
-        .cursor {
-          position: fixed;
-          width: 20px;
-          height: 20px;
-          background: #F15A24;
-          border-radius: 50%;
-          pointer-events: none;
-          z-index: 9999;
-          mix-blend-mode: difference;
-          transition: transform 0.1s ease;
-          transform: translate(-50%, -50%);
-        }
-
-        .cursor-follower {
-          position: fixed;
-          width: 40px;
-          height: 40px;
-          border: 2px solid #2D1B69;
-          border-radius: 50%;
-          pointer-events: none;
-          z-index: 9998;
-          transition: all 0.3s ease;
-          opacity: 0.5;
-          transform: translate(-50%, -50%);
-        }
-
-        /* Loading Animation */
-        .loader {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100vh;
-          background: #0D0D0D;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 10000;
-          transition: opacity 0.5s ease;
-        }
-
-        .loader-text {
-          font-family: 'Playfair Display', serif;
-          font-size: 4rem;
-          color: #F8F9FA;
-          opacity: 0;
-          animation: fadeInOut 2s ease-in-out;
-        }
-
-        @keyframes fadeInOut {
-          0%, 100% { opacity: 0; transform: translateY(20px); }
-          50% { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Header */
-        .header {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 1000;
-          background: rgba(248, 249, 250, 0.95);
-          backdrop-filter: blur(10px);
-          padding: 1rem 2rem;
-          transition: transform 0.3s ease;
-        }
-
-        .header.hidden {
-          transform: translateY(-100%);
-        }
-
-        .nav {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          max-width: 1400px;
-          margin: 0 auto;
-        }
-
-        .logo {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.8rem;
-          font-weight: 700;
-          color: #2D1B69;
-          position: relative;
-          cursor: pointer;
-        }
-
-        .logo::after {
-          content: '';
-          position: absolute;
-          bottom: -5px;
-          left: 0;
-          width: 0;
-          height: 3px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          transition: width 0.3s ease;
-        }
-
-        .logo:hover::after {
-          width: 100%;
-        }
-
-        .nav-menu {
-          display: flex;
-          gap: 2rem;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-
-        .nav-link {
-          background: none;
-          border: none;
-          color: #0D0D0D;
-          font-weight: 500;
-          position: relative;
-          padding: 0.5rem 0;
-          transition: color 0.3s ease;
-          cursor: pointer;
-          font-family: inherit;
-          font-size: 1rem;
-        }
-
-        .nav-link::before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0;
-          height: 2px;
-          background: #F15A24;
-          transition: all 0.3s ease;
-          transform: translateX(-50%);
-        }
-
-        .nav-link:hover::before {
-          width: 100%;
-        }
-
-        /* Hero Section */
-        .hero {
-          height: 100vh;
-          display: flex;
-          align-items: center;
-          position: relative;
-          overflow: hidden;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .hero-bg {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 0.1;
-          background-image: radial-gradient(circle, rgba(0,0,0,0.3) 1px, transparent 1px);
-          background-size: 20px 20px;
-        }
-
-        .hero-content {
-          max-width: 1400px;
-          margin: 0 auto;
-          padding: 0 2rem;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 4rem;
-          align-items: center;
-          width: 100%;
-        }
-
-        .hero-text {
-          color: white;
-        }
-
-        .hero-title {
-          font-family: 'Playfair Display', serif;
-          font-size: clamp(3rem, 8vw, 6rem);
-          font-weight: 700;
-          line-height: 0.95;
-          margin-bottom: 2rem;
-          opacity: 0;
-          transform: translateY(50px);
-          animation: slideUp 1s ease forwards;
-          animation-delay: 0.5s;
-          letter-spacing: -0.02em;
-        }
-
-        .hero-subtitle {
-          font-size: 1.4rem;
-          font-weight: 400;
-          margin-bottom: 2rem;
-          opacity: 0.95;
-          opacity: 0;
-          transform: translateY(30px);
-          animation: slideUp 1s ease forwards;
-          animation-delay: 0.8s;
-          letter-spacing: 0.3px;
-        }
-
-        .hero-description {
-          font-size: 1.1rem;
-          line-height: 1.75;
-          margin-bottom: 3rem;
-          opacity: 0.9;
-          opacity: 0;
-          transform: translateY(30px);
-          animation: slideUp 1s ease forwards;
-          animation-delay: 1.1s;
-          font-weight: 400;
-        }
-
-        .hero-visual {
-          position: relative;
-          height: 600px;
-          opacity: 0;
-          transform: scale(0.8);
-          animation: scaleIn 1s ease forwards;
-          animation-delay: 1.4s;
-        }
-
-        .abstract-composition {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-        }
-
-        .floating-orb {
-          position: absolute;
-          border-radius: 50%;
-          background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
-          backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .orb-1 {
-          width: 120px;
-          height: 120px;
-          top: 15%;
-          left: 10%;
-          animation: float 8s ease-in-out infinite;
-        }
-
-        .orb-2 {
-          width: 80px;
-          height: 80px;
-          top: 60%;
-          right: 20%;
-          animation: float 8s ease-in-out infinite;
-          animation-delay: -3s;
-        }
-
-        .orb-3 {
-          width: 100px;
-          height: 100px;
-          bottom: 20%;
-          left: 25%;
-          animation: float 8s ease-in-out infinite;
-          animation-delay: -6s;
-        }
-
-        .connection-lines {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          opacity: 0.6;
-        }
-
-        .animated-path {
-          stroke-dasharray: 5 10;
-          animation: pathFlow 15s linear infinite;
-        }
-
-        .delay-1 {
-          animation-delay: -5s;
-        }
-
-        @keyframes pathFlow {
-          0% { stroke-dashoffset: 0; }
-          100% { stroke-dashoffset: 100; }
-        }
-
-        .capability-tags {
-          position: absolute;
-          bottom: 10%;
-          left: 50%;
-          transform: translateX(-50%);
-          display: flex;
-          gap: 1rem;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-
-        .capability-tag {
-          padding: 0.5rem 1.2rem;
-          background: rgba(255, 255, 255, 0.15);
-          border: 1px solid rgba(255, 255, 255, 0.25);
-          border-radius: 25px;
-          font-size: 0.9rem;
-          font-weight: 500;
-          backdrop-filter: blur(10px);
-          animation: tagGlow 4s ease-in-out infinite;
-        }
-
-        .capability-tag:nth-child(1) { animation-delay: 0s; }
-        .capability-tag:nth-child(2) { animation-delay: 1.3s; }
-        .capability-tag:nth-child(3) { animation-delay: 2.6s; }
-
-        @keyframes tagGlow {
-          0%, 100% { 
-            box-shadow: 0 0 0 rgba(255, 255, 255, 0.3);
-            transform: translateY(0);
-          }
-          50% { 
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
-            transform: translateY(-3px);
-          }
-        }
-
-        @keyframes slideUp {
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes scaleIn {
-          to {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-
-        @keyframes float {
-          0%, 100% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-20px) rotate(5deg); }
-        }
-
-        /* CTA Button */
-        .cta-button {
-          display: inline-flex;
-          align-items: center;
-          gap: 1rem;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          color: white;
-          padding: 1.2rem 2.5rem;
-          border-radius: 60px;
-          border: none;
-          font-weight: 600;
-          font-size: 1.1rem;
-          transition: all 0.4s ease;
-          position: relative;
-          overflow: hidden;
-          cursor: pointer;
-          font-family: inherit;
-          box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-        }
-
-        .cta-button::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
-          transition: left 0.6s ease;
-        }
-
-        .cta-button:hover::before {
-          left: 100%;
-        }
-
-        .cta-button:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
-        }
-
-        .cta-button:hover .button-arrow {
-          transform: translateX(5px);
-        }
-
-        .button-arrow {
-          display: flex;
-          align-items: center;
-          transition: transform 0.3s ease;
-        }
-
-        .button-arrow svg {
-          width: 20px;
-          height: 20px;
-        }
-
-        /* About Section */
-        .about {
-          padding: 8rem 2rem;
-          max-width: 1400px;
-          margin: 0 auto;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 6rem;
-          align-items: center;
-        }
-
-        .about-content h2 {
-          font-family: 'Playfair Display', serif;
-          font-size: 3.5rem;
-          margin-bottom: 2rem;
-          color: #2D1B69;
-          font-weight: 600;
-        }
-
-        .about-content p {
-          font-size: 1.1rem;
-          line-height: 1.8;
-          margin-bottom: 2rem;
-          color: #4A5568;
-        }
-
-        .stats {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 1.5rem;
-        }
-
-        .stat {
-          text-align: center;
-          padding: 3rem 2rem;
-          background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
-          border-radius: 24px;
-          border: 1px solid rgba(102, 126, 234, 0.1);
-          transition: all 0.4s ease;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .stat::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
-          transition: left 0.6s ease;
-        }
-
-        .stat:hover::before {
-          left: 100%;
-        }
-
-        .stat:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
-          border-color: rgba(102, 126, 234, 0.2);
-        }
-
-        .stat-number {
-          font-size: 2.5rem;
-          font-weight: 800;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          margin-bottom: 0.5rem;
-          font-family: 'Inter', sans-serif;
-        }
-
-        .stat-label {
-          font-weight: 500;
-          color: #4A5568;
-          font-size: 0.95rem;
-          letter-spacing: 0.5px;
-        }
-
-        /* Services Section */
-        .services {
-          background: #0D0D0D;
-          color: white;
-          padding: 8rem 2rem;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .services::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
-          background-size: 30px 30px;
-        }
-
-        .services-content {
-          max-width: 1400px;
-          margin: 0 auto;
-          position: relative;
-        }
-
-        .services h2 {
-          font-family: 'Playfair Display', serif;
-          font-size: 4rem;
-          text-align: center;
-          margin-bottom: 4rem;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-
-        .services-rows {
-          max-width: 1000px;
-          margin: 0 auto;
-        }
-
-        .service-row {
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          border-radius: 16px;
-          margin-bottom: 1rem;
-          overflow: hidden;
-          background: rgba(255, 255, 255, 0.05);
-          backdrop-filter: blur(10px);
-          transition: all 0.4s ease;
-        }
-
-        .service-row:hover {
-          border-color: rgba(255, 255, 255, 0.2);
-          background: rgba(255, 255, 255, 0.08);
-          transform: translateX(8px);
-        }
-
-        .service-row:hover .row-content {
-          max-height: 200px;
-          padding: 0 2.5rem 2rem 2.5rem;
-          opacity: 1;
-        }
-
-        .service-row:hover .expand-icon {
-          transform: rotate(90deg);
-        }
-
-        .row-header {
-          padding: 2rem 2.5rem;
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-        }
-
-        .service-row .service-number {
-          font-size: 1.1rem;
-          font-weight: 700;
-          color: rgba(102, 126, 234, 0.8);
-          margin-right: 2rem;
-          min-width: 40px;
-        }
-
-        .service-row .service-title {
-          flex: 1;
-          font-size: 1.3rem;
-          font-weight: 600;
-          color: white;
-          font-family: 'Playfair Display', serif;
-          margin: 0;
-        }
-
-        .expand-icon {
-          color: rgba(255, 255, 255, 0.5);
-          transition: all 0.3s ease;
-          margin-left: 1rem;
-        }
-
-        .row-content {
-          max-height: 0;
-          overflow: hidden;
-          opacity: 0;
-          transition: all 0.4s ease;
-        }
-
-        .service-row .service-description {
-          color: rgba(255, 255, 255, 0.8);
-          line-height: 1.7;
-          font-size: 0.95rem;
-        }
-
-        .row-divider {
-          height: 1px;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-          margin: 0 2.5rem;
-        }
-
-        /* Contact Section */
-        .contact {
-          padding: 8rem 2rem;
-          background: #F8F9FA;
-          position: relative;
-        }
-
-        .contact-content {
-          max-width: 1200px;
-          margin: 0 auto;
-          text-align: center;
-        }
-
-        .contact h2 {
-          font-family: 'Playfair Display', serif;
-          font-size: 3.5rem;
-          margin-bottom: 2rem;
-          color: #2D1B69;
-          font-weight: 600;
-        }
-
-        .contact p {
-          font-size: 1.2rem;
-          color: #4A5568;
-          margin-bottom: 4rem;
-          max-width: 600px;
-          margin-left: auto;
-          margin-right: auto;
-          line-height: 1.7;
-        }
-
-        .contact-form {
-          max-width: 600px;
-          margin: 0 auto;
-        }
-
-        .form-group {
-          margin-bottom: 2rem;
-          text-align: left;
-        }
-
-        .form-group label {
-          display: block;
-          margin-bottom: 0.75rem;
-          font-weight: 600;
-          color: #2D1B69;
-          font-size: 0.95rem;
-          letter-spacing: 0.3px;
-        }
-
-        .form-group input,
-        .form-group textarea {
-          width: 100%;
-          padding: 1.2rem;
-          border: 2px solid transparent;
-          border-radius: 16px;
-          background: white;
-          font-family: inherit;
-          font-size: 1rem;
-          transition: all 0.3s ease;
-          box-shadow: 0 8px 25px rgba(102, 126, 234, 0.08);
-          box-sizing: border-box;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-          outline: none;
-          border-color: rgba(102, 126, 234, 0.4);
-          transform: translateY(-2px);
-          box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
-        }
-
-        .submit-button {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          color: white;
-          border: none;
-          padding: 1.2rem 3rem;
-          border-radius: 50px;
-          font-size: 1.1rem;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          position: relative;
-          overflow: hidden;
-          font-family: inherit;
-        }
-
-        .submit-button:hover:not(:disabled) {
-          transform: translateY(-3px);
-          box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
-        }
-
-        .submit-button:disabled {
-          opacity: 0.7;
-          cursor: not-allowed;
-        }
-
-        /* Scroll Indicator */
-        .scroll-indicator {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 4px;
-          background: rgba(255, 255, 255, 0.2);
-          z-index: 1001;
-        }
-
-        .scroll-progress {
-          height: 100%;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          transition: width 0.1s ease;
-        }
-
-        /* Animation Classes */
-        :global(.fade-in) {
-          opacity: 0;
-          transform: translateY(50px);
-          transition: all 0.8s ease;
-        }
-
-        :global(.fade-in.visible) {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-          .hero-content {
-            grid-template-columns: 1fr;
-            text-align: center;
-            gap: 2rem;
-          }
-          
-          .about {
-            grid-template-columns: 1fr;
-            gap: 4rem;
-          }
-          
-          .hero-title {
-            font-size: 3rem;
-          }
-          
-          .nav-menu {
-            display: none;
-          }
-
-          .stats {
-            grid-template-columns: 1fr;
-          }
-
-          .hero-visual {
-            height: 400px;
-          }
-
-          .services h2,
-          .contact h2,
-          .about-content h2 {
-            font-size: 2.5rem;
-          }
-
-          .service-row {
-            margin-bottom: 0.5rem;
-          }
-
-          .row-header {
-            padding: 1.5rem 1.5rem;
-          }
-
-          .service-row .service-number {
-            margin-right: 1rem;
-          }
-
-          .service-row:hover .row-content {
-            padding: 0 1.5rem 1.5rem 1.5rem;
-          }
-        }
-      `}</style>
     </div>
   );
 }
