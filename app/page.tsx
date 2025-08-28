@@ -169,7 +169,7 @@ export default function HomePage() {
     { number: '50+', label: 'GCC Businesses Helped' },
     { number: '200+', label: 'Marketing Campaigns' },
     { number: '15+', label: 'Industries Covered' },
-    { number: '5+', label: 'Years in GCC Markets' }
+    { number: '10+', label: 'Years in GCC Markets' }
   ];
 
   return (
@@ -243,30 +243,22 @@ export default function HomePage() {
               </button>
             </div>
             <div className="hero-visual">
-              <div className="abstract-composition">
-                <div className="floating-orb orb-1"></div>
-                <div className="floating-orb orb-2"></div>
-                <div className="floating-orb orb-3"></div>
-                <div className="connection-lines">
-                  <svg width="100%" height="100%" viewBox="0 0 400 400">
-                    <path className="animated-path" d="M50,150 Q200,50 350,200 T300,350" stroke="url(#gradient1)" strokeWidth="2" fill="none"/>
-                    <path className="animated-path delay-1" d="M100,100 Q250,200 200,300" stroke="url(#gradient2)" strokeWidth="1.5" fill="none"/>
-                    <defs>
-                      <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="rgba(255,255,255,0.8)"/>
-                        <stop offset="100%" stopColor="rgba(255,255,255,0.2)"/>
-                      </linearGradient>
-                      <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="rgba(102,126,234,0.6)"/>
-                        <stop offset="100%" stopColor="rgba(118,75,162,0.3)"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className="capability-tags">
-                  <span className="capability-tag">Results</span>
-                  <span className="capability-tag">Growth</span>
-                  <span className="capability-tag">ROI</span>
+              <div className="impact-composition">
+                <div className="impact-number">50+</div>
+                <div className="impact-label">Businesses Grown</div>
+                <div className="impact-metrics">
+                  <div className="impact-metric">
+                    <div className="metric-value">200+</div>
+                    <div className="metric-label">Campaigns</div>
+                  </div>
+                  <div className="impact-metric">
+                    <div className="metric-value">10+</div>
+                    <div className="metric-label">Years</div>
+                  </div>
+                  <div className="impact-metric">
+                    <div className="metric-value">15+</div>
+                    <div className="metric-label">Industries</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -278,7 +270,7 @@ export default function HomePage() {
           <div className="about-content fade-in">
             <h2>Why Choose Me</h2>
             <p>
-              I know the GCC market inside out. For 5+ years, I've helped businesses across Saudi Arabia, UAE, and the Gulf region get more customers and grow faster.
+              I know the GCC market inside out. For 10+ years, I've helped businesses across Saudi Arabia, UAE, and the Gulf region get more customers and grow faster.
             </p>
             <p>
               My marketing works because I understand your customers. I know what makes them buy, what makes them trust, and what makes them choose you over competitors.
