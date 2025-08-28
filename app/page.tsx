@@ -25,6 +25,8 @@ export default function HomePage() {
   const cursorRef = useRef<HTMLDivElement>(null);
   const cursorFollowerRef = useRef<HTMLDivElement>(null);
 
+  // random test line
+
   // Check if mobile on client side
   useEffect(() => {
     const checkMobile = () => {
