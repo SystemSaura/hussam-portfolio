@@ -14,16 +14,16 @@ export default function Home() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-0">
             <a href="#" className="nav-link">About</a>
-            <a href="#" className="nav-link">Articles</a>
-            <a href="#" className="nav-link">Membership</a>
-            <a href="#" className="nav-link">Newsletter</a>
+            <a href="#" className="nav-link">Case Studies</a>
+            <a href="#" className="nav-link">Services</a>
+            <a href="#" className="nav-link">Contact</a>
           </nav>
 
           {/* Right side buttons */}
           <div className="flex items-center space-x-4">
-            <button className="nav-login-button hidden sm:block">Log in</button>
+            <button className="nav-login-button hidden sm:block">Portfolio</button>
             <button className="nav-button">
-              Join 175K+ Subscribers
+              Book Free Strategy Call
             </button>
           </div>
 
@@ -38,22 +38,22 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section - Exact replication from inspection boxes */}
+      {/* Hero Section */}
       <section className="bg-custom-hero py-20">
         <div className="home_header_component">
           {/* Main Hero Title */}
           <h1 className="flecha-hero-title mb-16">
-            Turn your knowledge<br />
-            into <span className="text-custom-blue">income.</span>
+            Turn marketing spend<br />
+            into <span className="text-custom-blue">measurable growth.</span>
           </h1>
 
           {/* Lower Section - Three parts */}
           <div className="home_header_content">
             {/* Left: Want to join us section */}
             <div className="home_header_text-wrap">
-              <h2 className="home_header_subheading">Want to join us?</h2>
+              <h2 className="home_header_subheading">Tired of guessing?</h2>
               <p className="home_header_text1">
-                Join 175K+ readers of The Saturday Solopreneur for tips, strategies, and resources to launch, grow, and monetize your internet business.
+                Your marketing budget deserves better than "spray and pray." Get strategies that turn GCC market insights into predictable pipeline growth.
               </p>
             </div>
 
@@ -74,14 +74,14 @@ export default function Home() {
               <div className="seva-fields formkit-fields">
                 <input
                   type="email"
-                  placeholder="Email Address"
+                  placeholder="Business Email"
                   className="formkit-input"
                 />
                 <button
                   type="submit"
                   className="subscribe-button"
                 >
-                  Subscribe
+                  Get Strategy
                 </button>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Media Logos */}
+      {/* Trusted Companies */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
@@ -118,50 +118,48 @@ export default function Home() {
       <section className="bg-gradient-to-b from-blue-900 to-blue-800 py-20 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-12">
-            <div className="w-40 h-40 rounded-full mx-auto bg-gray-300 flex items-center justify-center overflow-hidden">
-              <Image
-                src="https://ext.same-assets.com/3287453319/1493219665.webp"
-                alt="Justin Welsh"
-                width={160}
-                height={160}
-                className="w-full h-full object-cover"
-                priority
-              />
+            <div className="w-40 h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">
+            <Image
+              src="/picofme.webp"
+              alt="Hussam Baaka"
+              width={160}
+              height={160}
+              className="w-full h-full object-cover"
+              priority
+            />
             </div>
           </div>
 
           <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
-            Hi—I'm Justin Welsh. I help internet<br />
-            solopreneurs own their work and life.
+            Hi—I'm Hussam Baaka. I turn marketing<br />
+            chaos into predictable growth systems.
           </h2>
 
           <div className="mb-8">
-            <span className="text-cyan-400 text-lg font-medium">[ An open letter to freedom seekers ]</span>
+            <span className="text-cyan-400 text-lg font-medium">[ A note to growth-focused leaders ]</span>
           </div>
 
           <div className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
-            <p>Being a solopreneur is about embracing your life.</p>
+            <p>Your marketing team isn't lazy. Your strategy is just scattered.</p>
 
-            <p>We approach our work in a way that prioritizes independence, flexibility, and fulfillment, rather than maximizing our financial gain.</p>
+            <p>I've seen too many GCC companies burn through budgets on tactics that don't connect—social campaigns that don't convert, content that doesn't engage, and "brand awareness" that doesn't drive business.</p>
 
-            <p>The solopreneur doesn't ask: "how can I make more money?"</p>
+            <p>The problem isn't your people or your market. It's alignment.</p>
 
-            <p>They ask: "what kind of life do I want to lead?", and then build a business that supports that life.</p>
+            <p>When your messaging, channels, and metrics all point toward the same business outcome, growth becomes predictable instead of accidental.</p>
 
-            <p>It's not about getting more. It's about finding enough.</p>
+            <p>I don't just audit what's broken. I rebuild marketing systems that turn investment into measurable pipeline growth.</p>
 
-            <p>We keep our businesses lean and nimble — prioritizing simplicity and efficiency in our operations.</p>
+            <p>My approach combines deep GCC market knowledge with growth marketing frameworks that have scaled businesses from startup to market leader.</p>
 
-            <p>Sometimes that means a true 1-person show, but often we rely on a small team of freelancers, contractors, or assistants.</p>
+            <p>At the end of the day, marketing should do one thing:</p>
 
-            <p>At the end of the day, what binds us together is a simple goal:</p>
-
-            <p className="text-cyan-400 font-medium">Achieve the freedom to do everything we want...and nothing we don't.</p>
+            <p className="text-cyan-400 font-medium">Generate predictable, scalable business results you can bank on.</p>
           </div>
 
           <div className="mt-12">
             <button className="border border-white text-white hover:bg-white hover:text-blue-900 px-6 py-3 rounded-lg font-medium transition-colors">
-              More About Me
+              See My Work
             </button>
           </div>
         </div>
@@ -174,8 +172,8 @@ export default function Home() {
             {/* Left side */}
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-                Three more ways<br />
-                I can help <span className="text-cyan-300">you.</span>
+                Three ways I help you<br />
+                <span className="text-cyan-300">scale faster.</span>
               </h2>
             </div>
 
@@ -184,43 +182,36 @@ export default function Home() {
               {/* Service 1 */}
               <div>
                 <div className="text-6xl font-bold text-blue-300 mb-4">01</div>
-                <h3 className="text-xl font-bold mb-4">The Saturday Solopreneur Weekly Newsletter</h3>
+                <h3 className="text-xl font-bold mb-4">Marketing Strategy & Systems Audit</h3>
                 <p className="text-blue-100 mb-6 leading-relaxed">
-                  Every Saturday morning, I share practical guidance to help you start and scale your one-person internet business.
+                  Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
                 </p>
-                <div className="flex items-center space-x-4">
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="flex-1 px-4 py-3 text-gray-900 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent outline-none"
-                  />
-                  <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
-                    Subscribe
-                  </button>
-                </div>
+                <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
+                  Book Audit
+                </button>
               </div>
 
               {/* Service 2 */}
               <div>
                 <div className="text-6xl font-bold text-blue-300 mb-4">02</div>
-                <h3 className="text-xl font-bold mb-4">Deep-dive Digital Courses for Solopreneurs</h3>
+                <h3 className="text-xl font-bold mb-4">Growth Marketing Implementation</h3>
                 <p className="text-blue-100 mb-6 leading-relaxed">
-                  Self-paced courses teaching you to grow your audience, find profitable ideas, build a business, and productize knowledge.
+                  Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
                 </p>
                 <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
-                  View Courses
+                  Explore Programs
                 </button>
               </div>
 
               {/* Service 3 */}
               <div>
                 <div className="text-6xl font-bold text-blue-300 mb-4">03</div>
-                <h3 className="text-xl font-bold mb-4">Put Your Brand in Front of 175K+ Entrepreneurs Every Week</h3>
+                <h3 className="text-xl font-bold mb-4">Marketing Team Training & Optimization</h3>
                 <p className="text-blue-100 mb-6 leading-relaxed">
-                  Every Saturday, 175,000+ entrepreneurs trust my newsletter to deliver insights and solutions. Place your brand exactly where your ideal customers are already looking.
+                  Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.
                 </p>
                 <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
-                  Book Your Sponsorship Slot
+                  Schedule Consultation
                 </button>
               </div>
             </div>
@@ -228,35 +219,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Newsletter Examples */}
+      {/* Case Studies Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Recent Issues of <Image
-                src="https://ext.same-assets.com/3287453319/3207876544.svg"
-                alt="The Saturday Solopreneur"
-                width={200}
-                height={32}
-                className="inline h-8 w-auto"
-              />
+              Recent Client Results
             </h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Newsletter 1 */}
+            {/* Case Study 1 */}
             <div className="group cursor-pointer">
-              <div className="bg-gray-100 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/830969865.png"
-                  alt="Newsletter issue"
-                  width={300}
-                  height={200}
-                  className="w-full rounded-lg"
-                />
+              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105 relative overflow-hidden">
+                <div className="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden border-2 border-white">
+                  <Image
+                    src="/picofme.webp"
+                    alt="Hussam Baaka"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-white">
+                  <div className="text-sm opacity-80 mb-2">Healthcare Technology</div>
+                  <div className="text-2xl font-bold mb-4">187%</div>
+                  <div className="text-lg">Lead Quality Increase</div>
+                </div>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600">
-                Why I drink coffee at 10:47 AM on Thursdays.
+                From Generic Ads to Qualified Pipeline
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="Arrow"
@@ -266,23 +258,30 @@ export default function Home() {
                 />
               </h3>
               <p className="text-gray-600 text-sm">
-                Discover how micro-freedoms - small daily choices like Thursday coffee runs or working from park benches - prove you're truly free and reshape your identity.
+                Transformed a healthcare tech company's lead gen from quantity-focused to quality-driven, resulting in 3x more qualified opportunities and 40% shorter sales cycles.
               </p>
             </div>
 
-            {/* Newsletter 2 */}
+            {/* Case Study 2 */}
             <div className="group cursor-pointer">
-              <div className="bg-blue-500 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/1650271574.png"
-                  alt="Newsletter issue"
-                  width={300}
-                  height={200}
-                  className="w-full rounded-lg"
-                />
+              <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105 relative overflow-hidden">
+                <div className="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden border-2 border-white">
+                  <Image
+                    src="/picofme.webp"
+                    alt="Hussam Baaka"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-white">
+                  <div className="text-sm opacity-80 mb-2">Real Estate</div>
+                  <div className="text-2xl font-bold mb-4">$2.1M</div>
+                  <div className="text-lg">Revenue Attributed</div>
+                </div>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600">
-                Your parents advice is outdated.
+                Marketing ROI That Actually Tracks
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="Arrow"
@@ -292,23 +291,30 @@ export default function Home() {
                 />
               </h3>
               <p className="text-gray-600 text-sm">
-                Why following your parents' career advice in today's economy is the riskiest move you can make. The old rules of job security no longer apply.
+                Built complete attribution system for luxury real estate developer, connecting every marketing dollar to actual sales revenue. Finally proved marketing's value to the C-suite.
               </p>
             </div>
 
-            {/* Newsletter 3 */}
+            {/* Case Study 3 */}
             <div className="group cursor-pointer">
-              <div className="bg-white border-2 border-gray-200 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/2323763866.png"
-                  alt="Newsletter issue"
-                  width={300}
-                  height={200}
-                  className="w-full rounded-lg"
-                />
+              <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105 relative overflow-hidden">
+                <div className="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden border-2 border-white">
+                  <Image
+                    src="/picofme.webp"
+                    alt="Hussam Baaka"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-white">
+                  <div className="text-sm opacity-80 mb-2">Financial Services</div>
+                  <div className="text-2xl font-bold mb-4">340%</div>
+                  <div className="text-lg">Conversion Lift</div>
+                </div>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600">
-                I'll draw your dog for $350.
+                When Compliance Meets Conversion
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="Arrow"
@@ -318,36 +324,36 @@ export default function Home() {
                 />
               </h3>
               <p className="text-gray-600 text-sm">
-                How a casual sketcher turned a notepad and 30-minute pet portraits into a $350-per-session business. The simple formula anyone can follow to start earning from their skills.
+                Redesigned entire customer onboarding experience for GCC fintech, balancing regulatory requirements with user experience. Result: highest conversion rates in company history.
               </p>
             </div>
           </div>
 
           <div className="text-center mt-12">
             <button className="border border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-medium">
-              Read More
+              View All Case Studies
             </button>
           </div>
         </div>
       </section>
 
-      {/* Freedom Section */}
+      {/* CTA Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-12 mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="text-blue-500">Freedom to</span><br />
-              live how you want.
+              <span className="text-blue-500">Stop guessing</span><br />
+              what's working.
             </h2>
 
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="text-blue-500">Freedom to</span><br />
-              put family first.
+              <span className="text-blue-500">Stop explaining</span><br />
+              marketing spend.
             </h2>
 
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="text-blue-500">Freedom to</span><br />
-              own your story.
+              <span className="text-blue-500">Start scaling</span><br />
+              with confidence.
             </h2>
           </div>
 
@@ -361,27 +367,27 @@ export default function Home() {
             />
           </div>
 
-          <h3 className="text-3xl font-bold text-gray-900 mb-8">Subscribe to begin.</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-8">Ready to grow predictably?</h3>
 
           <p className="text-gray-600 mb-8 leading-relaxed">
-            Join 175K+ readers of The Saturday Solopreneur for exclusive tips, strategies, and resources to launch, grow, and monetize your one-person internet business.
+            Get a free 30-minute strategy session where we'll identify the biggest growth opportunities in your current marketing approach.
           </p>
 
           <form className="max-w-md mx-auto space-y-4">
             <input
               type="email"
-              placeholder="Email Address"
+              placeholder="Business Email"
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
             />
             <button
               type="submit"
               className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium"
             >
-              Subscribe
+              Book Free Strategy Call
             </button>
           </form>
 
-          <p className="text-sm text-gray-500 mt-4">I will never spam or sell your info. Ever.</p>
+          <p className="text-sm text-gray-500 mt-4">No pitch, no pressure. Just actionable insights you can use immediately.</p>
         </div>
       </section>
 
@@ -390,15 +396,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-8 mb-4 md:mb-0">
-              <Image
-                src="https://ext.same-assets.com/3287453319/444665820.svg"
-                alt="Justin Welsh"
-                width={120}
-                height={32}
-                className="h-8 w-auto filter invert"
-              />
+              <span className="text-xl font-semibold">Hussam Baaka</span>
               <button className="flex items-center text-gray-400 hover:text-white">
-                Tools
+                Resources
                 <Image
                   src="https://ext.same-assets.com/3287453319/305373772.svg"
                   alt="External link"
@@ -410,9 +410,9 @@ export default function Home() {
             </div>
 
             <div className="flex items-center space-x-6 mb-4 md:mb-0">
-              <span className="text-gray-400 text-sm">© 2024 Justin D Welsh LLC</span>
+              <span className="text-gray-400 text-sm">© 2024 Hussam Baaka</span>
               <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Fulfillment Policy</a>
+              <a href="#" className="text-gray-400 hover:text-white text-sm">Terms</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm">Contact</a>
             </div>
 
@@ -421,15 +421,6 @@ export default function Home() {
                 <Image
                   src="https://ext.same-assets.com/3287453319/1536601012.svg"
                   alt="Twitter"
-                  width={20}
-                  height={20}
-                  className="filter invert"
-                />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/602996969.svg"
-                  alt="Instagram"
                   width={20}
                   height={20}
                   className="filter invert"
