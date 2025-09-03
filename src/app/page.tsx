@@ -8,14 +8,7 @@ export default function Home() {
         <div className="nav-container">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Image
-              src="https://ext.same-assets.com/3287453319/444665820.svg"
-              alt="Justin Welsh logo"
-              width={92.16}
-              height={15.91}
-              className="nav-logo"
-              priority
-            />
+            <span className="logo-name">Hussam Baaka <span className="cursor-blink">|</span></span>
           </div>
 
           {/* Navigation */}
