@@ -132,6 +132,86 @@
   background-color: #002a5c;
 }
 
+/* Hero section - exact values from inspection boxes */
+.home_header_component {
+  width: 852.56px;
+  height: 457.54px;
+  margin: 0 auto;
+}
+
+.home_header_content {
+  width: 852.56px;
+  height: 164.84px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12rem;
+}
+
+.home_header_text-wrap {
+  width: 346.48px;
+  height: 112.38px;
+}
+
+.home_header_subheading {
+  color: #001C46;
+  font: 34.1024px "Flecha S", sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.home_header_text1 {
+  color: #001C46;
+  font: 12.7884px "Work Sans", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.arrow-right {
+  width: 56.13px;
+  height: 56.84px;
+  margin: 54px 0px;
+}
+
+.form-container {
+  width: 391.75px;
+  height: 123.35px;
+  padding: 56px 10px 10px;
+}
+
+.formkit-input {
+  width: 250.08px;
+  height: 41.11px;
+  background: #FFFFFF;
+  padding: 12px 12px 12px 17.0512px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font: 14px "Work Sans", sans-serif;
+  margin-bottom: 12px;
+}
+
+.subscribe-button {
+  background: #3B82F6;
+  color: #FFFFFF;
+  font: 10.7991px "Work Sans", sans-serif;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background: #2563EB;
+}
+
+.padding-section-large {
+  width: 852.56px;
+  height: 628.04px;
+  padding: 85.2561px 0px;
+  margin: 0 auto;
+}
+
 .flecha-hero-title {
   font-family: 'Flecha S', sans-serif;
   font-size: 85.2561px;
@@ -198,6 +278,29 @@
   }
   .nav-container {
     margin: 0 16px 0 16px;
+  }
+  .home_header_component {
+    width: 100%;
+    height: auto;
+  }
+  .home_header_content {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .home_header_text-wrap {
+    width: 100%;
+    height: auto;
+  }
+  .form-container {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .formkit-input {
+    width: 100%;
+    max-width: 300px;
   }
 }
 

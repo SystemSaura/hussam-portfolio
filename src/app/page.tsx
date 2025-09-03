@@ -1,5 +1,3 @@
-// src/app/page.tsx ..
-
 import Image from "next/image";
 
 export default function Home() {
@@ -47,20 +45,20 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section - Exact replication from inspection boxes */}
       <section className="bg-custom-hero py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="home_header_component">
+          <div className="home_header_content">
             {/* Left side */}
-            <div>
-              <h1 className="flecha-hero-title">
+            <div className="home_header_text-wrap">
+              <h1 className="flecha-hero-title mb-8">
                 Turn your knowledge<br />
                 into <span className="text-blue-500">income.</span>
               </h1>
 
               <div className="mt-16">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Want to join us?</h2>
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <h2 className="home_header_subheading">Want to join us?</h2>
+                <p className="home_header_text1">
                   Join 175K+ readers of The Saturday Solopreneur for tips, strategies, and resources to launch, grow, and monetize your internet business.
                 </p>
               </div>
@@ -71,22 +69,22 @@ export default function Home() {
               <Image
                 src="https://ext.same-assets.com/3287453319/171477844.svg"
                 alt="Arrow pointing right"
-                width={48}
-                height={48}
-                className="mb-8"
+                width={56.13}
+                height={56.84}
+                className="arrow-right"
               />
 
-              <div className="w-full max-w-md">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Start here.</h3>
+              <div className="form-container">
+                <h3 className="home_header_subheading text-center mb-6">Start here.</h3>
                 <form className="space-y-4">
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+                    className="formkit-input w-full"
                   />
                   <button
                     type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium"
+                    className="subscribe-button w-full"
                   >
                     Subscribe
                   </button>
@@ -98,45 +96,43 @@ export default function Home() {
       </section>
 
       {/* Media Logos */}
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 opacity-60">
-            <Image
-              src="https://ext.same-assets.com/3287453319/2606586524.svg"
-              alt="Forbes"
-              width={80}
-              height={32}
-              className="h-6 sm:h-8 w-auto"
-            />
-            <Image
-              src="https://ext.same-assets.com/3287453319/1298653950.svg"
-              alt="Business Insider"
-              width={100}
-              height={32}
-              className="h-6 sm:h-8 w-auto"
-            />
-            <Image
-              src="https://ext.same-assets.com/3287453319/1334030089.svg"
-              alt="Entrepreneur"
-              width={120}
-              height={32}
-              className="h-6 sm:h-8 w-auto"
-            />
-            <Image
-              src="https://ext.same-assets.com/3287453319/2498129785.webp"
-              alt="Vice"
-              width={80}
-              height={32}
-              className="h-6 sm:h-8 w-auto"
-            />
-            <Image
-              src="https://ext.same-assets.com/3287453319/2313085580.webp"
-              alt="Indie Hackers"
-              width={100}
-              height={32}
-              className="h-6 sm:h-8 w-auto"
-            />
-          </div>
+      <section className="padding-section-large bg-white">
+        <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 opacity-60">
+          <Image
+            src="https://ext.same-assets.com/3287453319/2606586524.svg"
+            alt="Forbes"
+            width={80}
+            height={32}
+            className="h-6 sm:h-8 w-auto"
+          />
+          <Image
+            src="https://ext.same-assets.com/3287453319/1298653950.svg"
+            alt="Business Insider"
+            width={100}
+            height={32}
+            className="h-6 sm:h-8 w-auto"
+          />
+          <Image
+            src="https://ext.same-assets.com/3287453319/1334030089.svg"
+            alt="Entrepreneur"
+            width={120}
+            height={32}
+            className="h-6 sm:h-8 w-auto"
+          />
+          <Image
+            src="https://ext.same-assets.com/3287453319/2498129785.webp"
+            alt="Vice"
+            width={80}
+            height={32}
+            className="h-6 sm:h-8 w-auto"
+          />
+          <Image
+            src="https://ext.same-assets.com/3287453319/2313085580.webp"
+            alt="Indie Hackers"
+            width={100}
+            height={32}
+            className="h-6 sm:h-8 w-auto"
+          />
         </div>
       </section>
 
