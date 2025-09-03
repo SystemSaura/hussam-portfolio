@@ -41,24 +41,24 @@ export default function Home() {
       {/* Hero Section - Exact replication from inspection boxes */}
       <section className="bg-custom-hero py-20">
         <div className="home_header_component">
-          <div className="home_header_content">
-            {/* Left side */}
-            <div className="home_header_text-wrap">
-              <h1 className="flecha-hero-title mb-8">
-                Turn your knowledge<br />
-                into <span className="text-blue-500">income.</span>
-              </h1>
+          {/* Main Hero Title */}
+          <h1 className="flecha-hero-title mb-16">
+            Turn your knowledge<br />
+            into <span className="text-custom-blue">income.</span>
+          </h1>
 
-              <div className="mt-16">
-                <h2 className="home_header_subheading">Want to join us?</h2>
-                <p className="home_header_text1">
-                  Join 175K+ readers of The Saturday Solopreneur for tips, strategies, and resources to launch, grow, and monetize your internet business.
-                </p>
-              </div>
+          {/* Lower Section - Three parts */}
+          <div className="home_header_content">
+            {/* Left: Want to join us section */}
+            <div className="home_header_text-wrap">
+              <h2 className="home_header_subheading">Want to join us?</h2>
+              <p className="home_header_text1">
+                Join 175K+ readers of The Saturday Solopreneur for tips, strategies, and resources to launch, grow, and monetize your internet business.
+              </p>
             </div>
 
-            {/* Right side */}
-            <div className="flex flex-col items-center">
+            {/* Center: Arrow */}
+            <div className="flex items-center justify-center">
               <Image
                 src="https://ext.same-assets.com/3287453319/171477844.svg"
                 alt="Arrow pointing right"
@@ -66,23 +66,24 @@ export default function Home() {
                 height={56.84}
                 className="arrow-right"
               />
+            </div>
 
-              <div className="form-container">
-                <h3 className="home_header_subheading text-center mb-6">Start here.</h3>
-                <form className="space-y-4">
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="formkit-input w-full"
-                  />
-                  <button
-                    type="submit"
-                    className="subscribe-button w-full"
-                  >
-                    Subscribe
-                  </button>
-                </form>
-              </div>
+            {/* Right: Start here form */}
+            <div className="form-container">
+              <h3 className="home_header_subheading text-center mb-6">Start here.</h3>
+              <form className="space-y-4">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="formkit-input w-full"
+                />
+                <button
+                  type="submit"
+                  className="subscribe-button w-full"
+                >
+                  Subscribe
+                </button>
+              </form>
             </div>
           </div>
         </div>

@@ -92,10 +92,8 @@
   font-display: swap;
 }
 
-
-
 .cursor-blink {
-  color: #3B82F6;
+  color: #2762F8;
   animation: blink 1s infinite;
 }
 
@@ -189,12 +187,12 @@
 
 .nav-login-button:hover {
   background-color: #FFFFFF;
-  color: #3B82F6;
-  border-color: #3B82F6;
+  color: #2762F8;
+  border-color: #2762F8;
 }
 
 .nav-button:hover {
-  background-color: #3B82F6;
+  background-color: #2762F8;
   color: #FFFFFF;
 }
 
@@ -208,9 +206,9 @@
   width: 852.56px;
   height: 164.84px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  gap: 12rem;
+  gap: 2rem;
 }
 
 .home_header_text-wrap {
@@ -236,13 +234,13 @@
 .arrow-right {
   width: 56.13px;
   height: 56.84px;
-  margin: 54px 0px;
+  margin: 0;
 }
 
 .form-container {
   width: 391.75px;
   height: 123.35px;
-  padding: 56px 10px 10px;
+  padding: 10px;
 }
 
 .formkit-input {
@@ -257,7 +255,7 @@
 }
 
 .subscribe-button {
-  background: #3B82F6;
+  background: #2762F8;
   color: #FFFFFF;
   font: 10.7991px "Work Sans", sans-serif;
   padding: 12px 24px;
@@ -267,7 +265,7 @@
 }
 
 .subscribe-button:hover {
-  background: #2563EB;
+  background: #1E4ED8;
 }
 
 .padding-section-large {
@@ -375,3 +373,6 @@
   }
 }
 
+.text-custom-blue {
+  color: #2762F8;
+}
