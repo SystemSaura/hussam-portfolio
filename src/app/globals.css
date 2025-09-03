@@ -67,3 +67,142 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: 'Flecha S';
+  src: url('/FlechaTestS-Regular-BF669881b0e7f3c.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Flecha S';
+  src: url('/FlechaTestS-Bold-BF669881b0e0c95.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Exact styles from inspection boxes */
+.nav-component {
+  background-color: #F2F5FA;
+  width: 100%;
+  height: 51.15px;
+}
+
+.nav-container {
+  margin: 0 85.7266px 0 85.7188px;
+  height: 50.65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  width: 92.16px;
+  height: 15.91px;
+}
+
+.nav-link {
+  color: #222222;
+  font: 11.3675px "Work Sans", sans-serif;
+  padding: 5.68374px 8.52561px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  color: #000000;
+}
+
+.nav-button {
+  background-color: #001C46;
+  color: #FFFFFF;
+  font: 11.3675px "Work Sans", sans-serif;
+  padding: 11.3675px 17.0512px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background-color: #002a5c;
+}
+
+.flecha-hero-title {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 85.2561px;
+  font-weight: normal;
+  color: #001C46;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+
+.flecha-section-heading {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 34.1024px;
+  font-weight: normal;
+  color: #001C46;
+  line-height: 1.2;
+}
+
+.work-sans-body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12.7884px;
+  color: #001C46;
+  line-height: 1.6;
+}
+
+@media (max-width: 1400px) {
+  .flecha-hero-title {
+    font-size: 72px;
+  }
+  .nav-container {
+    margin: 0 40px 0 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .flecha-hero-title {
+    font-size: 64px;
+  }
+  .nav-container {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flecha-hero-title {
+    font-size: 80px;
+  }
+  .flecha-section-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flecha-hero-title {
+    font-size: 56px;
+    white-space: normal;
+  }
+  .flecha-section-heading {
+    font-size: 24px;
+  }
+  .work-sans-body {
+    font-size: 14px;
+  }
+  .nav-container {
+    margin: 0 16px 0 16px;
+  }
+}
+
+@layer components {
+  .bg-custom-hero {
+    background-color: #F2F5FA;
+  }
+}

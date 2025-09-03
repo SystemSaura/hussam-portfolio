@@ -6,58 +6,54 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <Image
-                src="https://ext.same-assets.com/3287453319/444665820.svg"
-                alt="Justin Welsh"
-                width={120}
-                height={32}
-                className="h-8 w-auto"
-              />
-            </div>
+      <header className="nav-component">
+        <div className="nav-container">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <Image
+              src="https://ext.same-assets.com/3287453319/444665820.svg"
+              alt="Justin Welsh logo"
+              width={92.16}
+              height={15.91}
+              className="nav-logo"
+              priority
+            />
+          </div>
 
-            {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-gray-600 hover:text-gray-900 text-sm font-medium">About</a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 text-sm font-medium">Articles</a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 text-sm font-medium">Membership</a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 text-sm font-medium">Newsletter</a>
-              <div className="relative group">
-                <button className="text-gray-600 hover:text-gray-900 text-sm font-medium flex items-center">
-                  Courses
-                  <Image
-                    src="https://ext.same-assets.com/3287453319/3601733880.svg"
-                    alt="Dropdown arrow"
-                    width={12}
-                    height={12}
-                    className="ml-1"
-                  />
-                </button>
-              </div>
-            </nav>
+          {/* Navigation */}
+          <nav className="hidden md:flex items-center space-x-0">
+            <a href="#" className="nav-link">About</a>
+            <a href="#" className="nav-link">Articles</a>
+            <a href="#" className="nav-link">Membership</a>
+            <a href="#" className="nav-link">Newsletter</a>
+          </nav>
 
-            {/* Right side buttons */}
-            <div className="flex items-center space-x-4">
-              <a href="#" className="text-gray-600 hover:text-gray-900 text-sm font-medium hidden sm:block">Log in</a>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 sm:px-4 rounded-lg text-sm font-medium whitespace-nowrap">
-                Join 175K+ Subscribers
-              </button>
-            </div>
+          {/* Right side buttons */}
+          <div className="flex items-center space-x-4">
+            <a href="#" className="nav-link hidden sm:block">Log in</a>
+            <button className="nav-button">
+              Join 175K+ Subscribers
+            </button>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button className="nav-link p-2">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-custom-hero py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side */}
             <div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="flecha-hero-title">
                 Turn your knowledge<br />
                 into <span className="text-blue-500">income.</span>
               </h1>
