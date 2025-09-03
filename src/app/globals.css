@@ -146,49 +146,58 @@
   display: inline-block;
 }
 
+.nav-login-button {
+  color: #001C46;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11.3675px;
+  font-weight: 300;
+  padding: 0 17.0512px;
+  margin: 0px 0.454699px;
+  border: 1px solid #001C46;
+  border-radius: 9999px;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68.52px;
+  height: 31.26px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
 .nav-button {
   background-color: #001C46;
   color: #FFFFFF;
   font-family: 'Work Sans', sans-serif;
   font-size: 11.3675px;
   font-weight: 300;
-  padding: 11.3675px 17.0512px;
+  padding: 0 17.0512px;
   border: none;
   border-radius: 9999px;
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
-}
-
-.nav-button:hover {
-  background-color: #002a5c;
-}
-
-.nav-button:hover {
-  background-color: #002a5c;
-}
-
-.nav-login-button {
-  color: #222222;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 11.3675px;
-  font-weight: 300;
-  padding: 11.3675px 17.0512px;
-  border: 1px solid #222222;
-  border-radius: 9999px;
-  background-color: transparent;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 162.05px;
+  height: 31.26px;
+  box-sizing: border-box;
   transition: all 0.2s ease;
 }
 
 .nav-login-button:hover {
-  background-color: #222222;
+  background-color: #FFFFFF;
+  color: #3B82F6;
+  border-color: #3B82F6;
+}
+
+.nav-button:hover {
+  background-color: #3B82F6;
   color: #FFFFFF;
 }
 
-/* Hero section - exact values from inspection boxes */
 .home_header_component {
   width: 852.56px;
   height: 457.54px;
