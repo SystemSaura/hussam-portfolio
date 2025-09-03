@@ -1,7 +1,5 @@
 // src/app/page.tsx ..
 
-// testo
-
 import Image from "next/image";
 
 export default function Home() {
