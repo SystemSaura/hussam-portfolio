@@ -224,14 +224,16 @@
   margin-bottom: 16px;
 }
 
-/* Right-aligned heading for "Start here." */
+/* Left-aligned heading for "Start here." with reduced spacing */
 .home_header_subheading-right {
   color: #001C46;
   font: 34.1024px "Flecha S", sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  margin-bottom: 16px;
-  text-align: right;
+  margin-bottom: 8px;
+  text-align: left;
+  width: 361.75px;
+  height: 35.8px;
 }
 
 .home_header_text1 {
@@ -247,14 +249,14 @@
   margin: 0;
 }
 
-/* Updated form container to match inspection box image 8 */
+/* Form container */
 .home_header_form-wrap {
   width: 361.75px;
   height: 98.84px;
   padding: 10px;
 }
 
-/* Horizontal layout for seva-fields formkit-fields to match inspection box image 7 */
+/* Form fields container */
 .seva-fields.formkit-fields {
   width: 361.75px;
   height: 57.35px;
@@ -264,26 +266,28 @@
   gap: 10px;
 }
 
+/* Input field with pill shape like nav buttons */
 .formkit-input {
   width: 250.08px;
   height: 41.11px;
   background: #FFFFFF;
   padding: 12px 12px 12px 17.0512px;
   border: 1px solid #E5E7EB;
-  border-radius: 8px;
+  border-radius: 9999px;
   font: 14px "Work Sans", sans-serif;
   margin: 0;
   box-sizing: border-box;
   flex-shrink: 0;
 }
 
+/* Subscribe button with pill shape like nav buttons */
 .subscribe-button {
   background: #2762F8;
   color: #FFFFFF;
   font: 10.7991px "Work Sans", sans-serif;
   padding: 12px 24px;
   border: none;
-  border-radius: 8px;
+  border-radius: 9999px;
   cursor: pointer;
   width: 102.31px;
   height: 42.35px;
