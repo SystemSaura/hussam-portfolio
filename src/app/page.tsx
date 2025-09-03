@@ -21,7 +21,7 @@ export default function Home() {
 
           {/* Right side buttons */}
           <div className="flex items-center space-x-4">
-            <a href="#" className="nav-link hidden sm:block">Log in</a>
+            <a href="#" className="nav-login-button hidden sm:block">Log in</a>
             <button className="nav-button">
               Join 175K+ Subscribers
             </button>
