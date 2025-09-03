@@ -224,6 +224,16 @@
   margin-bottom: 16px;
 }
 
+/* Right-aligned heading for "Start here." */
+.home_header_subheading-right {
+  color: #001C46;
+  font: 34.1024px "Flecha S", sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  text-align: right;
+}
+
 .home_header_text1 {
   color: #001C46;
   font: 12.7884px "Work Sans", sans-serif;
@@ -237,10 +247,21 @@
   margin: 0;
 }
 
-.form-container {
-  width: 391.75px;
-  height: 123.35px;
+/* Updated form container to match inspection box image 8 */
+.home_header_form-wrap {
+  width: 361.75px;
+  height: 98.84px;
   padding: 10px;
+}
+
+/* Horizontal layout for seva-fields formkit-fields to match inspection box image 7 */
+.seva-fields.formkit-fields {
+  width: 361.75px;
+  height: 57.35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .formkit-input {
@@ -251,7 +272,9 @@
   border: 1px solid #E5E7EB;
   border-radius: 8px;
   font: 14px "Work Sans", sans-serif;
-  margin-bottom: 12px;
+  margin: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .subscribe-button {
@@ -262,6 +285,11 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  width: 102.31px;
+  height: 42.35px;
+  box-sizing: border-box;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .subscribe-button:hover {
@@ -356,14 +384,27 @@
     width: 100%;
     height: auto;
   }
-  .form-container {
+  .home_header_form-wrap {
     width: 100%;
     height: auto;
     padding: 2rem 1rem;
   }
+  .seva-fields.formkit-fields {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 12px;
+  }
   .formkit-input {
     width: 100%;
     max-width: 300px;
+  }
+  .subscribe-button {
+    width: auto;
+    min-width: 102.31px;
+  }
+  .home_header_subheading-right {
+    text-align: center;
   }
 }
 

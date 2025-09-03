@@ -69,21 +69,21 @@ export default function Home() {
             </div>
 
             {/* Right: Start here form */}
-            <div className="form-container">
-              <h3 className="home_header_subheading text-center mb-6">Start here.</h3>
-              <form className="space-y-4">
+            <div className="home_header_form-wrap">
+              <h3 className="home_header_subheading-right mb-6">Start here.</h3>
+              <div className="seva-fields formkit-fields">
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="formkit-input w-full"
+                  className="formkit-input"
                 />
                 <button
                   type="submit"
-                  className="subscribe-button w-full"
+                  className="subscribe-button"
                 >
                   Subscribe
                 </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
