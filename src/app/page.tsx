@@ -90,43 +90,27 @@ export default function Home() {
       </section>
 
       {/* Media Logos */}
-      <section className="padding-section-large bg-white">
-        <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 opacity-60">
-          <Image
-            src="https://ext.same-assets.com/3287453319/2606586524.svg"
-            alt="Forbes"
-            width={80}
-            height={32}
-            className="h-6 sm:h-8 w-auto"
-          />
-          <Image
-            src="https://ext.same-assets.com/3287453319/1298653950.svg"
-            alt="Business Insider"
-            width={100}
-            height={32}
-            className="h-6 sm:h-8 w-auto"
-          />
-          <Image
-            src="https://ext.same-assets.com/3287453319/1334030089.svg"
-            alt="Entrepreneur"
-            width={120}
-            height={32}
-            className="h-6 sm:h-8 w-auto"
-          />
-          <Image
-            src="https://ext.same-assets.com/3287453319/2498129785.webp"
-            alt="Vice"
-            width={80}
-            height={32}
-            className="h-6 sm:h-8 w-auto"
-          />
-          <Image
-            src="https://ext.same-assets.com/3287453319/2313085580.webp"
-            alt="Indie Hackers"
-            width={100}
-            height={32}
-            className="h-6 sm:h-8 w-auto"
-          />
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <p className="text-gray-500 text-sm font-medium uppercase tracking-wider">
+              Trusted by leading GCC companies
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-5 gap-x-12 gap-y-8 items-center justify-items-center max-w-4xl">
+              <img src="/Logos/shiftat.webp" alt="Shiftat" className="color-logo shiftat-logo" />
+              <img src="/Logos/abudawood.webp" alt="Abudawood" className="color-logo abudawood-logo" />
+              <img src="/Logos/kapsarc.webp" alt="KAPSARC" className="color-logo" />
+              <img src="/Logos/alnahdi.webp" alt="Al Nahdi" className="color-logo alnahdi-logo" />
+              <img src="/Logos/saeq.webp" alt="SAEQ" className="color-logo" />
+              <img src="/Logos/empirerealestate.webp" alt="Empire Real Estate" className="color-logo empire-logo" />
+              <img src="/Logos/reviva.webp" alt="reviva" className="color-logo" />
+              <img src="/Logos/ncmh.webp" alt="NCMH" className="color-logo ncmh-logo" />
+              <img src="/Logos/rcmc.webp" alt="RCMC" className="color-logo rcmc-logo" />
+              <img src="/Logos/rotana.webp" alt="Rotana" className="color-logo rotana-logo" />
+            </div>
+          </div>
         </div>
       </section>
 

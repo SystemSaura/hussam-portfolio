@@ -333,6 +333,53 @@
   line-height: 1.6;
 }
 
+/* Base logo styling - consistent foundation */
+.color-logo {
+  height: 50px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.color-logo:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+/* Specific logo adjustments for readability */
+.color-logo.shiftat-logo {
+  height: 54px;
+  max-width: 150px;
+}
+.color-logo.rotana-logo {
+  height: 58px;
+  max-width: 165px;
+}
+.color-logo.ncmh-logo {
+  height: 100px;
+  max-width: 200px;
+}
+.color-logo.rcmc-logo {
+  height: 120px;
+  max-width: 250px;
+}
+.color-logo.large-text-logo {
+  height: 60px;
+  max-width: 170px;
+}
+.color-logo.alnahdi-logo {
+  height: 65px;
+  max-width: 180px;
+}
+.color-logo.abudawood-logo {
+  height: 40px;
+  max-width: 110px;
+}
+.color-logo.empire-logo {
+  height: 55px;
+  max-width: 155px;
+}
+
 @media (max-width: 1400px) {
   .flecha-hero-title {
     font-size: 72px;
@@ -409,6 +456,94 @@
   }
   .home_header_subheading-right {
     text-align: center;
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 640px) {
+  .color-logo {
+    height: 40px;
+    max-width: 120px;
+  }
+  
+  .color-logo.shiftat-logo {
+    height: 43px;
+    max-width: 125px;
+  }
+  
+  .color-logo.rotana-logo {
+    height: 46px;
+    max-width: 135px;
+  }
+  
+  .color-logo.ncmh-logo {
+    height: 56px;
+    max-width: 160px;
+  }
+  
+  .color-logo.rcmc-logo {
+    height: 68px;
+    max-width: 200px;
+  }
+  
+  .color-logo.large-text-logo {
+    height: 48px;
+    max-width: 135px;
+  }
+  .color-logo.alnahdi-logo {
+    height: 52px;
+    max-width: 145px;
+  }
+  .color-logo.abudawood-logo {
+    height: 32px;
+    max-width: 90px;
+  }
+  .color-logo.empire-logo {
+    height: 44px;
+    max-width: 125px;
+  }
+}
+@media (max-width: 480px) {
+  .color-logo {
+    height: 36px;
+    max-width: 100px;
+  }
+  
+  .color-logo.shiftat-logo {
+    height: 40px;
+    max-width: 110px;
+  }
+  
+  .color-logo.rotana-logo {
+    height: 42px;
+    max-width: 120px;
+  }
+  
+  .color-logo.ncmh-logo {
+    height: 50px;
+    max-width: 140px;
+  }
+  
+  .color-logo.rcmc-logo {
+    height: 60px;
+    max-width: 180px;
+  }
+  
+  .color-logo.large-text-logo {
+    height: 44px;
+    max-width: 120px;
+  }
+  .color-logo.alnahdi-logo {
+    height: 48px;
+    max-width: 130px;
+  }
+  .color-logo.abudawood-logo {
+    height: 28px;
+    max-width: 80px;
+  }
+  .color-logo.empire-logo {
+    height: 40px;
+    max-width: 110px;
   }
 }
 
