@@ -21,9 +21,9 @@ export default function Home() {
 
           {/* Right side buttons */}
           <div className="flex items-center space-x-4">
-            <button className="nav-login-button-centered hidden sm:block">Portfolio</button>
+            <button className="nav-login-button-centered hidden sm:block">My Work</button>
             <button className="nav-button-strategy">
-              Strategy
+              Consultation
             </button>
           </div>
 
@@ -81,7 +81,7 @@ export default function Home() {
                   type="submit"
                   className="subscribe-button"
                 >
-                  Strategy
+                  Consult Me
                 </button>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function Home() {
                   Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
                 </p>
                 <button className="services-button">
-                  Explore Programs
+                  Book Consultation
                 </button>
               </div>
 
@@ -380,11 +380,6 @@ export default function Home() {
           </p>
 
           <form className="max-w-md mx-auto space-y-4">
-            <input
-              type="email"
-              placeholder="Business Email"
-              className="formkit-input w-full"
-            />
             <button
               type="submit"
               className="subscribe-button w-full"
@@ -392,8 +387,6 @@ export default function Home() {
               Contact
             </button>
           </form>
-
-          <p className="text-sm text-gray-500 mt-4">No pitch, no pressure. Just actionable insights you can use immediately.</p>
         </div>
       </section>
 

@@ -159,7 +159,7 @@
   font-weight: 300;
   padding: 0 17.0512px;
   margin: 0px 0.454699px;
-  border: 1px solid #001C46;
+  border: 0.5px solid #001C46;
   border-radius: 9999px;
   background-color: transparent;
   cursor: pointer;
@@ -167,7 +167,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 68.52px;
+  width: 80.52px;
   height: 31.26px;
   box-sizing: border-box;
   transition: all 0.2s ease;
@@ -350,7 +350,7 @@
   border: none;
   border-radius: 9999px;
   cursor: pointer;
-  width: 102.31px;
+  width: 110.31px;
   height: 42.35px;
   box-sizing: border-box;
   margin: 0;
@@ -422,15 +422,15 @@
 
 .services-number {
   font-family: 'Flecha S', sans-serif;
-  font-size: 34.1024px;
-  font-weight: normal;
+  font-size: 30.1024px;
+  font-weight: medium;
   color: #50C0FF;
 }
 
 .services-title {
   font-family: 'Flecha S', sans-serif;
   font-size: 22.735px;
-  font-weight: normal;
+  font-weight: bold;
   color: #FFFFFF;
   line-height: 1.2;
 }
