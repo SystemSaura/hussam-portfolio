@@ -338,7 +338,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-custom-hero">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-12 mb-16">
             <h2 className="flecha-section-heading leading-tight">
@@ -370,7 +370,7 @@ export default function Home() {
           <h3 className="home_header_subheading mb-8">Ready to grow predictably?</h3>
 
           <p className="work-sans-body mb-8 leading-relaxed">
-            Get a free 30-minute strategy session where we'll identify the biggest growth opportunities in your current marketing approach.
+            Get a free 30-minute session to identify your biggest growth opportunities.
           </p>
 
           <form className="max-w-md mx-auto space-y-4">
@@ -378,7 +378,7 @@ export default function Home() {
               type="submit"
               className="subscribe-button w-full"
             >
-              Contact
+              Book Now
             </button>
           </form>
         </div>
