@@ -13,6 +13,12 @@ export default function Home() {
   const leftHeadingRef = useRef<HTMLDivElement>(null);
   const thirdServiceRef = useRef<HTMLDivElement>(null);
   const servicesContainerRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLElement>(null);
+  const portfolioRef = useRef<HTMLElement>(null);
+
+  const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -78,15 +84,15 @@ export default function Home() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-0">
-            <a href="#" className="nav-link">About</a>
-            <a href="#" className="nav-link">Case Studies</a>
-            <a href="#" className="nav-link">Services</a>
-            <a href="#" className="nav-link">Work</a>
+            <button onClick={() => scrollToSection(aboutRef)} className="nav-link">About</button>
+            <button onClick={() => scrollToSection(portfolioRef)} className="nav-link">Portfolio</button>
+            <button onClick={() => scrollToSection(servicesRef)} className="nav-link">Services</button>
           </nav>
 
           {/* Right side buttons */}
           <div className="flex items-center space-x-4">
-            <button className="nav-login-button-centered hidden sm:block">My Work</button>
+            {/* <button className="nav-login-button-centered hidden sm:block">My Work</button> */}
+            {/* Commented out for future use when full portfolio page is ready */}
             <button className="nav-button-strategy">
               Consultation
             </button>
@@ -137,16 +143,17 @@ export default function Home() {
             <div className="home_header_form-wrap">
               <h3 className="home_header_subheading-right mb-6">Start here.</h3>
               <div className="seva-fields formkit-fields">
-                <input
-                  type="email"
-                  placeholder="Business Email"
-                  className="formkit-input"
-                />
                 <button
-                  type="submit"
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="formkit-input"
+                >
+                  Book Free Consultation
+                </button>
+                <button
+                  type="button"
                   className="subscribe-button"
                 >
-                  Consult Me
+                  My Work
                 </button>
               </div>
             </div>
@@ -187,7 +194,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="bg-custom-dark-blue py-20 text-white">
+      <section ref={aboutRef} className="bg-custom-dark-blue py-20 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-12">
             <div className="w-40 h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">
@@ -229,9 +236,10 @@ export default function Home() {
           </div>
 
           <div className="mt-12">
-            <button className="border border-white text-white hover:bg-white hover:text-blue-900 px-6 py-3 rounded-full font-medium transition-colors">
+            {/* <button className="border border-white text-white hover:bg-white hover:text-blue-900 px-6 py-3 rounded-full font-medium transition-colors">
               Discover My Work
-            </button>
+            </button> */}
+            {/* Commented out for future use when full portfolio page is ready */}
           </div>
         </div>
       </section>
@@ -263,7 +271,10 @@ export default function Home() {
                 <p className="services-description mb-6 leading-relaxed">
                   Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
                 </p>
-                <button className="services-button">
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="services-button"
+                >
                   Book Audit
                 </button>
               </div>
@@ -275,7 +286,10 @@ export default function Home() {
                 <p className="services-description mb-6 leading-relaxed">
                   Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
                 </p>
-                <button className="services-button">
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="services-button"
+                >
                   Book Consultation
                 </button>
               </div>
@@ -287,7 +301,10 @@ export default function Home() {
                 <p className="services-description mb-6 leading-relaxed">
                   Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.
                 </p>
-                <button className="services-button">
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="services-button"
+                >
                   Schedule Consultation
                 </button>
               </div>
@@ -297,7 +314,7 @@ export default function Home() {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-20 bg-white">
+      <section ref={portfolioRef} className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="flecha-section-heading mb-4">
@@ -450,14 +467,14 @@ export default function Home() {
             Get a free 30-minute session to identify your biggest growth opportunities.
           </p>
 
-          <form className="max-w-md mx-auto space-y-4">
+          <div className="max-w-md mx-auto space-y-4">
             <button
-              type="submit"
+              onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
               className="subscribe-button w-full"
             >
               Book Now
             </button>
-          </form>
+          </div>
         </div>
       </section>
 
@@ -473,28 +490,6 @@ export default function Home() {
               <span className="text-gray-400 text-sm">© 2025 Saura Agency LLC</span>
               <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">Privacy Policy</Link>
               <Link href="/terms" className="text-gray-400 hover:text-white text-sm">Terms</Link>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">More About Me</a>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/1536601012.svg"
-                  alt="Twitter"
-                  width={20}
-                  height={20}
-                  className="filter invert"
-                />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/51193599.svg"
-                  alt="LinkedIn"
-                  width={20}
-                  height={20}
-                  className="filter invert"
-                />
-              </a>
             </div>
           </div>
         </div>
