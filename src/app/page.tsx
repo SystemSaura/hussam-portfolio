@@ -183,7 +183,7 @@ export default function Home() {
               <div>
                 <div className="flex items-center mb-4">
                   <div className="services-number mr-4">01</div>
-                  <h3 className="services-title">Marketing Strategy and Systems Audit</h3>
+                  <h3 className="services-title">Marketing Strategy and Systems Audit Done For You</h3>
                 </div>
                 <p className="services-description mb-6 leading-relaxed">
                   Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
