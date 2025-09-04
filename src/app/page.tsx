@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-// test
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -168,14 +166,14 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="bg-gradient-to-br from-blue-500 to-blue-600 py-20 text-white">
+      <section className="bg-custom-blue py-20 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left side */}
             <div>
-              <h2 className="flecha-section-heading-white leading-tight">
-                Three ways I help you<br />
-                <span className="text-cyan-300">scale faster.</span>
+              <h2 className="services-main-heading leading-tight">
+                3 ways I help you<br />
+                <span className="services-main-heading-accent">scale faster.</span>
               </h2>
             </div>
 
@@ -183,36 +181,36 @@ export default function Home() {
             <div className="space-y-12">
               {/* Service 1 */}
               <div>
-                <div className="text-6xl font-bold text-blue-300 mb-4">01</div>
-                <h3 className="text-xl font-bold mb-4">Marketing Strategy & Systems Audit</h3>
-                <p className="text-blue-100 mb-6 leading-relaxed work-sans-body-light">
+                <div className="services-number mb-4">01</div>
+                <h3 className="services-title mb-4">Marketing Strategy & Systems Audit</h3>
+                <p className="services-description mb-6 leading-relaxed">
                   Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
                 </p>
-                <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
+                <button className="services-button">
                   Book Audit
                 </button>
               </div>
 
               {/* Service 2 */}
               <div>
-                <div className="text-6xl font-bold text-blue-300 mb-4">02</div>
-                <h3 className="text-xl font-bold mb-4">Growth Marketing Implementation</h3>
-                <p className="text-blue-100 mb-6 leading-relaxed work-sans-body-light">
+                <div className="services-number mb-4">02</div>
+                <h3 className="services-title mb-4">Growth Marketing Implementation</h3>
+                <p className="services-description mb-6 leading-relaxed">
                   Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
                 </p>
-                <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
+                <button className="services-button">
                   Explore Programs
                 </button>
               </div>
 
               {/* Service 3 */}
               <div>
-                <div className="text-6xl font-bold text-blue-300 mb-4">03</div>
-                <h3 className="text-xl font-bold mb-4">Marketing Team Training & Optimization</h3>
-                <p className="text-blue-100 mb-6 leading-relaxed work-sans-body-light">
+                <div className="services-number mb-4">03</div>
+                <h3 className="services-title mb-4">Marketing Team Training & Optimization</h3>
+                <p className="services-description mb-6 leading-relaxed">
                   Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.
                 </p>
-                <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
+                <button className="services-button">
                   Schedule Consultation
                 </button>
               </div>
