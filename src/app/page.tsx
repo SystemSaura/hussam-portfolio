@@ -1,6 +1,70 @@
+"use client";
+
 import Image from "next/image";
+import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
+  const [isSticky, setIsSticky] = useState(false);
+  const [shouldFadeOut, setShouldFadeOut] = useState(false);
+  const [stickyStyles, setStickyStyles] = useState<React.CSSProperties>({});
+  
+  const servicesRef = useRef<HTMLElement>(null);
+  const leftHeadingRef = useRef<HTMLDivElement>(null);
+  const thirdServiceRef = useRef<HTMLDivElement>(null);
+  const servicesContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!servicesRef.current || !leftHeadingRef.current || !thirdServiceRef.current || !servicesContainerRef.current) {
+        return;
+      }
+
+      const servicesRect = servicesRef.current.getBoundingClientRect();
+      const containerRect = servicesContainerRef.current.getBoundingClientRect();
+      const thirdServiceRect = thirdServiceRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Sticky logic
+      const shouldBeSticky = servicesRect.top <= 120 && servicesRect.bottom > windowHeight * 0.3;
+
+      if (shouldBeSticky !== isSticky) {
+        setIsSticky(shouldBeSticky);
+        
+        if (shouldBeSticky) {
+          // Calculate positioning
+          const containerLeft = containerRect.left;
+          const gridGap = 64; // 4rem gap between grid columns  
+          const leftColumnWidth = (containerRect.width - gridGap) / 2;
+          
+          setStickyStyles({
+            position: 'fixed',
+            top: '120px',
+            left: `${containerLeft}px`,
+            width: `${leftColumnWidth}px`,
+            zIndex: 10,
+          });
+        } else {
+          setStickyStyles({});
+        }
+      }
+
+      // Fade logic
+      const shouldFade = thirdServiceRect.bottom <= windowHeight * 0.4;
+      if (shouldFade !== shouldFadeOut) {
+        setShouldFadeOut(shouldFade);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, [isSticky, shouldFadeOut]);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -166,15 +230,21 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="bg-custom-blue py-20 text-white">
-        <div className="services_container">
+      <section ref={servicesRef} className="bg-custom-blue py-20 text-white">
+        <div ref={servicesContainerRef} className="services_container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left side */}
-            <div>
-              <h2 className="services-main-heading leading-tight">
-                3 ways I help you<br />
-                <span className="services-main-heading-accent">scale faster.</span>
-              </h2>
+            <div className="services-heading-wrapper">
+              <div 
+                ref={leftHeadingRef}
+                className={`services-heading-content ${isSticky ? 'is-sticky-active' : ''} ${shouldFadeOut ? 'services-heading-fade' : ''}`}
+                style={stickyStyles}
+              >
+                <h2 className="services-main-heading leading-tight">
+                  3 ways I help you<br />
+                  <span className="services-main-heading-accent">scale faster.</span>
+                </h2>
+              </div>
             </div>
 
             {/* Right side */}
@@ -204,7 +274,7 @@ export default function Home() {
               </div>
 
               {/* Service 3 */}
-              <div>
+              <div ref={thirdServiceRef}>
                 <div className="services-number mb-4">03</div>
                 <h3 className="services-title mb-4">Marketing Team Training and Optimization</h3>
                 <p className="services-description mb-6 leading-relaxed">

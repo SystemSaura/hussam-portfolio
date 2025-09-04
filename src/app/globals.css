@@ -569,6 +569,14 @@
   .flecha-section-heading {
     font-size: 51px;
   }
+  /* Disable sticky behavior on tablet and mobile */
+  .services-heading-content.is-sticky-active {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    width: unset !important;
+    z-index: unset !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -620,6 +628,14 @@
   }
   .home_header_subheading-right {
     text-align: center;
+  }
+  /* Ensure sticky behavior is disabled on mobile */
+  .services-heading-content.is-sticky-active {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    width: unset !important;
+    z-index: unset !important;
   }
 }
 
@@ -723,4 +739,39 @@
 
 .bg-custom-blue {
   background-color: #2762F8;
+}
+
+/* Sticky Services Heading Styles */
+.services-heading-wrapper {
+  position: relative;
+}
+
+.services-heading-content {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* CRITICAL FIX: Force inline styles to override with higher specificity */
+.services-heading-content.is-sticky-active[style*="position: fixed"] {
+  position: fixed !important;
+}
+
+.services-heading-content.is-sticky-active[style*="top:"] {
+  top: 120px !important;
+}
+
+.services-heading-content.is-sticky-active[style*="left:"] {
+  /* Left position is dynamically calculated in JavaScript */
+}
+
+.services-heading-content.is-sticky-active[style*="width:"] {
+  /* Width is dynamically calculated in JavaScript */
+}
+
+.services-heading-content.is-sticky-active[style*="z-index:"] {
+  z-index: 10 !important;
+}
+
+.services-heading-fade {
+  opacity: 0 !important;
+  transform: translateY(-20px) !important;
 }
