@@ -181,8 +181,10 @@ export default function Home() {
             <div className="space-y-12">
               {/* Service 1 */}
               <div>
-                <div className="services-number mb-4">01</div>
-                <h3 className="services-title mb-4">Marketing Strategy & Systems Audit</h3>
+                <div className="flex items-center mb-4">
+                  <div className="services-number mr-4">01</div>
+                  <h3 className="services-title">Marketing Strategy & Systems Audit</h3>
+                </div>
                 <p className="services-description mb-6 leading-relaxed">
                   Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
                 </p>
@@ -192,9 +194,11 @@ export default function Home() {
               </div>
 
               {/* Service 2 */}
-              <div>
-                <div className="services-number mb-4">02</div>
-                <h3 className="services-title mb-4">Growth Marketing Implementation</h3>
+             <div>
+                <div className="flex items-center mb-4">
+                  <div className="services-number mr-4">02</div>
+                  <h3 className="services-title">Growth Marketing Implementation</h3>
+                </div>
                 <p className="services-description mb-6 leading-relaxed">
                   Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
                 </p>
@@ -205,8 +209,10 @@ export default function Home() {
 
               {/* Service 3 */}
               <div>
-                <div className="services-number mb-4">03</div>
-                <h3 className="services-title mb-4">Marketing Team Training & Optimization</h3>
+                <div className="flex items-center mb-4">
+                  <div className="services-number mr-4">03</div>
+                  <h3 className="services-title">Marketing Team Training & Optimization</h3>
+                </div>
                 <p className="services-description mb-6 leading-relaxed">
                   Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.
                 </p>
