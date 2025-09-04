@@ -145,15 +145,15 @@ export default function Home() {
               <div className="seva-fields formkit-fields">
                 <button
                   onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                  className="formkit-input"
+                  className="subscribe-button w-full min-w-max whitespace-nowrap h-12"
                 >
-                  Book Free Consultation
+                  Book Consultation
                 </button>
                 <button
                   type="button"
-                  className="subscribe-button"
+                  className="nav-button-strategy w-full min-w-max whitespace-nowrap h-12"
                 >
-                  My Work
+                  Discover My Work
                 </button>
               </div>
             </div>
