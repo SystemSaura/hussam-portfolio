@@ -162,17 +162,24 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center">
-            <div className="grid grid-cols-5 gap-x-12 gap-y-8 items-center justify-items-center max-w-4xl">
-              <img src="/Logos/shiftat.webp" alt="Shiftat" className="color-logo shiftat-logo" />
-              <img src="/Logos/abudawood.webp" alt="Abudawood" className="color-logo abudawood-logo" />
-              <img src="/Logos/kapsarc.webp" alt="KAPSARC" className="color-logo" />
-              <img src="/Logos/alnahdi.webp" alt="Al Nahdi" className="color-logo alnahdi-logo" />
-              <img src="/Logos/saeq.webp" alt="SAEQ" className="color-logo" />
-              <img src="/Logos/empirerealestate.webp" alt="Empire Real Estate" className="color-logo empire-logo" />
-              <img src="/Logos/reviva.webp" alt="reviva" className="color-logo" />
-              <img src="/Logos/ncmh.webp" alt="NCMH" className="color-logo ncmh-logo" />
-              <img src="/Logos/rcmc.webp" alt="RCMC" className="color-logo rcmc-logo" />
-              <img src="/Logos/rotana.webp" alt="Rotana" className="color-logo rotana-logo" />
+            <div className="logo-grid-container">
+              {/* Row 1: 3 lighter logos + 2 heavier logos for balance */}
+              <div className="logo-row">
+                <img src="/Logos/shiftat.webp" alt="Shiftat" className="color-logo shiftat-logo" />
+                <img src="/Logos/empirerealestate.webp" alt="Empire Real Estate" className="color-logo empire-logo" />
+                <img src="/Logos/kapsarc.webp" alt="KAPSARC" className="color-logo" />
+                <img src="/Logos/alnahdi.webp" alt="Al Nahdi" className="color-logo alnahdi-logo" />
+                <img src="/Logos/saeq.webp" alt="SAEQ" className="color-logo" />
+              </div>
+              
+              {/* Row 2: Balanced visual weight distribution */}
+              <div className="logo-row">
+                <img src="/Logos/abudawood.webp" alt="Abudawood" className="color-logo abudawood-logo" />
+                <img src="/Logos/reviva.webp" alt="reviva" className="color-logo" />
+                <img src="/Logos/ncmh.webp" alt="NCMH" className="color-logo ncmh-logo" />
+                <img src="/Logos/rcmc.webp" alt="RCMC" className="color-logo rcmc-logo" />
+                <img src="/Logos/rotana.webp" alt="Rotana" className="color-logo rotana-logo" />
+              </div>
             </div>
           </div>
         </div>
