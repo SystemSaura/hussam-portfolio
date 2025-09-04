@@ -172,7 +172,7 @@ export default function PrivacyPolicy() {
                 <span className="text-gray-400 text-sm">© 2025 Saura Agency LLC</span>
                 <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">Privacy Policy</Link>
                 <Link href="/terms" className="text-gray-400 hover:text-white text-sm">Terms</Link>
-                <a href="#" className="text-gray-400 hover:text-white text-sm">More About Me</a>
+                <a href="#" className="text-gray-400 hover:text-white text-sm">About Me</a>
             </div>
 
             <div className="flex items-center space-x-4">
