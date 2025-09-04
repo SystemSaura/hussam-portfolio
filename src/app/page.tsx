@@ -94,7 +94,7 @@ export default function Home() {
             {/* <button className="nav-login-button-centered hidden sm:block">My Work</button> */}
             {/* Commented out for future use when full portfolio page is ready */}
             <button className="nav-button-strategy">
-              Consultation
+              Book Consultation
             </button>
           </div>
 
