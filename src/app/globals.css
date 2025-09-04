@@ -851,3 +851,31 @@
 .text-11px {
   font-size: 11px;
 }
+
+.deconstructed-q {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.q-curve {
+  color: #2762F8;
+  display: inline-block;
+  animation: curve-float 2s ease-in-out infinite;
+}
+
+.q-dot {
+  color: #2762F8;
+  display: inline-block;
+  margin-left: 2px;
+  animation: dot-bounce 2s ease-in-out infinite 0.3s;
+}
+
+@keyframes curve-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes dot-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}

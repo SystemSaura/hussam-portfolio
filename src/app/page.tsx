@@ -122,7 +122,12 @@ export default function Home() {
           <div className="home_header_content">
             {/* Left: Want to join us section */}
             <div className="home_header_text-wrap">
-              <h2 className="home_header_subheading">Tired of guessing?</h2>
+              <h2 className="home_header_subheading">
+                Tired of guessing<span className="deconstructed-q">
+                  <span className="q-curve">⌐</span>
+                  <span className="q-dot">•</span>
+                </span>
+              </h2>
               <p className="home_header_text1">
                 Your marketing budget deserves better than "spray and pray." Get strategies that turn GCC market insights into predictable pipeline growth.
               </p>
