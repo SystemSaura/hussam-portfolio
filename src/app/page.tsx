@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [isSticky, setIsSticky] = useState(false);
@@ -466,22 +467,12 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-8 mb-4 md:mb-0">
               <span className="text-xl font-semibold">Hussam Baaka</span>
-              <button className="flex items-center text-gray-400 hover:text-white">
-                Resources
-                <Image
-                  src="https://ext.same-assets.com/3287453319/305373772.svg"
-                  alt="External link"
-                  width={16}
-                  height={16}
-                  className="ml-2 filter invert"
-                />
-              </button>
             </div>
 
             <div className="flex items-center space-x-6 mb-4 md:mb-0">
-              <span className="text-gray-400 text-sm">© 2024 Hussam Baaka</span>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Terms</a>
+              <span className="text-gray-400 text-sm">© 2025 Saura Agency LLC</span>
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">Privacy Policy</Link>
+              <Link href="/terms" className="text-gray-400 hover:text-white text-sm">Terms</Link>
               <a href="#" className="text-gray-400 hover:text-white text-sm">More About Me</a>
             </div>
 
