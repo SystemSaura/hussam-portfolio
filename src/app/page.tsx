@@ -167,7 +167,7 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="bg-custom-blue py-20 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="services_container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left side */}
             <div>
@@ -183,7 +183,7 @@ export default function Home() {
               <div>
                 <div className="flex items-center mb-4">
                   <div className="services-number mr-4">01</div>
-                  <h3 className="services-title">Marketing Strategy & Systems Audit</h3>
+                  <h3 className="services-title">Marketing Strategy and Systems Audit</h3>
                 </div>
                 <p className="services-description mb-6 leading-relaxed">
                   Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
@@ -197,7 +197,7 @@ export default function Home() {
              <div>
                 <div className="flex items-center mb-4">
                   <div className="services-number mr-4">02</div>
-                  <h3 className="services-title">Growth Marketing Implementation</h3>
+                  <h3 className="services-title">Growth Marketing Implementation and Monitoring</h3>
                 </div>
                 <p className="services-description mb-6 leading-relaxed">
                   Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
@@ -211,7 +211,7 @@ export default function Home() {
               <div>
                 <div className="flex items-center mb-4">
                   <div className="services-number mr-4">03</div>
-                  <h3 className="services-title">Marketing Team Training & Optimization</h3>
+                  <h3 className="services-title">Marketing Team Training and Optimization</h3>
                 </div>
                 <p className="services-description mb-6 leading-relaxed">
                   Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.

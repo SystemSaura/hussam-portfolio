@@ -263,6 +263,22 @@
   margin: 0 auto;
 }
 
+.services_container {
+  width: 1200px;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: calc(50% - 600px + (852.56px / 2 - 426.28px));
+}
+
+@media (max-width: 1200px) {
+  .services_container {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .home_header_content {
   width: 852.56px;
   height: 164.84px;
