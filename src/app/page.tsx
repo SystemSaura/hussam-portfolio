@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="bg-gradient-to-b from-blue-900 to-blue-800 py-20 text-white">
+      <section className="bg-custom-dark-blue py-20 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-12">
             <div className="w-40 h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">

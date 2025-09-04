@@ -809,6 +809,10 @@
   background-color: #2762F8;
 }
 
+.bg-custom-dark-blue {
+  background-color: #001C46;
+}
+
 /* Sticky Services Heading Styles */
 .services-heading-wrapper {
   position: relative;
