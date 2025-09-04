@@ -158,7 +158,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12">
-            <button className="border border-white text-white hover:bg-white hover:text-blue-900 px-6 py-3 rounded-lg font-medium transition-colors">
+            <button className="border border-white text-white hover:bg-white hover:text-blue-900 px-6 py-3 rounded-full font-medium transition-colors">
               Discover My Work
             </button>
           </div>
@@ -330,7 +330,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <button className="border border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-medium">
+            <button className="border border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-full font-medium">
               View All Case Studies
             </button>
           </div>
