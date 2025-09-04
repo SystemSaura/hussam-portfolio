@@ -200,20 +200,18 @@ export default function Home() {
             />
             </div>
           </div>
-
-          <h2 className="flecha-hero-title-about text-white mb-8 leading-tight">
-            Hi—I'm Hussam Baaka. I turn marketing<br />
-            chaos into predictable growth systems.
-          </h2>
-
+            <h2 className="flecha-hero-title-about text-white mb-8 leading-tight">
+              Hi. I'm Hussam Baaka. I make every marketing<br />
+              Riyal / Dirham work harder for your growth.
+            </h2>
           <div className="mb-8">
-            <span className="text-cyan-400 text-lg font-medium">[ A note to growth-focused leaders ]</span>
+            <span className="text-cyan-400 text-11px font-medium">[ A note to growth-focused leaders ]</span>
           </div>
 
           <div className="space-y-6 work-sans-body-white leading-relaxed max-w-3xl mx-auto">
             <p>Your marketing team isn't lazy. Your strategy is just scattered.</p>
 
-            <p>I've seen too many GCC companies burn through budgets on tactics that don't connect—social campaigns that don't convert, content that doesn't engage, and "brand awareness" that doesn't drive business.</p>
+            <p>I've seen too many GCC companies burn through budgets on campaigns that don't convert, content that doesn't engage, and "brand awareness" that doesn't drive business.</p>
 
             <p>The problem isn't your people or your market. It's alignment.</p>
 
@@ -226,6 +224,7 @@ export default function Home() {
             <p>At the end of the day, marketing should do one thing:</p>
 
             <p className="text-cyan-400 font-medium">Generate predictable, scalable business results you can bank on.</p>
+         
           </div>
 
           <div className="mt-12">

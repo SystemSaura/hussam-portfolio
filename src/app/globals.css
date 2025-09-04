@@ -397,7 +397,7 @@
 
 .flecha-hero-title-about {
   font-family: 'Flecha S', sans-serif;
-  font-size: 48px;
+  font-size:34px;
   font-weight: normal;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -846,4 +846,8 @@
 .services-heading-fade {
   opacity: 0 !important;
   transform: translateY(-20px) !important;
+}
+
+.text-11px {
+  font-size: 11px;
 }
