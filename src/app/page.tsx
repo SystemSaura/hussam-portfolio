@@ -73,7 +73,7 @@ export default function Home() {
         <div className="nav-container">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="logo-name">Hussam Baaka <span className="cursor-blink">|</span></span>
+            <Link href="/" className="logo-name">Hussam Baaka <span className="cursor-blink">|</span></Link>
           </div>
 
           {/* Navigation */}
@@ -466,7 +466,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-8 mb-4 md:mb-0">
-              <span className="text-xl font-semibold">Hussam Baaka</span>
+              <Link href="/" className="text-xl font-semibold">Hussam Baaka</Link>
             </div>
 
             <div className="flex items-center space-x-6 mb-4 md:mb-0">
