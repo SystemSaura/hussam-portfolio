@@ -16,14 +16,14 @@ export default function Home() {
             <a href="#" className="nav-link">About</a>
             <a href="#" className="nav-link">Case Studies</a>
             <a href="#" className="nav-link">Services</a>
-            <a href="#" className="nav-link">Contact</a>
+            <a href="#" className="nav-link">Work</a>
           </nav>
 
           {/* Right side buttons */}
           <div className="flex items-center space-x-4">
-            <button className="nav-login-button hidden sm:block">Portfolio</button>
-            <button className="nav-button">
-              Book Free Strategy Call
+            <button className="nav-login-button-centered hidden sm:block">Portfolio</button>
+            <button className="nav-button-strategy">
+              Strategy
             </button>
           </div>
 
@@ -81,7 +81,7 @@ export default function Home() {
                   type="submit"
                   className="subscribe-button"
                 >
-                  Get Strategy
+                  Strategy
                 </button>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
           </div>
 
-          <h2 className="text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+          <h2 className="flecha-hero-title-about text-white mb-8 leading-tight">
             Hi—I'm Hussam Baaka. I turn marketing<br />
             chaos into predictable growth systems.
           </h2>
@@ -139,7 +139,7 @@ export default function Home() {
             <span className="text-cyan-400 text-lg font-medium">[ A note to growth-focused leaders ]</span>
           </div>
 
-          <div className="space-y-6 text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="space-y-6 work-sans-body-white leading-relaxed max-w-3xl mx-auto">
             <p>Your marketing team isn't lazy. Your strategy is just scattered.</p>
 
             <p>I've seen too many GCC companies burn through budgets on tactics that don't connect—social campaigns that don't convert, content that doesn't engage, and "brand awareness" that doesn't drive business.</p>
@@ -159,7 +159,7 @@ export default function Home() {
 
           <div className="mt-12">
             <button className="border border-white text-white hover:bg-white hover:text-blue-900 px-6 py-3 rounded-lg font-medium transition-colors">
-              See My Work
+              Discover My Work
             </button>
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left side */}
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
+              <h2 className="flecha-section-heading-white leading-tight">
                 Three ways I help you<br />
                 <span className="text-cyan-300">scale faster.</span>
               </h2>
@@ -183,7 +183,7 @@ export default function Home() {
               <div>
                 <div className="text-6xl font-bold text-blue-300 mb-4">01</div>
                 <h3 className="text-xl font-bold mb-4">Marketing Strategy & Systems Audit</h3>
-                <p className="text-blue-100 mb-6 leading-relaxed">
+                <p className="text-blue-100 mb-6 leading-relaxed work-sans-body-light">
                   Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
                 </p>
                 <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
@@ -195,7 +195,7 @@ export default function Home() {
               <div>
                 <div className="text-6xl font-bold text-blue-300 mb-4">02</div>
                 <h3 className="text-xl font-bold mb-4">Growth Marketing Implementation</h3>
-                <p className="text-blue-100 mb-6 leading-relaxed">
+                <p className="text-blue-100 mb-6 leading-relaxed work-sans-body-light">
                   Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
                 </p>
                 <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
@@ -207,7 +207,7 @@ export default function Home() {
               <div>
                 <div className="text-6xl font-bold text-blue-300 mb-4">03</div>
                 <h3 className="text-xl font-bold mb-4">Marketing Team Training & Optimization</h3>
-                <p className="text-blue-100 mb-6 leading-relaxed">
+                <p className="text-blue-100 mb-6 leading-relaxed work-sans-body-light">
                   Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.
                 </p>
                 <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium">
@@ -223,13 +223,13 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="flecha-section-heading mb-4">
               Recent Client Results
             </h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Case Study 1 */}
+            {/* Case Study 1 - Shiftat */}
             <div className="group cursor-pointer">
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105 relative overflow-hidden">
                 <div className="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden border-2 border-white">
@@ -242,7 +242,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="text-white">
-                  <div className="text-sm opacity-80 mb-2">Healthcare Technology</div>
+                  <div className="text-sm opacity-80 mb-2">Shiftat</div>
                   <div className="text-2xl font-bold mb-4">187%</div>
                   <div className="text-lg">Lead Quality Increase</div>
                 </div>
@@ -257,12 +257,12 @@ export default function Home() {
                   className="inline ml-2"
                 />
               </h3>
-              <p className="text-gray-600 text-sm">
-                Transformed a healthcare tech company's lead gen from quantity-focused to quality-driven, resulting in 3x more qualified opportunities and 40% shorter sales cycles.
+              <p className="work-sans-body text-gray-600">
+                Transformed Shiftat's lead gen from quantity-focused to quality-driven, resulting in 3x more qualified opportunities and 40% shorter sales cycles.
               </p>
             </div>
 
-            {/* Case Study 2 */}
+            {/* Case Study 2 - Influence */}
             <div className="group cursor-pointer">
               <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105 relative overflow-hidden">
                 <div className="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden border-2 border-white">
@@ -275,7 +275,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="text-white">
-                  <div className="text-sm opacity-80 mb-2">Real Estate</div>
+                  <div className="text-sm opacity-80 mb-2">Influence</div>
                   <div className="text-2xl font-bold mb-4">$2.1M</div>
                   <div className="text-lg">Revenue Attributed</div>
                 </div>
@@ -290,12 +290,12 @@ export default function Home() {
                   className="inline ml-2"
                 />
               </h3>
-              <p className="text-gray-600 text-sm">
-                Built complete attribution system for luxury real estate developer, connecting every marketing dollar to actual sales revenue. Finally proved marketing's value to the C-suite.
+              <p className="work-sans-body text-gray-600">
+                Built complete attribution system for Influence, connecting every marketing dollar to actual sales revenue. Finally proved marketing's value to the C-suite.
               </p>
             </div>
 
-            {/* Case Study 3 */}
+            {/* Case Study 3 - Estater */}
             <div className="group cursor-pointer">
               <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105 relative overflow-hidden">
                 <div className="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden border-2 border-white">
@@ -308,7 +308,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="text-white">
-                  <div className="text-sm opacity-80 mb-2">Financial Services</div>
+                  <div className="text-sm opacity-80 mb-2">Estater</div>
                   <div className="text-2xl font-bold mb-4">340%</div>
                   <div className="text-lg">Conversion Lift</div>
                 </div>
@@ -323,8 +323,8 @@ export default function Home() {
                   className="inline ml-2"
                 />
               </h3>
-              <p className="text-gray-600 text-sm">
-                Redesigned entire customer onboarding experience for GCC fintech, balancing regulatory requirements with user experience. Result: highest conversion rates in company history.
+              <p className="work-sans-body text-gray-600">
+                Redesigned entire customer onboarding experience for Estater, balancing regulatory requirements with user experience. Result: highest conversion rates in company history.
               </p>
             </div>
           </div>
@@ -338,21 +338,21 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-custom-hero">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-12 mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="text-blue-500">Stop guessing</span><br />
+            <h2 className="flecha-section-heading leading-tight">
+              <span className="text-custom-blue">Stop guessing</span><br />
               what's working.
             </h2>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="text-blue-500">Stop explaining</span><br />
+            <h2 className="flecha-section-heading leading-tight">
+              <span className="text-custom-blue">Stop explaining</span><br />
               marketing spend.
             </h2>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              <span className="text-blue-500">Start scaling</span><br />
+            <h2 className="flecha-section-heading leading-tight">
+              <span className="text-custom-blue">Start scaling</span><br />
               with confidence.
             </h2>
           </div>
@@ -367,9 +367,9 @@ export default function Home() {
             />
           </div>
 
-          <h3 className="text-3xl font-bold text-gray-900 mb-8">Ready to grow predictably?</h3>
+          <h3 className="home_header_subheading mb-8">Ready to grow predictably?</h3>
 
-          <p className="text-gray-600 mb-8 leading-relaxed">
+          <p className="work-sans-body mb-8 leading-relaxed">
             Get a free 30-minute strategy session where we'll identify the biggest growth opportunities in your current marketing approach.
           </p>
 
@@ -377,13 +377,13 @@ export default function Home() {
             <input
               type="email"
               placeholder="Business Email"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+              className="formkit-input w-full"
             />
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium"
+              className="subscribe-button w-full"
             >
-              Book Free Strategy Call
+              Contact
             </button>
           </form>
 
@@ -413,7 +413,7 @@ export default function Home() {
               <span className="text-gray-400 text-sm">© 2024 Hussam Baaka</span>
               <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white text-sm">Terms</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Contact</a>
+              <a href="#" className="text-gray-400 hover:text-white text-sm">More About Me</a>
             </div>
 
             <div className="flex items-center space-x-4">

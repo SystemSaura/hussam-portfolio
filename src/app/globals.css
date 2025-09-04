@@ -92,6 +92,14 @@
   font-display: swap;
 }
 
+/* Hide Next.js development indicators */
+#__next-build-watcher,
+.__next-dev-overlay-backdrop,
+.__next-dev-overlay,
+[data-nextjs-scroll-focus-boundary] {
+  display: none !important;
+}
+
 .cursor-blink {
   color: #2762F8;
   animation: blink 1s infinite;
@@ -144,6 +152,48 @@
   display: inline-block;
 }
 
+.nav-login-button-centered {
+  color: #001C46;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11.3675px;
+  font-weight: 300;
+  padding: 0 17.0512px;
+  margin: 0px 0.454699px;
+  border: 1px solid #001C46;
+  border-radius: 9999px;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68.52px;
+  height: 31.26px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.nav-button-strategy {
+  background-color: #001C46;
+  color: #FFFFFF;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11.3675px;
+  font-weight: 300;
+  padding: 0 17.0512px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 31.26px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
 .nav-login-button {
   color: #001C46;
   font-family: 'Work Sans', sans-serif;
@@ -183,6 +233,17 @@
   height: 31.26px;
   box-sizing: border-box;
   transition: all 0.2s ease;
+}
+
+.nav-login-button-centered:hover {
+  background-color: #FFFFFF;
+  color: #2762F8;
+  border-color: #2762F8;
+}
+
+.nav-button-strategy:hover {
+  background-color: #2762F8;
+  color: #FFFFFF;
 }
 
 .nav-login-button:hover {
@@ -318,6 +379,14 @@
   overflow-wrap: normal;
 }
 
+.flecha-hero-title-about {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
 .flecha-section-heading {
   font-family: 'Flecha S', sans-serif;
   font-size: 34.1024px;
@@ -326,10 +395,32 @@
   line-height: 1.2;
 }
 
+.flecha-section-heading-white {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 34.1024px;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
 .work-sans-body {
   font-family: 'Work Sans', sans-serif;
   font-size: 12.7884px;
   color: #001C46;
+  line-height: 1.6;
+}
+
+.work-sans-body-white {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: #E5E7EB;
+  line-height: 1.6;
+}
+
+.work-sans-body-light {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  color: inherit;
   line-height: 1.6;
 }
 
