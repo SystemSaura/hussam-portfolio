@@ -92,14 +92,6 @@
   font-display: swap;
 }
 
-/* Hide Next.js development indicators */
-#__next-build-watcher,
-.__next-dev-overlay-backdrop,
-.__next-dev-overlay,
-[data-nextjs-scroll-focus-boundary] {
-  display: none !important;
-}
-
 .cursor-blink {
   color: #2762F8;
   animation: blink 1s infinite;
@@ -879,3 +871,4 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(3px); }
 }
+
