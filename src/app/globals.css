@@ -188,8 +188,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 110px;
-  height: 31.26px;
+  width: 135px;
+  height: 36px;
   box-sizing: border-box;
   transition: all 0.2s ease;
 }
@@ -261,6 +261,22 @@
   width: 852.56px;
   height: 457.54px;
   margin: 0 auto;
+}
+
+.services_container {
+  width: 1200px;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: calc(50% - 600px + (852.56px / 2 - 426.28px));
+}
+
+@media (max-width: 1200px) {
+  .services_container {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .home_header_content {
@@ -351,7 +367,7 @@
   border-radius: 9999px;
   cursor: pointer;
   width: 110.31px;
-  height: 42.35px;
+  height: 36px;
   box-sizing: border-box;
   margin: 0;
   flex-shrink: 0;
@@ -381,7 +397,7 @@
 
 .flecha-hero-title-about {
   font-family: 'Flecha S', sans-serif;
-  font-size: 48px;
+  font-size: 34px;
   font-weight: normal;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -403,7 +419,7 @@
   line-height: 1.2;
 }
 
-/* NEW CLASSES FOR SERVICES SECTION - MATCHING ACCESSIBILITY INSPECTOR */
+/* Services Section Styling */
 .services-main-heading {
   font-family: 'Flecha S', sans-serif;
   font-size: 51.1537px;
@@ -448,16 +464,16 @@
   font-size: 10.7991px;
   font-weight: normal;
   color: #FFFFFF;
-  background-color: #1E4ED8;
+  background-color: #001C46;
   border: none;
-  border-radius: 8px;
+  border-radius: 9999px;
   padding: 12px 24px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .services-button:hover {
-  background-color: #1E40AF;
+  background-color: #002A5C;
 }
 
 .work-sans-body {
@@ -479,6 +495,78 @@
   font-size: 14px;
   color: inherit;
   line-height: 1.6;
+}
+
+/* NEW LOGO GRID SYSTEM - Replaces rigid 5-column grid with flexible row-based layout */
+.logo-grid-container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logo-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Base logo styling - consistent foundation */
+.color-logo {
+  height: 50px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  opacity: 1;
+  transition: all 0.3s ease;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+.color-logo:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+/* Enhanced individual logo sizing for better visual balance */
+.color-logo.shiftat-logo {
+  height: 58px;
+  max-width: 160px;
+}
+
+.color-logo.abudawood-logo {
+  height: 44px;
+  max-width: 120px;
+}
+
+.color-logo.alnahdi-logo {
+  height: 70px;
+  max-width: 190px;
+}
+
+.color-logo.ncmh-logo {
+  height: 85px;
+  max-width: 180px;
+}
+
+.color-logo.rcmc-logo {
+  height: 90px;
+  max-width: 200px;
+}
+
+.color-logo.empire-logo {
+  height: 60px;
+  max-width: 165px;
+}
+
+.color-logo.rotana-logo {
+  height: 62px;
+  max-width: 175px;
 }
 
 /* TESTIMONIALS SECTION V2 - IMPROVED WITH FLECHA S FONT CONSISTENCY */
@@ -636,81 +724,109 @@
   color: #2563EB;
 }
 
-/* Base logo styling - consistent foundation */
-.color-logo {
-  height: 50px;
-  width: auto;
-  max-width: 140px;
-  object-fit: contain;
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-.color-logo:hover {
-  transform: scale(1.08);
-  opacity: 0.9;
-}
-/* Specific logo adjustments for readability */
-.color-logo.shiftat-logo {
-  height: 54px;
-  max-width: 150px;
-}
-.color-logo.rotana-logo {
-  height: 58px;
-  max-width: 165px;
-}
-.color-logo.ncmh-logo {
-  height: 100px;
-  max-width: 200px;
-}
-.color-logo.rcmc-logo {
-  height: 120px;
-  max-width: 250px;
-}
-.color-logo.large-text-logo {
-  height: 60px;
-  max-width: 170px;
-}
-.color-logo.alnahdi-logo {
-  height: 65px;
-  max-width: 180px;
-}
-.color-logo.abudawood-logo {
-  height: 40px;
-  max-width: 110px;
-}
-.color-logo.empire-logo {
-  height: 55px;
-  max-width: 155px;
-}
-
-@media (max-width: 1400px) {
-  .flecha-hero-title {
-    font-size: 72px;
-  }
-  .nav-container {
-    margin: 0 40px 0 40px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .flecha-hero-title {
-    font-size: 64px;
-  }
-  .nav-container {
-    margin: 0 20px 0 20px;
-  }
-}
-
+/* Tablet responsive adjustments */
 @media (max-width: 1024px) {
+  .logo-row {
+    padding: 0 10px;
+    margin-bottom: 40px;
+  }
+
+  .color-logo {
+    height: 45px;
+    max-width: 130px;
+  }
+
+  .color-logo.shiftat-logo {
+    height: 52px;
+    max-width: 145px;
+  }
+
+  .color-logo.alnahdi-logo {
+    height: 63px;
+    max-width: 170px;
+  }
+
+  .color-logo.ncmh-logo {
+    height: 76px;
+    max-width: 160px;
+  }
+
+  .color-logo.rcmc-logo {
+    height: 81px;
+    max-width: 180px;
+  }
+
+  .color-logo.empire-logo {
+    height: 54px;
+    max-width: 150px;
+  }
+
+  .color-logo.rotana-logo {
+    height: 56px;
+    max-width: 160px;
+  }
+
+  /* Disable sticky behavior on tablet and mobile */
+  .services-heading-content.is-sticky-active {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    width: unset !important;
+    z-index: unset !important;
+  }
+
   .flecha-hero-title {
     font-size: 80px;
   }
   .flecha-section-heading {
-    font-size: 28px;
+    font-size: 51px;
   }
 }
 
+/* Mobile responsive - stack logos and center them */
 @media (max-width: 768px) {
+  .logo-row {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 40px;
+    padding: 0 5px;
+  }
+
+  .color-logo {
+    height: 42px;
+    max-width: 140px;
+  }
+
+  .color-logo.shiftat-logo {
+    height: 48px;
+    max-width: 150px;
+  }
+
+  .color-logo.alnahdi-logo {
+    height: 58px;
+    max-width: 160px;
+  }
+
+  .color-logo.ncmh-logo {
+    height: 68px;
+    max-width: 150px;
+  }
+
+  .color-logo.rcmc-logo {
+    height: 72px;
+    max-width: 160px;
+  }
+
+  .color-logo.empire-logo {
+    height: 50px;
+    max-width: 140px;
+  }
+
+  .color-logo.rotana-logo {
+    height: 52px;
+    max-width: 150px;
+  }
+
   .flecha-hero-title {
     font-size: 56px;
     white-space: normal;
@@ -760,7 +876,15 @@
   .home_header_subheading-right {
     text-align: center;
   }
-  
+  /* Ensure sticky behavior is disabled on mobile */
+  .services-heading-content.is-sticky-active {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    width: unset !important;
+    z-index: unset !important;
+  }
+
   /* Mobile testimonials v2 adjustments */
   .testimonial-card-v2 {
     padding: 20px;
@@ -781,48 +905,46 @@
   }
 }
 
-/* Mobile responsive adjustments */
-@media (max-width: 640px) {
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .logo-row {
+    gap: 28px;
+    margin-bottom: 32px;
+  }
+
   .color-logo {
-    height: 40px;
+    height: 38px;
     max-width: 120px;
   }
-  
+
   .color-logo.shiftat-logo {
-    height: 43px;
-    max-width: 125px;
+    height: 44px;
+    max-width: 130px;
   }
-  
-  .color-logo.rotana-logo {
-    height: 46px;
-    max-width: 135px;
-  }
-  
-  .color-logo.ncmh-logo {
-    height: 56px;
-    max-width: 160px;
-  }
-  
-  .color-logo.rcmc-logo {
-    height: 68px;
-    max-width: 200px;
-  }
-  
-  .color-logo.large-text-logo {
-    height: 48px;
-    max-width: 135px;
-  }
+
   .color-logo.alnahdi-logo {
     height: 52px;
-    max-width: 145px;
+    max-width: 140px;
   }
-  .color-logo.abudawood-logo {
-    height: 32px;
-    max-width: 90px;
+
+  .color-logo.ncmh-logo {
+    height: 60px;
+    max-width: 130px;
   }
+
+  .color-logo.rcmc-logo {
+    height: 64px;
+    max-width: 140px;
+  }
+
   .color-logo.empire-logo {
     height: 44px;
     max-width: 125px;
+  }
+
+  .color-logo.rotana-logo {
+    height: 46px;
+    max-width: 130px;
   }
 
   .testimonial-card-v2 {
@@ -846,47 +968,21 @@
   }
 }
 
-@media (max-width: 480px) {
-  .color-logo {
-    height: 36px;
-    max-width: 100px;
+@media (max-width: 1400px) {
+  .flecha-hero-title {
+    font-size: 72px;
   }
-  
-  .color-logo.shiftat-logo {
-    height: 40px;
-    max-width: 110px;
+  .nav-container {
+    margin: 0 40px 0 40px;
   }
-  
-  .color-logo.rotana-logo {
-    height: 42px;
-    max-width: 120px;
+}
+
+@media (max-width: 1200px) {
+  .flecha-hero-title {
+    font-size: 64px;
   }
-  
-  .color-logo.ncmh-logo {
-    height: 50px;
-    max-width: 140px;
-  }
-  
-  .color-logo.rcmc-logo {
-    height: 60px;
-    max-width: 180px;
-  }
-  
-  .color-logo.large-text-logo {
-    height: 44px;
-    max-width: 120px;
-  }
-  .color-logo.alnahdi-logo {
-    height: 48px;
-    max-width: 130px;
-  }
-  .color-logo.abudawood-logo {
-    height: 28px;
-    max-width: 80px;
-  }
-  .color-logo.empire-logo {
-    height: 40px;
-    max-width: 110px;
+  .nav-container {
+    margin: 0 20px 0 20px;
   }
 }
 
@@ -897,10 +993,80 @@
 }
 
 .text-custom-blue {
-  color: #27
-  62F8;
+  color: #2762F8;
 }
 
 .bg-custom-blue {
   background-color: #2762F8;
+}
+
+.bg-custom-dark-blue {
+  background-color: #001C46;
+}
+
+/* Sticky Services Heading Styles */
+.services-heading-wrapper {
+  position: relative;
+}
+
+.services-heading-content {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* CRITICAL FIX: Force inline styles to override with higher specificity */
+.services-heading-content.is-sticky-active[style*="position: fixed"] {
+  position: fixed !important;
+}
+
+.services-heading-content.is-sticky-active[style*="top:"] {
+  top: 200px !important;
+}
+
+.services-heading-content.is-sticky-active[style*="left:"] {
+  /* Left position is dynamically calculated in JavaScript */
+}
+
+.services-heading-content.is-sticky-active[style*="width:"] {
+  /* Width is dynamically calculated in JavaScript */
+}
+
+.services-heading-content.is-sticky-active[style*="z-index:"] {
+  z-index: 10 !important;
+}
+
+.services-heading-fade {
+  opacity: 0 !important;
+  transform: translateY(-20px) !important;
+}
+
+.text-11px {
+  font-size: 11px;
+}
+
+.deconstructed-q {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.q-curve {
+  color: #2762F8;
+  display: inline-block;
+  animation: curve-float 2s ease-in-out infinite;
+}
+
+.q-dot {
+  color: #2762F8;
+  display: inline-block;
+  margin-left: 2px;
+  animation: dot-bounce 2s ease-in-out infinite 0.3s;
+}
+
+@keyframes curve-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes dot-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
 }

@@ -1,5 +1,3 @@
-//test
-
 "use client";
 
 import Image from "next/image";
@@ -93,9 +91,8 @@ export default function Home() {
 
           {/* Right side buttons */}
           <div className="flex items-center space-x-4">
-            <button className="nav-login-button-centered hidden sm:block">My Work</button>
             <button className="nav-button-strategy">
-              Consultation
+              Book Consultation
             </button>
           </div>
 
@@ -123,7 +120,12 @@ export default function Home() {
           <div className="home_header_content">
             {/* Left: Want to join us section */}
             <div className="home_header_text-wrap">
-              <h2 className="home_header_subheading">Tired of guessing?</h2>
+              <h2 className="home_header_subheading">
+                Tired of guessing<span className="deconstructed-q">
+                  <span className="q-curve">⌐</span>
+                  <span className="q-dot">•</span>
+                </span>
+              </h2>
               <p className="home_header_text1">
                 Your marketing budget deserves better than "spray and pray." Get strategies that turn GCC market insights into predictable pipeline growth.
               </p>
@@ -144,16 +146,17 @@ export default function Home() {
             <div className="home_header_form-wrap">
               <h3 className="home_header_subheading-right mb-6">Start here.</h3>
               <div className="seva-fields formkit-fields">
-                <input
-                  type="email"
-                  placeholder="Business Email"
-                  className="formkit-input"
-                />
                 <button
-                  type="submit"
-                  className="subscribe-button"
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="subscribe-button w-full min-w-max whitespace-nowrap h-12"
                 >
-                  Consult Me
+                  Book Consultation
+                </button>
+                <button
+                  type="button"
+                  className="nav-button-strategy w-full min-w-max whitespace-nowrap h-12"
+                >
+                  Discover My Work
                 </button>
               </div>
             </div>
@@ -170,24 +173,31 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center">
-            <div className="grid grid-cols-5 gap-x-12 gap-y-8 items-center justify-items-center max-w-4xl">
-              <img src="/logos/shiftat.webp" alt="Shiftat" className="color-logo shiftat-logo" />
-              <img src="/logos/abudawood.webp" alt="Abudawood" className="color-logo abudawood-logo" />
-              <img src="/logos/kapsarc.webp" alt="KAPSARC" className="color-logo" />
-              <img src="/logos/alnahdi.webp" alt="Al Nahdi" className="color-logo alnahdi-logo" />
-              <img src="/logos/saeq.webp" alt="SAEQ" className="color-logo" />
-              <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className="color-logo empire-logo" />
-              <img src="/logos/reviva.webp" alt="reviva" className="color-logo" />
-              <img src="/logos/ncmh.webp" alt="NCMH" className="color-logo ncmh-logo" />
-              <img src="/logos/rcmc.webp" alt="RCMC" className="color-logo rcmc-logo" />
-              <img src="/logos/rotana.webp" alt="Rotana" className="color-logo rotana-logo" />
+            <div className="logo-grid-container">
+              {/* Row 1: 3 lighter logos + 2 heavier logos for balance */}
+              <div className="logo-row">
+                <img src="/logos/shiftat.webp" alt="Shiftat" className="color-logo shiftat-logo" />
+                <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className="color-logo empire-logo" />
+                <img src="/logos/kapsarc.webp" alt="KAPSARC" className="color-logo" />
+                <img src="/logos/alnahdi.webp" alt="Al Nahdi" className="color-logo alnahdi-logo" />
+                <img src="/logos/saeq.webp" alt="SAEQ" className="color-logo" />
+              </div>
+              
+              {/* Row 2: Balanced visual weight distribution */}
+              <div className="logo-row">
+                <img src="/logos/abudawood.webp" alt="Abudawood" className="color-logo abudawood-logo" />
+                <img src="/logos/reviva.webp" alt="reviva" className="color-logo" />
+                <img src="/logos/ncmh.webp" alt="NCMH" className="color-logo ncmh-logo" />
+                <img src="/logos/rcmc.webp" alt="RCMC" className="color-logo rcmc-logo" />
+                <img src="/logos/rotana.webp" alt="Rotana" className="color-logo rotana-logo" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section ref={aboutRef} className="bg-gradient-to-b from-blue-900 to-blue-800 py-20 text-white">
+      <section ref={aboutRef} className="bg-custom-dark-blue py-20 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-12">
             <div className="w-40 h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">
@@ -201,20 +211,18 @@ export default function Home() {
             />
             </div>
           </div>
-
-          <h2 className="flecha-hero-title-about text-white mb-8 leading-tight">
-            Hi—I'm Hussam Baaka. I turn marketing<br />
-            chaos into predictable growth systems.
-          </h2>
-
+            <h2 className="flecha-hero-title-about text-white mb-8 leading-tight">
+              Hi. I'm Hussam Baaka. I make every marketing<br />
+              Riyal / Dirham work harder for your growth.
+            </h2>
           <div className="mb-8">
-            <span className="text-cyan-400 text-lg font-medium">[ A note to growth-focused leaders ]</span>
+            <span className="text-cyan-400 text-11px font-medium">[ A note to growth-focused leaders ]</span>
           </div>
 
           <div className="space-y-6 work-sans-body-white leading-relaxed max-w-3xl mx-auto">
             <p>Your marketing team isn't lazy. Your strategy is just scattered.</p>
 
-            <p>I've seen too many GCC companies burn through budgets on tactics that don't connect—social campaigns that don't convert, content that doesn't engage, and "brand awareness" that doesn't drive business.</p>
+            <p>I've seen too many GCC companies burn through budgets on campaigns that don't convert, content that doesn't engage, and "brand awareness" that doesn't drive business.</p>
 
             <p>The problem isn't your people or your market. It's alignment.</p>
 
@@ -227,25 +235,24 @@ export default function Home() {
             <p>At the end of the day, marketing should do one thing:</p>
 
             <p className="text-cyan-400 font-medium">Generate predictable, scalable business results you can bank on.</p>
+         
           </div>
 
           <div className="mt-12">
-            <button className="border border-white text-white hover:bg-white hover:text-blue-900 px-6 py-3 rounded-lg font-medium transition-colors">
-              Discover My Work
-            </button>
+            {/* Future button placeholder */}
           </div>
         </div>
       </section>
 
       {/* Services Section */}
       <section ref={servicesRef} className="bg-custom-blue py-20 text-white">
-        <div ref={servicesContainerRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div ref={servicesContainerRef} className="services_container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left side */}
-            <div>
+            <div className="services-heading-wrapper">
               <div 
                 ref={leftHeadingRef}
-                className={`${isSticky ? 'is-sticky-active' : ''} ${shouldFadeOut ? 'services-heading-fade' : ''}`}
+                className={`services-heading-content ${isSticky ? 'is-sticky-active' : ''} ${shouldFadeOut ? 'services-heading-fade' : ''}`}
                 style={stickyStyles}
               >
                 <h2 className="services-main-heading leading-tight">
@@ -259,42 +266,45 @@ export default function Home() {
             <div className="space-y-12">
               {/* Service 1 */}
               <div>
-                <div className="flex items-center mb-4">
-                  <div className="services-number mr-4">01</div>
-                  <h3 className="services-title">Marketing Strategy & Systems Audit</h3>
-                </div>
+                <div className="services-number mb-4">01</div>
+                <h3 className="services-title mb-4">Marketing Strategy and Systems Audit Done For You</h3>
                 <p className="services-description mb-6 leading-relaxed">
                   Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
                 </p>
-                <button className="services-button">
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="services-button"
+                >
                   Book Audit
                 </button>
               </div>
 
               {/* Service 2 */}
              <div>
-                <div className="flex items-center mb-4">
-                  <div className="services-number mr-4">02</div>
-                  <h3 className="services-title">Growth Marketing Implementation</h3>
-                </div>
+                <div className="services-number mb-4">02</div>
+                <h3 className="services-title mb-4">Growth Marketing Implementation and Monitoring</h3>
                 <p className="services-description mb-6 leading-relaxed">
                   Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
                 </p>
-                <button className="services-button">
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="services-button"
+                >
                   Book Consultation
                 </button>
               </div>
 
               {/* Service 3 */}
               <div ref={thirdServiceRef}>
-                <div className="flex items-center mb-4">
-                  <div className="services-number mr-4">03</div>
-                  <h3 className="services-title">Marketing Team Training & Optimization</h3>
-                </div>
+                <div className="services-number mb-4">03</div>
+                <h3 className="services-title mb-4">Marketing Team Training and Optimization</h3>
                 <p className="services-description mb-6 leading-relaxed">
                   Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.
                 </p>
-                <button className="services-button">
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="services-button"
+                >
                   Schedule Consultation
                 </button>
               </div>
@@ -411,12 +421,6 @@ export default function Home() {
                 Redesigned entire customer onboarding experience for Estater, balancing regulatory requirements with user experience. Result: highest conversion rates in company history.
               </p>
             </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <button className="border border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-medium">
-              View All Case Studies
-            </button>
           </div>
         </div>
       </section>
@@ -732,7 +736,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-custom-hero">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-12 mb-16">
             <h2 className="flecha-section-heading leading-tight">
@@ -764,17 +768,17 @@ export default function Home() {
           <h3 className="home_header_subheading mb-8">Ready to grow predictably?</h3>
 
           <p className="work-sans-body mb-8 leading-relaxed">
-            Get a free 30-minute strategy session where we'll identify the biggest growth opportunities in your current marketing approach.
+            Get a free 30-minute session to identify your biggest growth opportunities.
           </p>
 
-          <form className="max-w-md mx-auto space-y-4">
+          <div className="max-w-md mx-auto space-y-4">
             <button
-              type="submit"
+              onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
               className="subscribe-button w-full"
             >
-              Contact
+              Book Now
             </button>
-          </form>
+          </div>
         </div>
       </section>
 
@@ -783,45 +787,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-8 mb-4 md:mb-0">
-              <span className="text-xl font-semibold">Hussam Baaka</span>
-              <button className="flex items-center text-gray-400 hover:text-white">
-                Resources
-                <Image
-                  src="https://ext.same-assets.com/3287453319/305373772.svg"
-                  alt="External link"
-                  width={16}
-                  height={16}
-                  className="ml-2 filter invert"
-                />
-              </button>
+              <Link href="/" className="text-xl font-semibold">Hussam Baaka</Link>
             </div>
 
             <div className="flex items-center space-x-6 mb-4 md:mb-0">
-              <span className="text-gray-400 text-sm">© 2024 Hussam Baaka</span>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Terms</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">More About Me</a>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/1536601012.svg"
-                  alt="Twitter"
-                  width={20}
-                  height={20}
-                  className="filter invert"
-                />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/51193599.svg"
-                  alt="LinkedIn"
-                  width={20}
-                  height={20}
-                  className="filter invert"
-                />
-              </a>
+              <span className="text-gray-400 text-sm">© 2025 Saura Agency LLC</span>
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">Privacy Policy</Link>
+              <Link href="/terms" className="text-gray-400 hover:text-white text-sm">Terms</Link>
             </div>
           </div>
         </div>
