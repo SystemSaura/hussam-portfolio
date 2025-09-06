@@ -92,6 +92,14 @@
   font-display: swap;
 }
 
+/* Hide Next.js development indicators */
+#__next-build-watcher,
+.__next-dev-overlay-backdrop,
+.__next-dev-overlay,
+[data-nextjs-scroll-focus-boundary] {
+  display: none !important;
+}
+
 .cursor-blink {
   color: #2762F8;
   animation: blink 1s infinite;
@@ -180,8 +188,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 135px;
-  height: 36px;
+  width: 110px;
+  height: 31.26px;
   box-sizing: border-box;
   transition: all 0.2s ease;
 }
@@ -253,22 +261,6 @@
   width: 852.56px;
   height: 457.54px;
   margin: 0 auto;
-}
-
-.services_container {
-  width: 1200px;
-  max-width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: calc(50% - 600px + (852.56px / 2 - 426.28px));
-}
-
-@media (max-width: 1200px) {
-  .services_container {
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .home_header_content {
@@ -359,7 +351,7 @@
   border-radius: 9999px;
   cursor: pointer;
   width: 110.31px;
-  height: 36px;
+  height: 42.35px;
   box-sizing: border-box;
   margin: 0;
   flex-shrink: 0;
@@ -389,7 +381,7 @@
 
 .flecha-hero-title-about {
   font-family: 'Flecha S', sans-serif;
-  font-size:34px;
+  font-size: 48px;
   font-weight: normal;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -456,16 +448,16 @@
   font-size: 10.7991px;
   font-weight: normal;
   color: #FFFFFF;
-  background-color: #001C46;
+  background-color: #1E4ED8;
   border: none;
-  border-radius: 9999px;
+  border-radius: 8px;
   padding: 12px 24px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .services-button:hover {
-  background-color: #002A5C;
+  background-color: #1E40AF;
 }
 
 .work-sans-body {
@@ -489,23 +481,159 @@
   line-height: 1.6;
 }
 
-/* NEW LOGO GRID SYSTEM - Replaces rigid 5-column grid with flexible row-based layout */
-.logo-grid-container {
-  max-width: 1100px;
-  width: 100%;
+/* TESTIMONIALS SECTION V2 - IMPROVED WITH FLECHA S FONT CONSISTENCY */
+.testimonial-card-v2 {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo-row {
+.testimonial-card-v2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-color: #2762F8;
+}
+
+.testimonial-header-v2 {
+  margin-bottom: 16px;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #F0FDF4;
+  color: #16A34A;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Flecha S', sans-serif;
+}
+
+.project-type {
+  color: #6B7280;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Flecha S', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.testimonial-quote-v2 {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.testimonial-footer-v2 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 48px;
-  width: 100%;
-  padding: 0 20px;
+  align-items: flex-end;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #F3F4F6;
 }
 
-.logo-row:last-child {
-  margin-bottom: 0;
+.client-info-v2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-photo-v2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #F3F4F6;
+  flex-shrink: 0;
+}
+
+.client-name-v2 {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 14px;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.client-company-v2 {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 13px;
+  color: #2762F8;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.client-location-v2 {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 11px;
+  color: #6B7280;
+  font-weight: 400;
+}
+
+.company-logo-v2 {
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.testimonial-card-v2:hover .company-logo-v2 {
+  opacity: 1;
+}
+
+/* TESTIMONIAL SECTION FLECHA S VARIANTS */
+.flecha-testimonial-heading {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 34.1024px;
+  font-weight: normal;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.flecha-testimonial-description {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+.flecha-rating-text {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2563EB;
+}
+
+.flecha-projects-text {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.flecha-verification-text {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.flecha-view-all-text {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2563EB;
 }
 
 /* Base logo styling - consistent foundation */
@@ -516,180 +644,43 @@
   object-fit: contain;
   opacity: 1;
   transition: all 0.3s ease;
-  flex-shrink: 1;
-  flex-grow: 0;
 }
-
 .color-logo:hover {
   transform: scale(1.08);
   opacity: 0.9;
 }
-
-/* Enhanced individual logo sizing for better visual balance */
+/* Specific logo adjustments for readability */
 .color-logo.shiftat-logo {
+  height: 54px;
+  max-width: 150px;
+}
+.color-logo.rotana-logo {
   height: 58px;
-  max-width: 160px;
-}
-
-.color-logo.abudawood-logo {
-  height: 44px;
-  max-width: 120px;
-}
-
-.color-logo.alnahdi-logo {
-  height: 70px;
-  max-width: 190px;
-}
-
-.color-logo.ncmh-logo {
-  height: 85px;
-  max-width: 180px;
-}
-
-.color-logo.rcmc-logo {
-  height: 90px;
-  max-width: 200px;
-}
-
-.color-logo.empire-logo {
-  height: 60px;
   max-width: 165px;
 }
-
-.color-logo.rotana-logo {
-  height: 62px;
-  max-width: 175px;
+.color-logo.ncmh-logo {
+  height: 100px;
+  max-width: 200px;
 }
-
-/* Tablet responsive adjustments */
-@media (max-width: 1024px) {
-  .logo-row {
-    padding: 0 10px;
-    margin-bottom: 40px;
-  }
-  
-  .color-logo {
-    height: 45px;
-    max-width: 130px;
-  }
-  
-  .color-logo.shiftat-logo {
-    height: 52px;
-    max-width: 145px;
-  }
-  
-  .color-logo.alnahdi-logo {
-    height: 63px;
-    max-width: 170px;
-  }
-  
-  .color-logo.ncmh-logo {
-    height: 76px;
-    max-width: 160px;
-  }
-  
-  .color-logo.rcmc-logo {
-    height: 81px;
-    max-width: 180px;
-  }
-  
-  .color-logo.empire-logo {
-    height: 54px;
-    max-width: 150px;
-  }
-  
-  .color-logo.rotana-logo {
-    height: 56px;
-    max-width: 160px;
-  }
+.color-logo.rcmc-logo {
+  height: 120px;
+  max-width: 250px;
 }
-
-/* Mobile responsive - stack logos and center them */
-@media (max-width: 768px) {
-  .logo-row {
-    flex-direction: column;
-    gap: 32px;
-    margin-bottom: 40px;
-    padding: 0 5px;
-  }
-  
-  .color-logo {
-    height: 42px;
-    max-width: 140px;
-  }
-  
-  .color-logo.shiftat-logo {
-    height: 48px;
-    max-width: 150px;
-  }
-  
-  .color-logo.alnahdi-logo {
-    height: 58px;
-    max-width: 160px;
-  }
-  
-  .color-logo.ncmh-logo {
-    height: 68px;
-    max-width: 150px;
-  }
-  
-  .color-logo.rcmc-logo {
-    height: 72px;
-    max-width: 160px;
-  }
-  
-  .color-logo.empire-logo {
-    height: 50px;
-    max-width: 140px;
-  }
-  
-  .color-logo.rotana-logo {
-    height: 52px;
-    max-width: 150px;
-  }
+.color-logo.large-text-logo {
+  height: 60px;
+  max-width: 170px;
 }
-
-/* Small mobile adjustments */
-@media (max-width: 480px) {
-  .logo-row {
-    gap: 28px;
-    margin-bottom: 32px;
-  }
-  
-  .color-logo {
-    height: 38px;
-    max-width: 120px;
-  }
-  
-  .color-logo.shiftat-logo {
-    height: 44px;
-    max-width: 130px;
-  }
-  
-  .color-logo.alnahdi-logo {
-    height: 52px;
-    max-width: 140px;
-  }
-  
-  .color-logo.ncmh-logo {
-    height: 60px;
-    max-width: 130px;
-  }
-  
-  .color-logo.rcmc-logo {
-    height: 64px;
-    max-width: 140px;
-  }
-  
-  .color-logo.empire-logo {
-    height: 44px;
-    max-width: 125px;
-  }
-  
-  .color-logo.rotana-logo {
-    height: 46px;
-    max-width: 130px;
-  }
+.color-logo.alnahdi-logo {
+  height: 65px;
+  max-width: 180px;
+}
+.color-logo.abudawood-logo {
+  height: 40px;
+  max-width: 110px;
+}
+.color-logo.empire-logo {
+  height: 55px;
+  max-width: 155px;
 }
 
 @media (max-width: 1400px) {
@@ -715,15 +706,7 @@
     font-size: 80px;
   }
   .flecha-section-heading {
-    font-size: 51px;
-  }
-  /* Disable sticky behavior on tablet and mobile */
-  .services-heading-content.is-sticky-active {
-    position: relative !important;
-    top: unset !important;
-    left: unset !important;
-    width: unset !important;
-    z-index: unset !important;
+    font-size: 28px;
   }
 }
 
@@ -777,13 +760,133 @@
   .home_header_subheading-right {
     text-align: center;
   }
-  /* Ensure sticky behavior is disabled on mobile */
-  .services-heading-content.is-sticky-active {
-    position: relative !important;
-    top: unset !important;
-    left: unset !important;
-    width: unset !important;
-    z-index: unset !important;
+  
+  /* Mobile testimonials v2 adjustments */
+  .testimonial-card-v2 {
+    padding: 20px;
+  }
+  
+  .testimonial-footer-v2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .client-info-v2 {
+    width: 100%;
+  }
+  
+  .company-logo-v2 {
+    align-self: flex-start;
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 640px) {
+  .color-logo {
+    height: 40px;
+    max-width: 120px;
+  }
+  
+  .color-logo.shiftat-logo {
+    height: 43px;
+    max-width: 125px;
+  }
+  
+  .color-logo.rotana-logo {
+    height: 46px;
+    max-width: 135px;
+  }
+  
+  .color-logo.ncmh-logo {
+    height: 56px;
+    max-width: 160px;
+  }
+  
+  .color-logo.rcmc-logo {
+    height: 68px;
+    max-width: 200px;
+  }
+  
+  .color-logo.large-text-logo {
+    height: 48px;
+    max-width: 135px;
+  }
+  .color-logo.alnahdi-logo {
+    height: 52px;
+    max-width: 145px;
+  }
+  .color-logo.abudawood-logo {
+    height: 32px;
+    max-width: 90px;
+  }
+  .color-logo.empire-logo {
+    height: 44px;
+    max-width: 125px;
+  }
+
+  .testimonial-card-v2 {
+    padding: 16px;
+  }
+
+  .testimonial-quote-v2 {
+    font-size: 14px;
+  }
+
+  .client-name-v2 {
+    font-size: 13px;
+  }
+
+  .client-company-v2 {
+    font-size: 12px;
+  }
+
+  .client-location-v2 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .color-logo {
+    height: 36px;
+    max-width: 100px;
+  }
+  
+  .color-logo.shiftat-logo {
+    height: 40px;
+    max-width: 110px;
+  }
+  
+  .color-logo.rotana-logo {
+    height: 42px;
+    max-width: 120px;
+  }
+  
+  .color-logo.ncmh-logo {
+    height: 50px;
+    max-width: 140px;
+  }
+  
+  .color-logo.rcmc-logo {
+    height: 60px;
+    max-width: 180px;
+  }
+  
+  .color-logo.large-text-logo {
+    height: 44px;
+    max-width: 120px;
+  }
+  .color-logo.alnahdi-logo {
+    height: 48px;
+    max-width: 130px;
+  }
+  .color-logo.abudawood-logo {
+    height: 28px;
+    max-width: 80px;
+  }
+  .color-logo.empire-logo {
+    height: 40px;
+    max-width: 110px;
   }
 }
 
@@ -800,75 +903,3 @@
 .bg-custom-blue {
   background-color: #2762F8;
 }
-
-.bg-custom-dark-blue {
-  background-color: #001C46;
-}
-
-/* Sticky Services Heading Styles */
-.services-heading-wrapper {
-  position: relative;
-}
-
-.services-heading-content {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* CRITICAL FIX: Force inline styles to override with higher specificity */
-.services-heading-content.is-sticky-active[style*="position: fixed"] {
-  position: fixed !important;
-}
-
-.services-heading-content.is-sticky-active[style*="top:"] {
-  top: 200px !important;
-}
-
-.services-heading-content.is-sticky-active[style*="left:"] {
-  /* Left position is dynamically calculated in JavaScript */
-}
-
-.services-heading-content.is-sticky-active[style*="width:"] {
-  /* Width is dynamically calculated in JavaScript */
-}
-
-.services-heading-content.is-sticky-active[style*="z-index:"] {
-  z-index: 10 !important;
-}
-
-.services-heading-fade {
-  opacity: 0 !important;
-  transform: translateY(-20px) !important;
-}
-
-.text-11px {
-  font-size: 11px;
-}
-
-.deconstructed-q {
-  display: inline-block;
-  margin-left: 6px;
-}
-
-.q-curve {
-  color: #2762F8;
-  display: inline-block;
-  animation: curve-float 2s ease-in-out infinite;
-}
-
-.q-dot {
-  color: #2762F8;
-  display: inline-block;
-  margin-left: 2px;
-  animation: dot-bounce 2s ease-in-out infinite 0.3s;
-}
-
-@keyframes curve-float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
-}
-
-@keyframes dot-bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(3px); }
-}
-
