@@ -313,114 +313,271 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <section ref={portfolioRef} className="py-20 bg-white">
+      {/* Portfolio Showcase Section - REDESIGNED FOR BETTER VISUAL HIERARCHY */}
+      <section ref={portfolioRef} className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="flecha-section-heading mb-4">
-              Recent Client Results
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="flecha-section-heading mb-6">
+              Featured Portfolio Work
             </h2>
+            <p className="work-sans-body text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+              Real marketing projects that delivered measurable results for GCC companies across different industries.
+            </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Case Study 1 - Shiftat */}
-            <div className="group cursor-pointer">
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105 relative overflow-hidden">
-                <div className="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden border-2 border-white">
-                  <Image
-                    src="/picofme.webp"
-                    alt="Hussam Baaka"
-                    width={48}
-                    height={48}
-                    className="w-full h-full object-cover"
-                  />
+          {/* Portfolio Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            {/* Portfolio Project 1 - Shiftat Social Media */}
+            <div className="portfolio-card group">
+              <div className="portfolio-header bg-gradient-to-br from-blue-500 to-blue-600">
+                <div className="portfolio-header-content">
+                  <div className="portfolio-category">HR Technology</div>
+                  <div className="portfolio-company-logo">
+                    <img src="/logos/shiftat.webp" alt="Shiftat" className="h-8 w-auto object-contain opacity-90" />
+                  </div>
                 </div>
-                <div className="text-white">
-                  <div className="text-sm opacity-80 mb-2">Shiftat</div>
-                  <div className="text-2xl font-bold mb-4">187%</div>
-                  <div className="text-lg">Lead Quality Increase</div>
+                <div className="portfolio-header-main">
+                  <h4 className="portfolio-service-type">Social Media Strategy</h4>
+                  <p className="portfolio-service-detail">LinkedIn + Twitter Content</p>
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600">
-                From Generic Ads to Qualified Pipeline
-                <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
-                  width={16}
-                  height={16}
-                  className="inline ml-2"
-                />
-              </h3>
-              <p className="work-sans-body text-gray-600">
-                Transformed Shiftat's lead gen from quantity-focused to quality-driven, resulting in 3x more qualified opportunities and 40% shorter sales cycles.
-              </p>
+              
+              <div className="portfolio-content">
+                <h3 className="portfolio-title">
+                  Professional Recruitment Content
+                  <Image
+                    src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                    alt="Arrow"
+                    width={18}
+                    height={18}
+                    className="portfolio-arrow"
+                  />
+                </h3>
+                <p className="portfolio-description">
+                  Created engaging social media content strategy for Shiftat's recruitment platform, focusing on thought leadership and talent acquisition trends.
+                </p>
+                <button 
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="portfolio-button portfolio-button-blue"
+                >
+                  View Full Work
+                </button>
+              </div>
             </div>
 
-            {/* Case Study 2 - Influence */}
-            <div className="group cursor-pointer">
-              <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105 relative overflow-hidden">
-                <div className="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden border-2 border-white">
-                  <Image
-                    src="/picofme.webp"
-                    alt="Hussam Baaka"
-                    width={48}
-                    height={48}
-                    className="w-full h-full object-cover"
-                  />
+            {/* Portfolio Project 2 - Akkar Real Estate */}
+            <div className="portfolio-card group">
+              <div className="portfolio-header bg-gradient-to-br from-green-500 to-green-600">
+                <div className="portfolio-header-content">
+                  <div className="portfolio-category">Real Estate</div>
+                  <div className="portfolio-company-logo">
+                    <div className="w-8 h-8 rounded-lg bg-white bg-opacity-20 flex items-center justify-center">
+                      <span className="text-white text-sm font-bold">AK</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-white">
-                  <div className="text-sm opacity-80 mb-2">Influence</div>
-                  <div className="text-2xl font-bold mb-4">$2.1M</div>
-                  <div className="text-lg">Revenue Attributed</div>
+                <div className="portfolio-header-main">
+                  <h4 className="portfolio-service-type">App UX Copy</h4>
+                  <p className="portfolio-service-detail">Microcopies + Website Content</p>
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600">
-                Marketing ROI That Actually Tracks
-                <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
-                  width={16}
-                  height={16}
-                  className="inline ml-2"
-                />
-              </h3>
-              <p className="work-sans-body text-gray-600">
-                Built complete attribution system for Influence, connecting every marketing dollar to actual sales revenue. Finally proved marketing's value to the C-suite.
-              </p>
+              
+              <div className="portfolio-content">
+                <h3 className="portfolio-title">
+                  Property Search App Content
+                  <Image
+                    src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                    alt="Arrow"
+                    width={18}
+                    height={18}
+                    className="portfolio-arrow"
+                  />
+                </h3>
+                <p className="portfolio-description">
+                  Crafted user-friendly microcopies and website content for Akkar's real estate platform, improving user experience and conversion rates.
+                </p>
+                <button 
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="portfolio-button portfolio-button-green"
+                >
+                  View Full Work
+                </button>
+              </div>
             </div>
 
-            {/* Case Study 3 - Estater */}
-            <div className="group cursor-pointer">
-              <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg p-6 mb-4 transition-transform group-hover:scale-105 relative overflow-hidden">
-                <div className="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden border-2 border-white">
-                  <Image
-                    src="/picofme.webp"
-                    alt="Hussam Baaka"
-                    width={48}
-                    height={48}
-                    className="w-full h-full object-cover"
-                  />
+            {/* Portfolio Project 3 - FieldBio Security */}
+            <div className="portfolio-card group">
+              <div className="portfolio-header bg-gradient-to-br from-purple-500 to-purple-600">
+                <div className="portfolio-header-content">
+                  <div className="portfolio-category">Cybersecurity</div>
+                  <div className="portfolio-company-logo">
+                    <div className="w-8 h-8 rounded-lg bg-white bg-opacity-20 flex items-center justify-center">
+                      <span className="text-white text-sm font-bold">FB</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-white">
-                  <div className="text-sm opacity-80 mb-2">Estater</div>
-                  <div className="text-2xl font-bold mb-4">340%</div>
-                  <div className="text-lg">Conversion Lift</div>
+                <div className="portfolio-header-main">
+                  <h4 className="portfolio-service-type">Case Study</h4>
+                  <p className="portfolio-service-detail">Blog Posts + Technical Content</p>
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600">
-                When Compliance Meets Conversion
-                <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
-                  width={16}
-                  height={16}
-                  className="inline ml-2"
-                />
-              </h3>
-              <p className="work-sans-body text-gray-600">
-                Redesigned entire customer onboarding experience for Estater, balancing regulatory requirements with user experience. Result: highest conversion rates in company history.
-              </p>
+              
+              <div className="portfolio-content">
+                <h3 className="portfolio-title">
+                  Security Solutions Showcase
+                  <Image
+                    src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                    alt="Arrow"
+                    width={18}
+                    height={18}
+                    className="portfolio-arrow"
+                  />
+                </h3>
+                <p className="portfolio-description">
+                  Developed comprehensive case studies and technical blog content for FieldBio's cybersecurity solutions, establishing thought leadership.
+                </p>
+                <button 
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="portfolio-button portfolio-button-purple"
+                >
+                  View Full Work
+                </button>
+              </div>
             </div>
+
+            {/* Portfolio Project 4 - Al Nahdi Newsletter */}
+            <div className="portfolio-card group">
+              <div className="portfolio-header bg-gradient-to-br from-orange-500 to-orange-600">
+                <div className="portfolio-header-content">
+                  <div className="portfolio-category">Healthcare</div>
+                  <div className="portfolio-company-logo">
+                    <img src="/logos/alnahdi.webp" alt="Al Nahdi" className="h-8 w-auto object-contain opacity-90" />
+                  </div>
+                </div>
+                <div className="portfolio-header-main">
+                  <h4 className="portfolio-service-type">Email Marketing</h4>
+                  <p className="portfolio-service-detail">Newsletter Campaign</p>
+                </div>
+              </div>
+              
+              <div className="portfolio-content">
+                <h3 className="portfolio-title">
+                  Healthcare Newsletter Strategy
+                  <Image
+                    src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                    alt="Arrow"
+                    width={18}
+                    height={18}
+                    className="portfolio-arrow"
+                  />
+                </h3>
+                <p className="portfolio-description">
+                  Designed and wrote engaging newsletter campaigns for Al Nahdi Pharmacy, focusing on health tips and product promotions.
+                </p>
+                <button 
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="portfolio-button portfolio-button-orange"
+                >
+                  View Full Work
+                </button>
+              </div>
+            </div>
+
+            {/* Portfolio Project 5 - Empire Real Estate */}
+            <div className="portfolio-card group">
+              <div className="portfolio-header bg-gradient-to-br from-teal-500 to-teal-600">
+                <div className="portfolio-header-content">
+                  <div className="portfolio-category">Real Estate</div>
+                  <div className="portfolio-company-logo">
+                    <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className="h-8 w-auto object-contain opacity-90" />
+                  </div>
+                </div>
+                <div className="portfolio-header-main">
+                  <h4 className="portfolio-service-type">Brand Profile</h4>
+                  <p className="portfolio-service-detail">Company Positioning</p>
+                </div>
+              </div>
+              
+              <div className="portfolio-content">
+                <h3 className="portfolio-title">
+                  Luxury Property Brand Story
+                  <Image
+                    src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                    alt="Arrow"
+                    width={18}
+                    height={18}
+                    className="portfolio-arrow"
+                  />
+                </h3>
+                <p className="portfolio-description">
+                  Developed comprehensive brand profile and positioning strategy for Empire Real Estate's luxury property portfolio in Qatar.
+                </p>
+                <button 
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="portfolio-button portfolio-button-teal"
+                >
+                  View Full Work
+                </button>
+              </div>
+            </div>
+
+            {/* Portfolio Project 6 - Rehabs Club */}
+            <div className="portfolio-card group">
+              <div className="portfolio-header bg-gradient-to-br from-pink-500 to-pink-600">
+                <div className="portfolio-header-content">
+                  <div className="portfolio-category">Health & Wellness</div>
+                  <div className="portfolio-company-logo">
+                    <div className="w-8 h-8 rounded-lg bg-white bg-opacity-20 flex items-center justify-center">
+                      <span className="text-white text-sm font-bold">RC</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="portfolio-header-main">
+                  <h4 className="portfolio-service-type">Website Content</h4>
+                  <p className="portfolio-service-detail">Blog Posts + Web Copy</p>
+                </div>
+              </div>
+              
+              <div className="portfolio-content">
+                <h3 className="portfolio-title">
+                  Wellness Platform Content
+                  <Image
+                    src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                    alt="Arrow"
+                    width={18}
+                    height={18}
+                    className="portfolio-arrow"
+                  />
+                </h3>
+                <p className="portfolio-description">
+                  Created compelling website content and educational blog posts for Rehabs Club's health and wellness platform.
+                </p>
+                <button 
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className="portfolio-button portfolio-button-pink"
+                >
+                  View Full Work
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* View Complete Portfolio Button */}
+          <div className="text-center mt-16">
+            <button 
+              onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+              className="portfolio-view-all-button"
+            >
+              View Complete Portfolio
+              <Image
+                src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                alt="Arrow"
+                width={16}
+                height={16}
+                className="ml-2"
+              />
+            </button>
           </div>
         </div>
       </section>

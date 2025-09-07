@@ -569,6 +569,237 @@
   max-width: 175px;
 }
 
+/* REDESIGNED PORTFOLIO SECTION - PROFESSIONAL & POLISHED */
+.portfolio-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid #F3F4F6;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.portfolio-header {
+  position: relative;
+  padding: 28px 24px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  overflow: hidden;
+}
+
+.portfolio-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 2px;
+}
+
+.portfolio-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.portfolio-category {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.portfolio-company-logo {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-company-logo {
+  opacity: 1;
+}
+
+.portfolio-header-main {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-service-type {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.portfolio-service-detail {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.95;
+  color: white;
+}
+
+.portfolio-content {
+  padding: 28px 24px 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-title {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: color 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-title {
+  color: #2762F8;
+}
+
+.portfolio-arrow {
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.portfolio-card:hover .portfolio-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+.portfolio-description {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6B7280;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.portfolio-button {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-button-blue {
+  background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+}
+
+.portfolio-button-blue:hover {
+  background: linear-gradient(135deg, #2563EB 0%, #1E3A8A 100%);
+}
+
+.portfolio-button-green {
+  background: linear-gradient(135deg, #10B981 0%, #047857 100%);
+}
+
+.portfolio-button-green:hover {
+  background: linear-gradient(135deg, #059669 0%, #065F46 100%);
+}
+
+.portfolio-button-purple {
+  background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+}
+
+.portfolio-button-purple:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+}
+
+.portfolio-button-orange {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+}
+
+.portfolio-button-orange:hover {
+  background: linear-gradient(135deg, #E69500 0%, #C2610C 100%);
+}
+
+.portfolio-button-teal {
+  background: linear-gradient(135deg, #14B8A6 0%, #0F766E 100%);
+}
+
+.portfolio-button-teal:hover {
+  background: linear-gradient(135deg, #0D9488 0%, #134E4A 100%);
+}
+
+.portfolio-button-pink {
+  background: linear-gradient(135deg, #EC4899 0%, #BE185D 100%);
+}
+
+.portfolio-button-pink:hover {
+  background: linear-gradient(135deg, #DB2777 0%, #9D174D 100%);
+}
+
+.portfolio-view-all-button {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  background: #F9FAFB;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-view-all-button:hover {
+  background: #2762F8;
+  color: white;
+  border-color: #2762F8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(39, 98, 248, 0.25);
+}
+
 /* TESTIMONIALS SECTION V2 - IMPROVED WITH FLECHA S FONT CONSISTENCY */
 .testimonial-card-v2 {
   background: #FFFFFF;
@@ -781,6 +1012,28 @@
   .flecha-section-heading {
     font-size: 51px;
   }
+
+  /* Portfolio tablet styles */
+  .portfolio-header {
+    min-height: 140px;
+    padding: 24px 20px;
+  }
+
+  .portfolio-service-type {
+    font-size: 22px;
+  }
+
+  .portfolio-content {
+    padding: 24px 20px 20px;
+  }
+
+  .portfolio-title {
+    font-size: 18px;
+  }
+
+  .portfolio-description {
+    font-size: 14px;
+  }
 }
 
 /* Mobile responsive - stack logos and center them */
@@ -903,6 +1156,49 @@
   .company-logo-v2 {
     align-self: flex-start;
   }
+
+  /* Mobile portfolio styles */
+  .portfolio-header {
+    min-height: 120px;
+    padding: 20px 16px;
+  }
+
+  .portfolio-category {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .portfolio-service-type {
+    font-size: 20px;
+  }
+
+  .portfolio-service-detail {
+    font-size: 13px;
+  }
+
+  .portfolio-content {
+    padding: 20px 16px 16px;
+  }
+
+  .portfolio-title {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .portfolio-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .portfolio-view-all-button {
+    font-size: 15px;
+    padding: 14px 20px;
+  }
 }
 
 /* Small mobile adjustments */
@@ -965,6 +1261,49 @@
 
   .client-location-v2 {
     font-size: 10px;
+  }
+
+  /* Extra small mobile portfolio adjustments */
+  .portfolio-header {
+    min-height: 110px;
+    padding: 18px 14px;
+  }
+
+  .portfolio-category {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .portfolio-service-type {
+    font-size: 18px;
+  }
+
+  .portfolio-service-detail {
+    font-size: 12px;
+  }
+
+  .portfolio-content {
+    padding: 18px 14px 14px;
+  }
+
+  .portfolio-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-description {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .portfolio-button {
+    font-size: 12px;
+    padding: 9px 14px;
+  }
+
+  .portfolio-view-all-button {
+    font-size: 14px;
+    padding: 12px 18px;
   }
 }
 
