@@ -1,0 +1,131 @@
+/* Services Section Styles */
+.bgCustomBlue {
+  background-color: #2762F8;
+}
+
+.servicesContainer {
+  width: 1200px;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: calc(50% - 600px + (852.56px / 2 - 426.28px));
+}
+
+@media (max-width: 1200px) {
+  .servicesContainer {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.servicesMainHeading {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 51.1537px;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.servicesMainHeadingAccent {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 51.1537px;
+  font-weight: normal;
+  color: #00FFF7;
+  line-height: 1.2;
+}
+
+.servicesNumber {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 30.1024px;
+  font-weight: medium;
+  color: #50C0FF;
+}
+
+.servicesTitle {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 22.735px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.servicesDescription {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11.3675px;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+.servicesButton {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10.7991px;
+  font-weight: normal;
+  color: #FFFFFF;
+  background-color: #001C46;
+  border: none;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.servicesButton:hover {
+  background-color: #002A5C;
+}
+
+/* Sticky Services Heading Styles */
+.servicesHeadingWrapper {
+  position: relative;
+}
+
+.servicesHeadingContent {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* CRITICAL FIX: Force inline styles to override with higher specificity */
+.servicesHeadingContent.isStickyActive[style*="position: fixed"] {
+  position: fixed !important;
+}
+
+.servicesHeadingContent.isStickyActive[style*="top:"] {
+  top: 200px !important;
+}
+
+.servicesHeadingContent.isStickyActive[style*="z-index:"] {
+  z-index: 10 !important;
+}
+
+.servicesHeadingFade {
+  opacity: 0 !important;
+  transform: translateY(-20px) !important;
+}
+
+/* Tablet responsive adjustments */
+@media (max-width: 1024px) {
+  /* Disable sticky behavior on tablet and mobile */
+  .servicesHeadingContent.isStickyActive {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    width: unset !important;
+    z-index: unset !important;
+  }
+
+  .servicesMainHeading {
+    font-size: 51px;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  /* Ensure sticky behavior is disabled on mobile */
+  .servicesHeadingContent.isStickyActive {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    width: unset !important;
+    z-index: unset !important;
+  }
+}

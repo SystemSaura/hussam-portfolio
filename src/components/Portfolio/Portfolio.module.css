@@ -1,0 +1,477 @@
+/* Portfolio Section Styles */
+.flechaSectionHeading {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 34.1024px;
+  font-weight: normal;
+  color: #001C46;
+  line-height: 1.2;
+}
+
+.workSansBody {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12.7884px;
+  color: #001C46;
+  line-height: 1.6;
+}
+
+/* REDESIGNED PORTFOLIO SECTION - PROFESSIONAL & POLISHED */
+.portfolioCard {
+  background: #FFFFFF;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid #F3F4F6;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolioCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.portfolioHeader {
+  position: relative;
+  padding: 28px 24px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  overflow: hidden;
+}
+
+.portfolioHeader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 2px;
+}
+
+.portfolioHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.portfolioCategory {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* ENHANCED PORTFOLIO COMPANY LOGO STYLING */
+.portfolioCompanyLogo {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 8px 12px;
+  min-width: 64px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.portfolioCard:hover .portfolioCompanyLogo {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Portfolio logo image styling */
+.portfolioLogoImg {
+  height: 32px;
+  width: auto;
+  max-width: 56px;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Specific portfolio logo adjustments */
+.portfolioLogoShiftat {
+  height: 28px;
+  max-width: 64px;
+}
+
+.portfolioLogoEmpire {
+  height: 36px;
+  max-width: 52px;
+}
+
+.portfolioLogoAlnahdi {
+  height: 30px;
+  max-width: 60px;
+}
+
+/* Fallback logo styling for text-based logos */
+.portfolioLogoText {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #374151;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.portfolioHeaderMain {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolioServiceType {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.portfolioServiceDetail {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.95;
+  color: white;
+}
+
+.portfolioContent {
+  padding: 28px 24px 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolioTitle {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: color 0.3s ease;
+}
+
+.portfolioCard:hover .portfolioTitle {
+  color: #2762F8;
+}
+
+.portfolioArrow {
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.portfolioCard:hover .portfolioArrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+.portfolioDescription {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6B7280;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.portfolioButton {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolioButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolioButtonBlue {
+  background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+}
+
+.portfolioButtonBlue:hover {
+  background: linear-gradient(135deg, #2563EB 0%, #1E3A8A 100%);
+}
+
+.portfolioButtonDark {
+  background-color: #001C46;
+  border-radius: 25px;
+}
+
+.portfolioButtonDark:hover {
+  background-color: #151829;
+  transform: translateY(-1px);
+}
+
+.portfolioButtonGreen {
+  background: linear-gradient(135deg, #10B981 0%, #047857 100%);
+}
+
+.portfolioButtonGreen:hover {
+  background: linear-gradient(135deg, #059669 0%, #065F46 100%);
+}
+
+.portfolioButtonPurple {
+  background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+}
+
+.portfolioButtonPurple:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+}
+
+.portfolioButtonOrange {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+}
+
+.portfolioButtonOrange:hover {
+  background: linear-gradient(135deg, #E69500 0%, #C2610C 100%);
+}
+
+.portfolioButtonTeal {
+  background: linear-gradient(135deg, #14B8A6 0%, #0F766E 100%);
+}
+
+.portfolioButtonTeal:hover {
+  background: linear-gradient(135deg, #0D9488 0%, #134E4A 100%);
+}
+
+.portfolioButtonPink {
+  background: linear-gradient(135deg, #EC4899 0%, #BE185D 100%);
+}
+
+.portfolioButtonPink:hover {
+  background: linear-gradient(135deg, #DB2777 0%, #9D174D 100%);
+}
+
+.portfolioViewAllButton {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  background: #F9FAFB;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolioViewAllButton:hover {
+  background: #2762F8;
+  color: white;
+  border-color: #2762F8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(39, 98, 248, 0.25);
+}
+
+.flechaVerificationText {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.flechaViewAllText {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2563EB;
+}
+
+/* Tablet responsive adjustments */
+@media (max-width: 1024px) {
+  .portfolioHeader {
+    min-height: 140px;
+    padding: 24px 20px;
+  }
+
+  .portfolioServiceType {
+    font-size: 22px;
+  }
+
+  .portfolioContent {
+    padding: 24px 20px 20px;
+  }
+
+  .portfolioTitle {
+    font-size: 18px;
+  }
+
+  .portfolioDescription {
+    font-size: 14px;
+  }
+
+  /* Portfolio logo adjustments for tablet */
+  .portfolioCompanyLogo {
+    min-width: 56px;
+    min-height: 44px;
+    padding: 6px 10px;
+  }
+
+  .portfolioLogoImg {
+    height: 28px;
+    max-width: 48px;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .portfolioHeader {
+    min-height: 120px;
+    padding: 20px 16px;
+  }
+
+  .portfolioCategory {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .portfolioServiceType {
+    font-size: 20px;
+  }
+
+  .portfolioServiceDetail {
+    font-size: 13px;
+  }
+
+  .portfolioContent {
+    padding: 20px 16px 16px;
+  }
+
+  .portfolioTitle {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .portfolioDescription {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .portfolioButton {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .portfolioViewAllButton {
+    font-size: 15px;
+    padding: 14px 20px;
+  }
+
+  /* Mobile portfolio logo adjustments */
+  .portfolioCompanyLogo {
+    min-width: 52px;
+    min-height: 40px;
+    padding: 6px 8px;
+  }
+
+  .portfolioLogoImg {
+    height: 24px;
+    max-width: 40px;
+  }
+
+  .portfolioLogoText {
+    font-size: 10px;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .portfolioHeader {
+    min-height: 110px;
+    padding: 18px 14px;
+  }
+
+  .portfolioCategory {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .portfolioServiceType {
+    font-size: 18px;
+  }
+
+  .portfolioServiceDetail {
+    font-size: 12px;
+  }
+
+  .portfolioContent {
+    padding: 18px 14px 14px;
+  }
+
+  .portfolioTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .portfolioDescription {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .portfolioButton {
+    font-size: 12px;
+    padding: 9px 14px;
+  }
+
+  .portfolioViewAllButton {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+
+  /* Extra small mobile portfolio logo adjustments */
+  .portfolioCompanyLogo {
+    min-width: 48px;
+    min-height: 36px;
+    padding: 4px 6px;
+  }
+
+  .portfolioLogoImg {
+    height: 20px;
+    max-width: 36px;
+  }
+
+  .portfolioLogoText {
+    font-size: 9px;
+  }
+}

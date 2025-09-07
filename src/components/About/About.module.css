@@ -1,0 +1,23 @@
+/* About Section Styles */
+.bgCustomDarkBlue {
+  background-color: #001C46;
+}
+
+.flechaHeroTitleAbout {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.workSansBodyWhite {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: #E5E7EB;
+  line-height: 1.6;
+}
+
+.text11px {
+  font-size: 11px;
+}
