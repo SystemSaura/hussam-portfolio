@@ -201,20 +201,20 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-12">
             <div className="w-40 h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">
-            <Image
-              src="/picofme.webp"
-              alt="Hussam Baaka"
-              width={160}
-              height={160}
-              className="w-full h-full object-cover"
-              priority
-            />
+              <Image
+                src="/picofme.webp"
+                alt="Hussam Baaka"
+                width={160}
+                height={160}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
           </div>
-            <h2 className="flecha-hero-title-about text-white mb-8 leading-tight">
-              Hi. I'm Hussam Baaka. I make every marketing<br />
-              Riyal / Dirham work harder for your growth.
-            </h2>
+          <h2 className="flecha-hero-title-about text-white mb-8 leading-tight">
+            Hi. I'm Hussam Baaka. I make every marketing<br />
+            Riyal / Dirham work harder for your growth.
+          </h2>
           <div className="mb-8">
             <span className="text-cyan-400 text-11px font-medium">[ A note to growth-focused leaders ]</span>
           </div>
@@ -235,7 +235,6 @@ export default function Home() {
             <p>At the end of the day, marketing should do one thing:</p>
 
             <p className="text-cyan-400 font-medium">Generate predictable, scalable business results you can bank on.</p>
-         
           </div>
 
           <div className="mt-12">
@@ -280,7 +279,7 @@ export default function Home() {
               </div>
 
               {/* Service 2 */}
-             <div>
+              <div>
                 <div className="services-number mb-4">02</div>
                 <h3 className="services-title mb-4">Growth Marketing Implementation and Monitoring</h3>
                 <p className="services-description mb-6 leading-relaxed">
@@ -313,7 +312,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Portfolio Showcase Section - REDESIGNED FOR BETTER VISUAL HIERARCHY */}
+      {/* Portfolio Showcase Section - ENHANCED LOGO VISIBILITY */}
       <section ref={portfolioRef} className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
@@ -334,7 +333,7 @@ export default function Home() {
                 <div className="portfolio-header-content">
                   <div className="portfolio-category">HR Technology</div>
                   <div className="portfolio-company-logo">
-                    <img src="/logos/shiftat.webp" alt="Shiftat" className="h-8 w-auto object-contain opacity-90" />
+                    <img src="/logos/shiftat.webp" alt="Shiftat" className="portfolio-logo-img portfolio-logo-shiftat" />
                   </div>
                 </div>
                 <div className="portfolio-header-main">
@@ -358,7 +357,7 @@ export default function Home() {
                   Created engaging social media content strategy for Shiftat's recruitment platform, focusing on thought leadership and talent acquisition trends.
                 </p>
                 <button 
-                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  onClick={() => window.open('https://www.linkedin.com/company/shiftat-sa/', '_blank')}
                   className="portfolio-button portfolio-button-blue"
                 >
                   View Full Work
@@ -366,26 +365,24 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Portfolio Project 2 - Akkar Real Estate */}
+            {/* Portfolio Project 2 - KAPSARC Government Content */}
             <div className="portfolio-card group">
               <div className="portfolio-header bg-gradient-to-br from-green-500 to-green-600">
                 <div className="portfolio-header-content">
-                  <div className="portfolio-category">Real Estate</div>
+                  <div className="portfolio-category">Government Research</div>
                   <div className="portfolio-company-logo">
-                    <div className="w-8 h-8 rounded-lg bg-white bg-opacity-20 flex items-center justify-center">
-                      <span className="text-white text-sm font-bold">AK</span>
-                    </div>
+                    <img src="/logos/kapsarc.webp" alt="KAPSARC" className="portfolio-logo-img" />
                   </div>
                 </div>
                 <div className="portfolio-header-main">
-                  <h4 className="portfolio-service-type">App UX Copy</h4>
-                  <p className="portfolio-service-detail">Microcopies + Website Content</p>
+                  <h4 className="portfolio-service-type">Website Content Strategy</h4>
+                  <p className="portfolio-service-detail">Research Portal + Policy Content</p>
                 </div>
               </div>
               
               <div className="portfolio-content">
                 <h3 className="portfolio-title">
-                  Property Search App Content
+                  Government Research Portal Content
                   <Image
                     src="https://ext.same-assets.com/3287453319/2624132661.svg"
                     alt="Arrow"
@@ -395,10 +392,10 @@ export default function Home() {
                   />
                 </h3>
                 <p className="portfolio-description">
-                  Crafted user-friendly microcopies and website content for Akkar's real estate platform, improving user experience and conversion rates.
+                  Created comprehensive website content strategy for KAPSARC's research platform, improving accessibility of energy policy insights for stakeholders.
                 </p>
                 <button 
-                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  onClick={() => window.open('https://docs.google.com/document/d/1dZU207Y76fwhINdAYPyApEJT2m04KQm1/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
                   className="portfolio-button portfolio-button-green"
                 >
                   View Full Work
@@ -406,26 +403,24 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Portfolio Project 3 - FieldBio Security */}
+            {/* Portfolio Project 3 - Abudawood Logistics */}
             <div className="portfolio-card group">
               <div className="portfolio-header bg-gradient-to-br from-purple-500 to-purple-600">
                 <div className="portfolio-header-content">
-                  <div className="portfolio-category">Cybersecurity</div>
+                  <div className="portfolio-category">Logistics & Supply Chain</div>
                   <div className="portfolio-company-logo">
-                    <div className="w-8 h-8 rounded-lg bg-white bg-opacity-20 flex items-center justify-center">
-                      <span className="text-white text-sm font-bold">FB</span>
-                    </div>
+                    <img src="/logos/abudawood.webp" alt="Abudawood" className="portfolio-logo-img" />
                   </div>
                 </div>
                 <div className="portfolio-header-main">
-                  <h4 className="portfolio-service-type">Case Study</h4>
-                  <p className="portfolio-service-detail">Blog Posts + Technical Content</p>
+                  <h4 className="portfolio-service-type">Social Media Marketing</h4>
+                  <p className="portfolio-service-detail">B2B LinkedIn + Industry Content</p>
                 </div>
               </div>
               
               <div className="portfolio-content">
                 <h3 className="portfolio-title">
-                  Security Solutions Showcase
+                  B2B Logistics Social Strategy
                   <Image
                     src="https://ext.same-assets.com/3287453319/2624132661.svg"
                     alt="Arrow"
@@ -435,10 +430,10 @@ export default function Home() {
                   />
                 </h3>
                 <p className="portfolio-description">
-                  Developed comprehensive case studies and technical blog content for FieldBio's cybersecurity solutions, establishing thought leadership.
+                  Developed professional LinkedIn and industry content strategy for one of the GCC's leading logistics providers, establishing thought leadership.
                 </p>
                 <button 
-                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  onClick={() => window.open('https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
                   className="portfolio-button portfolio-button-purple"
                 >
                   View Full Work
@@ -452,7 +447,7 @@ export default function Home() {
                 <div className="portfolio-header-content">
                   <div className="portfolio-category">Healthcare</div>
                   <div className="portfolio-company-logo">
-                    <img src="/logos/alnahdi.webp" alt="Al Nahdi" className="h-8 w-auto object-contain opacity-90" />
+                    <img src="/logos/alnahdi.webp" alt="Al Nahdi" className="portfolio-logo-img" />
                   </div>
                 </div>
                 <div className="portfolio-header-main">
@@ -476,7 +471,7 @@ export default function Home() {
                   Designed and wrote engaging newsletter campaigns for Al Nahdi Pharmacy, focusing on health tips and product promotions.
                 </p>
                 <button 
-                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  onClick={() => window.open('https://docs.google.com/document/d/1zPMkqovrX31qZEGtLtg0_UEtpWhI1oHZ/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
                   className="portfolio-button portfolio-button-orange"
                 >
                   View Full Work
@@ -490,7 +485,7 @@ export default function Home() {
                 <div className="portfolio-header-content">
                   <div className="portfolio-category">Real Estate</div>
                   <div className="portfolio-company-logo">
-                    <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className="h-8 w-auto object-contain opacity-90" />
+                    <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className="portfolio-logo-img portfolio-logo-empire" />
                   </div>
                 </div>
                 <div className="portfolio-header-main">
@@ -514,7 +509,7 @@ export default function Home() {
                   Developed comprehensive brand profile and positioning strategy for Empire Real Estate's luxury property portfolio in Qatar.
                 </p>
                 <button 
-                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_', '_blank')}
                   className="portfolio-button portfolio-button-teal"
                 >
                   View Full Work
@@ -522,26 +517,24 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Portfolio Project 6 - Rehabs Club */}
+            {/* Portfolio Project 6 - SAEQ Logistics */}
             <div className="portfolio-card group">
               <div className="portfolio-header bg-gradient-to-br from-pink-500 to-pink-600">
                 <div className="portfolio-header-content">
-                  <div className="portfolio-category">Health & Wellness</div>
+                  <div className="portfolio-category">Logistics</div>
                   <div className="portfolio-company-logo">
-                    <div className="w-8 h-8 rounded-lg bg-white bg-opacity-20 flex items-center justify-center">
-                      <span className="text-white text-sm font-bold">RC</span>
-                    </div>
+                    <img src="/logos/saeq.webp" alt="SAEQ" className="portfolio-logo-img" />
                   </div>
                 </div>
                 <div className="portfolio-header-main">
-                  <h4 className="portfolio-service-type">Website Content</h4>
-                  <p className="portfolio-service-detail">Blog Posts + Web Copy</p>
+                  <h4 className="portfolio-service-type">Company Profile</h4>
+                  <p className="portfolio-service-detail">Brand Positioning</p>
                 </div>
               </div>
               
               <div className="portfolio-content">
                 <h3 className="portfolio-title">
-                  Wellness Platform Content
+                  Logistics Brand Positioning
                   <Image
                     src="https://ext.same-assets.com/3287453319/2624132661.svg"
                     alt="Arrow"
@@ -551,10 +544,10 @@ export default function Home() {
                   />
                 </h3>
                 <p className="portfolio-description">
-                  Created compelling website content and educational blog posts for Rehabs Club's health and wellness platform.
+                  Crafted comprehensive brand profile and market positioning strategy for SAEQ's expansion across GCC markets.
                 </p>
                 <button 
-                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  onClick={() => window.open('https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0', '_blank')}
                   className="portfolio-button portfolio-button-pink"
                 >
                   View Full Work
@@ -563,21 +556,20 @@ export default function Home() {
             </div>
           </div>
 
-          {/* View Complete Portfolio Button */}
+          {/* View Complete Portfolio Button - Improved Design */}
           <div className="text-center mt-16">
-            <button 
-              onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-              className="portfolio-view-all-button"
-            >
-              View Complete Portfolio
-              <Image
-                src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                alt="Arrow"
-                width={16}
-                height={16}
-                className="ml-2"
-              />
-            </button>
+           <div className="inline-flex items-center bg-gray-50 rounded-full px-6 py-3 border">
+              <svg className="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="flecha-verification-text mr-3">Complete portfolio available</span>
+              <button 
+                onClick={() => window.open('https://docs.google.com/spreadsheets/d/1yg0fcn6KVOrh72LZpZe5uPQ6JQUMduPF7WG2pboNHww/edit?gid=1783708472#gid=1783708472', '_blank')}
+                className="flecha-view-all-text hover:text-blue-800 transition-colors"
+              >
+    View All →
+    </button>
+</div>
           </div>
         </div>
       </section>

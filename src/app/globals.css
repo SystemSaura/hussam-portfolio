@@ -632,13 +632,62 @@
   backdrop-filter: blur(10px);
 }
 
+/* ENHANCED PORTFOLIO COMPANY LOGO STYLING */
 .portfolio-company-logo {
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 8px 12px;
+  min-width: 64px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .portfolio-card:hover .portfolio-company-logo {
-  opacity: 1;
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Portfolio logo image styling */
+.portfolio-logo-img {
+  height: 32px;
+  width: auto;
+  max-width: 56px;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Specific portfolio logo adjustments */
+.portfolio-logo-shiftat {
+  height: 28px;
+  max-width: 64px;
+}
+
+.portfolio-logo-empire {
+  height: 36px;
+  max-width: 52px;
+}
+
+.portfolio-logo-alnahdi {
+  height: 30px;
+  max-width: 60px;
+}
+
+/* Fallback logo styling for text-based logos */
+.portfolio-logo-text {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #374151;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .portfolio-header-main {
@@ -734,6 +783,16 @@
 
 .portfolio-button-blue:hover {
   background: linear-gradient(135deg, #2563EB 0%, #1E3A8A 100%);
+}
+
+.portfolio-button-dark {
+  background-color: #001C46;
+  border-radius: 25px;
+}
+
+.portfolio-button-dark:hover {
+  background-color: #151829;
+  transform: translateY(-1px);
 }
 
 .portfolio-button-green {
@@ -1034,6 +1093,18 @@
   .portfolio-description {
     font-size: 14px;
   }
+
+  /* Portfolio logo adjustments for tablet */
+  .portfolio-company-logo {
+    min-width: 56px;
+    min-height: 44px;
+    padding: 6px 10px;
+  }
+
+  .portfolio-logo-img {
+    height: 28px;
+    max-width: 48px;
+  }
 }
 
 /* Mobile responsive - stack logos and center them */
@@ -1199,6 +1270,22 @@
     font-size: 15px;
     padding: 14px 20px;
   }
+
+  /* Mobile portfolio logo adjustments */
+  .portfolio-company-logo {
+    min-width: 52px;
+    min-height: 40px;
+    padding: 6px 8px;
+  }
+
+  .portfolio-logo-img {
+    height: 24px;
+    max-width: 40px;
+  }
+
+  .portfolio-logo-text {
+    font-size: 10px;
+  }
 }
 
 /* Small mobile adjustments */
@@ -1304,6 +1391,22 @@
   .portfolio-view-all-button {
     font-size: 14px;
     padding: 12px 18px;
+  }
+
+  /* Extra small mobile portfolio logo adjustments */
+  .portfolio-company-logo {
+    min-width: 48px;
+    min-height: 36px;
+    padding: 4px 6px;
+  }
+
+  .portfolio-logo-img {
+    height: 20px;
+    max-width: 36px;
+  }
+
+  .portfolio-logo-text {
+    font-size: 9px;
   }
 }
 
