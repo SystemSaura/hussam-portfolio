@@ -1,0 +1,358 @@
+/* Case Study Section - Only Flecha S Font */
+.caseStudySection {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #001C46 0%, #2762F8 100%);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Header - Matches Hero Typography */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionBadge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-family: 'Flecha S', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.mainHeading {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 51.1537px;
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.highlightText {
+  color: #00FFF7;
+}
+
+.sectionSubtext {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Content */
+.caseStudyLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.caseStudyContent {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  backdrop-filter: blur(20px);
+}
+
+.caseStudyContent:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Company Row */
+.companyRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.companyLogo {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 16px 24px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.logoImage {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.companyDetails {
+  color: white;
+}
+
+.companyName {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.companyDescription {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 12px;
+}
+
+.locationBadge {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.readMoreContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #00FFF7;
+}
+
+.readMoreText {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.readMoreArrow {
+  transition: transform 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(84%) sepia(58%) saturate(2504%) hue-rotate(165deg) brightness(102%) contrast(101%);
+}
+
+.caseStudyContent:hover .readMoreArrow {
+  transform: translateX(6px);
+}
+
+/* Results Grid */
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.resultItem {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.resultNumber {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #00FFF7;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.resultLabel {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Description */
+.caseDescription {
+  margin-bottom: 40px;
+}
+
+.descriptionText {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Enhanced Social Proof */
+.socialProof {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socialContent {
+  text-align: center;
+}
+
+.socialHeader {
+  margin-bottom: 24px;
+}
+
+.socialLabel {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.socialShowcase {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.platformDisplay {
+  position: relative;
+}
+
+.platformImage {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.platformImage:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+.socialImage {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.platformOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 16px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.platformName {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.platformMetric {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 12px;
+  color: #00FFF7;
+  font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .mainHeading {
+    font-size: 42px;
+  }
+  
+  .resultsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .caseStudySection {
+    padding: 60px 0;
+  }
+
+  .mainHeading {
+    font-size: 36px;
+  }
+  
+  .caseStudyContent {
+    padding: 30px 20px;
+  }
+
+  .companyRow {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .companyInfo {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .resultsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .resultNumber {
+    font-size: 28px;
+  }
+
+  .socialShowcase {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainHeading {
+    font-size: 28px;
+  }
+
+  .resultsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .resultNumber {
+    font-size: 24px;
+  }
+
+  .resultLabel {
+    font-size: 12px;
+  }
+
+  .companyName {
+    font-size: 24px;
+  }
+
+  .readMoreText {
+    font-size: 16px;
+  }
+}

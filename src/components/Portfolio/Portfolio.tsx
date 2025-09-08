@@ -13,7 +13,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
           <h2 className={styles.flechaSectionHeading + " mb-6"}>
             Featured Portfolio Work
           </h2>
-          <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed"}>
+          <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed"}>
             Real marketing projects that delivered measurable results for GCC companies across different industries.
           </p>
         </div>
@@ -98,7 +98,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
 
           {/* Portfolio Project 3 - Abudawood Logistics */}
           <div className={`${styles.portfolioCard} group`}>
-            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-purple-500 to-purple-600`}>
+            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-orange-500 to-orange-600`}>
               <div className={styles.portfolioHeaderContent}>
                 <div className={styles.portfolioCategory}>Logistics & Supply Chain</div>
                 <div className={styles.portfolioCompanyLogo}>
@@ -127,7 +127,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               </p>
               <button 
                 onClick={() => window.open('https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
-                className={`${styles.portfolioButton} ${styles.portfolioButtonPurple}`}
+                className={`${styles.portfolioButton} ${styles.portfolioButtonOrange}`}
               >
                 View Full Work
               </button>
@@ -136,7 +136,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
 
           {/* Portfolio Project 4 - Al Nahdi Newsletter */}
           <div className={`${styles.portfolioCard} group`}>
-            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-orange-500 to-orange-600`}>
+            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-pink-500 to-pink-600`}>
               <div className={styles.portfolioHeaderContent}>
                 <div className={styles.portfolioCategory}>Healthcare</div>
                 <div className={styles.portfolioCompanyLogo}>
@@ -165,7 +165,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               </p>
               <button 
                 onClick={() => window.open('https://docs.google.com/document/d/1zPMkqovrX31qZEGtLtg0_UEtpWhI1oHZ/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
-                className={`${styles.portfolioButton} ${styles.portfolioButtonOrange}`}
+                className={`${styles.portfolioButton} ${styles.portfolioButtonPink}`}
               >
                 View Full Work
               </button>
@@ -212,7 +212,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
 
           {/* Portfolio Project 6 - SAEQ Logistics */}
           <div className={`${styles.portfolioCard} group`}>
-            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-pink-500 to-pink-600`}>
+            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-purple-500 to-purple-600`}>
               <div className={styles.portfolioHeaderContent}>
                 <div className={styles.portfolioCategory}>Logistics</div>
                 <div className={styles.portfolioCompanyLogo}>
@@ -241,7 +241,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0', '_blank')}
-                className={`${styles.portfolioButton} ${styles.portfolioButtonPink}`}
+                className={`${styles.portfolioButton} ${styles.portfolioButtonPurple}`}
               >
                 View Full Work
               </button>

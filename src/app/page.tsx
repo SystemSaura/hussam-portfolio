@@ -6,6 +6,7 @@ import Hero from "../components/Hero/Hero";
 import TrustedCompanies from "../components/TrustedCompanies/TrustedCompanies";
 import About from "../components/About/About";
 import Services from "../components/Services/Services";
+import CaseStudy from "../components/CaseStudy/CaseStudy";
 import Portfolio from "../components/Portfolio/Portfolio";
 import Testimonials from "../components/Testimonials/Testimonials";
 import CTA from "../components/CTA/CTA";
@@ -33,6 +34,7 @@ export default function Home() {
       <TrustedCompanies />
       <About ref={aboutRef} />
       <Services ref={servicesRef} />
+      <CaseStudy />
       <Portfolio ref={portfolioRef} />
       <Testimonials />
       <CTA />
