@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./Testimonials.module.css";
+import styles from "./testimonials.module.css";
 
 export default function Testimonials() {
   return (

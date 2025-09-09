@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { forwardRef } from "react";
-import styles from "./About.module.css";
+import styles from "./about.module.css";
 
 const About = forwardRef<HTMLElement>((_, ref) => {
   return (

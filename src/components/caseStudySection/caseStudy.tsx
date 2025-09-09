@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./CaseStudy.module.css";
+import styles from "./caseStudy.module.css";
 
 export default function CaseStudy() {
   return (

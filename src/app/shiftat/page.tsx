@@ -1,8 +1,8 @@
 "use client";
 
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import CaseStudyDetail from "../../components/CaseStudy/CaseStudyDetail";
+import ShiftatHeader from "./shiftatHeader"; // Changed from "./ShiftatHeader" to "./shiftatHeader"
+import Footer from "../../components/footerSection/footer";
+import CaseStudyDetail from "../../caseStudy/caseStudyDetail";
 
 export default function ShiftatCaseStudy() {
   const navigationHandlers = {
@@ -13,7 +13,7 @@ export default function ShiftatCaseStudy() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header onNavigate={navigationHandlers} />
+      <ShiftatHeader onNavigate={navigationHandlers} />
       <CaseStudyDetail />
       <Footer />
     </div>

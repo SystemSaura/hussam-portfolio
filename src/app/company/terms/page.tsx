@@ -7,8 +7,8 @@ export default function Terms() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="nav-component">
-        <div className="nav-container">
+     <header className="navComponent">
+        <div className="navContainer">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="logo-name">Hussam Baaka <span className="cursor-blink">|</span></Link>

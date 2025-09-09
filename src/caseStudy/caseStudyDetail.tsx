@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./CaseStudyDetail.module.css";
+import styles from "./caseStudyDetail.module.css";
 
 export default function CaseStudyDetail() {
   return (
     <div className={styles.detailContainer}>
-      {/* Hero Section - Enhanced with Larger Title */}
+      {/* Hero Section - Full Screen */}
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
@@ -54,11 +54,11 @@ export default function CaseStudyDetail() {
         </div>
       </section>
 
-      {/* About Shiftat */}
+      {/* About Shiftat - Centered */}
       <section className={styles.about}>
         <div className={styles.container}>
-          <div className={styles.aboutGrid}>
-            <div className={styles.aboutContent}>
+          <div className={styles.aboutGridCentered}>
+            <div className={styles.aboutContentCentered}>
               <h2 className={styles.sectionTitle}>About Shiftat</h2>
               <p className={styles.aboutText}>
                 Shiftat is Saudi Arabia's pioneering AI-powered recruitment platform that owns the entire hiring process from start to finish. Using advanced AI for screening and shortlisting, Shiftat helps organizations reduce time-to-hire by up to <strong>90%</strong> and cut hiring costs by <strong>80%</strong>.
@@ -67,20 +67,17 @@ export default function CaseStudyDetail() {
                 The platform has successfully placed over <strong>7,000 Saudis</strong> annually and continues to scale rapidly across the Kingdom.
               </p>
             </div>
-            <div className={styles.aboutTags}>
-              <span className={styles.tag}>HR & Recruitment</span>
-              <span className={styles.tag}>Saudi Arabia</span>
-              <span className={styles.tag}>AI-Powered</span>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Results Section */}
+      {/* Results Section - Centered */}
       <section className={styles.results}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Results That Speak Volumes</h2>
-          <p className={styles.sectionSubtitle}>Measurable impact across all key performance indicators</p>
+          <div className={styles.centeredTextContent}>
+            <h2 className={styles.sectionTitle}>Results That Speak Volumes</h2>
+            <p className={styles.sectionSubtitle}>Measurable impact across all key performance indicators</p>
+          </div>
           <div className={styles.resultsGrid}>
             <div className={styles.resultCard}>
               <div className={styles.resultNumber}>100+</div>
@@ -128,11 +125,13 @@ export default function CaseStudyDetail() {
         </div>
       </section>
 
-      {/* Solution Section */}
+      {/* Solution Section - Centered */}
       <section className={styles.solution}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>The Strategic Solution</h2>
-          <p className={styles.sectionSubtitle}>Comprehensive digital marketing ecosystem designed for maximum impact</p>
+          <div className={styles.centeredTextContent}>
+            <h2 className={styles.sectionTitle}>The Strategic Solution</h2>
+            <p className={styles.sectionSubtitle}>Comprehensive digital marketing ecosystem designed for maximum impact</p>
+          </div>
           
           <div className={styles.solutionGrid}>
             <div className={styles.solutionCard}>
@@ -187,10 +186,12 @@ export default function CaseStudyDetail() {
         </div>
       </section>
 
-      {/* Enhanced Social Proof */}
+      {/* Enhanced Social Proof - Centered */}
       <section className={styles.socialProof}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Social Media Success</h2>
+          <div className={styles.centeredTextContent}>
+            <h2 className={styles.sectionTitle}>Social Media Success</h2>
+          </div>
           <div className={styles.socialGrid}>
             <div className={styles.socialCard}>
               <div className={styles.socialImageContainer}>
@@ -201,12 +202,6 @@ export default function CaseStudyDetail() {
                   height={300}
                   className={styles.socialImage}
                 />
-                <div className={styles.socialOverlay}>
-                  <div className={styles.socialMetrics}>
-                    <span className={styles.metricNumber}>4,000+</span>
-                    <span className={styles.metricLabel}>Professionals</span>
-                  </div>
-                </div>
               </div>
               <div className={styles.socialContent}>
                 <h3 className={styles.socialTitle}>LinkedIn Growth</h3>
@@ -222,12 +217,6 @@ export default function CaseStudyDetail() {
                   height={300}
                   className={styles.socialImage}
                 />
-                <div className={styles.socialOverlay}>
-                  <div className={styles.socialMetrics}>
-                    <span className={styles.metricNumber}>8,000+</span>
-                    <span className={styles.metricLabel}>Followers</span>
-                  </div>
-                </div>
               </div>
               <div className={styles.socialContent}>
                 <h3 className={styles.socialTitle}>X Platform Success</h3>
@@ -238,10 +227,12 @@ export default function CaseStudyDetail() {
         </div>
       </section>
 
-      {/* Impact Section */}
+      {/* Impact Section - Centered */}
       <section className={styles.impact}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>The Transformative Impact</h2>
+          <div className={styles.centeredTextContent}>
+            <h2 className={styles.sectionTitle}>The Transformative Impact</h2>
+          </div>
           <div className={styles.impactContent}>
             <p className={styles.impactText}>
               By focusing on Shiftat's core value propositions—reducing hiring costs by <strong>80%</strong> and cutting time-to-hire by <strong>90%</strong>—we created messaging that resonated with business owners' deepest pain points. Our innovative "Interest Stage" approach allowed us to reach prospects before they even realized they needed recruitment solutions, creating a pipeline that continuously nurtures over <strong>1 million potential customers</strong>.

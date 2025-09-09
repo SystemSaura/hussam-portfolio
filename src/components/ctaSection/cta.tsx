@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./CTA.module.css";
+import styles from "./cta.module.css";
 
 export default function CTA() {
   return (

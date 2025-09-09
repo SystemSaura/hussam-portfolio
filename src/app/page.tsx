@@ -1,16 +1,16 @@
 "use client";
 
 import { useRef } from "react";
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import TrustedCompanies from "../components/TrustedCompanies/TrustedCompanies";
-import About from "../components/About/About";
-import Services from "../components/Services/Services";
-import CaseStudy from "../components/CaseStudy/CaseStudy";
-import Portfolio from "../components/Portfolio/Portfolio";
-import Testimonials from "../components/Testimonials/Testimonials";
-import CTA from "../components/CTA/CTA";
-import Footer from "../components/Footer/Footer";
+import Header from "../components/headerSection/header";
+import Hero from "../components/heroSection/hero";
+import TrustedCompanies from "../components/trustedCompaniesSection/trustedCompanies";
+import About from "../components/aboutSection/about";
+import Services from "../components/servicesSection/services";
+import CaseStudy from "../components/caseStudySection/caseStudy";
+import Portfolio from "../components/portfolioSection/portfolio";
+import Testimonials from "../components/testimonialsSection/testimonials";
+import CTA from "../components/ctaSection/cta";
+import Footer from "../components/footerSection/footer";
 
 export default function Home() {
   const aboutRef = useRef<HTMLElement>(null);

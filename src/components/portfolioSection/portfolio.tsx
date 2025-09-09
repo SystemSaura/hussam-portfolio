@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { forwardRef } from "react";
-import styles from "./Portfolio.module.css";
+import styles from "./portfolio.module.css";
 
 const Portfolio = forwardRef<HTMLElement>((_, ref) => {
   return (
@@ -260,9 +260,9 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               onClick={() => window.open('https://docs.google.com/spreadsheets/d/1yg0fcn6KVOrh72LZpZe5uPQ6JQUMduPF7WG2pboNHww/edit?gid=1783708472#gid=1783708472', '_blank')}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
             >
-  View All →
-  </button>
-</div>
+              View All →
+            </button>
+          </div>
         </div>
       </div>
     </section>

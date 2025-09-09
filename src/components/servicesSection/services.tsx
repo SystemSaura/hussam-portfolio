@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, forwardRef } from "react";
-import styles from "./Services.module.css";
+import styles from "./services.module.css";
 
 const Services = forwardRef<HTMLElement>((_, ref) => {
   const [isSticky, setIsSticky] = useState(false);

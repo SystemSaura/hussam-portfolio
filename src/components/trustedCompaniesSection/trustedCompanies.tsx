@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./TrustedCompanies.module.css";
+import styles from "./trustedCompanies.module.css";
 
 export default function TrustedCompanies() {
   return (
