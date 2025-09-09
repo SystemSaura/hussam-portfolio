@@ -14,8 +14,8 @@ export default function Footer() {
 
           <div className="flex items-center space-x-6 mb-4 md:mb-0">
             <span className="text-gray-400 text-sm">© 2025 Saura Agency LLC</span>
-            <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">Privacy Policy</Link>
-            <Link href="/terms" className="text-gray-400 hover:text-white text-sm">Terms</Link>
+            <Link href="/company/privacy-policy" className="text-gray-400 hover:text-white text-sm">Privacy Policy</Link>
+            <Link href="/company/terms" className="text-gray-400 hover:text-white text-sm">Terms</Link>
           </div>
         </div>
       </div>
