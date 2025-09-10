@@ -246,6 +246,9 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.container}>
             <div className={styles.centeredTextContent}>
               <h2 className={styles.sectionTitle}>Social Media Success</h2>
+              <p className={styles.socialProofSubtitle}>
+                From zero followers to industry leadership – building engaged communities that drive real business results
+              </p>
             </div>
             <div className={styles.socialGrid}>
               <div className={styles.socialCard}>
@@ -260,7 +263,7 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 </div>
                 <div className={styles.socialContent}>
                   <h3 className={styles.socialTitle}>LinkedIn Growth</h3>
-                  <p className={styles.socialDesc}>4,000+ engaged professionals and thought leadership positioning</p>
+                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>4,000+</span> engaged professionals and thought leadership positioning</p>
                 </div>
               </div>
               <div className={styles.socialCard}>
@@ -275,7 +278,7 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 </div>
                 <div className={styles.socialContent}>
                   <h3 className={styles.socialTitle}>X Platform Success</h3>
-                  <p className={styles.socialDesc}>8,000+ followers through valuable recruitment content</p>
+                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>8,000+</span> followers through valuable recruitment content</p>
                 </div>
               </div>
             </div>
