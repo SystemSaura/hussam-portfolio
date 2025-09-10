@@ -1,6 +1,5 @@
 "use client";
 
-import Footer from "../../components/footerSection/footer";
 import CaseStudyDetail from "../../caseStudyPage/caseStudyPage";
 
 export default function ShiftatCaseStudy() {
@@ -13,7 +12,6 @@ export default function ShiftatCaseStudy() {
   return (
     <div className="min-h-screen bg-white">
       <CaseStudyDetail onNavigate={navigationHandlers} />
-      <Footer />
     </div>
   );
 }

@@ -4,6 +4,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../components/footerSection/footer";
 import styles from "./caseStudyPage.module.css";
 
 interface NavigationHandlers {
@@ -93,9 +94,7 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                     className={styles.heroImg}
                     priority
                   />
-                  <div className={styles.imageOverlay}>
-                    <span className={styles.overlayText}>Shiftat Platform</span>
-                  </div>
+    
                 </div>
               </div>
             </div>
@@ -295,38 +294,44 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         </div>
       </section>
 
-      {/* Verification */}
+      {/* Verification - Redesigned */}
       <section className={styles.verification}>
-        <div className={styles.container}>
-          <div className={styles.verificationCard}>
-            <h2 className={styles.verificationTitle}>Verify This Success Story</h2>
-            <p className={styles.verificationText}>
-              You can contact Abdullah directly to verify the authenticity and accuracy of these results through his email:
-            </p>
-            <a href="mailto:abdullah@shiftatsa.com" className={styles.verificationEmail}>
-              abdullah@shiftatsa.com
-            </a>
-          </div>
+        <div className={styles.verificationContainer}>
+          <h2 className={styles.verificationTitle}>
+            Verify This <span className={styles.verificationHighlight}>Success Story</span>
+          </h2>
+          <p className={styles.verificationText}>
+            You can contact Abdullah directly to verify the authenticity and accuracy of these results through his email:
+          </p>
+          <a href="mailto:abdullah@shiftatsa.com" className={styles.verificationEmail}>
+            abdullah@shiftatsa.com
+          </a>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className={styles.cta}>
-        <div className={styles.container}>
-          <div className={styles.ctaContent}>
-            <h2 className={styles.ctaTitle}>Ready to Scale Your Business?</h2>
-            <p className={styles.ctaText}>
-              Get the same strategic approach that made Shiftat Saudi Arabia's leading AI recruitment platform.
-            </p>
-            <button 
-              onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-              className={styles.ctaButton}
-            >
-              Book Your Strategy Session
-            </button>
+      {/* Unified Background Container for CTA + Footer */}
+      <div className={styles.unifiedCtaFooterContainer}>
+        {/* CTA */}
+        <section className={styles.cta}>
+          <div className={styles.container}>
+            <div className={styles.ctaContent}>
+              <h2 className={styles.ctaTitle}>Ready to Scale Your Business?</h2>
+              <p className={styles.ctaText}>
+                Get the same strategic approach that made Shiftat Saudi Arabia's leading AI recruitment platform.
+              </p>
+              <button 
+                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                className={styles.ctaButton}
+              >
+                Book Your Strategy Session
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Footer */}
+        <Footer />
+      </div>
     </div>
   );
 }

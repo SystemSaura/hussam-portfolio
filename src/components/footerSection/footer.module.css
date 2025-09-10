@@ -2,3 +2,7 @@
 .bgGray900 {
   background-color: #111827;
 }
+
+.bgGradientBlue {
+  background: linear-gradient(135deg, #001C46 0%, #2762F8 100%);
+}
