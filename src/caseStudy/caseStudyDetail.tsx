@@ -11,11 +11,8 @@ export default function CaseStudyDetail() {
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
             <div className={styles.heroText}>
-              <div className={styles.heroCategory}>Success Story</div>
               <h1 className={styles.heroTitle}>
-                How Shiftat Became Saudi Arabia's
-                <br />
-                <span className={styles.highlight}>Leading AI Recruitment Platform</span>
+                How Shiftat Became Saudi Arabia's <span className={styles.highlight}>Leading AI Recruitment Platform</span>
               </h1>
               <p className={styles.heroSubtitle}>
                 Through Strategic Digital Marketing & Data-Driven Growth
@@ -71,33 +68,41 @@ export default function CaseStudyDetail() {
         </div>
       </section>
 
-      {/* Results Section - Centered */}
-      <section className={styles.results}>
-        <div className={styles.container}>
-          <div className={styles.centeredTextContent}>
-            <h2 className={styles.sectionTitle}>Results That Speak Volumes</h2>
-            <p className={styles.sectionSubtitle}>Measurable impact across all key performance indicators</p>
+      {/* Results Section - Redesigned */}
+      <section className={styles.resultsNew}>
+        <div className={styles.resultsContainer}>
+          <div className={styles.resultsHeader}>
+            <h2 className={styles.resultsMainHeading}>
+              Results That <span className={styles.resultsHighlight}>Speak Volumes</span>
+            </h2>
+            <p className={styles.resultsSubheading}>
+              Measurable impact across all key performance indicators
+            </p>
           </div>
-          <div className={styles.resultsGrid}>
-            <div className={styles.resultCard}>
-              <div className={styles.resultNumber}>100+</div>
-              <div className={styles.resultLabel}>High-Quality Leads</div>
-              <div className={styles.resultDesc}>Generated through strategic campaigns</div>
+          
+          <div className={styles.resultsShowcase}>
+            <div className={styles.primaryResults}>
+              <div className={styles.primaryStat}>
+                <div className={styles.primaryNumber}>100+</div>
+                <div className={styles.primaryLabel}>High-Quality Leads</div>
+                <div className={styles.primaryDesc}>Generated through strategic campaigns</div>
+              </div>
+              <div className={styles.primaryStat}>
+                <div className={styles.primaryNumber}>60%+</div>
+                <div className={styles.primaryLabel}>Email Open Rates</div>
+                <div className={styles.primaryDesc}>Industry-leading engagement</div>
+              </div>
             </div>
-            <div className={styles.resultCard}>
-              <div className={styles.resultNumber}>5,000+</div>
-              <div className={styles.resultLabel}>Engaged Subscribers</div>
-              <div className={styles.resultDesc}>Qualified decision-maker database</div>
-            </div>
-            <div className={styles.resultCard}>
-              <div className={styles.resultNumber}>60%+</div>
-              <div className={styles.resultLabel}>Email Open Rates</div>
-              <div className={styles.resultDesc}>Industry-leading engagement</div>
-            </div>
-            <div className={styles.resultCard}>
-              <div className={styles.resultNumber}>4,000+</div>
-              <div className={styles.resultLabel}>LinkedIn Followers</div>
-              <div className={styles.resultDesc}>Professional community growth</div>
+            
+            <div className={styles.secondaryResults}>
+              <div className={styles.secondaryStat}>
+                <div className={styles.secondaryNumber}>5,000+</div>
+                <div className={styles.secondaryLabel}>Engaged Subscribers</div>
+              </div>
+              <div className={styles.secondaryStat}>
+                <div className={styles.secondaryNumber}>4,000+</div>
+                <div className={styles.secondaryLabel}>LinkedIn Followers</div>
+              </div>
             </div>
           </div>
         </div>
@@ -125,62 +130,75 @@ export default function CaseStudyDetail() {
         </div>
       </section>
 
-      {/* Solution Section - Centered */}
-      <section className={styles.solution}>
+      {/* Solution Section - Redesigned with Uniform Cards */}
+      <section className={styles.solutionNew}>
         <div className={styles.container}>
-          <div className={styles.centeredTextContent}>
+          <div className={styles.solutionHeader}>
             <h2 className={styles.sectionTitle}>The Strategic Solution</h2>
-            <p className={styles.sectionSubtitle}>Comprehensive digital marketing ecosystem designed for maximum impact</p>
+            <p className={styles.solutionSubheading}>
+              Comprehensive digital marketing ecosystem designed for maximum impact
+            </p>
           </div>
           
           <div className={styles.solutionGrid}>
             <div className={styles.solutionCard}>
-              <h3 className={styles.solutionTitle}>Content-Driven Growth Strategy</h3>
-              <p className={styles.solutionText}>
+              <div className={styles.solutionCardHeader}>
+                <h3 className={styles.solutionCardTitle}>Content-Driven Growth Strategy</h3>
+              </div>
+              <p className={styles.solutionCardDesc}>
                 Built comprehensive content marketing ecosystem guiding prospects through every buyer's journey stage
               </p>
-              <ul className={styles.solutionList}>
-                <li>Interest Stage: Expanded reach to 1 million business owners</li>
-                <li>Awareness Stage: Educational content highlighting recruitment pain points</li>
-                <li>Consideration Stage: Solution-focused AI recruitment benefits</li>
-                <li>Decision Stage: Case studies emphasizing 80% cost reduction</li>
-              </ul>
+              <div className={styles.solutionFeatures}>
+                <span>Expanded reach to 1M+ business owners</span>
+                <span>Educational content highlighting recruitment pain points</span>
+                <span>Solution-focused AI recruitment benefits</span>
+                <span>Case studies emphasizing 80% cost reduction</span>
+              </div>
             </div>
 
             <div className={styles.solutionCard}>
-              <h3 className={styles.solutionTitle}>Targeted Digital Campaigns</h3>
-              <p className={styles.solutionText}>
+              <div className={styles.solutionCardHeader}>
+                <h3 className={styles.solutionCardTitle}>Targeted Digital Campaigns</h3>
+              </div>
+              <p className={styles.solutionCardDesc}>
                 Strategic Google Ads targeting high-intent Arabic keywords and recruitment terms
               </p>
-              <ul className={styles.solutionList}>
-                <li>Targeted keywords: 'مطلوب كاشير', 'مطلوب مهندس', 'شركة توظيف سعودية'</li>
-                <li>Continuous optimization based on performance data</li>
-                <li>Built qualified prospect database through strategic targeting</li>
-              </ul>
+              <div className={styles.solutionFeatures}>
+                <span>Arabic keyword optimization</span>
+                <span>Performance-based optimization</span>
+                <span>Qualified prospect database</span>
+                <span>Continuous campaign refinement</span>
+              </div>
             </div>
 
             <div className={styles.solutionCard}>
-              <h3 className={styles.solutionTitle}>Email Marketing Excellence</h3>
-              <p className={styles.solutionText}>
-                Developed high-performing email campaigns with exceptional engagement rates
+              <div className={styles.solutionCardHeader}>
+                <h3 className={styles.solutionCardTitle}>Email Marketing Excellence</h3>
+              </div>
+              <p className={styles.solutionCardDesc}>
+                High-performing email campaigns with exceptional engagement rates
               </p>
-              <ul className={styles.solutionList}>
-                <li>5,000+ qualified subscriber base through Mailchimp</li>
-                <li>60%+ weekly open rates with personalized content</li>
-                <li>Monthly nurturing campaigns with recruitment insights</li>
-              </ul>
+              <div className={styles.solutionFeatures}>
+                <span>5,000+ qualified subscribers</span>
+                <span>60%+ weekly open rates</span>
+                <span>Monthly nurturing campaigns</span>
+                <span>Personalized recruitment insights</span>
+              </div>
             </div>
 
             <div className={styles.solutionCard}>
-              <h3 className={styles.solutionTitle}>Social Media Leadership</h3>
-              <p className={styles.solutionText}>
+              <div className={styles.solutionCardHeader}>
+                <h3 className={styles.solutionCardTitle}>Social Media Leadership</h3>
+              </div>
+              <p className={styles.solutionCardDesc}>
                 Established thought leadership across LinkedIn and X platforms
               </p>
-              <ul className={styles.solutionList}>
-                <li>8,000+ followers on X through valuable content</li>
-                <li>4,000+ engaged LinkedIn professionals</li>
-                <li>Positioned as AI recruitment thought leader</li>
-              </ul>
+              <div className={styles.solutionFeatures}>
+                <span>8,000+ followers on X</span>
+                <span>4,000+ LinkedIn professionals</span>
+                <span>AI recruitment authority positioning</span>
+                <span>Industry thought leadership content</span>
+              </div>
             </div>
           </div>
         </div>
