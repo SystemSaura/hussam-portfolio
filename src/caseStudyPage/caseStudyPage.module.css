@@ -111,18 +111,20 @@
 }
 
 .heroContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(20px, 4vw, 40px);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .heroText {
-  max-width: 580px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: clamp(40px, 6vw, 60px);
 }
 
 .heroTitle {
@@ -132,6 +134,7 @@
   line-height: 1.05;
   letter-spacing: -0.02em;
   margin-bottom: clamp(16px, 2vw, 20px);
+  text-align: center;
 }
 
 .highlight {
@@ -144,12 +147,16 @@
   color: #E5E7EB;
   margin-bottom: clamp(25px, 3.5vw, 35px);
   line-height: 1.5;
+  text-align: center;
 }
 
 .heroStats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(15px, 2.5vw, 25px);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .stat {
@@ -174,6 +181,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .heroImageContainer {
@@ -183,6 +191,8 @@
   box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
   max-width: 100%;
+  width: 100%;
+  max-width: 600px;
 }
 
 .heroImg {
@@ -696,11 +706,6 @@
 
 /* Mobile responsive breakpoints */
 @media (max-width: 768px) {
-  .heroContent {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  
   .heroStats {
     grid-template-columns: 1fr;
     gap: clamp(15px, 2vw, 20px);
@@ -723,11 +728,6 @@
 }
 
 @media (max-width: 1024px) {
-  .heroContent {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  
   .challengeGrid {
     grid-template-columns: 1fr;
     text-align: center;

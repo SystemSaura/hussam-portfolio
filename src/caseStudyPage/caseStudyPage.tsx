@@ -61,9 +61,10 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.heroContainer}>
             <div className={styles.heroContent}>
               <div className={styles.heroText}>
-                <h1 className={styles.heroTitle}>
-                  How Shiftat Became Saudi Arabia's <span className={styles.highlight}>Leading AI Recruitment Platform</span>
-                </h1>
+              <h1 className={styles.heroTitle}>
+                How Shiftat Became Saudi Arabia's<br />
+                <span className={styles.highlight}>Leading AI Recruitment Platform</span>
+              </h1>
                 <p className={styles.heroSubtitle}>
                   Through Strategic Digital Marketing & Data-Driven Growth
                 </p>
