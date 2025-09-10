@@ -3,9 +3,95 @@
   background: white;
 }
 
-/* Hero Section - Improved Title Layout */
-.hero {
+/* Header Navigation Styles - Merged from shiftatHeader */
+.navComponent {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  z-index: 100;
+}
+
+.navContainer {
+  margin: 0 85.7266px 0 85.7188px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoName {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.cursorBlink {
+  color: #00FFF7;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.navLink {
+  color: #FFFFFF;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11.3675px;
+  font-weight: 300;
+  padding: 5.68374px 8.52561px;
+  text-decoration: none;
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.navLink:hover {
+  opacity: 1;
+}
+
+.navButtonStrategy {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11.3675px;
+  font-weight: 300;
+  padding: 0 17.0512px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 36px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.navButtonStrategy:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Unified Background Container for Header + Hero + About */
+.unifiedBackgroundContainer {
   background: linear-gradient(135deg, #001C46 0%, #2762F8 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Hero Section - Updated without background */
+.hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -132,10 +218,10 @@
   margin-bottom: 60px;
 }
 
-/* About Section - Centered */
+/* About Section - Updated without background, with white text */
 .about {
   padding: 100px 0;
-  background: #F9FAFB;
+  color: white;
 }
 
 .aboutGridCentered {
@@ -153,7 +239,7 @@
   font-family: 'Flecha S', sans-serif;
   font-size: 3rem;
   font-weight: bold;
-  color: #001C46;
+  color: white;
   margin-bottom: 40px;
   line-height: 1.2;
 }
@@ -162,8 +248,13 @@
   font-family: 'Flecha S', sans-serif;
   font-size: 1.25rem;
   line-height: 1.8;
-  color: #4B5563;
+  color: #E5E7EB;
   margin-bottom: 25px;
+}
+
+/* White sections start here */
+.whiteSectionContainer {
+  background: white;
 }
 
 /* NEW RESULTS SECTION - Homepage Hero Style */
@@ -659,61 +750,17 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .hero {
-    min-height: 100vh;
-    padding-top: 70px;
-  }
-  
-  .heroContent {
-    grid-template-columns: 1fr;
-    gap: 50px;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .heroTitle {
-    font-size: 44px;
-  }
-
-  .resultsMainHeading {
-    font-size: 56px;
-  }
-
-  .primaryResults {
-    gap: 80px;
-  }
-
-  .secondaryResults {
-    gap: 60px;
-  }
-
-  .primaryNumber {
-    font-size: 64px;
-  }
-
-  .secondaryNumber {
-    font-size: 48px;
-  }
-
-  .solutionGrid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-  
-  .challengeGrid {
-    grid-template-columns: 1fr;
-    gap: 60px;
-    text-align: center;
-  }
-  
-  .socialGrid {
-    grid-template-columns: 1fr;
-  }
+/* Section title for white sections */
+.whiteSectionContainer .sectionTitle {
+  color: #001C46;
 }
 
+/* Mobile responsive for header navigation */
 @media (max-width: 768px) {
+  .navContainer {
+    margin: 0 16px 0 16px;
+  }
+  
   .hero {
     min-height: 100vh;
     padding-top: 70px;
@@ -778,6 +825,71 @@
 
   .verificationCard {
     padding: 40px 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 100vh;
+    padding-top: 70px;
+  }
+  
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .heroTitle {
+    font-size: 44px;
+  }
+
+  .resultsMainHeading {
+    font-size: 56px;
+  }
+
+  .primaryResults {
+    gap: 80px;
+  }
+
+  .secondaryResults {
+    gap: 60px;
+  }
+
+  .primaryNumber {
+    font-size: 64px;
+  }
+
+  .secondaryNumber {
+    font-size: 48px;
+  }
+
+  .solutionGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .challengeGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    text-align: center;
+  }
+  
+  .socialGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navContainer {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navContainer {
+    margin: 0 40px 0 40px;
   }
 }
 
