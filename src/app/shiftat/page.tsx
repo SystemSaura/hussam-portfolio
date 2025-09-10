@@ -2,7 +2,7 @@
 
 import ShiftatHeader from "./shiftatHeader"; // Changed from "./ShiftatHeader" to "./shiftatHeader"
 import Footer from "../../components/footerSection/footer";
-import CaseStudyDetail from "../../caseStudy/caseStudyDetail";
+import CaseStudyDetail from "../../caseStudyPage/caseStudyPage";
 
 export default function ShiftatCaseStudy() {
   const navigationHandlers = {

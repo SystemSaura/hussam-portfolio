@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./caseStudyDetail.module.css";
+import styles from "./caseStudyPage.module.css";
 
 export default function CaseStudyDetail() {
   return (
