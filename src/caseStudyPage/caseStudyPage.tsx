@@ -1,3 +1,5 @@
+// src/caseStudyPage/caseStudyPage.tsx
+
 "use client";
 
 import Image from "next/image";
