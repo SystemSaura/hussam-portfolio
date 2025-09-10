@@ -6,7 +6,7 @@
 /* Hero Section - Improved Title Layout */
 .hero {
   background: linear-gradient(135deg, #001C46 0%, #2762F8 100%);
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

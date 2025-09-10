@@ -1,7 +1,7 @@
 "use client";
 
 import ShiftatHeader from "./shiftatHeader"; // Changed from "./ShiftatHeader" to "./shiftatHeader"
-import Footer from "../../homepage/footerSection/footer";
+import Footer from "../../components/footerSection/footer";
 import CaseStudyDetail from "../../caseStudy/caseStudyDetail";
 
 export default function ShiftatCaseStudy() {
