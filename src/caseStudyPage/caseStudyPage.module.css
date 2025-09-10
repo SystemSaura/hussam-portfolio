@@ -83,22 +83,22 @@
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Unified Background Container for Header + Hero + About */
+/* Unified Background Container for Header + Hero */
 .unifiedBackgroundContainer {
   background: linear-gradient(135deg, #001C46 0%, #2762F8 100%);
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
 }
 
-/* Hero Section - Updated without background */
+/* Hero Section - Optimized spacing */
 .hero {
-  min-height: 100vh;
+  min-height: calc(90vh - 70px);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   position: relative;
-  padding-top: 70px;
+  padding: 40px 0 60px 0;
 }
 
 .heroContainer {
@@ -111,7 +111,7 @@
 .heroContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
   align-items: center;
   justify-content: center;
 }
@@ -140,14 +140,14 @@
   font-family: 'Flecha S', sans-serif;
   font-size: 18px;
   color: #E5E7EB;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   line-height: 1.5;
 }
 
 .heroStats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 25px;
 }
 
 .stat {
@@ -216,40 +216,6 @@
 .centeredTextContent {
   text-align: center;
   margin-bottom: 60px;
-}
-
-/* About Section - Updated without background, with white text */
-.about {
-  padding: 100px 0;
-  color: white;
-}
-
-.aboutGridCentered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aboutContentCentered {
-  max-width: 900px;
-  text-align: center;
-}
-
-.sectionTitle {
-  font-family: 'Flecha S', sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 40px;
-  line-height: 1.2;
-}
-
-.aboutText {
-  font-family: 'Flecha S', sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.8;
-  color: #E5E7EB;
-  margin-bottom: 25px;
 }
 
 /* White sections start here */
@@ -382,6 +348,15 @@
 
 .challengeContent {
   max-width: 700px;
+}
+
+.sectionTitle {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #001C46;
+  margin-bottom: 40px;
+  line-height: 1.2;
 }
 
 .challengeText {
@@ -596,44 +571,6 @@
   line-height: 1.6;
 }
 
-/* Impact Section */
-.impact {
-  padding: 100px 0;
-  background: white;
-}
-
-.impactContent {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.impactText {
-  font-family: 'Flecha S', sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.8;
-  color: #4B5563;
-  margin-bottom: 35px;
-}
-
-.impactTags {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-
-.impactTag {
-  background: #10B981;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 25px;
-  font-family: 'Flecha S', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
 /* Testimonial */
 .testimonial {
   padding: 100px 0;
@@ -750,11 +687,6 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-/* Section title for white sections */
-.whiteSectionContainer .sectionTitle {
-  color: #001C46;
-}
-
 /* Mobile responsive for header navigation */
 @media (max-width: 768px) {
   .navContainer {
@@ -762,18 +694,18 @@
   }
   
   .hero {
-    min-height: 100vh;
-    padding-top: 70px;
+    min-height: calc(90vh - 70px);
+    padding: 30px 0 50px 0;
   }
   
   .heroContent {
     justify-content: center;
-    padding: 40px 0;
+    padding: 20px 0;
   }
   
   .heroStats {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 20px;
   }
   
   .heroTitle {
@@ -814,11 +746,6 @@
     font-size: 2.25rem;
   }
 
-  .impactTags {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .socialContent {
     padding: 30px;
   }
@@ -830,13 +757,13 @@
 
 @media (max-width: 1024px) {
   .hero {
-    min-height: 100vh;
-    padding-top: 70px;
+    min-height: calc(90vh - 70px);
+    padding: 30px 0 50px 0;
   }
   
   .heroContent {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 35px;
     text-align: center;
     justify-content: center;
   }
@@ -895,13 +822,13 @@
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 100vh;
-    padding-top: 70px;
+    min-height: calc(90vh - 70px);
+    padding: 20px 0 40px 0;
   }
   
   .heroContent {
     justify-content: center;
-    padding: 30px 0;
+    padding: 15px 0;
   }
   
   .heroTitle {
@@ -950,7 +877,7 @@
   }
 
   .heroStats {
-    gap: 20px;
+    gap: 15px;
   }
 
   .statNumber {

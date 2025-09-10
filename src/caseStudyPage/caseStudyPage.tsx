@@ -19,7 +19,7 @@ interface CaseStudyDetailProps {
 export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
   return (
     <div className={styles.detailContainer}>
-      {/* Unified Background Container for Header + Hero + About */}
+      {/* Unified Background Container for Header + Hero */}
       <div className={styles.unifiedBackgroundContainer}>
         {/* Header Navigation - Merged from shiftatHeader */}
         <header className={styles.navComponent}>
@@ -96,23 +96,6 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                     <span className={styles.overlayText}>Shiftat Platform</span>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* About Shiftat - Now part of unified background */}
-        <section className={styles.about}>
-          <div className={styles.container}>
-            <div className={styles.aboutGridCentered}>
-              <div className={styles.aboutContentCentered}>
-                <h2 className={styles.sectionTitle}>About Shiftat</h2>
-                <p className={styles.aboutText}>
-                  Shiftat is Saudi Arabia's pioneering AI-powered recruitment platform that owns the entire hiring process from start to finish. Using advanced AI for screening and shortlisting, Shiftat helps organizations reduce time-to-hire by up to <strong>90%</strong> and cut hiring costs by <strong>80%</strong>.
-                </p>
-                <p className={styles.aboutText}>
-                  The platform has successfully placed over <strong>7,000 Saudis</strong> annually and continues to scale rapidly across the Kingdom.
-                </p>
               </div>
             </div>
           </div>
@@ -293,28 +276,6 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                   <h3 className={styles.socialTitle}>X Platform Success</h3>
                   <p className={styles.socialDesc}>8,000+ followers through valuable recruitment content</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Impact Section - Centered */}
-        <section className={styles.impact}>
-          <div className={styles.container}>
-            <div className={styles.centeredTextContent}>
-              <h2 className={styles.sectionTitle}>The Transformative Impact</h2>
-            </div>
-            <div className={styles.impactContent}>
-              <p className={styles.impactText}>
-                By focusing on Shiftat's core value propositions—reducing hiring costs by <strong>80%</strong> and cutting time-to-hire by <strong>90%</strong>—we created messaging that resonated with business owners' deepest pain points. Our innovative "Interest Stage" approach allowed us to reach prospects before they even realized they needed recruitment solutions, creating a pipeline that continuously nurtures over <strong>1 million potential customers</strong>.
-              </p>
-              <p className={styles.impactText}>
-                The result: Shiftat transformed from a startup to Saudi Arabia's leading AI recruitment platform, with a robust digital presence that drives consistent, qualified leads and positions them as the go-to solution for modern recruitment challenges.
-              </p>
-              <div className={styles.impactTags}>
-                <span className={styles.impactTag}>Market Leadership</span>
-                <span className={styles.impactTag}>Brand Authority</span>
-                <span className={styles.impactTag}>Sustainable Growth</span>
               </div>
             </div>
           </div>
