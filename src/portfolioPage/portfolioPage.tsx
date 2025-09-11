@@ -25,7 +25,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
     "Content Marketing": [
       {
         category: "Health",
-        logo: "/logos/rehabsclub.webp",
+        logo: "",
         logoText: "REHABS CLUB",
         title: "Healthcare Blog Content",
         description: "Created comprehensive blog content strategy for rehabilitation services, focusing on patient education and treatment insights.",
@@ -325,25 +325,6 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         <Header onNavigate={onNavigate} />
       </div>
 
-      {/* Enhanced Tab Bar with Flecha S font and improved styling */}
-      <div className={styles.tabBarSection}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={styles.tabContainer}>
-            {serviceTypes.map((type) => (
-              <button
-                key={type}
-                onClick={() => setActiveTab(type)}
-                className={`${styles.tabButton} ${
-                  activeTab === type ? styles.tabButtonActive : styles.tabButtonInactive
-                }`}
-              >
-                {type}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* Main Portfolio Content */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -357,12 +338,31 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
             <h1 className={styles.flechaSectionHeading + " mb-6"}>
               {activeTab === "ALL" ? "Complete Portfolio Showcase" : activeTab}
             </h1>
-            <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed"}>
+            <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12"}>
               {activeTab === "ALL" 
                 ? "Comprehensive collection of marketing projects delivered across diverse industries in the GCC region. Each project represents strategic thinking, creative execution, and measurable results."
                 : `Explore my ${activeTab.toLowerCase()} projects that delivered measurable results for GCC companies across different industries.`
               }
             </p>
+
+            {/* Enhanced Tab Bar moved here - after the subtitle */}
+            <div className={styles.tabBarSection}>
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className={styles.tabContainer}>
+                  {serviceTypes.map((type) => (
+                    <button
+                      key={type}
+                      onClick={() => setActiveTab(type)}
+                      className={`${styles.tabButton} ${
+                        activeTab === type ? styles.tabButtonActive : styles.tabButtonInactive
+                      }`}
+                    >
+                      {type}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Portfolio Categories */}
