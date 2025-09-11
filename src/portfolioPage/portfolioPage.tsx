@@ -320,9 +320,9 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header with white background to match portfolio section */}
+      {/* Header with white background */}
       <div className="bg-white">
-        <Header onNavigate={onNavigate} />
+        <Header onNavigate={onNavigate} variant="white" />
       </div>
 
       {/* Main Portfolio Content */}

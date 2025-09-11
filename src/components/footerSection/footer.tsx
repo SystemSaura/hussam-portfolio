@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./footer.module.css";
 
 interface FooterProps {
-  variant?: 'default' | 'gradient' | 'white';
+  variant?: 'default' | 'gradient' | 'white' | 'transparent';
 }
 
 export default function Footer({ variant = 'default' }: FooterProps) {
@@ -14,6 +14,8 @@ export default function Footer({ variant = 'default' }: FooterProps) {
         return styles.bgGradientBlue;
       case 'white':
         return 'bg-white';
+      case 'transparent':
+        return 'bg-transparent';
       default:
         return styles.bgGray900;
     }

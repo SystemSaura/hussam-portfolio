@@ -9,11 +9,14 @@ interface HeaderProps {
     portfolio: () => void;
     services: () => void;
   };
+  variant?: "default" | "white";
 }
 
-export default function Header({ onNavigate }: HeaderProps) {
+export default function Header({ onNavigate, variant = "default" }: HeaderProps) {
+  const headerClass = variant === "white" ? styles.navComponentWhite : styles.navComponent;
+
   return (
-    <header className={styles.navComponent}>
+    <header className={headerClass}>
       <div className={styles.navContainer}>
         {/* Logo */}
         <div className="flex-shrink-0">
