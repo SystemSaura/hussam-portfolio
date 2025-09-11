@@ -438,10 +438,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         </div>
       </section>
 
-      {/* Footer with white background to match portfolio section */}
-      <div className="bg-white">
-        <Footer />
-      </div>
+      {/* Footer with white background to match header */}
+      <Footer variant="white" />
     </div>
   );
 }

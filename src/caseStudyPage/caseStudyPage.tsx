@@ -329,8 +329,8 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           </div>
         </section>
 
-        {/* Footer */}
-        <Footer />
+        {/* Footer with gradient background to match the blue theme */}
+        <Footer variant="gradient" />
       </div>
     </div>
   );
