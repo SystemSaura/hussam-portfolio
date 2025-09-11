@@ -1,7 +1,7 @@
-/* Case Study Section - Only Flecha S Font */
+/* Case Study Section - Professional Redesign */
 .caseStudySection {
   padding: 80px 0;
-  background: linear-gradient(135deg, #001C46 0%, #2762F8 100%);
+  background-color: #001C46;
   color: white;
 }
 
@@ -19,7 +19,7 @@
 
 .sectionBadge {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   padding: 8px 20px;
   border-radius: 25px;
@@ -54,7 +54,7 @@
   margin: 0 auto;
 }
 
-/* Main Content */
+/* Main Content - Redesigned without card */
 .caseStudyLink {
   display: block;
   text-decoration: none;
@@ -62,29 +62,22 @@
 }
 
 .caseStudyContent {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 40px;
-  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  backdrop-filter: blur(20px);
+  padding: 40px 0;
+  transition: all 0.3s ease;
 }
 
 .caseStudyContent:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
 }
 
-/* Company Row */
+/* Company Row - Simplified */
 .companyRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .companyInfo {
@@ -129,26 +122,43 @@
   font-size: 14px;
   color: rgba(255, 255, 255, 0.9);
 }
-
 .readMoreContainer {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
+  background: transparent;
   color: #00FFF7;
+  padding: 14px 24px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: 2px solid #00FFF7;
+  box-shadow: 0 4px 20px rgba(0, 255, 247, 0.3);
+}
+
+.readMoreContainer:hover {
+  background: #00FFF7;
+  color: #001C46;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 255, 247, 0.4);
 }
 
 .readMoreText {
   font-family: 'Flecha S', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .readMoreArrow {
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   filter: brightness(0) saturate(100%) invert(84%) sepia(58%) saturate(2504%) hue-rotate(165deg) brightness(102%) contrast(101%);
 }
 
-.caseStudyContent:hover .readMoreArrow {
+.readMoreContainer:hover .readMoreArrow {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(94%) saturate(1352%) hue-rotate(202deg) brightness(97%) contrast(101%);
+}
+.readMoreContainer:hover .readMoreArrow {
   transform: translateX(6px);
 }
 
@@ -156,8 +166,8 @@
 .resultsGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin-bottom: 40px;
+  gap: 40px;
+  margin-bottom: 50px;
 }
 
 .resultItem {
@@ -167,17 +177,17 @@
 
 .resultNumber {
   font-family: 'Flecha S', sans-serif;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: bold;
   color: #00FFF7;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   line-height: 1;
 }
 
 .resultLabel {
   font-family: 'Flecha S', sans-serif;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -185,12 +195,12 @@
 
 /* Description */
 .caseDescription {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .descriptionText {
   font-family: 'Flecha S', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
@@ -198,10 +208,10 @@
   margin: 0 auto;
 }
 
-/* Enhanced Social Proof */
+/* Simplified Social Proof */
 .socialProof {
-  padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .socialContent {
@@ -209,12 +219,12 @@
 }
 
 .socialHeader {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .socialLabel {
   font-family: 'Flecha S', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
@@ -224,55 +234,46 @@
 .socialShowcase {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 60px;
+  align-items: center;
 }
 
 .platformDisplay {
-  position: relative;
-}
-
-.platformImage {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease;
-}
-
-.platformImage:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
-}
-
-.socialImage {
-  width: 120px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 16px;
-}
-
-.platformOverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-  padding: 16px 12px 12px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  gap: 12px;
+}
+
+.platformIcon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.platformIcon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #00FFF7;
+  transform: translateY(-2px);
 }
 
 .platformName {
   font-family: 'Flecha S', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: white;
+  margin-bottom: 4px;
 }
 
 .platformMetric {
   font-family: 'Flecha S', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #00FFF7;
   font-weight: 500;
 }
@@ -285,7 +286,11 @@
   
   .resultsGrid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 30px;
+  }
+
+  .socialShowcase {
+    gap: 40px;
   }
 }
 
@@ -299,7 +304,7 @@
   }
   
   .caseStudyContent {
-    padding: 30px 20px;
+    padding: 30px 0;
   }
 
   .companyRow {
@@ -320,13 +325,16 @@
   }
 
   .resultNumber {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .socialShowcase {
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    gap: 24px;
+  }
+
+  .descriptionText {
+    font-size: 16px;
   }
 }
 
@@ -341,11 +349,11 @@
   }
 
   .resultNumber {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .resultLabel {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .companyName {
@@ -354,5 +362,9 @@
 
   .readMoreText {
     font-size: 16px;
+  }
+
+  .descriptionText {
+    font-size: 15px;
   }
 }

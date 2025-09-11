@@ -10,7 +10,6 @@ export default function CaseStudy() {
       <div className={styles.container}>
         {/* Section Header - Matches Hero typography */}
         <div className={styles.sectionHeader}>
-          <div className={styles.sectionBadge}>Success Story</div>
           <h2 className={styles.mainHeading}>
             How I helped Shiftat become<br />
             <span className={styles.highlightText}>Saudi Arabia's leading AI recruitment platform.</span>
@@ -37,7 +36,7 @@ export default function CaseStudy() {
                 </div>
                 <div className={styles.companyDetails}>
                   <h3 className={styles.companyName}>Shiftat</h3>
-                  <p className={styles.companyDescription}>AI-Powered Recruitment Platform</p>
+                  <p className={styles.companyDescription}>HR AI-Powered Recruitment Platform</p>
                   <div className={styles.locationBadge}>🇸🇦 Saudi Arabia</div>
                 </div>
               </div>
@@ -83,7 +82,7 @@ export default function CaseStudy() {
               </p>
             </div>
 
-            {/* Enhanced Social Proof with Creative Photo Display */}
+            {/* Simplified Social Proof */}
             <div className={styles.socialProof}>
               <div className={styles.socialContent}>
                 <div className={styles.socialHeader}>
@@ -91,34 +90,22 @@ export default function CaseStudy() {
                 </div>
                 <div className={styles.socialShowcase}>
                   <div className={styles.platformDisplay}>
-                    <div className={styles.platformImage}>
-                      <Image
-                        src="/backgrounds/Linkedin.webp"
-                        alt="LinkedIn Growth"
-                        width={120}
-                        height={90}
-                        className={styles.socialImage}
-                      />
-                      <div className={styles.platformOverlay}>
-                        <span className={styles.platformName}>LinkedIn</span>
-                        <span className={styles.platformMetric}>4,000+ Professionals</span>
-                      </div>
+                    <div className={styles.platformIcon}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.366C3.274 4.224 4.194 3.299 5.337 3.299C6.477 3.299 7.401 4.224 7.401 5.366C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
+                      </svg>
                     </div>
+                    <span className={styles.platformName}>LinkedIn</span>
+                    <span className={styles.platformMetric}>4,000+ Professionals</span>
                   </div>
                   <div className={styles.platformDisplay}>
-                    <div className={styles.platformImage}>
-                      <Image
-                        src="/backgrounds/X.webp"
-                        alt="X Platform Growth"
-                        width={120}
-                        height={90}
-                        className={styles.socialImage}
-                      />
-                      <div className={styles.platformOverlay}>
-                        <span className={styles.platformName}>X Platform</span>
-                        <span className={styles.platformMetric}>8,000+ Followers</span>
-                      </div>
+                    <div className={styles.platformIcon}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.244 2.25H21.552L14.325 10.51L22.827 21.75H16.17L10.956 14.933L4.99 21.75H1.68L9.41 12.915L1.254 2.25H8.08L12.793 8.481L18.244 2.25ZM17.083 19.77H18.916L7.084 4.126H5.117L17.083 19.77Z" fill="white"/>
+                      </svg>
                     </div>
+                    <span className={styles.platformName}>X Platform</span>
+                    <span className={styles.platformMetric}>8,000+ Followers</span>
                   </div>
                 </div>
               </div>
