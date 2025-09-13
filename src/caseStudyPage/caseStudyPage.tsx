@@ -11,6 +11,7 @@ interface NavigationHandlers {
   about: () => void;
   portfolio: () => void;
   services: () => void;
+  caseStudy: () => void;
 }
 
 interface CaseStudyDetailProps {
@@ -22,7 +23,7 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
     <div className={styles.detailContainer}>
       {/* Unified Background Container for Header + Hero */}
       <div className={styles.unifiedBackgroundContainer}>
-        {/* Header Navigation - Merged from shiftatHeader */}
+        {/* Header Navigation - Fixed to include all navigation items */}
         <header className={styles.navComponent}>
           <div className={styles.navContainer}>
             {/* Logo */}
@@ -32,11 +33,12 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
               </Link>
             </div>
 
-            {/* Navigation */}
+            {/* Navigation - Fixed order and added Case Study */}
             <nav className="hidden md:flex items-center space-x-0">
               <button onClick={onNavigate.about} className={styles.navLink}>About</button>
               <button onClick={onNavigate.portfolio} className={styles.navLink}>Portfolio</button>
               <button onClick={onNavigate.services} className={styles.navLink}>Services</button>
+              <button onClick={onNavigate.caseStudy} className={styles.navLink}>Case Study</button>
             </nav>
 
             {/* Right side buttons */}

@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { forwardRef } from "react";
 import styles from "./caseStudy.module.css";
 
-export default function CaseStudy() {
+const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section className={styles.caseStudySection}>
+    <section ref={ref} className={styles.caseStudySection}>
       <div className={styles.container}>
         {/* Section Header - Matches Hero typography */}
         <div className={styles.sectionHeader}>
@@ -115,4 +116,8 @@ export default function CaseStudy() {
       </div>
     </section>
   );
-}
+});
+
+CaseStudy.displayName = "CaseStudy";
+
+export default CaseStudy;

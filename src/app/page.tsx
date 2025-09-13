@@ -16,6 +16,7 @@ export default function Home() {
   const aboutRef = useRef<HTMLElement>(null);
   const portfolioRef = useRef<HTMLElement>(null);
   const servicesRef = useRef<HTMLElement>(null);
+  const caseStudyRef = useRef<HTMLElement>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -25,6 +26,7 @@ export default function Home() {
     about: () => scrollToSection(aboutRef),
     portfolio: () => scrollToSection(portfolioRef),
     services: () => scrollToSection(servicesRef),
+    caseStudy: () => scrollToSection(caseStudyRef),
   };
 
   return (
@@ -34,7 +36,7 @@ export default function Home() {
       <TrustedCompanies />
       <About ref={aboutRef} />
       <Services ref={servicesRef} />
-      <CaseStudy />
+      <CaseStudy ref={caseStudyRef} />
       <Portfolio ref={portfolioRef} />
       <Testimonials />
       <CTA />

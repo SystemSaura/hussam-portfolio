@@ -8,6 +8,7 @@ interface HeaderProps {
     about: () => void;
     portfolio: () => void;
     services: () => void;
+    caseStudy: () => void;
   };
   variant?: "default" | "white";
 }
@@ -25,11 +26,12 @@ export default function Header({ onNavigate, variant = "default" }: HeaderProps)
           </Link>
         </div>
 
-        {/* Navigation */}
+        {/* Navigation - Fixed order: About, Portfolio, Services, Case Study */}
         <nav className="hidden md:flex items-center space-x-0">
           <button onClick={onNavigate.about} className={styles.navLink}>About</button>
           <button onClick={onNavigate.portfolio} className={styles.navLink}>Portfolio</button>
           <button onClick={onNavigate.services} className={styles.navLink}>Services</button>
+          <button onClick={onNavigate.caseStudy} className={styles.navLink}>Case Study</button>
         </nav>
 
         {/* Right side buttons */}

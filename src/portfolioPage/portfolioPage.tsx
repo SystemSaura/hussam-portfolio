@@ -11,6 +11,7 @@ interface NavigationHandlers {
   about: () => void;
   portfolio: () => void;
   services: () => void;
+  caseStudy: () => void;
 }
 
 interface PortfolioPageProps {
