@@ -20,7 +20,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
 
         {/* Portfolio Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-          {/* Portfolio Project 1 - Shiftat Social Media */}
+          {/* Portfolio Project 1 - Shiftat Social Media - KEEP ORIGINAL LINK */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-blue-500 to-blue-600`}>
               <div className={styles.portfolioHeaderContent}>
@@ -58,7 +58,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             </div>
           </div>
 
-          {/* Portfolio Project 2 - KAPSARC Government Content */}
+          {/* Portfolio Project 2 - KAPSARC Government Content - UPDATED LINK */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-green-500 to-green-600`}>
               <div className={styles.portfolioHeaderContent}>
@@ -88,7 +88,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 Created comprehensive website content strategy for KAPSARC's research platform, improving accessibility of energy policy insights for stakeholders.
               </p>
               <button 
-                onClick={() => window.open('https://docs.google.com/document/d/1dZU207Y76fwhINdAYPyApEJT2m04KQm1/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
+                onClick={() => window.open('https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonGreen}`}
               >
                 View Full Work
@@ -96,7 +96,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             </div>
           </div>
 
-          {/* Portfolio Project 3 - Abudawood Logistics */}
+          {/* Portfolio Project 3 - Abudawood Logistics - KEEPING CURRENT LINK (not in provided list) */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-orange-500 to-orange-600`}>
               <div className={styles.portfolioHeaderContent}>
@@ -134,7 +134,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             </div>
           </div>
 
-          {/* Portfolio Project 4 - Al Nahdi Newsletter */}
+          {/* Portfolio Project 4 - Al Nahdi Newsletter - UPDATED LINK */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-pink-500 to-pink-600`}>
               <div className={styles.portfolioHeaderContent}>
@@ -164,7 +164,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 Designed and wrote engaging newsletter campaigns for Al Nahdi Pharmacy, focusing on health tips and product promotions.
               </p>
               <button 
-                onClick={() => window.open('https://docs.google.com/document/d/1zPMkqovrX31qZEGtLtg0_UEtpWhI1oHZ/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
+                onClick={() => window.open('https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonPink}`}
               >
                 View Full Work
@@ -172,7 +172,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             </div>
           </div>
 
-          {/* Portfolio Project 5 - Empire Real Estate */}
+          {/* Portfolio Project 5 - Empire Real Estate - VERIFIED CORRECT LINK */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-teal-500 to-teal-600`}>
               <div className={styles.portfolioHeaderContent}>
@@ -202,7 +202,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 Developed comprehensive brand profile and positioning strategy for Empire Real Estate's luxury property portfolio in Qatar.
               </p>
               <button 
-                onClick={() => window.open('https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_', '_blank')}
+                onClick={() => window.open('https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonTeal}`}
               >
                 View Full Work
@@ -210,7 +210,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             </div>
           </div>
 
-          {/* Portfolio Project 6 - SAEQ Logistics */}
+          {/* Portfolio Project 6 - SAEQ Logistics - VERIFIED CORRECT LINK */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-purple-500 to-purple-600`}>
               <div className={styles.portfolioHeaderContent}>
@@ -240,7 +240,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 Crafted comprehensive brand profile and market positioning strategy for SAEQ's expansion across GCC markets.
               </p>
               <button 
-                onClick={() => window.open('https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0', '_blank')}
+                onClick={() => window.open('https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonPurple}`}
               >
                 View Full Work
@@ -249,7 +249,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
           </div>
         </div>
 
-        {/* View Complete Portfolio Button - Improved Design */}
+        {/* View Complete Portfolio Button - Updated to navigate to portfolio page */}
         <div className="text-center mt-16">
          <div className="inline-flex items-center bg-gray-50 rounded-full px-6 py-3 border">
             <svg className="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -257,7 +257,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             </svg>
             <span className={styles.flechaVerificationText + " mr-3"}>Complete portfolio available</span>
             <button 
-              onClick={() => window.open('https://docs.google.com/spreadsheets/d/1yg0fcn6KVOrh72LZpZe5uPQ6JQUMduPF7WG2pboNHww/edit?gid=1783708472#gid=1783708472', '_blank')}
+              onClick={() => window.location.href = '/portfolio'}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
             >
               View All →
