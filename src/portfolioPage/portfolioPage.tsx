@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Header from "../components/headerSection/header";
 import Footer from "../components/footerSection/footer";
 import styles from "./portfolioPage.module.css";
@@ -19,6 +19,9 @@ interface PortfolioPageProps {
 
 export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   const [activeTab, setActiveTab] = useState("ALL");
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(false);
+  const tabContainerRef = useRef<HTMLDivElement>(null);
 
   // Organized portfolio data from screenshots
   const portfolioData = {
@@ -283,6 +286,40 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
 
   const serviceTypes = ["ALL", "Content Marketing", "Social Media Marketing", "Brand Strategy", "Email Marketing", "Technical Writing", "Design & Creative", "Translation & Editing"];
 
+  // Check scroll position and update arrow visibility
+  const checkScrollPosition = () => {
+    if (tabContainerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = tabContainerRef.current;
+      setShowLeftArrow(scrollLeft > 0);
+      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 1);
+    }
+  };
+
+  // Scroll functions
+  const scrollLeft = () => {
+    if (tabContainerRef.current) {
+      tabContainerRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (tabContainerRef.current) {
+      tabContainerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };
+
+  // Check scroll position on mount and resize
+  useEffect(() => {
+    checkScrollPosition();
+    
+    const handleResize = () => {
+      checkScrollPosition();
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const getFilteredData = () => {
     if (activeTab === "ALL") {
       return portfolioData;
@@ -345,21 +382,54 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
               }
             </p>
 
-            {/* Enhanced Tab Bar moved here - after the subtitle */}
+            {/* Enhanced Tab Bar with scroll indicators */}
             <div className={styles.tabBarSection}>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className={styles.tabContainer}>
-                  {serviceTypes.map((type) => (
-                    <button
-                      key={type}
-                      onClick={() => setActiveTab(type)}
-                      className={`${styles.tabButton} ${
-                        activeTab === type ? styles.tabButtonActive : styles.tabButtonInactive
-                      }`}
+                <div className={styles.tabContainerWrapper}>
+                  {/* Left Arrow */}
+                  {showLeftArrow && (
+                    <button 
+                      onClick={scrollLeft}
+                      className={styles.scrollArrow + " " + styles.scrollArrowLeft}
+                      aria-label="Scroll tabs left"
                     >
-                      {type}
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
                     </button>
-                  ))}
+                  )}
+                  
+                  {/* Tab Container */}
+                  <div 
+                    ref={tabContainerRef}
+                    className={styles.tabContainer}
+                    onScroll={checkScrollPosition}
+                  >
+                    {serviceTypes.map((type) => (
+                      <button
+                        key={type}
+                        onClick={() => setActiveTab(type)}
+                        className={`${styles.tabButton} ${
+                          activeTab === type ? styles.tabButtonActive : styles.tabButtonInactive
+                        }`}
+                      >
+                        {type}
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Right Arrow */}
+                  {showRightArrow && (
+                    <button 
+                      onClick={scrollRight}
+                      className={styles.scrollArrow + " " + styles.scrollArrowRight}
+                      aria-label="Scroll tabs right"
+                    >
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
