@@ -4,55 +4,52 @@
 }
 
 .servicesContainer {
-  width: 1200px;
+  width: min(1200px, 90vw);
   max-width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: calc(50% - 600px + (852.56px / 2 - 426.28px));
-}
-
-@media (max-width: 1200px) {
-  .servicesContainer {
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin: 0 auto;
+  padding: 0 clamp(16px, 2vw, 20px);
 }
 
 .servicesMainHeading {
   font-family: 'Flecha S', sans-serif;
-  font-size: 51.1537px;
+  font-size: clamp(32px, 5.2vw, 51.1537px);
   font-weight: normal;
   color: #FFFFFF;
   line-height: 1.2;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .servicesMainHeadingAccent {
   font-family: 'Flecha S', sans-serif;
-  font-size: 51.1537px;
+  font-size: clamp(32px, 5.2vw, 51.1537px);
   font-weight: normal;
   color: #00FFF7;
   line-height: 1.2;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .servicesNumber {
   font-family: 'Flecha S', sans-serif;
-  font-size: 30.1024px;
-  font-weight: medium;
+  font-size: clamp(24px, 3.2vw, 30.1024px);
+  font-weight: 600;
   color: #50C0FF;
 }
 
 .servicesTitle {
   font-family: 'Flecha S', sans-serif;
-  font-size: 22.735px;
+  font-size: clamp(18px, 2.4vw, 22.735px);
   font-weight: bold;
   color: #FFFFFF;
   line-height: 1.2;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .servicesDescription {
   font-family: 'Work Sans', sans-serif;
-  font-size: 11.3675px;
+  font-size: clamp(12px, 1.2vw, 11.3675px);
   font-weight: normal;
   color: #FFFFFF;
   line-height: 1.6;
@@ -60,19 +57,31 @@
 
 .servicesButton {
   font-family: 'Work Sans', sans-serif;
-  font-size: 10.7991px;
-  font-weight: normal;
+  font-size: clamp(12px, 1.2vw, 10.7991px);
+  font-weight: 500;
   color: #FFFFFF;
   background-color: #001C46;
   border: none;
   border-radius: 9999px;
-  padding: 12px 24px;
+  padding: clamp(12px, 1.5vw, 12px) clamp(20px, 2.5vw, 24px);
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
+  min-height: 44px; /* Touch-friendly size */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .servicesButton:hover {
-  background-color: #002A5C;
+  background-color: #FFFFFF;
+  color: #001C46;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.servicesButton:active {
+  transform: translateY(-1px);
 }
 
 /* Sticky Services Heading Styles */
@@ -90,7 +99,7 @@
 }
 
 .servicesHeadingContent.isStickyActive[style*="top:"] {
-  top: 200px !important;
+  top: 120px !important;
 }
 
 .servicesHeadingContent.isStickyActive[style*="z-index:"] {
@@ -100,6 +109,16 @@
 .servicesHeadingFade {
   opacity: 0 !important;
   transform: translateY(-20px) !important;
+}
+
+/* Service Item Styling for Better Mobile */
+.serviceItem {
+  padding: clamp(20px, 3vw, 24px) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.serviceItem:last-child {
+  border-bottom: none;
 }
 
 /* Tablet responsive adjustments */
@@ -113,8 +132,32 @@
     z-index: unset !important;
   }
 
-  .servicesMainHeading {
-    font-size: 51px;
+  .servicesContainer {
+    width: 95vw;
+    padding: 0 clamp(16px, 3vw, 24px);
+  }
+
+  .servicesMainHeading,
+  .servicesMainHeadingAccent {
+    font-size: clamp(28px, 4.5vw, 42px);
+  }
+
+  .servicesNumber {
+    font-size: clamp(20px, 2.8vw, 26px);
+  }
+
+  .servicesTitle {
+    font-size: clamp(16px, 2.2vw, 20px);
+  }
+
+  .servicesDescription {
+    font-size: clamp(13px, 1.4vw, 14px);
+    line-height: 1.7;
+  }
+
+  .servicesButton {
+    font-size: clamp(13px, 1.4vw, 14px);
+    padding: clamp(14px, 2vw, 16px) clamp(24px, 3vw, 28px);
   }
 }
 
@@ -127,5 +170,161 @@
     left: unset !important;
     width: unset !important;
     z-index: unset !important;
+  }
+
+  .servicesContainer {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .servicesMainHeading,
+  .servicesMainHeadingAccent {
+    font-size: clamp(28px, 7vw, 36px);
+    text-align: center;
+    margin-bottom: clamp(32px, 5vw, 40px);
+  }
+
+  .servicesNumber {
+    font-size: clamp(20px, 5vw, 24px);
+    margin-bottom: clamp(12px, 2vw, 16px);
+  }
+
+  .servicesTitle {
+    font-size: clamp(16px, 4vw, 20px);
+    margin-bottom: clamp(12px, 2vw, 16px);
+  }
+
+  .servicesDescription {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: clamp(20px, 3vw, 24px);
+  }
+
+  .servicesButton {
+    font-size: 14px;
+    padding: 14px 28px;
+    width: auto;
+    min-width: 140px;
+  }
+
+  .serviceItem {
+    padding: clamp(24px, 4vw, 32px) 0;
+    text-align: center;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .servicesContainer {
+    padding: 0 16px;
+  }
+
+  .servicesMainHeading,
+  .servicesMainHeadingAccent {
+    font-size: clamp(24px, 6.5vw, 32px);
+  }
+
+  .servicesNumber {
+    font-size: 22px;
+  }
+
+  .servicesTitle {
+    font-size: clamp(16px, 4.5vw, 18px);
+  }
+
+  .servicesDescription {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .servicesButton {
+    font-size: 13px;
+    padding: 14px 24px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .serviceItem {
+    padding: 28px 0;
+  }
+}
+
+/* Very small mobile adjustments */
+@media (max-width: 360px) {
+  .servicesContainer {
+    padding: 0 12px;
+  }
+
+  .servicesMainHeading,
+  .servicesMainHeadingAccent {
+    font-size: 26px;
+  }
+
+  .servicesButton {
+    max-width: 180px;
+  }
+}
+
+/* High DPI and large screen adjustments */
+@media (min-width: 1400px) {
+  .servicesContainer {
+    width: min(1300px, 85vw);
+  }
+
+  .servicesMainHeading,
+  .servicesMainHeadingAccent {
+    font-size: min(51.1537px, 3.65vw);
+  }
+}
+
+@media (min-width: 1600px) {
+  .servicesMainHeading,
+  .servicesMainHeadingAccent {
+    font-size: min(51.1537px, 3.2vw);
+  }
+  
+  .servicesNumber {
+    font-size: min(30.1024px, 1.88vw);
+  }
+  
+  .servicesTitle {
+    font-size: min(22.735px, 1.42vw);
+  }
+}
+
+/* Ultra-wide screen support */
+@media (min-width: 2000px) {
+  .servicesContainer {
+    width: min(1600px, 80vw);
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .servicesButton {
+    min-height: 48px;
+    min-width: 120px;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .servicesHeadingContent {
+    transition: none;
+  }
+  
+  .servicesButton {
+    transition: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .servicesButton {
+    border: 2px solid #FFFFFF;
+  }
+  
+  .servicesButton:hover {
+    border: 2px solid #001C46;
   }
 }

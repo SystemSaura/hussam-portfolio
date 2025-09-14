@@ -1,44 +1,46 @@
 /* Case Study Section - Professional Redesign */
 .caseStudySection {
-  padding: 80px 0;
+  padding: clamp(60px, 10vw, 80px) 0;
   background-color: #001C46;
   color: white;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: min(1200px, 90vw);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 clamp(16px, 2vw, 20px);
 }
 
 /* Section Header - Matches Hero Typography */
 .sectionHeader {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: clamp(40px, 8vw, 60px);
 }
 
 .sectionBadge {
   display: inline-block;
   background: rgba(255, 255, 255, 0.1);
   color: white;
-  padding: 8px 20px;
+  padding: clamp(6px, 1vw, 8px) clamp(16px, 2.5vw, 20px);
   border-radius: 25px;
   font-family: 'Flecha S', sans-serif;
-  font-size: 12px;
+  font-size: clamp(10px, 1.2vw, 12px);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 24px;
+  margin-bottom: clamp(16px, 2.5vw, 24px);
   backdrop-filter: blur(10px);
 }
 
 .mainHeading {
   font-family: 'Flecha S', sans-serif;
-  font-size: 51.1537px;
+  font-size: clamp(28px, 5.2vw, 51.1537px);
   font-weight: normal;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  margin-bottom: 24px;
+  margin-bottom: clamp(16px, 2.5vw, 24px);
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .highlightText {
@@ -47,10 +49,10 @@
 
 .sectionSubtext {
   font-family: 'Flecha S', sans-serif;
-  font-size: 18px;
+  font-size: clamp(14px, 1.8vw, 18px);
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
-  max-width: 600px;
+  max-width: min(600px, 90vw);
   margin: 0 auto;
 }
 
@@ -62,7 +64,7 @@
 }
 
 .caseStudyContent {
-  padding: 40px 0;
+  padding: clamp(24px, 4vw, 40px) 0;
   transition: all 0.3s ease;
 }
 
@@ -75,64 +77,72 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
-  padding-bottom: 30px;
+  margin-bottom: clamp(32px, 5vw, 50px);
+  padding-bottom: clamp(20px, 3vw, 30px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  gap: clamp(16px, 2.5vw, 24px);
 }
 
 .companyInfo {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: clamp(16px, 2.5vw, 24px);
+  flex: 1;
 }
 
 .companyLogo {
   background: rgba(255, 255, 255, 0.95);
-  padding: 16px 24px;
+  padding: clamp(12px, 2vw, 16px) clamp(16px, 2.5vw, 24px);
   border-radius: 12px;
   backdrop-filter: blur(10px);
+  flex-shrink: 0;
 }
 
 .logoImage {
-  height: 40px;
+  height: clamp(32px, 5vw, 40px);
   width: auto;
   object-fit: contain;
 }
 
 .companyDetails {
   color: white;
+  flex: 1;
 }
 
 .companyName {
   font-family: 'Flecha S', sans-serif;
-  font-size: 28px;
+  font-size: clamp(20px, 2.8vw, 28px);
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: clamp(4px, 0.8vw, 8px);
+  word-wrap: break-word;
 }
 
 .companyDescription {
   font-family: 'Flecha S', sans-serif;
-  font-size: 16px;
+  font-size: clamp(12px, 1.6vw, 16px);
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 12px;
+  margin-bottom: clamp(8px, 1.2vw, 12px);
 }
 
 .locationBadge {
   font-family: 'Flecha S', sans-serif;
-  font-size: 14px;
+  font-size: clamp(11px, 1.4vw, 14px);
   color: rgba(255, 255, 255, 0.9);
 }
+
 .readMoreContainer {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: clamp(8px, 1.2vw, 12px);
   background: transparent;
   color: #00FFF7;
-  padding: 14px 24px;
+  padding: clamp(10px, 1.4vw, 14px) clamp(16px, 2.5vw, 24px);
   border-radius: 50px;
   transition: all 0.3s ease;
   border: 2px solid #00FFF7;
   box-shadow: 0 4px 20px rgba(0, 255, 247, 0.3);
+  flex-shrink: 0;
+  min-height: 44px; /* Touch-friendly */
 }
 
 .readMoreContainer:hover {
@@ -142,9 +152,13 @@
   box-shadow: 0 8px 30px rgba(0, 255, 247, 0.4);
 }
 
+.readMoreContainer:active {
+  transform: translateY(-1px);
+}
+
 .readMoreText {
   font-family: 'Flecha S', sans-serif;
-  font-size: 16px;
+  font-size: clamp(12px, 1.6vw, 16px);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -153,40 +167,40 @@
 .readMoreArrow {
   transition: all 0.3s ease;
   filter: brightness(0) saturate(100%) invert(84%) sepia(58%) saturate(2504%) hue-rotate(165deg) brightness(102%) contrast(101%);
+  width: clamp(18px, 2.4vw, 24px);
+  height: clamp(18px, 2.4vw, 24px);
 }
 
 .readMoreContainer:hover .readMoreArrow {
   filter: brightness(0) saturate(100%) invert(13%) sepia(94%) saturate(1352%) hue-rotate(202deg) brightness(97%) contrast(101%);
-}
-.readMoreContainer:hover .readMoreArrow {
   transform: translateX(6px);
 }
 
 /* Results Grid */
 .resultsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  margin-bottom: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 45vw), 1fr));
+  gap: clamp(24px, 4vw, 40px);
+  margin-bottom: clamp(32px, 5vw, 50px);
 }
 
 .resultItem {
   text-align: center;
-  padding: 20px 0;
+  padding: clamp(12px, 2vw, 20px) 0;
 }
 
 .resultNumber {
   font-family: 'Flecha S', sans-serif;
-  font-size: 42px;
+  font-size: clamp(28px, 4.2vw, 42px);
   font-weight: bold;
   color: #00FFF7;
-  margin-bottom: 12px;
+  margin-bottom: clamp(8px, 1.2vw, 12px);
   line-height: 1;
 }
 
 .resultLabel {
   font-family: 'Flecha S', sans-serif;
-  font-size: 16px;
+  font-size: clamp(12px, 1.6vw, 16px);
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
   text-transform: uppercase;
@@ -195,22 +209,22 @@
 
 /* Description */
 .caseDescription {
-  margin-bottom: 50px;
+  margin-bottom: clamp(32px, 5vw, 50px);
 }
 
 .descriptionText {
   font-family: 'Flecha S', sans-serif;
-  font-size: 18px;
+  font-size: clamp(14px, 1.8vw, 18px);
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
-  max-width: 800px;
+  max-width: min(800px, 90vw);
   margin: 0 auto;
 }
 
 /* Simplified Social Proof */
 .socialProof {
-  padding-top: 40px;
+  padding-top: clamp(24px, 4vw, 40px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -219,12 +233,12 @@
 }
 
 .socialHeader {
-  margin-bottom: 30px;
+  margin-bottom: clamp(20px, 3vw, 30px);
 }
 
 .socialLabel {
   font-family: 'Flecha S', sans-serif;
-  font-size: 18px;
+  font-size: clamp(14px, 1.8vw, 18px);
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
@@ -234,20 +248,21 @@
 .socialShowcase {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: clamp(32px, 6vw, 60px);
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .platformDisplay {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: clamp(8px, 1.2vw, 12px);
 }
 
 .platformIcon {
-  width: 48px;
-  height: 48px;
+  width: clamp(40px, 6vw, 48px);
+  height: clamp(40px, 6vw, 48px);
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
@@ -265,82 +280,111 @@
 
 .platformName {
   font-family: 'Flecha S', sans-serif;
-  font-size: 16px;
+  font-size: clamp(12px, 1.6vw, 16px);
   font-weight: 600;
   color: white;
-  margin-bottom: 4px;
+  margin-bottom: clamp(2px, 0.4vw, 4px);
 }
 
 .platformMetric {
   font-family: 'Flecha S', sans-serif;
-  font-size: 14px;
+  font-size: clamp(10px, 1.4vw, 14px);
   color: #00FFF7;
   font-weight: 500;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive - Tablet */
 @media (max-width: 1024px) {
   .mainHeading {
-    font-size: 42px;
+    font-size: clamp(24px, 4.5vw, 36px);
   }
   
   .resultsGrid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: clamp(20px, 3vw, 30px);
   }
 
   .socialShowcase {
-    gap: 40px;
+    gap: clamp(24px, 4vw, 40px);
+  }
+
+  .companyRow {
+    gap: 16px;
+  }
+
+  .readMoreText {
+    font-size: clamp(11px, 1.4vw, 14px);
   }
 }
 
+/* Mobile responsive */
 @media (max-width: 768px) {
   .caseStudySection {
-    padding: 60px 0;
+    padding: clamp(40px, 8vw, 60px) 0;
+  }
+
+  .container {
+    padding: 0 20px;
   }
 
   .mainHeading {
-    font-size: 36px;
+    font-size: clamp(24px, 6vw, 32px);
   }
   
   .caseStudyContent {
-    padding: 30px 0;
+    padding: clamp(20px, 3vw, 30px) 0;
   }
 
   .companyRow {
     flex-direction: column;
-    gap: 20px;
+    gap: clamp(16px, 3vw, 20px);
     text-align: center;
+    align-items: stretch;
   }
 
   .companyInfo {
     flex-direction: column;
-    gap: 16px;
+    gap: clamp(12px, 2vw, 16px);
     text-align: center;
+  }
+
+  .companyLogo {
+    align-self: center;
+  }
+
+  .readMoreContainer {
+    align-self: center;
+    width: fit-content;
   }
 
   .resultsGrid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: clamp(16px, 2.5vw, 20px);
   }
 
   .resultNumber {
-    font-size: 32px;
+    font-size: clamp(24px, 5vw, 32px);
   }
 
   .socialShowcase {
     flex-direction: column;
-    gap: 24px;
+    gap: clamp(16px, 2.5vw, 24px);
   }
 
   .descriptionText {
-    font-size: 16px;
+    font-size: clamp(13px, 3.5vw, 16px);
+    text-align: left;
   }
 }
 
+/* Small mobile adjustments */
 @media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
   .mainHeading {
-    font-size: 28px;
+    font-size: clamp(22px, 5.5vw, 28px);
   }
 
   .resultsGrid {
@@ -349,22 +393,105 @@
   }
 
   .resultNumber {
-    font-size: 28px;
+    font-size: clamp(22px, 4.5vw, 28px);
   }
 
   .resultLabel {
-    font-size: 14px;
+    font-size: clamp(11px, 2.8vw, 14px);
   }
 
   .companyName {
-    font-size: 24px;
+    font-size: clamp(18px, 4.5vw, 24px);
   }
 
   .readMoreText {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .descriptionText {
     font-size: 15px;
+  }
+
+  .readMoreContainer {
+    padding: 12px 20px;
+  }
+}
+
+/* Very small mobile adjustments */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .mainHeading {
+    font-size: 24px;
+  }
+
+  .companyRow {
+    gap: 12px;
+  }
+
+  .readMoreContainer {
+    padding: 10px 16px;
+  }
+}
+
+/* High DPI adjustments */
+@media (min-width: 1400px) {
+  .mainHeading {
+    font-size: min(51.1537px, 3.65vw);
+  }
+  
+  .container {
+    max-width: min(1300px, 85vw);
+  }
+}
+
+@media (min-width: 1600px) {
+  .mainHeading {
+    font-size: min(51.1537px, 3.2vw);
+  }
+}
+
+/* Ultra-wide screen support */
+@media (min-width: 2000px) {
+  .container {
+    max-width: min(1600px, 80vw);
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .readMoreContainer {
+    min-height: 48px;
+  }
+  
+  .caseStudyContent:hover {
+    transform: none;
+  }
+  
+  .caseStudyContent:active {
+    transform: translateY(-2px);
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .caseStudyContent,
+  .readMoreContainer,
+  .readMoreArrow,
+  .platformIcon {
+    transition: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .readMoreContainer {
+    border: 3px solid #00FFF7;
+  }
+  
+  .platformIcon {
+    border: 3px solid rgba(255, 255, 255, 0.3);
   }
 }
