@@ -3,7 +3,6 @@
 /* Enhanced Tab Bar Styling - Matching Homepage Design Language */
 .tabBarSection {
   background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #E5E7EB;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -20,7 +19,7 @@
   display: flex;
   gap: 24px;
   overflow-x: auto;
-  padding: 12px 0;
+  padding: 16px 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
   flex: 1;
@@ -36,8 +35,8 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid #E5E7EB;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(229, 231, 235, 0.6);
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -45,18 +44,18 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   color: #374151;
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .scrollArrow:hover {
   background: rgba(255, 255, 255, 1);
-  border-color: #2762F8;
+  border-color: rgba(39, 98, 248, 0.3);
   color: #2762F8;
   transform: translateY(-50%) scale(1.05);
-  box-shadow: 0 4px 12px rgba(39, 98, 248, 0.2);
+  box-shadow: 0 4px 12px rgba(39, 98, 248, 0.15);
 }
 
 .scrollArrowLeft {
@@ -67,40 +66,43 @@
   right: -18px;
 }
 
-/* Professional Tab Button Styles - Matching Homepage Buttons */
+/* Elegant Tab Button Styles - Refined Design */
 .tabButton {
   font-family: 'Flecha S', sans-serif;
   font-size: 14px;
   font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 25px;
-  border: 2px solid transparent;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 1px solid transparent;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
   cursor: pointer;
   position: relative;
   background: transparent;
+  letter-spacing: 0.2px;
 }
 
 .tabButtonActive {
-  background: #2762F8;
+  background: linear-gradient(135deg, #2762F8 0%, #1E40AF 100%);
   color: #FFFFFF;
-  border-color: #2762F8;
-  box-shadow: 0 4px 12px rgba(39, 98, 248, 0.3);
-  transform: translateY(-2px);
+  border-color: transparent;
+  box-shadow: 0 2px 8px rgba(39, 98, 248, 0.25), 0 1px 3px rgba(39, 98, 248, 0.1);
+  transform: translateY(-1px);
 }
 
 .tabButtonInactive {
-  background: rgba(255, 255, 255, 0.8);
-  color: #001C46;
-  border-color: rgba(39, 98, 248, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  color: #374151;
+  border-color: rgba(229, 231, 235, 0.8);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
 .tabButtonInactive:hover {
   background: rgba(255, 255, 255, 1);
-  border-color: #2762F8;
+  border-color: rgba(39, 98, 248, 0.3);
+  color: #2762F8;
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(39, 98, 248, 0.15);
+  box-shadow: 0 2px 6px rgba(39, 98, 248, 0.1);
 }
 
 /* Typography Matching Homepage Design System */
@@ -162,6 +164,12 @@
   background: linear-gradient(135deg, #2762F8 0%, #00FFF7 100%);
   border-radius: 2px;
   margin-bottom: 48px;
+}
+
+/* Portfolio Summary Section - Reduced Spacing */
+.portfolioSummary {
+  margin-top: 80px;
+  padding-top: 24px;
 }
 
 /* Portfolio Cards - Keep Original Design */
@@ -464,7 +472,7 @@
 
   .tabButton {
     font-size: 13px;
-    padding: 8px 16px;
+    padding: 10px 20px;
   }
 
   .scrollArrow {
@@ -478,6 +486,11 @@
 
   .scrollArrowRight {
     right: -16px;
+  }
+
+  .portfolioSummary {
+    margin-top: 64px;
+    padding-top: 20px;
   }
 }
 
@@ -543,13 +556,13 @@
   }
 
   .tabContainer {
-    padding: 10px 0;
+    padding: 14px 0;
     gap: 20px;
   }
 
   .tabButton {
     font-size: 12px;
-    padding: 6px 14px;
+    padding: 8px 18px;
   }
 
   .scrollArrow {
@@ -563,6 +576,11 @@
 
   .scrollArrowRight {
     right: -14px;
+  }
+
+  .portfolioSummary {
+    margin-top: 48px;
+    padding-top: 16px;
   }
 }
 
@@ -628,13 +646,13 @@
   }
 
   .tabContainer {
-    padding: 8px 0;
+    padding: 12px 0;
     gap: 16px;
   }
 
   .tabButton {
     font-size: 11px;
-    padding: 6px 12px;
+    padding: 8px 16px;
   }
 
   .scrollArrow {
@@ -648,5 +666,10 @@
 
   .scrollArrowRight {
     right: -13px;
+  }
+
+  .portfolioSummary {
+    margin-top: 40px;
+    padding-top: 16px;
   }
 }
