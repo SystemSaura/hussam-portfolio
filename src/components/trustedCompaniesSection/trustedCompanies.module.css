@@ -1,366 +1,202 @@
 /* Trusted Companies Logo Grid Styles */
-.trustedSection {
-  padding: clamp(32px, 6vw, 48px) 0;
-  background: white;
-}
-
-.container {
-  max-width: min(1200px, 90vw);
-  margin: 0 auto;
-  padding: 0 clamp(16px, 2vw, 24px);
-}
-
-.sectionHeader {
-  text-align: center;
-  margin-bottom: clamp(24px, 4vw, 32px);
-}
-
-.sectionTitle {
-  font-family: 'Work Sans', sans-serif;
-  font-size: clamp(11px, 1.2vw, 12px);
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: #6B7280;
-  margin: 0;
-}
-
 .logoGridContainer {
-  max-width: min(1100px, 100%);
+  max-width: 1100px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.logoGrid {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: clamp(32px, 5vw, 48px);
 }
 
 .logoRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 48px;
   width: 100%;
-  padding: 0 clamp(8px, 2vw, 20px);
-  gap: clamp(12px, 2vw, 20px);
+  padding: 0 20px;
+}
+
+.logoRow:last-child {
+  margin-bottom: 0;
 }
 
 /* Base logo styling - consistent foundation */
 .colorLogo {
-  height: clamp(36px, 5vw, 50px);
+  height: 50px;
   width: auto;
-  max-width: clamp(100px, 14vw, 140px);
+  max-width: 140px;
   object-fit: contain;
   opacity: 1;
   transition: all 0.3s ease;
   flex-shrink: 1;
   flex-grow: 0;
-  filter: grayscale(20%) opacity(0.9);
 }
 
 .colorLogo:hover {
   transform: scale(1.08);
-  opacity: 1;
-  filter: grayscale(0%) opacity(1);
+  opacity: 0.9;
 }
 
 /* Enhanced individual logo sizing for better visual balance */
 .colorLogo.shifttatLogo {
-  height: clamp(42px, 6vw, 58px);
-  max-width: clamp(120px, 16vw, 160px);
+  height: 58px;
+  max-width: 160px;
 }
 
 .colorLogo.abudawoodLogo {
-  height: clamp(32px, 4.5vw, 44px);
-  max-width: clamp(90px, 12vw, 120px);
+  height: 44px;
+  max-width: 120px;
 }
 
 .colorLogo.alnahdiLogo {
-  height: clamp(50px, 7vw, 70px);
-  max-width: clamp(140px, 19vw, 190px);
+  height: 70px;
+  max-width: 190px;
 }
 
 .colorLogo.ncmhLogo {
-  height: clamp(60px, 8.5vw, 85px);
-  max-width: clamp(130px, 18vw, 180px);
+  height: 85px;
+  max-width: 180px;
 }
 
 .colorLogo.rcmcLogo {
-  height: clamp(65px, 9vw, 90px);
-  max-width: clamp(150px, 20vw, 200px);
+  height: 90px;
+  max-width: 200px;
 }
 
 .colorLogo.empireLogo {
-  height: clamp(45px, 6vw, 60px);
-  max-width: clamp(125px, 16.5vw, 165px);
+  height: 60px;
+  max-width: 165px;
 }
 
 .colorLogo.rotanaLogo {
-  height: clamp(46px, 6.2vw, 62px);
-  max-width: clamp(130px, 17.5vw, 175px);
-}
-
-.colorLogo.kapsarcLogo {
-  height: clamp(40px, 5.5vw, 55px);
-  max-width: clamp(110px, 15vw, 150px);
-}
-
-.colorLogo.saeqLogo {
-  height: clamp(38px, 5.2vw, 52px);
-  max-width: clamp(105px, 14vw, 145px);
-}
-
-.colorLogo.revivaLogo {
-  height: clamp(35px, 4.8vw, 48px);
-  max-width: clamp(95px, 13vw, 135px);
+  height: 62px;
+  max-width: 175px;
 }
 
 /* Tablet responsive adjustments */
 @media (max-width: 1024px) {
   .logoRow {
-    padding: 0 clamp(8px, 1.5vw, 16px);
-    gap: clamp(16px, 2.5vw, 20px);
+    padding: 0 10px;
+    margin-bottom: 40px;
   }
 
   .colorLogo {
-    height: clamp(32px, 4.5vw, 45px);
-    max-width: clamp(90px, 13vw, 130px);
+    height: 45px;
+    max-width: 130px;
   }
 
   .colorLogo.shifttatLogo {
-    height: clamp(38px, 5.2vw, 52px);
-    max-width: clamp(110px, 14.5vw, 145px);
+    height: 52px;
+    max-width: 145px;
   }
 
   .colorLogo.alnahdiLogo {
-    height: clamp(45px, 6.3vw, 63px);
-    max-width: clamp(125px, 17vw, 170px);
+    height: 63px;
+    max-width: 170px;
   }
 
   .colorLogo.ncmhLogo {
-    height: clamp(55px, 7.6vw, 76px);
-    max-width: clamp(120px, 16vw, 160px);
+    height: 76px;
+    max-width: 160px;
   }
 
   .colorLogo.rcmcLogo {
-    height: clamp(58px, 8.1vw, 81px);
-    max-width: clamp(135px, 18vw, 180px);
+    height: 81px;
+    max-width: 180px;
   }
 
   .colorLogo.empireLogo {
-    height: clamp(40px, 5.4vw, 54px);
-    max-width: clamp(115px, 15vw, 150px);
+    height: 54px;
+    max-width: 150px;
   }
 
   .colorLogo.rotanaLogo {
-    height: clamp(42px, 5.6vw, 56px);
-    max-width: clamp(120px, 16vw, 160px);
+    height: 56px;
+    max-width: 160px;
   }
 }
 
-/* Mobile responsive - reorganize for better display */
+/* Mobile responsive - stack logos and center them */
 @media (max-width: 768px) {
-  .trustedSection {
-    padding: clamp(24px, 4vw, 32px) 0;
-  }
-
-  .logoGrid {
-    gap: clamp(24px, 4vw, 32px);
-  }
-
   .logoRow {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: clamp(16px, 3vw, 24px);
-    padding: 0 clamp(8px, 1.5vw, 12px);
-  }
-
-  /* Display 3 logos per row on mobile */
-  .logoRow {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: clamp(12px, 2.5vw, 20px);
-    place-items: center;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 40px;
+    padding: 0 5px;
   }
 
   .colorLogo {
-    height: clamp(28px, 4vw, 42px);
-    max-width: clamp(80px, 12vw, 140px);
+    height: 42px;
+    max-width: 140px;
   }
 
   .colorLogo.shifttatLogo {
-    height: clamp(34px, 4.8vw, 48px);
-    max-width: clamp(100px, 15vw, 150px);
+    height: 48px;
+    max-width: 150px;
   }
 
   .colorLogo.alnahdiLogo {
-    height: clamp(40px, 5.8vw, 58px);
-    max-width: clamp(110px, 16vw, 160px);
+    height: 58px;
+    max-width: 160px;
   }
 
   .colorLogo.ncmhLogo {
-    height: clamp(48px, 6.8vw, 68px);
-    max-width: clamp(105px, 15vw, 150px);
+    height: 68px;
+    max-width: 150px;
   }
 
   .colorLogo.rcmcLogo {
-    height: clamp(50px, 7.2vw, 72px);
-    max-width: clamp(115px, 16vw, 160px);
+    height: 72px;
+    max-width: 160px;
   }
 
   .colorLogo.empireLogo {
-    height: clamp(36px, 5vw, 50px);
-    max-width: clamp(100px, 14vw, 140px);
+    height: 50px;
+    max-width: 140px;
   }
 
   .colorLogo.rotanaLogo {
-    height: clamp(38px, 5.2vw, 52px);
-    max-width: clamp(105vw, 15vw, 150px);
+    height: 52px;
+    max-width: 150px;
   }
 }
 
 /* Small mobile adjustments */
 @media (max-width: 480px) {
-  .trustedSection {
-    padding: 20px 0;
-  }
-
-  .container {
-    padding: 0 16px;
-  }
-
-  .logoGrid {
-    gap: 20px;
-  }
-
   .logoRow {
-    gap: 16px;
+    gap: 28px;
+    margin-bottom: 32px;
   }
 
   .colorLogo {
-    height: clamp(24px, 3.8vw, 38px);
-    max-width: clamp(70px, 11vw, 120px);
-  }
-
-  .colorLogo.shifttatLogo {
-    height: clamp(30px, 4.4vw, 44px);
-    max-width: clamp(90px, 13vw, 130px);
-  }
-
-  .colorLogo.alnahdiLogo {
-    height: clamp(36px, 5.2vw, 52px);
-    max-width: clamp(100px, 14vw, 140px);
-  }
-
-  .colorLogo.ncmhLogo {
-    height: clamp(42px, 6vw, 60px);
-    max-width: clamp(95px, 13vw, 130px);
-  }
-
-  .colorLogo.rcmcLogo {
-    height: clamp(44px, 6.4vw, 64px);
-    max-width: clamp(105px, 14vw, 140px);
-  }
-
-  .colorLogo.empireLogo {
-    height: clamp(32px, 4.4vw, 44px);
-    max-width: clamp(90px, 12.5vw, 125px);
-  }
-
-  .colorLogo.rotanaLogo {
-    height: clamp(34px, 4.6vw, 46px);
-    max-width: clamp(95px, 13vw, 130px);
-  }
-}
-
-/* Very small mobile - stack in 2 columns */
-@media (max-width: 360px) {
-  .container {
-    padding: 0 12px;
-  }
-
-  .logoRow {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-
-  .colorLogo {
-    height: 32px;
-    max-width: 100px;
-  }
-
-  .colorLogo.shifttatLogo {
-    height: 36px;
-    max-width: 110px;
-  }
-
-  .colorLogo.alnahdiLogo {
-    height: 42px;
-    max-width: 120px;
-  }
-
-  .colorLogo.ncmhLogo {
-    height: 50px;
-    max-width: 110px;
-  }
-
-  .colorLogo.rcmcLogo {
-    height: 52px;
-    max-width: 120px;
-  }
-
-  .colorLogo.empireLogo {
     height: 38px;
-    max-width: 105px;
+    max-width: 120px;
+  }
+
+  .colorLogo.shifttatLogo {
+    height: 44px;
+    max-width: 130px;
+  }
+
+  .colorLogo.alnahdiLogo {
+    height: 52px;
+    max-width: 140px;
+  }
+
+  .colorLogo.ncmhLogo {
+    height: 60px;
+    max-width: 130px;
+  }
+
+  .colorLogo.rcmcLogo {
+    height: 64px;
+    max-width: 140px;
+  }
+
+  .colorLogo.empireLogo {
+    height: 44px;
+    max-width: 125px;
   }
 
   .colorLogo.rotanaLogo {
-    height: 40px;
-    max-width: 115px;
-  }
-}
-
-/* High DPI and large screen adjustments */
-@media (min-width: 1400px) {
-  .container {
-    max-width: min(1300px, 85vw);
-  }
-
-  .logoGridContainer {
-    max-width: min(1200px, 100%);
-  }
-}
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: min(1500px, 80vw);
-  }
-}
-
-/* Ultra-wide screen support */
-@media (min-width: 2000px) {
-  .container {
-    max-width: min(1600px, 75vw);
-  }
-}
-
-/* Touch device optimizations */
-@media (hover: none) and (pointer: coarse) {
-  .colorLogo:hover {
-    transform: none;
-  }
-  
-  .colorLogo:active {
-    transform: scale(1.05);
-  }
-}
-
-/* Reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .colorLogo {
-    transition: none;
+    height: 46px;
+    max-width: 130px;
   }
 }

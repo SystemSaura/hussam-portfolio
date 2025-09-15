@@ -1,90 +1,37 @@
 /* Testimonials Section Styles */
-.testimonialsSection {
-  padding: clamp(60px, 12vw, 80px) 0;
-  background: white;
-}
-
-.container {
-  max-width: min(1200px, 90vw);
-  margin: 0 auto;
-  padding: 0 clamp(16px, 2vw, 24px);
-}
-
-.sectionHeader {
-  text-align: center;
-  margin-bottom: clamp(48px, 8vw, 64px);
-}
-
-.ratingBadge {
-  display: inline-flex;
-  align-items: center;
-  background: #EFF6FF;
-  border-radius: 50px;
-  padding: clamp(6px, 1vw, 8px) clamp(12px, 2vw, 16px);
-  margin-bottom: clamp(12px, 2vw, 16px);
-  gap: clamp(6px, 1vw, 8px);
-}
-
-.starRating {
-  display: flex;
-  align-items: center;
-  gap: clamp(2px, 0.3vw, 4px);
-  margin-right: clamp(6px, 1vw, 8px);
-}
-
-.star {
-  width: clamp(14px, 1.6vw, 16px);
-  height: clamp(14px, 1.6vw, 16px);
-  color: #FBBF24;
-  fill: currentColor;
-}
-
 .flechaRatingText {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(12px, 1.4vw, 14px);
+  font-size: 14px;
   font-weight: 600;
   color: #2563EB;
 }
 
 .flechaProjectsText {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(12px, 1.4vw, 14px);
+  font-size: 14px;
   color: #6B7280;
 }
 
 .flechaTestimonialHeading {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(28px, 3.5vw, 34.1024px);
+  font-size: 34.1024px;
   font-weight: normal;
   color: #111827;
   line-height: 1.2;
-  margin-bottom: clamp(12px, 2vw, 16px);
-  word-wrap: break-word;
-  hyphens: auto;
 }
 
 .flechaTestimonialDescription {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(14px, 1.6vw, 16px);
+  font-size: 16px;
   color: #6B7280;
   line-height: 1.6;
-  max-width: min(600px, 90vw);
-  margin: 0 auto;
 }
 
-/* Testimonials Grid */
-.testimonialsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
-  gap: clamp(20px, 3vw, 24px);
-  margin-bottom: clamp(40px, 6vw, 48px);
-}
-
-/* TESTIMONIALS CARD V2 - IMPROVED WITH FLECHA S FONT CONSISTENCY */
+/* TESTIMONIALS SECTION V2 - IMPROVED WITH FLECHA S FONT CONSISTENCY */
 .testimonialCardV2 {
   background: #FFFFFF;
   border-radius: 16px;
-  padding: clamp(20px, 3vw, 24px);
+  padding: 24px;
   border: 1px solid #E5E7EB;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
@@ -100,61 +47,25 @@
 }
 
 .testimonialHeaderV2 {
-  margin-bottom: clamp(12px, 2vw, 16px);
-}
-
-.headerRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: clamp(8px, 1.2vw, 12px);
-  gap: clamp(8px, 1.2vw, 12px);
-}
-
-.cardStarRating {
-  display: flex;
-  align-items: center;
-  gap: clamp(2px, 0.3vw, 3px);
-}
-
-.cardStar {
-  width: clamp(12px, 1.4vw, 16px);
-  height: clamp(12px, 1.4vw, 16px);
-  color: #FBBF24;
-  fill: currentColor;
+  margin-bottom: 16px;
 }
 
 .verifiedBadge {
   display: inline-flex;
   align-items: center;
-  gap: clamp(3px, 0.4vw, 4px);
+  gap: 4px;
   background: #F0FDF4;
   color: #16A34A;
-  padding: clamp(3px, 0.4vw, 4px) clamp(6px, 0.8vw, 8px);
+  padding: 4px 8px;
   border-radius: 20px;
-  font-size: clamp(9px, 1.1vw, 11px);
+  font-size: 11px;
   font-weight: 600;
   font-family: 'Flecha S', sans-serif;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  flex-shrink: 0;
-}
-
-.verifiedBadge:hover {
-  background: #DCFCE7;
-  transform: translateY(-1px);
-}
-
-.verifyIcon {
-  width: clamp(10px, 1.2vw, 12px);
-  height: clamp(10px, 1.2vw, 12px);
-  color: #16A34A;
-  fill: currentColor;
 }
 
 .projectType {
   color: #6B7280;
-  font-size: clamp(9px, 1.1vw, 11px);
+  font-size: 11px;
   font-weight: 600;
   font-family: 'Flecha S', sans-serif;
   text-transform: uppercase;
@@ -163,10 +74,10 @@
 
 .testimonialQuoteV2 {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(13px, 1.5vw, 15px);
+  font-size: 15px;
   line-height: 1.6;
   color: #374151;
-  margin-bottom: clamp(16px, 2.5vw, 20px);
+  margin-bottom: 20px;
   flex-grow: 1;
 }
 
@@ -175,54 +86,46 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-top: auto;
-  padding-top: clamp(12px, 2vw, 16px);
+  padding-top: 16px;
   border-top: 1px solid #F3F4F6;
-  gap: clamp(8px, 1.2vw, 12px);
 }
 
 .clientInfoV2 {
   display: flex;
   align-items: center;
-  gap: clamp(8px, 1.2vw, 12px);
-  flex: 1;
+  gap: 12px;
 }
 
 .clientPhotoV2 {
-  width: clamp(32px, 4vw, 40px);
-  height: clamp(32px, 4vw, 40px);
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #F3F4F6;
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .clientNameV2 {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(12px, 1.4vw, 14px);
+  font-size: 14px;
   color: #111827;
   font-weight: 600;
-  margin-bottom: clamp(1px, 0.2vw, 2px);
-  line-height: 1.2;
+  margin-bottom: 2px;
 }
 
 .clientCompanyV2 {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(11px, 1.3vw, 13px);
+  font-size: 13px;
   color: #2762F8;
   font-weight: 500;
-  margin-bottom: clamp(1px, 0.2vw, 2px);
-  line-height: 1.2;
+  margin-bottom: 2px;
 }
 
 .clientLocationV2 {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(9px, 1.1vw, 11px);
+  font-size: 11px;
   color: #6B7280;
   font-weight: 400;
-  line-height: 1.2;
 }
 
 .companyLogoV2 {
@@ -230,106 +133,28 @@
   align-items: center;
   opacity: 0.8;
   transition: opacity 0.2s ease;
-  flex-shrink: 0;
 }
 
 .testimonialCardV2:hover .companyLogoV2 {
   opacity: 1;
 }
 
-.logoImg {
-  height: clamp(24px, 3vw, 32px);
-  width: auto;
-  max-width: clamp(60px, 8vw, 80px);
-  object-fit: contain;
-}
-
-.logoText {
-  font-family: 'Flecha S', sans-serif;
-  font-size: clamp(10px, 1.2vw, 12px);
-  font-weight: 600;
-  color: #6B7280;
-}
-
-/* Bottom verification section */
-.verificationSection {
-  text-align: center;
-  padding-top: clamp(24px, 4vw, 32px);
-  border-top: 1px solid #E5E7EB;
-}
-
-.verificationBadge {
-  display: inline-flex;
-  align-items: center;
-  background: #F9FAFB;
-  border-radius: 50px;
-  padding: clamp(8px, 1.2vw, 12px) clamp(16px, 2.5vw, 24px);
-  border: 1px solid #E5E7EB;
-  gap: clamp(6px, 1vw, 8px);
-}
-
-.verificationIcon {
-  width: clamp(16px, 2vw, 20px);
-  height: clamp(16px, 2vw, 20px);
-  color: #16A34A;
-  fill: currentColor;
-  flex-shrink: 0;
-}
-
 .flechaVerificationText {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(14px, 1.6vw, 16px);
+  font-size: 16px;
   font-weight: 500;
   color: #374151;
-  margin-right: clamp(8px, 1.2vw, 12px);
 }
 
 .flechaViewAllText {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(14px, 1.6vw, 16px);
+  font-size: 16px;
   font-weight: 600;
   color: #2563EB;
-  text-decoration: none;
-  transition: color 0.2s ease;
 }
 
-.flechaViewAllText:hover {
-  color: #1D4ED8;
-}
-
-/* Tablet responsive adjustments */
-@media (max-width: 1024px) {
-  .testimonialsGrid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: clamp(20px, 3vw, 24px);
-  }
-
-  .testimonialFooterV2 {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: clamp(10px, 1.5vw, 12px);
-  }
-
-  .clientInfoV2 {
-    width: 100%;
-  }
-
-  .companyLogoV2 {
-    align-self: flex-start;
-  }
-}
-
-/* Mobile testimonials adjustments */
+/* Mobile testimonials v2 adjustments */
 @media (max-width: 768px) {
-  .container {
-    padding: 0 20px;
-  }
-
-  .testimonialsGrid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
   .testimonialCardV2 {
     padding: 20px;
   }
@@ -347,24 +172,9 @@
   .companyLogoV2 {
     align-self: flex-start;
   }
-
-  .headerRow {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .verifiedBadge {
-    align-self: flex-start;
-  }
 }
 
-/* Small mobile adjustments */
 @media (max-width: 480px) {
-  .container {
-    padding: 0 16px;
-  }
-
   .testimonialCardV2 {
     padding: 16px;
   }
@@ -383,63 +193,5 @@
 
   .clientLocationV2 {
     font-size: 10px;
-  }
-
-  .verificationBadge {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-  }
-
-  .flechaVerificationText {
-    margin-right: 0;
-  }
-}
-
-/* Very small mobile */
-@media (max-width: 360px) {
-  .container {
-    padding: 0 12px;
-  }
-}
-
-/* High DPI adjustments */
-@media (min-width: 1400px) {
-  .container {
-    max-width: min(1300px, 85vw);
-  }
-}
-
-/* Touch device optimizations */
-@media (hover: none) and (pointer: coarse) {
-  .verifiedBadge {
-    min-height: 32px;
-  }
-  
-  .testimonialCardV2:hover {
-    transform: none;
-  }
-  
-  .testimonialCardV2:active {
-    transform: translateY(-1px);
-  }
-}
-
-/* Reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .testimonialCardV2,
-  .verifiedBadge {
-    transition: none;
-  }
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-  .testimonialCardV2 {
-    border: 2px solid #374151;
-  }
-  
-  .verifiedBadge {
-    border: 2px solid #16A34A;
   }
 }
