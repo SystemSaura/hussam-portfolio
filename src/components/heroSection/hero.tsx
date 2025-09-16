@@ -9,8 +9,9 @@ export default function Hero() {
       <div className={styles.homeHeaderComponent}>
         {/* Main Hero Title */}
         <h1 className={styles.flechaHeroTitle + " mb-16"}>
-          Turn marketing spend<br />
-          into <span className={styles.textCustomBlue}>measurable growth.</span>
+          Turn marketing<br />
+          spend into<br />
+          <span className={styles.textCustomBlue}>measurable growth.</span>
         </h1>
 
         {/* Lower Section - Three parts */}

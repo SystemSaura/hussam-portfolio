@@ -196,31 +196,51 @@
 /* Mobile responsive */
 @media (max-width: 768px) {
   .flechaHeroTitle {
-    font-size: 56px;
+    font-size: 85px;  /* Much larger to match screenshot 1 */
     white-space: normal;
+    line-height: 1.0;  /* Tighter line height */
+    margin-bottom: 3rem;  /* More space below title */
+    text-align: center;
+    padding: 0 1rem;
   }
   
   .homeHeaderComponent {
     width: 100%;
     height: auto;
+    padding: 0 1rem;
   }
   
   .homeHeaderContent {
     width: 100%;
     height: auto;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;  /* Adjusted gap */
+    text-align: center;
   }
   
   .homeHeaderTextWrap {
     width: 100%;
     height: auto;
+    text-align: center;
+  }
+  
+  .homeHeaderSubheading {
+    font-size: 28px;  /* Adjusted size */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .homeHeaderText1 {
+    font-size: 16px;  /* Slightly larger */
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
   }
   
   .homeHeaderFormWrap {
     width: 100%;
     height: auto;
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
   
   .sevaFields.formkitFields {
@@ -236,12 +256,22 @@
   }
   
   .subscribeButton {
-    width: auto;
+    width: 100%;
     min-width: 102.31px;
+    height: 50px;  /* Larger buttons */
+    font-size: 16px;
+  }
+  
+  .navButtonStrategy {
+    width: 100%;
+    height: 50px;  /* Larger buttons */
+    font-size: 16px;
   }
   
   .homeHeaderSubheadingRight {
     text-align: center;
+    font-size: 28px;  /* Match other heading */
+    margin-bottom: 1.5rem;
   }
 
   /* Mobile Arrow Switching */
@@ -253,6 +283,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1.5rem 0;
   }
 }
 
