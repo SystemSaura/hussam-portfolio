@@ -8,145 +8,134 @@
 }
 
 .homeHeaderComponent {
-  width: min(852.56px, 90vw);
-  height: auto;
+  width: 852.56px;
+  height: 457.54px;
   margin: 0 auto;
-  padding: 0 clamp(16px, 2vw, 20px);
-}
-
-.heroTitleContainer {
-  text-align: center;
-  margin-bottom: clamp(40px, 8vw, 80px);
 }
 
 .homeHeaderContent {
-  width: 100%;
-  height: auto;
+  width: 852.56px;
+  height: 164.84px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  gap: clamp(1rem, 4vw, 2rem);
-  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .homeHeaderTextWrap {
-  width: 100%;
-  max-width: 346.48px;
-  height: auto;
-  flex: 1;
-  min-width: min(280px, 100%);
+  width: 346.48px;
+  height: 112.38px;
 }
 
 .homeHeaderSubheading {
   color: #001C46;
-  font: clamp(24px, 3.5vw, 34.1024px) "Flecha S", sans-serif;
+  font: 34.1024px "Flecha S", sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  margin-bottom: clamp(12px, 2vw, 16px);
+  margin-bottom: 16px;
 }
 
 .homeHeaderSubheadingRight {
   color: #001C46;
-  font: clamp(24px, 3.5vw, 34.1024px) "Flecha S", sans-serif;
+  font: 34.1024px "Flecha S", sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  margin-bottom: clamp(6px, 1vw, 8px);
+  margin-bottom: 8px;
   text-align: left;
-  width: 100%;
-  height: auto;
+  width: 361.75px;
+  height: 35.8px;
 }
 
 .homeHeaderText1 {
   color: #001C46;
-  font: clamp(12px, 1.4vw, 12.7884px) "Work Sans", sans-serif;
+  font: 12.7884px "Work Sans", sans-serif;
   line-height: 1.6;
-  margin-bottom: clamp(24px, 3vw, 32px);
+  margin-bottom: 32px;
+}
+
+/* Arrow Container - Responsive Arrow Handling */
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowMobile {
+  display: none;
 }
 
 .arrowRight {
-  width: clamp(40px, 6vw, 56.13px);
-  height: clamp(40px, 6vw, 56.84px);
+  width: 56.13px;
+  height: 56.84px;
   margin: 0;
-  flex-shrink: 0;
-  transform: rotate(90deg);
-  transition: transform 0.3s ease;
+}
+
+.arrowDown {
+  width: 48px;
+  height: 48px;
+  margin: 0;
 }
 
 .homeHeaderFormWrap {
-  width: 100%;
-  max-width: 361.75px;
-  height: auto;
-  padding: clamp(8px, 1.2vw, 10px);
-  flex: 1;
-  min-width: min(280px, 100%);
+  width: 361.75px;
+  height: 98.84px;
+  padding: 10px;
 }
 
 .sevaFields.formkitFields {
-  width: 100%;
-  height: auto;
+  width: 361.75px;
+  height: 57.35px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: clamp(8px, 1.2vw, 10px);
-  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .formkitInput {
-  width: 100%;
-  max-width: 250.08px;
-  height: clamp(36px, 5vw, 41.11px);
+  width: 250.08px;
+  height: 41.11px;
   background: #FFFFFF;
-  padding: clamp(8px, 1.2vw, 12px) clamp(12px, 1.8vw, 17.0512px);
+  padding: 12px 12px 12px 17.0512px;
   border: 1px solid #E5E7EB;
   border-radius: 9999px;
-  font: clamp(12px, 1.4vw, 14px) "Work Sans", sans-serif;
+  font: 14px "Work Sans", sans-serif;
   margin: 0;
   box-sizing: border-box;
   flex-shrink: 0;
-  transition: all 0.2s ease;
-}
-
-.formkitInput:focus {
-  border-color: #2762F8;
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(39, 98, 248, 0.1);
 }
 
 .subscribeButton {
   background: #2762F8;
   color: #FFFFFF;
-  font: clamp(10px, 1.2vw, 10.7991px) "Work Sans", sans-serif;
-  padding: clamp(10px, 1.2vw, 12px) clamp(20px, 2.5vw, 24px);
+  font: 10.7991px "Work Sans", sans-serif;
+  padding: 12px 24px;
   border: none;
   border-radius: 9999px;
   cursor: pointer;
-  width: auto;
-  min-width: clamp(100px, 12vw, 110.31px);
-  height: clamp(32px, 4vw, 36px);
+  width: 110.31px;
+  height: 36px;
   box-sizing: border-box;
   margin: 0;
   flex-shrink: 0;
-  transition: all 0.2s ease;
-  font-weight: 500;
 }
 
 .subscribeButton:hover {
   background: #1E4ED8;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(39, 98, 248, 0.25);
-}
-
-.subscribeButton:active {
-  transform: translateY(0);
 }
 
 .navButtonStrategy {
   background-color: #001C46;
   color: #FFFFFF;
   font-family: 'Work Sans', sans-serif;
-  font-size: clamp(10px, 1.2vw, 11.3675px);
+  font-size: 11.3675px;
   font-weight: 300;
-  padding: 0 clamp(12px, 1.8vw, 17.0512px);
+  padding: 0 17.0512px;
   border: none;
   border-radius: 9999px;
   cursor: pointer;
@@ -154,40 +143,31 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-  min-width: clamp(120px, 14vw, 135px);
-  height: clamp(32px, 4vw, 36px);
+  width: 135px;
+  height: 36px;
   box-sizing: border-box;
   transition: all 0.2s ease;
-  font-weight: 500;
 }
 
 .navButtonStrategy:hover {
   background-color: #2762F8;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 28, 70, 0.25);
-}
-
-.navButtonStrategy:active {
-  transform: translateY(0);
+  color: #FFFFFF;
 }
 
 .flechaHeroTitle {
   font-family: 'Flecha S', sans-serif;
-  font-size: clamp(36px, 6.5vw, 85.2561px);
+  font-size: 85.2561px;
   font-weight: normal;
   color: #001C46;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  white-space: nowrap;
+  overflow-wrap: normal;
 }
 
 .deconstructedQ {
   display: inline-block;
-  margin-left: clamp(2px, 0.5vw, 6px);
+  margin-left: 6px;
 }
 
 .qCurve {
@@ -199,7 +179,7 @@
 .qDot {
   color: #2762F8;
   display: inline-block;
-  margin-left: clamp(1px, 0.25vw, 2px);
+  margin-left: 2px;
   animation: dot-bounce 2s ease-in-out infinite 0.3s;
 }
 
@@ -213,16 +193,66 @@
   50% { transform: translateY(3px); }
 }
 
-/* Media queries ordered from largest to smallest breakpoint */
-@media (min-width: 1400px) {
+/* Mobile responsive */
+@media (max-width: 768px) {
   .flechaHeroTitle {
-    font-size: 72px;
+    font-size: 56px;
+    white-space: normal;
   }
-}
+  
+  .homeHeaderComponent {
+    width: 100%;
+    height: auto;
+  }
+  
+  .homeHeaderContent {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .homeHeaderTextWrap {
+    width: 100%;
+    height: auto;
+  }
+  
+  .homeHeaderFormWrap {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  
+  .sevaFields.formkitFields {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .formkitInput {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .subscribeButton {
+    width: auto;
+    min-width: 102.31px;
+  }
+  
+  .homeHeaderSubheadingRight {
+    text-align: center;
+  }
 
-@media (min-width: 1200px) {
-  .flechaHeroTitle {
-    font-size: 64px;
+  /* Mobile Arrow Switching */
+  .arrowDesktop {
+    display: none;
+  }
+  
+  .arrowMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -230,247 +260,16 @@
   .flechaHeroTitle {
     font-size: 80px;
   }
-  
-  .homeHeaderContent {
-    gap: clamp(1.5rem, 3vw, 2rem);
-  }
-
-  .heroTitleContainer {
-    margin-bottom: clamp(32px, 6vw, 64px);
-  }
 }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .flechaHeroTitle {
-    font-size: 48px;
-    white-space: normal;
-    text-align: center;
+    font-size: 64px;
   }
-  
-  .homeHeaderSubheading {
-    text-align: center;
-    font-size: 28px;
-  }
-  
-  .homeHeaderText1 {
-    text-align: center;
-    font-size: 14px;
-  }
-  
-  .homeHeaderComponent {
-    width: 100%;
-    padding: 0 clamp(16px, 4vw, 24px);
-  }
+}
 
-  .heroTitleContainer {
-    margin-bottom: clamp(48px, 8vw, 64px);
-    padding: 0 clamp(8px, 2vw, 16px);
-  }
-
+@media (max-width: 1400px) {
   .flechaHeroTitle {
-    text-align: center;
-    font-size: clamp(28px, 7vw, 48px);
-  }
-  
-  .homeHeaderContent {
-    flex-direction: column;
-    gap: clamp(2rem, 5vw, 3rem);
-    text-align: center;
-  }
-  
-  .homeHeaderTextWrap {
-    width: 100%;
-    max-width: none;
-    text-align: center;
-    order: 1;
-  }
-
-  .homeHeaderFormWrap {
-    width: 100%;
-    max-width: none;
-    padding: clamp(1rem, 3vw, 1.5rem);
-    order: 2;
-  }
-  
-  .sevaFields.formkitFields {
-    flex-direction: column;
-    gap: clamp(12px, 3vw, 16px);
-    align-items: stretch;
-  }
-  
-  .formkitInput {
-    width: 100%;
-    max-width: none;
-    height: clamp(44px, 6vw, 48px);
-  }
-  
-  .subscribeButton {
-    width: 100%;
-    max-width: none;
-    height: clamp(44px, 6vw, 48px);
-    font-size: clamp(14px, 1.8vw, 16px);
-    font-weight: 600;
-  }
-
-  .navButtonStrategy {
-    width: 100%;
-    max-width: none;
-    height: clamp(44px, 6vw, 48px);
-    font-size: clamp(14px, 1.8vw, 16px);
-    font-weight: 600;
-  }
-  
-  .homeHeaderSubheadingRight {
-    text-align: center;
-  }
-
-  .arrowRight {
-    width: clamp(48px, 8vw, 64px);
-    height: clamp(48px, 8vw, 64px);
-    transform: rotate(90deg);
-  }
-}
-
-/* Small mobile adjustments */
-@media (max-width: 480px) {
-  .homeHeaderComponent {
-    padding: 0 16px;
-  }
-
-  .heroTitleContainer {
-    margin-bottom: clamp(40px, 8vw, 56px);
-    padding: 0 8px;
-  }
-
-  .flechaHeroTitle {
-    font-size: clamp(24px, 6.5vw, 36px);
-    line-height: 1.2;
-  }
-
-  .homeHeaderContent {
-    gap: clamp(1.5rem, 4vw, 2.5rem);
-  }
-
-  .sevaFields.formkitFields {
-    gap: 12px;
-  }
-
-  .formkitInput {
-    height: 48px;
-    font-size: 16px; /* Prevent zoom on iOS */
-  }
-
-  .subscribeButton {
-    height: 48px;
-    font-size: 15px;
-    padding: 12px 20px;
-  }
-
-  .navButtonStrategy {
-    height: 48px;
-    font-size: 15px;
-    padding: 0 20px;
-  }
-
-  .homeHeaderText1 {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-}
-
-/* Very small mobile adjustments */
-@media (max-width: 360px) {
-  .homeHeaderComponent {
-    padding: 0 12px;
-  }
-
-  .heroTitleContainer {
-    margin-bottom: clamp(32px, 7vw, 48px);
-  }
-
-  .homeHeaderFormWrap {
-    padding: 12px;
-  }
-}
-
-/* High DPI and large screen adjustments */
-@media (min-width: 1400px) {
-  .homeHeaderComponent {
-    width: min(1200px, 80vw);
-  }
-
-  .flechaHeroTitle {
-    font-size: min(85.2561px, 6.095vw);
-  }
-}
-
-@media (min-width: 1600px) {
-  .flechaHeroTitle {
-    font-size: min(85.2561px, 5.33vw);
-  }
-  
-  .homeHeaderSubheading,
-  .homeHeaderSubheadingRight {
-    font-size: min(34.1024px, 2.13vw);
-  }
-  
-  .homeHeaderText1 {
-    font-size: min(12.7884px, 0.8vw);
-  }
-}
-
-/* Ultra-wide screen support */
-@media (min-width: 2000px) {
-  .homeHeaderComponent {
-    width: min(1400px, 70vw);
-  }
-  
-  .flechaHeroTitle {
-    font-size: min(85.2561px, 4.26vw);
-  }
-}
-
-/* Touch device optimizations */
-@media (hover: none) and (pointer: coarse) {
-  .subscribeButton,
-  .navButtonStrategy {
-    min-height: 48px; /* iOS accessibility guidelines */
-  }
-  
-  .formkitInput {
-    font-size: 16px; /* Prevent zoom on iOS */
-  }
-}
-
-/* Reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .qCurve,
-  .qDot {
-    animation: none;
-  }
-  
-  .subscribeButton,
-  .navButtonStrategy {
-    transition: none;
-  }
-  
-  .arrowRight {
-    transition: none;
-  }
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-  .formkitInput {
-    border: 2px solid #001C46;
-  }
-  
-  .subscribeButton {
-    border: 2px solid transparent;
-  }
-  
-  .navButtonStrategy {
-    border: 2px solid transparent;
+    font-size: 72px;
   }
 }
