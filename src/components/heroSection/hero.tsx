@@ -7,15 +7,17 @@ export default function Hero() {
   return (
     <section className={styles.bgCustomHero + " min-h-screen flex items-center justify-center py-20"}>
       <div className={styles.homeHeaderComponent}>
-        {/* Main Hero Title */}
-        <h1 className={styles.flechaHeroTitle + " mb-16"}>
-          Turn marketing spend<br />
-          into <span className={styles.textCustomBlue}>measurable growth.</span>
-        </h1>
+        {/* Main Hero Title - Centered on mobile */}
+        <div className={styles.heroTitleContainer}>
+          <h1 className={styles.flechaHeroTitle + " mb-16"}>
+            Turn marketing spend<br />
+            into <span className={styles.textCustomBlue}>measurable growth.</span>
+          </h1>
+        </div>
 
-        {/* Lower Section - Three parts */}
+        {/* Lower Section - Restructured layout */}
         <div className={styles.homeHeaderContent}>
-          {/* Left: Want to join us section */}
+          {/* Left: Tired of guessing section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
               Tired of guessing<span className={styles.deconstructedQ}>
@@ -26,17 +28,17 @@ export default function Hero() {
             <p className={styles.homeHeaderText1}>
               Your marketing budget deserves better than "spray and pray." Get strategies that turn GCC market insights into predictable pipeline growth.
             </p>
-          </div>
-
-          {/* Center: Arrow */}
-          <div className="flex items-center justify-center">
-            <Image
-              src="https://ext.same-assets.com/3287453319/171477844.svg"
-              alt="Arrow pointing right"
-              width={56.13}
-              height={56.84}
-              className={styles.arrowRight}
-            />
+            
+            {/* Arrow positioned after the text */}
+            <div className="flex items-center justify-center mt-8 mb-8">
+              <Image
+                src="https://ext.same-assets.com/3287453319/171477844.svg"
+                alt="Arrow pointing down"
+                width={56.13}
+                height={56.84}
+                className={styles.arrowRight}
+              />
+            </div>
           </div>
 
           {/* Right: Start here form */}

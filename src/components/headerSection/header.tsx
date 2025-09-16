@@ -35,7 +35,7 @@ export default function Header({ onNavigate, variant = "default" }: HeaderProps)
         </nav>
 
         {/* Right side buttons */}
-        <div className="flex items-center space-x-4">
+        <div className={`flex items-center space-x-4 ${styles.mobileHideButton}`}>
           <button className={styles.navButtonStrategy}>
             Book Consultation
           </button>

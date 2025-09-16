@@ -107,6 +107,12 @@
 @media (max-width: 768px) {
   .navContainer {
     margin: 0 16px 0 16px;
+    justify-content: center;
+  }
+  
+  /* Hide consultation button on mobile */
+  .mobileHideButton {
+    display: none;
   }
 }
 
