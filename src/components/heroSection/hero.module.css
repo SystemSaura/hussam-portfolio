@@ -170,11 +170,41 @@
   50% { transform: translateY(3px); }
 }
 
+/* Media queries ordered from largest to smallest breakpoint */
+@media (max-width: 1400px) {
+  .flechaHeroTitle {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .flechaHeroTitle {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flechaHeroTitle {
+    font-size: 80px;
+  }
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .flechaHeroTitle {
-    font-size: 56px;
+    font-size: 48px;
     white-space: normal;
+    text-align: center;
+  }
+  
+  .homeHeaderSubheading {
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  .homeHeaderText1 {
+    text-align: center;
+    font-size: 14px;
   }
   
   .homeHeaderComponent {
@@ -219,23 +249,5 @@
   
   .homeHeaderSubheadingRight {
     text-align: center;
-  }
-}
-
-@media (max-width: 1024px) {
-  .flechaHeroTitle {
-    font-size: 80px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .flechaHeroTitle {
-    font-size: 64px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .flechaHeroTitle {
-    font-size: 72px;
   }
 }

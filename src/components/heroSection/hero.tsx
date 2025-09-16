@@ -8,9 +8,17 @@ export default function Hero() {
     <section className={styles.bgCustomHero + " min-h-screen flex items-center justify-center py-20"}>
       <div className={styles.homeHeaderComponent}>
         {/* Main Hero Title */}
-        <h1 className={styles.flechaHeroTitle + " mb-16"}>
+        {/* Desktop version - hidden on mobile */}
+        <h1 className={styles.flechaHeroTitle + " mb-16 hidden md:block"}>
           Turn marketing spend<br />
           into <span className={styles.textCustomBlue}>measurable growth.</span>
+        </h1>
+
+        {/* Mobile version - visible only on mobile */}
+        <h1 className={styles.flechaHeroTitle + " mb-16 block md:hidden"}>
+          Turn marketing<br />
+          spend into<br />
+          <span className={styles.textCustomBlue}>measurable growth.</span>
         </h1>
 
         {/* Lower Section - Three parts */}
