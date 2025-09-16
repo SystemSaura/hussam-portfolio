@@ -7,6 +7,7 @@ export default function Hero() {
   return (
     <section className={styles.bgCustomHero + " min-h-screen flex items-center justify-center py-20"}>
       <div className={styles.homeHeaderComponent}>
+<<<<<<< HEAD
         {/* Main Hero Title - Centered on mobile */}
         <div className={styles.heroTitleContainer}>
           <h1 className={styles.flechaHeroTitle + " mb-16"}>
@@ -16,6 +17,23 @@ export default function Hero() {
         </div>
 
         {/* Lower Section - Restructured layout */}
+=======
+        {/* Main Hero Title */}
+        {/* Desktop version - hidden on mobile */}
+        <h1 className={styles.flechaHeroTitle + " mb-16 hidden md:block"}>
+          Turn marketing spend<br />
+          into <span className={styles.textCustomBlue}>measurable growth.</span>
+        </h1>
+
+        {/* Mobile version - visible only on mobile */}
+        <h1 className={styles.flechaHeroTitle + " mb-16 block md:hidden"}>
+          Turn marketing<br />
+          spend into<br />
+          <span className={styles.textCustomBlue}>measurable growth.</span>
+        </h1>
+
+        {/* Lower Section - Three parts */}
+>>>>>>> 331fb0a788a1e505a4d58c71e5f289e57a634468
         <div className={styles.homeHeaderContent}>
           {/* Left: Tired of guessing section */}
           <div className={styles.homeHeaderTextWrap}>

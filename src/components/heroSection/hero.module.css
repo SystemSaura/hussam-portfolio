@@ -213,6 +213,7 @@
   50% { transform: translateY(3px); }
 }
 
+<<<<<<< HEAD
 /* Tablet responsive adjustments */
 @media (max-width: 1024px) {
   .homeHeaderContent {
@@ -221,11 +222,48 @@
 
   .heroTitleContainer {
     margin-bottom: clamp(32px, 6vw, 64px);
+=======
+/* Media queries ordered from largest to smallest breakpoint */
+@media (max-width: 1400px) {
+  .flechaHeroTitle {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .flechaHeroTitle {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flechaHeroTitle {
+    font-size: 80px;
+>>>>>>> 331fb0a788a1e505a4d58c71e5f289e57a634468
   }
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+<<<<<<< HEAD
+=======
+  .flechaHeroTitle {
+    font-size: 48px;
+    white-space: normal;
+    text-align: center;
+  }
+  
+  .homeHeaderSubheading {
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  .homeHeaderText1 {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+>>>>>>> 331fb0a788a1e505a4d58c71e5f289e57a634468
   .homeHeaderComponent {
     width: 100%;
     padding: 0 clamp(16px, 4vw, 24px);
@@ -292,6 +330,7 @@
   .homeHeaderSubheadingRight {
     text-align: center;
   }
+<<<<<<< HEAD
 
   .arrowRight {
     width: clamp(48px, 8vw, 64px);
@@ -441,4 +480,6 @@
   .navButtonStrategy {
     border: 2px solid transparent;
   }
+=======
+>>>>>>> 331fb0a788a1e505a4d58c71e5f289e57a634468
 }
