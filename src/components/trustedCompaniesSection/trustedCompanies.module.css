@@ -113,90 +113,94 @@
   }
 }
 
-/* Mobile responsive - stack logos and center them */
+/* Mobile responsive - optimized grid layout */
 @media (max-width: 768px) {
   .logoRow {
-    flex-direction: column;
-    gap: 32px;
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 15px;
+    justify-items: center;
+    margin-bottom: 24px;
+    padding: 0 10px;
+  }
+
+  .colorLogo {
+    height: 32px;
+    max-width: 90px;
+  }
+
+  .colorLogo.shifttatLogo {
+    height: 36px;
+    max-width: 100px;
+  }
+
+  .colorLogo.alnahdiLogo {
+    height: 42px;
+    max-width: 110px;
+  }
+
+  .colorLogo.ncmhLogo {
+    height: 48px;
+    max-width: 100px;
+  }
+
+  .colorLogo.rcmcLogo {
+    height: 52px;
+    max-width: 110px;
+  }
+
+  .colorLogo.empireLogo {
+    height: 38px;
+    max-width: 95px;
+  }
+
+  .colorLogo.rotanaLogo {
+    height: 40px;
+    max-width: 105px;
+  }
+}
+
+/* Small mobile adjustments - even more compact */
+@media (max-width: 480px) {
+  .logoRow {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 12px;
+    margin-bottom: 20px;
     padding: 0 5px;
   }
 
   .colorLogo {
-    height: 42px;
-    max-width: 140px;
+    height: 28px;
+    max-width: 80px;
   }
 
   .colorLogo.shifttatLogo {
-    height: 48px;
-    max-width: 150px;
+    height: 32px;
+    max-width: 85px;
   }
 
   .colorLogo.alnahdiLogo {
-    height: 58px;
-    max-width: 160px;
+    height: 36px;
+    max-width: 90px;
   }
 
   .colorLogo.ncmhLogo {
-    height: 68px;
-    max-width: 150px;
+    height: 40px;
+    max-width: 85px;
   }
 
   .colorLogo.rcmcLogo {
-    height: 72px;
-    max-width: 160px;
+    height: 44px;
+    max-width: 90px;
   }
 
   .colorLogo.empireLogo {
-    height: 50px;
-    max-width: 140px;
+    height: 32px;
+    max-width: 80px;
   }
 
   .colorLogo.rotanaLogo {
-    height: 52px;
-    max-width: 150px;
-  }
-}
-
-/* Small mobile adjustments */
-@media (max-width: 480px) {
-  .logoRow {
-    gap: 28px;
-    margin-bottom: 32px;
-  }
-
-  .colorLogo {
-    height: 38px;
-    max-width: 120px;
-  }
-
-  .colorLogo.shifttatLogo {
-    height: 44px;
-    max-width: 130px;
-  }
-
-  .colorLogo.alnahdiLogo {
-    height: 52px;
-    max-width: 140px;
-  }
-
-  .colorLogo.ncmhLogo {
-    height: 60px;
-    max-width: 130px;
-  }
-
-  .colorLogo.rcmcLogo {
-    height: 64px;
-    max-width: 140px;
-  }
-
-  .colorLogo.empireLogo {
-    height: 44px;
-    max-width: 125px;
-  }
-
-  .colorLogo.rotanaLogo {
-    height: 46px;
-    max-width: 130px;
+    height: 34px;
+    max-width: 85px;
   }
 }

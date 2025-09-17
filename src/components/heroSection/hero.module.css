@@ -213,22 +213,20 @@
 }
 
 @media (max-width: 768px) {
-  /* CRITICAL: Override the flex centering and Tailwind padding */
+  /* CRITICAL: Reduce padding to eliminate big empty space */
   .heroSection {
-    /* Override Tailwind's py-20 */
-    padding-top: 1rem !important;
-    padding-bottom: 2rem !important;
+    /* Significantly reduce padding */
+    padding-top: 4rem !important;
+    padding-bottom: 1rem !important;
     /* Override flex centering - align to start instead */
     align-items: flex-start !important;
-    /* Add top margin to push content higher */
-    padding-top: 6rem !important; /* Account for header height */
   }
   
   .flechaHeroTitle {
     font-size: 42px;
     white-space: normal;
     line-height: 1.15;
-    margin-bottom: 2rem; /* Increased from 0.75rem to match Justin Welsh spacing */
+    margin-bottom: 1.5rem;
     text-align: center;
     padding: 0 1rem;
     max-width: 90%;
@@ -263,16 +261,19 @@
   }
   
   .homeHeaderText1 {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     margin-bottom: 0.75rem;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .homeHeaderFormWrap {
     width: 100%;
     height: auto;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   
   .sevaFields.formkitFields {
@@ -288,22 +289,27 @@
   }
   
   .subscribeButton {
-    width: 100%;
-    min-width: 102.31px;
+    width: 85%;
+    max-width: 280px;
+    min-width: 200px;
     height: 50px;
-    font-size: 16px;
+    font-size: 14px;
+    margin: 0 auto;
   }
   
   .navButtonStrategy {
-    width: 100%;
+    width: 85%;
+    max-width: 280px;
+    min-width: 200px;
     height: 50px;
-    font-size: 16px;
+    font-size: 14px;
+    margin: 0 auto;
   }
   
   .homeHeaderSubheadingRight {
     text-align: center;
     font-size: 28px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   /* Mobile Arrow Switching - Tighter spacing */
@@ -321,13 +327,32 @@
 
 @media (max-width: 480px) {
   .heroSection {
-    padding-top: 5rem !important; /* Less space for smaller screens */
+    padding-top: 3rem !important;
+    padding-bottom: 0.5rem !important;
   }
   
   .flechaHeroTitle {
     font-size: 38px;
     line-height: 1.2;
-    margin-bottom: 2rem; /* Keep the same spacing for consistency */
+    margin-bottom: 1.25rem;
     padding: 0 0.5rem;
+  }
+  
+  .homeHeaderText1 {
+    font-size: 13px;
+    padding: 0 2rem;
+    max-width: 90%;
+  }
+  
+  .subscribeButton {
+    width: 90%;
+    max-width: 260px;
+    font-size: 13px;
+  }
+  
+  .navButtonStrategy {
+    width: 90%;
+    max-width: 260px;
+    font-size: 13px;
   }
 }
