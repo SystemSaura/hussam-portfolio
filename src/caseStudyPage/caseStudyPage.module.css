@@ -825,6 +825,12 @@
     gap: clamp(15px, 2vw, 20px);
   }
 
+  .heroTitle {
+    line-height: 1.15;
+    hyphens: auto;
+    word-break: break-word;
+  }
+
   .primaryResults {
     flex-direction: column;
     gap: clamp(40px, 5vw, 50px);
@@ -838,6 +844,83 @@
   .challengeGrid {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  /* Mobile-specific challenge tags layout - Center the third button */
+  .challengeTags {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(12px, 2vw, 15px);
+    justify-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .challengeTag:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  /* Improve solution cards on mobile */
+  .solutionGrid {
+    grid-template-columns: 1fr;
+    gap: clamp(25px, 4vw, 30px);
+  }
+
+  .solutionCard {
+    margin: 0;
+  }
+
+  /* Improve social cards on mobile */
+  .socialGrid {
+    grid-template-columns: 1fr;
+    gap: clamp(25px, 4vw, 30px);
+  }
+
+  .socialImage {
+    height: clamp(180px, 25vw, 220px);
+  }
+
+  /* Better mobile navigation */
+  .navContainer {
+    margin: 0 clamp(12px, 4vw, 16px);
+  }
+
+  /* Improve mobile button spacing */
+  .verificationEmail,
+  .ctaButton {
+    padding: clamp(14px, 2vw, 18px) clamp(30px, 5vw, 40px);
+    font-size: clamp(14px, 1.6vw, 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens - further optimizations */
+  .challengeTags {
+    grid-template-columns: 1fr;
+    gap: clamp(10px, 2vw, 12px);
+    max-width: 280px;
+  }
+
+  .challengeTag:nth-child(3) {
+    grid-column: 1;
+  }
+
+  .challengeTag {
+    font-size: clamp(0.85rem, 1vw, 0.9rem);
+    padding: clamp(8px, 1vw, 10px) clamp(16px, 2vw, 20px);
+  }
+
+  .heroTitle {
+    line-height: 1.2;
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.75rem, 2.5vw, 2rem);
+  }
+
+  .resultsMainHeading {
+    font-size: clamp(28px, 6vw, 36px);
   }
 }
 
