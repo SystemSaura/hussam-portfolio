@@ -13,8 +13,9 @@ export default function TrustedCompanies() {
         </div>
         <div className="flex justify-center">
           <div className={styles.logoGridContainer}>
-            {/* Row 1: First 5 logos */}
-            <div className={styles.logoRow}>
+            
+            {/* DESKTOP LAYOUT ONLY - 2 rows of 5 logos each */}
+            <div className={`${styles.logoRow} ${styles.desktopOnly}`}>
               <img src="/logos/shiftat.webp" alt="Shiftat" className={`${styles.colorLogo} ${styles.shifttatLogo}`} />
               <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className={`${styles.colorLogo} ${styles.empireLogo}`} />
               <img src="/logos/kapsarc.webp" alt="KAPSARC" className={styles.colorLogo} />
@@ -22,14 +23,37 @@ export default function TrustedCompanies() {
               <img src="/logos/saeq.webp" alt="SAEQ" className={styles.colorLogo} />
             </div>
             
-            {/* Row 2: Remaining 5 logos */}
-            <div className={styles.logoRow}>
+            <div className={`${styles.logoRow} ${styles.desktopOnly}`}>
               <img src="/logos/abudawood.webp" alt="Abudawood" className={`${styles.colorLogo} ${styles.abudawoodLogo}`} />
               <img src="/logos/reviva.webp" alt="reviva" className={styles.colorLogo} />
               <img src="/logos/ncmh.webp" alt="NCMH" className={`${styles.colorLogo} ${styles.ncmhLogo}`} />
               <img src="/logos/rcmc.webp" alt="RCMC" className={`${styles.colorLogo} ${styles.rcmcLogo}`} />
               <img src="/logos/rotana.webp" alt="Rotana" className={`${styles.colorLogo} ${styles.rotanaLogo}`} />
             </div>
+
+            {/* MOBILE LAYOUT ONLY - 4 rows: 3+3+3+1 */}
+            <div className={`${styles.logoRow} ${styles.mobileOnly}`}>
+              <img src="/logos/shiftat.webp" alt="Shiftat" className={`${styles.colorLogo} ${styles.shifttatLogo}`} />
+              <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className={`${styles.colorLogo} ${styles.empireLogo}`} />
+              <img src="/logos/kapsarc.webp" alt="KAPSARC" className={styles.colorLogo} />
+            </div>
+            
+            <div className={`${styles.logoRow} ${styles.mobileOnly}`}>
+              <img src="/logos/alnahdi.webp" alt="Al Nahdi" className={`${styles.colorLogo} ${styles.alnahdiLogo}`} />
+              <img src="/logos/saeq.webp" alt="SAEQ" className={styles.colorLogo} />
+              <img src="/logos/abudawood.webp" alt="Abudawood" className={`${styles.colorLogo} ${styles.abudawoodLogo}`} />
+            </div>
+
+            <div className={`${styles.logoRow} ${styles.mobileOnly}`}>
+              <img src="/logos/reviva.webp" alt="reviva" className={styles.colorLogo} />
+              <img src="/logos/ncmh.webp" alt="NCMH" className={`${styles.colorLogo} ${styles.ncmhLogo}`} />
+              <img src="/logos/rcmc.webp" alt="RCMC" className={`${styles.colorLogo} ${styles.rcmcLogo}`} />
+            </div>
+
+            <div className={`${styles.logoRow} ${styles.singleLogoRow} ${styles.mobileOnly}`}>
+              <img src="/logos/rotana.webp" alt="Rotana" className={`${styles.colorLogo} ${styles.rotanaLogo}`} />
+            </div>
+
           </div>
         </div>
       </div>
