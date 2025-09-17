@@ -213,11 +213,22 @@
 }
 
 @media (max-width: 768px) {
- .flechaHeroTitle {
+  /* CRITICAL: Override the flex centering and Tailwind padding */
+  .heroSection {
+    /* Override Tailwind's py-20 */
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
+    /* Override flex centering - align to start instead */
+    align-items: flex-start !important;
+    /* Add top margin to push content higher */
+    padding-top: 6rem !important; /* Account for header height */
+  }
+  
+  .flechaHeroTitle {
     font-size: 42px;
     white-space: normal;
     line-height: 1.15;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /* Increased from 0.75rem to match Justin Welsh spacing */
     text-align: center;
     padding: 0 1rem;
     max-width: 90%;
@@ -235,7 +246,7 @@
     width: 100%;
     height: auto;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.5rem;
     text-align: center;
   }
   
@@ -248,13 +259,13 @@
   .homeHeaderSubheading {
     font-size: 28px;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   
   .homeHeaderText1 {
     font-size: 16px;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.75rem;
     padding: 0 1rem;
   }
   
@@ -295,7 +306,7 @@
     margin-bottom: 1.5rem;
   }
 
-  /* Mobile Arrow Switching */
+  /* Mobile Arrow Switching - Tighter spacing */
   .arrowDesktop {
     display: none;
   }
@@ -304,15 +315,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1.5rem 0;
+    margin: 0.25rem 0;
   }
 }
 
 @media (max-width: 480px) {
+  .heroSection {
+    padding-top: 5rem !important; /* Less space for smaller screens */
+  }
+  
   .flechaHeroTitle {
     font-size: 38px;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* Keep the same spacing for consistency */
     padding: 0 0.5rem;
   }
 }

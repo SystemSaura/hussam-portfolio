@@ -5,7 +5,7 @@ import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.bgCustomHero + " min-h-screen flex items-center justify-center py-20"}>
+    <section className={styles.bgCustomHero + " min-h-screen flex items-center justify-center py-20 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
         {/* Main Hero Title */}
         <h1 className={styles.flechaHeroTitle + " mb-16"}>
