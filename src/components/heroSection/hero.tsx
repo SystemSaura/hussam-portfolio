@@ -7,10 +7,9 @@ export default function Hero() {
   return (
     <section className={styles.bgCustomHero + " min-h-screen flex items-center justify-center py-20 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
-        {/* Main Hero Title */}
+        {/* Main Hero Title - Fixed to TWO lines only */}
         <h1 className={styles.flechaHeroTitle + " mb-16"}>
-          Turn marketing<br />
-          spend into<br />
+          Turn marketing spend into<br />
           <span className={styles.textCustomBlue}>measurable growth.</span>
         </h1>
 
