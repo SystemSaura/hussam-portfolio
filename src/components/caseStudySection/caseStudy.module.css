@@ -299,8 +299,18 @@
     padding: 60px 0;
   }
 
+  .container {
+    padding: 0 16px;
+  }
+
   .mainHeading {
     font-size: 36px;
+  }
+
+  .sectionSubtext {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
   }
   
   .caseStudyContent {
@@ -335,36 +345,119 @@
 
   .descriptionText {
     font-size: 16px;
+    line-height: 1.6;
+    padding: 0 10px;
   }
 }
 
 @media (max-width: 480px) {
+  .caseStudySection {
+    padding: 50px 0;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
   .mainHeading {
-    font-size: 28px;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .sectionSubtext {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 5px;
+    max-width: 100%;
   }
 
   .resultsGrid {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+    margin-bottom: 40px;
   }
 
   .resultNumber {
-    font-size: 28px;
-  }
-
-  .resultLabel {
-    font-size: 14px;
-  }
-
-  .companyName {
     font-size: 24px;
   }
 
+  .resultLabel {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .companyName {
+    font-size: 22px;
+  }
+
+  .companyDescription {
+    font-size: 14px;
+  }
+
   .readMoreText {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .readMoreContainer {
+    padding: 12px 20px;
   }
 
   .descriptionText {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 5px;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .socialLabel {
+    font-size: 16px;
+  }
+
+  .platformName {
+    font-size: 14px;
+  }
+
+  .platformMetric {
+    font-size: 12px;
+  }
+}
+
+/* Extra small screens (iPhone SE and smaller) */
+@media (max-width: 375px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .mainHeading {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  .sectionSubtext {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .descriptionText {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .resultNumber {
+    font-size: 22px;
+  }
+
+  .resultLabel {
+    font-size: 11px;
+  }
+
+  .readMoreText {
+    font-size: 13px;
+  }
+
+  .companyName {
+    font-size: 20px;
   }
 }
