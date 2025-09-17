@@ -5,10 +5,10 @@ import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.bgCustomHero + " min-h-screen flex items-center justify-center py-20 " + styles.heroSection}>
+    <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-28 pb-8 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
         {/* Main Hero Title - Fixed to TWO lines only */}
-        <h1 className={styles.flechaHeroTitle + " mb-16"}>
+        <h1 className={styles.flechaHeroTitle + " mb-20"}>
           Turn marketing spend into<br />
           <span className={styles.textCustomBlue}>measurable growth.</span>
         </h1>
