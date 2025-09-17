@@ -193,15 +193,36 @@
   50% { transform: translateY(3px); }
 }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
+/* Media queries ordered from largest to smallest */
+@media (max-width: 1400px) {
   .flechaHeroTitle {
-    font-size: 85px;  /* Much larger to match screenshot 1 */
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .flechaHeroTitle {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flechaHeroTitle {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+ .flechaHeroTitle {
+    font-size: 42px;
     white-space: normal;
-    line-height: 1.0;  /* Tighter line height */
-    margin-bottom: 3rem;  /* More space below title */
+    line-height: 1.15;
+    margin-bottom: 2rem;
     text-align: center;
     padding: 0 1rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .homeHeaderComponent {
@@ -214,7 +235,7 @@
     width: 100%;
     height: auto;
     flex-direction: column;
-    gap: 1.5rem;  /* Adjusted gap */
+    gap: 1.5rem;
     text-align: center;
   }
   
@@ -225,13 +246,13 @@
   }
   
   .homeHeaderSubheading {
-    font-size: 28px;  /* Adjusted size */
+    font-size: 28px;
     text-align: center;
     margin-bottom: 1rem;
   }
   
   .homeHeaderText1 {
-    font-size: 16px;  /* Slightly larger */
+    font-size: 16px;
     text-align: center;
     margin-bottom: 2rem;
     padding: 0 1rem;
@@ -258,19 +279,19 @@
   .subscribeButton {
     width: 100%;
     min-width: 102.31px;
-    height: 50px;  /* Larger buttons */
+    height: 50px;
     font-size: 16px;
   }
   
   .navButtonStrategy {
     width: 100%;
-    height: 50px;  /* Larger buttons */
+    height: 50px;
     font-size: 16px;
   }
   
   .homeHeaderSubheadingRight {
     text-align: center;
-    font-size: 28px;  /* Match other heading */
+    font-size: 28px;
     margin-bottom: 1.5rem;
   }
 
@@ -287,20 +308,11 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 480px) {
   .flechaHeroTitle {
-    font-size: 80px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .flechaHeroTitle {
-    font-size: 64px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .flechaHeroTitle {
-    font-size: 72px;
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
   }
 }
