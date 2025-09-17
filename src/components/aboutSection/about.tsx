@@ -6,10 +6,10 @@ import styles from "./about.module.css";
 
 const About = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} className={styles.bgCustomDarkBlue + " py-20 text-white"}>
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="mb-12">
-          <div className="w-40 h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">
+    <section ref={ref} className={styles.bgCustomDarkBlue + " py-12 sm:py-16 lg:py-20 text-white"}>
+      <div className="max-w-4xl mx-auto px-10 sm:px-6 lg:px-8 text-center">
+        <div className="mb-8 sm:mb-10 lg:mb-12">
+          <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">
             <Image
               src="/picofme.webp"
               alt="Hussam Baaka"
@@ -20,15 +20,14 @@ const About = forwardRef<HTMLElement>((_, ref) => {
             />
           </div>
         </div>
-        <h2 className={styles.flechaHeroTitleAbout + " text-white mb-8 leading-tight"}>
-          Hi. I'm Hussam Baaka. I make every marketing<br />
-          Riyal / Dirham work harder for your growth.
+        <h2 className={styles.flechaHeroTitleAbout + " text-white mb-6 sm:mb-8 leading-tight text-center"}>
+          Hi. I'm Hussam Baaka. I make every marketing Riyal / Dirham work harder for your growth.
         </h2>
-        <div className="mb-8">
+        <div className="mb-6 sm:mb-8 text-center">
           <span className={styles.text11px + " text-cyan-400 font-medium"}>[ A note to growth-focused leaders ]</span>
         </div>
 
-        <div className={styles.workSansBodyWhite + " space-y-6 leading-relaxed max-w-3xl mx-auto"}>
+        <div className={styles.workSansBodyWhite + " space-y-4 sm:space-y-6 leading-relaxed max-w-3xl mx-auto text-center"}>
           <p>Your marketing team isn't lazy. Your strategy is just scattered.</p>
 
           <p>I've seen too many GCC companies burn through budgets on campaigns that don't convert, content that doesn't engage, and "brand awareness" that doesn't drive business.</p>
@@ -46,7 +45,7 @@ const About = forwardRef<HTMLElement>((_, ref) => {
           <p className="text-cyan-400 font-medium">Generate predictable, scalable business results you can bank on.</p>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-8 sm:mt-10 lg:mt-12 text-center">
           {/* Future button placeholder */}
         </div>
       </div>
