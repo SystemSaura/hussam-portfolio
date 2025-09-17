@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
-import Header from "../components/headerSection/header";
-import Footer from "../components/footerSection/footer";
+import Header from "../homePage/headerSection/header";
+import Footer from "../homePage/footerSection/footer";
 import styles from "./portfolioPage.module.css";
 
 interface NavigationHandlers {

@@ -1,6 +1,6 @@
 "use client";
 
-import PortfolioPage from "../../portfolioPage/portfolioPage";
+import PortfolioPage from "../../../../components/versions/marketing/portfolioPage/portfolioPage";
 
 export default function Portfolio() {
   const navigationHandlers = {

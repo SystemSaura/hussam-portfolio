@@ -4,7 +4,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "../components/footerSection/footer";
+import Footer from "../homePage/footerSection/footer";
 import styles from "./caseStudyPage.module.css";
 
 interface NavigationHandlers {
