@@ -7,12 +7,35 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
   const [isSticky, setIsSticky] = useState(false);
   const [shouldFadeOut, setShouldFadeOut] = useState(false);
   const [stickyStyles, setStickyStyles] = useState<React.CSSProperties>({});
+  const [isMobile, setIsMobile] = useState(false);
   
   const leftHeadingRef = useRef<HTMLDivElement>(null);
   const thirdServiceRef = useRef<HTMLDivElement>(null);
   const servicesContainerRef = useRef<HTMLDivElement>(null);
 
+  // Check if device is mobile
   useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Skip all sticky logic on mobile
+    if (isMobile) {
+      setIsSticky(false);
+      setShouldFadeOut(false);
+      setStickyStyles({});
+      return;
+    }
+
     const handleScroll = () => {
       const servicesElement = ref && 'current' in ref ? ref.current : null;
       
@@ -61,8 +84,71 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleScroll);
     };
-  }, [isSticky, shouldFadeOut, ref]);
+  }, [isSticky, shouldFadeOut, ref, isMobile]);
 
+  // Mobile layout
+  if (isMobile) {
+    return (
+      <section ref={ref} className={styles.bgCustomBlue + " py-20 text-white"}>
+        <div ref={servicesContainerRef} className={styles.servicesContainer}>
+          {/* Static centered heading for mobile */}
+          <div className={styles.mobileStaticHeading}>
+            <h2 className={styles.servicesMainHeading + " leading-tight"}>
+              3 ways I help you<br />
+              <span className={styles.servicesMainHeadingAccent}>scale faster.</span>
+            </h2>
+          </div>
+
+          {/* Services content for mobile */}
+          <div className="space-y-12">
+            <div>
+              <div className={styles.servicesNumber + " mb-4"}>01</div>
+              <h3 className={styles.servicesTitle + " mb-4"}>Marketing Strategy and Systems Audit Done For You</h3>
+              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
+                Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
+              </p>
+              <button
+                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                className={styles.servicesButton}
+              >
+                Book Audit
+              </button>
+            </div>
+
+            <div>
+              <div className={styles.servicesNumber + " mb-4"}>02</div>
+              <h3 className={styles.servicesTitle + " mb-4"}>Growth Marketing Implementation and Monitoring</h3>
+              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
+                Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
+              </p>
+              <button
+                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                className={styles.servicesButton}
+              >
+                Book Consultation
+              </button>
+            </div>
+
+            <div ref={thirdServiceRef}>
+              <div className={styles.servicesNumber + " mb-4"}>03</div>
+              <h3 className={styles.servicesTitle + " mb-4"}>Marketing Team Training and Optimization</h3>
+              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
+                Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.
+              </p>
+              <button
+                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                className={styles.servicesButton}
+              >
+                Schedule Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Desktop layout (unchanged)
   return (
     <section ref={ref} className={styles.bgCustomBlue + " py-20 text-white"}>
       <div ref={servicesContainerRef} className={styles.servicesContainer}>

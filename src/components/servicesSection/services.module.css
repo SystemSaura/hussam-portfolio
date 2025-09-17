@@ -102,6 +102,12 @@
   transform: translateY(-20px) !important;
 }
 
+/* Mobile-specific styles - ONLY what's needed */
+.mobileStaticHeading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 /* Tablet responsive adjustments */
 @media (max-width: 1024px) {
   /* Disable sticky behavior on tablet and mobile */
@@ -118,14 +124,40 @@
   }
 }
 
-/* Mobile responsive */
+/* Mobile responsive - ONLY font sizing adjustments */
 @media (max-width: 768px) {
-  /* Ensure sticky behavior is disabled on mobile */
-  .servicesHeadingContent.isStickyActive {
-    position: relative !important;
-    top: unset !important;
-    left: unset !important;
-    width: unset !important;
-    z-index: unset !important;
+  .servicesContainer {
+    padding: 0 1rem;
+  }
+
+  .servicesMainHeading,
+  .servicesMainHeadingAccent {
+    font-size: 32px;
+  }
+
+  .servicesNumber {
+    font-size: 24px;
+  }
+
+  .servicesTitle {
+    font-size: 18px;
+  }
+
+  .servicesDescription {
+    font-size: 16px;
+  }
+
+  .servicesButton {
+    font-size: 12px;
+    padding: 8px 16px;
+    width: auto;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicesMainHeading,
+  .servicesMainHeadingAccent {
+    font-size: 28px;
   }
 }
