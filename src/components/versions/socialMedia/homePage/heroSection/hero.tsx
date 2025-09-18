@@ -5,15 +5,13 @@ import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-36 pb-8 " + styles.heroSection}>
+    <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-28 pb-8 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
-        {/* Main Hero Title - Both lines left-aligned */}
-        <div className="mb-24">
-          <h1 className={styles.flechaHeroTitle}>
-            Turn marketing spend into<br />
-            <span className={styles.textCustomBlue}>measurable growth.</span>
-          </h1>
-        </div>
+        {/* Main Hero Title - Fixed to TWO lines only */}
+        <h1 className={styles.flechaHeroTitle + " mb-20"}>
+          Turn marketing spend into<br />
+          <span className={styles.textCustomBlue}>measurable growth.</span>
+        </h1>
 
         {/* Lower Section - Three parts */}
         <div className={styles.homeHeaderContent}>

@@ -23,13 +23,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .homeHeaderTextWrap {
-  width: 480px;
-  height: auto;
-  max-width: 480px;
+  width: 346.48px;
+  height: 112.38px;
 }
 
 .homeHeaderSubheading {
@@ -38,7 +37,6 @@
   font-weight: normal;
   line-height: 1.2;
   margin-bottom: 16px;
-  white-space: nowrap;
 }
 
 .homeHeaderSubheadingRight {
@@ -55,11 +53,8 @@
 .homeHeaderText1 {
   color: #001C46;
   font: 16px "Work Sans", sans-serif;
-  line-height: 1.4;
+  line-height: 1.6;
   margin-bottom: 24px;
-  text-align: justify;
-  width: 100%;
-  max-width: 480px;
 }
 
 /* Arrow Container - Responsive Arrow Handling */
@@ -163,7 +158,6 @@
   color: #FFFFFF;
 }
 
-/* Main title - both lines left-aligned */
 .flechaHeroTitle {
   font-family: 'Flecha S', sans-serif;
   font-size: 90px;
@@ -173,26 +167,24 @@
   letter-spacing: -0.02em;
   white-space: normal;
   overflow-wrap: break-word;
-  text-align: left;
+  text-align: center;
   max-width: 100%;
-  margin: 0;
 }
 
 .deconstructedQ {
-  display: inline;
+  display: inline-block;
   margin-left: 6px;
-  white-space: nowrap;
 }
 
 .qCurve {
   color: #2762F8;
-  display: inline;
+  display: inline-block;
   animation: curve-float 2s ease-in-out infinite;
 }
 
 .qDot {
   color: #2762F8;
-  display: inline;
+  display: inline-block;
   margin-left: 2px;
   animation: dot-bounce 2s ease-in-out infinite 0.3s;
 }
@@ -230,15 +222,6 @@
   .homeHeaderComponent {
     padding: 0 1.5rem;
   }
-  
-  .homeHeaderTextWrap {
-    width: 420px;
-    max-width: 420px;
-  }
-  
-  .homeHeaderText1 {
-    max-width: 420px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -249,22 +232,13 @@
   .homeHeaderSubheading {
     font-size: 36px;
   }
-  
-  .homeHeaderTextWrap {
-    width: 380px;
-    max-width: 380px;
-  }
-  
-  .homeHeaderText1 {
-    max-width: 380px;
-  }
 }
 
 @media (max-width: 768px) {
   /* CRITICAL: Reduce padding to eliminate big empty space */
   .heroSection {
     /* Significantly reduce padding */
-    padding-top: 4rem !important;
+    padding-top: 3rem !important;
     padding-bottom: 1rem !important;
     /* Override flex centering - align to start instead */
     align-items: flex-start !important;
@@ -274,7 +248,7 @@
     font-size: 52px;
     white-space: normal;
     line-height: 1.15;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     padding: 0 1rem;
     max-width: 90%;
@@ -294,26 +268,23 @@
     flex-direction: column;
     gap: 0.75rem;
     text-align: center;
-    margin-top: 1.5rem;
   }
   
   .homeHeaderTextWrap {
     width: 100%;
     height: auto;
     text-align: center;
-    max-width: 100%;
   }
   
   .homeHeaderSubheading {
     font-size: 34px;
     text-align: center;
     margin-bottom: 0.6rem;
-    white-space: normal;
   }
   
   .homeHeaderText1 {
     font-size: 15px;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 0.8rem;
     padding: 0 1.5rem;
     max-width: 85%;
@@ -378,14 +349,14 @@
 
 @media (max-width: 480px) {
   .heroSection {
-    padding-top: 3rem !important;
+    padding-top: 2rem !important;
     padding-bottom: 0.5rem !important;
   }
   
   .flechaHeroTitle {
     font-size: 44px;
     line-height: 1.2;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.2rem;
     padding: 0 0.5rem;
   }
   
@@ -398,7 +369,6 @@
     padding: 0 2rem;
     max-width: 90%;
     margin-bottom: 0.8rem;
-    text-align: justify;
   }
   
   .subscribeButton {
