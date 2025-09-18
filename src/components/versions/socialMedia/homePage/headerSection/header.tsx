@@ -36,7 +36,10 @@ export default function Header({ onNavigate, variant = "default" }: HeaderProps)
 
         {/* Right side buttons */}
         <div className={`flex items-center space-x-4 ${styles.mobileHideButton}`}>
-          <button className={styles.navButtonStrategy}>
+          <button 
+            onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+            className={styles.navButtonStrategy}
+          >
             Book Consultation
           </button>
         </div>
