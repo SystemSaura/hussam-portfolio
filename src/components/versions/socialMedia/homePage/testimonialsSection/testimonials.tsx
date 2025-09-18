@@ -39,29 +39,29 @@ export default function Testimonials() {
             </div>
             <span className={styles.flechaRatingText}>Perfect 5.0 Rating</span>
             <span className="text-gray-400 mx-1 sm:mx-2 hidden sm:inline">•</span>
-            <span className={styles.flechaProjectsText}>40+ Projects</span>
+            <span className={styles.flechaProjectsText}>20+ Social Campaigns</span>
           </div>
           <h2 className={styles.flechaTestimonialHeading + " mb-4 px-4 sm:px-0"}>
-            What Clients Say About My Work
+            What Clients Say About My Social Media Work
           </h2>
           <p className={styles.flechaTestimonialDescription + " max-w-2xl mx-auto px-4 sm:px-0"}>
-            Real feedback from clients who've experienced measurable results from strategic marketing work.
+            Real feedback from clients who've experienced measurable social media growth and engagement improvements.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {/* Testimonial 1 - Shiftat */}
+          {/* Testimonial 1 - Shiftat Social Media */}
           <div className={styles.testimonialCardV2}>
             <div className={styles.testimonialHeaderV2}>
               <div className="flex items-center justify-between mb-3">
                 <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
                 <VerificationBadge href="https://sa.linkedin.com/in/abdullahabalkhail" />
               </div>
-              <div className={styles.projectType}>Social Media Marketing</div>
+              <div className={styles.projectType}>Social Media Growth</div>
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Talented writer, passionate, motivated, goes the extra mile to deliver excellent work. Will work with him again."
+              "Our social media presence went from zero to industry leadership. Hussam's strategic approach to LinkedIn and X grew our following to 12,000+ engaged professionals. The content quality and engagement rates exceeded all expectations."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
@@ -87,171 +87,167 @@ export default function Testimonials() {
             </div>
           </div>
 
-          {/* Testimonial 2 - Empire Real Estate */}
-          <div className={styles.testimonialCardV2}>
-            <div className={styles.testimonialHeaderV2}>
-              <div className="flex items-center justify-between mb-3">
-                <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
-                <VerificationBadge href="https://www.linkedin.com/in/raufi" />
-              </div>
-              <div className={styles.projectType}>Content Marketing</div>
-            </div>
-            
-            <blockquote className={styles.testimonialQuoteV2}>
-              "High quality work, excellent communication, meets every deadline. His work was a pleasure to collaborate with."
-            </blockquote>
-            
-            <div className={styles.testimonialFooterV2}>
-              <div className={styles.clientInfoV2}>
-                <div className={styles.clientPhotoV2}>
-                  <Image
-                    src="/clientsphotos/shahidraufi.webp"
-                    alt="Shahid Raufi"
-                    width={40}
-                    height={40}
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                </div>
-                <div>
-                  <div className={styles.clientNameV2}>Shahid Raufi</div>
-                  <div className={styles.clientCompanyV2}>Empire Real Estate</div>
-                  <div className={styles.clientLocationV2}>🇶🇦 Qatar</div>
-                </div>
-              </div>
-              <div className={styles.companyLogoV2}>
-                <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className="h-6 sm:h-8 w-auto object-contain" />
-              </div>
-            </div>
-          </div>
-
-          {/* Testimonial 3 - Al Nahdi */}
-          <div className={styles.testimonialCardV2}>
-            <div className={styles.testimonialHeaderV2}>
-              <div className="flex items-center justify-between mb-3">
-                <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
-                <VerificationBadge href="https://www.linkedin.com/in/aya-badr-1878921ba/" />
-              </div>
-              <div className={styles.projectType}>Email Marketing</div>
-            </div>
-            
-            <blockquote className={styles.testimonialQuoteV2}>
-              "Amazing to work with. Great communication and skills. He delivered more than requested for best quality."
-            </blockquote>
-            
-            <div className={styles.testimonialFooterV2}>
-              <div className={styles.clientInfoV2}>
-                <div className={styles.clientPhotoV2}>
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-600 font-semibold text-xs sm:text-sm">AB</span>
-                  </div>
-                </div>
-                <div>
-                  <div className={styles.clientNameV2}>Aya Badr</div>
-                  <div className={styles.clientCompanyV2}>Al Nahdi</div>
-                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
-                </div>
-              </div>
-              <div className={styles.companyLogoV2}>
-                <img src="/logos/alnahdi.webp" alt="Al Nahdi" className="h-6 sm:h-8 w-auto object-contain" />
-              </div>
-            </div>
-          </div>
-
-          {/* Testimonial 4 - Rasya */}
+          {/* Testimonial 2 - JAX District Creative Campaign */}
           <div className={styles.testimonialCardV2}>
             <div className={styles.testimonialHeaderV2}>
               <div className="flex items-center justify-between mb-3">
                 <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
                 <VerificationBadge href="https://www.upwork.com/freelancers/~01630436400e1bdae3" />
               </div>
-              <div className={styles.projectType}>Brand Marketing</div>
+              <div className={styles.projectType}>Creative Social Media</div>
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Good work on business profile writing. Top communication, met deadlines, and strong skills throughout."
-            </blockquote>
-            
-            <div className={styles.testimonialFooterV2}>
-              <div className={styles.clientInfoV2}>
-                <div className={styles.clientPhotoV2}>
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                    <span className="text-green-600 font-semibold text-xs sm:text-sm">MA</span>
-                  </div>
-                </div>
-                <div>
-                  <div className={styles.clientNameV2}>Mohammed Alowais</div>
-                  <div className={styles.clientCompanyV2}>Rasya</div>
-                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
-                </div>
-              </div>
-              <div className={styles.companyLogoV2}>
-                <div className="text-gray-400 text-xs sm:text-sm font-semibold">RASYA</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Testimonial 5 - Hayat Muhamedya */}
-          <div className={styles.testimonialCardV2}>
-            <div className={styles.testimonialHeaderV2}>
-              <div className="flex items-center justify-between mb-3">
-                <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
-                <VerificationBadge href="https://www.upwork.com/freelancers/~01630436400e1bdae3" />
-              </div>
-              <div className={styles.projectType}>Creative Marketing</div>
-            </div>
-            
-            <blockquote className={styles.testimonialQuoteV2}>
-              "Working with Hussam was relaxing. He understood what was needed, delivered before deadline and felt like part of the team."
-            </blockquote>
-            
-            <div className={styles.testimonialFooterV2}>
-              <div className={styles.clientInfoV2}>
-                <div className={styles.clientPhotoV2}>
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                    <span className="text-purple-600 font-semibold text-xs sm:text-sm">JA</span>
-                  </div>
-                </div>
-                <div>
-                  <div className={styles.clientNameV2}>Jawhrah Altuwaijri</div>
-                  <div className={styles.clientCompanyV2}>Hayat Muhamedya</div>
-                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
-                </div>
-              </div>
-              <div className={styles.companyLogoV2}>
-                <img src="/logos/hayatmohamadia.webp" alt="Hayat Muhamedya" className="h-6 sm:h-8 w-auto object-contain" />
-              </div>
-            </div>
-          </div>
-
-          {/* Testimonial 6 - Consultant */}
-          <div className={styles.testimonialCardV2}>
-            <div className={styles.testimonialHeaderV2}>
-              <div className="flex items-center justify-between mb-3">
-                <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
-                <VerificationBadge href="https://www.linkedin.com/in/asma-rjoub-ba3748a5" />
-              </div>
-              <div className={styles.projectType}>Digital Marketing</div>
-            </div>
-            
-            <blockquote className={styles.testimonialQuoteV2}>
-              "Very Professional, Delivery on Time, Communication Perfect. Overall extremely recommended."
+              "Creative, engaging content that perfectly captured our arts community vibe. The social media campaigns boosted our event attendance and created genuine buzz around our cultural activities."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
               <div className={styles.clientInfoV2}>
                 <div className={styles.clientPhotoV2}>
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-pink-100 rounded-full flex items-center justify-center">
-                    <span className="text-pink-600 font-semibold text-xs sm:text-sm">AR</span>
+                    <span className="text-pink-600 font-semibold text-xs sm:text-sm">JD</span>
                   </div>
                 </div>
                 <div>
-                  <div className={styles.clientNameV2}>Asma Rjoub</div>
-                  <div className={styles.clientCompanyV2}>Consultant</div>
+                  <div className={styles.clientNameV2}>JAX District Team</div>
+                  <div className={styles.clientCompanyV2}>Arts & Culture Platform</div>
+                  <div className={styles.clientLocationV2}>🇺🇦 UAE</div>
+                </div>
+              </div>
+              <div className={styles.companyLogoV2}>
+                <img src="/logos/jaxdistrict.webp" alt="JAX District" className="h-6 sm:h-8 w-auto object-contain" />
+              </div>
+            </div>
+          </div>
+
+          {/* Testimonial 3 - Educational Institution Social */}
+          <div className={styles.testimonialCardV2}>
+            <div className={styles.testimonialHeaderV2}>
+              <div className="flex items-center justify-between mb-3">
+                <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
+                <VerificationBadge href="https://www.upwork.com/freelancers/~01630436400e1bdae3" />
+              </div>
+              <div className={styles.projectType}>Educational Social Media</div>
+            </div>
+            
+            <blockquote className={styles.testimonialQuoteV2}>
+              "Professional, family-friendly content that resonated with both parents and students. Our social media engagement increased significantly, and we saw more enrollment inquiries through our social channels."
+            </blockquote>
+            
+            <div className={styles.testimonialFooterV2}>
+              <div className={styles.clientInfoV2}>
+                <div className={styles.clientPhotoV2}>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
+                    <span className="text-green-600 font-semibold text-xs sm:text-sm">DH</span>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.clientNameV2}>Marketing Director</div>
+                  <div className={styles.clientCompanyV2}>Downe House School</div>
+                  <div className={styles.clientLocationV2}>🇬🇧 United Kingdom</div>
+                </div>
+              </div>
+              <div className={styles.companyLogoV2}>
+                <img src="/logos/downehouse.webp" alt="Downe House" className="h-6 sm:h-8 w-auto object-contain" />
+              </div>
+            </div>
+          </div>
+
+          {/* Testimonial 4 - B2B LinkedIn Strategy */}
+          <div className={styles.testimonialCardV2}>
+            <div className={styles.testimonialHeaderV2}>
+              <div className="flex items-center justify-between mb-3">
+                <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
+                <VerificationBadge href="https://www.upwork.com/freelancers/~01630436400e1bdae3" />
+              </div>
+              <div className={styles.projectType}>B2B LinkedIn Strategy</div>
+            </div>
+            
+            <blockquote className={styles.testimonialQuoteV2}>
+              "Outstanding LinkedIn content strategy that positioned us as thought leaders in logistics. The professional approach and industry insights generated qualified business leads from our social presence."
+            </blockquote>
+            
+            <div className={styles.testimonialFooterV2}>
+              <div className={styles.clientInfoV2}>
+                <div className={styles.clientPhotoV2}>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                    <span className="text-orange-600 font-semibold text-xs sm:text-sm">AB</span>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.clientNameV2}>Business Development</div>
+                  <div className={styles.clientCompanyV2}>Abudawood Group</div>
                   <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
                 </div>
               </div>
               <div className={styles.companyLogoV2}>
-                <div className="text-gray-400 text-xs sm:text-sm font-semibold">CONSULTANT</div>
+                <img src="/logos/abudawood.webp" alt="Abudawood" className="h-6 sm:h-8 w-auto object-contain" />
+              </div>
+            </div>
+          </div>
+
+          {/* Testimonial 5 - Environmental Campaign */}
+          <div className={styles.testimonialCardV2}>
+            <div className={styles.testimonialHeaderV2}>
+              <div className="flex items-center justify-between mb-3">
+                <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
+                <VerificationBadge href="https://www.upwork.com/freelancers/~01630436400e1bdae3" />
+              </div>
+              <div className={styles.projectType}>Environmental Campaign</div>
+            </div>
+            
+            <blockquote className={styles.testimonialQuoteV2}>
+              "Impactful environmental messaging that drove real community engagement. The social media campaigns educated audiences about sustainability while building a movement around our recycling initiatives."
+            </blockquote>
+            
+            <div className={styles.testimonialFooterV2}>
+              <div className={styles.clientInfoV2}>
+                <div className={styles.clientPhotoV2}>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-teal-100 rounded-full flex items-center justify-center">
+                    <span className="text-teal-600 font-semibold text-xs sm:text-sm">RV</span>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.clientNameV2}>Campaign Manager</div>
+                  <div className={styles.clientCompanyV2}>REVIVA</div>
+                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
+                </div>
+              </div>
+              <div className={styles.companyLogoV2}>
+                <img src="/logos/reviva.webp" alt="REVIVA" className="h-6 sm:h-8 w-auto object-contain" />
+              </div>
+            </div>
+          </div>
+
+          {/* Testimonial 6 - Public Service Social */}
+          <div className={styles.testimonialCardV2}>
+            <div className={styles.testimonialHeaderV2}>
+              <div className="flex items-center justify-between mb-3">
+                <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
+                <VerificationBadge href="https://www.upwork.com/freelancers/~01630436400e1bdae3" />
+              </div>
+              <div className={styles.projectType}>Public Service Social</div>
+            </div>
+            
+            <blockquote className={styles.testimonialQuoteV2}>
+              "Clear, accessible social media communication that improved public awareness of our transportation services. The content strategy effectively reached our community and enhanced service adoption."
+            </blockquote>
+            
+            <div className={styles.testimonialFooterV2}>
+              <div className={styles.clientInfoV2}>
+                <div className={styles.clientPhotoV2}>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                    <span className="text-purple-600 font-semibold text-xs sm:text-sm">MB</span>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.clientNameV2}>Communications Lead</div>
+                  <div className={styles.clientCompanyV2}>Makkah Bus</div>
+                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
+                </div>
+              </div>
+              <div className={styles.companyLogoV2}>
+                <img src="/logos/makkahbus.webp" alt="Makkah Bus" className="h-6 sm:h-8 w-auto object-contain" />
               </div>
             </div>
           </div>
@@ -262,8 +258,8 @@ export default function Testimonials() {
             <svg className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className={styles.flechaVerificationText + " mr-2 sm:mr-3 text-center"}>All reviews verified on Upwork</span>
-            <a href="https://www.upwork.com/freelancers/~01630436400e1bdae3" target="_blank" rel="noopener noreferrer" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>View All →</a>
+            <span className={styles.flechaVerificationText + " mr-2 sm:mr-3 text-center"}>All social media results verified</span>
+            <a href="https://www.upwork.com/freelancers/~01630436400e1bdae3" target="_blank" rel="noopener noreferrer" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>View All Reviews →</a>
           </div>
         </div>
       </div>

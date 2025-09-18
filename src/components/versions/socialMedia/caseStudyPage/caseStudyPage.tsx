@@ -1,5 +1,3 @@
-// src/caseStudyPage/caseStudyPage.tsx
-
 "use client";
 
 import Image from "next/image";
@@ -23,17 +21,17 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
     <div className={styles.detailContainer}>
       {/* Unified Background Container for Header + Hero */}
       <div className={styles.unifiedBackgroundContainer}>
-        {/* Header Navigation - Fixed to include all navigation items */}
+        {/* Header Navigation */}
         <header className={styles.navComponent}>
           <div className={styles.navContainer}>
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/" className={styles.logoName}>
+              <Link href="/v/social-media/h" className={styles.logoName}>
                 Hussam Baaka <span className={styles.cursorBlink}>|</span>
               </Link>
             </div>
 
-            {/* Navigation - Fixed order and added Case Study */}
+            {/* Navigation */}
             <nav className="hidden md:flex items-center space-x-0">
               <button onClick={onNavigate.about} className={styles.navLink}>About</button>
               <button onClick={onNavigate.portfolio} className={styles.navLink}>Portfolio</button>
@@ -43,7 +41,10 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
 
             {/* Right side buttons */}
             <div className="flex items-center space-x-4">
-              <button className={styles.navButtonStrategy}>
+              <button 
+                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                className={styles.navButtonStrategy}
+              >
                 Book Consultation
               </button>
             </div>
@@ -59,30 +60,30 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           </div>
         </header>
 
-        {/* Hero Section */}
+        {/* Hero Section - Optimized for Social Media Buyers */}
         <section className={styles.hero}>
           <div className={styles.heroContainer}>
             <div className={styles.heroContent}>
               <div className={styles.heroText}>
-              <h1 className={styles.heroTitle}>
-                How Shiftat Became Saudi Arabia's<br />
-                <span className={styles.highlight}>Leading AI Recruitment Platform</span>
-              </h1>
+                <h1 className={styles.heroTitle}>
+                  From Zero to Saudi Arabia's Most<br />
+                  <span className={styles.highlight}>Recognized AI Recruitment Brand</span>
+                </h1>
                 <p className={styles.heroSubtitle}>
-                  Through Strategic Digital Marketing & Data-Driven Growth
+                  How strategic social media transformed Shiftat from startup to industry leader
                 </p>
                 <div className={styles.heroStats}>
                   <div className={styles.stat}>
+                    <div className={styles.statNumber}>8K+</div>
+                    <div className={styles.statLabel}>X Followers</div>
+                  </div>
+                  <div className={styles.stat}>
+                    <div className={styles.statNumber}>4K+</div>
+                    <div className={styles.statLabel}>LinkedIn Network</div>
+                  </div>
+                  <div className={styles.stat}>
                     <div className={styles.statNumber}>100+</div>
                     <div className={styles.statLabel}>Quality Leads</div>
-                  </div>
-                  <div className={styles.stat}>
-                    <div className={styles.statNumber}>60%+</div>
-                    <div className={styles.statLabel}>Email Open Rates</div>
-                  </div>
-                  <div className={styles.stat}>
-                    <div className={styles.statNumber}>5,000+</div>
-                    <div className={styles.statLabel}>Subscribers</div>
                   </div>
                 </div>
               </div>
@@ -90,13 +91,12 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 <div className={styles.heroImageContainer}>
                   <Image
                     src="/backgrounds/Shiftat.webp"
-                    alt="Shiftat Platform"
+                    alt="Shiftat Platform Social Media Success"
                     width={600}
                     height={400}
                     className={styles.heroImg}
                     priority
                   />
-    
                 </div>
               </div>
             </div>
@@ -104,42 +104,42 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         </section>
       </div>
 
-      {/* White sections container starts here */}
+      {/* White sections container */}
       <div className={styles.whiteSectionContainer}>
-        {/* Results Section - Redesigned */}
+        {/* Results Section */}
         <section className={styles.resultsNew}>
           <div className={styles.resultsContainer}>
             <div className={styles.resultsHeader}>
               <h2 className={styles.resultsMainHeading}>
-                Results That <span className={styles.resultsHighlight}>Speak Volumes</span>
+                When Social Media <span className={styles.resultsHighlight}>Actually Drives Business</span>
               </h2>
               <p className={styles.resultsSubheading}>
-                Measurable impact across all key performance indicators
+                Real engagement metrics that converted to real revenue growth
               </p>
             </div>
             
             <div className={styles.resultsShowcase}>
               <div className={styles.primaryResults}>
                 <div className={styles.primaryStat}>
-                  <div className={styles.primaryNumber}>100+</div>
-                  <div className={styles.primaryLabel}>High-Quality Leads</div>
-                  <div className={styles.primaryDesc}>Generated through strategic campaigns</div>
+                  <div className={styles.primaryNumber}>12K+</div>
+                  <div className={styles.primaryLabel}>Total Followers</div>
+                  <div className={styles.primaryDesc}>Across LinkedIn and X platforms</div>
                 </div>
                 <div className={styles.primaryStat}>
-                  <div className={styles.primaryNumber}>60%+</div>
-                  <div className={styles.primaryLabel}>Email Open Rates</div>
-                  <div className={styles.primaryDesc}>Industry-leading engagement</div>
+                  <div className={styles.primaryNumber}>100+</div>
+                  <div className={styles.primaryLabel}>Quality Leads</div>
+                  <div className={styles.primaryDesc}>From organic social content</div>
                 </div>
               </div>
               
               <div className={styles.secondaryResults}>
                 <div className={styles.secondaryStat}>
-                  <div className={styles.secondaryNumber}>5,000+</div>
-                  <div className={styles.secondaryLabel}>Engaged Subscribers</div>
+                  <div className={styles.secondaryNumber}>60%+</div>
+                  <div className={styles.secondaryLabel}>Email Open Rates</div>
                 </div>
                 <div className={styles.secondaryStat}>
-                  <div className={styles.secondaryNumber}>4,000+</div>
-                  <div className={styles.secondaryLabel}>LinkedIn Followers</div>
+                  <div className={styles.secondaryNumber}>5K+</div>
+                  <div className={styles.secondaryLabel}>Newsletter Subscribers</div>
                 </div>
               </div>
             </div>
@@ -151,14 +151,14 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.container}>
             <div className={styles.challengeGrid}>
               <div className={styles.challengeContent}>
-                <h2 className={styles.sectionTitle}>The Challenge</h2>
+                <h2 className={styles.sectionTitle}>The Social Media Reality Check</h2>
                 <p className={styles.challengeText}>
-                  Shiftat needed to establish market presence in Saudi Arabia's competitive recruitment landscape and reach decision-makers across the kingdom. With over <strong>1 million business owners</strong> in Saudi Arabia, the challenge was creating awareness and building trust in a market dominated by traditional recruitment methods.
+                  Your social media isn't working because it's all about you. Your products. Your achievements. Your company updates. Meanwhile, your ideal clients scroll past because they can't see themselves in your content. Shiftat faced the same problem—brilliant AI technology, but social media that screamed "tech company" instead of "recruitment solution."
                 </p>
                 <div className={styles.challengeTags}>
-                  <span className={styles.challengeTag}>Market Penetration</span>
-                  <span className={styles.challengeTag}>Trust Building</span>
-                  <span className={styles.challengeTag}>Brand Awareness</span>
+                  <span className={styles.challengeTag}>Generic Content</span>
+                  <span className={styles.challengeTag}>Zero Engagement</span>
+                  <span className={styles.challengeTag}>No Leads</span>
                 </div>
               </div>
               <div className={styles.challengeIcon}>
@@ -168,87 +168,87 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           </div>
         </section>
 
-        {/* Solution Section - Redesigned with Uniform Cards */}
+        {/* Solution Section */}
         <section className={styles.solutionNew}>
           <div className={styles.container}>
             <div className={styles.solutionHeader}>
-              <h2 className={styles.sectionTitle}>The Strategic Solution</h2>
+              <h2 className={styles.sectionTitle}>The Social Strategy That Actually Works</h2>
               <p className={styles.solutionSubheading}>
-                Comprehensive digital marketing ecosystem designed for maximum impact
+                Stop talking about your product. Start solving your buyer's problems.
               </p>
             </div>
             
             <div className={styles.solutionGrid}>
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Content-Driven Growth Strategy</h3>
+                  <h3 className={styles.solutionCardTitle}>Buyer-Obsessed Content Strategy</h3>
                 </div>
                 <p className={styles.solutionCardDesc}>
-                  Built comprehensive content marketing ecosystem guiding prospects through every buyer's journey stage
+                  Every post addressed a specific recruitment pain point Saudi HR leaders face daily
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Expanded reach to 1M+ business owners</span>
-                  <span>Educational content highlighting recruitment pain points</span>
-                  <span>Solution-focused AI recruitment benefits</span>
-                  <span>Case studies emphasizing 80% cost reduction</span>
+                  <span>Daily recruitment insights in Arabic</span>
+                  <span>Case studies showing 80% cost reduction</span>
+                  <span>Industry trend analysis HR directors share</span>
+                  <span>Solution-focused content, not product pitches</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Targeted Digital Campaigns</h3>
+                  <h3 className={styles.solutionCardTitle}>Platform-Specific Authority Building</h3>
                 </div>
                 <p className={styles.solutionCardDesc}>
-                  Strategic Google Ads targeting high-intent Arabic keywords and recruitment terms
+                  Different platforms, different conversations—all pointing to the same conclusion
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Arabic keyword optimization</span>
-                  <span>Performance-based optimization</span>
-                  <span>Qualified prospect database</span>
-                  <span>Continuous campaign refinement</span>
+                  <span>LinkedIn: Professional thought leadership</span>
+                  <span>X: Real-time industry commentary</span>
+                  <span>Consistent brand voice across channels</span>
+                  <span>Cross-platform content amplification</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Email Marketing Excellence</h3>
+                  <h3 className={styles.solutionCardTitle}>Engagement-to-Lead Pipeline</h3>
                 </div>
                 <p className={styles.solutionCardDesc}>
-                  High-performing email campaigns with exceptional engagement rates
+                  Social engagement that actually converts to business conversations
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>5,000+ qualified subscribers</span>
-                  <span>60%+ weekly open rates</span>
-                  <span>Monthly nurturing campaigns</span>
-                  <span>Personalized recruitment insights</span>
+                  <span>Comment engagement protocols</span>
+                  <span>DM conversation starters</span>
+                  <span>Newsletter signup from social content</span>
+                  <span>Direct lead qualification process</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Social Media Leadership</h3>
+                  <h3 className={styles.solutionCardTitle}>Authority Through Consistency</h3>
                 </div>
                 <p className={styles.solutionCardDesc}>
-                  Established thought leadership across LinkedIn and X platforms
+                  Daily value delivery until the market recognized Shiftat as the AI recruitment expert
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>8,000+ followers on X</span>
-                  <span>4,000+ LinkedIn professionals</span>
-                  <span>AI recruitment authority positioning</span>
-                  <span>Industry thought leadership content</span>
+                  <span>Daily posting schedule maintained</span>
+                  <span>Industry events live coverage</span>
+                  <span>Thought leadership positioning</span>
+                  <span>Competitor analysis and differentiation</span>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Enhanced Social Proof - Centered */}
+        {/* Enhanced Social Proof */}
         <section className={styles.socialProof}>
           <div className={styles.container}>
             <div className={styles.centeredTextContent}>
-              <h2 className={styles.sectionTitle}>Social Media Success</h2>
+              <h2 className={styles.sectionTitle}>The Numbers Don't Lie</h2>
               <p className={styles.socialProofSubtitle}>
-                From zero followers to industry leadership – building engaged communities that drive real business results
+                From <span className={styles.highlightNumber}>0 to 12,000+</span> engaged followers who actually care about recruitment solutions
               </p>
             </div>
             <div className={styles.socialGrid}>
@@ -256,30 +256,30 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/Linkedin.webp"
-                    alt="LinkedIn Success"
+                    alt="LinkedIn Growth Results"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>LinkedIn Growth</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>4,000+</span> engaged professionals and thought leadership positioning</p>
+                  <h3 className={styles.socialTitle}>LinkedIn Authority</h3>
+                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>4,000+</span> HR directors and business leaders who engage with recruitment content</p>
                 </div>
               </div>
               <div className={styles.socialCard}>
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/X.webp"
-                    alt="X (Twitter) Success"
+                    alt="X Platform Success"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>X Platform Success</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>8,000+</span> followers through valuable recruitment content</p>
+                  <h3 className={styles.socialTitle}>X Platform Reach</h3>
+                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>8,000+</span> followers actively discussing AI recruitment trends</p>
                 </div>
               </div>
             </div>
@@ -291,19 +291,19 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
       <section className={styles.testimonial}>
         <div className={styles.container}>
           <blockquote className={styles.quote}>
-            "The strategic approach to content marketing and targeted campaigns didn't just generate leads—it established Shiftat as the <strong>definitive AI recruitment solution</strong> in Saudi Arabia."
+            "Before this strategy, our social media was just noise. Now it's our <strong>primary lead generation channel</strong>—and the leads are actually qualified."
           </blockquote>
         </div>
       </section>
 
-      {/* Verification - Redesigned */}
+      {/* Verification */}
       <section className={styles.verification}>
         <div className={styles.verificationContainer}>
           <h2 className={styles.verificationTitle}>
-            Verify This <span className={styles.verificationHighlight}>Success Story</span>
+            Still Skeptical? <span className={styles.verificationHighlight}>Verify Everything</span>
           </h2>
           <p className={styles.verificationText}>
-            You can contact Abdullah directly to verify the authenticity and accuracy of these results through his email:
+            Contact Abdullah directly to verify these results and see the actual social media growth:
           </p>
           <a href="mailto:abdullah@shiftatsa.com" className={styles.verificationEmail}>
             abdullah@shiftatsa.com
@@ -317,15 +317,15 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.cta}>
           <div className={styles.container}>
             <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle}>Ready to Scale Your Business?</h2>
+              <h2 className={styles.ctaTitle}>Ready to Stop Wasting Your Social Media?</h2>
               <p className={styles.ctaText}>
-                Get the same strategic approach that made Shiftat Saudi Arabia's leading AI recruitment platform.
+                Get the same social strategy that transformed Shiftat from unknown startup to industry authority. No vanity metrics—just leads that convert.
               </p>
               <button 
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.ctaButton}
               >
-                Book Your Strategy Session
+                Fix My Social Media Strategy
               </button>
             </div>
           </div>

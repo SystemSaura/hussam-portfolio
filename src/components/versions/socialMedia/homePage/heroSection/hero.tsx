@@ -5,26 +5,28 @@ import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-28 pb-8 " + styles.heroSection}>
+    <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-36 pb-8 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
-        {/* Main Hero Title - Fixed to TWO lines only */}
-        <h1 className={styles.flechaHeroTitle + " mb-20"}>
-          Turn marketing spend into<br />
-          <span className={styles.textCustomBlue}>measurable growth.</span>
-        </h1>
+        {/* Main Hero Title - Both lines left-aligned */}
+        <div className="mb-24">
+          <h1 className={styles.flechaHeroTitle}>
+            Turn social media into<br />
+            <span className={styles.textCustomBlue}>revenue-driving content.</span>
+          </h1>
+        </div>
 
         {/* Lower Section - Three parts */}
         <div className={styles.homeHeaderContent}>
-          {/* Left: Want to join us section */}
+          {/* Left: Social Media Problem */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              Tired of guessing<span className={styles.deconstructedQ}>
+              Posting into the void<span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
             </h2>
             <p className={styles.homeHeaderText1}>
-              Your marketing budget deserves better than "spray and pray." Get strategies that turn GCC market insights into predictable pipeline growth.
+              Your social media gets likes but not leads. Your content disappears in the feed. Get GCC-focused social strategies that turn followers into customers.
             </p>
           </div>
 
@@ -60,13 +62,13 @@ export default function Hero() {
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.subscribeButton + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                Book Consultation
+                Social Media Audit
               </button>
               <button
                 type="button"
                 className={styles.navButtonStrategy + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                Discover My Work
+                View Social Results
               </button>
             </div>
           </div>

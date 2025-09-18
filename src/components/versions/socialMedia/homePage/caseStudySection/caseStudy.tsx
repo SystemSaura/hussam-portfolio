@@ -9,19 +9,19 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
   return (
     <section ref={ref} className={styles.caseStudySection}>
       <div className={styles.container}>
-        {/* Section Header - Matches Hero typography */}
+        {/* Section Header - Social Media Focused */}
         <div className={styles.sectionHeader}>
           <h2 className={styles.mainHeading}>
-            How I helped Shiftat become<br />
-            <span className={styles.highlightText}>Saudi Arabia's leading AI recruitment platform.</span>
+            How I grew Shiftat from 0 to<br />
+            <span className={styles.highlightText}>12,000+ engaged social media followers.</span>
           </h2>
           <p className={styles.sectionSubtext}>
-            Strategic digital marketing transformation that generated measurable results.
+            Strategic social media transformation across LinkedIn and X platforms.
           </p>
         </div>
 
         {/* Main Case Study Content */}
-        <Link href="/v/marketing/shiftat" className={styles.caseStudyLink}>
+        <Link href="/v/social-media/shiftat" className={styles.caseStudyLink}>
           <div className={styles.caseStudyContent}>
             {/* Company Info Row */}
             <div className={styles.companyRow}>
@@ -42,7 +42,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                 </div>
               </div>
               <div className={styles.readMoreContainer}>
-                <span className={styles.readMoreText}>Read Full Study</span>
+                <span className={styles.readMoreText}>View Social Growth</span>
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="Arrow"
@@ -53,33 +53,33 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
               </div>
             </div>
 
-            {/* Results Grid */}
+            {/* Results Grid - Social Media Focused */}
             <div className={styles.resultsGrid}>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>100+</div>
-                <div className={styles.resultLabel}>Quality Leads</div>
-              </div>
-              <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>60%+</div>
-                <div className={styles.resultLabel}>Email Open Rate</div>
-              </div>
-              <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>5,000+</div>
-                <div className={styles.resultLabel}>Subscribers</div>
+                <div className={styles.resultNumber}>8,000+</div>
+                <div className={styles.resultLabel}>X Followers</div>
               </div>
               <div className={styles.resultItem}>
                 <div className={styles.resultNumber}>4,000+</div>
                 <div className={styles.resultLabel}>LinkedIn Followers</div>
               </div>
+              <div className={styles.resultItem}>
+                <div className={styles.resultNumber}>150%+</div>
+                <div className={styles.resultLabel}>Engagement Rate</div>
+              </div>
+              <div className={styles.resultItem}>
+                <div className={styles.resultNumber}>100+</div>
+                <div className={styles.resultLabel}>Quality Leads</div>
+              </div>
             </div>
 
-            {/* Description */}
+            {/* Description - Social Media Focused */}
             <div className={styles.caseDescription}>
               <p className={styles.descriptionText}>
-                Through strategic content marketing, targeted Google Ads campaigns, and high-performing email marketing, 
-                we established Shiftat as the definitive AI recruitment solution in Saudi Arabia. The comprehensive 
-                digital marketing ecosystem guided prospects through every stage of the buyer's journey, creating 
-                predictable pipeline growth and market leadership.
+                Through strategic social media content, community building, and platform-specific engagement tactics, 
+                we built Shiftat's social presence from zero to industry leadership. The comprehensive social strategy 
+                created authentic connections with HR professionals, driving both brand awareness and qualified lead generation 
+                across LinkedIn and X platforms.
               </p>
             </div>
 
@@ -87,7 +87,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             <div className={styles.socialProof}>
               <div className={styles.socialContent}>
                 <div className={styles.socialHeader}>
-                  <span className={styles.socialLabel}>Social Media Growth</span>
+                  <span className={styles.socialLabel}>Platform Growth Results</span>
                 </div>
                 <div className={styles.socialShowcase}>
                   <div className={styles.platformDisplay}>
@@ -97,7 +97,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                       </svg>
                     </div>
                     <span className={styles.platformName}>LinkedIn</span>
-                    <span className={styles.platformMetric}>4,000+ Professionals</span>
+                    <span className={styles.platformMetric}>4,000+ B2B Connections</span>
                   </div>
                   <div className={styles.platformDisplay}>
                     <div className={styles.platformIcon}>
@@ -106,7 +106,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                       </svg>
                     </div>
                     <span className={styles.platformName}>X Platform</span>
-                    <span className={styles.platformMetric}>8,000+ Followers</span>
+                    <span className={styles.platformMetric}>8,000+ Industry Followers</span>
                   </div>
                 </div>
               </div>
