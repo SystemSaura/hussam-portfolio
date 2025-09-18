@@ -62,13 +62,13 @@ export default function Hero() {
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.subscribeButton + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                Social Media Audit
+                Book Audit
               </button>
               <button
                 type="button"
                 className={styles.navButtonStrategy + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                View Social Results
+                View Social Media Growth
               </button>
             </div>
           </div>

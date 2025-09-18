@@ -45,7 +45,7 @@ export default function CTA() {
             onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
             className={styles.subscribeButton + " w-full"}
           >
-            Get Social Audit
+            Book Audit
           </button>
         </div>
       </div>

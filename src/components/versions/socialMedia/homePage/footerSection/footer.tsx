@@ -27,8 +27,8 @@ export default function Footer({ variant = 'default' }: FooterProps) {
 
   const getLinkColor = () => {
     return variant === 'white' 
-      ? 'text-gray-600 hover:text-gray-900' 
-      : 'text-gray-400 hover:text-white';
+      ? 'text-white hover:text-gray-900' 
+      : 'text-white hover:text-gray-900';
   };
 
   return (

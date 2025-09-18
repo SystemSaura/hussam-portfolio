@@ -61,7 +61,7 @@ export default function Testimonials() {
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Our social media presence went from zero to industry leadership. Hussam's strategic approach to LinkedIn and X grew our following to 12,000+ engaged professionals. The content quality and engagement rates exceeded all expectations."
+              "Talented writer, passionate, motivated, goes the extra mile to deliver excellent work. Will work with him again."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
@@ -98,7 +98,7 @@ export default function Testimonials() {
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Creative, engaging content that perfectly captured our arts community vibe. The social media campaigns boosted our event attendance and created genuine buzz around our cultural activities."
+              "Good work on social media content creation. Communication was clear and he delivered quality content on schedule."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
@@ -111,7 +111,7 @@ export default function Testimonials() {
                 <div>
                   <div className={styles.clientNameV2}>JAX District Team</div>
                   <div className={styles.clientCompanyV2}>Arts & Culture Platform</div>
-                  <div className={styles.clientLocationV2}>🇺🇦 UAE</div>
+                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
                 </div>
               </div>
               <div className={styles.companyLogoV2}>
@@ -131,7 +131,7 @@ export default function Testimonials() {
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Professional, family-friendly content that resonated with both parents and students. Our social media engagement increased significantly, and we saw more enrollment inquiries through our social channels."
+              "Professional content writing and social media work. Delivered exactly what was needed for our educational content."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
@@ -144,7 +144,7 @@ export default function Testimonials() {
                 <div>
                   <div className={styles.clientNameV2}>Marketing Director</div>
                   <div className={styles.clientCompanyV2}>Downe House School</div>
-                  <div className={styles.clientLocationV2}>🇬🇧 United Kingdom</div>
+                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
                 </div>
               </div>
               <div className={styles.companyLogoV2}>
@@ -164,7 +164,7 @@ export default function Testimonials() {
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Outstanding LinkedIn content strategy that positioned us as thought leaders in logistics. The professional approach and industry insights generated qualified business leads from our social presence."
+              "Good work on LinkedIn content strategy. Communication was top-notch and he met all deadlines."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
@@ -197,7 +197,7 @@ export default function Testimonials() {
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Impactful environmental messaging that drove real community engagement. The social media campaigns educated audiences about sustainability while building a movement around our recycling initiatives."
+              "Amazing to work with. Great communication and skills. He delivered quality content for our sustainability campaign."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
@@ -230,7 +230,7 @@ export default function Testimonials() {
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Clear, accessible social media communication that improved public awareness of our transportation services. The content strategy effectively reached our community and enhanced service adoption."
+              "Very Professional, Delivery on Time, Communication Perfect. Overall extremely recommended."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>

@@ -42,7 +42,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                 </div>
               </div>
               <div className={styles.readMoreContainer}>
-                <span className={styles.readMoreText}>View Social Growth</span>
+                <span className={styles.readMoreText}>Read full Case Study</span>
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="Arrow"

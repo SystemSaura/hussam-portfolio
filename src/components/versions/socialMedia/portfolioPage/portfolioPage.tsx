@@ -81,7 +81,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Industry Authority Positioning",
         description: "Positioned GCC's logistics leader as the voice of supply chain innovation. LinkedIn strategy that builds trust before selling.",
         buttonColor: "Orange",
-        link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true"
+        link: "https://drive.google.com/drive/folders/1OW44Melyr3JIr4rYvE8SQFT-hx_QzI48?usp=drive_link"
       },
       {
         category: "Education",

@@ -111,7 +111,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Social Audit
+                Book Audit
               </button>
             </div>
 
@@ -177,7 +177,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Social Audit
+                Book Audit
               </button>
             </div>
 

@@ -53,7 +53,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 onClick={() => window.open('https://www.linkedin.com/company/shiftat-sa/', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonBlue}`}
               >
-                View Social Growth
+                View Social Media Growth
               </button>
             </div>
           </div>
@@ -88,7 +88,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 Developed comprehensive LinkedIn content strategy for GCC's leading logistics provider, establishing industry thought leadership and generating qualified B2B leads.
               </p>
               <button 
-                onClick={() => window.open('https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
+                onClick={() => window.open('https://drive.google.com/drive/folders/1OW44Melyr3JIr4rYvE8SQFT-hx_QzI48?usp=drive_link', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonOrange}`}
               >
                 View LinkedIn Content
