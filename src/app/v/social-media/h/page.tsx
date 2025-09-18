@@ -32,7 +32,7 @@ export default function SocialMediaHome() {
   return (
     <div className="min-h-screen bg-white">
       <Header onNavigate={navigationHandlers} />
-      <Hero />
+      <Hero onNavigate={navigationHandlers} />
       <TrustedCompanies />
       <About ref={aboutRef} />
       <Services ref={servicesRef} />

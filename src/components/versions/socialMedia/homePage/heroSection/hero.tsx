@@ -3,7 +3,18 @@
 import Image from "next/image";
 import styles from "./hero.module.css";
 
-export default function Hero() {
+interface NavigationHandlers {
+  about: () => void;
+  portfolio: () => void;
+  services: () => void;
+  caseStudy: () => void;
+}
+
+interface HeroProps {
+  onNavigate: NavigationHandlers;
+}
+
+export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-36 pb-8 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
@@ -66,6 +77,7 @@ export default function Hero() {
               </button>
               <button
                 type="button"
+                onClick={onNavigate.portfolio}
                 className={styles.navButtonStrategy + " w-full min-w-max whitespace-nowrap h-12"}
               >
                 View Social Media Growth
