@@ -12,16 +12,16 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
         {/* Section Header - Matches Hero typography */}
         <div className={styles.sectionHeader}>
           <h2 className={styles.mainHeading}>
-            How I helped Shiftat become<br />
-            <span className={styles.highlightText}>Saudi Arabia's leading AI recruitment platform.</span>
+            How I helped Shiftat achieve<br />
+            <span className={styles.highlightText}>search visibility and organic growth through SEO content.</span>
           </h2>
           <p className={styles.sectionSubtext}>
-            Strategic digital marketing transformation that generated measurable results.
+            Strategic SEO content creation and optimization that drove measurable search results.
           </p>
         </div>
 
         {/* Main Case Study Content */}
-        <Link href="/v/marketing/shiftat" className={styles.caseStudyLink}>
+        <Link href="/v/seo/shiftat" className={styles.caseStudyLink}>
           <div className={styles.caseStudyContent}>
             {/* Company Info Row */}
             <div className={styles.companyRow}>
@@ -53,60 +53,60 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
               </div>
             </div>
 
-            {/* Results Grid */}
+            {/* Results Grid - SEO focused */}
             <div className={styles.resultsGrid}>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>100+</div>
-                <div className={styles.resultLabel}>Quality Leads</div>
+                <div className={styles.resultNumber}>200%</div>
+                <div className={styles.resultLabel}>Organic Traffic Growth</div>
               </div>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>60%+</div>
-                <div className={styles.resultLabel}>Email Open Rate</div>
+                <div className={styles.resultNumber}>15+</div>
+                <div className={styles.resultLabel}>Page 1 Rankings</div>
               </div>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>5,000+</div>
-                <div className={styles.resultLabel}>Subscribers</div>
+                <div className={styles.resultNumber}>50+</div>
+                <div className={styles.resultLabel}>SEO Articles</div>
               </div>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>4,000+</div>
-                <div className={styles.resultLabel}>LinkedIn Followers</div>
+                <div className={styles.resultNumber}>85%</div>
+                <div className={styles.resultLabel}>Keyword Coverage</div>
               </div>
             </div>
 
-            {/* Description */}
+            {/* Description - SEO focused */}
             <div className={styles.caseDescription}>
               <p className={styles.descriptionText}>
-                Through strategic content marketing, targeted Google Ads campaigns, and high-performing email marketing, 
-                we established Shiftat as the definitive AI recruitment solution in Saudi Arabia. The comprehensive 
-                digital marketing ecosystem guided prospects through every stage of the buyer's journey, creating 
-                predictable pipeline growth and market leadership.
+                Through strategic keyword research, SEO-optimized content creation, and technical optimization, 
+                we positioned Shiftat as the authority in AI recruitment searches across the GCC. The comprehensive 
+                SEO strategy covered recruitment industry keywords, built topical authority, and created 
+                search-friendly content that ranks and converts prospects into qualified leads.
               </p>
             </div>
 
-            {/* Simplified Social Proof */}
+            {/* Simplified Search Results Proof */}
             <div className={styles.socialProof}>
               <div className={styles.socialContent}>
                 <div className={styles.socialHeader}>
-                  <span className={styles.socialLabel}>Social Media Growth</span>
+                  <span className={styles.socialLabel}>Search Performance</span>
                 </div>
                 <div className={styles.socialShowcase}>
                   <div className={styles.platformDisplay}>
                     <div className={styles.platformIcon}>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.366C3.274 4.224 4.194 3.299 5.337 3.299C6.477 3.299 7.401 4.224 7.401 5.366C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="white"/>
                       </svg>
                     </div>
-                    <span className={styles.platformName}>LinkedIn</span>
-                    <span className={styles.platformMetric}>4,000+ Professionals</span>
+                    <span className={styles.platformName}>Google Rankings</span>
+                    <span className={styles.platformMetric}>15+ Page 1 Keywords</span>
                   </div>
                   <div className={styles.platformDisplay}>
                     <div className={styles.platformIcon}>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.244 2.25H21.552L14.325 10.51L22.827 21.75H16.17L10.956 14.933L4.99 21.75H1.68L9.41 12.915L1.254 2.25H8.08L12.793 8.481L18.244 2.25ZM17.083 19.77H18.916L7.084 4.126H5.117L17.083 19.77Z" fill="white"/>
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="white"/>
                       </svg>
                     </div>
-                    <span className={styles.platformName}>X Platform</span>
-                    <span className={styles.platformMetric}>8,000+ Followers</span>
+                    <span className={styles.platformName}>Content Quality</span>
+                    <span className={styles.platformMetric}>50+ SEO Articles</span>
                   </div>
                 </div>
               </div>

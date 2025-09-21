@@ -9,18 +9,18 @@ export default function CTA() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-12 mb-16">
           <h2 className={styles.flechaSectionHeading + " leading-tight"}>
+            <span className={styles.textCustomBlue}>Stop creating content</span><br />
+            that nobody finds.
+          </h2>
+
+          <h2 className={styles.flechaSectionHeading + " leading-tight"}>
             <span className={styles.textCustomBlue}>Stop guessing</span><br />
-            what's working.
+            which keywords matter.
           </h2>
 
           <h2 className={styles.flechaSectionHeading + " leading-tight"}>
-            <span className={styles.textCustomBlue}>Stop explaining</span><br />
-            marketing spend.
-          </h2>
-
-          <h2 className={styles.flechaSectionHeading + " leading-tight"}>
-            <span className={styles.textCustomBlue}>Start scaling</span><br />
-            with confidence.
+            <span className={styles.textCustomBlue}>Start ranking</span><br />
+            where prospects search.
           </h2>
         </div>
 
@@ -34,10 +34,10 @@ export default function CTA() {
           />
         </div>
 
-        <h3 className={styles.homeHeaderSubheading + " mb-8"}>Ready to grow predictably?</h3>
+        <h3 className={styles.homeHeaderSubheading + " mb-8"}>Ready to dominate search results?</h3>
 
         <p className={styles.workSansBody + " mb-8 leading-relaxed"}>
-          Get a free 30-minute session to identify your biggest growth opportunities.
+          Get a free 30-minute SEO audit to identify your biggest search opportunities.
         </p>
 
         <div className="max-w-md mx-auto space-y-4">
