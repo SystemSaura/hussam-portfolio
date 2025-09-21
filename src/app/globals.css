@@ -1,3 +1,7 @@
+/* Import Arabic Fonts - MUST BE FIRST */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -93,10 +97,82 @@
   font-display: swap;
 }
 
+/* Arabic Typography - RTL Support */
+[dir="rtl"] {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+
+[dir="rtl"] .flecha-font {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 600;
+}
+
+[dir="rtl"] .work-sans-font {
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* RTL Layout Adjustments */
+[dir="rtl"] .flex {
+  direction: rtl;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .ml-auto {
+  margin-left: unset;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+  margin-right: unset;
+  margin-left: auto;
+}
+
+/* Arabic Font Styling */
+.arabic-text {
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+.arabic-heading {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.arabic-body {
+  font-family: 'Tajawal', sans-serif;
+  line-height: 1.7;
+}
+
 /* Hide Next.js development indicators */
 #__next-build-watcher,
 .__next-dev-overlay-backdrop,
 .__next-dev-overlay,
 [data-nextjs-scroll-focus-boundary] {
   display: none !important;
+}
+
+/* RTL Animation Adjustments */
+[dir="rtl"] .animate-pulse,
+[dir="rtl"] .animate-bounce,
+[dir="rtl"] .animate-spin {
+  animation-direction: reverse;
+}
+
+/* RTL Transform Adjustments */
+[dir="rtl"] .transform {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .transform img,
+[dir="rtl"] .transform svg {
+  transform: scaleX(-1);
 }
