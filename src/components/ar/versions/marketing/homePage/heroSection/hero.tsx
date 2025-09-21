@@ -20,28 +20,28 @@ export default function Hero({ onNavigate }: HeroProps) {
       <div className={styles.homeHeaderComponent}>
         {/* Main Hero Title - Arabic aligned right */}
         <div className="mb-24">
-          <h1 className={styles.flechaHeroTitle + " arabic-heading"}>
+          <h1 className={styles.flechaHeroTitle}>
             خبير التسويق الرقمي<br />
             <span className={styles.textCustomBlue}>الذي يحقق النتائج الفعلية</span>
           </h1>
         </div>
 
-        {/* Lower Section - Three parts */}
+        {/* Lower Section - Three parts with proper RTL flow */}
         <div className={styles.homeHeaderContent}>
-          {/* Right: Problem section (mirrored for RTL) */}
+          {/* First in RTL: Problem section (appears on the right) */}
           <div className={styles.homeHeaderTextWrap}>
-            <h2 className={styles.homeHeaderSubheading + " arabic-heading"}>
+            <h2 className={styles.homeHeaderSubheading}>
               التسويق الذي لا يحقق النتائج؟ <span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
             </h2>
-            <p className={styles.homeHeaderText1 + " arabic-body"}>
+            <p className={styles.homeHeaderText1}>
               نحن متخصصون في التسويق الرقمي، تحسين محركات البحث، ووسائل التواصل الاجتماعي للشركات في منطقة الخليج. استراتيجيات مثبتة تحقق نموًا قابلاً للقياس ونتائج حقيقية لعملك.
             </p>
           </div>
 
-          {/* Center: Arrow - Desktop horizontal, Mobile vertical */}
+          {/* Center: Arrow - Desktop horizontal (flipped for RTL), Mobile vertical */}
           <div className={styles.arrowContainer}>
             {/* Desktop Arrow - Horizontal (flipped for RTL) */}
             <div className={styles.arrowDesktop}>
@@ -66,9 +66,9 @@ export default function Hero({ onNavigate }: HeroProps) {
             </div>
           </div>
 
-          {/* Left: Start here form (mirrored for RTL) */}
+          {/* Last in RTL: Start here form (appears on the left) */}
           <div className={styles.homeHeaderFormWrap}>
-            <h3 className={styles.homeHeaderSubheadingRight + " mb-6 arabic-heading"}>ابدأ من هنا</h3>
+            <h3 className={styles.homeHeaderSubheadingRight + " mb-6"}>ابدأ من هنا</h3>
             <div className={styles.sevaFields + " " + styles.formkitFields}>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
