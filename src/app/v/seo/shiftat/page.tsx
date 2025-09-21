@@ -1,6 +1,6 @@
 "use client";
 
-import CaseStudyDetail from "../../../../components/versions/seo/caseStudyPage/caseStudyPage";
+import CaseStudyDetail from "../../../../components/en/versions/seo/caseStudyPage/caseStudyPage";
 
 export default function ShiftatCaseStudy() {
   const navigationHandlers = {
