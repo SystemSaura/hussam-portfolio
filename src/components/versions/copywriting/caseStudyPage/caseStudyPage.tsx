@@ -211,16 +211,16 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Social Proof Copy That Builds Trust</h3>
+                  <h3 className={styles.solutionCardTitle}>Content That Builds Community & Authority</h3>
                 </div>
                 <p className={styles.solutionCardDesc}>
-                  Strategic social media copy that establishes thought leadership and industry authority
+                  Strategic content copywriting that grows engaged audiences and establishes thought leadership
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>LinkedIn posts that attract decision-makers</span>
-                  <span>Industry insights that build authority</span>
-                  <span>Case studies that prove results</span>
-                  <span>Thought leadership content that converts</span>
+                  <span>LinkedIn content that attracts 4,000+ professionals</span>
+                  <span>Community-building copy that drives engagement</span>
+                  <span>Thought leadership content that builds trust</span>
+                  <span>Audience growth through valuable insights</span>
                 </div>
               </div>
 
@@ -246,9 +246,9 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.socialProof}>
           <div className={styles.container}>
             <div className={styles.centeredTextContent}>
-              <h2 className={styles.sectionTitle}>Copy Performance Results</h2>
+              <h2 className={styles.sectionTitle}>Community Growth Through Content</h2>
               <p className={styles.socialProofSubtitle}>
-                From confusing messaging to crystal-clear copy that converts visitors into customers
+                From zero followers to engaged communities—building audiences that convert through strategic content copywriting
               </p>
             </div>
             <div className={styles.socialGrid}>
@@ -256,30 +256,30 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/Linkedin.webp"
-                    alt="LinkedIn Copy Success"
+                    alt="LinkedIn Community Growth"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>LinkedIn Copy Performance</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>4,000+</span> professionals engaged through copy that builds authority and drives leads</p>
+                  <h3 className={styles.socialTitle}>LinkedIn Community Building</h3>
+                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>4,000+</span> engaged professionals through content that builds authority and drives meaningful connections</p>
                 </div>
               </div>
               <div className={styles.socialCard}>
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/X.webp"
-                    alt="Email Copy Success"
+                    alt="Email Community Success"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>Email Copy Results</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>60%+</span> open rates through subject lines that stop the scroll and demand attention</p>
+                  <h3 className={styles.socialTitle}>Email Community Growth</h3>
+                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>60%+</span> open rates through subject lines that create anticipation and build loyal readership</p>
                 </div>
               </div>
             </div>

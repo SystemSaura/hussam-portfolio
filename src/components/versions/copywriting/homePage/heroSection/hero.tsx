@@ -21,8 +21,8 @@ export default function Hero({ onNavigate }: HeroProps) {
         {/* Main Hero Title - Both lines left-aligned */}
         <div className="mb-24">
           <h1 className={styles.flechaHeroTitle}>
-            Your website converts visitors<br />
-            <span className={styles.textCustomBlue}>or confuses them.</span>
+            Turn copy that confuses into <br />
+            <span className={styles.textCustomBlue}> copy that converts.</span>
           </h1>
         </div>
 
@@ -31,13 +31,13 @@ export default function Hero({ onNavigate }: HeroProps) {
           {/* Left: Problem section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              Words aren't working<span className={styles.deconstructedQ}>
+              Tired of guessing<span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
             </h2>
             <p className={styles.homeHeaderText1}>
-              Your copywriting tries to speak to everyone but resonates with no one. Visitors bounce because they can't instantly grasp what you sell or why it matters.
+              Your copy should convert visitors into customers, not put them to sleep. Get strategic copywriting that makes prospects think "this is exactly what I need" and transforms browsers into buyers who can't wait to work with you.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function Hero({ onNavigate }: HeroProps) {
 
           {/* Right: Start here form */}
           <div className={styles.homeHeaderFormWrap}>
-            <h3 className={styles.homeHeaderSubheadingRight + " mb-6"}>Fix it here.</h3>
+            <h3 className={styles.homeHeaderSubheadingRight + " mb-6"}>Start here.</h3>
             <div className={styles.sevaFields + " " + styles.formkitFields}>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}

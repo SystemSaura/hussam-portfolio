@@ -94,7 +94,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
           {/* Static centered heading for mobile */}
           <div className={styles.mobileStaticHeading}>
             <h2 className={styles.servicesMainHeading + " leading-tight"}>
-              3 ways I fix your copy<br />
+              3 ways I fix copy<br />
               <span className={styles.servicesMainHeadingAccent}>so it converts.</span>
             </h2>
           </div>
@@ -111,35 +111,35 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Get Website Copy
+                Book Consultation
               </button>
             </div>
 
             <div>
               <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Email Sequences That Nurture & Sell</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>Social Content That Builds Authority & Drives Leads</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Strategic email campaigns that build relationships, address objections, and guide prospects from curiosity to purchase. Welcome series, nurture sequences, and sales campaigns that actually work.
+                Strategic social media copy that positions you as the obvious choice in your industry. LinkedIn posts that attract decision-makers, thought leadership content that builds trust, and social proof that converts followers into customers.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Get Email Copy
+                Book Consultation
               </button>
             </div>
 
             <div ref={thirdServiceRef}>
               <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Sales Pages That Close Deals</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>Sales Pages & Email Copy That Close Deals</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                High-converting sales pages and landing pages that address every objection, build desire, and make the buying decision obvious. From product launches to service sales.
+                High-converting sales pages, landing pages, and email sequences that address every objection, build desire, and make the buying decision obvious. From product launches to nurture campaigns—copy that turns prospects into customers.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Get Sales Copy
+                Book Consultation
               </button>
             </div>
           </div>
@@ -160,7 +160,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
               style={stickyStyles}
             >
               <h2 className={styles.servicesMainHeading + " leading-tight"}>
-                3 ways I fix your copy<br />
+                3 ways I fix copy<br />
                 <span className={styles.servicesMainHeadingAccent}>so it converts.</span>
               </h2>
             </div>
@@ -177,35 +177,35 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Get Website Copy
+                Book Consultation
               </button>
             </div>
 
             <div>
               <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Email Sequences That Nurture & Sell</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>Social Content That Builds Authority & Drives Leads</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Strategic email campaigns that build relationships, address objections, and guide prospects from curiosity to purchase. Welcome series, nurture sequences, and sales campaigns that actually work.
+                Strategic social media copy that positions you as the obvious choice in your industry. LinkedIn posts that attract decision-makers, thought leadership content that builds trust, and social proof that converts followers into customers.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Get Email Copy
+                Book Consultation
               </button>
             </div>
 
             <div ref={thirdServiceRef}>
               <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Sales Pages That Close Deals</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>Sales Pages & Email Copy That Close Deals</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                High-converting sales pages and landing pages that address every objection, build desire, and make the buying decision obvious. From product launches to service sales.
+                High-converting sales pages, landing pages, and email sequences that address every objection, build desire, and make the buying decision obvious. From product launches to nurture campaigns—copy that turns prospects into customers.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Get Sales Copy
+                Book Consultation
               </button>
             </div>
           </div>
