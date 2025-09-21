@@ -2,16 +2,16 @@
 "use client";
 
 import { useRef } from "react";
-import Header from "../../../../components/versions/copywriting/homePage/headerSection/header";
-import Hero from "../../../../components/versions/copywriting/homePage/heroSection/hero";
-import TrustedCompanies from "../../../../components/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
-import About from "../../../../components/versions/copywriting/homePage/aboutSection/about";
-import Services from "../../../../components/versions/copywriting/homePage/servicesSection/services";
-import CaseStudy from "../../../../components/versions/copywriting/homePage/caseStudySection/caseStudy";
-import Portfolio from "../../../../components/versions/copywriting/homePage/portfolioSection/portfolio";
-import Testimonials from "../../../../components/versions/copywriting/homePage/testimonialsSection/testimonials";
-import CTA from "../../../../components/versions/copywriting/homePage/ctaSection/cta";
-import Footer from "../../../../components/versions/copywriting/homePage/footerSection/footer";
+import Header from "../../../../components/en/versions/copywriting/homePage/headerSection/header";
+import Hero from "../../../../components/en/versions/copywriting/homePage/heroSection/hero";
+import TrustedCompanies from "../../../../components/en/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
+import About from "../../../../components/en/versions/copywriting/homePage/aboutSection/about";
+import Services from "../../../../components/en/versions/copywriting/homePage/servicesSection/services";
+import CaseStudy from "../../../../components/en/versions/copywriting/homePage/caseStudySection/caseStudy";
+import Portfolio from "../../../../components/en/versions/copywriting/homePage/portfolioSection/portfolio";
+import Testimonials from "../../../../components/en/versions/copywriting/homePage/testimonialsSection/testimonials";
+import CTA from "../../../../components/en/versions/copywriting/homePage/ctaSection/cta";
+import Footer from "../../../../components/en/versions/copywriting/homePage/footerSection/footer";
 
 export default function CopywritingHome() {
   const aboutRef = useRef<HTMLElement>(null);

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import CaseStudyDetail from "@/components/versions/copywriting/caseStudyPage/caseStudyPage";
+import CaseStudyDetail from "@/components/en/versions/copywriting/caseStudyPage/caseStudyPage";
 
 export default function CopywritingShiftatCaseStudy() {
   const [currentView, setCurrentView] = useState("caseStudy");

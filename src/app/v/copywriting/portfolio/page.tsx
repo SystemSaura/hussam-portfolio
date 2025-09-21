@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import PortfolioPage from "@/components/versions/copywriting/portfolioPage/portfolioPage";
+import PortfolioPage from "@/components/en/versions/copywriting/portfolioPage/portfolioPage";
 
 export default function CopywritingPortfolioPage() {
   const [currentView, setCurrentView] = useState("portfolio");
