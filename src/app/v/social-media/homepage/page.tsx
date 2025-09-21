@@ -2,16 +2,16 @@
 "use client";
 
 import { useRef } from "react";
-import Header from "../../../../components/versions/socialMedia/homePage/headerSection/header";
-import Hero from "../../../../components/versions/socialMedia/homePage/heroSection/hero";
-import TrustedCompanies from "../../../../components/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
-import About from "../../../../components/versions/socialMedia/homePage/aboutSection/about";
-import Services from "../../../../components/versions/socialMedia/homePage/servicesSection/services";
-import CaseStudy from "../../../../components/versions/socialMedia/homePage/caseStudySection/caseStudy";
-import Portfolio from "../../../../components/versions/socialMedia/homePage/portfolioSection/portfolio";
-import Testimonials from "../../../../components/versions/socialMedia/homePage/testimonialsSection/testimonials";
-import CTA from "../../../../components/versions/socialMedia/homePage/ctaSection/cta";
-import Footer from "../../../../components/versions/socialMedia/homePage/footerSection/footer";
+import Header from "../../../../components/en/versions/socialMedia/homePage/headerSection/header";
+import Hero from "../../../../components/en/versions/socialMedia/homePage/heroSection/hero";
+import TrustedCompanies from "../../../../components/en/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
+import About from "../../../../components/en/versions/socialMedia/homePage/aboutSection/about";
+import Services from "../../../../components/en/versions/socialMedia/homePage/servicesSection/services";
+import CaseStudy from "../../../../components/en/versions/socialMedia/homePage/caseStudySection/caseStudy";
+import Portfolio from "../../../../components/en/versions/socialMedia/homePage/portfolioSection/portfolio";
+import Testimonials from "../../../../components/en/versions/socialMedia/homePage/testimonialsSection/testimonials";
+import CTA from "../../../../components/en/versions/socialMedia/homePage/ctaSection/cta";
+import Footer from "../../../../components/en/versions/socialMedia/homePage/footerSection/footer";
 
 export default function SocialMediaHome() {
   const aboutRef = useRef<HTMLElement>(null);

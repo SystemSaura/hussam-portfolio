@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import PortfolioPage from "@/components/versions/socialMedia/portfolioPage/portfolioPage";
+import PortfolioPage from "@/components/en/versions/socialMedia/portfolioPage/portfolioPage";
 
 export default function SocialMediaPortfolioPage() {
   const [currentView, setCurrentView] = useState("portfolio");
