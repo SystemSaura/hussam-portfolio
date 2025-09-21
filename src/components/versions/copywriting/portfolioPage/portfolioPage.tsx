@@ -24,15 +24,15 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   const [showRightArrow, setShowRightArrow] = useState(false);
   const tabContainerRef = useRef<HTMLDivElement>(null);
 
-  // Copywriting-focused portfolio data
+  // Copywriting-focused portfolio data with better conversion messaging
   const portfolioData = {
-    "Website Copy": [
+    "Homepage Copy": [
       {
         category: "HR Technology",
         logo: "/logos/shiftat.webp",
         logoText: "SHIFTAT",
-        title: "Homepage Copy That Converts",
-        description: "Transformed confusing tech jargon into clear, compelling website copy that immediately communicates value. Visitors instantly understand what Shiftat does and why they need it.",
+        title: "Homepage That Stops Bounces Dead",
+        description: "Transformed confusing AI jargon into headlines that make HR managers think 'Finally, someone who gets my hiring nightmare.' Result: 60%+ email conversion from visitors who actually understand the value.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
@@ -40,8 +40,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Government Research",
         logo: "/logos/kapsarc.webp",
         logoText: "KAPSARC",
-        title: "Research Portal Copy Strategy",
-        description: "Transformed complex energy research into accessible, actionable website copy for policy makers. Clear communication that turns technical concepts into compelling insights.",
+        title: "Research Portal That Actually Makes Sense",
+        description: "Turned dense energy policy research into clear, actionable insights. Copy that transforms technical complexity into compelling value for decision-makers who need answers, not academic papers.",
         buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
       },
@@ -49,8 +49,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Real Estate",
         logo: "/logos/empirerealestate.webp",
         logoText: "EMPIRE REAL ESTATE",
-        title: "Luxury Property Sales Copy",
-        description: "High-converting sales copy that positions luxury properties as exclusive investments. Copy that appeals to Qatar's premium market with compelling value propositions.",
+        title: "Luxury Property Copy That Sells Dreams",
+        description: "Sales copy that positions luxury properties as exclusive lifestyle upgrades, not just real estate. Copy that makes Qatar's premium buyers feel like they're missing out if they don't act now.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
       },
@@ -58,19 +58,19 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Logistics",
         logo: "/logos/saeq.webp",
         logoText: "SAEQ",
-        title: "B2B Website Messaging",
-        description: "Compelling brand messaging that differentiates SAEQ in competitive logistics market. Website copy that creates clear market positioning for GCC expansion.",
+        title: "B2B Copy That Cuts Through The Noise",
+        description: "Messaging that makes SAEQ the obvious choice for GCC logistics. Copy that differentiates in a commodity market by focusing on what keeps supply chain managers awake at night.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
       }
     ],
-    "Email Copy": [
+    "Email Copy That Converts": [
       {
         category: "HR Technology",
         logo: "/logos/shiftat.webp",
         logoText: "SHIFTAT",
-        title: "Email Sequences That Convert",
-        description: "High-performing email campaigns with 60%+ open rates. Nurture sequences that guide prospects from curiosity to becoming paying customers.",
+        title: "Email Sequences That Actually Get Read",
+        description: "Subject lines that survive the inbox massacre and email copy that builds relationships instead of triggering unsubscribes. Sequences that guide prospects from curious to convinced.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
@@ -78,8 +78,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Healthcare",
         logo: "/logos/alnahdi.webp",
         logoText: "AL NAHDI",
-        title: "Newsletter Copy That Engages",
-        description: "Email campaigns that turn health tips into customer engagement, driving store visits and product sales. Copy that builds trust and drives action.",
+        title: "Newsletter Copy That Drives Store Visits",
+        description: "Email campaigns that turn health tips into customer action. Copy that builds trust while subtly driving store visits and product sales for Saudi's leading pharmacy chain.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
       },
@@ -87,19 +87,19 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Education",
         logo: "/logos/bonyan.webp",
         logoText: "BONYAN",
-        title: "Educational Email Sequences",
-        description: "Email copy that transforms learning methodologies into engaging campaigns. Messages that resonate with educators and drive enrollment.",
+        title: "Educational Emails That Enroll Students",
+        description: "Email sequences that transform learning methodologies into must-have educational experiences. Copy that makes parents feel like they're failing their kids if they don't enroll.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
       }
     ],
-    "Sales Copy": [
+    "Sales Copy That Closes": [
       {
         category: "Real Estate",
         logo: "/logos/empirerealestate.webp",
         logoText: "EMPIRE REAL ESTATE",
-        title: "Property Sales Pages",
-        description: "Sales copy that positions luxury properties as must-have investments. Copy that addresses every objection and builds desire for premium Qatar real estate.",
+        title: "Property Sales Pages That Create FOMO",
+        description: "Sales copy that positions luxury properties as once-in-a-lifetime investments. Copy that addresses every objection and makes Qatar's premium buyers feel urgency without desperation.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
       },
@@ -107,8 +107,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Healthcare",
         logo: "/logos/mindtales.webp",
         logoText: "MINDTALES",
-        title: "Mental Health Service Copy",
-        description: "Sensitive, compelling sales copy for mental health services. Copy that builds trust and makes seeking help feel safe and necessary.",
+        title: "Mental Health Copy That Builds Trust",
+        description: "Sensitive sales copy that makes seeking mental health help feel safe and necessary. Copy that handles the stigma while creating urgency around getting help before things get worse.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
       },
@@ -116,8 +116,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Education",
         logo: "/logos/hayatmohamadia.webp",
         logoText: "HAYAT MOHAMADIA",
-        title: "Educational Program Sales Copy",
-        description: "Sales copy that makes educational programs irresistible. Copy that transforms features into benefits parents and students can't ignore.",
+        title: "Educational Program Copy That Enrolls",
+        description: "Sales copy that transforms educational features into must-have advantages for students' futures. Copy that makes parents feel like competitive disadvantage is the cost of not enrolling.",
         buttonColor: "Orange",
         link: "https://drive.google.com/drive/folders/1KLbVMaX4Z0jQ1KiDcaKEaszyTjZRHFcu?usp=sharing"
       }
@@ -127,8 +127,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Logistics",
         logo: "/logos/saeq.webp",
         logoText: "SAEQ",
-        title: "Brand Positioning Copy",
-        description: "Messaging that establishes SAEQ as the obvious choice for GCC logistics. Copy that differentiates and creates market leadership positioning.",
+        title: "Positioning Copy That Dominates Markets",
+        description: "Brand messaging that establishes SAEQ as the only logical choice for GCC logistics. Copy that creates market leadership positioning by owning the category conversation.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
       },
@@ -136,8 +136,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Arts",
         logo: "/logos/alhanoufalhamdan.webp",
         logoText: "ALHANOUF ALHAMDAN",
-        title: "Personal Brand Copy",
-        description: "Personal brand messaging that positions arts professional as industry leader. Copy that builds authority and attracts premium opportunities.",
+        title: "Personal Brand Copy That Attracts Opportunities",
+        description: "Personal brand messaging that positions arts professional as the go-to expert. Copy that builds authority and attracts premium opportunities by owning a specific niche.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing"
       },
@@ -145,19 +145,19 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Consultancy",
         logo: "",
         logoText: "AL MOTAFARAD",
-        title: "Consultancy Brand Voice",
-        description: "Professional brand messaging for management consultancy. Copy that builds credibility and positions expertise in both Arabic and English markets.",
+        title: "Consultancy Brand Voice That Builds Credibility",
+        description: "Professional brand messaging that establishes unquestionable expertise. Copy that builds credibility and positions authority in both Arabic and English markets.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
       }
     ],
-    "Content Copy": [
+    "Content That Converts": [
       {
         category: "Cultural",
         logo: "",
         logoText: "CULTURAL INSIGHTS",
-        title: "70 Analytical Cultural Articles",
-        description: "Compelling content copy covering cultural topics. Writing that engages diverse audiences and builds thought leadership through storytelling.",
+        title: "70 Articles That Build Thought Leadership",
+        description: "Content copy that positions expertise while engaging diverse audiences. Writing that builds authority through storytelling and keeps readers coming back for more insights.",
         buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link"
       },
@@ -165,8 +165,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Health",
         logo: "/logos/mindtales.webp",
         logoText: "MINDTALES",
-        title: "Mental Health Content Copy",
-        description: "Sensitive, engaging content copy for mental health awareness. Writing that educates, builds trust, and encourages action in both Arabic and English.",
+        title: "Mental Health Content That Destigmatizes",
+        description: "Educational content that builds trust while encouraging action. Writing that makes mental health conversations feel normal and seeking help feel necessary, not shameful.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
       },
@@ -174,8 +174,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Various Industries",
         logo: "",
         logoText: "MULTI-INDUSTRY",
-        title: "Specialized Industry Copy",
-        description: "Targeted content copy across multiple industries. Each piece tailored to specific audience pain points and market requirements.",
+        title: "Industry-Specific Copy That Resonates",
+        description: "Targeted content copy tailored to specific audience pain points. Each piece crafted to make the target buyer think 'This person really understands my industry.'",
         buttonColor: "Orange",
         link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link"
       },
@@ -183,15 +183,15 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Health",
         logo: "",
         logoText: "REHABS CLUB",
-        title: "Healthcare Content Strategy",
-        description: "Educational content copy for rehabilitation services. Writing that positions expertise and builds trust with patients seeking treatment.",
+        title: "Healthcare Content That Builds Authority",
+        description: "Educational content that positions rehabilitation expertise while building trust. Writing that makes patients feel confident in choosing the right treatment path.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing"
       }
     ]
   };
 
-  const serviceTypes = ["ALL", "Website Copy", "Email Copy", "Sales Copy", "Brand Messaging", "Content Copy"];
+  const serviceTypes = ["ALL", "Homepage Copy", "Email Copy That Converts", "Sales Copy That Closes", "Brand Messaging", "Content That Converts"];
 
   // Check scroll position and update arrow visibility
   const checkScrollPosition = () => {
@@ -275,17 +275,17 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           {/* Page Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-50 rounded-full px-4 py-2 mb-4">
-              <span className={styles.flechaRatingText}>Copy Portfolio</span>
+              <span className={styles.flechaRatingText}>Copy That Converts</span>
               <span className="text-gray-400 mx-2">•</span>
-              <span className={styles.flechaProjectsText}>{getTotalProjectCount()}+ Copy Projects</span>
+              <span className={styles.flechaProjectsText}>{getTotalProjectCount()}+ Conversion Projects</span>
             </div>
             <h1 className={styles.flechaSectionHeading + " mb-6"}>
-              {activeTab === "ALL" ? "Copy That Converts Portfolio" : activeTab}
+              {activeTab === "ALL" ? "Copy That Stops Bounces & Drives Conversions" : activeTab}
             </h1>
             <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12"}>
               {activeTab === "ALL" 
-                ? "Complete collection of copywriting projects that turn confused visitors into committed customers. Each piece represents strategic thinking that makes the right buyer say 'This is exactly what I need.'"
-                : `Explore ${activeTab.toLowerCase()} projects that transformed messaging from confusing to crystal clear, driving measurable conversions for GCC companies.`
+                ? "Complete collection of copywriting that transforms confused visitors into committed customers. Each piece makes the right buyer think 'Finally, someone who gets my problem' and converts immediately."
+                : `${activeTab} projects that transformed messaging from confusing to crystal clear, making prospects eager to convert instead of quick to bounce.`
               }
             </p>
 
@@ -391,7 +391,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
                         disabled={project.link === "#"}
                       >
-                        {project.link !== "#" ? "View Copy Samples" : "Coming Soon"}
+                        {project.link !== "#" ? "View Full Work" : "Coming Soon"}
                       </button>
                     </div>
                   </div>
@@ -406,7 +406,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
               <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className={styles.flechaVerificationText + " mr-3"}>All copy samples verified and results-driven</span>
+              <span className={styles.flechaVerificationText + " mr-3"}>All copy proven to convert confused visitors into committed customers</span>
               <Link href="/v/copywriting/homepage" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>
                 Back to Copywriting Home →
               </Link>

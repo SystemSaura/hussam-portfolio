@@ -1,47 +1,46 @@
-//src/app/v/copywriting/homepage/page.tsx
 "use client";
 
-import { useRef } from "react";
-import Header from "../../../../components/versions/copywriting/homePage/headerSection/header";
-import Hero from "../../../../components/versions/copywriting/homePage/heroSection/hero";
-import TrustedCompanies from "../../../../components/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
-import About from "../../../../components/versions/copywriting/homePage/aboutSection/about";
-import Services from "../../../../components/versions/copywriting/homePage/servicesSection/services";
-import CaseStudy from "../../../../components/versions/copywriting/homePage/caseStudySection/caseStudy";
-import Portfolio from "../../../../components/versions/copywriting/homePage/portfolioSection/portfolio";
-import Testimonials from "../../../../components/versions/copywriting/homePage/testimonialsSection/testimonials";
-import CTA from "../../../../components/versions/copywriting/homePage/ctaSection/cta";
-import Footer from "../../../../components/versions/copywriting/homePage/footerSection/footer";
+import { useState } from "react";
+import PortfolioPage from "@/components/versions/copywriting/portfolioPage/portfolioPage";
 
-export default function CopywritingHome() {
-  const aboutRef = useRef<HTMLElement>(null);
-  const portfolioRef = useRef<HTMLElement>(null);
-  const servicesRef = useRef<HTMLElement>(null);
-  const caseStudyRef = useRef<HTMLElement>(null);
-
-  const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+export default function CopywritingPortfolioPage() {
+  const [currentView, setCurrentView] = useState("portfolio");
 
   const navigationHandlers = {
-    about: () => scrollToSection(aboutRef),
-    portfolio: () => scrollToSection(portfolioRef),
-    services: () => scrollToSection(servicesRef),
-    caseStudy: () => scrollToSection(caseStudyRef),
+    about: () => setCurrentView("about"),
+    portfolio: () => setCurrentView("portfolio"), 
+    services: () => setCurrentView("services"),
+    caseStudy: () => setCurrentView("caseStudy")
+  };
+
+  const handleNavigateToHome = () => {
+    window.location.href = "/v/copywriting/homepage";
+  };
+
+  const handleNavigateToSection = (section: string) => {
+    switch(section) {
+      case "about":
+        window.location.href = "/v/copywriting/homepage#about";
+        break;
+      case "services": 
+        window.location.href = "/v/copywriting/homepage#services";
+        break;
+      case "caseStudy":
+        window.location.href = "/v/copywriting/shiftat";
+        break;
+      default:
+        setCurrentView(section);
+    }
+  };
+
+  const updatedNavigationHandlers = {
+    about: () => handleNavigateToSection("about"),
+    portfolio: () => setCurrentView("portfolio"),
+    services: () => handleNavigateToSection("services"), 
+    caseStudy: () => handleNavigateToSection("caseStudy")
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header onNavigate={navigationHandlers} />
-      <Hero onNavigate={navigationHandlers} />
-      <TrustedCompanies />
-      <About ref={aboutRef} />
-      <Services ref={servicesRef} />
-      <CaseStudy ref={caseStudyRef} />
-      <Portfolio ref={portfolioRef} />
-      <Testimonials />
-      <CTA />
-      <Footer />
-    </div>
+    <PortfolioPage onNavigate={updatedNavigationHandlers} />
   );
 }
