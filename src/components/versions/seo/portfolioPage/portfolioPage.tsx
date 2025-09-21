@@ -24,80 +24,100 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   const [showRightArrow, setShowRightArrow] = useState(false);
   const tabContainerRef = useRef<HTMLDivElement>(null);
 
-  // Organized portfolio data with Rehab Club moved to end
+  // SEO-focused portfolio data
   const portfolioData = {
-    "Content Marketing": [
+    "SEO Content Strategy": [
       {
         category: "HR Technology",
         logo: "/logos/shiftat.webp",
         logoText: "SHIFTAT",
-        title: "Professional Blog Content",
-        description: "Created engaging blog content strategy for Shiftat's AI recruitment platform, focusing on industry insights and thought leadership.",
+        title: "AI Recruitment SEO Content Hub",
+        description: "Developed comprehensive SEO content strategy targeting recruitment industry keywords, resulting in 15+ page 1 rankings and 200% organic traffic growth through strategic keyword research and content optimization.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
       {
-        category: "Cultural",
-        logo: "",
-        logoText: "CULTURAL ARTICLES",
-        title: "70 Analytical Cultural Articles",
-        description: "Developed extensive analytical content covering cultural topics, trends, and insights for diverse audiences.",
+        category: "Government Research",
+        logo: "/logos/kapsarc.webp",
+        logoText: "KAPSARC",
+        title: "Energy Policy SEO Content Hub",
+        description: "Optimized research portal content for energy policy keywords, improving search visibility and accessibility of insights for policy stakeholders through strategic SEO content creation.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
       },
       {
-        category: "Various",
+        category: "Cultural Content",
         logo: "",
-        logoText: "MULTI-INDUSTRY",
-        title: "7 Specialized Articles",
-        description: "Created targeted articles across multiple industries, each tailored to specific audience needs and market requirements.",
+        logoText: "CULTURAL SEO",
+        title: "70 SEO-Optimized Cultural Articles",
+        description: "Developed extensive SEO content covering cultural topics with targeted keyword research, optimized structure, and search-friendly formatting for maximum visibility and organic reach.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link"
       },
       {
         category: "Education",
         logo: "/logos/bonyan.webp",
         logoText: "BONYAN",
-        title: "Educational Blog Content",
-        description: "Developed engaging educational blog posts focusing on learning methodologies and student development strategies.",
+        title: "Educational SEO Blog Strategy",
+        description: "Created SEO-optimized educational content targeting learning methodology keywords, improving search visibility for educational resources and student development content.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
       },
       {
-        category: "Health",
+        category: "Mental Health",
         logo: "/logos/mindtales.webp",
         logoText: "MINDTALES",
-        title: "Mental Health Content",
-        description: "Created comprehensive mental health blog content in both Arabic and English, focusing on awareness and wellness.",
+        title: "Mental Health SEO Content Hub",
+        description: "Developed bilingual SEO content strategy for mental health topics, targeting wellness and mental health keywords in both Arabic and English for maximum search reach.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
+      },
+      {
+        category: "Various Industries",
+        logo: "",
+        logoText: "MULTI-INDUSTRY",
+        title: "Industry-Specific SEO Content",
+        description: "Created targeted SEO articles across multiple industries, each optimized for specific niche keywords and search behaviors unique to different market segments.",
+        buttonColor: "Pink",
+        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link"
+      }
+    ],
+    "Technical SEO & Website Content": [
+      {
+        category: "Government Research",
+        logo: "/logos/kapsarc.webp",
+        logoText: "KAPSARC",
+        title: "Research Portal SEO Optimization",
+        description: "Comprehensive website content strategy with SEO optimization for research platform, improving search engine visibility and user accessibility of energy policy insights.",
+        buttonColor: "Green",
+        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
       },
       {
         category: "Healthcare",
         logo: "/logos/alnahdi.webp",
         logoText: "AL NAHDI",
-        title: "Healthcare Newsletter Strategy",
-        description: "Designed and wrote engaging newsletter campaigns focusing on health tips and product promotions for leading pharmacy chain.",
+        title: "Healthcare SEO Content Optimization",
+        description: "Optimized newsletter and website content for healthcare keywords, improving search visibility for pharmacy services and health-related search queries.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
       },
       {
-        category: "Health",
-        logo: "",
-        logoText: "REHABS CLUB",
-        title: "Healthcare Blog Content",
-        description: "Created comprehensive blog content strategy for rehabilitation services, focusing on patient education and treatment insights.",
+        category: "Education",
+        logo: "/logos/maarif.webp",
+        logoText: "MAARIF SCHOOLS",
+        title: "Educational Website SEO Content",
+        description: "Optimized educational website content in both English and Arabic for international school SEO, targeting parent and student search queries.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing"
       }
     ],
-    "Social Media Marketing": [
+    "Keyword Research & Content Planning": [
       {
         category: "HR Technology",
         logo: "/logos/shiftat.webp",
         logoText: "SHIFTAT",
-        title: "AI Recruitment Platform",
-        description: "Managed comprehensive social media strategy across LinkedIn and X platforms, building thought leadership in AI recruitment.",
+        title: "Recruitment Industry Keyword Strategy",
+        description: "Comprehensive keyword research and content planning for AI recruitment platform, identifying high-value search terms and content opportunities for organic growth.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
@@ -105,178 +125,46 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Logistics",
         logo: "/logos/abudawood.webp",
         logoText: "ABUDAWOOD",
-        title: "Logistics Social Strategy",
-        description: "Developed professional LinkedIn and industry content strategy for GCC's leading logistics provider.",
+        title: "B2B Logistics SEO Strategy",
+        description: "Developed keyword research and SEO content strategy for logistics industry, targeting B2B search terms and supply chain keywords for improved visibility.",
         buttonColor: "Orange",
         link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true"
       },
       {
-        category: "Education",
-        logo: "/logos/downehouse.webp",
-        logoText: "DOWNE HOUSE",
-        title: "Educational Institution",
-        description: "Created engaging social media content for prestigious educational institution, focusing on academic excellence and student life.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/14HO-MTvpGGteiaJG7o3vBMDiIQecnoYM?usp=sharing"
-      },
-      {
-        category: "Arts",
-        logo: "/logos/jaxdistrict.webp",
-        logoText: "JAX DISTRICT",
-        title: "Arts & Culture Platform",
-        description: "Developed creative social media campaigns showcasing artistic talent and cultural events in the local community.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1TXrFtUlfxUvZosRY-WTqDlzqF_HVJimE?usp=sharing"
-      },
-      {
-        category: "Recycling",
-        logo: "/logos/reviva.webp",
-        logoText: "REVIVA",
-        title: "Sustainability Campaign",
-        description: "Created impactful social media content promoting environmental awareness and sustainable recycling practices.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link"
-      },
-      {
-        category: "Tourism",
-        logo: "/logos/syahya.webp",
-        logoText: "SYAHYA",
-        title: "Tourism Promotion",
-        description: "Developed engaging travel and tourism content highlighting destinations and cultural experiences.",
-        buttonColor: "Teal",
-        link: "#"
-      },
-      {
-        category: "Transport",
-        logo: "/logos/makkahbus.webp",
-        logoText: "MAKKAH BUS",
-        title: "Public Transportation Campaign",
-        description: "Created comprehensive social media strategy for Makkah's public transportation system, focusing on community engagement and service awareness.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
-      }
-    ],
-    "Brand Strategy": [
-      {
         category: "Real Estate",
         logo: "/logos/empirerealestate.webp",
         logoText: "EMPIRE REAL ESTATE",
-        title: "Luxury Property Brand",
-        description: "Developed comprehensive brand profile and positioning strategy for luxury property portfolio in Qatar.",
+        title: "Luxury Property SEO Content",
+        description: "SEO-optimized brand content and keyword strategy for luxury real estate market in Qatar, targeting high-value property search terms.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
-      },
-      {
-        category: "Logistics",
-        logo: "/logos/saeq.webp",
-        logoText: "SAEQ",
-        title: "Logistics Brand Positioning",
-        description: "Crafted comprehensive brand profile and market positioning strategy for expansion across GCC markets.",
-        buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
-      },
-      {
-        category: "Consultancy",
-        logo: "",
-        logoText: "AL MOTAFARAD",
-        title: "Consultancy Brand Profile",
-        description: "Created professional brand identity and positioning for management consultancy services in both Arabic and English.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
-      },
-      {
-        category: "Arts",
-        logo: "/logos/alhanoufalhamdan.webp",
-        logoText: "ALHANOUF ALHAMDAN",
-        title: "Personal Brand Development",
-        description: "Developed comprehensive personal brand strategy for arts professional, including portfolio and market positioning.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing"
-      },
-      {
-        category: "Real Estate",
-        logo: "",
-        logoText: "GOODWILL",
-        title: "Real Estate Brand Identity",
-        description: "Created brand profile and market positioning for real estate services in both Arabic and English markets.",
-        buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1ymhNGtgbzt8yK5iu0Rpq2BnAJMYkbmJ-?usp=drive_link"
       }
     ],
-    "Technical Writing": [
+    "SEO Copywriting & Content Optimization": [
       {
         category: "Security",
         logo: "",
         logoText: "FIELDBIO",
-        title: "Security Case Study",
-        description: "Developed comprehensive case study showcasing security solutions and implementation strategies for enterprise clients.",
+        title: "Security Solutions SEO Case Study",
+        description: "SEO-optimized case study content targeting enterprise security keywords and showcasing solutions for improved search visibility in B2B security market.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1aAw4aTUWEWpWn7HMs2ryEXenQ5uISfw4?usp=sharing"
       },
       {
-        category: "Award",
-        logo: "/logos/investmed.webp",
-        logoText: "RECOGNITION",
-        title: "Industry Recognition Report",
-        description: "Created detailed report documenting industry achievements and recognition for professional portfolio development.",
-        buttonColor: "Orange",
-        link: "#"
-      },
-      {
-        category: "Government Research",
-        logo: "/logos/kapsarc.webp",
-        logoText: "KAPSARC",
-        title: "Research Portal Content",
-        description: "Created comprehensive website content strategy for research platform, improving accessibility of energy policy insights.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
-      }
-    ],
-    "Design & Creative": [
-      {
-        category: "Education",
-        logo: "/logos/hayatmohamadia.webp",
-        logoText: "HAYAT MOHAMADIA",
-        title: "Educational Design Projects",
-        description: "Created comprehensive design solutions including competition presentations and visual content for educational initiatives.",
-        buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/1KLbVMaX4Z0jQ1KiDcaKEaszyTjZRHFcu?usp=sharing"
-      },
-      {
-        category: "Esthetics",
-        logo: "",
-        logoText: "MIST",
-        title: "Product Description Design",
-        description: "Developed compelling product descriptions and creative content for esthetics and beauty products in English and Arabic.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/12APGejnG0859hhYAujfV5T8aKB0jPKUw?usp=drive_link"
-      },
-      {
-        category: "Recycling",
-        logo: "/logos/reviva.webp",
-        logoText: "REVIVA",
-        title: "Video Script Creation",
-        description: "Created engaging video scripts for environmental and recycling awareness campaigns, focusing on sustainability messaging.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link"
-      }
-    ],
-    "Translation & Editing": [
-      {
         category: "Government",
         logo: "/logos/rcmc.webp",
         logoText: "RCMC",
-        title: "Government Content Editing",
-        description: "Provided professional editing services for government communications and public sector content development.",
+        title: "Government SEO Content Optimization",
+        description: "Optimized government communications content for search engines, improving public accessibility and search visibility of important information.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1EJ0ia1IIRMizi8ls4NyobYyZGLD_pPwf?usp=sharing"
       },
       {
-        category: "Marketing",
+        category: "Media & Entertainment",
         logo: "/logos/rotana.webp",
         logoText: "ROTANA",
-        title: "Marketing Content Editing",
-        description: "Edited and refined marketing content for leading media and entertainment company, ensuring brand consistency.",
+        title: "Entertainment Content SEO Optimization",
+        description: "SEO-optimized marketing content for leading media company, focusing on entertainment industry keywords and brand visibility improvement.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1gVWbXCdlC8H8CeUlRTN56hnWzX4Tb-v-?usp=drive_link"
       },
@@ -284,25 +172,74 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "Healthcare",
         logo: "/logos/ncmh.webp",
         logoText: "NCMH",
-        title: "Healthcare Content Editing",
-        description: "Provided specialized editing for healthcare communications and medical content development projects.",
-        buttonColor: "Blue",
+        title: "Healthcare SEO Content Optimization",
+        description: "Specialized SEO optimization for healthcare communications, targeting medical and patient-focused search terms for improved online visibility.",
+        buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/1emjBrN00Ai-a_E1cOwgE8KA72kYptv0t?usp=sharing"
+      }
+    ],
+    "Local SEO & Regional Content": [
+      {
+        category: "Logistics",
+        logo: "/logos/saeq.webp",
+        logoText: "SAEQ",
+        title: "GCC Market SEO Strategy",
+        description: "Comprehensive SEO content strategy for expansion across GCC markets, targeting regional logistics keywords and local search optimization.",
+        buttonColor: "Purple",
+        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
+      },
+      {
+        category: "Transport",
+        logo: "/logos/makkahbus.webp",
+        logoText: "MAKKAH BUS",
+        title: "Local Transport SEO Campaign",
+        description: "Local SEO content strategy for Makkah's public transportation, optimizing for local search queries and community-focused keywords.",
+        buttonColor: "Blue",
+        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
+      },
+      {
+        category: "Tourism",
+        logo: "/logos/syahya.webp",
+        logoText: "SYAHYA",
+        title: "Tourism Destination SEO Content",
+        description: "SEO-optimized travel and tourism content targeting destination-specific keywords and travel search behaviors for improved visibility.",
+        buttonColor: "Teal",
+        link: "#"
+      }
+    ],
+    "Multilingual SEO": [
+      {
+        category: "Health",
+        logo: "/logos/mindtales.webp",
+        logoText: "MINDTALES",
+        title: "Bilingual Mental Health SEO",
+        description: "Developed bilingual SEO strategy for mental health content, optimizing for both Arabic and English search terms to maximize regional reach.",
+        buttonColor: "Purple",
+        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
       },
       {
         category: "Education",
         logo: "/logos/maarif.webp",
         logoText: "MAARIF SCHOOLS",
-        title: "Educational Content",
-        description: "Edited comprehensive educational content in both English and Arabic for international school curriculum development.",
+        title: "Multilingual Education SEO",
+        description: "Bilingual SEO content optimization for international school targeting both Arabic and English educational search terms and parent queries.",
         buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing"
+      },
+      {
+        category: "Consultancy",
+        logo: "",
+        logoText: "AL MOTAFARAD",
+        title: "Bilingual Business SEO Content",
+        description: "SEO-optimized brand content in both Arabic and English for management consultancy, targeting bilingual business search terms.",
+        buttonColor: "Blue",
+        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
       }
     ]
   };
 
-  // Updated service types without Email Marketing
-  const serviceTypes = ["ALL", "Content Marketing", "Social Media Marketing", "Brand Strategy", "Technical Writing", "Design & Creative", "Translation & Editing"];
+  // Updated service types for SEO focus
+  const serviceTypes = ["ALL", "SEO Content Strategy", "Technical SEO & Website Content", "Keyword Research & Content Planning", "SEO Copywriting & Content Optimization", "Local SEO & Regional Content", "Multilingual SEO"];
 
   // Check scroll position and update arrow visibility
   const checkScrollPosition = () => {
@@ -386,17 +323,17 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           {/* Page Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-50 rounded-full px-4 py-2 mb-4">
-              <span className={styles.flechaRatingText}>Complete Portfolio</span>
+              <span className={styles.flechaRatingText}>Complete SEO Portfolio</span>
               <span className="text-gray-400 mx-2">•</span>
-              <span className={styles.flechaProjectsText}>{getTotalProjectCount()}+ Projects Delivered</span>
+              <span className={styles.flechaProjectsText}>{getTotalProjectCount()}+ SEO Projects Delivered</span>
             </div>
             <h1 className={styles.flechaSectionHeading + " mb-6"}>
-              {activeTab === "ALL" ? "Complete Portfolio Showcase" : activeTab}
+              {activeTab === "ALL" ? "Complete SEO Portfolio Showcase" : activeTab}
             </h1>
             <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12"}>
               {activeTab === "ALL" 
-                ? "Comprehensive collection of marketing projects delivered across diverse industries in the GCC region. Each project represents strategic thinking, creative execution, and measurable results."
-                : `Explore my ${activeTab.toLowerCase()} projects that delivered measurable results for GCC companies across different industries.`
+                ? "Comprehensive collection of SEO projects that delivered search visibility and organic traffic growth for GCC companies. Each project represents strategic keyword research, content optimization, and measurable search results."
+                : `Explore my ${activeTab.toLowerCase()} projects that delivered measurable SEO results for GCC companies across different industries.`
               }
             </p>
 
@@ -479,7 +416,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                       </div>
                       <div className={styles.portfolioHeaderMain}>
                         <h4 className={styles.portfolioServiceType}>{categoryName}</h4>
-                        <p className={styles.portfolioServiceDetail}>{project.category} Project</p>
+                        <p className={styles.portfolioServiceDetail}>{project.category} SEO Project</p>
                       </div>
                     </div>
                     
@@ -502,7 +439,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
                         disabled={project.link === "#"}
                       >
-                        {project.link !== "#" ? "View Work" : "Coming Soon"}
+                        {project.link !== "#" ? "View SEO Work" : "Coming Soon"}
                       </button>
                     </div>
                   </div>
@@ -517,7 +454,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
               <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className={styles.flechaVerificationText + " mr-3"}>All projects verified and documented</span>
+              <span className={styles.flechaVerificationText + " mr-3"}>All SEO projects verified and documented</span>
               <Link href="/" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>
                 Back to Home →
               </Link>

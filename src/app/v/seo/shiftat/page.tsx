@@ -1,35 +1,18 @@
 "use client";
 
-import { useState } from "react";
-import CaseStudyDetail from "@/components/versions/socialMedia/caseStudyPage/caseStudyPage";
+import CaseStudyDetail from "../../../../components/versions/seo/caseStudyPage/caseStudyPage";
 
-export default function SocialMediaShiftatCaseStudy() {
-  const [currentView, setCurrentView] = useState("caseStudy");
-
-  const handleNavigateToSection = (section: string) => {
-    switch(section) {
-      case "about":
-        window.location.href = "/v/social-media/h#about";
-        break;
-      case "portfolio":
-        window.location.href = "/v/social-media/portfolio";
-        break;
-      case "services": 
-        window.location.href = "/v/social-media/h#services";
-        break;
-      default:
-        setCurrentView(section);
-    }
-  };
-
+export default function ShiftatCaseStudy() {
   const navigationHandlers = {
-    about: () => handleNavigateToSection("about"),
-    portfolio: () => handleNavigateToSection("portfolio"),
-    services: () => handleNavigateToSection("services"),
-    caseStudy: () => setCurrentView("caseStudy")
+    about: () => window.location.href = '/#about',
+    portfolio: () => window.location.href = '/#portfolio', 
+    services: () => window.location.href = '/#services',
+    caseStudy: () => window.location.href = '/#caseStudy',
   };
 
   return (
-    <CaseStudyDetail onNavigate={navigationHandlers} />
+    <div className="min-h-screen bg-white">
+      <CaseStudyDetail onNavigate={navigationHandlers} />
+    </div>
   );
 }

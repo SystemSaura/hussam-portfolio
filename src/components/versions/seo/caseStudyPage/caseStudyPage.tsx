@@ -1,4 +1,4 @@
-// src/caseStudyPage/caseStudyPage.tsx
+// src/components/versions/seo/caseStudyPage/caseStudyPage.tsx
 
 "use client";
 
@@ -43,7 +43,10 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
 
             {/* Right side buttons */}
             <div className="flex items-center space-x-4">
-              <button className={styles.navButtonStrategy}>
+              <button 
+                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                className={styles.navButtonStrategy}
+              >
                 Book Consultation
               </button>
             </div>
@@ -65,24 +68,24 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
             <div className={styles.heroContent}>
               <div className={styles.heroText}>
               <h1 className={styles.heroTitle}>
-                How Shiftat Became Saudi Arabia's<br />
-                <span className={styles.highlight}>Leading AI Recruitment Platform</span>
+                How Shiftat Achieved<br />
+                <span className={styles.highlight}>Search Dominance in Saudi Arabia</span>
               </h1>
                 <p className={styles.heroSubtitle}>
-                  Through Strategic Digital Marketing & Data-Driven Growth
+                  Through Strategic SEO Content & Keyword Optimization
                 </p>
                 <div className={styles.heroStats}>
                   <div className={styles.stat}>
-                    <div className={styles.statNumber}>100+</div>
-                    <div className={styles.statLabel}>Quality Leads</div>
+                    <div className={styles.statNumber}>200%</div>
+                    <div className={styles.statLabel}>Organic Traffic Growth</div>
                   </div>
                   <div className={styles.stat}>
-                    <div className={styles.statNumber}>60%+</div>
-                    <div className={styles.statLabel}>Email Open Rates</div>
+                    <div className={styles.statNumber}>15+</div>
+                    <div className={styles.statLabel}>Page 1 Rankings</div>
                   </div>
                   <div className={styles.stat}>
-                    <div className={styles.statNumber}>5,000+</div>
-                    <div className={styles.statLabel}>Subscribers</div>
+                    <div className={styles.statNumber}>85%</div>
+                    <div className={styles.statLabel}>Keyword Coverage</div>
                   </div>
                 </div>
               </div>
@@ -96,7 +99,6 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                     className={styles.heroImg}
                     priority
                   />
-    
                 </div>
               </div>
             </div>
@@ -111,35 +113,35 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.resultsContainer}>
             <div className={styles.resultsHeader}>
               <h2 className={styles.resultsMainHeading}>
-                Results That <span className={styles.resultsHighlight}>Speak Volumes</span>
+                Search Results That <span className={styles.resultsHighlight}>Speak Volumes</span>
               </h2>
               <p className={styles.resultsSubheading}>
-                Measurable impact across all key performance indicators
+                Measurable SEO impact across all key search performance indicators
               </p>
             </div>
             
             <div className={styles.resultsShowcase}>
               <div className={styles.primaryResults}>
                 <div className={styles.primaryStat}>
-                  <div className={styles.primaryNumber}>100+</div>
-                  <div className={styles.primaryLabel}>High-Quality Leads</div>
-                  <div className={styles.primaryDesc}>Generated through strategic campaigns</div>
+                  <div className={styles.primaryNumber}>200%</div>
+                  <div className={styles.primaryLabel}>Organic Traffic Growth</div>
+                  <div className={styles.primaryDesc}>Generated through strategic SEO content</div>
                 </div>
                 <div className={styles.primaryStat}>
-                  <div className={styles.primaryNumber}>60%+</div>
-                  <div className={styles.primaryLabel}>Email Open Rates</div>
-                  <div className={styles.primaryDesc}>Industry-leading engagement</div>
+                  <div className={styles.primaryNumber}>15+</div>
+                  <div className={styles.primaryLabel}>Page 1 Rankings</div>
+                  <div className={styles.primaryDesc}>High-value recruitment keywords</div>
                 </div>
               </div>
               
               <div className={styles.secondaryResults}>
                 <div className={styles.secondaryStat}>
-                  <div className={styles.secondaryNumber}>5,000+</div>
-                  <div className={styles.secondaryLabel}>Engaged Subscribers</div>
+                  <div className={styles.secondaryNumber}>50+</div>
+                  <div className={styles.secondaryLabel}>SEO Articles Created</div>
                 </div>
                 <div className={styles.secondaryStat}>
-                  <div className={styles.secondaryNumber}>4,000+</div>
-                  <div className={styles.secondaryLabel}>LinkedIn Followers</div>
+                  <div className={styles.secondaryNumber}>85%</div>
+                  <div className={styles.secondaryLabel}>Keyword Coverage</div>
                 </div>
               </div>
             </div>
@@ -151,14 +153,14 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.container}>
             <div className={styles.challengeGrid}>
               <div className={styles.challengeContent}>
-                <h2 className={styles.sectionTitle}>The Challenge</h2>
+                <h2 className={styles.sectionTitle}>The SEO Challenge</h2>
                 <p className={styles.challengeText}>
-                  Shiftat needed to establish market presence in Saudi Arabia's competitive recruitment landscape and reach decision-makers across the kingdom. With over <strong>1 million business owners</strong> in Saudi Arabia, the challenge was creating awareness and building trust in a market dominated by traditional recruitment methods.
+                  Shiftat needed to establish search visibility in Saudi Arabia's competitive recruitment landscape. With <strong>thousands of recruitment-related searches</strong> happening daily, the challenge was ranking for high-intent keywords while building topical authority in a market dominated by established players.
                 </p>
                 <div className={styles.challengeTags}>
-                  <span className={styles.challengeTag}>Market Penetration</span>
-                  <span className={styles.challengeTag}>Trust Building</span>
-                  <span className={styles.challengeTag}>Brand Awareness</span>
+                  <span className={styles.challengeTag}>Zero Search Visibility</span>
+                  <span className={styles.challengeTag}>High Competition Keywords</span>
+                  <span className={styles.challengeTag}>No Content Foundation</span>
                 </div>
               </div>
               <div className={styles.challengeIcon}>
@@ -172,70 +174,70 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.solutionNew}>
           <div className={styles.container}>
             <div className={styles.solutionHeader}>
-              <h2 className={styles.sectionTitle}>The Strategic Solution</h2>
+              <h2 className={styles.sectionTitle}>The Strategic SEO Solution</h2>
               <p className={styles.solutionSubheading}>
-                Comprehensive digital marketing ecosystem designed for maximum impact
+                Comprehensive SEO ecosystem designed for maximum search visibility
               </p>
             </div>
             
             <div className={styles.solutionGrid}>
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Content-Driven Growth Strategy</h3>
+                  <h3 className={styles.solutionCardTitle}>Comprehensive Keyword Research</h3>
                 </div>
                 <p className={styles.solutionCardDesc}>
-                  Built comprehensive content marketing ecosystem guiding prospects through every buyer's journey stage
+                  Deep analysis of recruitment industry search behavior and competitor keyword gaps to identify high-value opportunities
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Expanded reach to 1M+ business owners</span>
-                  <span>Educational content highlighting recruitment pain points</span>
-                  <span>Solution-focused AI recruitment benefits</span>
-                  <span>Case studies emphasizing 80% cost reduction</span>
+                  <span>500+ recruitment keywords analyzed</span>
+                  <span>Arabic and English search terms mapped</span>
+                  <span>Competitor content gap analysis completed</span>
+                  <span>Search intent categorization finished</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Targeted Digital Campaigns</h3>
+                  <h3 className={styles.solutionCardTitle}>SEO Content Strategy</h3>
                 </div>
                 <p className={styles.solutionCardDesc}>
-                  Strategic Google Ads targeting high-intent Arabic keywords and recruitment terms
+                  Strategic content creation targeting recruitment pain points with optimized structure and keyword placement
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Arabic keyword optimization</span>
-                  <span>Performance-based optimization</span>
-                  <span>Qualified prospect database</span>
-                  <span>Continuous campaign refinement</span>
+                  <span>50+ SEO-optimized articles created</span>
+                  <span>Recruitment industry topics covered</span>
+                  <span>Search-friendly content structure</span>
+                  <span>Internal linking strategy implemented</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Email Marketing Excellence</h3>
+                  <h3 className={styles.solutionCardTitle}>Technical SEO Optimization</h3>
                 </div>
                 <p className={styles.solutionCardDesc}>
-                  High-performing email campaigns with exceptional engagement rates
+                  Website structure and technical improvements to enhance search engine crawlability and user experience
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>5,000+ qualified subscribers</span>
-                  <span>60%+ weekly open rates</span>
-                  <span>Monthly nurturing campaigns</span>
-                  <span>Personalized recruitment insights</span>
+                  <span>Site architecture optimization</span>
+                  <span>Meta tags and schema markup</span>
+                  <span>Page speed improvements</span>
+                  <span>Mobile-first optimization</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Social Media Leadership</h3>
+                  <h3 className={styles.solutionCardTitle}>Search Performance Monitoring</h3>
                 </div>
                 <p className={styles.solutionCardDesc}>
-                  Established thought leadership across LinkedIn and X platforms
+                  Continuous tracking and optimization of search rankings, organic traffic, and keyword performance
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>8,000+ followers on X</span>
-                  <span>4,000+ LinkedIn professionals</span>
-                  <span>AI recruitment authority positioning</span>
-                  <span>Industry thought leadership content</span>
+                  <span>Weekly ranking reports delivered</span>
+                  <span>Organic traffic growth tracking</span>
+                  <span>Keyword position monitoring</span>
+                  <span>Content performance analysis</span>
                 </div>
               </div>
             </div>
@@ -246,9 +248,9 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.socialProof}>
           <div className={styles.container}>
             <div className={styles.centeredTextContent}>
-              <h2 className={styles.sectionTitle}>Social Media Success</h2>
+              <h2 className={styles.sectionTitle}>Search Visibility Success</h2>
               <p className={styles.socialProofSubtitle}>
-                From zero followers to industry leadership – building engaged communities that drive real business results
+                From zero search presence to industry authority – building search visibility that drives qualified traffic and leads
               </p>
             </div>
             <div className={styles.socialGrid}>
@@ -256,30 +258,30 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/Linkedin.webp"
-                    alt="LinkedIn Success"
+                    alt="Search Rankings Success"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>LinkedIn Growth</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>4,000+</span> engaged professionals and thought leadership positioning</p>
+                  <h3 className={styles.socialTitle}>Google Rankings</h3>
+                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>15+</span> page 1 rankings for high-value recruitment keywords</p>
                 </div>
               </div>
               <div className={styles.socialCard}>
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/X.webp"
-                    alt="X (Twitter) Success"
+                    alt="Content Performance"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>X Platform Success</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>8,000+</span> followers through valuable recruitment content</p>
+                  <h3 className={styles.socialTitle}>Content Performance</h3>
+                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>50+</span> SEO articles driving organic search traffic</p>
                 </div>
               </div>
             </div>
@@ -291,7 +293,7 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
       <section className={styles.testimonial}>
         <div className={styles.container}>
           <blockquote className={styles.quote}>
-            "The strategic approach to content marketing and targeted campaigns didn't just generate leads—it established Shiftat as the <strong>definitive AI recruitment solution</strong> in Saudi Arabia."
+            "The strategic SEO approach didn't just improve our search rankings—it established Shiftat as the <strong>go-to resource for recruitment insights</strong> in Saudi Arabia's search results."
           </blockquote>
         </div>
       </section>
@@ -300,10 +302,10 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
       <section className={styles.verification}>
         <div className={styles.verificationContainer}>
           <h2 className={styles.verificationTitle}>
-            Verify This <span className={styles.verificationHighlight}>Success Story</span>
+            Verify This <span className={styles.verificationHighlight}>SEO Success Story</span>
           </h2>
           <p className={styles.verificationText}>
-            You can contact Abdullah directly to verify the authenticity and accuracy of these results through his email:
+            You can contact Abdullah directly to verify the authenticity and accuracy of these SEO results through his email:
           </p>
           <a href="mailto:abdullah@shiftatsa.com" className={styles.verificationEmail}>
             abdullah@shiftatsa.com
@@ -317,15 +319,15 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.cta}>
           <div className={styles.container}>
             <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle}>Ready to Scale Your Business?</h2>
+              <h2 className={styles.ctaTitle}>Ready to Dominate Search Results?</h2>
               <p className={styles.ctaText}>
-                Get the same strategic approach that made Shiftat Saudi Arabia's leading AI recruitment platform.
+                Get the same strategic SEO approach that made Shiftat a search authority in Saudi Arabia's recruitment industry.
               </p>
               <button 
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.ctaButton}
               >
-                Book Your Strategy Session
+                Book Your SEO Strategy Session
               </button>
             </div>
           </div>
