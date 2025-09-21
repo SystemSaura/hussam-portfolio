@@ -31,7 +31,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           {/* Left: Problem section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              Tired of guessing<span className={styles.deconstructedQ}>
+              Your copy isn't working <span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
