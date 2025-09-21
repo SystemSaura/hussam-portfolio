@@ -21,28 +21,28 @@ const About = forwardRef<HTMLElement>((_, ref) => {
           </div>
         </div>
         <h2 className={styles.flechaHeroTitleAbout + " text-white mb-6 sm:mb-8 leading-tight text-center"}>
-          Hi. I'm Hussam Baaka. I make every marketing Riyal / Dirham work harder for your growth.
+          Hi. I'm Hussam Baaka. I turn your content expertise into search visibility that drives business.
         </h2>
         <div className="mb-6 sm:mb-8 text-center">
-          <span className={styles.text11px + " text-cyan-400 font-medium"}>[ A note to growth-focused leaders ]</span>
+          <span className={styles.text11px + " text-cyan-400 font-medium"}>[ A note to content-driven businesses ]</span>
         </div>
 
         <div className={styles.workSansBodyWhite + " space-y-4 sm:space-y-6 leading-relaxed max-w-3xl mx-auto text-center"}>
-          <p>Your marketing team isn't lazy. Your strategy is just scattered.</p>
+          <p>Your content isn't the problem. Your search strategy is scattered.</p>
 
-          <p>I've seen too many GCC companies burn through budgets on campaigns that don't convert, content that doesn't engage, and "brand awareness" that doesn't drive business.</p>
+          <p>I've seen too many GCC businesses create brilliant content that nobody finds, optimizing for keywords that don't convert, and wondering why their organic traffic flatlines.</p>
 
-          <p>The problem isn't your people or your market. It's alignment.</p>
+          <p>The problem isn't your expertise or your market. It's search alignment.</p>
 
-          <p>When your messaging, channels, and metrics all point toward the same business outcome, growth becomes predictable instead of accidental.</p>
+          <p>When your content strategy, keyword targeting, and user intent all point toward the same business outcome, search visibility becomes predictable instead of accidental.</p>
 
-          <p>I don't just audit what's broken. I rebuild marketing systems that turn investment into measurable pipeline growth.</p>
+          <p>I don't just audit what's broken. I rebuild SEO systems that turn your content into a lead generation engine.</p>
 
-          <p>My approach combines deep GCC market knowledge with growth marketing frameworks that have scaled businesses from startup to market leader.</p>
+          <p>My approach combines deep GCC search behavior insights with SEO frameworks that have grown organic traffic from zero to market leadership.</p>
 
-          <p>At the end of the day, marketing should do one thing:</p>
+          <p>At the end of the day, SEO should do one thing:</p>
 
-          <p className="text-cyan-400 font-medium">Generate predictable, scalable business results you can bank on.</p>
+          <p className="text-cyan-400 font-medium">Connect your expertise with people actively searching for solutions.</p>
         </div>
 
         <div className="mt-8 sm:mt-10 lg:mt-12 text-center">

@@ -94,8 +94,8 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
           {/* Static centered heading for mobile */}
           <div className={styles.mobileStaticHeading}>
             <h2 className={styles.servicesMainHeading + " leading-tight"}>
-              3 ways I help you<br />
-              <span className={styles.servicesMainHeadingAccent}>scale faster.</span>
+              3 ways I boost your<br />
+              <span className={styles.servicesMainHeadingAccent}>search visibility.</span>
             </h2>
           </div>
 
@@ -103,9 +103,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
           <div className="space-y-12">
             <div>
               <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Marketing Strategy and Systems Audit Done For You</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>SEO Content Strategy and Keyword Research Done For You</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
+                Deep-dive analysis of your search landscape, competitor gaps, and content opportunities. Get a complete roadmap to dominate your niche search terms.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -117,9 +117,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div>
               <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Growth Marketing Implementation and Monitoring</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>SEO-Optimized Content Creation and Optimization</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
+                Hands-on creation and optimization of content that ranks and converts. Turn your expertise into search-friendly articles, pages, and resources that drive qualified traffic.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -131,9 +131,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div ref={thirdServiceRef}>
               <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Marketing Team Training and Optimization</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>Technical SEO and Performance Optimization</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.
+                Transform your website's technical foundation with SEO best practices, site speed optimization, and search engine friendly architecture that supports long-term growth.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -160,8 +160,8 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
               style={stickyStyles}
             >
               <h2 className={styles.servicesMainHeading + " leading-tight"}>
-                3 ways I help you<br />
-                <span className={styles.servicesMainHeadingAccent}>scale faster.</span>
+                3 ways I boost your<br />
+                <span className={styles.servicesMainHeadingAccent}>search visibility.</span>
               </h2>
             </div>
           </div>
@@ -169,9 +169,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
           <div className="space-y-12">
             <div>
               <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Marketing Strategy and Systems Audit Done For You</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>SEO Content Strategy and Keyword Research Done For You</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
+                Deep-dive analysis of your search landscape, competitor gaps, and content opportunities. Get a complete roadmap to dominate your niche search terms.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -183,9 +183,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div>
               <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Growth Marketing Implementation and Monitoring</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>SEO-Optimized Content Creation and Optimization</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Hands-on execution of data-driven campaigns, conversion optimization, and marketing automation that turns leads into customers at scale.
+                Hands-on creation and optimization of content that ranks and converts. Turn your expertise into search-friendly articles, pages, and resources that drive qualified traffic.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -197,9 +197,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div ref={thirdServiceRef}>
               <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Marketing Team Training and Optimization</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>Technical SEO and Performance Optimization</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Transform your internal marketing team with frameworks, processes, and skills that deliver consistent results without constant oversight.
+                Transform your website's technical foundation with SEO best practices, site speed optimization, and search engine friendly architecture that supports long-term growth.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}

@@ -21,8 +21,8 @@ export default function Hero({ onNavigate }: HeroProps) {
         {/* Main Hero Title - Both lines left-aligned */}
         <div className="mb-24">
           <h1 className={styles.flechaHeroTitle}>
-            Turn marketing spend into<br />
-            <span className={styles.textCustomBlue}>measurable growth.</span>
+            Turn SEO efforts into<br />
+            <span className={styles.textCustomBlue}>traffic that converts.</span>
           </h1>
         </div>
 
@@ -31,13 +31,13 @@ export default function Hero({ onNavigate }: HeroProps) {
           {/* Left: Want to join us section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              Tired of guessing<span className={styles.deconstructedQ}>
+              Tired of invisible content<span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
             </h2>
             <p className={styles.homeHeaderText1}>
-              Your marketing budget deserves better than "spray and pray." Get strategies that turn GCC market insights into predictable pipeline growth.
+              Your content deserves better than page 2. Get SEO strategies that turn your expertise into search visibility and qualified leads in the GCC market.
             </p>
           </div>
 
