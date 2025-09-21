@@ -666,6 +666,7 @@
   width: 100%;
   height: clamp(200px, 28vw, 280px);
   object-fit: cover;
+  object-position: center left; /* Shows more of the right side */
   transition: transform 0.3s ease;
 }
 

@@ -257,8 +257,8 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
               <div className={styles.socialCard}>
                 <div className={styles.socialImageContainer}>
                   <Image
-                    src="/backgrounds/Linkedin.webp"
-                    alt="Search Rankings Success"
+                    src="/seophotos/googleshiftat.webp"
+                    alt="Google Search Rankings Success"
                     width={400}
                     height={300}
                     className={styles.socialImage}
@@ -272,8 +272,8 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
               <div className={styles.socialCard}>
                 <div className={styles.socialImageContainer}>
                   <Image
-                    src="/backgrounds/X.webp"
-                    alt="Content Performance"
+                    src="/seophotos/blogshiftat.webp"
+                    alt="SEO Content Performance"
                     width={400}
                     height={300}
                     className={styles.socialImage}
