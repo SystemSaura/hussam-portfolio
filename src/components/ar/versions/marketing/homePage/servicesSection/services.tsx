@@ -54,16 +54,18 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
         setIsSticky(shouldBeSticky);
         
         if (shouldBeSticky) {
-          const containerLeft = containerRect.left;
+          // RTL: Position from the right side
+          const containerRight = window.innerWidth - containerRect.right;
           const gridGap = 64;
           const leftColumnWidth = (containerRect.width - gridGap) / 2;
           
           setStickyStyles({
             position: 'fixed',
             top: '120px',
-            left: `${containerLeft}px`,
+            right: `${containerRight}px`,
             width: `${leftColumnWidth}px`,
             zIndex: 10,
+            textAlign: 'right',
           });
         } else {
           setStickyStyles({});
@@ -101,7 +103,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
           {/* Services content for mobile */}
           <div className="space-y-12">
-            <div>
+            <div className={styles.serviceItem}>
               <div className={styles.servicesNumber + " mb-4"}>01</div>
               <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>التسويق الرقمي المتكامل</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
@@ -115,7 +117,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
               </button>
             </div>
 
-            <div>
+            <div className={styles.serviceItem}>
               <div className={styles.servicesNumber + " mb-4"}>02</div>
               <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحسين محركات البحث والمحتوى</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
@@ -129,7 +131,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
               </button>
             </div>
 
-            <div ref={thirdServiceRef}>
+            <div ref={thirdServiceRef} className={styles.serviceItem}>
               <div className={styles.servicesNumber + " mb-4"}>03</div>
               <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>إدارة وسائل التواصل الاجتماعي</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
@@ -148,65 +150,71 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
     );
   }
 
-  // Desktop layout (unchanged structure, translated content)
+  // Desktop layout - RTL optimized
   return (
     <section ref={ref} className={styles.bgCustomBlue + " py-20 text-white"}>
       <div ref={servicesContainerRef} className={styles.servicesContainer}>
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          <div className={styles.servicesHeadingWrapper}>
-            <div 
-              ref={leftHeadingRef}
-              className={`${styles.servicesHeadingContent} ${isSticky ? styles.isStickyActive : ''} ${shouldFadeOut ? styles.servicesHeadingFade : ''}`}
-              style={stickyStyles}
-            >
-              <h2 className={styles.servicesMainHeading + " leading-tight arabic-heading"}>
-                ٣ طرق لتطوير<br />
-                <span className={styles.servicesMainHeadingAccent}>استراتيجيتك التسويقية</span>
-              </h2>
+        <div className={styles.servicesGridContainer}>
+          {/* Right column for RTL - Heading */}
+          <div className={styles.servicesLeftColumn}>
+            <div className={styles.servicesHeadingWrapper}>
+              <div 
+                ref={leftHeadingRef}
+                className={`${styles.servicesHeadingContent} ${isSticky ? styles.isStickyActive : ''} ${shouldFadeOut ? styles.servicesHeadingFade : ''}`}
+                style={stickyStyles}
+              >
+                <h2 className={styles.servicesMainHeading + " leading-tight arabic-heading"}>
+                  ٣ طرق لتطوير<br />
+                  <span className={styles.servicesMainHeadingAccent}>استراتيجيتك التسويقية</span>
+                </h2>
+              </div>
             </div>
           </div>
 
-          <div className="space-y-12">
-            <div>
-              <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>التسويق الرقمي المتكامل</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
-                استراتيجيات تسويق رقمي شاملة تجمع بين تحسين محركات البحث، إعلانات جوجل، ووسائل التواصل الاجتماعي. نضمن وصول رسالتك للجمهور المناسب في الوقت المناسب.
-              </p>
-              <button
-                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.servicesButton}
-              >
-                احجز استشارة
-              </button>
-            </div>
+          {/* Left column for RTL - Services */}
+          <div className={styles.servicesRightColumn}>
+            <div className="space-y-12">
+              <div className={styles.serviceItem}>
+                <div className={styles.servicesNumber + " mb-4"}>01</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>التسويق الرقمي المتكامل</h3>
+                <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                  استراتيجيات تسويق رقمي شاملة تجمع بين تحسين محركات البحث، إعلانات جوجل، ووسائل التواصل الاجتماعي. نضمن وصول رسالتك للجمهور المناسب في الوقت المناسب.
+                </p>
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className={styles.servicesButton}
+                >
+                  احجز استشارة
+                </button>
+              </div>
 
-            <div>
-              <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحسين محركات البحث والمحتوى</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
-                تحسين موقعك ليتصدر نتائج البحث في جوجل، مع إنشاء محتوى قيم يجذب عملاءك المستهدفين ويبني سمعة علامتك التجارية كمرجع موثوق في مجالك.
-              </p>
-              <button
-                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.servicesButton}
-              >
-                احجز استشارة
-              </button>
-            </div>
+              <div className={styles.serviceItem}>
+                <div className={styles.servicesNumber + " mb-4"}>02</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحسين محركات البحث والمحتوى</h3>
+                <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                  تحسين موقعك ليتصدر نتائج البحث في جوجل، مع إنشاء محتوى قيم يجذب عملاءك المستهدفين ويبني سمعة علامتك التجارية كمرجع موثوق في مجالك.
+                </p>
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className={styles.servicesButton}
+                >
+                  احجز استشارة
+                </button>
+              </div>
 
-            <div ref={thirdServiceRef}>
-              <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>إدارة وسائل التواصل الاجتماعي</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
-                بناء مجتمع قوي حول علامتك التجارية على منصات التواصل الاجتماعي، مع محتوى مخصص للثقافة المحلية يحفز التفاعل ويحول المتابعين إلى عملاء.
-              </p>
-              <button
-                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.servicesButton}
-              >
-                احجز استشارة
-              </button>
+              <div ref={thirdServiceRef} className={styles.serviceItem}>
+                <div className={styles.servicesNumber + " mb-4"}>03</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>إدارة وسائل التواصل الاجتماعي</h3>
+                <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                  بناء مجتمع قوي حول علامتك التجارية على منصات التواصل الاجتماعي، مع محتوى مخصص للثقافة المحلية يحفز التفاعل ويحول المتابعين إلى عملاء.
+                </p>
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className={styles.servicesButton}
+                >
+                  احجز استشارة
+                </button>
+              </div>
             </div>
           </div>
         </div>
