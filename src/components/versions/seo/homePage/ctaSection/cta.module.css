@@ -1,0 +1,57 @@
+/* CTA Section Styles */
+.flechaSectionHeading {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 34.1024px;
+  font-weight: normal;
+  color: #001C46;
+  line-height: 1.2;
+}
+
+.textCustomBlue {
+  color: #2762F8;
+}
+
+.homeHeaderSubheading {
+  color: #001C46;
+  font: 34.1024px "Flecha S", sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.workSansBody {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12.7884px;
+  color: #001C46;
+  line-height: 1.6;
+}
+
+.subscribeButton {
+  background: #2762F8;
+  color: #FFFFFF;
+  font: 10.7991px "Work Sans", sans-serif;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  width: 110.31px;
+  height: 36px;
+  box-sizing: border-box;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.subscribeButton:hover {
+  background: #1E4ED8;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .flechaSectionHeading {
+    font-size: 24px;
+  }
+  
+  .workSansBody {
+    font-size: 14px;
+  }
+}
