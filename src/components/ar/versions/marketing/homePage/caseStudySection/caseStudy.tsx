@@ -16,7 +16,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             <span className={styles.highlightText}>المنصة الرائدة للتوظيف الذكي في السعودية</span>
           </h2>
           <p className={styles.sectionSubtext + " arabic-body"}>
-            استراتيجية تسويق متكاملة حققت نمواً استثنائياً وقابلاً للقياس
+            استراتيجية تسويق رقمي متكاملة حققت نمواً استثنائياً وقابلاً للقياس
           </p>
         </div>
 
@@ -42,7 +42,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                 </div>
               </div>
               <div className={styles.readMoreContainer}>
-                <span className={styles.readMoreText}>شاهد دراسة الحالة</span>
+                <span className={styles.readMoreText}>اقرأ دراسة الحالة</span>
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -77,8 +77,8 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             {/* Description */}
             <div className={styles.caseDescription}>
               <p className={styles.descriptionText + " arabic-body"}>
-                من خلال استراتيجية تسويق متكاملة تجمع بين المحتوى المخصص، حملات جوجل المستهدفة، والتسويق عبر البريد الإلكتروني عالي الأداء، 
-                نجحنا في ترسيخ مكانة شفتات كالحل الأمثل للتوظيف بالذكاء الاصطناعي في المملكة. النظام التسويقي المتكامل 
+                من خلال استراتيجية تسويق رقمي متكاملة تجمع بين تسويق المحتوى المستهدف، حملات إعلانات جوجل المحسنة، والتسويق عبر البريد الإلكتروني عالي الأداء، 
+                نجحنا في ترسيخ مكانة شفتات كالحل الأمثل للتوظيف بالذكاء الاصطناعي في المملكة. النظام التسويقي الشامل 
                 وجّه العملاء المحتملين عبر كل مرحلة من رحلة الشراء، محققاً نمواً قابلاً للتنبؤ وقيادة في السوق.
               </p>
             </div>

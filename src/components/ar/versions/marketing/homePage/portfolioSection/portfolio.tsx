@@ -11,16 +11,16 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className={styles.flechaSectionHeading + " mb-6 arabic-heading"}>
-            مشاريع حققت نتائج حقيقية
+            مشاريع حققت نتائج استثنائية
           </h2>
           <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed arabic-body"}>
-            أعمال تسويقية أنجزتها للشركات الرائدة في الخليج وحققت نمواً قابلاً للقياس والاعتماد عليه
+            نماذج حقيقية من مشاريع التسويق التي نفذتها لشركات خليجية رائدة، وحققت نمواً قابلاً للقياس
           </p>
         </div>
 
         {/* Portfolio Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-          {/* Portfolio Project 1 - Shiftat Digital Marketing */}
+          {/* Portfolio Project 1 - Shiftat Social Media Marketing */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-blue-500 to-blue-600`}>
               <div className={styles.portfolioHeaderContent}>
@@ -30,14 +30,14 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType + " arabic-heading"}>تسويق رقمي متكامل</h4>
-                <p className={styles.portfolioServiceDetail + " arabic-body"}>تحسين محركات البحث + إعلانات مدفوعة</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>استراتيجية وسائل التواصل</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>لينكد إن + تويتر</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                منصة التوظيف الذكية الرائدة
+                محتوى احترافي للتوظيف
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -48,101 +48,20 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                استراتيجية تسويق شاملة حولت شفتات إلى المنصة الرائدة للتوظيف بالذكاء الاصطناعي في السعودية. 
-                النتيجة: نمو استثنائي في العملاء المحتملين ومعدلات تحويل ممتازة.
+                تطوير استراتيجية محتوى شاملة لمنصة شفتات للتوظيف بالذكاء الاصطناعي، مع التركيز على القيادة الفكرية واتجاهات استقطاب المواهب.
               </p>
               <button 
-                onClick={() => window.open('https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/company/shiftat-sa/', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonBlue}`}
               >
-                شاهد دراسة الحالة
+                شاهد العمل كاملاً
               </button>
             </div>
           </div>
 
-          {/* Portfolio Project 2 - Al Nahdi SEO */}
+          {/* Portfolio Project 2 - KAPSARC Website Content Strategy */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-green-500 to-green-600`}>
-              <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory + " arabic-body"}>الصحة والأدوية</div>
-                <div className={styles.portfolioCompanyLogo}>
-                  <img src="/logos/alnahdi.webp" alt="النهدي" className={styles.portfolioLogoImg} />
-                </div>
-              </div>
-              <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType + " arabic-heading"}>تحسين محركات البحث</h4>
-                <p className={styles.portfolioServiceDetail + " arabic-body"}>محتوى طبي + تحسين تقني</p>
-              </div>
-            </div>
-            
-            <div className={styles.portfolioContent}>
-              <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                تعزيز الثقة الرقمية للعلامة الطبية
-                <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="سهم"
-                  width={18}
-                  height={18}
-                  className={styles.portfolioArrow}
-                  style={{ transform: 'scaleX(-1)' }}
-                />
-              </h3>
-              <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير محتوى طبي موثوق وتحسين الحضور الرقمي لأكبر سلسلة صيدليات في المملكة، 
-                مما عزز الثقة في العلامة التجارية وزاد الزيارات العضوية بشكل ملحوظ.
-              </p>
-              <button 
-                onClick={() => window.open('https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing', '_blank')}
-                className={`${styles.portfolioButton} ${styles.portfolioButtonGreen}`}
-              >
-                شاهد النتائج
-              </button>
-            </div>
-          </div>
-
-          {/* Portfolio Project 3 - Empire Real Estate Social Media */}
-          <div className={`${styles.portfolioCard} group`}>
-            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-purple-500 to-purple-600`}>
-              <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory + " arabic-body"}>العقارات الفاخرة</div>
-                <div className={styles.portfolioCompanyLogo}>
-                  <img src="/logos/empirerealestate.webp" alt="امباير ريل استيت" className={`${styles.portfolioLogoImg} ${styles.portfolioLogoEmpire}`} />
-                </div>
-              </div>
-              <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType + " arabic-heading"}>إدارة وسائل التواصل</h4>
-                <p className={styles.portfolioServiceDetail + " arabic-body"}>محتوى راقي + إعلانات مستهدفة</p>
-              </div>
-            </div>
-            
-            <div className={styles.portfolioContent}>
-              <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                هوية رقمية راقية للاستثمار العقاري
-                <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="سهم"
-                  width={18}
-                  height={18}
-                  className={styles.portfolioArrow}
-                  style={{ transform: 'scaleX(-1)' }}
-                />
-              </h3>
-              <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير هوية رقمية راقية تليق بالعقارات الفاخرة، مع محتوى مخصص للسوق القطري 
-                يجذب المستثمرين المهتمين ويعرض قيمة الاستثمارات العقارية الحصرية.
-              </p>
-              <button 
-                onClick={() => window.open('https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing', '_blank')}
-                className={`${styles.portfolioButton} ${styles.portfolioButtonPurple}`}
-              >
-                شاهد الحملة
-              </button>
-            </div>
-          </div>
-
-          {/* Portfolio Project 4 - KAPSARC Content Strategy */}
-          <div className={`${styles.portfolioCard} group`}>
-            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-orange-500 to-orange-600`}>
               <div className={styles.portfolioHeaderContent}>
                 <div className={styles.portfolioCategory + " arabic-body"}>البحوث الحكومية</div>
                 <div className={styles.portfolioCompanyLogo}>
@@ -150,14 +69,14 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType + " arabic-heading"}>استراتيجية المحتوى</h4>
-                <p className={styles.portfolioServiceDetail + " arabic-body"}>محتوى تعليمي + نشر علمي</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>استراتيجية محتوى الموقع</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>منصة البحوث + محتوى السياسات</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                تبسيط المعرفة العلمية للجمهور
+                محتوى منصة البحوث الحكومية
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -168,36 +87,35 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير استراتيجية محتوى تعليمي يحول البحوث المعقدة إلى معلومات قابلة للفهم، 
-                مما عزز مكانة المركز كمرجع موثوق في أبحاث الطاقة والاستدامة.
+                تطوير استراتيجية محتوى شاملة لمنصة أبحاث كابسارك، لتحسين إمكانية الوصول لرؤى سياسات الطاقة لأصحاب المصلحة.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing', '_blank')}
-                className={`${styles.portfolioButton} ${styles.portfolioButtonOrange}`}
+                className={`${styles.portfolioButton} ${styles.portfolioButtonGreen}`}
               >
-                شاهد المحتوى
+                شاهد العمل كاملاً
               </button>
             </div>
           </div>
 
-          {/* Portfolio Project 5 - Abudawood B2B Marketing */}
+          {/* Portfolio Project 3 - Abudawood B2B Social Media Marketing */}
           <div className={`${styles.portfolioCard} group`}>
-            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-teal-500 to-teal-600`}>
+            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-orange-500 to-orange-600`}>
               <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory + " arabic-body"}>اللوجستيات والنقل</div>
+                <div className={styles.portfolioCategory + " arabic-body"}>اللوجستيات وسلسلة التوريد</div>
                 <div className={styles.portfolioCompanyLogo}>
                   <img src="/logos/abudawood.webp" alt="أبوداود" className={styles.portfolioLogoImg} />
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType + " arabic-heading"}>تسويق B2B</h4>
-                <p className={styles.portfolioServiceDetail + " arabic-body"}>قيادة فكرية + شراكات استراتيجية</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>تسويق وسائل التواصل</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>لينكد إن B2B + محتوى القطاع</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                ترسيخ القيادة في قطاع اللوجستيات
+                استراتيجية اللوجستيات الاجتماعية B2B
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -208,36 +126,113 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                بناء استراتيجية تسويق B2B تركز على القيادة الفكرية في قطاع اللوجستيات، 
-                مما رسخ مكانة أبوداود كشريك موثوق للشركات الكبرى في المنطقة.
+                تطوير استراتيجية تسويق B2B احترافية عبر لينكد إن ومحتوى القطاع لأحد أكبر مقدمي الخدمات اللوجستية في الخليج، لترسيخ القيادة الفكرية.
               </p>
               <button 
                 onClick={() => window.open('https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
-                className={`${styles.portfolioButton} ${styles.portfolioButtonTeal}`}
+                className={`${styles.portfolioButton} ${styles.portfolioButtonOrange}`}
               >
-                شاهد الاستراتيجية
+                شاهد العمل كاملاً
               </button>
             </div>
           </div>
 
-          {/* Portfolio Project 6 - SAEQ Brand Development */}
+          {/* Portfolio Project 4 - Al Nahdi Email Marketing */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-pink-500 to-pink-600`}>
               <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory + " arabic-body"}>النقل الذكي</div>
+                <div className={styles.portfolioCategory + " arabic-body"}>الرعاية الصحية</div>
+                <div className={styles.portfolioCompanyLogo}>
+                  <img src="/logos/alnahdi.webp" alt="النهدي" className={styles.portfolioLogoImg} />
+                </div>
+              </div>
+              <div className={styles.portfolioHeaderMain}>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>التسويق عبر البريد الإلكتروني</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>حملة النشرة الإخبارية</p>
+              </div>
+            </div>
+            
+            <div className={styles.portfolioContent}>
+              <h3 className={styles.portfolioTitle + " arabic-heading"}>
+                استراتيجية النشرة الصحية
+                <Image
+                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  alt="سهم"
+                  width={18}
+                  height={18}
+                  className={styles.portfolioArrow}
+                  style={{ transform: 'scaleX(-1)' }}
+                />
+              </h3>
+              <p className={styles.portfolioDescription + " arabic-body"}>
+                تصميم وكتابة حملات نشرة إخبارية جذابة لصيدلية النهدي، مع التركيز على النصائح الصحية وترويج المنتجات.
+              </p>
+              <button 
+                onClick={() => window.open('https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing', '_blank')}
+                className={`${styles.portfolioButton} ${styles.portfolioButtonPink}`}
+              >
+                شاهد العمل كاملاً
+              </button>
+            </div>
+          </div>
+
+          {/* Portfolio Project 5 - Empire Real Estate Brand Profile */}
+          <div className={`${styles.portfolioCard} group`}>
+            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-teal-500 to-teal-600`}>
+              <div className={styles.portfolioHeaderContent}>
+                <div className={styles.portfolioCategory + " arabic-body"}>العقارات</div>
+                <div className={styles.portfolioCompanyLogo}>
+                  <img src="/logos/empirerealestate.webp" alt="امباير ريل استيت" className={`${styles.portfolioLogoImg} ${styles.portfolioLogoEmpire}`} />
+                </div>
+              </div>
+              <div className={styles.portfolioHeaderMain}>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>الملف التجاري للعلامة</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>تموضع الشركة</p>
+              </div>
+            </div>
+            
+            <div className={styles.portfolioContent}>
+              <h3 className={styles.portfolioTitle + " arabic-heading"}>
+                قصة العلامة التجارية الفاخرة
+                <Image
+                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  alt="سهم"
+                  width={18}
+                  height={18}
+                  className={styles.portfolioArrow}
+                  style={{ transform: 'scaleX(-1)' }}
+                />
+              </h3>
+              <p className={styles.portfolioDescription + " arabic-body"}>
+                تطوير ملف تجاري شامل واستراتيجية تموضع لمحفظة العقارات الفاخرة لشركة امباير ريل استيت في قطر.
+              </p>
+              <button 
+                onClick={() => window.open('https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing', '_blank')}
+                className={`${styles.portfolioButton} ${styles.portfolioButtonTeal}`}
+              >
+                شاهد العمل كاملاً
+              </button>
+            </div>
+          </div>
+
+          {/* Portfolio Project 6 - SAEQ Company Profile */}
+          <div className={`${styles.portfolioCard} group`}>
+            <div className={`${styles.portfolioHeader} bg-gradient-to-br from-purple-500 to-purple-600`}>
+              <div className={styles.portfolioHeaderContent}>
+                <div className={styles.portfolioCategory + " arabic-body"}>اللوجستيات</div>
                 <div className={styles.portfolioCompanyLogo}>
                   <img src="/logos/saeq.webp" alt="سائق" className={styles.portfolioLogoImg} />
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType + " arabic-heading"}>تطوير العلامة التجارية</h4>
-                <p className={styles.portfolioServiceDetail + " arabic-body"}>هوية رقمية + حملات توعية</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>الملف التجاري للشركة</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>تموضع العلامة التجارية</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                بناء الثقة في النقل الذكي
+                تموضع علامة اللوجستيات
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -248,14 +243,13 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير هوية رقمية قوية لمنصة النقل الذكي، مع التركيز على الأمان والموثوقية، 
-                مما ساعد في بناء الثقة مع المستخدمين والسائقين.
+                إعداد ملف تجاري شامل واستراتيجية تموضع سوقي لتوسع سائق عبر أسواق الخليج.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link', '_blank')}
-                className={`${styles.portfolioButton} ${styles.portfolioButtonPink}`}
+                className={`${styles.portfolioButton} ${styles.portfolioButtonPurple}`}
               >
-                شاهد العلامة التجارية
+                شاهد العمل كاملاً
               </button>
             </div>
           </div>
@@ -267,7 +261,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             <svg className="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className={styles.flechaVerificationText + " mr-3 arabic-body"}>المزيد من النتائج المثبتة متاحة</span>
+            <span className={styles.flechaVerificationText + " mr-3 arabic-body"}>المحفظة الكاملة متاحة</span>
             <button 
               onClick={() => window.location.href = '/v/marketing/portfolio'}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
