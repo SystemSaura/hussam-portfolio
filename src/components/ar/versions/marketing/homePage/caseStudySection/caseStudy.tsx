@@ -12,11 +12,11 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
         {/* Section Header - Matches Hero typography */}
         <div className={styles.sectionHeader}>
           <h2 className={styles.mainHeading + " arabic-heading"}>
-            كيف حققت استراتيجية التسويق الرقمي<br />
-            <span className={styles.highlightText}>نجاح شفتات كمنصة التوظيف الرائدة في السعودية</span>
+            كيف حولنا شفتات من منصة ناشئة إلى<br />
+            <span className={styles.highlightText}>المنصة الرائدة للتوظيف الذكي في السعودية</span>
           </h2>
           <p className={styles.sectionSubtext + " arabic-body"}>
-            استراتيجية تسويق متكاملة حولت الزوار إلى عملاء وحققت نمواً استثنائياً للمنصة
+            استراتيجية تسويق متكاملة حققت نمواً استثنائياً وقابلاً للقياس
           </p>
         </div>
 
@@ -42,7 +42,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                 </div>
               </div>
               <div className={styles.readMoreContainer}>
-                <span className={styles.readMoreText}>شاهد النتائج</span>
+                <span className={styles.readMoreText}>شاهد دراسة الحالة</span>
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -57,28 +57,29 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             {/* Results Grid */}
             <div className={styles.resultsGrid}>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>٤٠٠٪</div>
-                <div className={styles.resultLabel + " arabic-body"}>زيادة الزيارات</div>
+                <div className={styles.resultNumber}>١٠٠+</div>
+                <div className={styles.resultLabel + " arabic-body"}>عميل محتمل عالي الجودة</div>
+              </div>
+              <div className={styles.resultItem}>
+                <div className={styles.resultNumber}>٦٠٪+</div>
+                <div className={styles.resultLabel + " arabic-body"}>معدل فتح الرسائل</div>
               </div>
               <div className={styles.resultItem}>
                 <div className={styles.resultNumber}>٥,٠٠٠+</div>
-                <div className={styles.resultLabel + " arabic-body"}>مشترك في القائمة البريدية</div>
+                <div className={styles.resultLabel + " arabic-body"}>مشترك جديد</div>
               </div>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>٢٥٠+</div>
-                <div className={styles.resultLabel + " arabic-body"}>عميل جديد</div>
-              </div>
-              <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>٨٥٪</div>
-                <div className={styles.resultLabel + " arabic-body"}>تحسن معدل التحويل</div>
+                <div className={styles.resultNumber}>٤,٠٠٠+</div>
+                <div className={styles.resultLabel + " arabic-body"}>متابع على لينكد إن</div>
               </div>
             </div>
 
             {/* Description */}
             <div className={styles.caseDescription}>
               <p className={styles.descriptionText + " arabic-body"}>
-                من خلال استراتيجية تسويق رقمي متكاملة تشمل تحسين محركات البحث، حملات إعلانية مستهدفة، ومحتوى مخصص 
-                للسوق السعودي، نجحنا في تحويل شفتات من منصة ناشئة إلى الخيار الأول للتوظيف بالذكاء الاصطناعي في المملكة.
+                من خلال استراتيجية تسويق متكاملة تجمع بين المحتوى المخصص، حملات جوجل المستهدفة، والتسويق عبر البريد الإلكتروني عالي الأداء، 
+                نجحنا في ترسيخ مكانة شفتات كالحل الأمثل للتوظيف بالذكاء الاصطناعي في المملكة. النظام التسويقي المتكامل 
+                وجّه العملاء المحتملين عبر كل مرحلة من رحلة الشراء، محققاً نمواً قابلاً للتنبؤ وقيادة في السوق.
               </p>
             </div>
 
@@ -86,28 +87,26 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             <div className={styles.socialProof}>
               <div className={styles.socialContent}>
                 <div className={styles.socialHeader}>
-                  <span className={styles.socialLabel + " arabic-body"}>أداء الحملات</span>
+                  <span className={styles.socialLabel + " arabic-body"}>نمو الحضور الرقمي</span>
                 </div>
                 <div className={styles.socialShowcase}>
                   <div className={styles.platformDisplay}>
                     <div className={styles.platformIcon}>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-                        <circle cx="4" cy="4" r="2"/>
+                        <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166V20.452H20.447ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.366C3.274 4.224 4.194 3.299 5.337 3.299C6.477 3.299 7.401 4.224 7.401 5.366C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
                       </svg>
                     </div>
                     <span className={styles.platformName + " arabic-body"}>لينكد إن</span>
-                    <span className={styles.platformMetric}>٤,٠٠٠+ متابع</span>
+                    <span className={styles.platformMetric}>٤,٠٠٠+ محترف</span>
                   </div>
                   <div className={styles.platformDisplay}>
                     <div className={styles.platformIcon}>
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21.2 8.4c.6-.1 1.1-.6 1.1-1.2V5c0-.7-.6-1.3-1.3-1.3H3c-.7 0-1.3.6-1.3 1.3v2.2c0 .6.5 1.1 1.1 1.2L12 12l9.2-3.6z"/>
-                        <path d="M1.7 9.2v8.1c0 .7.6 1.3 1.3 1.3h18c.7 0 1.3-.6 1.3-1.3V9.2L12 12.8 1.7 9.2z"/>
+                        <path d="M18.244 2.25H21.552L14.325 10.51L22.827 21.75H16.17L10.956 14.933L4.99 21.75H1.68L9.41 12.915L1.254 2.25H8.08L12.793 8.481L18.244 2.25ZM17.083 19.77H18.916L7.084 4.126H5.117L17.083 19.77Z" fill="white"/>
                       </svg>
                     </div>
-                    <span className={styles.platformName + " arabic-body"}>البريد الإلكتروني</span>
-                    <span className={styles.platformMetric}>٦٠٪+ معدل فتح</span>
+                    <span className={styles.platformName + " arabic-body"}>منصة X</span>
+                    <span className={styles.platformMetric}>٨,٠٠٠+ متابع</span>
                   </div>
                 </div>
               </div>

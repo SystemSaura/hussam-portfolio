@@ -21,8 +21,8 @@ export default function Hero({ onNavigate }: HeroProps) {
         {/* Main Hero Title - Direct Arabic that mirrors English impact */}
         <div className="mb-24">
           <h1 className={styles.flechaHeroTitle}>
-            حول كل ريال تسويقي إلى<br />
-            <span className={styles.textCustomBlue}>نمو قابل للقياس</span>
+            حول استثمارك التسويقي إلى<br />
+            <span className={styles.textCustomBlue}>نمو حقيقي قابل للقياس</span>
           </h1>
         </div>
 
@@ -37,7 +37,8 @@ export default function Hero({ onNavigate }: HeroProps) {
               </span>
             </h2>
             <p className={styles.homeHeaderText1}>
-              ميزانيتك التسويقية تستحق أفضل من استراتيجية "اضرب واهرب". احصل على استراتيجيات تحول معرفة السوق الخليجي إلى نمو قابل للتنبؤ في خط المبيعات.
+              ميزانيتك التسويقية تستحق أكثر من مجرد "جرب وشوف". 
+              احصل على استراتيجيات تحول فهم السوق الخليجي إلى نمو يمكن التنبؤ به في أرقام مبيعاتك.
             </p>
           </div>
 

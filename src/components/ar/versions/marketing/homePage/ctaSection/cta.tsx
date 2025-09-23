@@ -10,17 +10,17 @@ export default function CTA() {
         <div className="space-y-12 mb-16">
           <h2 className={styles.flechaSectionHeading + " leading-tight arabic-heading"}>
             <span className={styles.textCustomBlue}>توقف عن التخمين</span><br />
-            في ما يعمل
+            في النتائج
           </h2>
 
           <h2 className={styles.flechaSectionHeading + " leading-tight arabic-heading"}>
             <span className={styles.textCustomBlue}>توقف عن تبرير</span><br />
-            الإنفاق التسويقي
+            الميزانيات التسويقية
           </h2>
 
           <h2 className={styles.flechaSectionHeading + " leading-tight arabic-heading"}>
-            <span className={styles.textCustomBlue}>ابدأ التوسع</span><br />
-            بثقة
+            <span className={styles.textCustomBlue}>ابدأ النمو</span><br />
+            بثقة واضحة
           </h2>
         </div>
 
@@ -34,10 +34,10 @@ export default function CTA() {
           />
         </div>
 
-        <h3 className={styles.homeHeaderSubheading + " mb-8 arabic-heading"}>مستعد للنمو القابل للتنبؤ؟</h3>
+        <h3 className={styles.homeHeaderSubheading + " mb-8 arabic-heading"}>جاهز لنمو يمكن الاعتماد عليه؟</h3>
 
         <p className={styles.workSansBody + " mb-8 leading-relaxed arabic-body"}>
-          احصل على جلسة مجانية لمدة ٣٠ دقيقة لتحديد أكبر فرص النمو لديك.
+          احصل على جلسة مجانية لمدة ٣٠ دقيقة لاكتشاف أهم فرص النمو في شركتك.
         </p>
 
         <div className="max-w-md mx-auto space-y-4">

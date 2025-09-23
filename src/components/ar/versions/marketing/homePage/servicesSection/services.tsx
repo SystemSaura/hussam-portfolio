@@ -119,7 +119,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div className={styles.serviceItem}>
               <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحسين محركات البحث والمحتوى</h3>
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحسين محركات البحث و صناعةالمحتوى</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
                 تحسين موقعك ليتصدر نتائج البحث في جوجل، مع إنشاء محتوى قيم يجذب عملاءك المستهدفين ويبني سمعة علامتك التجارية كمرجع موثوق في مجالك.
               </p>

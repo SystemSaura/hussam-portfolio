@@ -11,10 +11,10 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className={styles.flechaSectionHeading + " mb-6 arabic-heading"}>
-            نتائج قابلة للقياس
+            مشاريع حققت نتائج حقيقية
           </h2>
           <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed arabic-body"}>
-            مشاريع تسويق رقمي حققت نمواً حقيقياً وقابلاً للقياس للشركات الرائدة في منطقة الخليج
+            أعمال تسويقية أنجزتها للشركات الرائدة في الخليج وحققت نمواً قابلاً للقياس والاعتماد عليه
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                منصة التوظيف الذكية
+                منصة التوظيف الذكية الرائدة
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -48,8 +48,8 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                استراتيجية تسويق متكاملة حولت شفتات إلى المنصة الرائدة للتوظيف بالذكاء الاصطناعي في السعودية. 
-                النتيجة: زيادة ٤٠٠٪ في الزيارات و ٨٥٪ تحسن في معدل التحويل.
+                استراتيجية تسويق شاملة حولت شفتات إلى المنصة الرائدة للتوظيف بالذكاء الاصطناعي في السعودية. 
+                النتيجة: نمو استثنائي في العملاء المحتملين ومعدلات تحويل ممتازة.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link', '_blank')}
@@ -77,7 +77,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                صيدليات النهدي الرقمية
+                تعزيز الثقة الرقمية للعلامة الطبية
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -88,8 +88,8 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير استراتيجية محتوى طبي موثوق وتحسين الحضور الرقمي لأكبر سلسلة صيدليات في المملكة، 
-                مما أدى لزيادة الزيارات العضوية والثقة في العلامة التجارية.
+                تطوير محتوى طبي موثوق وتحسين الحضور الرقمي لأكبر سلسلة صيدليات في المملكة، 
+                مما عزز الثقة في العلامة التجارية وزاد الزيارات العضوية بشكل ملحوظ.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing', '_blank')}
@@ -117,7 +117,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                العقارات الراقية في قطر
+                هوية رقمية راقية للاستثمار العقاري
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -128,8 +128,8 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير هوية رقمية راقية تليق بالعقارات الفاخرة، مع محتوى مخصص للسوق القطري يجذب المستثمرين 
-                ويبرز قيمة الاستثمارات العقارية الحصرية.
+                تطوير هوية رقمية راقية تليق بالعقارات الفاخرة، مع محتوى مخصص للسوق القطري 
+                يجذب المستثمرين المهتمين ويعرض قيمة الاستثمارات العقارية الحصرية.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing', '_blank')}
@@ -157,7 +157,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                بحوث الطاقة والاستدامة
+                تبسيط المعرفة العلمية للجمهور
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -168,8 +168,8 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير استراتيجية محتوى تعليمي يبسط البحوث المعقدة ويجعلها قابلة للفهم للجمهور العام، 
-                مما عزز مكانة المركز كمرجع موثوق في أبحاث الطاقة.
+                تطوير استراتيجية محتوى تعليمي يحول البحوث المعقدة إلى معلومات قابلة للفهم، 
+                مما عزز مكانة المركز كمرجع موثوق في أبحاث الطاقة والاستدامة.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing', '_blank')}
@@ -191,13 +191,13 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               </div>
               <div className={styles.portfolioHeaderMain}>
                 <h4 className={styles.portfolioServiceType + " arabic-heading"}>تسويق B2B</h4>
-                <p className={styles.portfolioServiceDetail + " arabic-body"}>قيادة فكرية + شراكات</p>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>قيادة فكرية + شراكات استراتيجية</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                عملاق اللوجستيات الخليجي
+                ترسيخ القيادة في قطاع اللوجستيات
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -209,7 +209,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
                 بناء استراتيجية تسويق B2B تركز على القيادة الفكرية في قطاع اللوجستيات، 
-                مما عزز مكانة أبوداود كشريك موثوق للشركات الكبرى في المنطقة.
+                مما رسخ مكانة أبوداود كشريك موثوق للشركات الكبرى في المنطقة.
               </p>
               <button 
                 onClick={() => window.open('https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
@@ -237,7 +237,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             
             <div className={styles.portfolioContent}>
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                منصة النقل الذكي
+                بناء الثقة في النقل الذكي
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
@@ -249,7 +249,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
                 تطوير هوية رقمية قوية لمنصة النقل الذكي، مع التركيز على الأمان والموثوقية، 
-                مما ساعد في بناء الثقة مع المستخدمين والسائقين على حد سواء.
+                مما ساعد في بناء الثقة مع المستخدمين والسائقين.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link', '_blank')}
