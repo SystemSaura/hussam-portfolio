@@ -18,32 +18,31 @@ export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-36 pb-8 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
-        {/* Main Hero Title - Arabic aligned right */}
+        {/* Main Hero Title - Direct Arabic that mirrors English impact */}
         <div className="mb-24">
           <h1 className={styles.flechaHeroTitle}>
-            خبير التسويق الرقمي<br />
-            <span className={styles.textCustomBlue}>الذي يحقق النتائج الفعلية</span>
+            حول كل ريال تسويقي إلى<br />
+            <span className={styles.textCustomBlue}>نمو قابل للقياس</span>
           </h1>
         </div>
 
         {/* Lower Section - Three parts with proper RTL flow */}
         <div className={styles.homeHeaderContent}>
-          {/* First in RTL: Problem section (appears on the right) */}
+          {/* First in RTL: Problem section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              التسويق الذي لا يحقق النتائج؟ <span className={styles.deconstructedQ}>
+              سئمت من التخمين<span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
             </h2>
             <p className={styles.homeHeaderText1}>
-              نحن متخصصون في التسويق الرقمي، تحسين محركات البحث، ووسائل التواصل الاجتماعي للشركات في منطقة الخليج. استراتيجيات مثبتة تحقق نموًا قابلاً للقياس ونتائج حقيقية لعملك.
+              ميزانيتك التسويقية تستحق أفضل من استراتيجية "اضرب واهرب". احصل على استراتيجيات تحول معرفة السوق الخليجي إلى نمو قابل للتنبؤ في خط المبيعات.
             </p>
           </div>
 
-          {/* Center: Arrow - Desktop horizontal (flipped for RTL), Mobile vertical */}
+          {/* Center: Arrow */}
           <div className={styles.arrowContainer}>
-            {/* Desktop Arrow - Horizontal (flipped for RTL) */}
             <div className={styles.arrowDesktop}>
               <Image
                 src="https://ext.same-assets.com/3287453319/171477844.svg"
@@ -54,7 +53,6 @@ export default function Hero({ onNavigate }: HeroProps) {
                 style={{ transform: 'scaleX(-1)' }}
               />
             </div>
-            {/* Mobile Arrow - Vertical */}
             <div className={styles.arrowMobile}>
               <Image
                 src="https://ext.same-assets.com/3287453319/3126314943.svg"
@@ -66,7 +64,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             </div>
           </div>
 
-          {/* Last in RTL: Start here form (appears on the left) */}
+          {/* Last in RTL: Action section */}
           <div className={styles.homeHeaderFormWrap}>
             <h3 className={styles.homeHeaderSubheadingRight + " mb-6"}>ابدأ من هنا</h3>
             <div className={styles.sevaFields + " " + styles.formkitFields}>
@@ -81,7 +79,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                 onClick={onNavigate.portfolio}
                 className={styles.navButtonStrategy + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                شاهد أعمالي
+                اكتشف أعمالي
               </button>
             </div>
           </div>
