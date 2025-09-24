@@ -7,7 +7,7 @@ export default function Testimonials() {
   // Star component for better mobile optimization
   const StarRating = ({ size = "w-4 h-4" }: { size?: string }) => {
     return (
-      <div className="flex items-center space-x-1">
+      <div className="flex items-center space-x-1 space-x-reverse">
         {[...Array(5)].map((_, i) => (
           <svg key={i} className={`${size} text-yellow-400`} fill="currentColor" viewBox="0 0 20 20">
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -24,7 +24,7 @@ export default function Testimonials() {
         <svg className="w-3 h-3 text-green-500" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
         </svg>
-        <span>Verify</span>
+        <span>تحقق</span>
       </a>
     );
   };
@@ -34,18 +34,18 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center bg-blue-50 rounded-full px-3 sm:px-4 py-2 mb-4 flex-wrap justify-center gap-1 sm:gap-0">
-            <div className="flex items-center space-x-1 mr-1 sm:mr-2">
+            <div className="flex items-center space-x-1 space-x-reverse mr-1 sm:mr-2">
               <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
             </div>
-            <span className={styles.flechaRatingText}>Perfect 5.0 Rating</span>
+            <span className={styles.flechaRatingText}>تقييم مثالي ٥.٠</span>
             <span className="text-gray-400 mx-1 sm:mx-2 hidden sm:inline">•</span>
-            <span className={styles.flechaProjectsText}>40+ Projects</span>
+            <span className={styles.flechaProjectsText}>٤٠+ مشروع</span>
           </div>
           <h2 className={styles.flechaTestimonialHeading + " mb-4 px-4 sm:px-0"}>
-            What Clients Say About My Work
+            ماذا يقول العملاء عن عملي
           </h2>
           <p className={styles.flechaTestimonialDescription + " max-w-2xl mx-auto px-4 sm:px-0"}>
-            Real feedback from clients who've experienced measurable results from strategic copywriting work.
+            تعليقات حقيقية من عملاء تجربوا نتائج قابلة للقياس من العمل الاستراتيجي في كتابة النصوص.
           </p>
         </div>
 
@@ -57,11 +57,11 @@ export default function Testimonials() {
                 <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
                 <VerificationBadge href="https://sa.linkedin.com/in/abdullahabalkhail" />
               </div>
-              <div className={styles.projectType}>Website Copywriting</div>
+              <div className={styles.projectType}>كتابة مواقع</div>
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Talented writer, passionate, motivated, goes the extra mile to deliver excellent work. Will work with him again."
+              "كاتب موهوب، شغوف، متحفز، يبذل جهداً إضافياً لتقديم عمل ممتاز. سأعمل معه مرة أخرى."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
@@ -69,20 +69,20 @@ export default function Testimonials() {
                 <div className={styles.clientPhotoV2}>
                   <Image
                     src="/clientsphotos/abdullahabalkhail.webp"
-                    alt="Abdullah Aballkhail"
+                    alt="عبدالله العبالخيل"
                     width={40}
                     height={40}
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
                 <div>
-                  <div className={styles.clientNameV2}>Abdullah Aballkhail</div>
-                  <div className={styles.clientCompanyV2}>Shiftat</div>
-                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
+                  <div className={styles.clientNameV2}>عبدالله العبالخيل</div>
+                  <div className={styles.clientCompanyV2}>شفتات</div>
+                  <div className={styles.clientLocationV2}>🇸🇦 المملكة العربية السعودية</div>
                 </div>
               </div>
               <div className={styles.companyLogoV2}>
-                <img src="/logos/shiftat.webp" alt="Shiftat" className="h-6 sm:h-8 w-auto object-contain" />
+                <img src="/logos/shiftat.webp" alt="شفتات" className="h-6 sm:h-8 w-auto object-contain" />
               </div>
             </div>
           </div>
@@ -94,11 +94,11 @@ export default function Testimonials() {
                 <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
                 <VerificationBadge href="https://www.linkedin.com/in/raufi" />
               </div>
-              <div className={styles.projectType}>Brand Copywriting</div>
+              <div className={styles.projectType}>كتابة العلامة التجارية</div>
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "High quality work, excellent communication, meets every deadline. His work was a pleasure to collaborate with."
+              "عمل عالي الجودة، تواصل ممتاز، يلتزم بكل موعد نهائي. كان العمل معه متعة حقيقية."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
@@ -106,20 +106,20 @@ export default function Testimonials() {
                 <div className={styles.clientPhotoV2}>
                   <Image
                     src="/clientsphotos/shahidraufi.webp"
-                    alt="Shahid Raufi"
+                    alt="شاهد رؤوفي"
                     width={40}
                     height={40}
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
                 <div>
-                  <div className={styles.clientNameV2}>Shahid Raufi</div>
-                  <div className={styles.clientCompanyV2}>Empire Real Estate</div>
-                  <div className={styles.clientLocationV2}>🇶🇦 Qatar</div>
+                  <div className={styles.clientNameV2}>شاهد رؤوفي</div>
+                  <div className={styles.clientCompanyV2}>امباير العقارية</div>
+                  <div className={styles.clientLocationV2}>🇶🇦 قطر</div>
                 </div>
               </div>
               <div className={styles.companyLogoV2}>
-                <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className="h-6 sm:h-8 w-auto object-contain" />
+                <img src="/logos/empirerealestate.webp" alt="امباير العقارية" className="h-6 sm:h-8 w-auto object-contain" />
               </div>
             </div>
           </div>
@@ -131,28 +131,28 @@ export default function Testimonials() {
                 <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
                 <VerificationBadge href="https://www.linkedin.com/in/aya-badr-1878921ba/" />
               </div>
-              <div className={styles.projectType}>Email Copywriting</div>
+              <div className={styles.projectType}>كتابة الإيميل</div>
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Amazing to work with. Great communication and skills. He delivered more than requested for best quality."
+              "رائع للعمل معه. تواصل ممتاز ومهارات عالية. قدم أكثر من المطلوب للحصول على أفضل جودة."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
               <div className={styles.clientInfoV2}>
                 <div className={styles.clientPhotoV2}>
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-600 font-semibold text-xs sm:text-sm">AB</span>
+                    <span className="text-blue-600 font-semibold text-xs sm:text-sm">آب</span>
                   </div>
                 </div>
                 <div>
-                  <div className={styles.clientNameV2}>Aya Badr</div>
-                  <div className={styles.clientCompanyV2}>Al Nahdi</div>
-                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
+                  <div className={styles.clientNameV2}>آية بدر</div>
+                  <div className={styles.clientCompanyV2}>النهدي</div>
+                  <div className={styles.clientLocationV2}>🇸🇦 المملكة العربية السعودية</div>
                 </div>
               </div>
               <div className={styles.companyLogoV2}>
-                <img src="/logos/alnahdi.webp" alt="Al Nahdi" className="h-6 sm:h-8 w-auto object-contain" />
+                <img src="/logos/alnahdi.webp" alt="النهدي" className="h-6 sm:h-8 w-auto object-contain" />
               </div>
             </div>
           </div>
@@ -164,28 +164,28 @@ export default function Testimonials() {
                 <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
                 <VerificationBadge href="https://www.upwork.com/freelancers/~01630436400e1bdae3" />
               </div>
-              <div className={styles.projectType}>Brand Copywriting</div>
+              <div className={styles.projectType}>كتابة العلامة التجارية</div>
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Good work on business profile writing. Top communication, met deadlines, and strong skills throughout."
+              "عمل جيد في كتابة الملف التجاري. تواصل ممتاز، التزام بالمواعيد، ومهارات قوية طوال الوقت."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
               <div className={styles.clientInfoV2}>
                 <div className={styles.clientPhotoV2}>
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
-                    <span className="text-green-600 font-semibold text-xs sm:text-sm">MA</span>
+                    <span className="text-green-600 font-semibold text-xs sm:text-sm">محع</span>
                   </div>
                 </div>
                 <div>
-                  <div className={styles.clientNameV2}>Mohammed Alowais</div>
-                  <div className={styles.clientCompanyV2}>Rasya</div>
-                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
+                  <div className={styles.clientNameV2}>محمد العويس</div>
+                  <div className={styles.clientCompanyV2}>راسيا</div>
+                  <div className={styles.clientLocationV2}>🇸🇦 المملكة العربية السعودية</div>
                 </div>
               </div>
               <div className={styles.companyLogoV2}>
-                <div className="text-gray-400 text-xs sm:text-sm font-semibold">RASYA</div>
+                <div className="text-gray-400 text-xs sm:text-sm font-semibold">راسيا</div>
               </div>
             </div>
           </div>
@@ -197,28 +197,28 @@ export default function Testimonials() {
                 <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
                 <VerificationBadge href="https://www.upwork.com/freelancers/~01630436400e1bdae3" />
               </div>
-              <div className={styles.projectType}>Creative Copywriting</div>
+              <div className={styles.projectType}>الكتابة الإبداعية</div>
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Working with Hussam was relaxing. He understood what was needed, delivered before deadline and felt like part of the team."
+              "العمل مع حسام كان مريحاً. فهم ما هو مطلوب، سلم قبل الموعد النهائي وشعرت وكأنه جزء من الفريق."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
               <div className={styles.clientInfoV2}>
                 <div className={styles.clientPhotoV2}>
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                    <span className="text-purple-600 font-semibold text-xs sm:text-sm">JA</span>
+                    <span className="text-purple-600 font-semibold text-xs sm:text-sm">جت</span>
                   </div>
                 </div>
                 <div>
-                  <div className={styles.clientNameV2}>Jawhrah Altuwaijri</div>
-                  <div className={styles.clientCompanyV2}>Hayat Muhamedya</div>
-                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
+                  <div className={styles.clientNameV2}>جوهرة التويجري</div>
+                  <div className={styles.clientCompanyV2}>حياة محمدية</div>
+                  <div className={styles.clientLocationV2}>🇸🇦 المملكة العربية السعودية</div>
                 </div>
               </div>
               <div className={styles.companyLogoV2}>
-                <img src="/logos/hayatmohamadia.webp" alt="Hayat Muhamedya" className="h-6 sm:h-8 w-auto object-contain" />
+                <img src="/logos/hayatmohamadia.webp" alt="حياة محمدية" className="h-6 sm:h-8 w-auto object-contain" />
               </div>
             </div>
           </div>
@@ -230,28 +230,28 @@ export default function Testimonials() {
                 <StarRating size="w-3 h-3 sm:w-4 sm:h-4" />
                 <VerificationBadge href="https://www.linkedin.com/in/asma-rjoub-ba3748a5" />
               </div>
-              <div className={styles.projectType}>Digital Copywriting</div>
+              <div className={styles.projectType}>كتابة رقمية</div>
             </div>
             
             <blockquote className={styles.testimonialQuoteV2}>
-              "Very Professional, Delivery on Time, Communication Perfect. Overall extremely recommended."
+              "مهني جداً، التسليم في الوقت المحدد، التواصل مثالي. بشكل عام أنصح به بشدة."
             </blockquote>
             
             <div className={styles.testimonialFooterV2}>
               <div className={styles.clientInfoV2}>
                 <div className={styles.clientPhotoV2}>
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-pink-100 rounded-full flex items-center justify-center">
-                    <span className="text-pink-600 font-semibold text-xs sm:text-sm">AR</span>
+                    <span className="text-pink-600 font-semibold text-xs sm:text-sm">أر</span>
                   </div>
                 </div>
                 <div>
-                  <div className={styles.clientNameV2}>Asma Rjoub</div>
-                  <div className={styles.clientCompanyV2}>Consultant</div>
-                  <div className={styles.clientLocationV2}>🇸🇦 Saudi Arabia</div>
+                  <div className={styles.clientNameV2}>أسماء رجوب</div>
+                  <div className={styles.clientCompanyV2}>مستشارة</div>
+                  <div className={styles.clientLocationV2}>🇸🇦 المملكة العربية السعودية</div>
                 </div>
               </div>
               <div className={styles.companyLogoV2}>
-                <div className="text-gray-400 text-xs sm:text-sm font-semibold">CONSULTANT</div>
+                <div className="text-gray-400 text-xs sm:text-sm font-semibold">استشارات</div>
               </div>
             </div>
           </div>
@@ -262,8 +262,8 @@ export default function Testimonials() {
             <svg className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className={styles.flechaVerificationText + " mr-2 sm:mr-3 text-center"}>All reviews verified on Upwork</span>
-            <a href="https://www.upwork.com/freelancers/~01630436400e1bdae3" target="_blank" rel="noopener noreferrer" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>View All →</a>
+            <span className={styles.flechaVerificationText + " mr-2 sm:mr-3 text-center"}>جميع التقييمات موثقة على أب وورك</span>
+            <a href="https://www.upwork.com/freelancers/~01630436400e1bdae3" target="_blank" rel="noopener noreferrer" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>عرض الكل ←</a>
           </div>
         </div>
       </div>

@@ -94,52 +94,52 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
           {/* Static centered heading for mobile */}
           <div className={styles.mobileStaticHeading}>
             <h2 className={styles.servicesMainHeading + " leading-tight"}>
-              3 ways I fix copy<br />
-              <span className={styles.servicesMainHeadingAccent}>so it converts.</span>
+              ٣ طرق لإصلاح النصوص<br />
+              <span className={styles.servicesMainHeadingAccent}>لتحقق المبيعات</span>
             </h2>
           </div>
 
           {/* Services content for mobile */}
           <div className="space-y-12">
             <div>
-              <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Website Copy That Stops & Converts</h3>
+              <div className={styles.servicesNumber + " mb-4"}>٠١</div>
+              <h3 className={styles.servicesTitle + " mb-4"}>نصوص مواقع تتوقف وتحقق المبيعات</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Complete website copywriting that instantly communicates what you do, who it's for, and why prospects should care. Homepage to checkout—every page optimized for conversion.
+                كتابة مواقع كاملة توصل فوراً ما تفعله، لمن مخصص، ولماذا يجب أن يهتم العملاء المحتملون. من الصفحة الرئيسية إلى الدفع—كل صفحة محسنة للتحويل.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Consultation
+                احجز استشارة
               </button>
             </div>
 
             <div>
-              <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Social Content That Builds Authority & Drives Leads</h3>
+              <div className={styles.servicesNumber + " mb-4"}>٠٢</div>
+              <h3 className={styles.servicesTitle + " mb-4"}>محتوى اجتماعي يبني السلطة ويجذب العملاء</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Strategic social media copy that positions you as the obvious choice in your industry. LinkedIn posts that attract decision-makers, thought leadership content that builds trust, and social proof that converts followers into customers.
+                نصوص وسائل التواصل الاجتماعي الاستراتيجية تموضعك كالخيار الواضح في صناعتك. منشورات لينكد إن تجذب صناع القرار، محتوى القيادة الفكرية يبني الثقة، وإثبات اجتماعي يحول المتابعين إلى عملاء.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Consultation
+                احجز استشارة
               </button>
             </div>
 
             <div ref={thirdServiceRef}>
-              <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Sales Pages & Email Copy That Close Deals</h3>
+              <div className={styles.servicesNumber + " mb-4"}>٠٣</div>
+              <h3 className={styles.servicesTitle + " mb-4"}>صفحات مبيعات ونصوص إيميل تحقق الصفقات</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                High-converting sales pages, landing pages, and email sequences that address every objection, build desire, and make the buying decision obvious. From product launches to nurture campaigns—copy that turns prospects into customers.
+                صفحات مبيعات عالية التحويل، وصفحات وصول، وسلاسل رسائل إلكترونية تعالج كل اعتراض، وتبني الرغبة، وتجعل قرار الشراء واضحاً. من إطلاق المنتجات إلى حملات الرعاية—نصوص تحول العملاء المحتملين إلى عملاء.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Consultation
+                احجز استشارة
               </button>
             </div>
           </div>
@@ -160,52 +160,52 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
               style={stickyStyles}
             >
               <h2 className={styles.servicesMainHeading + " leading-tight"}>
-                3 ways I fix copy<br />
-                <span className={styles.servicesMainHeadingAccent}>so it converts.</span>
+                ٣ طرق لإصلاح النصوص<br />
+                <span className={styles.servicesMainHeadingAccent}>لتحقق المبيعات</span>
               </h2>
             </div>
           </div>
 
           <div className="space-y-12">
             <div>
-              <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Website Copy That Stops & Converts</h3>
+              <div className={styles.servicesNumber + " mb-4"}>٠١</div>
+              <h3 className={styles.servicesTitle + " mb-4"}>نصوص مواقع تتوقف وتحقق المبيعات</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Complete website copywriting that instantly communicates what you do, who it's for, and why prospects should care. Homepage to checkout—every page optimized for conversion.
+                كتابة مواقع كاملة توصل فوراً ما تفعله، لمن مخصص، ولماذا يجب أن يهتم العملاء المحتملون. من الصفحة الرئيسية إلى الدفع—كل صفحة محسنة للتحويل.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Consultation
+                احجز استشارة
               </button>
             </div>
 
             <div>
-              <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Social Content That Builds Authority & Drives Leads</h3>
+              <div className={styles.servicesNumber + " mb-4"}>٠٢</div>
+              <h3 className={styles.servicesTitle + " mb-4"}>محتوى اجتماعي يبني السلطة ويجذب العملاء</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Strategic social media copy that positions you as the obvious choice in your industry. LinkedIn posts that attract decision-makers, thought leadership content that builds trust, and social proof that converts followers into customers.
+                نصوص وسائل التواصل الاجتماعي الاستراتيجية تموضعك كالخيار الواضح في صناعتك. منشورات لينكد إن تجذب صناع القرار، محتوى القيادة الفكرية يبني الثقة، وإثبات اجتماعي يحول المتابعين إلى عملاء.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Consultation
+                احجز استشارة
               </button>
             </div>
 
             <div ref={thirdServiceRef}>
-              <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Sales Pages & Email Copy That Close Deals</h3>
+              <div className={styles.servicesNumber + " mb-4"}>٠٣</div>
+              <h3 className={styles.servicesTitle + " mb-4"}>صفحات مبيعات ونصوص إيميل تحقق الصفقات</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                High-converting sales pages, landing pages, and email sequences that address every objection, build desire, and make the buying decision obvious. From product launches to nurture campaigns—copy that turns prospects into customers.
+                صفحات مبيعات عالية التحويل، وصفحات وصول، وسلاسل رسائل إلكترونية تعالج كل اعتراض، وتبني الرغبة، وتجعل قرار الشراء واضحاً. من إطلاق المنتجات إلى حملات الرعاية—نصوص تحول العملاء المحتملين إلى عملاء.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Consultation
+                احجز استشارة
               </button>
             </div>
           </div>

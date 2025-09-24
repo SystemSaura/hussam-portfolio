@@ -12,11 +12,11 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
         {/* Section Header - Matches Hero typography */}
         <div className={styles.sectionHeader}>
           <h2 className={styles.mainHeading}>
-            How strategic copywriting made Shiftat<br />
-            <span className={styles.highlightText}>Saudi Arabia's go-to AI recruitment platform.</span>
+            كيف حولت الكتابة الاستراتيجية شفتات إلى<br />
+            <span className={styles.highlightText}>منصة التوظيف الذكي الرائدة في السعودية</span>
           </h2>
           <p className={styles.sectionSubtext}>
-            Converting website copy and email campaigns that turned browsers into buyers.
+            كتابة مواقع وحملات إيميل حولت المتصفحين إلى مشترين.
           </p>
         </div>
 
@@ -29,26 +29,27 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                 <div className={styles.companyLogo}>
                   <Image
                     src="/logos/shiftat.webp"
-                    alt="Shiftat"
+                    alt="شفتات"
                     width={120}
                     height={60}
                     className={styles.logoImage}
                   />
                 </div>
                 <div className={styles.companyDetails}>
-                  <h3 className={styles.companyName}>Shiftat</h3>
-                  <p className={styles.companyDescription}>AI-Powered Recruitment Platform</p>
-                  <div className={styles.locationBadge}>🇸🇦 Saudi Arabia</div>
+                  <h3 className={styles.companyName}>شفتات</h3>
+                  <p className={styles.companyDescription}>منصة التوظيف بالذكاء الاصطناعي</p>
+                  <div className={styles.locationBadge}>🇸🇦 المملكة العربية السعودية</div>
                 </div>
               </div>
               <div className={styles.readMoreContainer}>
-                <span className={styles.readMoreText}>See Copy Results</span>
+                <span className={styles.readMoreText}>اطلع على نتائج النصوص</span>
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
+                  alt="سهم"
                   width={24}
                   height={24}
                   className={styles.readMoreArrow}
+                  style={{ transform: 'scaleX(-1)' }}
                 />
               </div>
             </div>
@@ -56,30 +57,29 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             {/* Results Grid */}
             <div className={styles.resultsGrid}>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>60%+</div>
-                <div className={styles.resultLabel}>Email Open Rate</div>
+                <div className={styles.resultNumber}>٦٠٪+</div>
+                <div className={styles.resultLabel}>معدل فتح الإيميل</div>
               </div>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>5,000+</div>
-                <div className={styles.resultLabel}>Email Subscribers</div>
+                <div className={styles.resultNumber}>٥,٠٠٠+</div>
+                <div className={styles.resultLabel}>مشترك في الإيميل</div>
               </div>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>100+</div>
-                <div className={styles.resultLabel}>Quality Leads</div>
+                <div className={styles.resultNumber}>١٠٠+</div>
+                <div className={styles.resultLabel}>عميل محتمل عالي الجودة</div>
               </div>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>4,000+</div>
-                <div className={styles.resultLabel}>LinkedIn Followers</div>
+                <div className={styles.resultNumber}>٤,٠٠٠+</div>
+                <div className={styles.resultLabel}>متابع على لينكد إن</div>
               </div>
             </div>
 
             {/* Description */}
             <div className={styles.caseDescription}>
               <p className={styles.descriptionText}>
-                Through strategic website copywriting, high-converting email sequences, and compelling social media copy, 
-                we transformed Shiftat's messaging from confusing to crystal clear. The result? Prospects immediately 
-                understood the value, signed up for emails, and became paying customers who couldn't imagine recruiting 
-                any other way.
+                من خلال كتابة موقع استراتيجية، وسلاسل إيميل عالية التحويل، ونصوص وسائل تواصل اجتماعي مقنعة، 
+                حولنا رسائل شفتات من مربكة إلى واضحة بلورية. النتيجة؟ العملاء المحتملون فهموا القيمة فوراً، اشتركوا في الإيميلات، 
+                وأصبحوا عملاء يدفعون لا يمكنهم تخيل التوظيف بطريقة أخرى.
               </p>
             </div>
 
@@ -87,7 +87,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             <div className={styles.socialProof}>
               <div className={styles.socialContent}>
                 <div className={styles.socialHeader}>
-                  <span className={styles.socialLabel}>Copy Performance</span>
+                  <span className={styles.socialLabel}>أداء النصوص</span>
                 </div>
                 <div className={styles.socialShowcase}>
                   <div className={styles.platformDisplay}>
@@ -97,8 +97,8 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                         <polyline points="22,6 12,13 2,6"/>
                       </svg>
                     </div>
-                    <span className={styles.platformName}>Email Copy</span>
-                    <span className={styles.platformMetric}>60%+ Open Rates</span>
+                    <span className={styles.platformName}>نصوص الإيميل</span>
+                    <span className={styles.platformMetric}>٦٠٪+ معدل فتح</span>
                   </div>
                   <div className={styles.platformDisplay}>
                     <div className={styles.platformIcon}>
@@ -110,8 +110,8 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                         <polyline points="10,9 9,9 8,9"/>
                       </svg>
                     </div>
-                    <span className={styles.platformName}>Website Copy</span>
-                    <span className={styles.platformMetric}>100+ Quality Leads</span>
+                    <span className={styles.platformName}>نصوص الموقع</span>
+                    <span className={styles.platformMetric}>١٠٠+ عميل عالي الجودة</span>
                   </div>
                 </div>
               </div>

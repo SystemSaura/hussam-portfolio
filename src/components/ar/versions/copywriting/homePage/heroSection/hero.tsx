@@ -18,46 +18,47 @@ export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-36 pb-8 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
-        {/* Main Hero Title - Both lines left-aligned */}
+        {/* Main Hero Title - Both lines right-aligned for Arabic */}
         <div className="mb-24">
           <h1 className={styles.flechaHeroTitle}>
-            Turn copy that confuses into <br />
-            <span className={styles.textCustomBlue}> copy that converts.</span>
+            حول النصوص المشتتة إلى<br />
+            <span className={styles.textCustomBlue}>نصوص تحقق المبيعات</span>
           </h1>
         </div>
 
-        {/* Lower Section - Three parts */}
+        {/* Lower Section - Three parts with RTL flow */}
         <div className={styles.homeHeaderContent}>
-          {/* Left: Problem section */}
+          {/* Right: Problem section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              Your copy isn't working <span className={styles.deconstructedQ}>
+              نصوصك لا تحقق النتائج <span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
             </h2>
             <p className={styles.homeHeaderText1}>
-              Your copy should convert visitors into customers, not put them to sleep. Get strategic copywriting that makes prospects think "this is exactly what I need" and transforms browsers into buyers who can't wait to work with you.
+              نصوصك التسويقية يجب أن تحول الزوار إلى عملاء، وليس أن تجعلهم ينامون. احصل على كتابة إعلانية استراتيجية تجعل العملاء المحتملين يقولون "هذا بالضبط ما أحتاجه" وتحول المتصفحين إلى مشترين لا يطيقون انتظاراً للعمل معك.
             </p>
           </div>
 
           {/* Center: Arrow - Desktop horizontal, Mobile vertical */}
           <div className={styles.arrowContainer}>
-            {/* Desktop Arrow - Horizontal */}
+            {/* Desktop Arrow - Horizontal (flipped for RTL) */}
             <div className={styles.arrowDesktop}>
               <Image
                 src="https://ext.same-assets.com/3287453319/171477844.svg"
-                alt="Arrow pointing right"
+                alt="سهم يشير لليسار"
                 width={56.13}
                 height={56.84}
                 className={styles.arrowRight}
+                style={{ transform: 'scaleX(-1)' }}
               />
             </div>
             {/* Mobile Arrow - Vertical */}
             <div className={styles.arrowMobile}>
               <Image
                 src="https://ext.same-assets.com/3287453319/3126314943.svg"
-                alt="Arrow pointing down"
+                alt="سهم يشير للأسفل"
                 width={48}
                 height={48}
                 className={styles.arrowDown}
@@ -65,22 +66,22 @@ export default function Hero({ onNavigate }: HeroProps) {
             </div>
           </div>
 
-          {/* Right: Start here form */}
+          {/* Left: Start here form */}
           <div className={styles.homeHeaderFormWrap}>
-            <h3 className={styles.homeHeaderSubheadingRight + " mb-6"}>Start here.</h3>
+            <h3 className={styles.homeHeaderSubheadingRight + " mb-6"}>ابدأ من هنا</h3>
             <div className={styles.sevaFields + " " + styles.formkitFields}>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.subscribeButton + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                Book Consultation
+                احجز استشارة
               </button>
               <button
                 type="button"
                 onClick={onNavigate.portfolio}
                 className={styles.navButtonStrategy + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                See Copy Examples
+                اطلع على أعمالي
               </button>
             </div>
           </div>

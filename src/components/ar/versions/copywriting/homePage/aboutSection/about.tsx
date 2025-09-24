@@ -12,7 +12,7 @@ const About = forwardRef<HTMLElement>((_, ref) => {
           <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">
             <Image
               src="/picofme.webp"
-              alt="Hussam Baaka"
+              alt="حسام بعكة"
               width={160}
               height={160}
               className="w-full h-full object-cover"
@@ -21,28 +21,28 @@ const About = forwardRef<HTMLElement>((_, ref) => {
           </div>
         </div>
         <h2 className={styles.flechaHeroTitleAbout + " text-white mb-6 sm:mb-8 leading-tight text-center"}>
-          Hi. I'm Hussam Baaka. I turn confusing copy into conversions that drive your business forward.
+          مرحباً، أنا حسام بعكة. أحول النصوص المربكة إلى مبيعات تدفع بعملك للأمام.
         </h2>
         <div className="mb-6 sm:mb-8 text-center">
-          <span className={styles.text11px + " text-cyan-400 font-medium"}>[ A note to decision-makers who hate bad copy ]</span>
+          <span className={styles.text11px + " text-cyan-400 font-medium"}>[ رسالة لصناع القرار الذين يكرهون النصوص الضعيفة ]</span>
         </div>
 
         <div className={styles.workSansBodyWhite + " space-y-4 sm:space-y-6 leading-relaxed max-w-3xl mx-auto text-center"}>
-          <p>Your copywriter isn't the problem. Your copy strategy is scattered.</p>
+          <p>كاتب النصوص ليس هو المشكلة. استراتيجية النصوص الخاصة بك مشتتة.</p>
 
-          <p>I've seen too many B2B companies waste budgets on websites that don't convert, emails nobody opens, and "compelling" sales pages that put prospects to sleep.</p>
+          <p>رأيت الكثير من شركات B2B تهدر الميزانيات على مواقع لا تحقق مبيعات، ورسائل إلكترونية لا يفتحها أحد، وصفحات مبيعات "مقنعة" تجعل العملاء المحتملين ينامون.</p>
 
-          <p>The issue isn't your audience or your market. It's messaging that tries to speak to everyone but resonates with no one.</p>
+          <p>المشكلة ليست في جمهورك أو السوق. إنها في الرسائل التي تحاول التحدث مع الجميع لكنها لا تتردد في قلب أحد.</p>
 
-          <p>When your headlines stop the right people, your benefits hit their pain points, and your proof builds instant credibility, conversion becomes predictable instead of wishful thinking.</p>
+          <p>عندما تتوقف عناوينك الصحيحة عن الأشخاص المناسبين، وتصيب فوائدك نقاط ألمهم، وتبني براهينك مصداقية فورية، تصبح المبيعات قابلة للتنبؤ بدلاً من التفكير بالأماني.</p>
 
-          <p>I don't just rewrite what's broken. I rebuild copy systems that turn visitors into leads and leads into customers who can't wait to buy.</p>
+          <p>لا أعيد كتابة ما هو مكسور فقط. أعيد بناء أنظمة نصوص تحول الزوار إلى عملاء محتملين والعملاء المحتملين إلى عملاء لا يطيقون انتظاراً للشراء.</p>
 
-          <p>My approach combines deep B2B copywriting expertise with conversion psychology that's driven measurable results for GCC companies across industries.</p>
+          <p>منهجي يجمع بين خبرة عميقة في كتابة نصوص B2B وعلم نفس التحويل الذي حقق نتائج قابلة للقياس لشركات دول مجلس التعاون الخليجي عبر الصناعات.</p>
 
-          <p>Because at the end of the day, copy should do one thing:</p>
+          <p>لأنه في نهاية اليوم، النصوص يجب أن تحقق شيئاً واحداً:</p>
 
-          <p className="text-cyan-400 font-medium">Make the right buyer say "This is exactly what I need" and take action immediately.</p>
+          <p className="text-cyan-400 font-medium">جعل المشتري المناسب يقول "هذا بالضبط ما أحتاجه" ويتخذ إجراءً فورياً.</p>
         </div>
 
         <div className="mt-8 sm:mt-10 lg:mt-12 text-center">

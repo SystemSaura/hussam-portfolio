@@ -1,19 +1,34 @@
-//src/app/v/copywriting/homepage/page.tsx
 "use client";
 
 import { useRef } from "react";
-import Header from "../../../../components/en/versions/copywriting/homePage/headerSection/header";
-import Hero from "../../../../components/en/versions/copywriting/homePage/heroSection/hero";
-import TrustedCompanies from "../../../../components/en/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
-import About from "../../../../components/en/versions/copywriting/homePage/aboutSection/about";
-import Services from "../../../../components/en/versions/copywriting/homePage/servicesSection/services";
-import CaseStudy from "../../../../components/en/versions/copywriting/homePage/caseStudySection/caseStudy";
-import Portfolio from "../../../../components/en/versions/copywriting/homePage/portfolioSection/portfolio";
-import Testimonials from "../../../../components/en/versions/copywriting/homePage/testimonialsSection/testimonials";
-import CTA from "../../../../components/en/versions/copywriting/homePage/ctaSection/cta";
-import Footer from "../../../../components/en/versions/copywriting/homePage/footerSection/footer";
+import { useLanguage } from "@/lib/language-context";
+
+// English Components
+import HeaderEN from "../../../../components/en/versions/copywriting/homePage/headerSection/header";
+import HeroEN from "../../../../components/en/versions/copywriting/homePage/heroSection/hero";
+import TrustedCompaniesEN from "../../../../components/en/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
+import AboutEN from "../../../../components/en/versions/copywriting/homePage/aboutSection/about";
+import ServicesEN from "../../../../components/en/versions/copywriting/homePage/servicesSection/services";
+import CaseStudyEN from "../../../../components/en/versions/copywriting/homePage/caseStudySection/caseStudy";
+import PortfolioEN from "../../../../components/en/versions/copywriting/homePage/portfolioSection/portfolio";
+import TestimonialsEN from "../../../../components/en/versions/copywriting/homePage/testimonialsSection/testimonials";
+import CTAEN from "../../../../components/en/versions/copywriting/homePage/ctaSection/cta";
+import FooterEN from "../../../../components/en/versions/copywriting/homePage/footerSection/footer";
+
+// Arabic Components
+import HeaderAR from "../../../../components/ar/versions/copywriting/homePage/headerSection/header";
+import HeroAR from "../../../../components/ar/versions/copywriting/homePage/heroSection/hero";
+import TrustedCompaniesAR from "../../../../components/ar/versions/copywriting/homePage/trustedCompaniesSection/trustedCompanies";
+import AboutAR from "../../../../components/ar/versions/copywriting/homePage/aboutSection/about";
+import ServicesAR from "../../../../components/ar/versions/copywriting/homePage/servicesSection/services";
+import CaseStudyAR from "../../../../components/ar/versions/copywriting/homePage/caseStudySection/caseStudy";
+import PortfolioAR from "../../../../components/ar/versions/copywriting/homePage/portfolioSection/portfolio";
+import TestimonialsAR from "../../../../components/ar/versions/copywriting/homePage/testimonialsSection/testimonials";
+import CTAAR from "../../../../components/ar/versions/copywriting/homePage/ctaSection/cta";
+import FooterAR from "../../../../components/ar/versions/copywriting/homePage/footerSection/footer";
 
 export default function CopywritingHome() {
+  const { language } = useLanguage();
   const aboutRef = useRef<HTMLElement>(null);
   const portfolioRef = useRef<HTMLElement>(null);
   const servicesRef = useRef<HTMLElement>(null);
@@ -30,18 +45,36 @@ export default function CopywritingHome() {
     caseStudy: () => scrollToSection(caseStudyRef),
   };
 
+  // Render components based on selected language - English as default
+  if (language === 'ar') {
+    return (
+      <div className="min-h-screen bg-white" dir="rtl">
+        <HeaderAR onNavigate={navigationHandlers} />
+        <HeroAR onNavigate={navigationHandlers} />
+        <TrustedCompaniesAR />
+        <AboutAR ref={aboutRef} />
+        <ServicesAR ref={servicesRef} />
+        <CaseStudyAR ref={caseStudyRef} />
+        <PortfolioAR ref={portfolioRef} />
+        <TestimonialsAR />
+        <CTAAR />
+        <FooterAR />
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-white">
-      <Header onNavigate={navigationHandlers} />
-      <Hero onNavigate={navigationHandlers} />
-      <TrustedCompanies />
-      <About ref={aboutRef} />
-      <Services ref={servicesRef} />
-      <CaseStudy ref={caseStudyRef} />
-      <Portfolio ref={portfolioRef} />
-      <Testimonials />
-      <CTA />
-      <Footer />
+    <div className="min-h-screen bg-white" dir="ltr">
+      <HeaderEN onNavigate={navigationHandlers} />
+      <HeroEN onNavigate={navigationHandlers} />
+      <TrustedCompaniesEN />
+      <AboutEN ref={aboutRef} />
+      <ServicesEN ref={servicesRef} />
+      <CaseStudyEN ref={caseStudyRef} />
+      <PortfolioEN ref={portfolioRef} />
+      <TestimonialsEN />
+      <CTAEN />
+      <FooterEN />
     </div>
   );
 }
