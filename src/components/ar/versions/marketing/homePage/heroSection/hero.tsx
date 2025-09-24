@@ -31,7 +31,8 @@ export default function Hero({ onNavigate }: HeroProps) {
           {/* First in RTL: Problem section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              سئمت من التخمين<span className={styles.deconstructedQ}>
+              سئمت من التخمين{" "}
+              <span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>

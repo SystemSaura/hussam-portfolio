@@ -30,8 +30,8 @@
   height: auto;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
+  gap: 4rem;
   margin-top: 3rem;
   /* RTL: Reverse the flex direction for proper RTL flow */
   direction: rtl;
@@ -46,6 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex: 0 0 auto;
 }
 
 .homeHeaderSubheading {
@@ -99,6 +100,8 @@
   direction: ltr;
   align-self: flex-start;
   margin-top: 0;
+  flex: 0 0 auto;
+  width: 80px;
 }
 
 .arrowDesktop {
@@ -135,6 +138,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
+  flex: 0 0 auto;
 }
 
 .sevaFields.formkitFields {
@@ -234,10 +238,9 @@
 
 .deconstructedQ {
   display: inline;
-  /* RTL: Adjust margin for Arabic */
-  margin-right: 6px;
-  margin-left: 0;
   white-space: nowrap;
+  /* Remove margins - will be positioned after the text */
+  margin: 0;
 }
 
 .qCurve {
@@ -249,9 +252,8 @@
 .qDot {
   color: #2762F8;
   display: inline;
-  /* RTL: Adjust margin for Arabic */
-  margin-right: 2px;
-  margin-left: 0;
+  /* Small space between curve and dot */
+  margin-left: 2px;
   animation: dot-bounce 2s ease-in-out infinite 0.3s;
 }
 
@@ -297,6 +299,10 @@
   .homeHeaderText1 {
     max-width: 420px;
   }
+  
+  .homeHeaderContent {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -315,6 +321,10 @@
   
   .homeHeaderText1 {
     max-width: 380px;
+  }
+  
+  .homeHeaderContent {
+    gap: 1.5rem;
   }
 }
 
@@ -358,6 +368,7 @@
     margin-top: 1.5rem;
     /* RTL: Reset direction for mobile stacking */
     direction: ltr;
+    justify-content: center;
   }
   
   .homeHeaderTextWrap {
@@ -454,6 +465,10 @@
     align-items: center;
     justify-content: center;
     margin: 0.2rem 0;
+  }
+  
+  .arrowContainer {
+    width: 100%;
   }
 }
 
