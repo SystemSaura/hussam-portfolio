@@ -239,8 +239,9 @@
 .deconstructedQ {
   display: inline;
   white-space: nowrap;
-  /* Remove margins - will be positioned after the text */
   margin: 0;
+  /* Ensure consistent RTL positioning */
+  margin-left: 6px;
 }
 
 .qCurve {
@@ -252,7 +253,6 @@
 .qDot {
   color: #2762F8;
   display: inline;
-  /* Small space between curve and dot - RTL adjusted */
   margin-right: 2px;
   animation: dot-bounce 2s ease-in-out infinite 0.3s;
 }

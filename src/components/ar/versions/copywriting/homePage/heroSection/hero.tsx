@@ -18,7 +18,7 @@ export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-36 pb-8 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
-        {/* Main Hero Title - Both lines right-aligned for Arabic */}
+        {/* Main Hero Title - Right-aligned for Arabic with copywriting content */}
         <div className="mb-24">
           <h1 className={styles.flechaHeroTitle}>
             حول النصوص المشتتة إلى<br />
@@ -26,24 +26,24 @@ export default function Hero({ onNavigate }: HeroProps) {
           </h1>
         </div>
 
-        {/* Lower Section - Three parts with RTL flow */}
+        {/* Lower Section - Three parts with proper RTL flow */}
         <div className={styles.homeHeaderContent}>
-          {/* Right: Problem section */}
+          {/* First in RTL: Problem section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              نصوصك لا تحقق النتائج <span className={styles.deconstructedQ}>
+              <span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
+              {" "}نصوصك لا تحقق النتائج
             </h2>
             <p className={styles.homeHeaderText1}>
               نصوصك التسويقية يجب أن تحول الزوار إلى عملاء، وليس أن تجعلهم ينامون. احصل على كتابة إعلانية استراتيجية تجعل العملاء المحتملين يقولون "هذا بالضبط ما أحتاجه" وتحول المتصفحين إلى مشترين لا يطيقون انتظاراً للعمل معك.
             </p>
           </div>
 
-          {/* Center: Arrow - Desktop horizontal, Mobile vertical */}
+          {/* Center: Arrow */}
           <div className={styles.arrowContainer}>
-            {/* Desktop Arrow - Horizontal (flipped for RTL) */}
             <div className={styles.arrowDesktop}>
               <Image
                 src="https://ext.same-assets.com/3287453319/171477844.svg"
@@ -54,7 +54,6 @@ export default function Hero({ onNavigate }: HeroProps) {
                 style={{ transform: 'scaleX(-1)' }}
               />
             </div>
-            {/* Mobile Arrow - Vertical */}
             <div className={styles.arrowMobile}>
               <Image
                 src="https://ext.same-assets.com/3287453319/3126314943.svg"
@@ -66,7 +65,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             </div>
           </div>
 
-          {/* Left: Start here form */}
+          {/* Last in RTL: Action section */}
           <div className={styles.homeHeaderFormWrap}>
             <h3 className={styles.homeHeaderSubheadingRight + " mb-6"}>ابدأ من هنا</h3>
             <div className={styles.sevaFields + " " + styles.formkitFields}>
