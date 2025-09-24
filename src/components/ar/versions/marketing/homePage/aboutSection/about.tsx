@@ -44,7 +44,7 @@ const About = forwardRef<HTMLElement>((_, ref) => {
 
           <p>في النهاية، التسويق الحقيقي له هدف واحد فقط:</p>
 
-          <p className="text-cyan-400 font-medium arabic-heading">تحقيق نتائج أعمال قابلة للقياس، يمكن الاعتماد عليها، وتضمن استمرار نموك لسنوات قادمة.</p>
+          <p className="text-cyan-400 font-medium arabic-heading">تحقيق نتائج قابلة للقياس، يمكن الاعتماد عليها، وتضمن استمرار نموك لسنوات قادمة.</p>
         </div>
       </div>
     </section>
