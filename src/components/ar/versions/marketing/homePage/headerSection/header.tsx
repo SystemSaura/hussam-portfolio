@@ -57,10 +57,10 @@ export default function Header({ onNavigate, variant = "default" }: HeaderProps)
           </Link>
         </div>
 
-        {/* Language Toggle (Center) */}
-        <div className="absolute left-1/2 transform -translate-x-1/2">
-          <LanguageToggle />
-        </div>
+      {/* Language Toggle (Center) */}
+      <div className="absolute left-1/2" style={{ transform: 'translateX(-50%)' }}>
+        <LanguageToggle />
+      </div>
 
         {/* Consultation Button (Left in RTL) */}
         <button 
