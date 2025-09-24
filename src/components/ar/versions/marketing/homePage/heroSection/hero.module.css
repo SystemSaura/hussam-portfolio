@@ -252,8 +252,8 @@
 .qDot {
   color: #2762F8;
   display: inline;
-  /* Small space between curve and dot */
-  margin-left: 2px;
+  /* Small space between curve and dot - RTL adjusted */
+  margin-right: 2px;
   animation: dot-bounce 2s ease-in-out infinite 0.3s;
 }
 

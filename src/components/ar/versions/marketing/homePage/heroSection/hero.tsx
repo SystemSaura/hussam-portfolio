@@ -31,12 +31,12 @@ export default function Hero({ onNavigate }: HeroProps) {
           {/* First in RTL: Problem section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              سئمت من التخمين{" "}
-              <span className={styles.deconstructedQ}>
-                <span className={styles.qCurve}>⌐</span>
-                <span className={styles.qDot}>•</span>
-              </span>
-            </h2>
+  <span className={styles.deconstructedQ}>
+    <span className={styles.qCurve}>⌐</span>
+    <span className={styles.qDot}>•</span>
+  </span>
+  {" "}سئمت من التخمين
+</h2>
             <p className={styles.homeHeaderText1}>
               ميزانيتك التسويقية تستحق أكثر من مجرد "جرب وشوف". 
               احصل على استراتيجيات تحول فهم السوق الخليجي إلى نمو يمكن التنبؤ به في أرقام مبيعاتك.
