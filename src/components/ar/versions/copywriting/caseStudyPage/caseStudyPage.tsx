@@ -66,24 +66,24 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
             <div className={styles.heroContent}>
               <div className={styles.heroText}>
                 <h1 className={styles.heroTitle + " arabic-heading"}>
-                  كيف جعلت الكتابة الإعلانية الاستراتيجية شفتات<br />
-                  <span className={styles.highlight}>منصة التوظيف بالذكاء الاصطناعي الأولى في السعودية</span>
+                  كيف حوّلت الكتابة الإعلانية الاستراتيجية "شفتات"<br />
+                  <span className={styles.highlight}>إلى منصة التوظيف الذكي الرائدة في المملكة</span>
                 </h1>
                 <p className={styles.heroSubtitle + " arabic-body"}>
-                  تحويل الزوار المرتبكين إلى عملاء ملتزمين من خلال كتابة تعمل فعلاً
+                  تحويل الزوار المتردّدين إلى عملاء مقتنعين من خلال نصوص تسويقية تحقق النتائج فعلاً
                 </p>
                 <div className={styles.heroStats}>
                   <div className={styles.stat}>
                     <div className={styles.statNumber}>100+</div>
-                    <div className={styles.statLabel + " arabic-body"}>عميل محتمل مؤهل</div>
+                    <div className={styles.statLabel + " arabic-body"}>عميل محتمل عالي الجودة</div>
                   </div>
                   <div className={styles.stat}>
                     <div className={styles.statNumber}>60%+</div>
-                    <div className={styles.statLabel + " arabic-body"}>معدل فتح الإيميل</div>
+                    <div className={styles.statLabel + " arabic-body"}>معدل فتح الرسائل</div>
                   </div>
                   <div className={styles.stat}>
                     <div className={styles.statNumber}>5,000+</div>
-                    <div className={styles.statLabel + " arabic-body"}>مشترك</div>
+                    <div className={styles.statLabel + " arabic-body"}>مشترك متفاعل</div>
                   </div>
                 </div>
               </div>
@@ -111,10 +111,10 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.resultsContainer}>
             <div className={styles.resultsHeader}>
               <h2 className={styles.resultsMainHeading + " arabic-heading"}>
-                نتائج كتابة <span className={styles.resultsHighlight}>تتحدث بوضوح</span>
+                أرقام <span className={styles.resultsHighlight}>تتحدث عن نفسها</span>
               </h2>
               <p className={styles.resultsSubheading + " arabic-body"}>
-                عندما تُوقف كتابتك الناس المناسبين في مسارهم، تصبح التحويلات متوقعة
+                عندما تخاطب نصوصك التسويقية العميل المناسب بالطريقة الصحيحة، تصبح المبيعات أمراً طبيعياً
               </p>
             </div>
             
@@ -122,24 +122,24 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
               <div className={styles.primaryResults}>
                 <div className={styles.primaryStat}>
                   <div className={styles.primaryNumber}>100+</div>
-                  <div className={styles.primaryLabel + " arabic-heading"}>عميل محتمل عالي الجودة مُولَّد</div>
-                  <div className={styles.primaryDesc + " arabic-body"}>من خلال كتابة تجعل العملاء المحتملين يفكرون "هذا بالضبط ما أحتاجه"</div>
+                  <div className={styles.primaryLabel + " arabic-heading"}>عميل محتمل عالي الجودة</div>
+                  <div className={styles.primaryDesc + " arabic-body"}>نصوص تجعل العملاء المحتملين يشعرون "هذا بالضبط ما كنت أبحث عنه"</div>
                 </div>
                 <div className={styles.primaryStat}>
                   <div className={styles.primaryNumber}>60%+</div>
-                  <div className={styles.primaryLabel + " arabic-heading"}>معدل فتح الإيميل</div>
-                  <div className={styles.primaryDesc + " arabic-body"}>عناوين توقف التمرير وتطالب بالانتباه</div>
+                  <div className={styles.primaryLabel + " arabic-heading"}>معدل فتح الرسائل الإلكترونية</div>
+                  <div className={styles.primaryDesc + " arabic-body"}>عناوين تُوقف القارئ وتُجبره على فتح الرسالة</div>
                 </div>
               </div>
               
               <div className={styles.secondaryResults}>
                 <div className={styles.secondaryStat}>
                   <div className={styles.secondaryNumber}>5,000+</div>
-                  <div className={styles.secondaryLabel + " arabic-heading"}>مشترك إيميل متفاعل</div>
+                  <div className={styles.secondaryLabel + " arabic-heading"}>مشترك متفاعل في القائمة البريدية</div>
                 </div>
                 <div className={styles.secondaryStat}>
                   <div className={styles.secondaryNumber}>80%</div>
-                  <div className={styles.secondaryLabel + " arabic-heading"}>رسالة توفير التكلفة</div>
+                  <div className={styles.secondaryLabel + " arabic-heading"}>توفير في تكاليف التسويق</div>
                 </div>
               </div>
             </div>
@@ -151,14 +151,14 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.container}>
             <div className={styles.challengeGrid}>
               <div className={styles.challengeContent}>
-                <h2 className={styles.sectionTitle + " arabic-heading"}>تحدي الكتابة</h2>
+                <h2 className={styles.sectionTitle + " arabic-heading"}>التحدّي: رسائل تقنية مُربكة</h2>
                 <p className={styles.challengeText + " arabic-body"}>
-                  شفتات لديها تكنولوجيا توظيف ذكي قوية، لكن كتابة الموقع كانت تربك العملاء المحتملين بدلاً من تحويلهم. الزوار لم يستطيعوا فهم <strong>ما تفعله شفتات فعلاً</strong>، أو <strong>لمن هي مخصصة</strong>، أو <strong>لماذا يجب أن يهتموا</strong>. الرسائل حاولت التحدث مع الجميع لكن لم تلامس أحداً—حالة كلاسيكية من الكتابة التي تشرح الميزات لكن تفشل في بيع التحول.
+                  شفتات تملك تقنية توظيف ذكية متطوّرة، لكن موقعها الإلكتروني كان يُشتت العملاء بدلاً من إقناعهم. الزوّار لم يفهموا <strong>ماذا تقدّم شفتات بالضبط</strong>، <strong>لمن تُوجّه خدماتها</strong>، أو <strong>لماذا يجب أن يختاروها</strong>. المحتوى كان يحاول مخاطبة الجميع، فلم يصل إلى أحد—مثال كلاسيكي على كتابة تشرح المزايا التقنية لكن تفشل في بيع الحلول.
                 </p>
                 <div className={styles.challengeTags}>
-                  <span className={styles.challengeTag + " arabic-body"}>رسائل مربكة</span>
-                  <span className={styles.challengeTag + " arabic-body"}>لا توجد قيمة واضحة</span>
-                  <span className={styles.challengeTag + " arabic-body"}>تحويل ضعيف</span>
+                  <span className={styles.challengeTag + " arabic-body"}>رسائل مُشتتة</span>
+                  <span className={styles.challengeTag + " arabic-body"}>قيمة غير واضحة</span>
+                  <span className={styles.challengeTag + " arabic-body"}>معدل تحويل ضعيف</span>
                 </div>
               </div>
               <div className={styles.challengeIcon}>
@@ -172,70 +172,70 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.solutionNew}>
           <div className={styles.container}>
             <div className={styles.solutionHeader}>
-              <h2 className={styles.sectionTitle + " arabic-heading"}>استراتيجية تحول الكتابة</h2>
+              <h2 className={styles.sectionTitle + " arabic-heading"}>الحل: استراتيجية تسويقية شاملة</h2>
               <p className={styles.solutionSubheading + " arabic-body"}>
-                كتابة إعلانية استراتيجية تحول الارتباك إلى وضوح والزوار إلى عملاء
+                كتابة إعلانية استراتيجية تحوّل التشتت إلى وضوح والزوار إلى عملاء
               </p>
             </div>
             
             <div className={styles.solutionGrid}>
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>كتابة صفحة رئيسية توقف وتحول</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>كتابة موقع إلكتروني يُحوّل الزوّار إلى عملاء</h3>
                 </div>
                 <p className={styles.solutionCardDesc + " arabic-body"}>
-                  حولنا المصطلحات التقنية المربكة إلى رسائل واضحة تتواصل فوراً مع القيمة
+                  حوّلنا المصطلحات التقنية المُعقّدة إلى رسائل واضحة تُظهر القيمة فوراً
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span className="arabic-body">عنوان واضح يوقف الناس المناسبين</span>
-                  <span className="arabic-body">عناوين فرعية تركز على الألم تجعل المشاكل حية</span>
-                  <span className="arabic-body">كتابة مدفوعة بالفوائد تُظهر التحول</span>
-                  <span className="arabic-body">دليل اجتماعي يبني مصداقية فورية</span>
+                  <span className="arabic-body">عنوان رئيسي يُوقف العميل المناسب في مساره</span>
+                  <span className="arabic-body">عناوين فرعية تُسلّط الضوء على المشاكل الحقيقية</span>
+                  <span className="arabic-body">محتوى يُركّز على الفوائد ويُظهر التحوّل المطلوب</span>
+                  <span className="arabic-body">شهادات عملاء تبني المصداقية من اللحظة الأولى</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>سلاسل إيميل تُغذي وتبيع</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>رسائل إلكترونية تبني الثقة وتُحوّل المهتمّين إلى عملاء</h3>
                 </div>
                 <p className={styles.solutionCardDesc + " arabic-body"}>
-                  حملات إيميل عالية الأداء توجه العملاء المحتملين من الفضول إلى التحويل
+                  رسائل إلكترونية عالية الأداء تأخذ العميل من مرحلة الفضول إلى مرحلة الشراء
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span className="arabic-body">عناوين بمعدل فتح أكثر من 60%</span>
-                  <span className="arabic-body">سلاسل ترحيب تبني علاقات</span>
-                  <span className="arabic-body">إيميلات تُغذي تتعامل مع الاعتراضات</span>
-                  <span className="arabic-body">سلاسل مبيعات تُغلق الصفقات</span>
+                  <span className="arabic-body">عناوين بمعدل فتح يتجاوز 60%</span>
+                  <span className="arabic-body">سلسلة ترحيب تبني علاقة قوية مع المشترك</span>
+                  <span className="arabic-body">رسائل تُعالج الاعتراضات والشكوك</span>
+                  <span className="arabic-body">سلسلة مبيعات تُنهي الصفقة</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>محتوى يبني مجتمع وسلطة</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>محتوى يُؤسس لسلطة العلامة التجارية ويبني جمهوراً مُخلصاً</h3>
                 </div>
                 <p className={styles.solutionCardDesc + " arabic-body"}>
-                  كتابة محتوى استراتيجية تُنمي جماهير متفاعلة وتؤسس قيادة فكرية
+                  استراتيجية محتوى تُنمّي جمهوراً مُتفاعلاً وتُرسّخ القيادة الفكرية
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span className="arabic-body">محتوى لينكد إن يجذب أكثر من 4,000 محترف</span>
-                  <span className="arabic-body">كتابة بناء مجتمع تقود التفاعل</span>
-                  <span className="arabic-body">محتوى قيادة فكرية يبني الثقة</span>
-                  <span className="arabic-body">نمو الجمهور من خلال رؤى قيمة</span>
+                  <span className="arabic-body">محتوى لينكد إن جذب أكثر من 4,000 محترف مُتخصص</span>
+                  <span className="arabic-body">كتابة تُحفّز التفاعل وتبني مجتمعاً مُخلصاً</span>
+                  <span className="arabic-body">محتوى قيادة فكرية يُعزّز الثقة في العلامة التجارية</span>
+                  <span className="arabic-body">نموّ مستمر للجمهور من خلال رؤى قيّمة ومُفيدة</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>كتابة مبيعات تُغلق الصفقات</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>كتابة مبيعات تُنجز الصفقات</h3>
                 </div>
                 <p className={styles.solutionCardDesc + " arabic-body"}>
-                  كتابة صفحة هبوط تتعامل مع كل اعتراض وتجعل قرارات الشراء واضحة
+                  كتابة صفحات هبوط تُعالج كل اعتراض وتجعل قرارات الشراء واضحة
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span className="arabic-body">عناوين تخلق إلحاح</span>
-                  <span className="arabic-body">فوائد ترسم التحول</span>
-                  <span className="arabic-body">التعامل مع الاعتراضات يبني الثقة</span>
-                  <span className="arabic-body">دعوات للعمل تطالب بإجراء فوري</span>
+                  <span className="arabic-body">عناوين تخلق شعوراً بالإلحاح</span>
+                  <span className="arabic-body">فوائد تُظهر التحوّل المطلوب</span>
+                  <span className="arabic-body">معالجة الاعتراضات تُعزّز الثقة</span>
+                  <span className="arabic-body">دعوات للعمل تُحفّز على اتخاذ القرار فوراً</span>
                 </div>
               </div>
             </div>
@@ -246,9 +246,9 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.socialProof}>
           <div className={styles.container}>
             <div className={styles.centeredTextContent}>
-              <h2 className={styles.sectionTitle + " arabic-heading"}>نمو المجتمع من خلال المحتوى</h2>
+              <h2 className={styles.sectionTitle + " arabic-heading"}>نموّ حقيقي من خلال المحتوى الاستراتيجي</h2>
               <p className={styles.socialProofSubtitle + " arabic-body"}>
-                من صفر متابعين إلى مجتمعات متفاعلة—بناء جماهير تتحول من خلال كتابة محتوى استراتيجية
+                من الصفر إلى مجتمعات نشطة—بناء جماهير مُتفاعلة من خلال كتابة محتوى مدروسة
               </p>
             </div>
             <div className={styles.socialGrid}>
@@ -264,22 +264,22 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 </div>
                 <div className={styles.socialContent}>
                   <h3 className={styles.socialTitle + " arabic-heading"}>بناء مجتمع لينكد إن</h3>
-                  <p className={styles.socialDesc + " arabic-body"}><span className={styles.highlightNumber}>4,000+</span> محترف متفاعل من خلال محتوى يبني السلطة ويقود اتصالات ذات معنى</p>
+                  <p className={styles.socialDesc + " arabic-body"}><span className={styles.highlightNumber}>4,000+</span> محترف مُتخصص من خلال محتوى يُرسّخ السلطة المهنية ويُحفّز التفاعل الهادف</p>
                 </div>
               </div>
               <div className={styles.socialCard}>
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/X.webp"
-                    alt="نجاح مجتمع الإيميل"
+                    alt="نجاح القائمة البريدية"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle + " arabic-heading"}>نمو مجتمع الإيميل</h3>
-                  <p className={styles.socialDesc + " arabic-body"}><span className={styles.highlightNumber}>60%+</span> معدل فتح من خلال عناوين تخلق ترقب وتبني قراءة مخلصة</p>
+                  <h3 className={styles.socialTitle + " arabic-heading"}>نمو القائمة البريدية</h3>
+                  <p className={styles.socialDesc + " arabic-body"}><span className={styles.highlightNumber}>60%+</span> معدل فتح من خلال عناوين تخلق الترقّب وتبني جمهوراً مُخلصاً</p>
                 </div>
               </div>
             </div>
@@ -291,7 +291,7 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
       <section className={styles.testimonial}>
         <div className={styles.container}>
           <blockquote className={styles.quote + " arabic-body"}>
-            "تحول الكتابة لم يحسن رسائلنا فقط—بل جعل العملاء المحتملين يفهمون فوراً لماذا يحتاجون شفتات. الآن موقعنا <strong>يحول الزوار بدلاً من إرباكهم</strong>."
+            "التحوّل في كتابتنا التسويقية لم يُحسّن رسائلنا فحسب—بل جعل العملاء المحتملين يفهمون فوراً لماذا يحتاجون شفتات. موقعنا الآن <strong>يُحوّل الزوّار بدلاً من تشتيتهم</strong>."
           </blockquote>
         </div>
       </section>
@@ -300,10 +300,10 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
       <section className={styles.verification}>
         <div className={styles.verificationContainer}>
           <h2 className={styles.verificationTitle + " arabic-heading"}>
-            تحقق من <span className={styles.verificationHighlight}>نجاح الكتابة هذا</span>
+            تأكّد من <span className={styles.verificationHighlight}>هذا النجاح بنفسك</span>
           </h2>
           <p className={styles.verificationText + " arabic-body"}>
-            تواصل مع عبدالله مباشرة للتحقق من كيف حولت الكتابة الإعلانية الاستراتيجية معدلات تحويل شفتات:
+            تواصل مع عبدالله مباشرة للتحقق من كيف حوّلت الكتابة الإعلانية الاستراتيجية معدلات تحويل شفتات:
           </p>
           <a href="mailto:abdullah@shiftatsa.com" className={styles.verificationEmail + " arabic-body"}>
             abdullah@shiftatsa.com
@@ -317,15 +317,15 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.cta}>
           <div className={styles.container}>
             <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle + " arabic-heading"}>مستعد لكتابة تُحول؟</h2>
+              <h2 className={styles.ctaTitle + " arabic-heading"}>هل أنت مُستعد لكتابة تسويقية تُحقق النتائج؟</h2>
               <p className={styles.ctaText + " arabic-body"}>
-                احصل على نفس النهج الكتابي الاستراتيجي الذي جعل رسائل شفتات مستحيلة التجاهل.
+                احصل على نفس الاستراتيجية الكتابية التي جعلت رسائل شفتات مُستحيلة التجاهل
               </p>
               <button 
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.ctaButton + " arabic-body"}
               >
-                احجز جلسة استراتيجية الكتابة
+                احجز جلسة استراتيجية تسويقية
               </button>
             </div>
           </div>

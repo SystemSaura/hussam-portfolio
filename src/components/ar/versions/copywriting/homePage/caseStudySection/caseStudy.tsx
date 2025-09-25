@@ -42,7 +42,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                 </div>
               </div>
               <div className={styles.readMoreContainer}>
-                <span className={styles.readMoreText}>اطلع على نتائج النصوص</span>
+                <span className={styles.readMoreText}> اقرأ دراسة الحالة </span>
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
                   alt="سهم"
