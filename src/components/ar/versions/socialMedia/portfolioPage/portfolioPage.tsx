@@ -19,140 +19,139 @@ interface PortfolioPageProps {
 }
 
 export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
-  const [activeTab, setActiveTab] = useState("ALL");
+  const [activeTab, setActiveTab] = useState("الكل");
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(false);
   const tabContainerRef = useRef<HTMLDivElement>(null);
 
-  // Focused portfolio data for social media clients
+  // Social Media portfolio data in Arabic
   const portfolioData = {
-    "Content Marketing": [
+    "تسويق المحتوى": [
       {
-        category: "HR Technology",
+        category: "تقنية الموارد البشرية",
         logo: "/logos/shiftat.webp",
-        logoText: "SHIFTAT",
-        title: "LinkedIn Authority Content",
-        description: "Built thought leadership content that positioned Shiftat as Saudi Arabia's go-to AI recruitment expert. Daily insights that HR directors actually shared.",
+        logoText: "شفتات",
+        title: "محتوى سلطة لينكد إن",
+        description: "بنينا محتوى قيادة فكرية وضع شفتات كخبير التوظيف الذكي الأول في السعودية. رؤى يومية يشاركها مديرو الموارد البشرية فعلاً.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
       {
-        category: "Healthcare",
+        category: "الرعاية الصحية",
         logo: "/logos/alnahdi.webp",
-        logoText: "AL NAHDI",
-        title: "Newsletter That Converts",
-        description: "Transformed boring health tips into engaging newsletter content. 65% open rates because it solved real problems instead of pushing products.",
+        logoText: "النهدي",
+        title: "نشرة تحقق نتائج",
+        description: "حولنا نصائح صحية مملة إلى محتوى نشرة جذاب. معدل فتح ٦٥٪ لأنها تحل مشاكل حقيقية بدلاً من الترويج للمنتجات.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
       },
       {
-        category: "Education",
+        category: "التعليم",
         logo: "/logos/bonyan.webp",
-        logoText: "BONYAN",
-        title: "Educational Content That Sticks",
-        description: "Created blog content parents actually wanted to read. Focused on student development challenges, not school marketing.",
+        logoText: "بنيان",
+        title: "محتوى تعليمي يبقى عالقاً",
+        description: "أنشأنا محتوى مدونة يريد الأهالي قراءته فعلاً. ركزنا على تحديات تطوير الطلاب وليس تسويق المدرسة.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
       },
       {
-        category: "Mental Health",
+        category: "الصحة النفسية",
         logo: "/logos/mindtales.webp",
-        logoText: "MINDTALES",
-        title: "Wellness Content That Matters",
-        description: "Mental health content in Arabic and English that actually helps people instead of just promoting services. Real stories, real solutions.",
+        logoText: "مايند تيلز",
+        title: "محتوى صحة نفسية يحدث فرقاً",
+        description: "محتوى صحة نفسية بالعربية والإنجليزية يساعد الناس فعلاً بدلاً من الترويج للخدمات. قصص حقيقية، حلول حقيقية.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
       }
     ],
-    "Social Media Marketing": [
+    "تسويق وسائل التواصل الاجتماعي": [
       {
-        category: "HR Technology",
+        category: "تقنية الموارد البشرية",
         logo: "/logos/shiftat.webp",
-        logoText: "SHIFTAT",
-        title: "B2B Social That Actually Works",
-        description: "Grew from 0 to 12K followers who care about AI recruitment. Built authority on LinkedIn and X with content HR leaders share, not ignore.",
+        logoText: "شفتات",
+        title: "تواصل اجتماعي للشركات يحقق النتائج",
+        description: "نمونا من ٠ إلى ١٢ ألف متابع يهتمون بالتوظيف الذكي. بنينا سلطة على لينكد إن وإكس بمحتوى يشاركه قادة الموارد البشرية وليس يتجاهلونه.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
       {
-        category: "Logistics",
+        category: "اللوجستيات",
         logo: "/logos/abudawood.webp",
-        logoText: "ABUDAWOOD",
-        title: "Industry Authority Positioning",
-        description: "Positioned GCC's logistics leader as the voice of supply chain innovation. LinkedIn strategy that builds trust before selling.",
+        logoText: "أبوداود",
+        title: "تموضع سلطة الصناعة",
+        description: "وضعنا رائد الخدمات اللوجستية في الخليج كصوت الابتكار في سلسلة التوريد. استراتيجية لينكد إن تبني الثقة قبل البيع.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1OW44Melyr3JIr4rYvE8SQFT-hx_QzI48?usp=drive_link"
+        link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true"
       },
       {
-        category: "Education",
+        category: "التعليم",
         logo: "/logos/downehouse.webp",
-        logoText: "DOWNE HOUSE",
-        title: "Enrollment-Driven Social Strategy",
-        description: "Social content that shows school excellence without bragging. Parents share it because it solves their education concerns.",
+        logoText: "داون هاوس",
+        title: "استراتيجية اجتماعية للقبولات",
+        description: "محتوى اجتماعي يُظهر تميز المدرسة دون مفاخرة. الأهالي يشاركونه لأنه يحل مخاوفهم التعليمية.",
         buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/14HO-MTvpGGteiaJG7o3vBMDiIQecnoYM?usp=sharing"
       },
       {
-        category: "Arts & Culture",
+        category: "الفنون",
         logo: "/logos/jaxdistrict.webp",
-        logoText: "JAX DISTRICT",
-        title: "Community-Building Content",
-        description: "Built engaged arts community through social media. Content that celebrates local talent and drives event attendance.",
+        logoText: "جاكس ديستريكت",
+        title: "محتوى يجمع المجتمع الفني",
+        description: "بنينا مجتمع فنون متفاعل من خلال وسائل التواصل. محتوى يحتفي بالمواهب المحلية ويقود حضور الفعاليات.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1TXrFtUlfxUvZosRY-WTqDlzqF_HVJimE?usp=sharing"
       },
       {
-        category: "Sustainability",
+        category: "البيئة",
         logo: "/logos/reviva.webp",
-        logoText: "REVIVA",
-        title: "Cause-Driven Engagement",
-        description: "Environmental content that motivates action, not just awareness. Social strategy that turns followers into recycling advocates.",
+        logoText: "ريفيفا",
+        title: "تفاعل موجه بالقضايا",
+        description: "محتوى بيئي يحفز على العمل وليس الوعي فقط. استراتيجية اجتماعية تحول المتابعين إلى دعاة إعادة تدوير.",
         buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link"
       },
       {
-        category: "Public Transport",
+        category: "النقل",
         logo: "/logos/makkahbus.webp",
-        logoText: "MAKKAH BUS",
-        title: "Public Service Communication",
-        description: "Made public transportation social media actually useful. Service updates and community engagement that serves residents.",
+        logoText: "باص مكة",
+        title: "تواصل الخدمة العامة",
+        description: "جعلنا وسائل التواصل للنقل العام مفيدة فعلاً. تحديثات خدمة وتفاعل مجتمعي يخدم السكان.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
       }
     ],
-    "Brand Strategy": [
+    "استراتيجية العلامة التجارية": [
       {
-        category: "Luxury Real Estate",
+        category: "العقارات",
         logo: "/logos/empirerealestate.webp",
-        logoText: "EMPIRE REAL ESTATE",
-        title: "Premium Brand Positioning",
-        description: "Positioned Qatar luxury properties for high-net-worth buyers. Brand strategy that attracts serious investors, not browsers.",
+        logoText: "امباير العقارية",
+        title: "تموضع العلامة المتميزة",
+        description: "وضعنا عقارات قطر الفاخرة لمشترين أثرياء. استراتيجية علامة تجذب مستثمرين جديين وليس متصفحين.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
       },
       {
-        category: "GCC Logistics",
+        category: "اللوجستيات",
         logo: "/logos/saeq.webp",
-        logoText: "SAEQ",
-        title: "Regional Expansion Strategy",
-        description: "Brand positioning for GCC logistics expansion. Strategy that builds trust across markets before pitching services.",
+        logoText: "سائق",
+        title: "استراتيجية التوسع الإقليمي",
+        description: "تموضع علامة تجارية للتوسع اللوجستي في الخليج. استراتيجية تبني الثقة عبر الأسواق قبل عرض الخدمات.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
       },
       {
-        category: "Personal Brand",
+        category: "الفنون",
         logo: "/logos/alhanoufalhamdan.webp",
-        logoText: "ALHANOUF ALHAMDAN",
-        title: "Artist Brand Development",
-        description: "Personal brand strategy for arts professional. Portfolio positioning that attracts serious collectors and opportunities.",
+        logoText: "الهنوف الحمدان",
+        title: "تطوير العلامة الشخصية",
+        description: "استراتيجية علامة شخصية لمحترفة فنون. تموضع محفظة أعمال يجذب هواة جمع جديين وفرصاً.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing"
       }
     ]
   };
 
-  // Social media focused service types
-  const serviceTypes = ["ALL", "Social Media Marketing", "Content Marketing", "Brand Strategy"];
+  const serviceTypes = ["الكل", "تسويق وسائل التواصل الاجتماعي", "تسويق المحتوى", "استراتيجية العلامة التجارية"];
 
   // Check scroll position and update arrow visibility
   const checkScrollPosition = () => {
@@ -189,7 +188,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   }, []);
 
   const getFilteredData = () => {
-    if (activeTab === "ALL") {
+    if (activeTab === "الكل") {
       return portfolioData;
     }
     return { [activeTab]: portfolioData[activeTab as keyof typeof portfolioData] };
@@ -224,7 +223,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" dir="rtl">
       {/* Header with white background */}
       <div className="bg-white">
         <Header onNavigate={onNavigate} variant="white" />
@@ -233,24 +232,24 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       {/* Main Portfolio Content */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Page Header - Social Media Focused */}
+          {/* Page Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-50 rounded-full px-4 py-2 mb-4">
-              <span className={styles.flechaRatingText}>Social Media Specialist</span>
+              <span className={styles.flechaRatingText + " arabic-body"}>متخصص وسائل التواصل الاجتماعي</span>
               <span className="text-gray-400 mx-2">•</span>
-              <span className={styles.flechaProjectsText}>{getTotalProjectCount()} High-Impact Campaigns</span>
+              <span className={styles.flechaProjectsText + " arabic-body"}>{getTotalProjectCount()} حملة عالية التأثير</span>
             </div>
-            <h1 className={styles.flechaSectionHeading + " mb-6"}>
-              {activeTab === "ALL" ? "Social Media That Drives Business" : activeTab}
+            <h1 className={styles.flechaSectionHeading + " mb-6 arabic-heading"}>
+              {activeTab === "الكل" ? "وسائل تواصل اجتماعي تحرك الأعمال" : activeTab}
             </h1>
-            <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12"}>
-              {activeTab === "ALL" 
-                ? "Stop posting into the void. These campaigns generated real followers, real engagement, and real leads for GCC businesses. No vanity metrics—just results that matter to your bottom line."
-                : `${activeTab} campaigns that turned social media from cost center into revenue driver.`
+            <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12 arabic-body"}>
+              {activeTab === "الكل" 
+                ? "توقف عن النشر في الفراغ. هذه الحملات حققت متابعين حقيقيين، تفاعلاً حقيقياً، وعملاء حقيقيين لشركات خليجية. بلا مقاييس وهمية—فقط نتائج مهمة لأرباحك."
+                : `استكشف مشاريع ${activeTab} التي حولت وسائل التواصل من ضوضاء إلى قناة توليد عملاء فعالة.`
               }
             </p>
 
-            {/* Enhanced Tab Bar */}
+            {/* Enhanced Tab Bar with scroll indicators */}
             <div className={styles.tabBarSection}>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className={styles.tabContainerWrapper}>
@@ -259,7 +258,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                     <button 
                       onClick={scrollLeft}
                       className={styles.scrollArrow + " " + styles.scrollArrowLeft}
-                      aria-label="Scroll tabs left"
+                      aria-label="مرر التبويبات لليسار"
                     >
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -279,7 +278,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         onClick={() => setActiveTab(type)}
                         className={`${styles.tabButton} ${
                           activeTab === type ? styles.tabButtonActive : styles.tabButtonInactive
-                        }`}
+                        } arabic-body`}
                       >
                         {type}
                       </button>
@@ -291,7 +290,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                     <button 
                       onClick={scrollRight}
                       className={styles.scrollArrow + " " + styles.scrollArrowRight}
-                      aria-label="Scroll tabs right"
+                      aria-label="مرر التبويبات لليمين"
                     >
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -306,9 +305,9 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           {/* Portfolio Categories */}
           {Object.entries(getFilteredData()).map(([categoryName, projects], categoryIndex) => (
             <div key={categoryName} className="mb-32">
-              {activeTab === "ALL" && (
+              {activeTab === "الكل" && (
                 <div className="mt-16 mb-16">
-                  <h2 className={styles.categoryHeading}>{categoryName}</h2>
+                  <h2 className={styles.categoryHeading + " arabic-heading"}>{categoryName}</h2>
                   <div className={styles.categoryDivider}></div>
                 </div>
               )}
@@ -318,41 +317,42 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                   <div key={`${categoryName}-${index}`} className={`${styles.portfolioCard} group`}>
                     <div className={`${styles.portfolioHeader} bg-gradient-to-br ${getHeaderColorClass(project.buttonColor)}`}>
                       <div className={styles.portfolioHeaderContent}>
-                        <div className={styles.portfolioCategory}>{project.category}</div>
+                        <div className={styles.portfolioCategory + " arabic-body"}>{project.category}</div>
                         <div className={styles.portfolioCompanyLogo}>
                           {project.logo ? (
                             <img src={project.logo} alt={project.logoText} className={styles.portfolioLogoImg} />
                           ) : (
-                            <div className={styles.portfolioLogoText}>{project.logoText}</div>
+                            <div className={styles.portfolioLogoText + " arabic-body"}>{project.logoText}</div>
                           )}
                         </div>
                       </div>
                       <div className={styles.portfolioHeaderMain}>
-                        <h4 className={styles.portfolioServiceType}>{categoryName}</h4>
-                        <p className={styles.portfolioServiceDetail}>{project.category} Project</p>
+                        <h4 className={styles.portfolioServiceType + " arabic-heading"}>{categoryName}</h4>
+                        <p className={styles.portfolioServiceDetail + " arabic-body"}>مشروع {project.category}</p>
                       </div>
                     </div>
                     
                     <div className={styles.portfolioContent}>
-                      <h3 className={styles.portfolioTitle}>
+                      <h3 className={styles.portfolioTitle + " arabic-heading"}>
                         {project.title}
                         <Image
                           src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                          alt="Arrow"
+                          alt="سهم"
                           width={18}
                           height={18}
                           className={styles.portfolioArrow}
+                          style={{ transform: 'scaleX(-1)' }}
                         />
                       </h3>
-                      <p className={styles.portfolioDescription}>
+                      <p className={styles.portfolioDescription + " arabic-body"}>
                         {project.description}
                       </p>
                       <button 
                         onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
-                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
+                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""} arabic-body`}
                         disabled={project.link === "#"}
                       >
-                        {project.link !== "#" ? "See Results" : "Coming Soon"}
+                        {project.link !== "#" ? "شاهد العمل" : "قريباً"}
                       </button>
                     </div>
                   </div>
@@ -363,14 +363,24 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
 
           {/* Portfolio Summary */}
           <div className={`text-center border-t border-gray-200 ${styles.portfolioSummary}`}>
-            <div className="inline-flex items-center bg-gray-50 rounded-full px-6 py-3 border">
-              <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span className={styles.flechaVerificationText + " mr-3"}>All campaigns verified and documented</span>
-              <Link href="/v/social-media/h" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>
-                Back to Home →
-              </Link>
+            <div className="space-y-4">
+              {/* Verification Badge */}
+              <div className="inline-flex items-center bg-green-50 rounded-full px-6 py-3 border border-green-200">
+                <svg className="w-5 h-5 text-green-500 ml-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className={styles.flechaVerificationText + " arabic-body"}>جميع الحملات موثقة ومُتحقق منها</span>
+              </div>
+              
+              {/* Back Link */}
+              <div>
+                <Link href="/v/social-media/homepage" className={styles.flechaViewAllText + " inline-flex items-center hover:text-blue-800 transition-colors arabic-body text-blue-600"}>
+                  العودة إلى الرئيسية
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

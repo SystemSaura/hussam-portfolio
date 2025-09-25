@@ -18,7 +18,7 @@ interface CaseStudyDetailProps {
 
 export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
   return (
-    <div className={styles.detailContainer}>
+    <div className={styles.detailContainer} dir="rtl">
       {/* Unified Background Container for Header + Hero */}
       <div className={styles.unifiedBackgroundContainer}>
         {/* Header Navigation */}
@@ -26,26 +26,26 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.navContainer}>
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/v/social-media/h" className={styles.logoName}>
-                Hussam Baaka <span className={styles.cursorBlink}>|</span>
+              <Link href="/v/social-media/homepage" className={styles.logoName + " arabic-body"}>
+                حسام بعكة <span className={styles.cursorBlink}>|</span>
               </Link>
             </div>
 
             {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-0">
-              <button onClick={onNavigate.about} className={styles.navLink}>About</button>
-              <button onClick={onNavigate.portfolio} className={styles.navLink}>Portfolio</button>
-              <button onClick={onNavigate.services} className={styles.navLink}>Services</button>
-              <button onClick={onNavigate.caseStudy} className={styles.navLink}>Case Study</button>
+            <nav className="hidden md:flex items-center space-x-0 space-x-reverse">
+              <button onClick={onNavigate.about} className={styles.navLink + " arabic-body"}>نبذة عني</button>
+              <button onClick={onNavigate.portfolio} className={styles.navLink + " arabic-body"}>أعمالي</button>
+              <button onClick={onNavigate.services} className={styles.navLink + " arabic-body"}>خدماتي</button>
+              <button onClick={onNavigate.caseStudy} className={styles.navLink + " arabic-body"}>دراسة حالة</button>
             </nav>
 
             {/* Right side buttons */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 space-x-reverse">
               <button 
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.navButtonStrategy}
+                className={styles.navButtonStrategy + " arabic-body"}
               >
-                Book Consultation
+                احجز استشارة
               </button>
             </div>
 
@@ -60,30 +60,30 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           </div>
         </header>
 
-        {/* Hero Section - Optimized for Social Media Buyers */}
+        {/* Hero Section */}
         <section className={styles.hero}>
           <div className={styles.heroContainer}>
             <div className={styles.heroContent}>
               <div className={styles.heroText}>
-                <h1 className={styles.heroTitle}>
-                  From Zero to Saudi Arabia's Most<br />
-                  <span className={styles.highlight}>Recognized AI Recruitment Brand</span>
+                <h1 className={styles.heroTitle + " arabic-heading"}>
+                  كيف حولت وسائل التواصل الاجتماعي الاستراتيجية<br />
+                  <span className={styles.highlight}>"شفتات" من شركة ناشئة إلى رائدة في المجال</span>
                 </h1>
-                <p className={styles.heroSubtitle}>
-                  How strategic social media transformed Shiftat from startup to industry leader
+                <p className={styles.heroSubtitle + " arabic-body"}>
+                  من الصفر إلى أشهر علامة توظيف ذكي في المملكة العربية السعودية
                 </p>
                 <div className={styles.heroStats}>
                   <div className={styles.stat}>
-                    <div className={styles.statNumber}>8K+</div>
-                    <div className={styles.statLabel}>X Followers</div>
+                    <div className={styles.statNumber}>٨ آلاف+</div>
+                    <div className={styles.statLabel + " arabic-body"}>متابع على إكس</div>
                   </div>
                   <div className={styles.stat}>
-                    <div className={styles.statNumber}>4K+</div>
-                    <div className={styles.statLabel}>LinkedIn Network</div>
+                    <div className={styles.statNumber}>٤ آلاف+</div>
+                    <div className={styles.statLabel + " arabic-body"}>شبكة لينكد إن</div>
                   </div>
                   <div className={styles.stat}>
-                    <div className={styles.statNumber}>100+</div>
-                    <div className={styles.statLabel}>Quality Leads</div>
+                    <div className={styles.statNumber}>١٠٠+</div>
+                    <div className={styles.statLabel + " arabic-body"}>عميل مؤهل</div>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 <div className={styles.heroImageContainer}>
                   <Image
                     src="/backgrounds/Shiftat.webp"
-                    alt="Shiftat Platform Social Media Success"
+                    alt="منصة شفتات"
                     width={600}
                     height={400}
                     className={styles.heroImg}
@@ -104,42 +104,42 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         </section>
       </div>
 
-      {/* White sections container */}
+      {/* White sections container starts here */}
       <div className={styles.whiteSectionContainer}>
         {/* Results Section */}
         <section className={styles.resultsNew}>
           <div className={styles.resultsContainer}>
             <div className={styles.resultsHeader}>
-              <h2 className={styles.resultsMainHeading}>
-                When Social Media <span className={styles.resultsHighlight}>Actually Drives Business</span>
+              <h2 className={styles.resultsMainHeading + " arabic-heading"}>
+                عندما تحقق وسائل التواصل <span className={styles.resultsHighlight}>نتائج حقيقية</span>
               </h2>
-              <p className={styles.resultsSubheading}>
-                Real engagement metrics that converted to real revenue growth
+              <p className={styles.resultsSubheading + " arabic-body"}>
+                نتائج تفاعل تترجم مباشرة إلى نمو الأرباح
               </p>
             </div>
             
             <div className={styles.resultsShowcase}>
               <div className={styles.primaryResults}>
                 <div className={styles.primaryStat}>
-                  <div className={styles.primaryNumber}>12K+</div>
-                  <div className={styles.primaryLabel}>Total Followers</div>
-                  <div className={styles.primaryDesc}>Across LinkedIn and X platforms</div>
+                  <div className={styles.primaryNumber}>١٢ ألف+</div>
+                  <div className={styles.primaryLabel + " arabic-heading"}>إجمالي المتابعين</div>
+                  <div className={styles.primaryDesc + " arabic-body"}>عبر منصتي لينكد إن وإكس</div>
                 </div>
                 <div className={styles.primaryStat}>
-                  <div className={styles.primaryNumber}>100+</div>
-                  <div className={styles.primaryLabel}>Quality Leads</div>
-                  <div className={styles.primaryDesc}>From organic social content</div>
+                  <div className={styles.primaryNumber}>١٠٠+</div>
+                  <div className={styles.primaryLabel + " arabic-heading"}>عميل مؤهل</div>
+                  <div className={styles.primaryDesc + " arabic-body"}>من المحتوى العضوي</div>
                 </div>
               </div>
               
               <div className={styles.secondaryResults}>
                 <div className={styles.secondaryStat}>
-                  <div className={styles.secondaryNumber}>60%+</div>
-                  <div className={styles.secondaryLabel}>Email Open Rates</div>
+                  <div className={styles.secondaryNumber}>٦٠٪+</div>
+                  <div className={styles.secondaryLabel + " arabic-heading"}>معدل فتح الرسائل</div>
                 </div>
                 <div className={styles.secondaryStat}>
-                  <div className={styles.secondaryNumber}>5K+</div>
-                  <div className={styles.secondaryLabel}>Newsletter Subscribers</div>
+                  <div className={styles.secondaryNumber}>٥ آلاف+</div>
+                  <div className={styles.secondaryLabel + " arabic-heading"}>مشترك في النشرة البريدية</div>
                 </div>
               </div>
             </div>
@@ -151,14 +151,16 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.container}>
             <div className={styles.challengeGrid}>
               <div className={styles.challengeContent}>
-                <h2 className={styles.sectionTitle}>The Social Media Reality Check</h2>
-                <p className={styles.challengeText}>
-                  Your social media isn't working because it's all about you. Your products. Your achievements. Your company updates. Meanwhile, your ideal clients scroll past because they can't see themselves in your content. Shiftat faced the same problem—brilliant AI technology, but social media that screamed "tech company" instead of "recruitment solution."
+                <h2 className={styles.sectionTitle + " arabic-heading"}>التحدي: طبيعة وسائل التواصل الاجتماعي</h2>
+                <p className={styles.challengeText + " arabic-body"}>
+                  وسائل التواصل لا تعمل لأنها تتحدث عنك فقط. عن منتجاتك. إنجازاتك. أخبار شركتك. بينما عملاؤك المستهدفون يتجاهلون منشوراتك لأنهم لا يرون أنفسهم في المحتوى.
+                  <br /><br />
+                  شفتات واجهت نفس المشكلة—تقنية ذكاء اصطناعي رائعة، لكن وسائل تواصل تصرخ "شركة تقنية" بدلاً من "حلول توظيف".
                 </p>
                 <div className={styles.challengeTags}>
-                  <span className={styles.challengeTag}>Generic Content</span>
-                  <span className={styles.challengeTag}>Zero Engagement</span>
-                  <span className={styles.challengeTag}>No Leads</span>
+                  <span className={styles.challengeTag + " arabic-body"}>محتوى عام</span>
+                  <span className={styles.challengeTag + " arabic-body"}>عدم تفاعل</span>
+                  <span className={styles.challengeTag + " arabic-body"}>لا يجلب عملاء</span>
                 </div>
               </div>
               <div className={styles.challengeIcon}>
@@ -172,83 +174,83 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.solutionNew}>
           <div className={styles.container}>
             <div className={styles.solutionHeader}>
-              <h2 className={styles.sectionTitle}>The Social Strategy That Actually Works</h2>
-              <p className={styles.solutionSubheading}>
-                Stop talking about your product. Start solving your buyer's problems.
+              <h2 className={styles.sectionTitle + " arabic-heading"}>استراتيجية وسائل التواصل التي تحقق النتائج</h2>
+              <p className={styles.solutionSubheading + " arabic-body"}>
+                توقف عن الحديث عن منتجك. ابدأ في حل مشاكل المشتري.
               </p>
             </div>
             
             <div className={styles.solutionGrid}>
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Buyer-Obsessed Content Strategy</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>١. استراتيجية محتوى مهووسة بالعميل</h3>
                 </div>
-                <p className={styles.solutionCardDesc}>
-                  Every post addressed a specific recruitment pain point Saudi HR leaders face daily
+                <p className={styles.solutionCardDesc + " arabic-body"}>
+                  كل منشور يعالج مشكلة توظيف محددة يواجهها قادة الموارد البشرية السعوديون يومياً
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Daily recruitment insights in Arabic</span>
-                  <span>Case studies showing 80% cost reduction</span>
-                  <span>Industry trend analysis HR directors share</span>
-                  <span>Solution-focused content, not product pitches</span>
+                  <span className="arabic-body">رؤى توظيف يومية بالعربية</span>
+                  <span className="arabic-body">دراسات حالة تظهر توفير ٨٠٪ من التكاليف</span>
+                  <span className="arabic-body">تحليل اتجاهات الصناعة يشاركه مديرو الموارد البشرية</span>
+                  <span className="arabic-body">محتوى يركز على الحلول وليس عروض المنتجات</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Platform-Specific Authority Building</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>٢. بناء السلطة المهنية لكل منصة</h3>
                 </div>
-                <p className={styles.solutionCardDesc}>
-                  Different platforms, different conversations—all pointing to the same conclusion
+                <p className={styles.solutionCardDesc + " arabic-body"}>
+                  منصات مختلفة، محادثات مختلفة—كلها تؤدي لنفس النتيجة
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>LinkedIn: Professional thought leadership</span>
-                  <span>X: Real-time industry commentary</span>
-                  <span>Consistent brand voice across channels</span>
-                  <span>Cross-platform content amplification</span>
+                  <span className="arabic-body">لينكد إن: قيادة فكرية مهنية</span>
+                  <span className="arabic-body">إكس: تعليق فوري على أحداث الصناعة</span>
+                  <span className="arabic-body">صوت علامة تجارية متسق عبر القنوات</span>
+                  <span className="arabic-body">تضخيم المحتوى عبر المنصات</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Engagement-to-Lead Pipeline</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>٣. مسار تحويل التفاعل إلى عملاء محتملين</h3>
                 </div>
-                <p className={styles.solutionCardDesc}>
-                  Social engagement that actually converts to business conversations
+                <p className={styles.solutionCardDesc + " arabic-body"}>
+                  تفاعل اجتماعي يتحول فعلاً إلى محادثات أعمال
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Comment engagement protocols</span>
-                  <span>DM conversation starters</span>
-                  <span>Newsletter signup from social content</span>
-                  <span>Direct lead qualification process</span>
+                  <span className="arabic-body">بروتوكولات التفاعل مع التعليقات</span>
+                  <span className="arabic-body">بدء محادثات الرسائل المباشرة</span>
+                  <span className="arabic-body">تحويل متابعي وسائل التواصل إلى مشتركين في النشرة</span>
+                  <span className="arabic-body">عملية تأهيل العملاء المحتملين المباشرة</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Authority Through Consistency</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>٤. السلطة من خلال الاستمرارية</h3>
                 </div>
-                <p className={styles.solutionCardDesc}>
-                  Daily value delivery until the market recognized Shiftat as the AI recruitment expert
+                <p className={styles.solutionCardDesc + " arabic-body"}>
+                  تقديم قيمة يومية حتى اعترف السوق بشفتات كخبير التوظيف الذكي
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Daily posting schedule maintained</span>
-                  <span>Industry events live coverage</span>
-                  <span>Thought leadership positioning</span>
-                  <span>Competitor analysis and differentiation</span>
+                  <span className="arabic-body">جدول نشر يومي ثابت</span>
+                  <span className="arabic-body">تغطية مباشرة لفعاليات الصناعة</span>
+                  <span className="arabic-body">تموضع قيادة فكرية</span>
+                  <span className="arabic-body">تحليل المنافسين والتميز</span>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Enhanced Social Proof */}
+        {/* Social Proof */}
         <section className={styles.socialProof}>
           <div className={styles.container}>
             <div className={styles.centeredTextContent}>
-              <h2 className={styles.sectionTitle}>The Numbers Don't Lie</h2>
-              <p className={styles.socialProofSubtitle}>
-                From <span className={styles.highlightNumber}>0 to 12,000+</span> engaged followers who actually care about recruitment solutions
+              <h2 className={styles.sectionTitle + " arabic-heading"}>الأرقام لا تكذب</h2>
+              <p className={styles.socialProofSubtitle + " arabic-body"}>
+                من صفر إلى <span className={styles.highlightNumber}>١٢,٠٠٠+</span> متابع متفاعل يهتمون فعلاً بحلول التوظيف
               </p>
             </div>
             <div className={styles.socialGrid}>
@@ -256,30 +258,30 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/Linkedin.webp"
-                    alt="LinkedIn Growth Results"
+                    alt="سلطة لينكد إن"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>LinkedIn Authority</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>4,000+</span> HR directors and business leaders who engage with recruitment content</p>
+                  <h3 className={styles.socialTitle + " arabic-heading"}>سلطة لينكد إن</h3>
+                  <p className={styles.socialDesc + " arabic-body"}><span className={styles.highlightNumber}>٤,٠٠٠+</span> مدير موارد بشرية وقائد أعمال يتفاعلون مع محتوى التوظيف</p>
                 </div>
               </div>
               <div className={styles.socialCard}>
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/X.webp"
-                    alt="X Platform Success"
+                    alt="وصول منصة إكس"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>X Platform Reach</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>8,000+</span> followers actively discussing AI recruitment trends</p>
+                  <h3 className={styles.socialTitle + " arabic-heading"}>وصول منصة إكس</h3>
+                  <p className={styles.socialDesc + " arabic-body"}><span className={styles.highlightNumber}>٨,٠٠٠+</span> متابع يناقشون بنشاط اتجاهات التوظيف الذكي</p>
                 </div>
               </div>
             </div>
@@ -290,8 +292,8 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
       {/* Testimonial */}
       <section className={styles.testimonial}>
         <div className={styles.container}>
-          <blockquote className={styles.quote}>
-            "Before this strategy, our social media was just noise. Now it's our <strong>primary lead generation channel</strong>—and the leads are actually qualified."
+          <blockquote className={styles.quote + " arabic-body"}>
+            "قبل هذه الاستراتيجية، كانت وسائل التواصل مجرد ضوضاء. الآن هي قناة توليد العملاء الأساسية—<strong>والعملاء مؤهلون فعلاً</strong>."
           </blockquote>
         </div>
       </section>
@@ -299,13 +301,13 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
       {/* Verification */}
       <section className={styles.verification}>
         <div className={styles.verificationContainer}>
-          <h2 className={styles.verificationTitle}>
-            Still Skeptical? <span className={styles.verificationHighlight}>Verify Everything</span>
+          <h2 className={styles.verificationTitle + " arabic-heading"}>
+            لا تزال متشككاً؟ <span className={styles.verificationHighlight}>تحقق من كل شيء</span>
           </h2>
-          <p className={styles.verificationText}>
-            Contact Abdullah directly to verify these results and see the actual social media growth:
+          <p className={styles.verificationText + " arabic-body"}>
+            تواصل مع عبدالله مباشرة للتحقق من هذه النتائج ومشاهدة النمو الفعلي لوسائل التواصل:
           </p>
-          <a href="mailto:abdullah@shiftatsa.com" className={styles.verificationEmail}>
+          <a href="mailto:abdullah@shiftatsa.com" className={styles.verificationEmail + " arabic-body"}>
             abdullah@shiftatsa.com
           </a>
         </div>
@@ -317,15 +319,15 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.cta}>
           <div className={styles.container}>
             <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle}>Ready to Stop Wasting Your Social Media?</h2>
-              <p className={styles.ctaText}>
-                Get the same social strategy that transformed Shiftat from unknown startup to industry authority. No vanity metrics—just leads that convert.
+              <h2 className={styles.ctaTitle + " arabic-heading"}>مستعد لتوقف إهدار وسائل التواصل؟</h2>
+              <p className={styles.ctaText + " arabic-body"}>
+                احصل على نفس الاستراتيجية الاجتماعية التي حولت شفتات من شركة ناشئة مجهولة إلى سلطة في الصناعة. بلا مقاييس وهمية—فقط عملاء محتملون يتحولون لعملاء.
               </p>
               <button 
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.ctaButton}
+                className={styles.ctaButton + " arabic-body"}
               >
-                Fix My Social Media Strategy
+                أصلح استراتيجية وسائل التواصل
               </button>
             </div>
           </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import CaseStudyDetail from "@/components/en/versions/socialMedia/caseStudyPage/caseStudyPage";
+import CaseStudyDetail from "@/components/ar/versions/socialMedia/caseStudyPage/caseStudyPage";
 
 export default function SocialMediaShiftatCaseStudy() {
   const [currentView, setCurrentView] = useState("caseStudy");
