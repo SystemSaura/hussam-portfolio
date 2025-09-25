@@ -10,7 +10,7 @@ export default function CTA() {
         <div className="space-y-12 mb-16">
           <h2 className={styles.flechaSectionHeading + " leading-tight"}>
             <span className={styles.textCustomBlue}>توقف عن التخمين</span><br />
-            في ما يعمل
+            في ما قد يعمل
           </h2>
 
           <h2 className={styles.flechaSectionHeading + " leading-tight"}>

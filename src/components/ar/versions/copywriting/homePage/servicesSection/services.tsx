@@ -96,8 +96,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
           {/* Static centered heading for mobile */}
           <div className={styles.mobileStaticHeading}>
             <h2 className={styles.servicesMainHeading + " leading-tight"}>
-              ٣ طرق لإصلاح النصوص<br />
-              <span className={styles.servicesMainHeadingAccent}>لتحقق المبيعات</span>
+              الطرق الثلاث التي أساعدك بها:
             </h2>
           </div>
 
@@ -105,9 +104,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
           <div className="space-y-12">
             <div>
               <div className={styles.servicesNumber + " mb-4"}>٠١</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>نصوص مواقع تتوقف وتحقق المبيعات</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>كتابة مواقع تحول الزوار إلى عملاء</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                كتابة مواقع كاملة توصل فوراً ما تفعله، لمن مخصص، ولماذا يجب أن يهتم العملاء المحتملون. من الصفحة الرئيسية إلى الدفع—كل صفحة محسنة للتحويل.
+                موقعك الإلكتروني يجب أن يعمل لك ٢٤/٧. أكتب لك صفحات واضحة تشرح منتجك، تجيب على أسئلة عملائك، وتقنعهم أنك الخيار الوحيد المنطقي.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -119,9 +118,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div>
               <div className={styles.servicesNumber + " mb-4"}>٠٢</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>محتوى اجتماعي يبني السلطة ويجذب العملاء</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>بناء سمعتك من خلال المحتوى</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                نصوص وسائل التواصل الاجتماعي الاستراتيجية تموضعك كالخيار الواضح في صناعتك. منشورات لينكد إن تجذب صناع القرار، محتوى القيادة الفكرية يبني الثقة، وإثبات اجتماعي يحول المتابعين إلى عملاء.
+                محتوى وسائل التواصل الاجتماعي احترافي يضعك في مقدمة خبراء مجالك، مقالات تثبت معرفتك العميقة، وقصص عملاء تحول القراء إلى معجبين ثم إلى عملاء.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -133,9 +132,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div ref={thirdServiceRef}>
               <div className={styles.servicesNumber + " mb-4"}>٠٣</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>صفحات مبيعات ونصوص إيميل تحقق الصفقات</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>رسائل ومحتوى يختتم الصفقات</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                صفحات مبيعات عالية التحويل، وصفحات وصول، وسلاسل رسائل إلكترونية تعالج كل اعتراض، وتبني الرغبة، وتجعل قرار الشراء واضحاً. من إطلاق المنتجات إلى حملات الرعاية—نصوص تحول العملاء المحتملين إلى عملاء.
+                رسائل بريد إلكتروني يتطلع عملاؤك لاستقبالها، صفحات مبيعات تجيب على كل اعتراض، ومحتوى متدرج يأخذ المهتم ويحوله إلى مشتر متحمس.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -150,7 +149,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
     );
   }
 
-  // Desktop layout (unchanged)
+  // Desktop layout
   return (
     <section ref={ref} className={styles.bgCustomBlue + " py-20 text-white"}>
       <div ref={servicesContainerRef} className={styles.servicesContainer}>
@@ -162,8 +161,7 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
               style={stickyStyles}
             >
               <h2 className={styles.servicesMainHeading + " leading-tight"}>
-                ٣ طرق لإصلاح النصوص<br />
-                <span className={styles.servicesMainHeadingAccent}>لتحقق المبيعات</span>
+                الطرق الثلاث التي أساعدك بها:
               </h2>
             </div>
           </div>
@@ -171,9 +169,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
           <div className="space-y-12">
             <div>
               <div className={styles.servicesNumber + " mb-4"}>٠١</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>نصوص مواقع تتوقف وتحقق المبيعات</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>كتابة مواقع تحول الزوار إلى عملاء</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                كتابة مواقع كاملة توصل فوراً ما تفعله، لمن مخصص، ولماذا يجب أن يهتم العملاء المحتملون. من الصفحة الرئيسية إلى الدفع—كل صفحة محسنة للتحويل.
+                موقعك الإلكتروني يجب أن يعمل لك ٢٤/٧. أكتب لك صفحات واضحة تشرح منتجك، تجيب على أسئلة عملائك، وتقنعهم أنك الخيار الوحيد المنطقي.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -185,9 +183,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div>
               <div className={styles.servicesNumber + " mb-4"}>٠٢</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>محتوى اجتماعي يبني السلطة ويجذب العملاء</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>بناء سمعتك من خلال المحتوى</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                نصوص وسائل التواصل الاجتماعي الاستراتيجية تموضعك كالخيار الواضح في صناعتك. منشورات لينكد إن تجذب صناع القرار، محتوى القيادة الفكرية يبني الثقة، وإثبات اجتماعي يحول المتابعين إلى عملاء.
+                محتوى وسائل التواصل الاجتماعي احترافي يضعك في مقدمة خبراء مجالك، مقالات تثبت معرفتك العميقة، وقصص عملاء تحول القراء إلى معجبين ثم إلى عملاء.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -199,9 +197,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div ref={thirdServiceRef}>
               <div className={styles.servicesNumber + " mb-4"}>٠٣</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>صفحات مبيعات ونصوص إيميل تحقق الصفقات</h3>
+              <h3 className={styles.servicesTitle + " mb-4"}>رسائل ومحتوى يختتم الصفقات</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                صفحات مبيعات عالية التحويل، وصفحات وصول، وسلاسل رسائل إلكترونية تعالج كل اعتراض، وتبني الرغبة، وتجعل قرار الشراء واضحاً. من إطلاق المنتجات إلى حملات الرعاية—نصوص تحول العملاء المحتملين إلى عملاء.
+                رسائل بريد إلكتروني يتطلع عملاؤك لاستقبالها، صفحات مبيعات تجيب على كل اعتراض، ومحتوى متدرج يأخذ المهتم ويحوله إلى مشتر متحمس.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}

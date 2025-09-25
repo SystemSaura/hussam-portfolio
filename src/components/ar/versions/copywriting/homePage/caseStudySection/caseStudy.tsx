@@ -16,7 +16,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             <span className={styles.highlightText}>منصة التوظيف الذكي الرائدة في السعودية</span>
           </h2>
           <p className={styles.sectionSubtext}>
-            كتابة مواقع وحملات إيميل حولت المتصفحين إلى مشترين.
+            كتابة مواقع وحملات إيميل حولت المتصفحين إلى عملاء.
           </p>
         </div>
 
@@ -58,28 +58,32 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             <div className={styles.resultsGrid}>
               <div className={styles.resultItem}>
                 <div className={styles.resultNumber}>٦٠٪+</div>
-                <div className={styles.resultLabel}>معدل فتح الإيميل</div>
+                <div className={styles.resultLabel}>معدل فتح الرسائل</div>
               </div>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>٥,٠٠٠+</div>
-                <div className={styles.resultLabel}>مشترك في الإيميل</div>
+                <div className={styles.resultNumber}>٥٠٠٠+</div>
+                <div className={styles.resultLabel}>مشترك جديد</div>
               </div>
               <div className={styles.resultItem}>
                 <div className={styles.resultNumber}>١٠٠+</div>
-                <div className={styles.resultLabel}>عميل محتمل عالي الجودة</div>
+                <div className={styles.resultLabel}>عميل جديد في شهرين</div>
               </div>
               <div className={styles.resultItem}>
-                <div className={styles.resultNumber}>٤,٠٠٠+</div>
-                <div className={styles.resultLabel}>متابع على لينكد إن</div>
+                <div className={styles.resultNumber}>٤٠٠٠+</div>
+                <div className={styles.resultLabel}>متابع على وسائل التواصل</div>
               </div>
             </div>
 
             {/* Description */}
             <div className={styles.caseDescription}>
               <p className={styles.descriptionText}>
-                من خلال كتابة موقع استراتيجية، وسلاسل إيميل عالية التحويل، ونصوص وسائل تواصل اجتماعي مقنعة، 
-                حولنا رسائل شفتات من مربكة إلى واضحة بلورية. النتيجة؟ العملاء المحتملون فهموا القيمة فوراً، اشتركوا في الإيميلات، 
-                وأصبحوا عملاء يدفعون لا يمكنهم تخيل التوظيف بطريقة أخرى.
+                <strong>الموقف:</strong> شِفتات لديها منصة توظيف متطورة بالذكاء الاصطناعي، لكن عملاءها المحتملين لا يفهمون كيف ستحل مشاكلهم.
+              </p>
+              <p className={styles.descriptionText}>
+                <strong>ماذا فعلت؟</strong> أعدت كتابة موقعهم ليتكلم بلغة عملائهم، صممت حملات بريد إلكتروني تشرح الفائدة ببساطة، وكتبت محتوى يثبت أنهم الأفضل في السوق.
+              </p>
+              <p className={styles.descriptionText}>
+                <strong>النتيجة؟</strong> العملاء أصبحوا يأتون إليهم، بدلاً من البحث عنهم.
               </p>
             </div>
 

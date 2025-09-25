@@ -45,7 +45,7 @@ export default function Testimonials() {
             ماذا يقول العملاء عن عملي
           </h2>
           <p className={styles.flechaTestimonialDescription + " max-w-2xl mx-auto px-4 sm:px-0"}>
-            تعليقات حقيقية من عملاء تجربوا نتائج قابلة للقياس من العمل الاستراتيجي في كتابة النصوص.
+             آراء عملاء سابقين، جربوا خطة عملية ونتائجا حقيقية
           </p>
         </div>
 

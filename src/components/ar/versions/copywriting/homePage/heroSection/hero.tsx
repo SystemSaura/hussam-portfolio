@@ -18,13 +18,14 @@ export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-36 pb-8 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
-        {/* Main Hero Title - Right-aligned for Arabic with copywriting content */}
+        {/* Main Hero Title - Right-aligned for Arabic with improved copy */}
         <div className="mb-24">
           <h1 className={styles.flechaHeroTitle}>
-            حول النصوص المشتتة إلى<br />
+            حول محتواك التسويقي إلى<br />
             <span className={styles.textCustomBlue}>نصوص تحقق المبيعات</span>
           </h1>
         </div>
+     
 
         {/* Lower Section - Three parts with proper RTL flow */}
         <div className={styles.homeHeaderContent}>
@@ -35,10 +36,14 @@ export default function Hero({ onNavigate }: HeroProps) {
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
-              {" "}نصوصك لا تحقق النتائج
+              {" "} محتواك  لا يحقق النتائج؟
             </h2>
             <p className={styles.homeHeaderText1}>
-              نصوصك التسويقية يجب أن تحول الزوار إلى عملاء، وليس أن تجعلهم ينامون. احصل على كتابة إعلانية استراتيجية تجعل العملاء المحتملين يقولون "هذا بالضبط ما أحتاجه" وتحول المتصفحين إلى مشترين لا يطيقون انتظاراً للعمل معك.
+              إذا كان موقعك لا يجلب عملاء، ورسائلك الإلكترونية تذهب إلى سلة المهملات، والعملاء المحتملون يختارون منافسيك... فالمشكلة ليست في جودة منتجك.
+
+              المشكلة في طريقة خطابك.
+
+              أساعدك في بناء محتوى تسويقي يجعل عميلك المثالي يقول: "أخيراً وجدت ما أبحث عنه!"
             </p>
           </div>
 
@@ -73,7 +78,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.subscribeButton + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                احجز استشارة
+                ابدأ معي الآن
               </button>
               <button
                 type="button"
