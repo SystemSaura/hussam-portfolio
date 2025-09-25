@@ -8,7 +8,6 @@
   max-width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  margin-left: calc(50% - 600px + (852.56px / 2 - 426.28px));
 }
 
 @media (max-width: 1200px) {
@@ -25,6 +24,7 @@
   font-weight: normal;
   color: #FFFFFF;
   line-height: 1.2;
+  text-align: right;
 }
 
 .servicesMainHeadingAccent {
@@ -33,6 +33,7 @@
   font-weight: normal;
   color: #00FFF7;
   line-height: 1.2;
+  text-align: right;
 }
 
 .servicesNumber {
@@ -40,6 +41,7 @@
   font-size: 30.1024px;
   font-weight: medium;
   color: #50C0FF;
+  text-align: right;
 }
 
 .servicesTitle {
@@ -48,6 +50,7 @@
   font-weight: bold;
   color: #FFFFFF;
   line-height: 1.2;
+  text-align: right;
 }
 
 .servicesDescription {
@@ -56,6 +59,7 @@
   font-weight: normal;
   color: #FFFFFF;
   line-height: 1.6;
+  text-align: right;
 }
 
 .servicesButton {
@@ -75,18 +79,20 @@
   background-color: #002A5C;
 }
 
-/* Sticky Services Heading Styles */
+/* RTL Sticky Services Heading Styles */
 .servicesHeadingWrapper {
   position: relative;
 }
 
 .servicesHeadingContent {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: right;
 }
 
-/* CRITICAL FIX: Force inline styles to override with higher specificity */
+/* RTL CRITICAL FIX: Right-aligned sticky positioning */
 .servicesHeadingContent.isStickyActive[style*="position: fixed"] {
   position: fixed !important;
+  text-align: right !important;
 }
 
 .servicesHeadingContent.isStickyActive[style*="top:"] {
@@ -102,10 +108,32 @@
   transform: translateY(-20px) !important;
 }
 
-/* Mobile-specific styles - ONLY what's needed */
+/* Mobile-specific styles - RTL aware */
 .mobileStaticHeading {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+/* RTL Grid Layout Fix */
+.servicesGridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+  direction: rtl;
+}
+
+.servicesLeftColumn {
+  text-align: right;
+}
+
+.servicesRightColumn {
+  text-align: right;
+}
+
+.serviceItem {
+  margin-bottom: 48px;
+  text-align: right;
 }
 
 /* Tablet responsive adjustments */
@@ -115,16 +143,38 @@
     position: relative !important;
     top: unset !important;
     left: unset !important;
+    right: unset !important;
     width: unset !important;
     z-index: unset !important;
+    text-align: center !important;
   }
 
   .servicesMainHeading {
     font-size: 51px;
+    text-align: center;
+  }
+
+  .servicesMainHeadingAccent {
+    text-align: center;
+  }
+
+  .servicesGridContainer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .serviceItem {
+    text-align: center;
+  }
+
+  .servicesNumber,
+  .servicesTitle,
+  .servicesDescription {
+    text-align: center;
   }
 }
 
-/* Mobile responsive - ONLY font sizing adjustments */
+/* Mobile responsive - RTL aware font sizing */
 @media (max-width: 768px) {
   .servicesContainer {
     padding: 0 1rem;
@@ -133,18 +183,22 @@
   .servicesMainHeading,
   .servicesMainHeadingAccent {
     font-size: 32px;
+    text-align: center;
   }
 
   .servicesNumber {
     font-size: 24px;
+    text-align: center;
   }
 
   .servicesTitle {
     font-size: 18px;
+    text-align: center;
   }
 
   .servicesDescription {
     font-size: 16px;
+    text-align: center;
   }
 
   .servicesButton {
@@ -152,6 +206,11 @@
     padding: 8px 16px;
     width: auto;
     display: inline-block;
+  }
+
+  .serviceItem {
+    text-align: center;
+    margin-bottom: 32px;
   }
 }
 

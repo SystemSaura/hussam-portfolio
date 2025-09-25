@@ -9,10 +9,10 @@ const About = forwardRef<HTMLElement>((_, ref) => {
     <section ref={ref} className={styles.bgCustomDarkBlue + " py-12 sm:py-16 lg:py-20 text-white"}>
       <div className="max-w-4xl mx-auto px-10 sm:px-6 lg:px-8 text-center">
         <div className="mb-8 sm:mb-10 lg:mb-12">
-          <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">
+          <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full mx-auto flex items-center justify-center overflow-hidden">
             <Image
               src="/picofme.webp"
-              alt="Hussam Baaka"
+              alt="حسام بعكة"
               width={160}
               height={160}
               className="w-full h-full object-cover"
@@ -20,33 +20,31 @@ const About = forwardRef<HTMLElement>((_, ref) => {
             />
           </div>
         </div>
-        <h2 className={styles.flechaHeroTitleAbout + " text-white mb-6 sm:mb-8 leading-tight text-center"}>
-          Hi. I'm Hussam Baaka. I turn your social media followers into paying customers.
+
+        <h2 className={styles.flechaHeroTitleAbout + " text-white mb-6 sm:mb-8 leading-tight text-center arabic-heading"}>
+          أهلاً، أنا حسام بعكة. أساعد الشركات الخليجية الرائدة على تحويل متابعيها على وسائل التواصل الاجتماعي إلى عملاء محتملين.
         </h2>
+
         <div className="mb-6 sm:mb-8 text-center">
-          <span className={styles.text11px + " text-cyan-400 font-medium"}>[ A note to social media leaders ]</span>
+          <span className={styles.text11px + " text-cyan-400 font-medium arabic-body"}>[ رسالة لللمشرفين على التسويق الرقمي و لكل قادة الأعمال الطموحين ]</span>
         </div>
 
-        <div className={styles.workSansBodyWhite + " space-y-4 sm:space-y-6 leading-relaxed max-w-3xl mx-auto text-center"}>
-          <p>Your social media team isn't failing. Your content strategy is just missing the GCC context.</p>
+        <div className={styles.workSansBodyWhite + " space-y-4 sm:space-y-6 leading-relaxed max-w-3xl mx-auto text-center arabic-body"}>
+          <p>مشكلة فريقك ليست في الكسل. مشكلته في الاستراتيجية التي تفتقر للاستراتيجية وللطابع الخليجي.</p>
 
-          <p>I've seen too many Middle Eastern brands copy Western social strategies that don't work here. Generic content calendars that ignore local culture. Engagement tactics that fall flat with regional audiences.</p>
+          <p>شاهدت عشرات العلامات التجارية في الشرق الأوسط تنسخ خطط غربية لا تصلح هنا. خطط محتوى عامة تتجاهل ثقافتنا. طرق تفاعل تفشل مع جمهورنا.</p>
 
-          <p>The problem isn't your creativity or your budget. It's cultural alignment.</p>
+          <p>المشكلة ليست في الإبداع أو الميزانية. المشكلة في فهم السوق.</p>
 
-          <p>When your social content speaks the language of your actual customers—not just literally, but culturally—engagement becomes authentic connection instead of empty vanity metrics.</p>
+          <p>عندما يتحدث محتواك بطريقة تناسب عملاءك الحقيقيين - ثقافياً وليس لغوياً فقط - يصبح التفاعل علاقة حقيقية بدلاً من أرقام فارغة.</p>
 
-          <p>I don't just create content. I build social media systems that understand GCC market dynamics, cultural nuances, and business decision-making patterns.</p>
+          <p>لا أكتفي بصنع المحتوى. أبني أنظمة لوسائل التواصل الاجتماعي تفهم طبيعة السوق الخليجي، والفروق الثقافية الدقيقة، وطريقة اتخاذ القرار التجاري هنا.</p>
 
-          <p>My approach combines deep regional insights with proven social frameworks that have grown brands from unknown to industry leaders across LinkedIn, X, and Instagram.</p>
+          <p>منهجي يجمع بين الفهم العميق للمنطقة وأساليب التواصل المثبتة عالمياً، والتي حولت علامات تجارية من مجهولة إلى رائدة في مجالها عبر لينكد إن وتويتر وإنستغرام.</p>
 
-          <p>At the end of the day, social media should do one thing:</p>
+          <p>في النهاية، وسائل التواصل لها هدف واحد:</p>
 
-          <p className="text-cyan-400 font-medium">Generate qualified leads and customers you can count on, not just likes you can't convert.</p>
-        </div>
-
-        <div className="mt-8 sm:mt-10 lg:mt-12 text-center">
-          {/* Future button placeholder */}
+          <p className="text-cyan-400 font-medium arabic-heading">جلب عملاء مؤهلين يمكن الاعتماد عليهم، وليس إعجابات لا تتحول لمبيعات.</p>
         </div>
       </div>
     </section>

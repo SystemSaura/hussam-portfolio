@@ -54,16 +54,18 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
         setIsSticky(shouldBeSticky);
         
         if (shouldBeSticky) {
-          const containerLeft = containerRect.left;
+          // RTL: Position from the right side
+          const containerRight = window.innerWidth - containerRect.right;
           const gridGap = 64;
           const leftColumnWidth = (containerRect.width - gridGap) / 2;
           
           setStickyStyles({
             position: 'fixed',
             top: '120px',
-            left: `${containerLeft}px`,
+            right: `${containerRight}px`,
             width: `${leftColumnWidth}px`,
             zIndex: 10,
+            textAlign: 'right',
           });
         } else {
           setStickyStyles({});
@@ -93,53 +95,53 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
         <div ref={servicesContainerRef} className={styles.servicesContainer}>
           {/* Static centered heading for mobile */}
           <div className={styles.mobileStaticHeading}>
-            <h2 className={styles.servicesMainHeading + " leading-tight"}>
-              3 ways I grow your<br />
-              <span className={styles.servicesMainHeadingAccent}>social media presence.</span>
+            <h2 className={styles.servicesMainHeading + " leading-tight arabic-heading"}>
+              ٣ طرق لتطوير<br />
+              <span className={styles.servicesMainHeadingAccent}>حضورك الرقمي</span>
             </h2>
           </div>
 
           {/* Services content for mobile */}
           <div className="space-y-12">
-            <div>
-              <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Social Media Strategy & Content Audit</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Deep analysis of your current social presence, content performance, and competitor positioning. Get a complete roadmap to fix what's killing your engagement and conversion.
+            <div className={styles.serviceItem}>
+              <div className={styles.servicesNumber + " mb-4"}>٠١</div>
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحليل الحضور الرقمي وخطة المحتوى</h3>
+              <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                دراسة شاملة لحساباتك الحالية، أداء منشوراتك، وموقعك مقارنة بالمنافسين. احصل على خارطة طريق واضحة لحل ما يضر بتفاعلك ومبيعاتك.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Audit
+                احجز التحليل
               </button>
             </div>
 
-            <div>
-              <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Content Creation & Community Management</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Strategic content that actually engages your GCC audience. From LinkedIn thought leadership to Instagram stories that convert—plus community management that builds relationships, not just followers.
+            <div className={styles.serviceItem}>
+              <div className={styles.servicesNumber + " mb-4"}>٠٢</div>
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>صناعة المحتوى وإدارة المجتمع</h3>
+              <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                محتوى مدروس يتفاعل معه جمهورك الخليجي فعلياً. من المقالات المتخصصة على لينكد إن إلى القصص المؤثرة على إنستغرام - مع إدارة مجتمع تبني علاقات دائمة، وليس مجرد أرقام.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Start Content Strategy
+                ابدأ استراتيجية المحتوى
               </button>
             </div>
 
-            <div ref={thirdServiceRef}>
-              <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Social Media Team Training & Systems</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Transform your internal team with proven social media frameworks, content systems, and performance tracking that delivers consistent growth without constant oversight.
+            <div ref={thirdServiceRef} className={styles.serviceItem}>
+              <div className={styles.servicesNumber + " mb-4"}>٠٣</div>
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تدريب الفريق وبناء الأنظمة</h3>
+              <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                طور فريقك الداخلي بأدوات التواصل المثبتة، وأنظمة المحتوى، ومتابعة الأداء التي تضمن نمواً ثابتاً دون حاجة لمراقبة مستمرة.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Train My Team
+                درب فريقي
               </button>
             </div>
           </div>
@@ -148,65 +150,71 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
     );
   }
 
-  // Desktop layout (unchanged)
+  // Desktop layout - RTL optimized
   return (
     <section ref={ref} className={styles.bgCustomBlue + " py-20 text-white"}>
       <div ref={servicesContainerRef} className={styles.servicesContainer}>
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          <div className={styles.servicesHeadingWrapper}>
-            <div 
-              ref={leftHeadingRef}
-              className={`${styles.servicesHeadingContent} ${isSticky ? styles.isStickyActive : ''} ${shouldFadeOut ? styles.servicesHeadingFade : ''}`}
-              style={stickyStyles}
-            >
-              <h2 className={styles.servicesMainHeading + " leading-tight"}>
-                3 ways I grow your<br />
-                <span className={styles.servicesMainHeadingAccent}>social media presence.</span>
-              </h2>
+        <div className={styles.servicesGridContainer}>
+          {/* Right column for RTL - Heading */}
+          <div className={styles.servicesLeftColumn}>
+            <div className={styles.servicesHeadingWrapper}>
+              <div 
+                ref={leftHeadingRef}
+                className={`${styles.servicesHeadingContent} ${isSticky ? styles.isStickyActive : ''} ${shouldFadeOut ? styles.servicesHeadingFade : ''}`}
+                style={stickyStyles}
+              >
+                <h2 className={styles.servicesMainHeading + " leading-tight arabic-heading"}>
+                  ٣ طرق لتطوير<br />
+                  <span className={styles.servicesMainHeadingAccent}>حضورك الرقمي</span>
+                </h2>
+              </div>
             </div>
           </div>
 
-          <div className="space-y-12">
-            <div>
-              <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Social Media Strategy & Content Audit</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Deep analysis of your current social presence, content performance, and competitor positioning. Get a complete roadmap to fix what's killing your engagement and conversion.
-              </p>
-              <button
-                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.servicesButton}
-              >
-                Book Audit
-              </button>
-            </div>
+          {/* Left column for RTL - Services */}
+          <div className={styles.servicesRightColumn}>
+            <div className="space-y-12">
+              <div className={styles.serviceItem}>
+                <div className={styles.servicesNumber + " mb-4"}>٠١</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحليل الحضور الرقمي وخطة المحتوى</h3>
+                <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                  دراسة شاملة لحساباتك الحالية، أداء منشوراتك، وموقعك مقارنة بالمنافسين. احصل على خارطة طريق واضحة لحل ما يضر بتفاعلك ومبيعاتك.
+                </p>
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className={styles.servicesButton}
+                >
+                  احجز التحليل
+                </button>
+              </div>
 
-            <div>
-              <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Content Creation & Community Management</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Strategic content that actually engages your GCC audience. From LinkedIn thought leadership to Instagram stories that convert—plus community management that builds relationships, not just followers.
-              </p>
-              <button
-                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.servicesButton}
-              >
-                Start Content Strategy
-              </button>
-            </div>
+              <div className={styles.serviceItem}>
+                <div className={styles.servicesNumber + " mb-4"}>٠٢</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>صناعة المحتوى وإدارة المجتمع</h3>
+                <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                  محتوى مدروس يتفاعل معه جمهورك الخليجي فعلياً. من المقالات المتخصصة على لينكد إن إلى القصص المؤثرة على إنستغرام - مع إدارة مجتمع تبني علاقات دائمة، وليس مجرد أرقام.
+                </p>
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className={styles.servicesButton}
+                >
+                  ابدأ استراتيجية المحتوى
+                </button>
+              </div>
 
-            <div ref={thirdServiceRef}>
-              <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Social Media Team Training & Systems</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Transform your internal team with proven social media frameworks, content systems, and performance tracking that delivers consistent growth without constant oversight.
-              </p>
-              <button
-                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.servicesButton}
-              >
-                Train My Team
-              </button>
+              <div ref={thirdServiceRef} className={styles.serviceItem}>
+                <div className={styles.servicesNumber + " mb-4"}>٠٣</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تدريب الفريق وبناء الأنظمة</h3>
+                <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                  طور فريقك الداخلي بأدوات التواصل المثبتة، وأنظمة المحتوى، ومتابعة الأداء التي تضمن نمواً ثابتاً دون حاجة لمراقبة مستمرة.
+                </p>
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className={styles.servicesButton}
+                >
+                  درب فريقي
+                </button>
+              </div>
             </div>
           </div>
         </div>

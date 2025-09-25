@@ -1,3 +1,12 @@
+/* The Brown Font Face Declaration */
+@font-face {
+  font-family: 'The Brown';
+  src: url('/the brown.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Hero Section Styles */
 .bgCustomHero {
   background-color: #F2F5FA;
@@ -20,36 +29,55 @@
   width: 100%;
   height: auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
   margin-top: 3rem;
+  /* RTL: Reverse the flex direction for proper RTL flow */
+  direction: rtl;
 }
 
 .homeHeaderTextWrap {
-  width: 480px;
+  width: 460px;
   height: auto;
   max-width: 480px;
+  /* RTL: Right-align text for Arabic */
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0 0 auto;
 }
 
 .homeHeaderSubheading {
   color: #001C46;
-  font: 48px "Flecha S", sans-serif;
-  font-weight: normal;
-  line-height: 1.2;
+  font-family: 'The Brown', 'Flecha S', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.3;
   margin-bottom: 16px;
   white-space: nowrap;
+  /* RTL: Right-align heading */
+  text-align: right;
+  letter-spacing: 0.01em;
+  margin-top: 0;
 }
 
 .homeHeaderSubheadingRight {
   color: #001C46;
-  font: 34.1024px "Flecha S", sans-serif;
-  font-weight: normal;
-  line-height: 1.2;
+  font-family: 'The Brown', 'Flecha S', sans-serif;
+  font-size: 34.1024px;
+  font-weight: 500;
+  line-height: 1.3;
   margin-bottom: 8px;
-  text-align: left;
-  width: 361.75px;
+  /* RTL: Right-align for Arabic - perfectly aligned with buttons */
+  text-align: right;
+  width: 100%;
   height: 35.8px;
+  /* RTL: Perfect alignment - right edge alignment */
+  display: block;
+  letter-spacing: 0.01em;
+  margin-top: 0;
 }
 
 .homeHeaderText1 {
@@ -57,7 +85,8 @@
   font: 16px "Work Sans", sans-serif;
   line-height: 1.4;
   margin-bottom: 24px;
-  text-align: justify;
+  /* RTL: Right-align body text */
+  text-align: right;
   width: 100%;
   max-width: 480px;
 }
@@ -67,6 +96,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* RTL: Reset direction for arrow container */
+  direction: ltr;
+  align-self: flex-start;
+  margin-top: 0;
+  flex: 0 0 auto;
+  width: 80px;
 }
 
 .arrowDesktop {
@@ -95,15 +130,29 @@
   width: 361.75px;
   height: 98.84px;
   padding: 10px;
+  /* RTL: Right-align form section */
+  text-align: right;
+  direction: rtl;
+  /* RTL: Ensure consistent alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex: 0 0 auto;
 }
 
 .sevaFields.formkitFields {
-  width: 361.75px;
+  width: 100%;
   height: 57.35px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  /* RTL: Perfect right alignment */
+  direction: rtl;
+  justify-content: flex-start;
+  /* Add margin-top to align buttons with paragraph text */
+  margin-top: 24px;
 }
 
 .formkitInput {
@@ -117,6 +166,9 @@
   margin: 0;
   box-sizing: border-box;
   flex-shrink: 0;
+  /* RTL: Right-align text in input */
+  text-align: right;
+  direction: rtl;
 }
 
 .subscribeButton {
@@ -163,25 +215,33 @@
   color: #FFFFFF;
 }
 
-/* Main title - both lines left-aligned */
+/* Main title - RTL aligned with The Brown font and improved Arabic typography */
 .flechaHeroTitle {
-  font-family: 'Flecha S', sans-serif;
+  font-family: 'The Brown', 'Flecha S', sans-serif;
   font-size: 90px;
-  font-weight: normal;
+  font-weight: 600;
   color: #001C46;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 1.2;
+  letter-spacing: 0.005em;
   white-space: normal;
   overflow-wrap: break-word;
-  text-align: left;
+  /* RTL: Right-align main title */
+  text-align: right;
   max-width: 100%;
   margin: 0;
+  direction: rtl;
+  /* Better Arabic text rendering */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .deconstructedQ {
   display: inline;
-  margin-left: 6px;
   white-space: nowrap;
+  margin: 0;
+  /* Ensure consistent RTL positioning */
+  margin-left: 6px;
 }
 
 .qCurve {
@@ -193,7 +253,7 @@
 .qDot {
   color: #2762F8;
   display: inline;
-  margin-left: 2px;
+  margin-right: 2px;
   animation: dot-bounce 2s ease-in-out infinite 0.3s;
 }
 
@@ -239,6 +299,10 @@
   .homeHeaderText1 {
     max-width: 420px;
   }
+  
+  .homeHeaderContent {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -258,6 +322,10 @@
   .homeHeaderText1 {
     max-width: 380px;
   }
+  
+  .homeHeaderContent {
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -272,14 +340,17 @@
   
   .flechaHeroTitle {
     font-size: 52px;
+    font-weight: 500;
     white-space: normal;
-    line-height: 1.15;
+    line-height: 1.25;
     margin-bottom: 2rem;
+    /* RTL: Center text in mobile */
     text-align: center;
     padding: 0 1rem;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    direction: rtl;
   }
   
   .homeHeaderComponent {
@@ -295,6 +366,9 @@
     gap: 0.75rem;
     text-align: center;
     margin-top: 1.5rem;
+    /* RTL: Reset direction for mobile stacking */
+    direction: ltr;
+    justify-content: center;
   }
   
   .homeHeaderTextWrap {
@@ -306,14 +380,17 @@
   
   .homeHeaderSubheading {
     font-size: 34px;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 0.6rem;
     white-space: normal;
+    line-height: 1.3;
   }
   
   .homeHeaderText1 {
     font-size: 15px;
-    text-align: justify;
+    /* RTL: Center text in mobile for better readability */
+    text-align: center;
     margin-bottom: 0.8rem;
     padding: 0 1.5rem;
     max-width: 85%;
@@ -325,6 +402,11 @@
     width: 100%;
     height: auto;
     padding: 0.5rem;
+    text-align: center;
+    /* RTL: Center alignment for mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .sevaFields.formkitFields {
@@ -332,11 +414,14 @@
     height: auto;
     flex-direction: column;
     gap: 12px;
+    direction: ltr;
+    margin-top: 12px;
   }
   
   .formkitInput {
     width: 100%;
     max-width: 300px;
+    text-align: center;
   }
   
   .subscribeButton {
@@ -360,7 +445,14 @@
   .homeHeaderSubheadingRight {
     text-align: center;
     font-size: 28px;
+    font-weight: 500;
     margin-bottom: 1rem;
+    line-height: 1.3;
+    /* RTL: Center alignment for mobile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   /* Mobile Arrow Switching - Tighter spacing */
@@ -374,6 +466,10 @@
     justify-content: center;
     margin: 0.2rem 0;
   }
+  
+  .arrowContainer {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -384,13 +480,15 @@
   
   .flechaHeroTitle {
     font-size: 44px;
-    line-height: 1.2;
+    font-weight: 500;
+    line-height: 1.3;
     margin-bottom: 1.8rem;
     padding: 0 0.5rem;
   }
   
   .homeHeaderSubheading {
     font-size: 28px;
+    font-weight: 500;
   }
   
   .homeHeaderText1 {
@@ -398,7 +496,7 @@
     padding: 0 2rem;
     max-width: 90%;
     margin-bottom: 0.8rem;
-    text-align: justify;
+    text-align: center;
   }
   
   .subscribeButton {
@@ -411,5 +509,19 @@
     width: 90%;
     max-width: 260px;
     font-size: 13px;
+  }
+  
+  .homeHeaderSubheadingRight {
+    font-size: 24px;
+    font-weight: 500;
+    /* RTL: Ensure consistent center alignment in smallest mobile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .sevaFields.formkitFields {
+    margin-top: 8px;
   }
 }

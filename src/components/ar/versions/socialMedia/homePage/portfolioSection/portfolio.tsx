@@ -10,50 +10,51 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className={styles.flechaSectionHeading + " mb-6"}>
-            Featured Social Media Work
+          <h2 className={styles.flechaSectionHeading + " mb-6 arabic-heading"}>
+            مشاريع نجحت في بناء الحضور الرقمي
           </h2>
-          <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed"}>
-            Real social media campaigns that delivered measurable growth for GCC companies across LinkedIn, X, and Instagram.
+          <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed arabic-body"}>
+            حملات حقيقية لوسائل التواصل حققت نمواً قابلاً للقياس لشركات خليجية عبر لينكد إن وتويتر وإنستغرام.
           </p>
         </div>
 
-        {/* Portfolio Grid - Social Media Focused */}
+        {/* Portfolio Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {/* Portfolio Project 1 - Shiftat Social Media Growth */}
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-blue-500 to-blue-600`}>
               <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory}>HR Technology</div>
+                <div className={styles.portfolioCategory + " arabic-body"}>تقنيات الموارد البشرية</div>
                 <div className={styles.portfolioCompanyLogo}>
-                  <img src="/logos/shiftat.webp" alt="Shiftat" className={`${styles.portfolioLogoImg} ${styles.portfolioLogoShiftat}`} />
+                  <img src="/logos/shiftat.webp" alt="شفتات" className={`${styles.portfolioLogoImg} ${styles.portfolioLogoShiftat}`} />
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType}>Social Media Growth</h4>
-                <p className={styles.portfolioServiceDetail}>LinkedIn + X Strategy</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>نمو وسائل التواصل</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>استراتيجية لينكد إن + تويتر</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
-              <h3 className={styles.portfolioTitle}>
-                12,000+ Followers in 8 Months
+              <h3 className={styles.portfolioTitle + " arabic-heading"}>
+                ١٢ ألف متابع في ٨ شهور
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
+                  alt="سهم"
                   width={18}
                   height={18}
                   className={styles.portfolioArrow}
+                  style={{ transform: 'scaleX(-1)' }}
                 />
               </h3>
-              <p className={styles.portfolioDescription}>
-                Built Shiftat's social presence from zero to industry leadership with strategic content, engagement tactics, and thought leadership positioning.
+              <p className={styles.portfolioDescription + " arabic-body"}>
+                بنينا لشفتات حضوراً رقمياً من الصفر إلى الريادة بمحتوى مدروس، وتكتيكات تفاعل، وتموضع كخبير في المجال.
               </p>
               <button 
                 onClick={() => window.open('https://www.linkedin.com/company/shiftat-sa/', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonBlue}`}
               >
-                View Social Media Growth
+                شاهد قصة النجاح
               </button>
             </div>
           </div>
@@ -62,36 +63,37 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-orange-500 to-orange-600`}>
               <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory}>Logistics</div>
+                <div className={styles.portfolioCategory + " arabic-body"}>اللوجستيات</div>
                 <div className={styles.portfolioCompanyLogo}>
-                  <img src="/logos/abudawood.webp" alt="Abudawood" className={styles.portfolioLogoImg} />
+                  <img src="/logos/abudawood.webp" alt="أبوداود" className={styles.portfolioLogoImg} />
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType}>LinkedIn Strategy</h4>
-                <p className={styles.portfolioServiceDetail}>B2B Thought Leadership</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>استراتيجية لينكد إن</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>قيادة فكرية B2B</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
-              <h3 className={styles.portfolioTitle}>
-                B2B LinkedIn Authority Building
+              <h3 className={styles.portfolioTitle + " arabic-heading"}>
+                بناء السمعة المهنية على لينكد إن
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
+                  alt="سهم"
                   width={18}
                   height={18}
                   className={styles.portfolioArrow}
+                  style={{ transform: 'scaleX(-1)' }}
                 />
               </h3>
-              <p className={styles.portfolioDescription}>
-                Developed comprehensive LinkedIn content strategy for GCC's leading logistics provider, establishing industry thought leadership and generating qualified B2B leads.
+              <p className={styles.portfolioDescription + " arabic-body"}>
+                طورنا استراتيجية محتوى شاملة على لينكد إن لأكبر مقدمي الخدمات اللوجستية في الخليج، وثبتنا موقعهم كخبراء في المجال وجلبنا لهم عملاء B2B مؤهلين.
               </p>
               <button 
-                onClick={() => window.open('https://drive.google.com/drive/folders/1OW44Melyr3JIr4rYvE8SQFT-hx_QzI48?usp=drive_link', '_blank')}
+                onClick={() => window.open('https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonOrange}`}
               >
-                View LinkedIn Content
+                شاهد المحتوى
               </button>
             </div>
           </div>
@@ -100,36 +102,37 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-green-500 to-green-600`}>
               <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory}>Education</div>
+                <div className={styles.portfolioCategory + " arabic-body"}>التعليم</div>
                 <div className={styles.portfolioCompanyLogo}>
-                  <img src="/logos/downehouse.webp" alt="Downe House" className={styles.portfolioLogoImg} />
+                  <img src="/logos/downehouse.webp" alt="داون هاوس" className={styles.portfolioLogoImg} />
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType}>Instagram & Facebook</h4>
-                <p className={styles.portfolioServiceDetail}>Educational Content</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>إنستغرام وفيسبوك</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>محتوى تعليمي</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
-              <h3 className={styles.portfolioTitle}>
-                Educational Social Media Campaign
+              <h3 className={styles.portfolioTitle + " arabic-heading"}>
+                حملة تواصل اجتماعي تعليمية
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
+                  alt="سهم"
                   width={18}
                   height={18}
                   className={styles.portfolioArrow}
+                  style={{ transform: 'scaleX(-1)' }}
                 />
               </h3>
-              <p className={styles.portfolioDescription}>
-                Created engaging social media content for prestigious educational institution, focusing on student life, academic excellence, and parent engagement.
+              <p className={styles.portfolioDescription + " arabic-body"}>
+                أنشأنا محتوى جذاباً لمؤسسة تعليمية مرموقة، ركزنا فيه على حياة الطلاب، والتفوق الأكاديمي، وإشراك أولياء الأمور.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/14HO-MTvpGGteiaJG7o3vBMDiIQecnoYM?usp=sharing', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonGreen}`}
               >
-                View Campaign
+                شاهد الحملة
               </button>
             </div>
           </div>
@@ -138,36 +141,37 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-pink-500 to-pink-600`}>
               <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory}>Arts & Culture</div>
+                <div className={styles.portfolioCategory + " arabic-body"}>الفنون والثقافة</div>
                 <div className={styles.portfolioCompanyLogo}>
-                  <img src="/logos/jaxdistrict.webp" alt="JAX District" className={styles.portfolioLogoImg} />
+                  <img src="/logos/jaxdistrict.webp" alt="جاكس ديستريكت" className={styles.portfolioLogoImg} />
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType}>Creative Social Content</h4>
-                <p className={styles.portfolioServiceDetail}>Instagram + Facebook</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>محتوى إبداعي</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>إنستغرام + فيسبوك</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
-              <h3 className={styles.portfolioTitle}>
-                Arts Community Social Growth
+              <h3 className={styles.portfolioTitle + " arabic-heading"}>
+                نمو مجتمع الفنون
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
+                  alt="سهم"
                   width={18}
                   height={18}
                   className={styles.portfolioArrow}
+                  style={{ transform: 'scaleX(-1)' }}
                 />
               </h3>
-              <p className={styles.portfolioDescription}>
-                Developed creative social media campaigns showcasing artistic talent and cultural events, building engaged community around local arts scene.
+              <p className={styles.portfolioDescription + " arabic-body"}>
+                طورنا حملات إبداعية لعرض المواهب الفنية والفعاليات الثقافية، وبنينا مجتمعاً متفاعلاً حول الفنون المحلية.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/1TXrFtUlfxUvZosRY-WTqDlzqF_HVJimE?usp=sharing', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonPink}`}
               >
-                View Creative Work
+                شاهد العمل الإبداعي
               </button>
             </div>
           </div>
@@ -176,36 +180,37 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-teal-500 to-teal-600`}>
               <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory}>Sustainability</div>
+                <div className={styles.portfolioCategory + " arabic-body"}>الاستدامة</div>
                 <div className={styles.portfolioCompanyLogo}>
-                  <img src="/logos/reviva.webp" alt="REVIVA" className={styles.portfolioLogoImg} />
+                  <img src="/logos/reviva.webp" alt="ريفيفا" className={styles.portfolioLogoImg} />
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType}>Environmental Campaign</h4>
-                <p className={styles.portfolioServiceDetail}>Multi-Platform Content</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>حملة بيئية</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>محتوى متعدد المنصات</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
-              <h3 className={styles.portfolioTitle}>
-                Sustainability Social Movement
+              <h3 className={styles.portfolioTitle + " arabic-heading"}>
+                حراك اجتماعي للاستدامة
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
+                  alt="سهم"
                   width={18}
                   height={18}
                   className={styles.portfolioArrow}
+                  style={{ transform: 'scaleX(-1)' }}
                 />
               </h3>
-              <p className={styles.portfolioDescription}>
-                Created impactful social media content promoting environmental awareness and sustainable practices, driving community engagement and behavior change.
+              <p className={styles.portfolioDescription + " arabic-body"}>
+                أنشأنا محتوى مؤثراً لنشر الوعي البيئي وتشجيع الممارسات المستدامة، وحفزنا التفاعل المجتمعي والتغيير السلوكي.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonTeal}`}
               >
-                View Campaign Impact
+                شاهد تأثير الحملة
               </button>
             </div>
           </div>
@@ -214,53 +219,54 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
           <div className={`${styles.portfolioCard} group`}>
             <div className={`${styles.portfolioHeader} bg-gradient-to-br from-purple-500 to-purple-600`}>
               <div className={styles.portfolioHeaderContent}>
-                <div className={styles.portfolioCategory}>Public Transport</div>
+                <div className={styles.portfolioCategory + " arabic-body"}>النقل العام</div>
                 <div className={styles.portfolioCompanyLogo}>
-                  <img src="/logos/makkahbus.webp" alt="Makkah Bus" className={styles.portfolioLogoImg} />
+                  <img src="/logos/makkahbus.webp" alt="باص مكة" className={styles.portfolioLogoImg} />
                 </div>
               </div>
               <div className={styles.portfolioHeaderMain}>
-                <h4 className={styles.portfolioServiceType}>Community Engagement</h4>
-                <p className={styles.portfolioServiceDetail}>Local Social Strategy</p>
+                <h4 className={styles.portfolioServiceType + " arabic-heading"}>تفاعل مجتمعي</h4>
+                <p className={styles.portfolioServiceDetail + " arabic-body"}>استراتيجية محلية</p>
               </div>
             </div>
             
             <div className={styles.portfolioContent}>
-              <h3 className={styles.portfolioTitle}>
-                Public Service Social Strategy
+              <h3 className={styles.portfolioTitle + " arabic-heading"}>
+                استراتيجية تواصل للخدمات العامة
                 <Image
                   src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                  alt="Arrow"
+                  alt="سهم"
                   width={18}
                   height={18}
                   className={styles.portfolioArrow}
+                  style={{ transform: 'scaleX(-1)' }}
                 />
               </h3>
-              <p className={styles.portfolioDescription}>
-                Developed comprehensive social media strategy for Makkah's public transportation system, focusing on community engagement and service awareness.
+              <p className={styles.portfolioDescription + " arabic-body"}>
+                طورنا استراتيجية شاملة لنظام النقل العام في مكة، وركزنا على التفاعل مع المجتمع ونشر الوعي بالخدمات.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonPurple}`}
               >
-                View Social Strategy
+                شاهد الاستراتيجية
               </button>
             </div>
           </div>
         </div>
 
-        {/* View Complete Portfolio Button - Updated for social media focus */}
         <div className="text-center mt-16">
-         <div className="inline-flex items-center bg-gray-50 rounded-full px-6 py-3 border">
-            <svg className="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+        <div className="inline-flex items-center bg-gray-50 rounded-full px-6 py-3 border gap-4">
+            <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className={styles.flechaVerificationText + " mr-3"}>Complete social media portfolio available</span>
+            <span className={styles.flechaVerificationText + " arabic-body"}>ملف الأعمال كاملاً متاح</span>
+            <span className="text-gray-400 mx-2">•</span>
             <button 
               onClick={() => window.location.href = '/v/social-media/portfolio'}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
             >
-              View All Social Media Work →
+              شاهد جميع مشاريع التواصل الاجتماعي ←
             </button>
           </div>
         </div>
