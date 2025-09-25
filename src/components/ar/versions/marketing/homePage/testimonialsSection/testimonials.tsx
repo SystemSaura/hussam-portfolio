@@ -257,12 +257,13 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className="text-center mt-8 sm:mt-12">
-          <div className="inline-flex items-center bg-gray-50 rounded-full px-4 sm:px-6 py-3 border flex-wrap justify-center gap-2 sm:gap-0">
-            <svg className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+          <div className="text-center mt-8 sm:mt-12">
+          <div className="inline-flex items-center bg-gray-50 rounded-full px-4 sm:px-6 py-3 border gap-4">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className={styles.flechaVerificationText + " mr-2 sm:mr-3 text-center arabic-body"}>جميع التقييمات موثقة في أب وورك</span>
+            <span className={styles.flechaVerificationText + " text-center arabic-body"}>جميع التقييمات موثقة في أب وورك</span>
+            <span className="text-gray-400 mx-2">•</span>
             <a href="https://www.upwork.com/freelancers/~01630436400e1bdae3" target="_blank" rel="noopener noreferrer" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>شاهد الجميع ←</a>
           </div>
         </div>
