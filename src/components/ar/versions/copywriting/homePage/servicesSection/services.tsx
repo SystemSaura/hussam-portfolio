@@ -53,17 +53,19 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
       if (shouldBeSticky !== isSticky) {
         setIsSticky(shouldBeSticky);
         
-        if (shouldBeSticky) {
-          const containerLeft = containerRect.left;
+           if (shouldBeSticky) {
+          // RTL: Position from the right side
+          const containerRight = window.innerWidth - containerRect.right;
           const gridGap = 64;
           const leftColumnWidth = (containerRect.width - gridGap) / 2;
           
           setStickyStyles({
             position: 'fixed',
             top: '120px',
-            left: `${containerLeft}px`,
+            right: `${containerRight}px`,
             width: `${leftColumnWidth}px`,
             zIndex: 10,
+            textAlign: 'right',
           });
         } else {
           setStickyStyles({});
