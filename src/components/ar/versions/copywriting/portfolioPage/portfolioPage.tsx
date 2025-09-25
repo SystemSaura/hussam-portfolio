@@ -24,15 +24,15 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   const [showRightArrow, setShowRightArrow] = useState(false);
   const tabContainerRef = useRef<HTMLDivElement>(null);
 
-  // بيانات المحفظة للكتابة الإعلانية باللغة العربية
+  // بيانات المحفظة للكتابة التسويقية باللغة العربية
   const portfolioData = {
     "نصوص صفحات رئيسية": [
       {
         category: "تكنولوجيا الموارد البشرية",
         logo: "/logos/shiftat.webp",
         logoText: "شفتات",
-        title: "صفحة رئيسية تجذب الانتباه وتحقق التحويلات",
-        description: "حولنا المصطلحات التقنية المعقدة إلى عناوين تجعل مدراء الموارد البشرية يفكرون 'أخيراً، شخص يفهم معاناة التوظيف'. النتيجة: معدل تحويل أكثر من 60% لجمع بيانات الزوار الذين فهموا القيمة فعلاً.",
+        title: "صفحة رئيسية تجذب الانتباه وتحقق المبيعات",
+        description: "حولنا المصطلحات التقنية المعقدة إلى عناوين تجعل مدراء الموارد البشرية يفكرون 'أخيراً، شخص يفهم معاناة التوظيف'. النتيجة: معدل استجابة أكثر من 60% من الزوار الذين فهموا القيمة فعلاً.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
@@ -50,7 +50,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         logo: "/logos/empirerealestate.webp",
         logoText: "امباير العقارية",
         title: "نصوص عقارات فاخرة تبيع الأحلام",
-        description: "نصوص مبيعات تموضع العقارات الفاخرة كترقيات حياة حصرية، وليس مجرد عقارات. كتابة تجعل المشترين الراقين في قطر يشعرون بأنهم يفوتون فرصة عمرهم إن لم يتصرفوا الآن.",
+        description: "نصوص مبيعات تموضع العقارات الفاخرة كترقيات حياة حصرية، وليس مجرد عقارات. كتابة تجعل المشترين الراقين في قطر يشعرون بأنهم يفوتون فرصة العمر إن لم يتصرفوا الآن.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
       },
@@ -64,13 +64,13 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
       }
     ],
-    "إيميلات تحقق تحويلات": [
+    "رسائل بريد إلكتروني فعالة": [
       {
         category: "تكنولوجيا الموارد البشرية",
         logo: "/logos/shiftat.webp",
         logoText: "شفتات",
-        title: "سلاسل إيميلات يقرأها الناس فعلاً",
-        description: "عناوين إيميلات تنجو من مذبحة صندوق الوارد ونصوص تبني علاقات بدلاً من إلغاء الاشتراك. سلاسل توجه العملاء المحتملين من الفضول إلى الاقتناع.",
+        title: "سلاسل رسائل يقرأها الناس فعلاً",
+        description: "عناوين رسائل تنجو من مذبحة صندوق الوارد ونصوص تبني علاقات بدلاً من إلغاء الاشتراك. سلاسل توجه العملاء المحتملين من الفضول إلى الشراء.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
@@ -79,7 +79,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         logo: "/logos/alnahdi.webp",
         logoText: "النهدي",
         title: "نشرة إخبارية تجلب الزوار للصيدليات",
-        description: "حملات إيميل تحول النصائح الصحية إلى إجراءات العملاء. كتابة تبني الثقة وتقود زيارات الصيدليات ومبيعات المنتجات لأكبر سلسلة صيدليات سعودية بذكاء.",
+        description: "حملات بريد إلكتروني تحول النصائح الصحية إلى إجراءات العملاء. كتابة تبني الثقة وتقود زيارات الصيدليات ومبيعات المنتجات لأكبر سلسلة صيدليات سعودية بذكاء.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
       },
@@ -87,18 +87,18 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "التعليم",
         logo: "/logos/bonyan.webp",
         logoText: "بنيان",
-        title: "إيميلات تعليمية تجلب الطلاب",
-        description: "سلاسل إيميل تحول منهجيات التعلم إلى تجارب تعليمية لا غنى عنها. كتابة تجعل الأهالي يشعرون بأنهم يفشلون أطفالهم إن لم يسجلوا.",
+        title: "رسائل تعليمية تجلب الطلاب",
+        description: "سلاسل بريد إلكتروني تحول منهجيات التعلم إلى تجارب تعليمية لا غنى عنها. كتابة تجعل الأهالي يشعرون بأنهم يفشلون أطفالهم إن لم يسجلوا.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
       }
     ],
-    "نصوص مبيعات تتم الصفقة": [
+    "نصوص مبيعات تتم الصفقات": [
       {
         category: "العقارات",
         logo: "/logos/empirerealestate.webp",
         logoText: "امباير العقارية",
-        title: "صفحات عقارات تخلق خوف من فوات الفرصة",
+        title: "صفحات عقارات تخلق الحاجة الملحة",
         description: "نصوص مبيعات تموضع العقارات الفاخرة كاستثمارات العمر. كتابة تتعامل مع كل اعتراض وتجعل المشترين الراقين في قطر يشعرون بالحاجة الملحة دون يأس.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
@@ -151,7 +151,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
       }
     ],
-    "محتوى يحقق تحويلات": [
+    "محتوى تسويقي مؤثر": [
       {
         category: "ثقافي",
         logo: "",
@@ -191,7 +191,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
     ]
   };
 
-  const serviceTypes = ["جميع الأعمال", "نصوص صفحات رئيسية", "إيميلات تحقق تحويلات", "نصوص مبيعات تتم الصفقة", "رسائل العلامة التجارية", "محتوى يحقق تحويلات"];
+  const serviceTypes = ["جميع الأعمال", "نصوص صفحات رئيسية", "رسائل بريد إلكتروني فعالة", "نصوص مبيعات تتم الصفقات", "رسائل العلامة التجارية", "محتوى تسويقي مؤثر"];
 
   // Check scroll position and update arrow visibility
   const checkScrollPosition = () => {
@@ -275,17 +275,17 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           {/* Page Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-50 rounded-full px-4 py-2 mb-4">
-              <span className={styles.flechaRatingText + " arabic-body"}>كتابة إعلانية محققة للتحويلات</span>
+              <span className={styles.flechaRatingText + " arabic-body"}>كتابة نصوص تسويقية تحقق النتائج</span>
               <span className="text-gray-400 mx-2">•</span>
-              <span className={styles.flechaProjectsText + " arabic-body"}>{getTotalProjectCount()}+ مشروع تحويل</span>
+              <span className={styles.flechaProjectsText + " arabic-body"}>{getTotalProjectCount()}+ مشروع ناجح</span>
             </div>
             <h1 className={styles.flechaSectionHeading + " mb-6 arabic-heading"}>
-              {activeTab === "جميع الأعمال" ? "كتابة تُوقف الارتداد وتُحقق التحويلات" : activeTab}
+              {activeTab === "جميع الأعمال" ? "نصوص تسويقية تحقق المبيعات" : activeTab}
             </h1>
             <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12 arabic-body"}>
               {activeTab === "جميع الأعمال" 
-                ? "مجموعة شاملة من الكتابة الإعلانية التي تحول الزوار المرتبكين إلى عملاء ملتزمين. كل نص يجعل المشتري المناسب يفكر 'أخيراً، شخص يفهم مشكلتي' ويتحول فوراً."
-                : `مشاريع ${activeTab} التي حولت الرسائل من المربكة إلى الواضحة تماماً، مما جعل العملاء المحتملين متحمسين للتحويل بدلاً من الخروج السريع.`
+                ? "مجموعة شاملة من النصوص التسويقية التي تحول الزوار المترددين إلى عملاء. كل نص يجعل العميل المناسب يفكر 'أخيراً، شخص يفهم مشكلتي'  ثم يتخذ إجراءً فورياً."
+                : `مشاريع ${activeTab} التي حولت الرسائل من المربكة إلى الواضحة تماماً، مما جعل العملاء المحتملين متحمسين للشراء بدلاً من الخروج السريع.`
               }
             </p>
 
@@ -402,17 +402,27 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           ))}
 
           {/* Portfolio Summary */}
-          <div className={`text-center border-t border-gray-200 ${styles.portfolioSummary}`}>
-            <div className="inline-flex items-center bg-gray-50 rounded-full px-6 py-3 border">
-              <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+        <div className={`text-center border-t border-gray-200 ${styles.portfolioSummary}`}>
+          <div className="space-y-4">
+            {/* Verification Badge */}
+            <div className="inline-flex items-center bg-green-50 rounded-full px-6 py-3 border border-green-200">
+              <svg className="w-5 h-5 text-green-500 ml-3" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className={styles.flechaVerificationText + " mr-3 arabic-body"}>جميع النصوص مُثبتة لتحويل الزوار المرتبكين إلى عملاء ملتزمين</span>
-              <Link href="/v/copywriting/homepage" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors arabic-body"}>
-                العودة لصفحة الكتابة الإعلانية ←
+              <span className={styles.flechaVerificationText + " arabic-body"}>جميع النصوص مُثبتة ومجربة</span>
+            </div>
+            
+            {/* Back Link */}
+            <div>
+              <Link href="/v/copywriting/homepage" className={styles.flechaViewAllText + " inline-flex items-center hover:text-blue-800 transition-colors arabic-body text-blue-600"}>
+                العودة لصفحة الكتابة التسويقية
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
               </Link>
             </div>
           </div>
+        </div>
         </div>
       </section>
 

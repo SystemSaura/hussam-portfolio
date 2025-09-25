@@ -31,7 +31,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "تقنية الموارد البشرية",
         logo: "/logos/shiftat.webp",
         logoText: "شفتات",
-        title: "محتوى المدونة المهنية",
+        title: "محتوى مدونة منصة التوظيف",
         description: "إنشاء استراتيجية محتوى مدونة جذابة لمنصة شفتات للتوظيف بالذكاء الاصطناعي، مع التركيز على رؤى الصناعة والقيادة الفكرية.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
