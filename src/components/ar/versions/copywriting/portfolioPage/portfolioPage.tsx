@@ -19,179 +19,179 @@ interface PortfolioPageProps {
 }
 
 export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
-  const [activeTab, setActiveTab] = useState("ALL");
+  const [activeTab, setActiveTab] = useState("جميع الأعمال");
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(false);
   const tabContainerRef = useRef<HTMLDivElement>(null);
 
-  // Copywriting-focused portfolio data with better conversion messaging
+  // بيانات المحفظة للكتابة الإعلانية باللغة العربية
   const portfolioData = {
-    "Homepage Copy": [
+    "نصوص صفحات رئيسية": [
       {
-        category: "HR Technology",
+        category: "تكنولوجيا الموارد البشرية",
         logo: "/logos/shiftat.webp",
-        logoText: "SHIFTAT",
-        title: "Homepage That Stops Bounces Dead",
-        description: "Transformed confusing AI jargon into headlines that make HR managers think 'Finally, someone who gets my hiring nightmare.' Result: 60%+ email conversion from visitors who actually understand the value.",
+        logoText: "شفتات",
+        title: "صفحة رئيسية تجذب الانتباه وتحقق التحويلات",
+        description: "حولنا المصطلحات التقنية المعقدة إلى عناوين تجعل مدراء الموارد البشرية يفكرون 'أخيراً، شخص يفهم معاناة التوظيف'. النتيجة: معدل تحويل أكثر من 60% لجمع بيانات الزوار الذين فهموا القيمة فعلاً.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
       {
-        category: "Government Research",
+        category: "البحوث الحكومية",
         logo: "/logos/kapsarc.webp",
-        logoText: "KAPSARC",
-        title: "Research Portal That Actually Makes Sense",
-        description: "Turned dense energy policy research into clear, actionable insights. Copy that transforms technical complexity into compelling value for decision-makers who need answers, not academic papers.",
+        logoText: "كابسارك",
+        title: "بوابة أبحاث مفهومة ومؤثرة",
+        description: "حولنا بحوث سياسات الطاقة المعقدة إلى رؤى واضحة وقابلة للتنفيذ. نصوص تحول التعقيد التقني إلى قيمة مقنعة لصناع القرار الذين يحتاجون حلولاً، ليس أوراقاً أكاديمية.",
         buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
       },
       {
-        category: "Real Estate",
+        category: "العقارات",
         logo: "/logos/empirerealestate.webp",
-        logoText: "EMPIRE REAL ESTATE",
-        title: "Luxury Property Copy That Sells Dreams",
-        description: "Sales copy that positions luxury properties as exclusive lifestyle upgrades, not just real estate. Copy that makes Qatar's premium buyers feel like they're missing out if they don't act now.",
+        logoText: "امباير العقارية",
+        title: "نصوص عقارات فاخرة تبيع الأحلام",
+        description: "نصوص مبيعات تموضع العقارات الفاخرة كترقيات حياة حصرية، وليس مجرد عقارات. كتابة تجعل المشترين الراقين في قطر يشعرون بأنهم يفوتون فرصة عمرهم إن لم يتصرفوا الآن.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
       },
       {
-        category: "Logistics",
+        category: "اللوجستيات",
         logo: "/logos/saeq.webp",
-        logoText: "SAEQ",
-        title: "B2B Copy That Cuts Through The Noise",
-        description: "Messaging that makes SAEQ the obvious choice for GCC logistics. Copy that differentiates in a commodity market by focusing on what keeps supply chain managers awake at night.",
+        logoText: "سائق",
+        title: "نصوص B2B تخترق الضوضاء",
+        description: "رسائل تجعل سائق الخيار الواضح لشركات اللوجستيات في الخليج. كتابة تميز في سوق تنافسي بالتركيز على ما يقلق مدراء سلسلة التوريد ليلاً.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
       }
     ],
-    "Email Copy That Converts": [
+    "إيميلات تحقق تحويلات": [
       {
-        category: "HR Technology",
+        category: "تكنولوجيا الموارد البشرية",
         logo: "/logos/shiftat.webp",
-        logoText: "SHIFTAT",
-        title: "Email Sequences That Actually Get Read",
-        description: "Subject lines that survive the inbox massacre and email copy that builds relationships instead of triggering unsubscribes. Sequences that guide prospects from curious to convinced.",
+        logoText: "شفتات",
+        title: "سلاسل إيميلات يقرأها الناس فعلاً",
+        description: "عناوين إيميلات تنجو من مذبحة صندوق الوارد ونصوص تبني علاقات بدلاً من إلغاء الاشتراك. سلاسل توجه العملاء المحتملين من الفضول إلى الاقتناع.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
       },
       {
-        category: "Healthcare",
+        category: "الرعاية الصحية",
         logo: "/logos/alnahdi.webp",
-        logoText: "AL NAHDI",
-        title: "Newsletter Copy That Drives Store Visits",
-        description: "Email campaigns that turn health tips into customer action. Copy that builds trust while subtly driving store visits and product sales for Saudi's leading pharmacy chain.",
+        logoText: "النهدي",
+        title: "نشرة إخبارية تجلب الزوار للصيدليات",
+        description: "حملات إيميل تحول النصائح الصحية إلى إجراءات العملاء. كتابة تبني الثقة وتقود زيارات الصيدليات ومبيعات المنتجات لأكبر سلسلة صيدليات سعودية بذكاء.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
       },
       {
-        category: "Education",
+        category: "التعليم",
         logo: "/logos/bonyan.webp",
-        logoText: "BONYAN",
-        title: "Educational Emails That Enroll Students",
-        description: "Email sequences that transform learning methodologies into must-have educational experiences. Copy that makes parents feel like they're failing their kids if they don't enroll.",
+        logoText: "بنيان",
+        title: "إيميلات تعليمية تجلب الطلاب",
+        description: "سلاسل إيميل تحول منهجيات التعلم إلى تجارب تعليمية لا غنى عنها. كتابة تجعل الأهالي يشعرون بأنهم يفشلون أطفالهم إن لم يسجلوا.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
       }
     ],
-    "Sales Copy That Closes": [
+    "نصوص مبيعات تتم الصفقة": [
       {
-        category: "Real Estate",
+        category: "العقارات",
         logo: "/logos/empirerealestate.webp",
-        logoText: "EMPIRE REAL ESTATE",
-        title: "Property Sales Pages That Create FOMO",
-        description: "Sales copy that positions luxury properties as once-in-a-lifetime investments. Copy that addresses every objection and makes Qatar's premium buyers feel urgency without desperation.",
+        logoText: "امباير العقارية",
+        title: "صفحات عقارات تخلق خوف من فوات الفرصة",
+        description: "نصوص مبيعات تموضع العقارات الفاخرة كاستثمارات العمر. كتابة تتعامل مع كل اعتراض وتجعل المشترين الراقين في قطر يشعرون بالحاجة الملحة دون يأس.",
         buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
       },
       {
-        category: "Healthcare",
+        category: "الرعاية الصحية",
         logo: "/logos/mindtales.webp",
-        logoText: "MINDTALES",
-        title: "Mental Health Copy That Builds Trust",
-        description: "Sensitive sales copy that makes seeking mental health help feel safe and necessary. Copy that handles the stigma while creating urgency around getting help before things get worse.",
+        logoText: "مايند تيلز",
+        title: "نصوص صحة نفسية تبني الثقة",
+        description: "نصوص مبيعات حساسة تجعل طلب المساعدة النفسية يبدو آمناً وضرورياً. كتابة تتعامل مع الوصمة الاجتماعية وتخلق حاجة ملحة للحصول على المساعدة قبل تفاقم الأمور.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
       },
       {
-        category: "Education",
+        category: "التعليم",
         logo: "/logos/hayatmohamadia.webp",
-        logoText: "HAYAT MOHAMADIA",
-        title: "Educational Program Copy That Enrolls",
-        description: "Sales copy that transforms educational features into must-have advantages for students' futures. Copy that makes parents feel like competitive disadvantage is the cost of not enrolling.",
+        logoText: "حياة محمدية",
+        title: "نصوص برامج تعليمية للتسجيل",
+        description: "نصوص مبيعات تحول ميزات التعليم إلى مزايا مطلوبة لمستقبل الطلاب. كتابة تجعل الأهالي يشعرون بأن عدم التسجيل يعني حرمان أطفالهم من التفوق التنافسي.",
         buttonColor: "Orange",
         link: "https://drive.google.com/drive/folders/1KLbVMaX4Z0jQ1KiDcaKEaszyTjZRHFcu?usp=sharing"
       }
     ],
-    "Brand Messaging": [
+    "رسائل العلامة التجارية": [
       {
-        category: "Logistics",
+        category: "اللوجستيات",
         logo: "/logos/saeq.webp",
-        logoText: "SAEQ",
-        title: "Positioning Copy That Dominates Markets",
-        description: "Brand messaging that establishes SAEQ as the only logical choice for GCC logistics. Copy that creates market leadership positioning by owning the category conversation.",
+        logoText: "سائق",
+        title: "نصوص تموضع تهيمن على الأسواق",
+        description: "رسائل علامة تجارية تؤسس سائق كالخيار المنطقي الوحيد لشركات اللوجستيات في الخليج. كتابة تخلق قيادة سوقية من خلال امتلاك محادثة الفئة.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
       },
       {
-        category: "Arts",
+        category: "الفنون",
         logo: "/logos/alhanoufalhamdan.webp",
-        logoText: "ALHANOUF ALHAMDAN",
-        title: "Personal Brand Copy That Attracts Opportunities",
-        description: "Personal brand messaging that positions arts professional as the go-to expert. Copy that builds authority and attracts premium opportunities by owning a specific niche.",
+        logoText: "الهنوف الحمدان",
+        title: "علامة شخصية تجذب الفرص",
+        description: "رسائل علامة شخصية تموضع المحترفة الفنية كالخبيرة المرجعية. كتابة تبني السلطة وتجذب الفرص المميزة من خلال امتلاك تخصص محدد.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing"
       },
       {
-        category: "Consultancy",
+        category: "الاستشارات",
         logo: "",
-        logoText: "AL MOTAFARAD",
-        title: "Consultancy Brand Voice That Builds Credibility",
-        description: "Professional brand messaging that establishes unquestionable expertise. Copy that builds credibility and positions authority in both Arabic and English markets.",
+        logoText: "المتفرد",
+        title: "صوت علامة استشارية يبني المصداقية",
+        description: "رسائل علامة مهنية تؤسس خبرة لا تُشكك فيها. كتابة تبني المصداقية وتموضع السلطة في الأسواق العربية والإنجليزية.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
       }
     ],
-    "Content That Converts": [
+    "محتوى يحقق تحويلات": [
       {
-        category: "Cultural",
+        category: "ثقافي",
         logo: "",
-        logoText: "CULTURAL INSIGHTS",
-        title: "70 Articles That Build Thought Leadership",
-        description: "Content copy that positions expertise while engaging diverse audiences. Writing that builds authority through storytelling and keeps readers coming back for more insights.",
+        logoText: "رؤى ثقافية",
+        title: "70 مقالة تبني القيادة الفكرية",
+        description: "محتوى كتابي يموضع الخبرة وفي نفس الوقت يشرك جماهير متنوعة. كتابة تبني السلطة من خلال القصص وتجعل القراء يعودون لمزيد من الرؤى.",
         buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link"
       },
       {
-        category: "Health",
+        category: "الصحة",
         logo: "/logos/mindtales.webp",
-        logoText: "MINDTALES",
-        title: "Mental Health Content That Destigmatizes",
-        description: "Educational content that builds trust while encouraging action. Writing that makes mental health conversations feel normal and seeking help feel necessary, not shameful.",
+        logoText: "مايند تيلز",
+        title: "محتوى صحة نفسية يزيل الوصمة",
+        description: "محتوى تعليمي يبني الثقة ويشجع على اتخاذ إجراء. كتابة تجعل محادثات الصحة النفسية طبيعية وطلب المساعدة ضرورياً، وليس مخزياً.",
         buttonColor: "Purple",
         link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
       },
       {
-        category: "Various Industries",
+        category: "صناعات متنوعة",
         logo: "",
-        logoText: "MULTI-INDUSTRY",
-        title: "Industry-Specific Copy That Resonates",
-        description: "Targeted content copy tailored to specific audience pain points. Each piece crafted to make the target buyer think 'This person really understands my industry.'",
+        logoText: "متعدد الصناعات",
+        title: "كتابة متخصصة بالصناعة تلامس القلوب",
+        description: "محتوى مستهدف مخصص لنقاط ألم جماهير محددة. كل قطعة مصنوعة لتجعل المشتري المستهدف يفكر 'هذا الشخص يفهم صناعتي حقاً.'",
         buttonColor: "Orange",
         link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link"
       },
       {
-        category: "Health",
+        category: "الصحة",
         logo: "",
-        logoText: "REHABS CLUB",
-        title: "Healthcare Content That Builds Authority",
-        description: "Educational content that positions rehabilitation expertise while building trust. Writing that makes patients feel confident in choosing the right treatment path.",
+        logoText: "نادي إعادة التأهيل",
+        title: "محتوى رعاية صحية يبني السلطة",
+        description: "محتوى تعليمي يموضع خبرة إعادة التأهيل ويبني الثقة. كتابة تجعل المرضى واثقين في اختيار المسار العلاجي الصحيح.",
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing"
       }
     ]
   };
 
-  const serviceTypes = ["ALL", "Homepage Copy", "Email Copy That Converts", "Sales Copy That Closes", "Brand Messaging", "Content That Converts"];
+  const serviceTypes = ["جميع الأعمال", "نصوص صفحات رئيسية", "إيميلات تحقق تحويلات", "نصوص مبيعات تتم الصفقة", "رسائل العلامة التجارية", "محتوى يحقق تحويلات"];
 
   // Check scroll position and update arrow visibility
   const checkScrollPosition = () => {
@@ -228,7 +228,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   }, []);
 
   const getFilteredData = () => {
-    if (activeTab === "ALL") {
+    if (activeTab === "جميع الأعمال") {
       return portfolioData;
     }
     return { [activeTab]: portfolioData[activeTab as keyof typeof portfolioData] };
@@ -263,7 +263,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" dir="rtl">
       {/* Header with white background */}
       <div className="bg-white">
         <Header onNavigate={onNavigate} variant="white" />
@@ -275,17 +275,17 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           {/* Page Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-50 rounded-full px-4 py-2 mb-4">
-              <span className={styles.flechaRatingText}>Copy That Converts</span>
+              <span className={styles.flechaRatingText + " arabic-body"}>كتابة إعلانية محققة للتحويلات</span>
               <span className="text-gray-400 mx-2">•</span>
-              <span className={styles.flechaProjectsText}>{getTotalProjectCount()}+ Conversion Projects</span>
+              <span className={styles.flechaProjectsText + " arabic-body"}>{getTotalProjectCount()}+ مشروع تحويل</span>
             </div>
-            <h1 className={styles.flechaSectionHeading + " mb-6"}>
-              {activeTab === "ALL" ? "Copy That Stops Bounces & Drives Conversions" : activeTab}
+            <h1 className={styles.flechaSectionHeading + " mb-6 arabic-heading"}>
+              {activeTab === "جميع الأعمال" ? "كتابة تُوقف الارتداد وتُحقق التحويلات" : activeTab}
             </h1>
-            <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12"}>
-              {activeTab === "ALL" 
-                ? "Complete collection of copywriting that transforms confused visitors into committed customers. Each piece makes the right buyer think 'Finally, someone who gets my problem' and converts immediately."
-                : `${activeTab} projects that transformed messaging from confusing to crystal clear, making prospects eager to convert instead of quick to bounce.`
+            <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12 arabic-body"}>
+              {activeTab === "جميع الأعمال" 
+                ? "مجموعة شاملة من الكتابة الإعلانية التي تحول الزوار المرتبكين إلى عملاء ملتزمين. كل نص يجعل المشتري المناسب يفكر 'أخيراً، شخص يفهم مشكلتي' ويتحول فوراً."
+                : `مشاريع ${activeTab} التي حولت الرسائل من المربكة إلى الواضحة تماماً، مما جعل العملاء المحتملين متحمسين للتحويل بدلاً من الخروج السريع.`
               }
             </p>
 
@@ -298,7 +298,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                     <button 
                       onClick={scrollLeft}
                       className={styles.scrollArrow + " " + styles.scrollArrowLeft}
-                      aria-label="Scroll tabs left"
+                      aria-label="مرر التبويبات لليسار"
                     >
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -318,7 +318,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         onClick={() => setActiveTab(type)}
                         className={`${styles.tabButton} ${
                           activeTab === type ? styles.tabButtonActive : styles.tabButtonInactive
-                        }`}
+                        } arabic-body`}
                       >
                         {type}
                       </button>
@@ -330,7 +330,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                     <button 
                       onClick={scrollRight}
                       className={styles.scrollArrow + " " + styles.scrollArrowRight}
-                      aria-label="Scroll tabs right"
+                      aria-label="مرر التبويبات لليمين"
                     >
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -345,9 +345,9 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           {/* Portfolio Categories */}
           {Object.entries(getFilteredData()).map(([categoryName, projects], categoryIndex) => (
             <div key={categoryName} className="mb-32">
-              {activeTab === "ALL" && (
+              {activeTab === "جميع الأعمال" && (
                 <div className="mt-16 mb-16">
-                  <h2 className={styles.categoryHeading}>{categoryName}</h2>
+                  <h2 className={styles.categoryHeading + " arabic-heading"}>{categoryName}</h2>
                   <div className={styles.categoryDivider}></div>
                 </div>
               )}
@@ -357,41 +357,42 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                   <div key={`${categoryName}-${index}`} className={`${styles.portfolioCard} group`}>
                     <div className={`${styles.portfolioHeader} bg-gradient-to-br ${getHeaderColorClass(project.buttonColor)}`}>
                       <div className={styles.portfolioHeaderContent}>
-                        <div className={styles.portfolioCategory}>{project.category}</div>
+                        <div className={styles.portfolioCategory + " arabic-body"}>{project.category}</div>
                         <div className={styles.portfolioCompanyLogo}>
                           {project.logo ? (
                             <img src={project.logo} alt={project.logoText} className={styles.portfolioLogoImg} />
                           ) : (
-                            <div className={styles.portfolioLogoText}>{project.logoText}</div>
+                            <div className={styles.portfolioLogoText + " arabic-body"}>{project.logoText}</div>
                           )}
                         </div>
                       </div>
                       <div className={styles.portfolioHeaderMain}>
-                        <h4 className={styles.portfolioServiceType}>{categoryName}</h4>
-                        <p className={styles.portfolioServiceDetail}>{project.category} Project</p>
+                        <h4 className={styles.portfolioServiceType + " arabic-heading"}>{categoryName}</h4>
+                        <p className={styles.portfolioServiceDetail + " arabic-body"}>مشروع {project.category}</p>
                       </div>
                     </div>
                     
                     <div className={styles.portfolioContent}>
-                      <h3 className={styles.portfolioTitle}>
+                      <h3 className={styles.portfolioTitle + " arabic-heading"}>
                         {project.title}
                         <Image
                           src="https://ext.same-assets.com/3287453319/2624132661.svg"
-                          alt="Arrow"
+                          alt="سهم"
                           width={18}
                           height={18}
                           className={styles.portfolioArrow}
+                          style={{ transform: 'scaleX(-1)' }}
                         />
                       </h3>
-                      <p className={styles.portfolioDescription}>
+                      <p className={styles.portfolioDescription + " arabic-body"}>
                         {project.description}
                       </p>
                       <button 
                         onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
-                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
+                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""} arabic-body`}
                         disabled={project.link === "#"}
                       >
-                        {project.link !== "#" ? "View Full Work" : "Coming Soon"}
+                        {project.link !== "#" ? "شاهد العمل الكامل" : "قريباً"}
                       </button>
                     </div>
                   </div>
@@ -406,9 +407,9 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
               <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className={styles.flechaVerificationText + " mr-3"}>All copy proven to convert confused visitors into committed customers</span>
-              <Link href="/v/copywriting/homepage" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>
-                Back to Copywriting Home →
+              <span className={styles.flechaVerificationText + " mr-3 arabic-body"}>جميع النصوص مُثبتة لتحويل الزوار المرتبكين إلى عملاء ملتزمين</span>
+              <Link href="/v/copywriting/homepage" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors arabic-body"}>
+                العودة لصفحة الكتابة الإعلانية ←
               </Link>
             </div>
           </div>

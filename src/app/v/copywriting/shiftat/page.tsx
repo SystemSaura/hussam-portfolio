@@ -1,10 +1,15 @@
 "use client";
 
-import { useState } from "react";
-import CaseStudyDetail from "@/components/en/versions/copywriting/caseStudyPage/caseStudyPage";
+import { useLanguage } from "@/lib/language-context";
+
+// English Components
+import CaseStudyDetailEN from "@/components/en/versions/copywriting/caseStudyPage/caseStudyPage";
+
+// Arabic Components
+import CaseStudyDetailAR from "@/components/ar/versions/copywriting/caseStudyPage/caseStudyPage";
 
 export default function CopywritingShiftatCaseStudy() {
-  const [currentView, setCurrentView] = useState("caseStudy");
+  const { language } = useLanguage();
 
   const handleNavigateToSection = (section: string) => {
     switch(section) {
@@ -18,7 +23,8 @@ export default function CopywritingShiftatCaseStudy() {
         window.location.href = "/v/copywriting/homepage#services";
         break;
       default:
-        setCurrentView(section);
+        // Stay on current page for case study
+        break;
     }
   };
 
@@ -26,10 +32,21 @@ export default function CopywritingShiftatCaseStudy() {
     about: () => handleNavigateToSection("about"),
     portfolio: () => handleNavigateToSection("portfolio"),
     services: () => handleNavigateToSection("services"),
-    caseStudy: () => setCurrentView("caseStudy")
+    caseStudy: () => {} // Stay on current page
   };
 
+  // Render components based on selected language
+  if (language === 'ar') {
+    return (
+      <div dir="rtl">
+        <CaseStudyDetailAR onNavigate={navigationHandlers} />
+      </div>
+    );
+  }
+
   return (
-    <CaseStudyDetail onNavigate={navigationHandlers} />
+    <div dir="ltr">
+      <CaseStudyDetailEN onNavigate={navigationHandlers} />
+    </div>
   );
 }

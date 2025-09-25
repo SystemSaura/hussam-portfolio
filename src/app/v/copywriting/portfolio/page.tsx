@@ -1,21 +1,15 @@
 "use client";
 
-import { useState } from "react";
-import PortfolioPage from "@/components/en/versions/copywriting/portfolioPage/portfolioPage";
+import { useLanguage } from "@/lib/language-context";
+
+// English Components
+import PortfolioPageEN from "@/components/en/versions/copywriting/portfolioPage/portfolioPage";
+
+// Arabic Components
+import PortfolioPageAR from "@/components/ar/versions/copywriting/portfolioPage/portfolioPage";
 
 export default function CopywritingPortfolioPage() {
-  const [currentView, setCurrentView] = useState("portfolio");
-
-  const navigationHandlers = {
-    about: () => setCurrentView("about"),
-    portfolio: () => setCurrentView("portfolio"), 
-    services: () => setCurrentView("services"),
-    caseStudy: () => setCurrentView("caseStudy")
-  };
-
-  const handleNavigateToHome = () => {
-    window.location.href = "/v/copywriting/homepage";
-  };
+  const { language } = useLanguage();
 
   const handleNavigateToSection = (section: string) => {
     switch(section) {
@@ -29,18 +23,30 @@ export default function CopywritingPortfolioPage() {
         window.location.href = "/v/copywriting/shiftat";
         break;
       default:
-        setCurrentView(section);
+        // Stay on current page for portfolio
+        break;
     }
   };
 
-  const updatedNavigationHandlers = {
+  const navigationHandlers = {
     about: () => handleNavigateToSection("about"),
-    portfolio: () => setCurrentView("portfolio"),
+    portfolio: () => {}, // Stay on current page
     services: () => handleNavigateToSection("services"), 
     caseStudy: () => handleNavigateToSection("caseStudy")
   };
 
+  // Render components based on selected language
+  if (language === 'ar') {
+    return (
+      <div dir="rtl">
+        <PortfolioPageAR onNavigate={navigationHandlers} />
+      </div>
+    );
+  }
+
   return (
-    <PortfolioPage onNavigate={updatedNavigationHandlers} />
+    <div dir="ltr">
+      <PortfolioPageEN onNavigate={navigationHandlers} />
+    </div>
   );
 }

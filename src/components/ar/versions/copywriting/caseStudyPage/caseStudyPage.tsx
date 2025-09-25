@@ -18,7 +18,7 @@ interface CaseStudyDetailProps {
 
 export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
   return (
-    <div className={styles.detailContainer}>
+    <div className={styles.detailContainer} dir="rtl">
       {/* Unified Background Container for Header + Hero */}
       <div className={styles.unifiedBackgroundContainer}>
         {/* Header Navigation */}
@@ -26,26 +26,26 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.navContainer}>
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/v/copywriting/homepage" className={styles.logoName}>
-                Hussam Baaka <span className={styles.cursorBlink}>|</span>
+              <Link href="/v/copywriting/homepage" className={styles.logoName + " arabic-body"}>
+                حسام بعكة <span className={styles.cursorBlink}>|</span>
               </Link>
             </div>
 
             {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-0">
-              <button onClick={onNavigate.about} className={styles.navLink}>About</button>
-              <button onClick={onNavigate.portfolio} className={styles.navLink}>Portfolio</button>
-              <button onClick={onNavigate.services} className={styles.navLink}>Services</button>
-              <button onClick={onNavigate.caseStudy} className={styles.navLink}>Case Study</button>
+            <nav className="hidden md:flex items-center space-x-0 space-x-reverse">
+              <button onClick={onNavigate.about} className={styles.navLink + " arabic-body"}>نبذة عني</button>
+              <button onClick={onNavigate.portfolio} className={styles.navLink + " arabic-body"}>أعمالي</button>
+              <button onClick={onNavigate.services} className={styles.navLink + " arabic-body"}>خدماتي</button>
+              <button onClick={onNavigate.caseStudy} className={styles.navLink + " arabic-body"}>دراسة حالة</button>
             </nav>
 
             {/* Right side buttons */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 space-x-reverse">
               <button 
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.navButtonStrategy}
+                className={styles.navButtonStrategy + " arabic-body"}
               >
-                Book Consultation
+                احجز استشارة
               </button>
             </div>
 
@@ -65,25 +65,25 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.heroContainer}>
             <div className={styles.heroContent}>
               <div className={styles.heroText}>
-                <h1 className={styles.heroTitle}>
-                  How Strategic Copywriting Made Shiftat<br />
-                  <span className={styles.highlight}>Saudi Arabia's Go-To AI Recruitment Platform</span>
+                <h1 className={styles.heroTitle + " arabic-heading"}>
+                  كيف جعلت الكتابة الإعلانية الاستراتيجية شفتات<br />
+                  <span className={styles.highlight}>منصة التوظيف بالذكاء الاصطناعي الأولى في السعودية</span>
                 </h1>
-                <p className={styles.heroSubtitle}>
-                  Converting confused visitors into committed customers through copy that actually works
+                <p className={styles.heroSubtitle + " arabic-body"}>
+                  تحويل الزوار المرتبكين إلى عملاء ملتزمين من خلال كتابة تعمل فعلاً
                 </p>
                 <div className={styles.heroStats}>
                   <div className={styles.stat}>
                     <div className={styles.statNumber}>100+</div>
-                    <div className={styles.statLabel}>Quality Leads</div>
+                    <div className={styles.statLabel + " arabic-body"}>عميل محتمل مؤهل</div>
                   </div>
                   <div className={styles.stat}>
                     <div className={styles.statNumber}>60%+</div>
-                    <div className={styles.statLabel}>Email Open Rates</div>
+                    <div className={styles.statLabel + " arabic-body"}>معدل فتح الإيميل</div>
                   </div>
                   <div className={styles.stat}>
                     <div className={styles.statNumber}>5,000+</div>
-                    <div className={styles.statLabel}>Subscribers</div>
+                    <div className={styles.statLabel + " arabic-body"}>مشترك</div>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 <div className={styles.heroImageContainer}>
                   <Image
                     src="/backgrounds/Shiftat.webp"
-                    alt="Shiftat Platform"
+                    alt="منصة شفتات"
                     width={600}
                     height={400}
                     className={styles.heroImg}
@@ -110,11 +110,11 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.resultsNew}>
           <div className={styles.resultsContainer}>
             <div className={styles.resultsHeader}>
-              <h2 className={styles.resultsMainHeading}>
-                Copy Results That <span className={styles.resultsHighlight}>Speak Volumes</span>
+              <h2 className={styles.resultsMainHeading + " arabic-heading"}>
+                نتائج كتابة <span className={styles.resultsHighlight}>تتحدث بوضوح</span>
               </h2>
-              <p className={styles.resultsSubheading}>
-                When your copy stops the right people in their tracks, conversions become predictable
+              <p className={styles.resultsSubheading + " arabic-body"}>
+                عندما تُوقف كتابتك الناس المناسبين في مسارهم، تصبح التحويلات متوقعة
               </p>
             </div>
             
@@ -122,24 +122,24 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
               <div className={styles.primaryResults}>
                 <div className={styles.primaryStat}>
                   <div className={styles.primaryNumber}>100+</div>
-                  <div className={styles.primaryLabel}>Quality Leads Generated</div>
-                  <div className={styles.primaryDesc}>Through copy that makes prospects think "This is exactly what I need"</div>
+                  <div className={styles.primaryLabel + " arabic-heading"}>عميل محتمل عالي الجودة مُولَّد</div>
+                  <div className={styles.primaryDesc + " arabic-body"}>من خلال كتابة تجعل العملاء المحتملين يفكرون "هذا بالضبط ما أحتاجه"</div>
                 </div>
                 <div className={styles.primaryStat}>
                   <div className={styles.primaryNumber}>60%+</div>
-                  <div className={styles.primaryLabel}>Email Open Rates</div>
-                  <div className={styles.primaryDesc}>Subject lines that stop the scroll and demand attention</div>
+                  <div className={styles.primaryLabel + " arabic-heading"}>معدل فتح الإيميل</div>
+                  <div className={styles.primaryDesc + " arabic-body"}>عناوين توقف التمرير وتطالب بالانتباه</div>
                 </div>
               </div>
               
               <div className={styles.secondaryResults}>
                 <div className={styles.secondaryStat}>
                   <div className={styles.secondaryNumber}>5,000+</div>
-                  <div className={styles.secondaryLabel}>Engaged Email Subscribers</div>
+                  <div className={styles.secondaryLabel + " arabic-heading"}>مشترك إيميل متفاعل</div>
                 </div>
                 <div className={styles.secondaryStat}>
                   <div className={styles.secondaryNumber}>80%</div>
-                  <div className={styles.secondaryLabel}>Cost Reduction Message</div>
+                  <div className={styles.secondaryLabel + " arabic-heading"}>رسالة توفير التكلفة</div>
                 </div>
               </div>
             </div>
@@ -151,14 +151,14 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.container}>
             <div className={styles.challengeGrid}>
               <div className={styles.challengeContent}>
-                <h2 className={styles.sectionTitle}>The Copy Challenge</h2>
-                <p className={styles.challengeText}>
-                  Shiftat had powerful AI recruitment technology, but their website copy was confusing prospects instead of converting them. Visitors couldn't instantly understand <strong>what Shiftat actually did</strong>, <strong>who it was for</strong>, or <strong>why they should care</strong>. The messaging tried to speak to everyone but resonated with no one—a classic case of copy that explains features but fails to sell the transformation.
+                <h2 className={styles.sectionTitle + " arabic-heading"}>تحدي الكتابة</h2>
+                <p className={styles.challengeText + " arabic-body"}>
+                  شفتات لديها تكنولوجيا توظيف ذكي قوية، لكن كتابة الموقع كانت تربك العملاء المحتملين بدلاً من تحويلهم. الزوار لم يستطيعوا فهم <strong>ما تفعله شفتات فعلاً</strong>، أو <strong>لمن هي مخصصة</strong>، أو <strong>لماذا يجب أن يهتموا</strong>. الرسائل حاولت التحدث مع الجميع لكن لم تلامس أحداً—حالة كلاسيكية من الكتابة التي تشرح الميزات لكن تفشل في بيع التحول.
                 </p>
                 <div className={styles.challengeTags}>
-                  <span className={styles.challengeTag}>Confusing Messaging</span>
-                  <span className={styles.challengeTag}>No Clear Value Prop</span>
-                  <span className={styles.challengeTag}>Poor Conversion</span>
+                  <span className={styles.challengeTag + " arabic-body"}>رسائل مربكة</span>
+                  <span className={styles.challengeTag + " arabic-body"}>لا توجد قيمة واضحة</span>
+                  <span className={styles.challengeTag + " arabic-body"}>تحويل ضعيف</span>
                 </div>
               </div>
               <div className={styles.challengeIcon}>
@@ -172,70 +172,70 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.solutionNew}>
           <div className={styles.container}>
             <div className={styles.solutionHeader}>
-              <h2 className={styles.sectionTitle}>The Copy Transformation Strategy</h2>
-              <p className={styles.solutionSubheading}>
-                Strategic copywriting that turns confusion into clarity and visitors into customers
+              <h2 className={styles.sectionTitle + " arabic-heading"}>استراتيجية تحول الكتابة</h2>
+              <p className={styles.solutionSubheading + " arabic-body"}>
+                كتابة إعلانية استراتيجية تحول الارتباك إلى وضوح والزوار إلى عملاء
               </p>
             </div>
             
             <div className={styles.solutionGrid}>
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Homepage Copy That Stops & Converts</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>كتابة صفحة رئيسية توقف وتحول</h3>
                 </div>
-                <p className={styles.solutionCardDesc}>
-                  Transformed confusing tech jargon into crystal-clear messaging that instantly communicates value
+                <p className={styles.solutionCardDesc + " arabic-body"}>
+                  حولنا المصطلحات التقنية المربكة إلى رسائل واضحة تتواصل فوراً مع القيمة
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Clear headline that stops the right people</span>
-                  <span>Pain-focused subheads that make problems visceral</span>
-                  <span>Benefit-driven copy that shows transformation</span>
-                  <span>Social proof that builds instant credibility</span>
+                  <span className="arabic-body">عنوان واضح يوقف الناس المناسبين</span>
+                  <span className="arabic-body">عناوين فرعية تركز على الألم تجعل المشاكل حية</span>
+                  <span className="arabic-body">كتابة مدفوعة بالفوائد تُظهر التحول</span>
+                  <span className="arabic-body">دليل اجتماعي يبني مصداقية فورية</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Email Sequences That Nurture & Sell</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>سلاسل إيميل تُغذي وتبيع</h3>
                 </div>
-                <p className={styles.solutionCardDesc}>
-                  High-performing email campaigns that guide prospects from curiosity to conversion
+                <p className={styles.solutionCardDesc + " arabic-body"}>
+                  حملات إيميل عالية الأداء توجه العملاء المحتملين من الفضول إلى التحويل
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Subject lines with 60%+ open rates</span>
-                  <span>Welcome sequences that build relationships</span>
-                  <span>Nurture emails that address objections</span>
-                  <span>Sales sequences that close deals</span>
+                  <span className="arabic-body">عناوين بمعدل فتح أكثر من 60%</span>
+                  <span className="arabic-body">سلاسل ترحيب تبني علاقات</span>
+                  <span className="arabic-body">إيميلات تُغذي تتعامل مع الاعتراضات</span>
+                  <span className="arabic-body">سلاسل مبيعات تُغلق الصفقات</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Content That Builds Community & Authority</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>محتوى يبني مجتمع وسلطة</h3>
                 </div>
-                <p className={styles.solutionCardDesc}>
-                  Strategic content copywriting that grows engaged audiences and establishes thought leadership
+                <p className={styles.solutionCardDesc + " arabic-body"}>
+                  كتابة محتوى استراتيجية تُنمي جماهير متفاعلة وتؤسس قيادة فكرية
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>LinkedIn content that attracts 4,000+ professionals</span>
-                  <span>Community-building copy that drives engagement</span>
-                  <span>Thought leadership content that builds trust</span>
-                  <span>Audience growth through valuable insights</span>
+                  <span className="arabic-body">محتوى لينكد إن يجذب أكثر من 4,000 محترف</span>
+                  <span className="arabic-body">كتابة بناء مجتمع تقود التفاعل</span>
+                  <span className="arabic-body">محتوى قيادة فكرية يبني الثقة</span>
+                  <span className="arabic-body">نمو الجمهور من خلال رؤى قيمة</span>
                 </div>
               </div>
 
               <div className={styles.solutionCard}>
                 <div className={styles.solutionCardHeader}>
-                  <h3 className={styles.solutionCardTitle}>Sales Copy That Closes Deals</h3>
+                  <h3 className={styles.solutionCardTitle + " arabic-heading"}>كتابة مبيعات تُغلق الصفقات</h3>
                 </div>
-                <p className={styles.solutionCardDesc}>
-                  Landing page copy that addresses every objection and makes buying decisions obvious
+                <p className={styles.solutionCardDesc + " arabic-body"}>
+                  كتابة صفحة هبوط تتعامل مع كل اعتراض وتجعل قرارات الشراء واضحة
                 </p>
                 <div className={styles.solutionFeatures}>
-                  <span>Headlines that create urgency</span>
-                  <span>Benefits that paint the transformation</span>
-                  <span>Objection-handling that builds confidence</span>
-                  <span>CTAs that demand immediate action</span>
+                  <span className="arabic-body">عناوين تخلق إلحاح</span>
+                  <span className="arabic-body">فوائد ترسم التحول</span>
+                  <span className="arabic-body">التعامل مع الاعتراضات يبني الثقة</span>
+                  <span className="arabic-body">دعوات للعمل تطالب بإجراء فوري</span>
                 </div>
               </div>
             </div>
@@ -246,9 +246,9 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.socialProof}>
           <div className={styles.container}>
             <div className={styles.centeredTextContent}>
-              <h2 className={styles.sectionTitle}>Community Growth Through Content</h2>
-              <p className={styles.socialProofSubtitle}>
-                From zero followers to engaged communities—building audiences that convert through strategic content copywriting
+              <h2 className={styles.sectionTitle + " arabic-heading"}>نمو المجتمع من خلال المحتوى</h2>
+              <p className={styles.socialProofSubtitle + " arabic-body"}>
+                من صفر متابعين إلى مجتمعات متفاعلة—بناء جماهير تتحول من خلال كتابة محتوى استراتيجية
               </p>
             </div>
             <div className={styles.socialGrid}>
@@ -256,30 +256,30 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/Linkedin.webp"
-                    alt="LinkedIn Community Growth"
+                    alt="نمو مجتمع لينكد إن"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>LinkedIn Community Building</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>4,000+</span> engaged professionals through content that builds authority and drives meaningful connections</p>
+                  <h3 className={styles.socialTitle + " arabic-heading"}>بناء مجتمع لينكد إن</h3>
+                  <p className={styles.socialDesc + " arabic-body"}><span className={styles.highlightNumber}>4,000+</span> محترف متفاعل من خلال محتوى يبني السلطة ويقود اتصالات ذات معنى</p>
                 </div>
               </div>
               <div className={styles.socialCard}>
                 <div className={styles.socialImageContainer}>
                   <Image
                     src="/backgrounds/X.webp"
-                    alt="Email Community Success"
+                    alt="نجاح مجتمع الإيميل"
                     width={400}
                     height={300}
                     className={styles.socialImage}
                   />
                 </div>
                 <div className={styles.socialContent}>
-                  <h3 className={styles.socialTitle}>Email Community Growth</h3>
-                  <p className={styles.socialDesc}><span className={styles.highlightNumber}>60%+</span> open rates through subject lines that create anticipation and build loyal readership</p>
+                  <h3 className={styles.socialTitle + " arabic-heading"}>نمو مجتمع الإيميل</h3>
+                  <p className={styles.socialDesc + " arabic-body"}><span className={styles.highlightNumber}>60%+</span> معدل فتح من خلال عناوين تخلق ترقب وتبني قراءة مخلصة</p>
                 </div>
               </div>
             </div>
@@ -290,8 +290,8 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
       {/* Testimonial */}
       <section className={styles.testimonial}>
         <div className={styles.container}>
-          <blockquote className={styles.quote}>
-            "The copy transformation didn't just improve our messaging—it made prospects immediately understand why they needed Shiftat. Now our website <strong>converts visitors instead of confusing them</strong>."
+          <blockquote className={styles.quote + " arabic-body"}>
+            "تحول الكتابة لم يحسن رسائلنا فقط—بل جعل العملاء المحتملين يفهمون فوراً لماذا يحتاجون شفتات. الآن موقعنا <strong>يحول الزوار بدلاً من إرباكهم</strong>."
           </blockquote>
         </div>
       </section>
@@ -299,13 +299,13 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
       {/* Verification */}
       <section className={styles.verification}>
         <div className={styles.verificationContainer}>
-          <h2 className={styles.verificationTitle}>
-            Verify This <span className={styles.verificationHighlight}>Copy Success</span>
+          <h2 className={styles.verificationTitle + " arabic-heading"}>
+            تحقق من <span className={styles.verificationHighlight}>نجاح الكتابة هذا</span>
           </h2>
-          <p className={styles.verificationText}>
-            Contact Abdullah directly to verify how strategic copywriting transformed Shiftat's conversion rates:
+          <p className={styles.verificationText + " arabic-body"}>
+            تواصل مع عبدالله مباشرة للتحقق من كيف حولت الكتابة الإعلانية الاستراتيجية معدلات تحويل شفتات:
           </p>
-          <a href="mailto:abdullah@shiftatsa.com" className={styles.verificationEmail}>
+          <a href="mailto:abdullah@shiftatsa.com" className={styles.verificationEmail + " arabic-body"}>
             abdullah@shiftatsa.com
           </a>
         </div>
@@ -317,15 +317,15 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
         <section className={styles.cta}>
           <div className={styles.container}>
             <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle}>Ready For Copy That Converts?</h2>
-              <p className={styles.ctaText}>
-                Get the same strategic copywriting approach that made Shiftat's messaging impossible to ignore.
+              <h2 className={styles.ctaTitle + " arabic-heading"}>مستعد لكتابة تُحول؟</h2>
+              <p className={styles.ctaText + " arabic-body"}>
+                احصل على نفس النهج الكتابي الاستراتيجي الذي جعل رسائل شفتات مستحيلة التجاهل.
               </p>
               <button 
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.ctaButton}
+                className={styles.ctaButton + " arabic-body"}
               >
-                Book Your Copy Strategy Session
+                احجز جلسة استراتيجية الكتابة
               </button>
             </div>
           </div>
