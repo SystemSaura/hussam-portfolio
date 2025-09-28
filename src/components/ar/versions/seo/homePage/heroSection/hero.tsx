@@ -18,46 +18,46 @@ export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section className={styles.bgCustomHero + " min-h-screen flex items-start justify-center pt-36 pb-8 " + styles.heroSection}>
       <div className={styles.homeHeaderComponent}>
-        {/* Main Hero Title - Both lines left-aligned */}
+        {/* Main Hero Title - Arabic RTL */}
         <div className="mb-24">
           <h1 className={styles.flechaHeroTitle}>
-            Turn SEO efforts into<br />
-            <span className={styles.textCustomBlue}>traffic that converts.</span>
+            حوّل جهودك في تحسين محركات البحث إلى<br />
+            <span className={styles.textCustomBlue}>عملاء حقيقيين</span>
           </h1>
         </div>
 
-        {/* Lower Section - Three parts */}
+        {/* Lower Section - Three parts with proper RTL flow */}
         <div className={styles.homeHeaderContent}>
-          {/* Left: Want to join us section */}
+          {/* First in RTL: Problem section */}
           <div className={styles.homeHeaderTextWrap}>
             <h2 className={styles.homeHeaderSubheading}>
-              Tired of invisible content<span className={styles.deconstructedQ}>
+              <span className={styles.deconstructedQ}>
                 <span className={styles.qCurve}>⌐</span>
                 <span className={styles.qDot}>•</span>
               </span>
+              {" "}سئمت من المحتوى المهمل
             </h2>
             <p className={styles.homeHeaderText1}>
-              Your content deserves better than page 2. Get SEO strategies that turn your expertise into search visibility and qualified leads in the GCC market.
+              محتواك يستحق أكثر من الصفحة الثانية في جوجل. احصل على استراتيجيات تحسين محركات البحث التي تنشر خبرتك في نتائج البحث و بين عملائك المؤهلين في السوق الخليجي.
             </p>
           </div>
 
-          {/* Center: Arrow - Desktop horizontal, Mobile vertical */}
+          {/* Center: Arrow */}
           <div className={styles.arrowContainer}>
-            {/* Desktop Arrow - Horizontal */}
             <div className={styles.arrowDesktop}>
               <Image
                 src="https://ext.same-assets.com/3287453319/171477844.svg"
-                alt="Arrow pointing right"
+                alt="سهم يشير لليسار"
                 width={56.13}
                 height={56.84}
                 className={styles.arrowRight}
+                style={{ transform: 'scaleX(-1)' }}
               />
             </div>
-            {/* Mobile Arrow - Vertical */}
             <div className={styles.arrowMobile}>
               <Image
                 src="https://ext.same-assets.com/3287453319/3126314943.svg"
-                alt="Arrow pointing down"
+                alt="سهم يشير للأسفل"
                 width={48}
                 height={48}
                 className={styles.arrowDown}
@@ -65,22 +65,22 @@ export default function Hero({ onNavigate }: HeroProps) {
             </div>
           </div>
 
-          {/* Right: Start here form */}
+          {/* Last in RTL: Action section */}
           <div className={styles.homeHeaderFormWrap}>
-            <h3 className={styles.homeHeaderSubheadingRight + " mb-6"}>Start here.</h3>
+            <h3 className={styles.homeHeaderSubheadingRight + " mb-6"}>ابدأ من هنا</h3>
             <div className={styles.sevaFields + " " + styles.formkitFields}>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.subscribeButton + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                Book Consultation
+                احجز استشارة
               </button>
               <button
                 type="button"
                 onClick={onNavigate.portfolio}
                 className={styles.navButtonStrategy + " w-full min-w-max whitespace-nowrap h-12"}
               >
-                Discover My Work
+                اكتشف أعمالي
               </button>
             </div>
           </div>

@@ -12,7 +12,7 @@ const About = forwardRef<HTMLElement>((_, ref) => {
           <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full mx-auto flex items-center justify-content overflow-hidden">
             <Image
               src="/picofme.webp"
-              alt="Hussam Baaka"
+              alt="حسام بعكة"
               width={160}
               height={160}
               className="w-full h-full object-cover"
@@ -20,29 +20,29 @@ const About = forwardRef<HTMLElement>((_, ref) => {
             />
           </div>
         </div>
-        <h2 className={styles.flechaHeroTitleAbout + " text-white mb-6 sm:mb-8 leading-tight text-center"}>
-          Hi. I'm Hussam Baaka. I turn your content expertise into search visibility that drives business.
+        <h2 className={styles.flechaHeroTitleAbout + " text-white mb-6 sm:mb-8 leading-tight text-center arabic-heading"}>
+          مرحباً، أنا حسام بعكة. أحوّل خبرتك في المحتوى إلى ظهور في محركات البحث يجلب لك الأعمال.
         </h2>
         <div className="mb-6 sm:mb-8 text-center">
-          <span className={styles.text11px + " text-cyan-400 font-medium"}>[ A note to content-driven businesses ]</span>
+          <span className={styles.text11px + " text-cyan-400 font-medium arabic-body"}>[ رسالة للشركات التي تعتمد على المحتوى ]</span>
         </div>
 
-        <div className={styles.workSansBodyWhite + " space-y-4 sm:space-y-6 leading-relaxed max-w-3xl mx-auto text-center"}>
-          <p>Your content isn't the problem. Your search strategy is scattered.</p>
+        <div className={styles.workSansBodyWhite + " space-y-4 sm:space-y-6 leading-relaxed max-w-3xl mx-auto text-center arabic-body"}>
+          <p>المحتوى ليس مشكلتك. استراتيجية البحث مشتتة.</p>
 
-          <p>I've seen too many GCC businesses create brilliant content that nobody finds, optimizing for keywords that don't convert, and wondering why their organic traffic flatlines.</p>
+          <p>رأيت الكثير من الشركات الخليجية التي تنتج محتوى رائعاً لا يجده أحد، وتحسّن محتواها لكلمات مفتاحية لا تجلب عملاء محتملين، وتتساءل لماذا الزيارات العضوية لا تزيد.</p>
 
-          <p>The problem isn't your expertise or your market. It's search alignment.</p>
+          <p>المشكلة ليست في خبرتك أو السوق. المشكلة في عدم التوافق مع البحث.</p>
 
-          <p>When your content strategy, keyword targeting, and user intent all point toward the same business outcome, search visibility becomes predictable instead of accidental.</p>
+          <p>عندما تتجه استراتيجية المحتوى، واستهداف الكلمات المفتاحية، ونية المستخدم جميعها نحو نفس النتيجة التجارية، يصبح الظهور في محركات البحث متوقعاً بدلاً من كونه صدفة.</p>
 
-          <p>I don't just audit what's broken. I rebuild SEO systems that turn your content into a lead generation engine.</p>
+          <p>لا أكتفي بمراجعة ما هو معطل. أبني أنظمة تحسين محركات البحث التي تحوّل محتواك إلى ماكينة جذب عملاء محتملين.</p>
 
-          <p>My approach combines deep GCC search behavior insights with SEO frameworks that have grown organic traffic from zero to market leadership.</p>
+          <p>منهجيتي تجمع بين فهم عميق لسلوك البحث في دول الخليج مع أطر عمل تحسين محركات البحث التي نمت بالزيارات العضوية من الصفر إلى الريادة في السوق.</p>
 
-          <p>At the end of the day, SEO should do one thing:</p>
+          <p>في النهاية، تحسين محركات البحث يجب أن يحقق شيئاً واحداً:</p>
 
-          <p className="text-cyan-400 font-medium">Connect your expertise with people actively searching for solutions.</p>
+          <p className="text-cyan-400 font-medium arabic-heading">ربط خبرتك بالأشخاص الذين يبحثون بنشاط عن الحلول.</p>
         </div>
 
         <div className="mt-8 sm:mt-10 lg:mt-12 text-center">

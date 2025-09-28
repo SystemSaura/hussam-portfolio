@@ -54,16 +54,18 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
         setIsSticky(shouldBeSticky);
         
         if (shouldBeSticky) {
-          const containerLeft = containerRect.left;
+          // RTL: Position from the right side
+          const containerRight = window.innerWidth - containerRect.right;
           const gridGap = 64;
           const leftColumnWidth = (containerRect.width - gridGap) / 2;
           
           setStickyStyles({
             position: 'fixed',
             top: '120px',
-            left: `${containerLeft}px`,
+            right: `${containerRight}px`,
             width: `${leftColumnWidth}px`,
             zIndex: 10,
+            textAlign: 'right',
           });
         } else {
           setStickyStyles({});
@@ -93,53 +95,53 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
         <div ref={servicesContainerRef} className={styles.servicesContainer}>
           {/* Static centered heading for mobile */}
           <div className={styles.mobileStaticHeading}>
-            <h2 className={styles.servicesMainHeading + " leading-tight"}>
-              3 ways I boost your<br />
-              <span className={styles.servicesMainHeadingAccent}>search visibility.</span>
+            <h2 className={styles.servicesMainHeading + " leading-tight arabic-heading"}>
+              ٣ طرق أعزز بها<br />
+              <span className={styles.servicesMainHeadingAccent}>ظهورك في محركات البحث</span>
             </h2>
           </div>
 
           {/* Services content for mobile */}
           <div className="space-y-12">
-            <div>
+            <div className={styles.serviceItem}>
               <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>SEO Content Strategy and Keyword Research Done For You</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Deep-dive analysis of your search landscape, competitor gaps, and content opportunities. Get a complete roadmap to dominate your niche search terms.
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>استراتيجية محتوى SEO وبحث الكلمات المفتاحية - جاهزة لك</h3>
+              <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                تحليل معمق لبيئة البحث الخاصة بك، وثغرات المنافسين، وفرص المحتوى. احصل على خارطة طريق كاملة للهيمنة على مصطلحات البحث في مجالك.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Audit
+                احجز مراجعة
               </button>
             </div>
 
-            <div>
+            <div className={styles.serviceItem}>
               <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>SEO-Optimized Content Creation and Optimization</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Hands-on creation and optimization of content that ranks and converts. Turn your expertise into search-friendly articles, pages, and resources that drive qualified traffic.
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>إنشاء وتحسين المحتوى المحسن لمحركات البحث</h3>
+              <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                إنشاء وتحسين عملي للمحتوى الذي يحتل مراتب عالية ويحوّل الزوار. حوّل خبرتك إلى مقالات وصفحات وموارد صديقة لمحركات البحث تجذب زيارات مؤهلة.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Book Consultation
+                احجز استشارة
               </button>
             </div>
 
-            <div ref={thirdServiceRef}>
+            <div ref={thirdServiceRef} className={styles.serviceItem}>
               <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Technical SEO and Performance Optimization</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Transform your website's technical foundation with SEO best practices, site speed optimization, and search engine friendly architecture that supports long-term growth.
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحسين SEO التقني وتحسين الأداء</h3>
+              <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                حوّل الأساس التقني لموقعك بأفضل ممارسات تحسين محركات البحث، وتحسين سرعة الموقع، وبناء هيكل صديق لمحركات البحث يدعم النمو طويل المدى.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
                 className={styles.servicesButton}
               >
-                Schedule Consultation
+                احجز استشارة
               </button>
             </div>
           </div>
@@ -148,65 +150,71 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
     );
   }
 
-  // Desktop layout (unchanged)
+  // Desktop layout - RTL optimized
   return (
     <section ref={ref} className={styles.bgCustomBlue + " py-20 text-white"}>
       <div ref={servicesContainerRef} className={styles.servicesContainer}>
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          <div className={styles.servicesHeadingWrapper}>
-            <div 
-              ref={leftHeadingRef}
-              className={`${styles.servicesHeadingContent} ${isSticky ? styles.isStickyActive : ''} ${shouldFadeOut ? styles.servicesHeadingFade : ''}`}
-              style={stickyStyles}
-            >
-              <h2 className={styles.servicesMainHeading + " leading-tight"}>
-                3 ways I boost your<br />
-                <span className={styles.servicesMainHeadingAccent}>search visibility.</span>
-              </h2>
+        <div className={styles.servicesGridContainer}>
+          {/* Right column for RTL - Heading */}
+          <div className={styles.servicesLeftColumn}>
+            <div className={styles.servicesHeadingWrapper}>
+              <div 
+                ref={leftHeadingRef}
+                className={`${styles.servicesHeadingContent} ${isSticky ? styles.isStickyActive : ''} ${shouldFadeOut ? styles.servicesHeadingFade : ''}`}
+                style={stickyStyles}
+              >
+                <h2 className={styles.servicesMainHeading + " leading-tight arabic-heading"}>
+                  ٣ طرق أعزز بها<br />
+                  <span className={styles.servicesMainHeadingAccent}>ظهورك في محركات البحث</span>
+                </h2>
+              </div>
             </div>
           </div>
 
-          <div className="space-y-12">
-            <div>
-              <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>SEO Content Strategy and Keyword Research Done For You</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Deep-dive analysis of your search landscape, competitor gaps, and content opportunities. Get a complete roadmap to dominate your niche search terms.
-              </p>
-              <button
-                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.servicesButton}
-              >
-                Book Audit
-              </button>
-            </div>
+          {/* Left column for RTL - Services */}
+          <div className={styles.servicesRightColumn}>
+            <div className="space-y-12">
+              <div className={styles.serviceItem}>
+                <div className={styles.servicesNumber + " mb-4"}>01</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>استراتيجية محتوى SEO وبحث الكلمات المفتاحية - جاهزة لك</h3>
+                <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                  تحليل معمق لبيئة البحث الخاصة بك، وثغرات المنافسين، وفرص المحتوى. احصل على خارطة طريق كاملة للهيمنة على مصطلحات البحث في مجالك.
+                </p>
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className={styles.servicesButton}
+                >
+                  احجز مراجعة
+                </button>
+              </div>
 
-            <div>
-              <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>SEO-Optimized Content Creation and Optimization</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Hands-on creation and optimization of content that ranks and converts. Turn your expertise into search-friendly articles, pages, and resources that drive qualified traffic.
-              </p>
-              <button
-                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.servicesButton}
-              >
-                Book Consultation
-              </button>
-            </div>
+              <div className={styles.serviceItem}>
+                <div className={styles.servicesNumber + " mb-4"}>02</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>إنشاء وتحسين المحتوى المحسن لمحركات البحث</h3>
+                <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                  إنشاء وتحسين عملي للمحتوى الذي يحتل مراتب عالية ويحوّل الزوار. حوّل خبرتك إلى مقالات وصفحات وموارد صديقة لمحركات البحث تجذب زيارات مؤهلة.
+                </p>
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className={styles.servicesButton}
+                >
+                  احجز استشارة
+                </button>
+              </div>
 
-            <div ref={thirdServiceRef}>
-              <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4"}>Technical SEO and Performance Optimization</h3>
-              <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Transform your website's technical foundation with SEO best practices, site speed optimization, and search engine friendly architecture that supports long-term growth.
-              </p>
-              <button
-                onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
-                className={styles.servicesButton}
-              >
-                Schedule Consultation
-              </button>
+              <div ref={thirdServiceRef} className={styles.serviceItem}>
+                <div className={styles.servicesNumber + " mb-4"}>03</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحسين SEO التقني وتحسين الأداء</h3>
+                <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
+                  حوّل الأساس التقني لموقعك بأفضل ممارسات تحسين محركات البحث، وتحسين سرعة الموقع، وبناء هيكل صديق لمحركات البحث يدعم النمو طويل المدى.
+                </p>
+                <button
+                  onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
+                  className={styles.servicesButton}
+                >
+                  احجز استشارة
+                </button>
+              </div>
             </div>
           </div>
         </div>
