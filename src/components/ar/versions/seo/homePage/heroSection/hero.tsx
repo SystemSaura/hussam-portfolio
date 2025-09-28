@@ -21,8 +21,8 @@ export default function Hero({ onNavigate }: HeroProps) {
         {/* Main Hero Title - Arabic RTL */}
         <div className="mb-24">
           <h1 className={styles.flechaHeroTitle}>
-            حوّل جهودك في تحسين محركات البحث إلى<br />
-            <span className={styles.textCustomBlue}>عملاء حقيقيين</span>
+             حوّل جهودك في تحسين محركات <br />
+            <span className={styles.textCustomBlue}>  البحث  إلى عملاء حقيقيين </span>
           </h1>
         </div>
 
