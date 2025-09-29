@@ -41,7 +41,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         logo: "/logos/kapsarc.webp",
         logoText: "كابسارك",
         title: "مركز محتوى سياسات الطاقة المحسّن",
-        description: "حسّنا محتوى بوابة الأبحاث لكلمات سياسات الطاقة المفتاحية، مما حسّن الظهور في البحث وإمكانية الوصول للرؤى لأصحاب المصلحة في السياسات من خلال إنشاء محتوى استراتيجي محسّن.",
+        description: "حسّنا محتوى بوابة الأبحاث لكلمات سياسات الطاقة المفتاحية، مما حسّن الظهور في البحث وإمكانية الوصول للرؤى لأصحاب المصلحة في السياسات من خلال إنشاء محتوى استراتيجي المحسّن.",
         buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
       },
@@ -415,7 +415,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         </div>
                       </div>
                       <div className={styles.portfolioHeaderMain}>
-                        <h4 className={styles.portfolioServiceType + " arabic-heading"}>مشروع {project.category} محسّن</h4>
+                        <h4 className={styles.portfolioServiceType + " arabic-heading"}>مشروع {project.category} المحسّن</h4>
                         <p className={styles.portfolioServiceDetail + " arabic-body"}>{categoryName}</p>
                       </div>
                     </div>
