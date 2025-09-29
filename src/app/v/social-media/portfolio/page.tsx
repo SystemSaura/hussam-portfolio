@@ -1,46 +1,51 @@
 "use client";
 
-import { useState } from "react";
-import PortfolioPage from "@/components/ar/versions/socialMedia/portfolioPage/portfolioPage";
+import { useLanguage } from "@/lib/language-context";
+
+// English Components
+import PortfolioPageEN from "../../../../components/en/versions/socialMedia/portfolioPage/portfolioPage";
+
+// Arabic Components
+import PortfolioPageAR from "../../../../components/ar/versions/socialMedia/portfolioPage/portfolioPage";
 
 export default function SocialMediaPortfolioPage() {
-  const [currentView, setCurrentView] = useState("portfolio");
-
-  const navigationHandlers = {
-    about: () => setCurrentView("about"),
-    portfolio: () => setCurrentView("portfolio"), 
-    services: () => setCurrentView("services"),
-    caseStudy: () => setCurrentView("caseStudy")
-  };
-
-  const handleNavigateToHome = () => {
-    window.location.href = "/v/social-media/h";
-  };
+  const { language } = useLanguage();
 
   const handleNavigateToSection = (section: string) => {
     switch(section) {
       case "about":
-        window.location.href = "/v/social-media/h#about";
+        window.location.href = "/v/social-media/homepage#about";
         break;
       case "services": 
-        window.location.href = "/v/social-media/h#services";
+        window.location.href = "/v/social-media/homepage#services";
         break;
       case "caseStudy":
         window.location.href = "/v/social-media/shiftat";
         break;
       default:
-        setCurrentView(section);
+        break;
     }
   };
 
-  const updatedNavigationHandlers = {
+  const navigationHandlers = {
     about: () => handleNavigateToSection("about"),
-    portfolio: () => setCurrentView("portfolio"),
+    portfolio: () => {}, // Stay on current page
     services: () => handleNavigateToSection("services"), 
     caseStudy: () => handleNavigateToSection("caseStudy")
   };
 
+  // Render components based on selected language
+  if (language === 'ar') {
+    return (
+      <div dir="rtl">
+        <PortfolioPageAR onNavigate={navigationHandlers} />
+      </div>
+    );
+  }
+
   return (
-    <PortfolioPage onNavigate={updatedNavigationHandlers} />
+    <div dir="ltr">
+      <PortfolioPageEN onNavigate={navigationHandlers} />
+    </div>
   );
 }

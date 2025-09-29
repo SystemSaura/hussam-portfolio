@@ -1,8 +1,16 @@
 "use client";
 
-import PortfolioPage from "../../../../components/ar/versions/marketing/portfolioPage/portfolioPage";
+import { useLanguage } from "@/lib/language-context";
+
+// English Components
+import PortfolioPageEN from "../../../../components/en/versions/marketing/portfolioPage/portfolioPage";
+
+// Arabic Components
+import PortfolioPageAR from "../../../../components/ar/versions/marketing/portfolioPage/portfolioPage";
 
 export default function Portfolio() {
+  const { language } = useLanguage();
+  
   const navigationHandlers = {
     about: () => window.location.href = '/#about',
     portfolio: () => window.location.href = '/#portfolio',
@@ -10,5 +18,10 @@ export default function Portfolio() {
     caseStudy: () => window.location.href = '/#caseStudy',
   };
 
-  return <PortfolioPage onNavigate={navigationHandlers} />;
+  // Render components based on selected language
+  if (language === 'ar') {
+    return <PortfolioPageAR onNavigate={navigationHandlers} />;
+  }
+
+  return <PortfolioPageEN onNavigate={navigationHandlers} />;
 }

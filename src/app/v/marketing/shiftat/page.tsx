@@ -3,25 +3,33 @@
 import { useLanguage } from "@/lib/language-context";
 
 // English Components
-import PortfolioPageEN from "../../../../components/en/versions/marketing/portfolioPage/portfolioPage";
+import CaseStudyDetailEN from "../../../../components/en/versions/marketing/caseStudyPage/caseStudyPage";
 
 // Arabic Components
-import PortfolioPageAR from "../../../../components/ar/versions/marketing/portfolioPage/portfolioPage";
+import CaseStudyDetailAR from "../../../../components/ar/versions/marketing/caseStudyPage/caseStudyPage";
 
-export default function Portfolio() {
+export default function ShiftatCaseStudy() {
   const { language } = useLanguage();
   
   const navigationHandlers = {
     about: () => window.location.href = '/#about',
-    portfolio: () => window.location.href = '/#portfolio',
+    portfolio: () => window.location.href = '/#portfolio', 
     services: () => window.location.href = '/#services',
     caseStudy: () => window.location.href = '/#caseStudy',
   };
 
   // Render components based on selected language
   if (language === 'ar') {
-    return <PortfolioPageAR onNavigate={navigationHandlers} />;
+    return (
+      <div className="min-h-screen bg-white" dir="rtl">
+        <CaseStudyDetailAR onNavigate={navigationHandlers} />
+      </div>
+    );
   }
 
-  return <PortfolioPageEN onNavigate={navigationHandlers} />;
+  return (
+    <div className="min-h-screen bg-white" dir="ltr">
+      <CaseStudyDetailEN onNavigate={navigationHandlers} />
+    </div>
+  );
 }
