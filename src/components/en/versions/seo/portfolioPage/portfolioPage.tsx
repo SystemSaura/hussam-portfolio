@@ -90,7 +90,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Research Portal SEO Optimization",
         description: "Comprehensive website content strategy with SEO optimization for research platform, improving search engine visibility and user accessibility of energy policy insights.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1b-WsZu7mEAP1TC9BjoZoLEfnwjGCh4bF?usp=drive_link"
       },
       {
         category: "Healthcare",
@@ -197,14 +197,14 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         buttonColor: "Blue",
         link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
       },
-      {
+    {
         category: "Tourism",
         logo: "/logos/syahya.webp",
         logoText: "SYAHYA",
         title: "Tourism Destination SEO Content",
         description: "SEO-optimized travel and tourism content targeting destination-specific keywords and travel search behaviors for improved visibility.",
         buttonColor: "Teal",
-        link: "#"
+        link: "https://drive.google.com/drive/folders/1mBYjvvYbpQGyt6JXmnYf2oPArzQmA7tR?usp=sharing"
       }
     ],
     "Multilingual SEO": [

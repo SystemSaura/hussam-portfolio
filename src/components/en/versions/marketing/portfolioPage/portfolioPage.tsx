@@ -144,7 +144,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Tourism Promotion",
         description: "Developed engaging travel and tourism content highlighting destinations and cultural experiences.",
         buttonColor: "Teal",
-        link: "#"
+        link: "https://drive.google.com/drive/folders/1mBYjvvYbpQGyt6JXmnYf2oPArzQmA7tR?usp=sharing"
       },
       {
         category: "Transport",
@@ -220,7 +220,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Industry Recognition Report",
         description: "Created detailed report documenting industry achievements and recognition for professional portfolio development.",
         buttonColor: "Orange",
-        link: "#"
+        link: "https://drive.google.com/file/d/1qETT2GSKrcUwk42hCvwKEqgfmfDtG7OJ/view?usp=sharing"
       },
       {
         category: "Government Research",
@@ -502,7 +502,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
                         disabled={project.link === "#"}
                       >
-                        {project.link !== "#" ? "View Work" : "Coming Soon"}
+                        {project.link !== "#" ? "View All" : "Coming Soon"}
                       </button>
                     </div>
                   </div>
