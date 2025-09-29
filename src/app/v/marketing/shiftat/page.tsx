@@ -1,18 +1,27 @@
 "use client";
 
-import CaseStudyDetail from "../../../../components/ar/versions/marketing/caseStudyPage/caseStudyPage";
+import { useLanguage } from "@/lib/language-context";
 
-export default function ShiftatCaseStudy() {
+// English Components
+import PortfolioPageEN from "../../../../components/en/versions/marketing/portfolioPage/portfolioPage";
+
+// Arabic Components
+import PortfolioPageAR from "../../../../components/ar/versions/marketing/portfolioPage/portfolioPage";
+
+export default function Portfolio() {
+  const { language } = useLanguage();
+  
   const navigationHandlers = {
     about: () => window.location.href = '/#about',
-    portfolio: () => window.location.href = '/#portfolio', 
+    portfolio: () => window.location.href = '/#portfolio',
     services: () => window.location.href = '/#services',
     caseStudy: () => window.location.href = '/#caseStudy',
   };
 
-  return (
-    <div className="min-h-screen bg-white">
-      <CaseStudyDetail onNavigate={navigationHandlers} />
-    </div>
-  );
+  // Render components based on selected language
+  if (language === 'ar') {
+    return <PortfolioPageAR onNavigate={navigationHandlers} />;
+  }
+
+  return <PortfolioPageEN onNavigate={navigationHandlers} />;
 }
