@@ -415,8 +415,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         </div>
                       </div>
                       <div className={styles.portfolioHeaderMain}>
-                        <h4 className={styles.portfolioServiceType + " arabic-heading"}>{categoryName}</h4>
-                        <p className={styles.portfolioServiceDetail + " arabic-body"}>مشروع {project.category} محسّن</p>
+                        <h4 className={styles.portfolioServiceType + " arabic-heading"}>مشروع {project.category} محسّن</h4>
+                        <p className={styles.portfolioServiceDetail + " arabic-body"}>{categoryName}</p>
                       </div>
                     </div>
                     
