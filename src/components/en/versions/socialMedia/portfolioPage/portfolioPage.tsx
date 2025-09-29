@@ -328,8 +328,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         </div>
                       </div>
                       <div className={styles.portfolioHeaderMain}>
-                        <h4 className={styles.portfolioServiceType}>{categoryName}</h4>
-                        <p className={styles.portfolioServiceDetail}>{project.category} Project</p>
+                        <h4 className={styles.portfolioServiceType}>{project.category}</h4>
+                        <p className={styles.portfolioServiceDetail}>{categoryName}</p>
                       </div>
                     </div>
                     
