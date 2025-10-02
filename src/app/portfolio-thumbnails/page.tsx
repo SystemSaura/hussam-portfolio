@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import { toPng } from 'html-to-image';
+import { useRef } from 'react';
 
 export default function PortfolioThumbnails() {
   const portfolioItems = [
@@ -89,6 +91,37 @@ export default function PortfolioThumbnails() {
     }
   ];
 
+  const cardRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+
+  const exportThumbnail = async (id: string, title: string) => {
+    const element = cardRefs.current[id];
+    if (!element) return;
+
+    try {
+      const dataUrl = await toPng(element, {
+        quality: 1,
+        pixelRatio: 2, // Higher quality for Retina displays
+        backgroundColor: '#F9FAFB'
+      });
+      
+      // Create download link
+      const link = document.createElement('a');
+      link.download = `thumbnail-${id}-${title.replace(/\s+/g, '-').toLowerCase()}.png`;
+      link.href = dataUrl;
+      link.click();
+    } catch (error) {
+      console.error('Export failed:', error);
+    }
+  };
+
+  const exportAll = async () => {
+    for (const item of portfolioItems) {
+      await exportThumbnail(item.id, item.title);
+      // Small delay between exports to prevent browser issues
+      await new Promise(resolve => setTimeout(resolve, 500));
+    }
+  };
+
   return (
     <div className={styles.container}>
       {/* Header */}
@@ -100,70 +133,126 @@ export default function PortfolioThumbnails() {
         <p className={styles.pageSubtitle}>
           Professional showcase cards for Upwork and portfolio presentations
         </p>
+        
+        {/* Export All Button */}
+        <button 
+          onClick={exportAll}
+          style={{
+            marginTop: '20px',
+            padding: '12px 32px',
+            background: '#2762F8',
+            color: 'white',
+            border: 'none',
+            borderRadius: '8px',
+            fontSize: '16px',
+            cursor: 'pointer',
+            fontFamily: 'Flecha S, sans-serif',
+            fontWeight: 500,
+            transition: 'background 0.2s ease'
+          }}
+          onMouseOver={(e) => e.currentTarget.style.background = '#1E40AF'}
+          onMouseOut={(e) => e.currentTarget.style.background = '#2762F8'}
+        >
+          📥 Export All Thumbnails as PNG
+        </button>
       </header>
 
       {/* Thumbnail Grid */}
       <div className={styles.thumbnailGrid}>
         {portfolioItems.map((item) => (
-          <div 
-            key={item.id} 
-            className={`${styles.thumbnailCard} ${styles[`card${item.color.charAt(0).toUpperCase() + item.color.slice(1)}`]}`}
-          >
-            {/* Card Header - REDESIGNED */}
-            <div className={styles.cardHeader}>
-              {/* Left: Your Branding */}
-              <div className={styles.personalBranding}>
-                <Image
-                  src="/picofme.webp"
-                  alt="Hussam Baaka"
-                  width={50}
-                  height={50}
-                  className={styles.profileImage}
-                />
-                <div className={styles.brandingText}>
-                  <span className={styles.brandName}>Hussam Baaka</span>
-                  <span className={styles.brandDivider}>|</span>
-                  <span className={styles.brandTitle}>Marketing Specialist</span>
-                </div>
-              </div>
-
-              {/* Right: Client Logo */}
-              {item.logo && (
-                <div className={styles.companyLogo}>
+          <div key={item.id} style={{ position: 'relative' }}>
+            <div 
+              ref={(el) => { cardRefs.current[item.id] = el; }}
+              className={`${styles.thumbnailCard} ${styles[`card${item.color.charAt(0).toUpperCase() + item.color.slice(1)}`]}`}
+            >
+              {/* Card Header - REDESIGNED */}
+              <div className={styles.cardHeader}>
+                {/* Left: Your Branding */}
+                <div className={styles.personalBranding}>
                   <Image
-                    src={item.logo}
-                    alt={item.company}
-                    width={80}
-                    height={80}
-                    className={styles.logoImage}
+                    src="/picofme.webp"
+                    alt="Hussam Baaka"
+                    width={50}
+                    height={50}
+                    className={styles.profileImage}
                   />
+                  <div className={styles.brandingText}>
+                    <span className={styles.brandName}>Hussam Baaka</span>
+                    <span className={styles.brandDivider}>|</span>
+                    <span className={styles.brandTitle}>Marketing Specialist</span>
+                  </div>
                 </div>
-              )}
-            </div>
 
-            {/* Project Number */}
-            <div className={styles.projectNumber}>
-              <span className={styles.hashSymbol}>#</span>
-              <span className={styles.numberText}>{item.id}</span>
-              <div className={styles.numberUnderline}></div>
-            </div>
+                {/* Right: Client Logo */}
+                {item.logo && (
+                  <div className={styles.companyLogo}>
+                    <Image
+                      src={item.logo}
+                      alt={item.company}
+                      width={80}
+                      height={80}
+                      className={styles.logoImage}
+                    />
+                  </div>
+                )}
+              </div>
 
-            {/* Project Title */}
-            <h2 className={styles.projectTitle}>{item.title}</h2>
+              {/* Project Number */}
+              <div className={styles.projectNumber}>
+                <span className={styles.hashSymbol}>#</span>
+                <span className={styles.numberText}>{item.id}</span>
+                <div className={styles.numberUnderline}></div>
+              </div>
 
-            {/* Card Footer */}
-            <div className={styles.cardFooter}>
-              <div className={styles.metaInfo}>
-                <span className={styles.category}>{item.category}</span>
-                <span className={styles.separator}>•</span>
-                <span className={styles.readTime}>{item.readTime}</span>
+              {/* Project Title */}
+              <h2 className={styles.projectTitle}>{item.title}</h2>
+
+              {/* Card Footer */}
+              <div className={styles.cardFooter}>
+                <div className={styles.metaInfo}>
+                  <span className={styles.category}>{item.category}</span>
+                  <span className={styles.separator}>•</span>
+                  <span className={styles.readTime}>{item.readTime}</span>
+                </div>
+              </div>
+
+              {/* Company Badge */}
+              <div className={styles.companyBadge}>
+                {item.company}
               </div>
             </div>
 
-            {/* Company Badge */}
-            <div className={styles.companyBadge}>
-              {item.company}
-            </div>
+            {/* Individual Export Button */}
+            <button
+              onClick={() => exportThumbnail(item.id, item.title)}
+              style={{
+                position: 'absolute',
+                top: '10px',
+                right: '10px',
+                padding: '8px 16px',
+                background: 'rgba(255, 255, 255, 0.95)',
+                border: '1px solid #E2E8F0',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                fontSize: '14px',
+                zIndex: 10,
+                fontFamily: 'Flecha S, sans-serif',
+                color: '#001C46',
+                fontWeight: 500,
+                transition: 'all 0.2s ease',
+                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.background = 'white';
+                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.15)';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.95)';
+                e.currentTarget.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
+              }}
+            >
+              💾 Export PNG
+            </button>
           </div>
         ))}
       </div>
@@ -172,9 +261,10 @@ export default function PortfolioThumbnails() {
       <div className={styles.instructions}>
         <h3 className={styles.instructionsTitle}>How to Use These Thumbnails</h3>
         <ol className={styles.instructionsList}>
-          <li>Right-click on any card and select "Save image as..." or take a screenshot</li>
-          <li>Upload to your Upwork portfolio or presentations</li>
-          <li>Each card is optimized for visual impact and professional presentation</li>
+          <li>Click "Export All Thumbnails as PNG" to download all cards at once</li>
+          <li>Or click individual "Export PNG" buttons on each card</li>
+          <li>Upload the PNG files to your Upwork portfolio or presentations</li>
+          <li>Each card is optimized at 2x resolution for high-quality display</li>
           <li>Cards maintain your brand consistency while highlighting different project types</li>
         </ol>
       </div>
