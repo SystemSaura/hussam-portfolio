@@ -100,11 +100,10 @@ export default function PortfolioThumbnails() {
     try {
       const dataUrl = await toPng(element, {
         quality: 1,
-        pixelRatio: 2, // Higher quality for Retina displays
+        pixelRatio: 2,
         backgroundColor: '#F9FAFB'
       });
       
-      // Create download link
       const link = document.createElement('a');
       link.download = `thumbnail-${id}-${title.replace(/\s+/g, '-').toLowerCase()}.png`;
       link.href = dataUrl;
@@ -117,14 +116,12 @@ export default function PortfolioThumbnails() {
   const exportAll = async () => {
     for (const item of portfolioItems) {
       await exportThumbnail(item.id, item.title);
-      // Small delay between exports to prevent browser issues
       await new Promise(resolve => setTimeout(resolve, 500));
     }
   };
 
   return (
     <div className={styles.container}>
-      {/* Header */}
       <header className={styles.header}>
         <Link href="/" className={styles.backLink}>
           ← Back to Main Site
@@ -134,7 +131,6 @@ export default function PortfolioThumbnails() {
           Professional showcase cards for Upwork and portfolio presentations
         </p>
         
-        {/* Export All Button */}
         <button 
           onClick={exportAll}
           style={{
@@ -157,7 +153,6 @@ export default function PortfolioThumbnails() {
         </button>
       </header>
 
-      {/* Thumbnail Grid */}
       <div className={styles.thumbnailGrid}>
         {portfolioItems.map((item) => (
           <div key={item.id} style={{ position: 'relative' }}>
@@ -165,9 +160,8 @@ export default function PortfolioThumbnails() {
               ref={(el) => { cardRefs.current[item.id] = el; }}
               className={`${styles.thumbnailCard} ${styles[`card${item.color.charAt(0).toUpperCase() + item.color.slice(1)}`]}`}
             >
-              {/* Card Header - REDESIGNED */}
+              {/* Card Header */}
               <div className={styles.cardHeader}>
-                {/* Left: Your Branding */}
                 <div className={styles.personalBranding}>
                   <Image
                     src="/picofme.webp"
@@ -183,7 +177,6 @@ export default function PortfolioThumbnails() {
                   </div>
                 </div>
 
-                {/* Right: Client Logo */}
                 {item.logo && (
                   <div className={styles.companyLogo}>
                     <Image
@@ -197,32 +190,32 @@ export default function PortfolioThumbnails() {
                 )}
               </div>
 
-              {/* Project Number */}
-              <div className={styles.projectNumber}>
-                <span className={styles.hashSymbol}>#</span>
-                <span className={styles.numberText}>{item.id}</span>
-                <div className={styles.numberUnderline}></div>
+            {/* Middle Content - Project Number and Title */}
+              <div className={styles.middleContent}>
+                <div className={styles.projectNumber}>
+                  <span className={styles.hashSymbol}>#</span>
+                  <span className={styles.numberText}>{item.id}</span>
+                  <div className={styles.numberUnderline}></div>
+                </div>
+
+                <h2 className={styles.projectTitle}>{item.title}</h2>
               </div>
 
-              {/* Project Title */}
-              <h2 className={styles.projectTitle}>{item.title}</h2>
-
-              {/* Card Footer */}
+              {/* Card Footer - NOW INCLUDES BADGE */}
               <div className={styles.cardFooter}>
                 <div className={styles.metaInfo}>
                   <span className={styles.category}>{item.category}</span>
                   <span className={styles.separator}>•</span>
                   <span className={styles.readTime}>{item.readTime}</span>
                 </div>
-              </div>
-
-              {/* Company Badge */}
-              <div className={styles.companyBadge}>
-                {item.company}
+                
+                {/* Company Badge - NOW INSIDE FOOTER */}
+                <div className={styles.companyBadge}>
+                  {item.company}
+                </div>
               </div>
             </div>
 
-            {/* Individual Export Button */}
             <button
               onClick={() => exportThumbnail(item.id, item.title)}
               style={{
@@ -257,7 +250,6 @@ export default function PortfolioThumbnails() {
         ))}
       </div>
 
-      {/* Instructions */}
       <div className={styles.instructions}>
         <h3 className={styles.instructionsTitle}>How to Use These Thumbnails</h3>
         <ol className={styles.instructionsList}>

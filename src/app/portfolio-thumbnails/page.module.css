@@ -259,13 +259,14 @@
   margin: 0;
 }
 
-/* Card Footer - WELL POSITIONED */
+/* Card Footer - NOW CONTAINS BOTH META AND BADGE */
 .cardFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 2;
+  gap: 20px;
 }
 
 .metaInfo {
@@ -289,19 +290,20 @@
   font-weight: 300;
 }
 
-/* Company Badge - BETTER POSITIONED */
+/* Company Badge - NOW ON RIGHT SIDE OF FOOTER */
 .companyBadge {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  padding: 10px 18px;
-  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border-radius: 12px;
   font-family: 'Flecha S', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  z-index: 2;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  opacity: 0.85;
+  white-space: nowrap;
 }
 
 /* Special styling for light background cards */
@@ -317,10 +319,11 @@
 
 .cardGreen .companyBadge,
 .cardGold .companyBadge {
-  background: rgba(39, 98, 248, 0.08);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(39, 98, 248, 0.15);
+  background: rgba(39, 98, 248, 0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(39, 98, 248, 0.12);
   color: #001C46;
+  opacity: 0.75;
 }
 
 /* Instructions Section */
@@ -427,8 +430,8 @@
   }
 
   .companyBadge {
-    font-size: 12px;
-    padding: 9px 16px;
+    font-size: 10px;
+    padding: 5px 10px;
   }
 
   .instructions {
@@ -447,6 +450,12 @@
 
   .thumbnailCard {
     padding: 35px 40px;
+  }
+
+  .cardFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
 
   .profileImage {
@@ -487,7 +496,7 @@
   }
 
   .companyBadge {
-    font-size: 11px;
-    padding: 8px 14px;
+    font-size: 10px;
+    padding: 5px 10px;
   }
 }
