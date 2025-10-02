@@ -105,8 +105,8 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
               <div className={styles.servicesNumber + " mb-4"}>01</div>
               <h3 className={styles.servicesTitle + " mb-4"}> Marketing Strategy and Systems audit</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue:
-                Comprehensive digital marketing strategies combining SEO, Google Ads, and social media. We ensure your message reaches the right audience at the right time.
+                Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
+                A Comprehensive digital marketing strategies combining SEO, Google Ads, and social media. We ensure your message reaches the right audience at the right time.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -172,8 +172,8 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
               <div className={styles.servicesNumber + " mb-4"}>01</div>
               <h3 className={styles.servicesTitle + " mb-4"}> Marketing Strategy and Systems audit</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed"}>
-                Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue:
-                Comprehensive digital marketing strategies combining SEO, Google Ads, and social media. We ensure your message reaches the right audience at the right time.
+                Deep-dive analysis of your current marketing stack, messaging, and conversion paths. Get a complete roadmap to fix what's leaking revenue.
+                A Comprehensive digital marketing strategies combining SEO, Google Ads, and social media. We ensure your message reaches the right audience at the right time.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
