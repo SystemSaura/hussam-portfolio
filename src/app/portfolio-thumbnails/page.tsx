@@ -10,7 +10,7 @@ export default function PortfolioThumbnails() {
   const portfolioItems = [
     {
       id: "001",
-      title: "AI Recruitment Platform Blog Strategy",
+      title: "AI Recruitment Platform Blog Strategy & Content & SEO",
       company: "Shiftat",
       category: "Blog Content",
       readTime: "5 min read",
@@ -19,7 +19,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "002", 
-      title: "Multilingual Design & Presentation",
+      title: "Multilingual Translation & Design ",
       company: "Hayat Mohamadeia",
       category: "Translation & Design",
       readTime: "4 min read",
@@ -37,7 +37,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "004",
-      title: "Healthcare Newsletter Strategy",
+      title: "Internal Newsletter Strategy & Content",
       company: "Al Nahdi",
       category: "Email Marketing",
       readTime: "4 min read",
@@ -46,7 +46,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "005",
-      title: "Bilingual Sustainability Content",
+      title: "Bilingual Website Content & Messaging Strategy",
       company: "Reviva",
       category: "Website Content",
       readTime: "6 min read",
@@ -55,7 +55,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "006",
-      title: "Energy Policy Research Portal",
+      title: "School of Public Policy Portal Content",
       company: "KAPSARC",
       category: "Technical Writing",
       readTime: "7 min read",
@@ -64,7 +64,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "007",
-      title: "Bilingual Social Media Strategy",
+      title: "Bilingual Social Media Strategy & Translation",
       company: "GAMI",
       category: "Social & Translation",
       readTime: "4 min read",
@@ -82,7 +82,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "009",
-      title: "MENA Development Award Winner",
+      title: "MENA Development vision",
       company: "INVESTMED",
       category: "Award-Winning Article",
       readTime: "8 min read",
@@ -193,7 +193,7 @@ export default function PortfolioThumbnails() {
             {/* Middle Content - Project Number and Title */}
               <div className={styles.middleContent}>
                 <div className={styles.projectNumber}>
-                  <span className={styles.hashSymbol}>#</span>
+                  <span className={styles.hashSymbol}># </span>
                   <span className={styles.numberText}>{item.id}</span>
                   <div className={styles.numberUnderline}></div>
                 </div>
