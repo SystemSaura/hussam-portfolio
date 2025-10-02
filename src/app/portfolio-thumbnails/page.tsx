@@ -67,7 +67,7 @@ export default function PortfolioThumbnails() {
       category: "Social & Translation",
       readTime: "4 min read",
       color: "orange",
-      logo: ""
+      logo: "/logos/gami.webp"
     },
     {
       id: "008",
