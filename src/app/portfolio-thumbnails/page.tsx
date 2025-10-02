@@ -109,25 +109,25 @@ export default function PortfolioThumbnails() {
             key={item.id} 
             className={`${styles.thumbnailCard} ${styles[`card${item.color.charAt(0).toUpperCase() + item.color.slice(1)}`]}`}
           >
-            {/* Card Header with Profile */}
+            {/* Card Header - REDESIGNED */}
             <div className={styles.cardHeader}>
-              <div className={styles.profileSection}>
+              {/* Left: Your Branding */}
+              <div className={styles.personalBranding}>
                 <Image
                   src="/picofme.webp"
                   alt="Hussam Baaka"
-                  width={80}
-                  height={80}
+                  width={50}
+                  height={50}
                   className={styles.profileImage}
                 />
                 <div className={styles.brandingText}>
-                  <span className={styles.brandName}>Hussam</span>
-                  <span className={styles.brandNameLast}>Baaka</span>
+                  <span className={styles.brandName}>Hussam Baaka</span>
+                  <span className={styles.brandDivider}>|</span>
+                  <span className={styles.brandTitle}>Marketing Specialist</span>
                 </div>
               </div>
-              <div className={styles.roleSection}>
-                <span className={styles.brandDivider}>/</span>
-                <span className={styles.brandRole}>Marketing<br />Expert</span>
-              </div>
+
+              {/* Right: Client Logo */}
               {item.logo && (
                 <div className={styles.companyLogo}>
                   <Image
