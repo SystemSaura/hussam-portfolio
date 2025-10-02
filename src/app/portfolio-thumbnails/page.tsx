@@ -98,14 +98,17 @@ export default function PortfolioThumbnails() {
     if (!element) return;
 
     try {
+      // Export at EXACTLY the rendered size (400×320px)
       const dataUrl = await toPng(element, {
-        quality: 1,
-        pixelRatio: 2,
-        backgroundColor: '#F9FAFB'
+        quality: 0.95,
+        pixelRatio: 1,
+        backgroundColor: '#F9FAFB',
+        width: 400,
+        height: 320
       });
       
       const link = document.createElement('a');
-      link.download = `thumbnail-${id}-${title.replace(/\s+/g, '-').toLowerCase()}.png`;
+      link.download = `upwork-${id}-${title.replace(/\s+/g, '-').toLowerCase().substring(0, 40)}.png`;
       link.href = dataUrl;
       link.click();
     } catch (error) {
@@ -116,7 +119,7 @@ export default function PortfolioThumbnails() {
   const exportAll = async () => {
     for (const item of portfolioItems) {
       await exportThumbnail(item.id, item.title);
-      await new Promise(resolve => setTimeout(resolve, 500));
+      await new Promise(resolve => setTimeout(resolve, 800));
     }
   };
 
@@ -126,36 +129,59 @@ export default function PortfolioThumbnails() {
         <Link href="/" className={styles.backLink}>
           ← Back to Main Site
         </Link>
-        <h1 className={styles.pageTitle}>Portfolio Thumbnails</h1>
+        <h1 className={styles.pageTitle}>Upwork Portfolio Thumbnails</h1>
         <p className={styles.pageSubtitle}>
-          Professional showcase cards for Upwork and portfolio presentations
+          Professional 400×320px thumbnails optimized for Upwork
         </p>
         
         <button 
           onClick={exportAll}
           style={{
             marginTop: '20px',
-            padding: '12px 32px',
+            padding: '14px 36px',
             background: '#2762F8',
             color: 'white',
             border: 'none',
-            borderRadius: '8px',
-            fontSize: '16px',
+            borderRadius: '10px',
+            fontSize: '17px',
             cursor: 'pointer',
             fontFamily: 'Flecha S, sans-serif',
-            fontWeight: 500,
-            transition: 'background 0.2s ease'
+            fontWeight: 600,
+            transition: 'all 0.2s ease',
+            boxShadow: '0 4px 12px rgba(39, 98, 248, 0.25)'
           }}
-          onMouseOver={(e) => e.currentTarget.style.background = '#1E40AF'}
-          onMouseOut={(e) => e.currentTarget.style.background = '#2762F8'}
+          onMouseOver={(e) => {
+            e.currentTarget.style.background = '#1E40AF';
+            e.currentTarget.style.transform = 'translateY(-2px)';
+            e.currentTarget.style.boxShadow = '0 6px 16px rgba(39, 98, 248, 0.35)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.background = '#2762F8';
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = '0 4px 12px rgba(39, 98, 248, 0.25)';
+          }}
         >
-          📥 Export All Thumbnails as PNG
+          Export All Thumbnails
         </button>
+
+        <div style={{
+          marginTop: '16px',
+          padding: '16px 24px',
+          background: '#EFF6FF',
+          border: '2px solid #BFDBFE',
+          borderRadius: '12px',
+          color: '#1E40AF',
+          fontSize: '15px',
+          fontFamily: 'Flecha S, sans-serif',
+          lineHeight: '1.6'
+        }}>
+          <strong>Fixed Dimensions:</strong> Each card renders at exactly 400×320px, then scales up for display
+        </div>
       </header>
 
       <div className={styles.thumbnailGrid}>
         {portfolioItems.map((item) => (
-          <div key={item.id} style={{ position: 'relative' }}>
+          <div key={item.id} className={styles.cardWrapper}>
             <div 
               ref={(el) => { cardRefs.current[item.id] = el; }}
               className={`${styles.thumbnailCard} ${styles[`card${item.color.charAt(0).toUpperCase() + item.color.slice(1)}`]}`}
@@ -166,8 +192,8 @@ export default function PortfolioThumbnails() {
                   <Image
                     src="/picofme.webp"
                     alt="Hussam Baaka"
-                    width={50}
-                    height={50}
+                    width={28}
+                    height={28}
                     className={styles.profileImage}
                   />
                   <div className={styles.brandingText}>
@@ -182,18 +208,18 @@ export default function PortfolioThumbnails() {
                     <Image
                       src={item.logo}
                       alt={item.company}
-                      width={80}
-                      height={80}
+                      width={45}
+                      height={45}
                       className={styles.logoImage}
                     />
                   </div>
                 )}
               </div>
 
-            {/* Middle Content - Project Number and Title */}
+              {/* Middle Content */}
               <div className={styles.middleContent}>
                 <div className={styles.projectNumber}>
-                  <span className={styles.hashSymbol}># </span>
+                  <span className={styles.hashSymbol}>#</span>
                   <span className={styles.numberText}>{item.id}</span>
                   <div className={styles.numberUnderline}></div>
                 </div>
@@ -201,7 +227,7 @@ export default function PortfolioThumbnails() {
                 <h2 className={styles.projectTitle}>{item.title}</h2>
               </div>
 
-              {/* Card Footer - NOW INCLUDES BADGE */}
+              {/* Card Footer */}
               <div className={styles.cardFooter}>
                 <div className={styles.metaInfo}>
                   <span className={styles.category}>{item.category}</span>
@@ -209,55 +235,23 @@ export default function PortfolioThumbnails() {
                   <span className={styles.readTime}>{item.readTime}</span>
                 </div>
                 
-                {/* Company Badge - NOW INSIDE FOOTER */}
                 <div className={styles.companyBadge}>
                   {item.company}
                 </div>
               </div>
             </div>
 
-            <button
-              onClick={() => exportThumbnail(item.id, item.title)}
-              style={{
-                position: 'absolute',
-                top: '10px',
-                right: '10px',
-                padding: '8px 16px',
-                background: 'rgba(255, 255, 255, 0.95)',
-                border: '1px solid #E2E8F0',
-                borderRadius: '6px',
-                cursor: 'pointer',
-                fontSize: '14px',
-                zIndex: 10,
-                fontFamily: 'Flecha S, sans-serif',
-                color: '#001C46',
-                fontWeight: 500,
-                transition: 'all 0.2s ease',
-                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.background = 'white';
-                e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.15)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.95)';
-                e.currentTarget.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
-              }}
-            >
-              💾 Export PNG
-            </button>
           </div>
         ))}
       </div>
 
       <div className={styles.instructions}>
-        <h3 className={styles.instructionsTitle}>How to Use These Thumbnails</h3>
+        <h3 className={styles.instructionsTitle}>How It Works</h3>
         <ol className={styles.instructionsList}>
-          <li>Click "Export All Thumbnails as PNG" to download all cards at once</li>
-          <li>Or click individual "Export PNG" buttons on each card</li>
-          <li>Upload the PNG files to your Upwork portfolio or presentations</li>
-          <li>Each card is optimized at 2x resolution for high-quality display</li>
-          <li>Cards maintain your brand consistency while highlighting different project types</li>
+          <li>Each card renders at exactly 400×320px in the DOM</li>
+          <li>CSS transform scales them up 150% for comfortable viewing</li>
+          <li>Export captures the full-size 400×320px version</li>
+          <li>Result: Perfect Upwork thumbnails with no cropping or stretching</li>
         </ol>
       </div>
     </div>
