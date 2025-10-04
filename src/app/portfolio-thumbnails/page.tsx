@@ -10,16 +10,16 @@ export default function PortfolioThumbnails() {
   const portfolioItems = [
     {
       id: "001",
-      title: "AI Recruitment Platform Blog Strategy & Content & SEO",
+      title: "Blog Strategy, Content & SEO",
       company: "Shiftat",
-      category: "Blog Content",
+      category: "Blog Content & SEO",
       readTime: "5 min read",
       color: "blue",
       logo: "/logos/shiftat.webp"
     },
     {
       id: "002", 
-      title: "Multilingual Translation & Design ",
+      title: "Bilingual Translation & Design ",
       company: "Hayat Mohamadeia",
       category: "Translation & Design",
       readTime: "4 min read",
@@ -28,7 +28,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "003",
-      title: "Public Transportation Social Campaign",
+      title: "Social Media content",
       company: "Makkah Bus",
       category: "Social Media",
       readTime: "3 min read",
@@ -37,7 +37,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "004",
-      title: "Internal Newsletter Strategy & Content",
+      title: "Newsletter Strategy & Content",
       company: "Al Nahdi",
       category: "Email Marketing",
       readTime: "4 min read",
@@ -46,7 +46,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "005",
-      title: "Bilingual Website Content & Messaging Strategy",
+      title: "Bilingual Website Content & Strategy",
       company: "Reviva",
       category: "Website Content",
       readTime: "6 min read",
@@ -55,7 +55,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "006",
-      title: "School of Public Policy Portal Content",
+      title: "Website Portal Content",
       company: "KAPSARC",
       category: "Technical Writing",
       readTime: "7 min read",
@@ -64,7 +64,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "007",
-      title: "Bilingual Social Media Strategy & Translation",
+      title: "Bilingual Social Media content & Translation",
       company: "GAMI",
       category: "Social & Translation",
       readTime: "4 min read",
@@ -73,7 +73,7 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "008",
-      title: "Educational Handbook Editing",
+      title: "Handbook Editing & Proofreading",
       company: "Maarif Schools",
       category: "Editorial Services",
       readTime: "5 min read",
@@ -82,12 +82,21 @@ export default function PortfolioThumbnails() {
     },
     {
       id: "009",
-      title: "MENA Development vision",
+      title: "Award-Winning Article ",
       company: "INVESTMED",
-      category: "Award-Winning Article",
+      category: "MENA Development vision",
       readTime: "8 min read",
       color: "gold",
       logo: "/logos/investmed.webp"
+    },
+        {
+      id: "010", 
+      title: " Blog & Social Media ",
+      company: "Estater",
+      category: "Content Marketing",
+      readTime: "10 min read",
+      color: "purple",
+      logo: "/logos/estater.webp"
     }
   ];
 
