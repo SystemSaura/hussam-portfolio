@@ -89,7 +89,7 @@ export default function PortfolioThumbnails() {
       color: "gold",
       logo: "/logos/investmed.webp"
     },
-        {
+    {
       id: "010", 
       title: " Blog & Social Media ",
       company: "Estater",
@@ -97,6 +97,43 @@ export default function PortfolioThumbnails() {
       readTime: "10 min read",
       color: "purple",
       logo: "/logos/estater.webp"
+    },
+    // NEW THUMBNAILS BELOW
+    {
+      id: "011",
+      title: "Case Study Deliverable",
+      company: "Ether Tech",
+      category: "Case Study Writing",
+      readTime: "12 min read",
+      color: "blue",
+      logo: "/logos/ether.webp"
+    },
+    {
+      id: "012",
+      title: "Social Media Deliverables",
+      company: "Jax District",
+      category: "Instagram Content",
+      readTime: "6 min read",
+      color: "indigo",
+      logo: "/logos/jaxdistrict.webp"
+    },
+    {
+      id: "013",
+      title: "Translation, Social Media & Editing",
+      company: "Various Clients",
+      category: "Multi-Service Portfolio",
+      readTime: "15 min read",
+      color: "gold",
+      logo: "" // No logo for mixed projects
+    },
+    {
+      id: "014",
+      title: "News Articles (35-40 monthly)",
+      company: "Media Publications",
+      category: "Journalism & Content",
+      readTime: "20 min read",
+      color: "slate",
+      logo: "" // No logo for general news work
     }
   ];
 
