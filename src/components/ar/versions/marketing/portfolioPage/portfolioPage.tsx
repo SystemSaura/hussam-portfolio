@@ -43,7 +43,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "70 مقالة ثقافية تحليلية",
         description: "تطوير محتوى تحليلي واسع يغطي المواضيع الثقافية والاتجاهات والرؤى لجماهير متنوعة.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1M6bb2AZxHQPHzsk19LUMj1mo3PAMz-YP?usp=sharing"
       },
       {
         category: "متنوع",
@@ -82,12 +82,48 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
       },
       {
+        category: "العقارات",
+        logo: "/logos/akkar.webp",
+        logoText: "عقار",
+        title: "محتوى تطبيق وموقع العقارات",
+        description: "صياغة محتوى شامل لتطبيق وموقع منصة عقارية، مع ضمان تجربة مستخدم واضحة ورسائل مقنعة.",
+        buttonColor: "Orange",
+        link: "https://drive.google.com/drive/u/3/folders/1zqgUfZjCYgVbONE2JT667Kesry_5f-mq"
+      },
+      {
+        category: "الألعاب",
+        logo: "/logos/ldplayer.webp",
+        logoText: "إل دي بلاير",
+        title: "مقالات مدونة منصة الألعاب",
+        description: "تطوير محتوى مدونة جذاب لمنصة ألعاب، مع التركيز على أدلة اللاعبين وأخبار الصناعة والتفاعل المجتمعي.",
+        buttonColor: "Purple",
+        link: "https://drive.google.com/drive/folders/1GM-v7MLUpMRjCfCvZTtB8F8f6OeqwmpH?usp=drive_link"
+      },
+      {
+        category: "المالية",
+        logo: "/logos/haseef.webp",
+        logoText: "حصيف",
+        title: "محتوى موقع الخدمات المالية",
+        description: "إنشاء محتوى موقع احترافي لشركة خدمات مالية، مع التركيز على الثقة والخبرة والحلول المتمحورة حول العميل.",
+        buttonColor: "Blue",
+        link: "https://drive.google.com/drive/folders/1dtc3yLs7EsB2615iCQ28cBjivReCQbhk?usp=sharing"
+      },
+      {
+        category: "الأغذية والمشروبات",
+        logo: "",
+        logoText: "مكسيكا",
+        title: "محتوى موقع المطعم (عربي وإنجليزي)",
+        description: "تطوير محتوى موقع ثنائي اللغة لسلسلة مطاعم، يلتقط جوهر العلامة التجارية وعروض القائمة بالعربية والإنجليزية.",
+        buttonColor: "Green",
+        link: "https://drive.google.com/drive/folders/1FSeZ9W5VnNB3az-50URptVguvtthz1Ok?usp=drive_link"
+      },
+      {
         category: "الصحة",
         logo: "",
         logoText: "نادي الإعادة التأهيل",
         title: "محتوى مدونة الرعاية الصحية",
         description: "إنشاء استراتيجية محتوى مدونة شاملة لخدمات إعادة التأهيل، مع التركيز على تعليم المرضى ورؤى العلاج.",
-        buttonColor: "Blue",
+        buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing"
       }
     ],
@@ -144,7 +180,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "ترويج السياحة",
         description: "تطوير محتوى جذاب للسفر والسياحة يبرز الوجهات والتجارب الثقافية.",
         buttonColor: "Teal",
-        link: "#"
+        link: "https://drive.google.com/drive/folders/1mBYjvvYbpQGyt6JXmnYf2oPArzQmA7tR?usp=sharing"
       },
       {
         category: "النقل",
@@ -201,6 +237,15 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         description: "إنشاء ملف أعمال تجاري وتموضع سوقي لخدمات العقارات في الأسواق العربية والإنجليزية.",
         buttonColor: "Orange",
         link: "https://drive.google.com/drive/folders/1ymhNGtgbzt8yK5iu0Rpq2BnAJMYkbmJ-?usp=drive_link"
+      },
+      {
+        category: "متنوع",
+        logo: "",
+        logoText: "متعدد الصناعات",
+        title: "7 ملفات أعمال شركات",
+        description: "إنشاء ملفات أعمال تجارية شاملة لشركات عبر صناعات مختلفة، تؤسس تموضع السوق الاحترافي والهوية.",
+        buttonColor: "Teal",
+        link: "https://drive.google.com/drive/folders/1IR3u27P6q867EFrF2_KEkxsuys08jahX?usp=drive_link"
       }
     ],
     "الكتابة التقنية": [
@@ -217,10 +262,10 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "الجوائز",
         logo: "/logos/investmed.webp",
         logoText: "التقدير",
-        title: "تقرير خطة التطوير المدني",
-        description: "إنشاء تقرير مفصل يؤسس لخطة لتطوير مدينة من العالم النامي.",
+        title: "تقرير التقدير الصناعي",
+        description: "إنشاء تقرير مفصل يوثق الإنجازات والتقدير الصناعي لتطوير ملف الأعمال المهني.",
         buttonColor: "Orange",
-        link: "#"
+        link: "https://drive.google.com/file/d/1qETT2GSKrcUwk42hCvwKEqgfmfDtG7OJ/view?usp=sharing"
       },
       {
         category: "البحوث الحكومية",

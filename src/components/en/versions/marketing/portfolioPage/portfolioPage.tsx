@@ -24,7 +24,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   const [showRightArrow, setShowRightArrow] = useState(false);
   const tabContainerRef = useRef<HTMLDivElement>(null);
 
-  // Organized portfolio data with Rehab Club moved to end
+  // Organized portfolio data
   const portfolioData = {
     "Content Marketing": [
       {
@@ -43,7 +43,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "70 Analytical Cultural Articles",
         description: "Developed extensive analytical content covering cultural topics, trends, and insights for diverse audiences.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1M6bb2AZxHQPHzsk19LUMj1mo3PAMz-YP?usp=sharing"
       },
       {
         category: "Various",
@@ -82,12 +82,48 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
       },
       {
+        category: "Real Estate",
+        logo: "/logos/akkar.webp",
+        logoText: "AKKAR",
+        title: "Real Estate App & Website Content",
+        description: "Crafted comprehensive app microcopies and website content for real estate platform, ensuring clear user experience and compelling messaging.",
+        buttonColor: "Orange",
+        link: "https://drive.google.com/drive/u/3/folders/1zqgUfZjCYgVbONE2JT667Kesry_5f-mq"
+      },
+      {
+        category: "Gaming",
+        logo: "/logos/ldplayer.webp",
+        logoText: "LDPLAYER",
+        title: "Gaming Platform Blog Posts",
+        description: "Developed engaging blog content for gaming platform, focusing on player guides, industry news, and community engagement.",
+        buttonColor: "Purple",
+        link: "https://drive.google.com/drive/folders/1GM-v7MLUpMRjCfCvZTtB8F8f6OeqwmpH?usp=drive_link"
+      },
+      {
+        category: "Finance",
+        logo: "/logos/haseef.webp",
+        logoText: "HASEEF",
+        title: "Financial Services Website Content",
+        description: "Created professional website content for financial services company, emphasizing trust, expertise, and client-focused solutions.",
+        buttonColor: "Blue",
+        link: "https://drive.google.com/drive/folders/1dtc3yLs7EsB2615iCQ28cBjivReCQbhk?usp=sharing"
+      },
+      {
+        category: "Food & Beverage",
+        logo: "",
+        logoText: "MEXIKA",
+        title: "Restaurant Website Content (AR & EN)",
+        description: "Developed bilingual website content for restaurant chain, capturing brand essence and menu offerings in both Arabic and English.",
+        buttonColor: "Green",
+        link: "https://drive.google.com/drive/folders/1FSeZ9W5VnNB3az-50URptVguvtthz1Ok?usp=drive_link"
+      },
+      {
         category: "Health",
         logo: "",
         logoText: "REHABS CLUB",
         title: "Healthcare Blog Content",
         description: "Created comprehensive blog content strategy for rehabilitation services, focusing on patient education and treatment insights.",
-        buttonColor: "Blue",
+        buttonColor: "Teal",
         link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing"
       }
     ],
@@ -201,6 +237,15 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         description: "Created brand profile and market positioning for real estate services in both Arabic and English markets.",
         buttonColor: "Orange",
         link: "https://drive.google.com/drive/folders/1ymhNGtgbzt8yK5iu0Rpq2BnAJMYkbmJ-?usp=drive_link"
+      },
+      {
+        category: "Various",
+        logo: "",
+        logoText: "MULTI-INDUSTRY",
+        title: "7 Company Profiles",
+        description: "Created comprehensive brand profiles for companies across different industries, establishing professional market positioning and identity.",
+        buttonColor: "Teal",
+        link: "https://drive.google.com/drive/folders/1IR3u27P6q867EFrF2_KEkxsuys08jahX?usp=drive_link"
       }
     ],
     "Technical Writing": [
@@ -301,7 +346,6 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
     ]
   };
 
-  // Updated service types without Email Marketing
   const serviceTypes = ["ALL", "Content Marketing", "Social Media Marketing", "Brand Strategy", "Technical Writing", "Design & Creative", "Translation & Editing"];
 
   // Check scroll position and update arrow visibility
