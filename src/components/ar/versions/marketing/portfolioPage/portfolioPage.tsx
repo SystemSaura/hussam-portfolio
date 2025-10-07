@@ -28,7 +28,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
   const portfolioData = {
     "تسويق المحتوى": [
       {
-        category: "تقنية الموارد البشرية",
+        category: "الموارد البشرية",
         logo: "/logos/shiftat.webp",
         logoText: "شفتات",
         title: "محتوى مدونة منصة التوظيف",
@@ -46,7 +46,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         link: "https://drive.google.com/drive/folders/1M6bb2AZxHQPHzsk19LUMj1mo3PAMz-YP?usp=sharing"
       },
       {
-        category: "متنوع",
+        category: "قطاعات متنوعة",
         logo: "",
         logoText: "متعدد الصناعات",
         title: "7 مقالات متخصصة",
@@ -129,7 +129,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
     ],
     "التسويق عبر وسائل التواصل الاجتماعي": [
       {
-        category: "تقنية الموارد البشرية",
+        category: "الموارد البشرية",
         logo: "/logos/shiftat.webp",
         logoText: "شفتات",
         title: "منصة التوظيف بالذكاء الاصطناعي",
@@ -239,7 +239,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         link: "https://drive.google.com/drive/folders/1ymhNGtgbzt8yK5iu0Rpq2BnAJMYkbmJ-?usp=drive_link"
       },
       {
-        category: "متنوع",
+        category: "قطاعات متنوعة",
         logo: "",
         logoText: "متعدد الصناعات",
         title: "7 ملفات أعمال شركات",
@@ -417,6 +417,15 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
     return Object.values(portfolioData).reduce((total, projects) => total + projects.length, 0);
   };
 
+  // Helper function to format category with or without "قطاع" prefix
+  const formatCategoryTitle = (category: string) => {
+    // Don't add "قطاع" if category already contains "قطاعات" or is "الجوائز"
+    if (category === "قطاعات متنوعة" || category === "الجوائز") {
+      return category;
+    }
+    return `قطاع ${category}`;
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header with white background */}
@@ -522,7 +531,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         </div>
                       </div>
                       <div className={styles.portfolioHeaderMain}>
-                        <h4 className={styles.portfolioServiceType + " arabic-heading"}>مشروع {project.category}</h4>
+                        <h4 className={styles.portfolioServiceType + " arabic-heading"}>{formatCategoryTitle(project.category)}</h4>
                         <p className={styles.portfolioServiceDetail + " arabic-body"}>{categoryName}</p>
                       </div>
                     </div>
@@ -556,14 +565,16 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
             </div>
           ))}
 
-          {/* Portfolio Summary */}
+          {/* Portfolio Summary - FIXED LAYOUT */}
           <div className={`text-center border-t border-gray-200 ${styles.portfolioSummary}`}>
-            <div className="inline-flex items-center bg-gray-50 rounded-full px-6 py-3 border">
-              <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span className={styles.flechaVerificationText + " mr-3 arabic-body"}>جميع المشاريع موثقة ومُتحقق منها</span>
-              <Link href="/" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>
+            <div className="inline-flex flex-wrap items-center justify-center gap-3 bg-gray-50 rounded-full px-6 py-3 border">
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className={styles.flechaVerificationText + " arabic-body"}>جميع المشاريع موثقة ومُتحقق منها</span>
+              </div>
+              <Link href="/" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors whitespace-nowrap"}>
                 العودة للرئيسية ←
               </Link>
             </div>
