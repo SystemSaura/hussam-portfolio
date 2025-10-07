@@ -76,7 +76,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "الرعاية الصحية",
         logo: "/logos/alnahdi.webp",
         logoText: "النهدي",
-        title: "استراتيجية النشرة الإخبارية الصحية",
+        title: "استراتيجية النشرة الإخبارية ",
         description: "تصميم وكتابة حملات نشرة إخبارية جذابة تركز على النصائح الصحية وترويج المنتجات لسلسلة الصيدليات الرائدة.",
         buttonColor: "Pink",
         link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
@@ -112,7 +112,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         category: "الأغذية والمشروبات",
         logo: "",
         logoText: "مكسيكا",
-        title: "محتوى موقع المطعم (عربي وإنجليزي)",
+        title: "محتوى موقع لمطعم (عربي وإنجليزي)",
         description: "تطوير محتوى موقع ثنائي اللغة لسلسلة مطاعم، يلتقط جوهر العلامة التجارية وعروض القائمة بالعربية والإنجليزية.",
         buttonColor: "Green",
         link: "https://drive.google.com/drive/folders/1FSeZ9W5VnNB3az-50URptVguvtthz1Ok?usp=drive_link"
@@ -308,7 +308,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
     ],
     "الترجمة والتحرير": [
       {
-        category: "الحكومة",
+        category: "حكومي",
         logo: "/logos/rcmc.webp",
         logoText: "مجمع الملك عبدالله الطبي",
         title: "تحرير المحتوى الحكومي",
@@ -556,7 +556,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                         className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""} arabic-body`}
                         disabled={project.link === "#"}
                       >
-                        {project.link !== "#" ? "شاهد العمل" : "قريباً"}
+                        {project.link !== "#" ? "اطلع على العمل" : "قريباً"}
                       </button>
                     </div>
                   </div>
