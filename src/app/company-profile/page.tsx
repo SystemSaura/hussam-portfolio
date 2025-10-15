@@ -1,5 +1,6 @@
-import SlideOne from "@/company-profile/SlideOne";
+// src/app/company-profile/page.tsx
+import CompanyProfile from "@/company-profile/CompanyProfile";
 
-export default function Page() {
-  return <SlideOne />;
+export default function CompanyProfilePage() {
+  return <CompanyProfile />;
 }
