@@ -33,6 +33,16 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    /* Company Profile Brand Colors */
+  --saura-midnight: #0A1628;
+  --saura-deep-blue: #1a2942;
+  --saura-navy: #2d3e5f;
+  --saura-gold: #D4A574;
+  --saura-gold-light: #E8C9A0;
+  --saura-cyan: #00E5FF;
+  --saura-cyan-dim: #00B8CC;
+  --saura-white: #FAFAFA;
+  --saura-cream: #F5F1EB;
   }
 
   .dark {
