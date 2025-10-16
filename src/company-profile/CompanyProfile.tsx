@@ -5,7 +5,10 @@ import styles from "./CompanyProfile.module.css";
 import useSlideNavigation from "./hooks/useSlideNavigation";
 import SlideOne from "./slides/SlideOne";
 import SlideTwo from "./slides/SlideTwo";
-import SlidePlaceholder from "./slide/SlidePlaceholder";
+import SlideThree from "./slides/SlideThree";
+import SlideFour from "./slides/SlideFour";
+import SlideFive from "./slides/SlideFive";
+import SlideSix from "./slides/SlideSix";
 
 export default function CompanyProfile() {
   const totalSlides = 6;
@@ -44,24 +47,20 @@ export default function CompanyProfile() {
           ref={(el) => { slideRefs.current[1] = el; }}
         />
         
-        <SlidePlaceholder 
+        <SlideThree 
           ref={(el) => { slideRefs.current[2] = el; }}
-          slideNumber={3}
         />
         
-        <SlidePlaceholder 
+        <SlideFour 
           ref={(el) => { slideRefs.current[3] = el; }}
-          slideNumber={4}
         />
         
-        <SlidePlaceholder 
+        <SlideFive 
           ref={(el) => { slideRefs.current[4] = el; }}
-          slideNumber={5}
         />
         
-        <SlidePlaceholder 
+        <SlideSix 
           ref={(el) => { slideRefs.current[5] = el; }}
-          slideNumber={6}
         />
       </div>
 
