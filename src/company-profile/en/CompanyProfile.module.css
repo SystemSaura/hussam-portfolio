@@ -87,8 +87,7 @@
 /* Navigation Arrows */
 .navArrow {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 40px;
   z-index: 100;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -109,7 +108,7 @@
   background: rgba(255, 255, 255, 0.2);
   border-color: var(--saura-cyan);
   color: var(--saura-cyan);
-  transform: translateY(-50%) scale(1.1);
+  transform: scale(1.1);
 }
 
 .navArrow:disabled {
