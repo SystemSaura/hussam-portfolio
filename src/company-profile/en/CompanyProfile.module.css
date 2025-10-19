@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 60px 50px;
+  padding: 40px 30px;
   box-sizing: border-box;
   transform: none;
   background: linear-gradient(135deg, var(--saura-midnight) 0%, var(--saura-deep-blue) 100%);
@@ -351,27 +351,28 @@
    ============================================ */
 .slideServices {
   background: linear-gradient(135deg, var(--saura-midnight) 0%, var(--saura-deep-blue) 100%);
+  padding: 30px 20px;
 }
 
 .servicesHeader {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   animation: fadeInDown 0.8s ease-out;
 }
 
 .servicesTitle {
-  font-size: 40px;
+  font-size: 32px;
   color: var(--saura-white);
-  margin: 12px 0 0 0;
+  margin: 8px 0 0 0;
   font-weight: 300;
   letter-spacing: 0.02em;
   line-height: 1.3;
 }
 
 .servicesDescription {
-  font-size: 15px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 16px;
+  margin-top: 12px;
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
@@ -381,7 +382,7 @@
 .servicesGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 16px;
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
@@ -390,11 +391,11 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(212, 165, 116, 0.3);
   border-radius: 12px;
-  padding: 32px 24px;
+  padding: 20px 16px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   position: relative;
   overflow: hidden;
 }
@@ -414,8 +415,8 @@
 .serviceCard:hover {
   background: rgba(255, 255, 255, 0.06);
   border-color: var(--saura-gold);
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(212, 165, 116, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(212, 165, 116, 0.12);
 }
 
 .serviceCard:hover::before {
@@ -423,14 +424,14 @@
 }
 
 .serviceNumber {
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 700;
   color: rgba(212, 165, 116, 0.25);
   line-height: 1;
 }
 
 .serviceIcon {
-  font-size: 32px;
+  font-size: 24px;
   color: var(--saura-gold);
   text-shadow: 0 0 15px rgba(212, 165, 116, 0.3);
   transition: all 0.4s ease;
@@ -444,16 +445,16 @@
 }
 
 .serviceName {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--saura-white);
   margin: 0;
 }
 
 .serviceDescription {
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.65);
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
   font-weight: 300;
 }
@@ -467,7 +468,7 @@
 
 .approachHeader {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   animation: fadeInDown 0.8s ease-out;
 }
 
@@ -499,7 +500,7 @@
 .approachTimeline::before {
   content: '';
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 15%;
   right: 15%;
   height: 2px;
@@ -521,7 +522,8 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(0, 229, 255, 0.08));
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(0, 229, 255, 0.08)), linear-gradient(135deg, var(--saura-midnight), var(--saura-deep-blue));
+  background-blend-mode: overlay;
   border: 2px solid var(--saura-gold);
   font-size: 36px;
   font-weight: 700;
@@ -529,6 +531,8 @@
   margin: 0 auto 24px;
   transition: all 0.4s ease;
   box-shadow: 0 0 25px rgba(212, 165, 116, 0.15);
+  position: relative;
+  z-index: 10;
 }
 
 .timelineStep:hover .stepNumber {
@@ -829,7 +833,7 @@
    ============================================ */
 @media (max-width: 1024px) {
   .slide {
-    padding: 50px 35px;
+    padding: 35px 25px;
   }
 
   .servicesGrid,
@@ -851,7 +855,7 @@
 
 @media (max-width: 768px) {
   .slide {
-    padding: 40px 24px;
+    padding: 30px 20px;
   }
 
   .logoArabic {
@@ -866,7 +870,7 @@
   .servicesGrid,
   .impactGrid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 15px;
   }
 
   .aboutTitle,
@@ -878,12 +882,12 @@
 
   .aboutCard,
   .serviceCard {
-    padding: 24px 20px;
+    padding: 18px 14px;
   }
 
   .aboutStats {
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
   }
 
   .statDivider {
@@ -894,7 +898,7 @@
 
   .approachTimeline {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
   }
 
