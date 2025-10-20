@@ -1,0 +1,1024 @@
+/* ============================================
+   GOOGLE FONTS IMPORT
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ============================================
+   BLACK & SILVER THEME - COLOR VARIABLES
+   ============================================ */
+:root {
+  --saura-black: #000000;
+  --saura-dark-grey: #0a0a0a;
+  --saura-silver: #C0C0C0;
+  --saura-light-silver: #E8E8E8;
+  --saura-metallic: #A8A8A8;
+  --saura-white: #FFFFFF;
+  --saura-iridescent: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+/* Container */
+.profileContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: var(--saura-black);
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  direction: ltr;
+  transform: none;
+}
+
+/* Slides Container */
+.slidesContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  direction: ltr;
+  flex-direction: row;
+}
+
+.slide {
+  min-width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  transform: none;
+  background: var(--saura-black);
+}
+
+.slideContent {
+  max-width: 1300px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Navigation Dots */
+.navigation {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.navDot:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+
+.navDotActive {
+  background: var(--saura-silver);
+  border-color: var(--saura-white);
+  transform: scale(1.3);
+  box-shadow: 0 0 15px rgba(192, 192, 192, 0.6);
+}
+
+/* Navigation Arrows */
+.navArrow {
+  position: fixed;
+  bottom: 40px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: var(--saura-white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(20px);
+}
+
+.navArrow:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--saura-silver);
+  color: var(--saura-silver);
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(192, 192, 192, 0.4);
+}
+
+.navArrow:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.navArrowLeft {
+  left: 40px;
+}
+
+.navArrowRight {
+  right: 100px;
+}
+
+/* ============================================
+   SLIDE 1: HERO
+   ============================================ */
+.slideHero {
+  background: var(--saura-black);
+  justify-content: center;
+  position: relative;
+}
+
+.slideHero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(192, 192, 192, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroContent {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.logoContainer {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.logoArabic {
+  font-size: 100px;
+  font-weight: 700;
+  color: var(--saura-white);
+  margin: 0;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+  font-family: 'Amiri', sans-serif;
+}
+
+.logoLine {
+  width: 180px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--saura-silver), transparent);
+  margin: 15px auto;
+  box-shadow: 0 0 15px rgba(192, 192, 192, 0.5);
+}
+
+.logoEnglish {
+  font-size: 42px;
+  font-weight: 300;
+  background: linear-gradient(90deg, var(--saura-light-silver), var(--saura-silver), var(--saura-light-silver));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  letter-spacing: 0.3em;
+}
+
+.tagline {
+  font-size: 18px;
+  color: var(--saura-light-silver);
+  margin-bottom: 40px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.heroSubtext {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.arabicProverb {
+  font-size: 26px;
+  background: linear-gradient(135deg, var(--saura-light-silver), var(--saura-silver));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-style: italic;
+  direction: rtl;
+  font-family: 'Amiri', sans-serif;
+}
+
+.proverbTranslation {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+}
+
+.nextSlideBtn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: 2px solid var(--saura-silver);
+  color: var(--saura-silver);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: bounce 2s infinite;
+  backdrop-filter: blur(10px);
+}
+
+.nextSlideBtn:hover {
+  background: var(--saura-silver);
+  color: var(--saura-black);
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 0 25px rgba(192, 192, 192, 0.6);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+/* ============================================
+   SLIDE 2: ABOUT US
+   ============================================ */
+.slideAbout {
+  background: var(--saura-black);
+}
+
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.sectionLabel {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--saura-silver);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.aboutTitle {
+  font-size: 40px;
+  color: var(--saura-white);
+  margin: 12px 0 0 0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.aboutCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 28px 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--saura-silver), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.aboutCard:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--saura-silver);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.1);
+}
+
+.aboutCard:hover::before {
+  opacity: 1;
+}
+
+.cardIcon {
+  font-size: 28px;
+  background: linear-gradient(135deg, var(--saura-light-silver), var(--saura-metallic));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+  text-shadow: 0 0 20px rgba(192, 192, 192, 0.3);
+  font-weight: 700;
+}
+
+.cardTitle {
+  font-size: 18px;
+  color: var(--saura-white);
+  margin: 0 0 12px 0;
+  font-weight: 500;
+}
+
+.cardText {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 300;
+}
+
+.aboutStats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 32px 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+  backdrop-filter: blur(20px);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.statNumber {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--saura-white), var(--saura-silver));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(192, 192, 192, 0.3);
+}
+
+.statLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 400;
+}
+
+.statDivider {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, transparent, var(--saura-silver), transparent);
+}
+
+/* ============================================
+   SLIDE 3: SERVICES
+   ============================================ */
+.slideServices {
+  background: var(--saura-black);
+  padding: 30px 20px;
+}
+
+.servicesHeader {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.servicesTitle {
+  font-size: 32px;
+  color: var(--saura-white);
+  margin: 8px 0 0 0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.servicesDescription {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.serviceCard {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--saura-silver), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.serviceCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--saura-silver);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1);
+}
+
+.serviceCard:hover::before {
+  opacity: 1;
+}
+
+.serviceNumber {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.15);
+  line-height: 1;
+}
+
+.serviceIcon {
+  font-size: 24px;
+  background: linear-gradient(135deg, var(--saura-light-silver), var(--saura-metallic));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.4s ease;
+  font-weight: 700;
+}
+
+.serviceCard:hover .serviceIcon {
+  background: linear-gradient(135deg, var(--saura-white), var(--saura-light-silver));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: scale(1.08);
+}
+
+.serviceName {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--saura-white);
+  margin: 0;
+}
+
+.serviceDescription {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* ============================================
+   SLIDE 4: OUR APPROACH
+   ============================================ */
+.slideApproach {
+  background: var(--saura-black);
+}
+
+.approachHeader {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.approachTitle {
+  font-size: 40px;
+  color: var(--saura-white);
+  margin: 12px 0 0 0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.approachSubtitle {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 16px;
+  font-weight: 300;
+}
+
+.approachTimeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.approachTimeline::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--saura-silver), var(--saura-white), var(--saura-silver), transparent);
+  z-index: 0;
+}
+
+.timelineStep {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 2px solid var(--saura-silver);
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--saura-light-silver), var(--saura-metallic));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 auto 24px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 30px rgba(192, 192, 192, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+.timelineStep:hover .stepNumber {
+  border-color: var(--saura-white);
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+.stepTitle {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--saura-white);
+  margin: 0 0 12px 0;
+}
+
+.stepDescription {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+  font-weight: 300;
+}
+
+.stepValues {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.valueBadge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  font-size: 11px;
+  color: var(--saura-light-silver);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.timelineStep:hover .valueBadge {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--saura-silver);
+  color: var(--saura-white);
+}
+
+/* ============================================
+   SLIDE 5: IMPACT & RESULTS
+   ============================================ */
+.slideImpact {
+  background: var(--saura-black);
+}
+
+.impactHeader {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.impactTitle {
+  font-size: 40px;
+  color: var(--saura-white);
+  margin: 12px 0 0 0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.impactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+  margin-bottom: 40px;
+}
+
+.impactCard {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.impactCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--saura-silver), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.impactCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--saura-silver);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.12);
+}
+
+.impactCard:hover::before {
+  opacity: 1;
+}
+
+.impactMetric {
+  font-size: 44px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--saura-white), var(--saura-silver));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  line-height: 1;
+  text-shadow: 0 0 30px rgba(192, 192, 192, 0.3);
+}
+
+.impactLabel {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.impactDescription {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 300;
+}
+
+.impactHighlight {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 32px 28px;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+  backdrop-filter: blur(20px);
+}
+
+.highlightText {
+  font-size: 16px;
+  color: var(--saura-white);
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.highlightAccent {
+  background: linear-gradient(135deg, var(--saura-light-silver), var(--saura-silver));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* ============================================
+   SLIDE 6: CALL TO ACTION
+   ============================================ */
+.slideCTA {
+  background: var(--saura-black);
+  justify-content: center;
+}
+
+.ctaContainer {
+  max-width: 800px;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.ctaTitle {
+  font-size: 48px;
+  color: var(--saura-white);
+  margin: 0 0 16px 0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.ctaTitleAccent {
+  background: linear-gradient(135deg, var(--saura-light-silver), var(--saura-silver));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500;
+}
+
+.ctaDescription {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 40px 0;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.ctaButtonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.ctaButton {
+  padding: 14px 40px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border: 2px solid;
+  background: none;
+  text-decoration: none;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+}
+
+.ctaPrimary {
+  background: var(--saura-white);
+  color: var(--saura-black);
+  border-color: var(--saura-white);
+}
+
+.ctaPrimary:hover {
+  background: var(--saura-light-silver);
+  border-color: var(--saura-light-silver);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+.ctaSecondary {
+  background: transparent;
+  color: var(--saura-silver);
+  border-color: var(--saura-silver);
+}
+
+.ctaSecondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--saura-white);
+  color: var(--saura-white);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(192, 192, 192, 0.2);
+}
+
+.ctaFooter {
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ctaFooterText {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  font-weight: 300;
+}
+
+/* ============================================
+   PLACEHOLDER SLIDES
+   ============================================ */
+.slidePlaceholder {
+  background: var(--saura-black);
+}
+
+.placeholderContent {
+  text-align: center;
+}
+
+.placeholderTitle {
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0 0 20px 0;
+  font-weight: 300;
+}
+
+.placeholderText {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1024px) {
+  .slide {
+    padding: 35px 25px;
+  }
+
+  .servicesGrid,
+  .impactGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aboutTitle,
+  .servicesTitle,
+  .approachTitle,
+  .impactTitle {
+    font-size: 32px;
+  }
+
+  .ctaTitle {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    padding: 30px 20px;
+  }
+
+  .logoArabic {
+    font-size: 70px;
+  }
+
+  .logoEnglish {
+    font-size: 28px;
+  }
+
+  .aboutGrid,
+  .servicesGrid,
+  .impactGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .aboutTitle,
+  .servicesTitle,
+  .approachTitle,
+  .impactTitle {
+    font-size: 24px;
+  }
+
+  .aboutCard,
+  .serviceCard {
+    padding: 18px 14px;
+  }
+
+  .aboutStats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .statDivider {
+    width: 50px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--saura-silver), transparent);
+  }
+
+  .approachTimeline {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .approachTimeline::before {
+    width: 2px;
+    height: 100%;
+    left: 40px;
+    top: 0;
+    right: auto;
+    bottom: auto;
+  }
+
+  .ctaTitle {
+    font-size: 28px;
+  }
+
+  .ctaButtonGroup {
+    gap: 12px;
+  }
+
+  .ctaButton {
+    padding: 12px 28px;
+    font-size: 12px;
+  }
+}
