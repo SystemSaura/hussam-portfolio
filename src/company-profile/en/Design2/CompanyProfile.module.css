@@ -3,19 +3,6 @@
    ============================================ */
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
-/* ============================================
-   BLACK & SILVER THEME - COLOR VARIABLES
-   ============================================ */
-:global(:root) {
-  --saura-black: #000000;
-  --saura-dark-grey: #0a0a0a;
-  --saura-silver: #C0C0C0;
-  --saura-light-silver: #E8E8E8;
-  --saura-metallic: #A8A8A8;
-  --saura-white: #FFFFFF;
-  --saura-iridescent: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-}
-
 /* Container */
 .profileContainer {
   width: 100vw;
