@@ -64,12 +64,12 @@ export default function CompanyProfile() {
         />
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Navigation Arrows - Hidden on first slide */}
       <button
         onClick={prevSlide}
         disabled={currentSlide === 0}
         className={`${styles.navArrow} ${styles.navArrowLeft}`}
-        style={{ opacity: currentSlide === 0 ? 0.3 : 1 }}
+        style={{ display: currentSlide === 0 ? 'none' : 'flex' }}
         aria-label="Previous slide"
       >
         ←
@@ -78,7 +78,10 @@ export default function CompanyProfile() {
         onClick={nextSlide}
         disabled={currentSlide === totalSlides - 1}
         className={`${styles.navArrow} ${styles.navArrowRight}`}
-        style={{ opacity: currentSlide === totalSlides - 1 ? 0.3 : 1 }}
+        style={{ 
+          display: currentSlide === 0 ? 'none' : 'flex',
+          opacity: currentSlide === totalSlides - 1 ? 0.3 : 1 
+        }}
         aria-label="Next slide"
       >
         →
