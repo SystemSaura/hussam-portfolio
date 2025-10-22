@@ -512,7 +512,7 @@
 }
 
 /* ============================================
-   SLIDE 4: OUR APPROACH
+   SLIDE 4: OUR APPROACH - FIXED
    ============================================ */
 .slideApproach {
   background: var(--saura-black);
@@ -574,24 +574,22 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.03);
+  background: #000000;
   backdrop-filter: blur(20px);
-  border: 2px solid var(--saura-silver);
+  border: 2px solid rgba(192, 192, 192, 0.8);
   font-size: 36px;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--saura-light-silver), var(--saura-metallic));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #C0C0C0;
   margin: 0 auto 24px;
   transition: all 0.4s ease;
   box-shadow: 0 0 30px rgba(192, 192, 192, 0.2);
   position: relative;
-  z-index: 10;
+  z-index: 2;
 }
 
 .timelineStep:hover .stepNumber {
-  border-color: var(--saura-white);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
   transform: scale(1.08);
   box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
 }
@@ -663,7 +661,7 @@
 }
 
 .impactGrid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
   animation: fadeInUp 0.8s ease-out 0.2s both;
@@ -873,19 +871,20 @@
   text-align: center;
 }
 
-.placeholderTitle {
-  font-size: 48px;
-  color: rgba(255, 255, 255, 0.3);
-  margin: 0 0 20px 0;
-  font-weight: 300;
+.placeholderNumber {
+  font-size: 80px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--saura-light-silver), var(--saura-silver));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
 }
 
 .placeholderText {
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.2);
-  margin: 0;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 300;
-  letter-spacing: 0.1em;
 }
 
 /* ============================================
@@ -894,7 +893,7 @@
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
@@ -905,7 +904,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -913,28 +912,60 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */
 @media (max-width: 1024px) {
-  .slide {
-    padding: 35px 25px;
-  }
-
-  .servicesGrid,
-  .impactGrid {
+  .aboutGrid,
+  .servicesGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .aboutTitle,
-  .servicesTitle,
-  .approachTitle,
-  .impactTitle {
-    font-size: 32px;
+  .approachTimeline {
+    flex-direction: column;
+    gap: 40px;
   }
 
-  .ctaTitle {
-    font-size: 36px;
+  .approachTimeline::before {
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    right: auto;
+    width: 2px;
+    height: auto;
+    background: linear-gradient(to bottom, transparent, var(--saura-silver), var(--saura-white), var(--saura-silver), transparent);
+  }
+
+  .timelineStep {
+    display: flex;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .stepNumber {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .navigation {
+    right: 20px;
+  }
+
+  .navArrowLeft {
+    left: 20px;
+  }
+
+  .navArrowRight {
+    right: 20px;
   }
 }
 
@@ -943,69 +974,73 @@
     padding: 30px 20px;
   }
 
+  .aboutGrid,
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .aboutStats {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .statDivider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .impactGrid {
+    flex-direction: column;
+  }
+
   .logoArabic {
     font-size: 70px;
   }
 
   .logoEnglish {
-    font-size: 28px;
-  }
-
-  .aboutGrid,
-  .servicesGrid,
-  .impactGrid {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    font-size: 32px;
   }
 
   .aboutTitle,
   .servicesTitle,
   .approachTitle,
   .impactTitle {
-    font-size: 24px;
-  }
-
-  .aboutCard,
-  .serviceCard {
-    padding: 18px 14px;
-  }
-
-  .aboutStats {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .statDivider {
-    width: 50px;
-    height: 1px;
-    background: linear-gradient(to right, transparent, var(--saura-silver), transparent);
-  }
-
-  .approachTimeline {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .approachTimeline::before {
-    width: 2px;
-    height: 100%;
-    left: 40px;
-    top: 0;
-    right: auto;
-    bottom: auto;
-  }
-
-  .ctaTitle {
     font-size: 28px;
   }
 
+  .ctaTitle {
+    font-size: 32px;
+  }
+
   .ctaButtonGroup {
+    flex-direction: column;
     gap: 12px;
   }
 
-  .ctaButton {
-    padding: 12px 28px;
-    font-size: 12px;
+  .navigation {
+    right: 12px;
+    gap: 12px;
+  }
+
+  .navDot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .navArrow {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .navArrowLeft {
+    left: 12px;
+    bottom: 20px;
+  }
+
+  .navArrowRight {
+    right: 12px;
+    bottom: 20px;
   }
 }
