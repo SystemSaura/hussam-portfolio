@@ -32,7 +32,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 40px 30px;
+  /* UPDATED: Increased right padding to 180px to account for navigation (arrow at 100px + dots at 40px + spacing) */
+  padding: 40px 180px 40px 120px;
   box-sizing: border-box;
   transform: none;
   background: linear-gradient(135deg, var(--saura-midnight) 0%, var(--saura-deep-blue) 100%);
@@ -308,15 +309,16 @@
    ============================================ */
 .slideServices {
   background: linear-gradient(135deg, var(--saura-midnight) 0%, var(--saura-deep-blue) 100%);
-  padding: 30px 20px;
+  /* Inherits padding from .slide - no need to override */
 }
 .servicesHeader {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   animation: fadeInDown 0.8s ease-out;
 }
 .servicesTitle {
-  font-size: 32px;
+  /* UPDATED: Match Slide 2 title size */
+  font-size: 40px;
   color: var(--saura-white);
   margin: 8px 0 0 0;
   font-weight: 300;
@@ -324,18 +326,20 @@
   line-height: 1.3;
 }
 .servicesDescription {
-  font-size: 12px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 10px;
-  max-width: 650px;
+  margin-top: 12px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 300;
+  line-height: 1.5;
 }
 .servicesGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  /* UPDATED: Increased gap for better spacing */
+  gap: 20px;
   animation: fadeInUp 0.8s ease-out 0.2s both;
   max-width: 1200px;
   margin: 0 auto;
@@ -345,13 +349,13 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(212, 165, 116, 0.3);
   border-radius: 12px;
-  padding: 16px 14px;
+  /* UPDATED: Increased padding for bigger cards */
+  padding: 24px 20px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   position: relative;
-  /* FIXED: Prevent icon from escaping card boundaries */
   overflow: hidden;
 }
 .serviceCard::before {
@@ -375,38 +379,39 @@
   opacity: 1;
 }
 .serviceNumber {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   color: rgba(212, 165, 116, 0.25);
   line-height: 1;
 }
 .serviceIcon {
-  font-size: 22px;
+  /* UPDATED: Increased icon size */
+  font-size: 26px;
   color: var(--saura-gold);
   text-shadow: 0 0 15px rgba(212, 165, 116, 0.3);
   transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
   font-weight: 700;
-  /* FIXED: Keep icon in place - no transforms by default */
   display: inline-block;
   will-change: transform;
 }
 .serviceCard:hover .serviceIcon {
   color: var(--saura-cyan);
   text-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
-  /* FIXED: Scale only, centered within its own boundaries */
   transform: scale(1.05);
 }
 .serviceName {
-  font-size: 14px;
+  /* UPDATED: Increased font size */
+  font-size: 16px;
   font-weight: 500;
   color: var(--saura-white);
   margin: 0;
   line-height: 1.3;
 }
 .serviceDescription {
-  font-size: 11px;
+  /* UPDATED: Increased font size for better readability */
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.65);
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
   font-weight: 300;
 }
@@ -466,7 +471,6 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  /* FIXED: Added solid background layer to prevent line showing through */
   background: var(--saura-midnight), linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(0, 229, 255, 0.08));
   border: 2px solid var(--saura-gold);
   font-size: 36px;
@@ -479,7 +483,6 @@
   z-index: 10;
   text-decoration: none;
 }
-/* FIXED: Add solid background pseudo-element to block the connecting line */
 .stepNumber::before {
   content: '';
   position: absolute;
@@ -489,7 +492,6 @@
   z-index: -1;
 }
 .timelineStep:hover .stepNumber {
-  /* FIXED: Solid background with gradient overlay to prevent line showing through */
   background: var(--saura-midnight), linear-gradient(135deg, rgba(212, 165, 116, 0.3), rgba(0, 229, 255, 0.2));
   border-color: var(--saura-cyan);
   transform: scale(1.08);
@@ -754,7 +756,8 @@
    ============================================ */
 @media (max-width: 1024px) {
   .slide {
-    padding: 35px 25px;
+    /* UPDATED: Maintain proper right padding for navigation on tablets */
+    padding: 35px 140px 35px 100px;
   }
   .servicesGrid,
   .impactGrid {
@@ -772,7 +775,8 @@
 }
 @media (max-width: 768px) {
   .slide {
-    padding: 30px 20px;
+    /* UPDATED: Adjust for mobile - navigation elements are smaller/repositioned */
+    padding: 30px 100px 30px 80px;
   }
   .logoArabic {
     font-size: 70px;
