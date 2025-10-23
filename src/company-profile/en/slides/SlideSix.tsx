@@ -35,32 +35,7 @@ const SlideSix = forwardRef<HTMLElement>((props, ref) => {
           </button>
         </div>
 
-        <div style={{
-          marginTop: '40px',
-          padding: '24px',
-          background: 'rgba(0, 229, 255, 0.05)',
-          border: '1px solid rgba(0, 229, 255, 0.2)',
-          borderRadius: '8px',
-          fontSize: '13px',
-          color: 'rgba(255, 255, 255, 0.8)'
-        }}>
-          <p style={{ margin: '0 0 12px 0', fontSize: '14px', fontWeight: '500', color: 'var(--saura-white)' }}>
-            Contact Information
-          </p>
-          <p style={{ margin: '0 0 8px 0' }}>
-            📧 <a href="mailto:contact@sauragency.com" style={{ color: 'var(--saura-cyan)', textDecoration: 'none' }}>contact@sauragency.com</a>
-          </p>
-          <p style={{ margin: '0 0 8px 0' }}>
-            🌐 <a href="https://www.sauragency.site" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--saura-cyan)', textDecoration: 'none' }}>www.sauragency.site</a>
-          </p>
-          <p style={{ margin: '0 0 16px 0' }}>
-            📍 Based in Sharjah, UAE • Serving GCC Markets
-          </p>
-          <p style={{ margin: '0', fontSize: '12px', color: 'rgba(255, 255, 255, 0.6)' }}>
-            🇦🇪 UAE • 🇸🇦 Saudi Arabia • 🇰🇼 Kuwait • 🇴🇲 Oman • 🇶🇦 Qatar
-          </p>
-        </div>
-
+        
         <div className={styles.ctaFooter}>
           <p className={styles.ctaFooterText}>
             Let's craft something extraordinary together. At dawn, you'll thank us for the journey.

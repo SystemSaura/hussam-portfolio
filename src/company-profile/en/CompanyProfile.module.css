@@ -351,6 +351,7 @@
   flex-direction: column;
   gap: 10px;
   position: relative;
+  /* FIXED: Prevent icon from escaping card boundaries */
   overflow: hidden;
 }
 .serviceCard::before {
@@ -383,16 +384,17 @@
   font-size: 22px;
   color: var(--saura-gold);
   text-shadow: 0 0 15px rgba(212, 165, 116, 0.3);
-  transition: color 0.4s ease, text-shadow 0.4s ease;
+  transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.4s ease;
   font-weight: 700;
-  /* FIXED: Prevent icon from moving out of card */
-  transform: none !important;
+  /* FIXED: Keep icon in place - no transforms by default */
+  display: inline-block;
+  will-change: transform;
 }
 .serviceCard:hover .serviceIcon {
   color: var(--saura-cyan);
   text-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
-  /* FIXED: Only scale, no translate */
-  transform: scale(1.08) !important;
+  /* FIXED: Scale only, centered within its own boundaries */
+  transform: scale(1.05);
 }
 .serviceName {
   font-size: 14px;
@@ -464,8 +466,8 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(0, 229, 255, 0.08)), linear-gradient(135deg, var(--saura-midnight), var(--saura-deep-blue));
-  background-blend-mode: overlay;
+  /* FIXED: Added solid background layer to prevent line showing through */
+  background: var(--saura-midnight), linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(0, 229, 255, 0.08));
   border: 2px solid var(--saura-gold);
   font-size: 36px;
   font-weight: 700;
@@ -475,28 +477,31 @@
   box-shadow: 0 0 25px rgba(212, 165, 116, 0.15);
   position: relative;
   z-index: 10;
-  /* FIXED: Prevent text-decoration from showing */
-  text-decoration: none !important;
+  text-decoration: none;
 }
-/* FIXED: Remove any strikethrough effect */
-.stepNumber::before,
-.stepNumber::after {
-  display: none !important;
+/* FIXED: Add solid background pseudo-element to block the connecting line */
+.stepNumber::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--saura-midnight);
+  z-index: -1;
 }
 .timelineStep:hover .stepNumber {
-  background: linear-gradient(135deg, rgba(212, 165, 116, 0.25), rgba(0, 229, 255, 0.15));
+  /* FIXED: Solid background with gradient overlay to prevent line showing through */
+  background: var(--saura-midnight), linear-gradient(135deg, rgba(212, 165, 116, 0.3), rgba(0, 229, 255, 0.2));
   border-color: var(--saura-cyan);
   transform: scale(1.08);
   box-shadow: 0 0 30px rgba(0, 229, 255, 0.25);
-  /* FIXED: Ensure no text-decoration on hover */
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .stepTitle {
   font-size: 22px;
   font-weight: 500;
   color: var(--saura-white);
   margin: 0 0 12px 0;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .stepDescription {
   font-size: 14px;
@@ -504,7 +509,7 @@
   line-height: 1.6;
   margin: 0 0 16px 0;
   font-weight: 300;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .stepValues {
   margin-top: 12px;
@@ -525,7 +530,7 @@
   letter-spacing: 0.08em;
   font-weight: 500;
   transition: all 0.3s ease;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .timelineStep:hover .valueBadge {
   background: rgba(0, 229, 255, 0.15);
