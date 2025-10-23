@@ -3,13 +3,11 @@ import styles from "../CompanyProfile.module.css";
 
 const SlideSix = forwardRef<HTMLElement>((props, ref) => {
   const handleContactClick = () => {
-    // You can replace this with your actual contact form or email
-    window.location.href = "mailto:hello@saurahq.com";
+    window.location.href = "mailto:contact@sauragency.com";
   };
 
   const handlePortfolioClick = () => {
-    // Navigate to portfolio or schedule demo
-    window.location.href = "/portfolio-thumbnails";
+    window.open("https://www.sauragency.site", "_blank");
   };
 
   return (
@@ -21,25 +19,51 @@ const SlideSix = forwardRef<HTMLElement>((props, ref) => {
         </h2>
 
         <p className={styles.ctaDescription}>
-          Let's embark on a journey together. Like travelers guided by the stars,
-          we'll navigate your brand to new heights of digital excellence and measurable growth.
+          Stop guessing. Start growing predictably. Like travelers guided by stars, 
+          we'll navigate your brand to measurable growth and digital excellence in GCC markets.
         </p>
 
         <div className={styles.ctaButtonGroup}>
           <button className={styles.ctaButton + " " + styles.ctaPrimary} onClick={handleContactClick}>
-            Start Your Journey
+            Book Free 30-Min Consultation
           </button>
           <button
             className={styles.ctaButton + " " + styles.ctaSecondary}
             onClick={handlePortfolioClick}
           >
-            View Our Work
+            View Complete Portfolio
           </button>
+        </div>
+
+        <div style={{
+          marginTop: '40px',
+          padding: '24px',
+          background: 'rgba(0, 229, 255, 0.05)',
+          border: '1px solid rgba(0, 229, 255, 0.2)',
+          borderRadius: '8px',
+          fontSize: '13px',
+          color: 'rgba(255, 255, 255, 0.8)'
+        }}>
+          <p style={{ margin: '0 0 12px 0', fontSize: '14px', fontWeight: '500', color: 'var(--saura-white)' }}>
+            Contact Information
+          </p>
+          <p style={{ margin: '0 0 8px 0' }}>
+            📧 <a href="mailto:contact@sauragency.com" style={{ color: 'var(--saura-cyan)', textDecoration: 'none' }}>contact@sauragency.com</a>
+          </p>
+          <p style={{ margin: '0 0 8px 0' }}>
+            🌐 <a href="https://www.sauragency.site" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--saura-cyan)', textDecoration: 'none' }}>www.sauragency.site</a>
+          </p>
+          <p style={{ margin: '0 0 16px 0' }}>
+            📍 Based in Sharjah, UAE • Serving GCC Markets
+          </p>
+          <p style={{ margin: '0', fontSize: '12px', color: 'rgba(255, 255, 255, 0.6)' }}>
+            🇦🇪 UAE • 🇸🇦 Saudi Arabia • 🇰🇼 Kuwait • 🇴🇲 Oman • 🇶🇦 Qatar
+          </p>
         </div>
 
         <div className={styles.ctaFooter}>
           <p className={styles.ctaFooterText}>
-            Let's craft something extraordinary together.
+            Let's craft something extraordinary together. At dawn, you'll thank us for the journey.
           </p>
         </div>
       </div>

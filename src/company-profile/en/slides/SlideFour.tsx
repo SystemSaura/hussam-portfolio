@@ -5,24 +5,31 @@ const SlideFour = forwardRef<HTMLElement>((props, ref) => {
   const steps = [
     {
       number: "1",
-      title: "We Plan",
+      title: "Discovery",
       description:
-        "Strategic planning grounded in deep market research and your unique business objectives.",
-      values: ["Analysis", "Strategy", "Insight"],
+        "Marketing audit & competitor analysis. Goal alignment & metrics definition. We map your current position and define clear success criteria.",
+      values: ["Analysis", "Research", "Strategy"],
     },
     {
       number: "2",
-      title: "We Perfect",
+      title: "Strategy",
       description:
-        "Meticulous execution with attention to every detail, ensuring excellence in every deliverable.",
-      values: ["Excellence", "Precision", "Quality"],
+        "Messaging architecture development. Channel strategy & budget allocation. We build your 90-day execution plan grounded in data.",
+      values: ["Planning", "Architecture", "Roadmap"],
     },
     {
       number: "3",
-      title: "We Push Forward",
+      title: "Execution",
       description:
-        "Continuous optimization and growth mindset, driving measurable impact and sustained success.",
-      values: ["Performance", "Impact", "Growth"],
+        "Content creation in Arabic & English. Campaign launch & management. Active campaigns with continuous monitoring and reporting.",
+      values: ["Content", "Launch", "Management"],
+    },
+    {
+      number: "4",
+      title: "Optimization",
+      description:
+        "A/B testing & conversion optimization. Budget reallocation & scaling. Predictable, scalable growth through continuous improvement.",
+      values: ["Testing", "Scaling", "Growth"],
     },
   ];
 
@@ -30,12 +37,12 @@ const SlideFour = forwardRef<HTMLElement>((props, ref) => {
     <section ref={ref} className={`${styles.slide} ${styles.slideApproach}`}>
       <div className={styles.slideContent}>
         <div className={styles.approachHeader}>
-          <span className={styles.sectionLabel}>Our Methodology</span>
+          <span className={styles.sectionLabel}>Our Process</span>
           <h2 className={styles.approachTitle}>
-            How We Work
+            How We Guide Your Journey to Growth
           </h2>
           <p className={styles.approachSubtitle}>
-            Truthful. Serious. Powerful. We bring authenticity and excellence to every project.
+            Like travelers who planned their route by the stars, we follow a proven framework to ensure your marketing delivers results.
           </p>
         </div>
 

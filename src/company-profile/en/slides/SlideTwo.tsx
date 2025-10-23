@@ -8,7 +8,7 @@ const SlideTwo = forwardRef<HTMLElement>((props, ref) => {
         <div className={styles.aboutHeader}>
           <span className={styles.sectionLabel}>Who We Are</span>
           <h2 className={styles.aboutTitle}>
-            Guiding Brands Through Digital Excellence
+            Guiding GCC Brands Through Digital Excellence
           </h2>
         </div>
 
@@ -17,9 +17,7 @@ const SlideTwo = forwardRef<HTMLElement>((props, ref) => {
             <div className={styles.cardIcon}>✦</div>
             <h3 className={styles.cardTitle}>Our Mission</h3>
             <p className={styles.cardText}>
-              Like the night travelers of old who journeyed through darkness
-              guided by stars, we navigate the digital landscape to bring your
-              brand to new horizons.
+              Like travelers guided by stars, we navigate the digital landscape to bring your brand to new horizons with deep GCC cultural intelligence, and data-driven strategies.
             </p>
           </div>
 
@@ -27,9 +25,7 @@ const SlideTwo = forwardRef<HTMLElement>((props, ref) => {
             <div className={styles.cardIcon}>◈</div>
             <h3 className={styles.cardTitle}>Our Approach</h3>
             <p className={styles.cardText}>
-              We blend strategic thinking with creative execution, ensuring
-              every campaign tells a compelling story that resonates with your
-              audience.
+              We combine strategic thinking with flawless execution. We build marketing systems grounded in market research and tailored to GCC buyer behavior. 
             </p>
           </div>
 
@@ -37,8 +33,7 @@ const SlideTwo = forwardRef<HTMLElement>((props, ref) => {
             <div className={styles.cardIcon}>✧</div>
             <h3 className={styles.cardTitle}>Our Promise</h3>
             <p className={styles.cardText}>
-              When morning comes, you'll see the results of our journey
-              together—measurable growth, lasting impact, and brand excellence.
+              When morning comes, you'll see the results of our journey together: measurable results that justify your investment with clear ROI tracking on every campaign
             </p>
           </div>
         </div>

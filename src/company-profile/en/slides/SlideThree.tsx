@@ -6,44 +6,44 @@ const SlideThree = forwardRef<HTMLElement>((props, ref) => {
     {
       number: "01",
       icon: "◆",
-      name: "Marketing Strategy",
+      name: "Marketing Strategy & System Audits",
       description:
-        "We craft comprehensive digital strategies tailored to your B2B goals, blending market research with actionable execution plans.",
+        "Deep-dive analysis of your marketing stack, messaging, and conversion paths. We identify revenue leaks and build comprehensive roadmaps that align channels, metrics, and messaging toward predictable growth.",
     },
     {
       number: "02",
       icon: "◈",
       name: "Social Media Management",
       description:
-        "Strategic content creation and community building across platforms that resonate with your target audience and drive engagement.",
+        "Strategic content and community building across LinkedIn, Twitter/X, and Instagram. Culturally-relevant campaigns that drive real engagement with GCC audiences.",
     },
     {
       number: "03",
       icon: "◉",
-      name: "SEO & Search Excellence",
+      name: "SEO & Content Strategy",
       description:
-        "Technical and organic SEO optimization to elevate your brand visibility and capture high-intent business opportunities.",
+        "Technical and organic SEO optimization for Arabic and English audiences. We elevate brand visibility in local search and capture high-intent opportunities across GCC markets.",
     },
     {
       number: "04",
       icon: "◊",
       name: "Content & Copywriting",
       description:
-        "Compelling narratives and persuasive copy that communicate your value proposition with precision and impact.",
+        "Compelling narratives that communicate your value proposition with cultural precision. From website content to thought leadership—in perfect Arabic or English.",
     },
     {
       number: "05",
       icon: "✦",
-      name: "Campaign Execution",
+      name: "Email Marketing Campaigns",
       description:
-        "End-to-end campaign management from strategy through optimization, delivering measurable results every time.",
+        "High-converting email strategies that nurture prospects and retain customers with culturally-relevant messaging and proven conversion frameworks.",
     },
     {
       number: "06",
       icon: "▲",
-      name: "Paid Advertising",
+      name: "Integrated Campaign Management",
       description:
-        "Data-driven ad campaigns across platforms, maximizing ROI and ensuring every budget dollar works harder.",
+        "End-to-end execution from strategy through optimization. We combine Google Ads, content marketing, and social media into cohesive systems that deliver measurable results every time.",
     },
   ];
 
@@ -53,10 +53,10 @@ const SlideThree = forwardRef<HTMLElement>((props, ref) => {
         <div className={styles.servicesHeader}>
           <span className={styles.sectionLabel}>What We Deliver</span>
           <h2 className={styles.servicesTitle}>
-            Comprehensive Digital Solutions
+            Digital Solutions That Drive Revenue
           </h2>
           <p className={styles.servicesDescription}>
-            From strategy to execution, we provide end-to-end digital marketing services designed to accelerate your B2B growth.
+            End-to-end B2B marketing services delivered in perfect Arabic and English, with deep understanding of GCC regulations, culture, and buyer behavior.
           </p>
         </div>
 
