@@ -23,7 +23,7 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  direction: ltr;
+  direction: rtl;
   flex-direction: row;
 }
 
@@ -207,8 +207,8 @@
 .nextSlideBtn {
   position: absolute;
   bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 40px;
+  transform: none;
   background: none;
   border: 2px solid var(--saura-cyan);
   color: var(--saura-cyan);
@@ -218,18 +218,18 @@
   font-size: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
-  animation: bounce 2s infinite;
+  animation: bounceRTL 2s infinite;
 }
 
 .nextSlideBtn:hover {
   background: var(--saura-cyan);
   color: var(--saura-midnight);
-  transform: translateX(-50%) scale(1.1);
+  transform: scale(1.1);
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-10px); }
+@keyframes bounceRTL {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-10px); }
 }
 
 /* ============================================

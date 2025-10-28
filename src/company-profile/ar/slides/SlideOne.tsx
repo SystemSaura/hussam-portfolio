@@ -20,16 +20,16 @@ const SlideOne = forwardRef<HTMLElement, SlideOneProps>(({ onNext }, ref) => {
             "عند الصباح يحمد القوم السُرَى"
           </p>
           <p className={styles.proverbTranslation}>
-            In the morning, people praise the night journey
+            في الصباح، يُحمد السفر الليلي
           </p>
         </div>
       </div>
       <button
         onClick={onNext}
         className={styles.nextSlideBtn}
-        aria-label="الصفحة التالية"
+        aria-label="الشريحة التالية"
       >
-        →
+        ←
       </button>
     </section>
   );

@@ -1,6 +1,6 @@
 import { useState, useEffect, RefObject } from "react";
 
-// test
+// RTL version for Arabic
 
 interface UseSlideNavigationProps {
   totalSlides: number;
@@ -13,14 +13,14 @@ export default function useSlideNavigation({
 }: UseSlideNavigationProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Navigate to specific slide
+  // Navigate to specific slide - RTL compatible
   const goToSlide = (index: number) => {
     if (index >= 0 && index < totalSlides && slideRefs.current?.[index]) {
       setCurrentSlide(index);
       slideRefs.current[index]?.scrollIntoView({
         behavior: "smooth",
         block: "nearest",
-        inline: "start",
+        inline: "end", // Changed from "start" to "end" for RTL
       });
     }
   };
@@ -39,11 +39,12 @@ export default function useSlideNavigation({
     }
   };
 
-  // Keyboard navigation
+  // Keyboard navigation - Flipped for RTL
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") nextSlide();
-      if (e.key === "ArrowLeft") prevSlide();
+      // RTL: ArrowLeft goes next, ArrowRight goes previous
+      if (e.key === "ArrowLeft") nextSlide();
+      if (e.key === "ArrowRight") prevSlide();
     };
 
     window.addEventListener("keydown", handleKeyDown);

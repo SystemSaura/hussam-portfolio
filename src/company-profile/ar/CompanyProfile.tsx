@@ -63,7 +63,7 @@ export default function CompanyProfile() {
         />
       </div>
 
-      {/* Navigation Arrows - Hidden on first slide */}
+      {/* Navigation Arrows - Hidden on first slide - RTL: arrows swapped */}
       <button
         onClick={prevSlide}
         disabled={currentSlide === 0}
@@ -71,7 +71,7 @@ export default function CompanyProfile() {
         style={{ display: currentSlide === 0 ? 'none' : 'flex' }}
         aria-label="الشريحة السابقة"
       >
-        ←
+        →
       </button>
       <button
         onClick={nextSlide}
@@ -83,7 +83,7 @@ export default function CompanyProfile() {
         }}
         aria-label="الشريحة التالية"
       >
-        →
+        ←
       </button>
     </div>
   );
