@@ -174,7 +174,7 @@
 }
 
 .tagline {
-  font-size: 18px;
+  font-size: 25px;
   color: var(--saura-white);
   margin-bottom: 40px;
   font-weight: 400;
@@ -248,7 +248,7 @@
 
 .sectionLabel {
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--saura-cyan);
   text-transform: uppercase;
   letter-spacing: 0.15em;

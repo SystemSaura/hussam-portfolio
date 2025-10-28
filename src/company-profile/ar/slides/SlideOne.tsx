@@ -20,7 +20,7 @@ const SlideOne = forwardRef<HTMLElement, SlideOneProps>(({ onNext }, ref) => {
             "عند الصباح يحمد القوم السُرَى"
           </p>
           <p className={styles.proverbTranslation}>
-            في الصباح، يُحمد السفر الليلي
+            In the morning, people praise the night journey
           </p>
         </div>
       </div>
