@@ -32,30 +32,20 @@ export default function LanguageSelection() {
       <div className={styles.content}>
         {/* Logo Mark */}
         <div className={styles.logoMark}>
-          <div className={styles.arabicMark}>سُرى</div>
-          <div className={styles.separator} />
           <div className={styles.englishMark}>SAURA</div>
+          <div className={styles.separator} />
+          <div className={styles.arabicMark}>سُرى</div>
         </div>
 
         {/* Instruction */}
         <div className={styles.instruction}>
-          <span className={styles.instructionAr}>اختر لغتك</span>
-          <span className={styles.instructionDot}>•</span>
           <span className={styles.instructionEn}>Choose Language</span>
+          <span className={styles.instructionDot}>•</span>
+          <span className={styles.instructionAr}>اختر لغتك</span>
         </div>
 
         {/* Language Buttons */}
         <div className={styles.languageButtons}>
-          <button
-            onClick={() => handleLanguageSelect("ar")}
-            disabled={isTransitioning}
-            className={`${styles.languageButton} ${styles.arabicButton}`}
-            aria-label="اختر العربية"
-          >
-            <span className={styles.buttonText}>العربية</span>
-            <span className={styles.buttonArrow}>←</span>
-          </button>
-
           <button
             onClick={() => handleLanguageSelect("en")}
             disabled={isTransitioning}
@@ -64,6 +54,16 @@ export default function LanguageSelection() {
           >
             <span className={styles.buttonText}>English</span>
             <span className={styles.buttonArrow}>→</span>
+          </button>
+
+          <button
+            onClick={() => handleLanguageSelect("ar")}
+            disabled={isTransitioning}
+            className={`${styles.languageButton} ${styles.arabicButton}`}
+            aria-label="اختر العربية"
+          >
+            <span className={styles.buttonText}>العربية</span>
+            <span className={styles.buttonArrow}>←</span>
           </button>
         </div>
 
