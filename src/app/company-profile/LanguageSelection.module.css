@@ -1,0 +1,378 @@
+/* ============================================
+   LANGUAGE SELECTION - MINIMAL & CREATIVE
+   ============================================ */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: #000814;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Work Sans', -apple-system, sans-serif;
+}
+
+/* ============================================
+   AMBIENT BACKGROUND EFFECTS
+   ============================================ */
+.ambientGlow {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 229, 255, 0.03) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: pulse 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.ambientGlow2 {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(212, 165, 116, 0.02) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: pulse 10s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1) translateY(0); opacity: 1; }
+  50% { transform: scale(1.1) translateY(-20px); opacity: 0.8; }
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+.content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   LOGO MARK
+   ============================================ */
+.logoMark {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  animation: fadeIn 1s ease-out 0.2s both;
+}
+
+.arabicMark {
+  font-size: 72px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Amiri', serif;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 60px rgba(255, 255, 255, 0.15);
+}
+
+.separator {
+  width: 2px;
+  height: 60px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(212, 165, 116, 0.6),
+    transparent
+  );
+}
+
+.englishMark {
+  font-size: 48px;
+  font-weight: 300;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(212, 165, 116, 0.8)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.3em;
+}
+
+/* ============================================
+   INSTRUCTION TEXT
+   ============================================ */
+.instruction {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-out 0.4s both;
+}
+
+.instructionAr {
+  font-family: 'Cairo', sans-serif;
+  font-size: 18px;
+}
+
+.instructionDot {
+  color: rgba(0, 229, 255, 0.6);
+  font-size: 8px;
+}
+
+.instructionEn {
+  font-size: 14px;
+}
+
+/* ============================================
+   LANGUAGE BUTTONS
+   ============================================ */
+.languageButtons {
+  display: flex;
+  gap: 32px;
+  animation: fadeIn 1s ease-out 0.6s both;
+}
+
+.languageButton {
+  position: relative;
+  padding: 24px 60px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.languageButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 165, 116, 0.6),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.languageButton:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 165, 116, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+              0 0 40px rgba(212, 165, 116, 0.1);
+}
+
+.languageButton:hover:not(:disabled)::before {
+  opacity: 1;
+}
+
+.languageButton:active:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.languageButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.arabicButton {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+
+.arabicButton:hover:not(:disabled) {
+  border-color: rgba(0, 229, 255, 0.6);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+              0 0 40px rgba(0, 229, 255, 0.1);
+}
+
+.englishButton {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.buttonText {
+  transition: transform 0.4s ease;
+}
+
+.buttonArrow {
+  font-size: 20px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.4s ease;
+}
+
+.languageButton:hover:not(:disabled) .buttonText {
+  transform: translateX(-8px);
+}
+
+.languageButton:hover:not(:disabled) .buttonArrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.arabicButton:hover:not(:disabled) .buttonText {
+  transform: translateX(8px);
+}
+
+.arabicButton:hover:not(:disabled) .buttonArrow {
+  transform: translateX(0);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+  animation: fadeIn 1s ease-out 0.8s both;
+}
+
+.footerLine {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+}
+
+.footerText {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* ============================================
+   TRANSITION OVERLAY
+   ============================================ */
+.transitionOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000814;
+  z-index: 9999;
+  animation: fadeInOverlay 0.3s ease-out forwards;
+}
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 768px) {
+  .arabicMark {
+    font-size: 56px;
+  }
+
+  .englishMark {
+    font-size: 36px;
+  }
+
+  .separator {
+    height: 45px;
+  }
+
+  .instruction {
+    font-size: 14px;
+    gap: 12px;
+  }
+
+  .instructionAr {
+    font-size: 16px;
+  }
+
+  .languageButtons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .languageButton {
+    padding: 20px 50px;
+    font-size: 24px;
+    width: 280px;
+    justify-content: center;
+  }
+
+  .ambientGlow,
+  .ambientGlow2 {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arabicMark {
+    font-size: 48px;
+  }
+
+  .englishMark {
+    font-size: 28px;
+  }
+
+  .languageButton {
+    padding: 18px 40px;
+    font-size: 22px;
+    width: 240px;
+  }
+}

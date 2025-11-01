@@ -1,6 +1,5 @@
-// src/app/company-profile/en/page.tsx
-import CompanyProfile from "@/company-profile/en/CompanyProfile";
+import LanguageSelection from "./LanguageSelection";
 
-export default function CompanyProfilePage() {
-  return <CompanyProfile />;
+export default function CompanyProfileLanding() {
+  return <LanguageSelection />;
 }
