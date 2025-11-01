@@ -23,7 +23,7 @@ export default function LanguageSelection() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} dir="ltr">
       {/* Ambient Background Effects */}
       <div className={styles.ambientGlow} />
       <div className={styles.ambientGlow2} />
