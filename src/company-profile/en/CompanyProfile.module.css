@@ -179,9 +179,11 @@
   font-family: 'Amiri', sans-serif;
 }
 .proverbTranslation {
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 0.02em;
 }
 .nextSlideBtn {
   position: absolute;

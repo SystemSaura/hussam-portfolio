@@ -182,12 +182,12 @@
 }
 
 .tagline {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--saura-white);
   margin-bottom: 40px;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: 'Cairo', sans-serif;
 }
 
 .heroSubtext {
@@ -207,10 +207,12 @@
 }
 
 .proverbTranslation {
-  font-size: 16px;
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
   direction: ltr;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 0.02em;
 }
 
 .nextSlideBtn {
