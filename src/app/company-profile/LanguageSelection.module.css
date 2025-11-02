@@ -1,5 +1,10 @@
 /* ============================================
-   LANGUAGE SELECTION - MINIMAL & CREATIVE
+   GOOGLE FONTS IMPORT
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ============================================
+   LANGUAGE SELECTION - SAURA BRAND ALIGNED
    ============================================ */
 
 .container {
@@ -7,7 +12,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background: #000814;
+  background: var(--saura-midnight);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +30,7 @@
   height: 600px;
   background: radial-gradient(
     circle,
-    rgba(0, 229, 255, 0.03) 0%,
+    rgba(0, 229, 255, 0.04) 0%,
     transparent 70%
   );
   border-radius: 50%;
@@ -41,7 +46,7 @@
   height: 500px;
   background: radial-gradient(
     circle,
-    rgba(212, 165, 116, 0.02) 0%,
+    rgba(212, 165, 116, 0.03) 0%,
     transparent 70%
   );
   border-radius: 50%;
@@ -91,10 +96,10 @@
 .arabicMark {
   font-size: 72px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--saura-white);
   font-family: 'Amiri', serif;
   letter-spacing: 0.05em;
-  text-shadow: 0 0 60px rgba(255, 255, 255, 0.15);
+  text-shadow: 0 0 40px var(--saura-cyan);
 }
 
 .separator {
@@ -103,7 +108,7 @@
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(212, 165, 116, 0.6),
+    var(--saura-gold),
     transparent
   );
 }
@@ -111,15 +116,10 @@
 .englishMark {
   font-size: 48px;
   font-weight: 300;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.9),
-    rgba(212, 165, 116, 0.8)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--saura-gold);
   background-clip: text;
   letter-spacing: 0.3em;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* ============================================
@@ -130,7 +130,7 @@
   align-items: center;
   gap: 16px;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 300;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -138,17 +138,18 @@
 }
 
 .instructionAr {
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Amiri', serif;
   font-size: 18px;
 }
 
 .instructionDot {
-  color: rgba(0, 229, 255, 0.6);
+  color: var(--saura-cyan);
   font-size: 8px;
 }
 
 .instructionEn {
   font-size: 14px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* ============================================
@@ -163,15 +164,15 @@
 .languageButton {
   position: relative;
   padding: 24px 60px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 165, 116, 0.3);
+  border-radius: 12px;
+  color: var(--saura-white);
   font-size: 28px;
   font-weight: 400;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -184,11 +185,11 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
+  height: 2px;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(212, 165, 116, 0.6),
+    var(--saura-gold),
     transparent
   );
   opacity: 0;
@@ -196,11 +197,10 @@
 }
 
 .languageButton:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(212, 165, 116, 0.6);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--saura-gold);
   transform: translateY(-4px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
-              0 0 40px rgba(212, 165, 116, 0.1);
+  box-shadow: 0 12px 24px rgba(212, 165, 116, 0.12);
 }
 
 .languageButton:hover:not(:disabled)::before {
@@ -217,14 +217,13 @@
 }
 
 .arabicButton {
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Amiri', serif;
   direction: rtl;
 }
 
 .arabicButton:hover:not(:disabled) {
-  border-color: rgba(0, 229, 255, 0.6);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
-              0 0 40px rgba(0, 229, 255, 0.1);
+  border-color: var(--saura-cyan);
+  box-shadow: 0 12px 24px rgba(0, 229, 255, 0.12);
 }
 
 .englishButton {
@@ -242,6 +241,7 @@
   opacity: 0;
   transform: translateX(-10px);
   transition: all 0.4s ease;
+  color: var(--saura-gold);
 }
 
 .languageButton:hover:not(:disabled) .buttonText {
@@ -259,6 +259,7 @@
 
 .arabicButton:hover:not(:disabled) .buttonArrow {
   transform: translateX(0);
+  color: var(--saura-cyan);
 }
 
 /* ============================================
@@ -279,18 +280,19 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.2),
+    var(--saura-gold),
     transparent
   );
 }
 
 .footerText {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 300;
   margin: 0;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* ============================================
@@ -302,7 +304,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #000814;
+  background: var(--saura-midnight);
   z-index: 9999;
   animation: fadeInOverlay 0.3s ease-out forwards;
 }
