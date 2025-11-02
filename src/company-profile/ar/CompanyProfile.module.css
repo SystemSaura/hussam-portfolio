@@ -132,7 +132,11 @@
    ============================================ */
 .slideHero {
   background: linear-gradient(135deg, var(--saura-midnight) 0%, var(--saura-deep-blue) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 60px 40px;
 }
 
 .heroContent {
@@ -140,6 +144,10 @@
   position: relative;
   z-index: 10;
   direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logoContainer {
@@ -174,16 +182,17 @@
 }
 
 .tagline {
-  font-size: 25px;
+  font-size: 18px;
   color: var(--saura-white);
   margin-bottom: 40px;
-  font-weight: 400;
-  letter-spacing: 0.08em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .heroSubtext {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 90px auto;
   direction: rtl;
 }
 
@@ -192,23 +201,23 @@
   color: var(--saura-gold);
   margin-bottom: 12px;
   font-weight: 500;
+  font-style: italic;
   direction: rtl;
   font-family: 'Amiri', serif;
-  line-height: 1.8;
 }
 
 .proverbTranslation {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
-  direction: rtl;
+  direction: ltr;
 }
 
 .nextSlideBtn {
   position: absolute;
   bottom: 40px;
-  left: 40px;
-  transform: none;
+  left: 50%;
+  transform: translateX(-50%);
   background: none;
   border: 2px solid var(--saura-cyan);
   color: var(--saura-cyan);
@@ -218,18 +227,18 @@
   font-size: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
-  animation: bounceRTL 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 .nextSlideBtn:hover {
   background: var(--saura-cyan);
   color: var(--saura-midnight);
-  transform: scale(1.1);
+  transform: translateX(-50%) scale(1.1);
 }
 
-@keyframes bounceRTL {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(-10px); }
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
 }
 
 /* ============================================
@@ -894,6 +903,10 @@
   .slide {
     /* RTL: Flipped padding for mobile */
     padding: 30px 80px 30px 100px;
+  }
+  
+  .slideHero {
+    padding: 30px 20px;
   }
   
   .logoArabic {

@@ -116,12 +116,20 @@
    ============================================ */
 .slideHero {
   background: linear-gradient(135deg, var(--saura-midnight) 0%, var(--saura-deep-blue) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 60px 40px;
 }
 .heroContent {
   text-align: center;
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .logoContainer {
   margin-bottom: 30px;
@@ -159,7 +167,7 @@
 }
 .heroSubtext {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 90px auto;
 }
 .arabicProverb {
   font-size: 26px;
