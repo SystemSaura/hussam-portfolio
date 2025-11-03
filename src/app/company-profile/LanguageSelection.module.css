@@ -176,7 +176,10 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
+  width: 280px;
+  min-width: 280px;
 }
 
 .languageButton::before {
@@ -238,8 +241,8 @@
 
 .buttonArrow {
   font-size: 20px;
-  opacity: 0;
-  transform: translateX(-10px);
+  opacity: 1;
+  transform: translateX(0);
   transition: all 0.4s ease;
   color: var(--saura-gold);
 }
