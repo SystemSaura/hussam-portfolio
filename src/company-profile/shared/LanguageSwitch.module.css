@@ -1,0 +1,61 @@
+/* ============================================
+   LANGUAGE SWITCH - SAURA BRAND ALIGNED (REFINED)
+   ============================================ */
+
+.languageSwitch {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 200;
+  
+  /* Sizing - Reduced from 48px to 40px for more refined appearance */
+  width: 40px;
+  height: 40px;
+  
+  /* Styling - More subtle and elegant */
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 165, 116, 0.2);
+  border-radius: 6px;
+  
+  /* Content - Reduced font size for elegance */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--saura-gold);
+  font-family: 'Amiri', 'Work Sans', sans-serif;
+  
+  /* Interaction */
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Remove default button styles */
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.languageSwitch:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--saura-gold);
+  color: var(--saura-white);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(212, 165, 116, 0.2);
+}
+
+.languageSwitch:active {
+  transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .languageSwitch {
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+}

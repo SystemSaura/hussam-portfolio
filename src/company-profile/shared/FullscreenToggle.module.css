@@ -1,0 +1,59 @@
+/* ============================================
+   FULLSCREEN TOGGLE - SAURA BRAND ALIGNED (REFINED)
+   ============================================ */
+
+.fullscreenToggle {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 200;
+  
+  /* Sizing - Reduced from 48px to 40px to match language switch */
+  width: 40px;
+  height: 40px;
+  
+  /* Styling - More subtle and elegant */
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  
+  /* Content - Reduced font size for elegance */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  
+  /* Interaction */
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Remove default button styles */
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.fullscreenToggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--saura-cyan);
+  color: var(--saura-cyan);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
+}
+
+.fullscreenToggle:active {
+  transform: scale(0.98);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fullscreenToggle {
+    top: 20px;
+    left: 20px;
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+}

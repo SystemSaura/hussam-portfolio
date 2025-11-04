@@ -1,7 +1,10 @@
 "use client";
+
 import { useRef } from "react";
 import styles from "./CompanyProfile.module.css";
 import useSlideNavigation from "./hooks/useSlideNavigation";
+import FullscreenToggle from "@/company-profile/shared/FullscreenToggle";
+import LanguageSwitch from "@/company-profile/shared/LanguageSwitch";
 import SlideOne from "./slides/SlideOne";
 import SlideTwo from "./slides/SlideTwo";
 import SlideThree from "./slides/SlideThree";
@@ -20,6 +23,12 @@ export default function CompanyProfile() {
 
   return (
     <div className={styles.profileContainer}>
+      {/* Fullscreen Toggle - Top Left */}
+      <FullscreenToggle />
+      
+      {/* Language Switch - Top Right - FIXED: Changed from "en" to "ar" */}
+      <LanguageSwitch currentLanguage="ar" />
+      
       {/* Navigation Dots */}
       <div className={styles.navigation}>
         {[...Array(totalSlides)].map((_, index) => (
