@@ -72,7 +72,7 @@ export default function Testimonials() {
                     alt="Abdullah Aballkhail"
                     width={40}
                     height={40}
-                    className="w-full h-full object-cover rounded-full"
+                    className="block w-full h-full object-cover object-top"
                   />
                 </div>
                 <div>
@@ -109,7 +109,7 @@ export default function Testimonials() {
                     alt="Shahid Raufi"
                     width={40}
                     height={40}
-                    className="w-full h-full object-cover rounded-full"
+                    className="block w-full h-full object-cover object-top"
                   />
                 </div>
                 <div>

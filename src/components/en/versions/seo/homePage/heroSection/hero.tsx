@@ -46,7 +46,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             {/* Desktop Arrow - Horizontal */}
             <div className={styles.arrowDesktop}>
               <Image
-                src="https://ext.same-assets.com/3287453319/171477844.svg"
+                src="/arrow-right.svg"
                 alt="Arrow pointing right"
                 width={56.13}
                 height={56.84}
@@ -56,7 +56,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             {/* Mobile Arrow - Vertical */}
             <div className={styles.arrowMobile}>
               <Image
-                src="https://ext.same-assets.com/3287453319/3126314943.svg"
+                src="/arrow-down.svg"
                 alt="Arrow pointing down"
                 width={48}
                 height={48}

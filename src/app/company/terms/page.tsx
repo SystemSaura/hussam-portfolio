@@ -1,13 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Terms() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-     <header className="navComponent">
+      <header className="navComponent">
         <div className="navContainer">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -16,27 +15,21 @@ export default function Terms() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-0">
-            <a href="#" className="nav-link">About</a>
-            <a href="#" className="nav-link">Case Studies</a>
-            <a href="#" className="nav-link">Services</a>
-            <a href="#" className="nav-link">Work</a>
+            <Link href="/" className="nav-link">About</Link>
+            <Link href="/" className="nav-link">Portfolio</Link>
+            <Link href="/" className="nav-link">Services</Link>
           </nav>
 
-          {/* Right side buttons */}
+          {/* Right side button */}
           <div className="flex items-center space-x-4">
-            <button className="nav-login-button-centered hidden sm:block">My Work</button>
-            <button className="nav-button-strategy">
+            <Link
+              href="https://www.upwork.com/freelancers/~01630436400e1bdae3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-button-strategy"
+            >
               Consultation
-            </button>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button className="nav-link p-2">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            </Link>
           </div>
         </div>
       </header>
@@ -55,11 +48,11 @@ export default function Terms() {
 
           <div className="prose prose-lg max-w-none">
             <div className="space-y-8 work-sans-body leading-relaxed">
-              
+
               <div>
                 <h2 className="services-title mb-4">1. Agreement to Terms</h2>
                 <p>
-                  By accessing and using the services provided by Saura Agency LLC ("Company," "we," or "us"), you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using our services.
+                  By accessing and using the services provided by Saura Agency LLC (&ldquo;Company,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;), you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using our services.
                 </p>
               </div>
 
@@ -194,38 +187,32 @@ export default function Terms() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-[#001C46] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-8 mb-4 md:mb-0">
-              <Link href="/" className="text-xl font-semibold">Hussam Baaka</Link>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+              <Link href="/" className="text-xl font-semibold font-['Work_Sans']">Hussam Baaka</Link>
             </div>
 
-            <div className="flex items-center space-x-6 mb-4 md:mb-0">
-              <span className="text-gray-400 text-sm">© 2025 Saura Agency LLC</span>
-              <a href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
-              <a href="/terms" className="text-gray-400 hover:text-white text-sm">Terms</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">More About Me</a>
+            <div className="flex items-center flex-wrap justify-center gap-4 sm:gap-6 text-sm">
+              <span className="text-gray-400">© 2025 Saura Agency LLC</span>
+              <Link href="/company/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/company/terms" className="text-gray-400 hover:text-white transition-colors">Terms</Link>
+              <Link href="/" className="text-gray-400 hover:text-white transition-colors">More About Me</Link>
             </div>
 
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/1536601012.svg"
-                  alt="Twitter"
-                  width={20}
-                  height={20}
-                  className="filter invert"
-                />
+              {/* Twitter/X icon */}
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="https://ext.same-assets.com/3287453319/51193599.svg"
-                  alt="LinkedIn"
-                  width={20}
-                  height={20}
-                  className="filter invert"
-                />
+              {/* LinkedIn icon */}
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
               </a>
             </div>
           </div>

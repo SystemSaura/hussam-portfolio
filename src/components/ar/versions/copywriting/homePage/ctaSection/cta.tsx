@@ -26,7 +26,7 @@ export default function CTA() {
 
         <div className="mb-8">
           <Image
-            src="https://ext.same-assets.com/3287453319/3126314943.svg"
+            src="/arrow-down.svg"
             alt="سهم للأسفل"
             width={48}
             height={48}

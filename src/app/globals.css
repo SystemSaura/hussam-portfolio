@@ -186,6 +186,149 @@
 [dir="rtl"] .transform svg {
   transform: scaleX(-1);
 }
+/* =========================================
+   GLOBAL UTILITY CLASSES (used in company pages)
+   ========================================= */
+
+/* Navigation */
+.navComponent {
+  background-color: #F2F5FA;
+  width: 100%;
+  height: 51.15px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navContainer {
+  margin: 0 85.7266px 0 85.7188px;
+  height: 50.65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-name {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #001C46;
+  text-decoration: none;
+}
+
+.cursor-blink {
+  color: #2762F8;
+  animation: cursor-blink-anim 1s infinite;
+}
+
+@keyframes cursor-blink-anim {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.nav-link {
+  color: #222222;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11.3675px;
+  font-weight: 300;
+  padding: 5.68374px 8.52561px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.nav-link:hover {
+  color: #000000;
+}
+
+.nav-login-button-centered {
+  color: #001C46;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11.3675px;
+  font-weight: 300;
+  padding: 0 17.0512px;
+  border: 1px solid #001C46;
+  border-radius: 9999px;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 31.26px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.nav-login-button-centered:hover {
+  background-color: #FFFFFF;
+  color: #2762F8;
+  border-color: #2762F8;
+}
+
+.nav-button-strategy {
+  background-color: #001C46;
+  color: #FFFFFF;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11.3675px;
+  font-weight: 300;
+  padding: 0 17.0512px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 36px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.nav-button-strategy:hover {
+  background-color: #2762F8;
+  color: #FFFFFF;
+}
+
+/* Typography */
+.flecha-section-heading {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 34.1024px;
+  font-weight: normal;
+  color: #001C46;
+  line-height: 1.2;
+}
+
+.work-sans-body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.services-title {
+  font-family: 'Flecha S', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #001C46;
+  line-height: 1.3;
+}
+
+/* Responsive nav */
+@media (max-width: 1400px) {
+  .navContainer { margin: 0 40px; }
+}
+@media (max-width: 1200px) {
+  .navContainer { margin: 0 20px; }
+}
+@media (max-width: 768px) {
+  .navContainer { margin: 0 16px; }
+  .flecha-section-heading { font-size: 24px; }
+}
+
 /* Black & Silver Theme - Color Variables for Design2 */
 :root {
   --saura-black: #000000;
