@@ -1,0 +1,27 @@
+{
+  "name": "Hussam Baaka | GCC Marketing Expert",
+  "short_name": "Hussam Baaka",
+  "description": "Expert Digital Marketing, SEO, Social Media & Copywriting Services in the GCC region.",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#001C46",
+  "background_color": "#ffffff"
+}
