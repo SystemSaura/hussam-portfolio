@@ -424,7 +424,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                       <h3 className={styles.portfolioTitle + " arabic-heading"}>
                         {project.title}
                         <Image
-                          src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                          src="/arrow-right.svg"
                           alt="سهم"
                           width={18}
                           height={18}

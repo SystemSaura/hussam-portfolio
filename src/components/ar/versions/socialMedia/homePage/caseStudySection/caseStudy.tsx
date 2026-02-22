@@ -44,7 +44,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
               <div className={styles.readMoreContainer}>
                 <span className={styles.readMoreText}>اقرأ القصة الكاملة</span>
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={24}
                   height={24}

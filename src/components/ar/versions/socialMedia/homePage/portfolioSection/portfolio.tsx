@@ -39,7 +39,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 ١٢ ألف متابع في ٨ شهور
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -78,7 +78,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 بناء السمعة المهنية على لينكد إن
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -117,7 +117,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 حملة تواصل اجتماعي تعليمية
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -156,7 +156,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 نمو مجتمع الفنون
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -195,7 +195,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 حراك اجتماعي للاستدامة
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -234,7 +234,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 استراتيجية تواصل للخدمات العامة
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}

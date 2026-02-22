@@ -39,7 +39,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 Professional Recruitment Content
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="Arrow"
                   width={18}
                   height={18}
@@ -77,7 +77,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 Government Research Portal Content
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="Arrow"
                   width={18}
                   height={18}
@@ -115,7 +115,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 B2B Logistics Social Strategy
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="Arrow"
                   width={18}
                   height={18}
@@ -153,7 +153,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 Healthcare Newsletter Strategy
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="Arrow"
                   width={18}
                   height={18}
@@ -191,7 +191,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 Luxury Property Brand Story
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="Arrow"
                   width={18}
                   height={18}
@@ -229,7 +229,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 Logistics Brand Positioning
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="Arrow"
                   width={18}
                   height={18}

@@ -39,7 +39,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 نصوص منصة التوظيف بالذكاء الاصطناعي
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -78,7 +78,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 سلاسل رسائل الرعاية الصحية
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -117,7 +117,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 نصوص مبيعات العقارات الفاخرة
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -156,7 +156,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 محتوى بوابة الأبحاث
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -195,7 +195,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 رسائل اللوجستيات B2B
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -234,7 +234,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle}>
                 نصوص تموضع العلامة التجارية
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}

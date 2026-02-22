@@ -39,7 +39,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 مركز محتوى SEO للتوظيف بالذكاء الاصطناعي
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -78,7 +78,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 مركز محتوى SEO لسياسات الطاقة
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -117,7 +117,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 ٧٠ مقال ثقافي محسن لمحركات البحث
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -156,7 +156,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 استراتيجية مدونة SEO تعليمية
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -195,7 +195,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 مركز محتوى SEO للصحة النفسية
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
@@ -234,7 +234,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
               <h3 className={styles.portfolioTitle + " arabic-heading"}>
                 محتوى SEO خاص بالقطاعات
                 <Image
-                  src="https://ext.same-assets.com/3287453319/2624132661.svg"
+                  src="/arrow-right.svg"
                   alt="سهم"
                   width={18}
                   height={18}
