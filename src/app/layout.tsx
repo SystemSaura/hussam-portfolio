@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Hussam Baaka | GCC Marketing Expert",
   description: "Expert Digital Marketing, SEO, Social Media & Copywriting Services in the GCC region.",
+  verification: {
+    google: "tZEvDGIDDgA0UGtmq95E5uCZb95Q-pCs5KYGAzBWHDA",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
