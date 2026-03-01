@@ -257,7 +257,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             </svg>
             <span className={styles.flechaVerificationText + " mr-3"}>Complete social media portfolio available</span>
             <button 
-              onClick={() => window.location.href = '/v/social-media/portfolio'}
+              onClick={() => window.location.href = '/social-media-portfolio'}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
             >
               View All Social Media Work →

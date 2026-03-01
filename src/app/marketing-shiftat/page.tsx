@@ -3,10 +3,10 @@
 import { useLanguage } from "@/lib/language-context";
 
 // English Components
-import CaseStudyDetailEN from "../../../../components/en/versions/seo/caseStudyPage/caseStudyPage";
+import CaseStudyDetailEN from "@/components/en/versions/marketing/caseStudyPage/caseStudyPage";
 
-// Arabic Components  
-import CaseStudyDetailAR from "../../../../components/ar/versions/seo/caseStudyPage/caseStudyPage";
+// Arabic Components
+import CaseStudyDetailAR from "@/components/ar/versions/marketing/caseStudyPage/caseStudyPage";
 
 export default function ShiftatCaseStudy() {
   const { language } = useLanguage();

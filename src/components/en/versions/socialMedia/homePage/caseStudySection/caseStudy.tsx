@@ -21,7 +21,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
         </div>
 
         {/* Main Case Study Content */}
-        <Link href="/v/social-media/shiftat" className={styles.caseStudyLink}>
+        <Link href="/social-media-shiftat" className={styles.caseStudyLink}>
           <div className={styles.caseStudyContent}>
             {/* Company Info Row */}
             <div className={styles.companyRow}>

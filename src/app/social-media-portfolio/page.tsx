@@ -3,10 +3,10 @@
 import { useLanguage } from "@/lib/language-context";
 
 // English Components
-import PortfolioPageEN from "../../../../components/en/versions/socialMedia/portfolioPage/portfolioPage";
+import PortfolioPageEN from "@/components/en/versions/socialMedia/portfolioPage/portfolioPage";
 
 // Arabic Components
-import PortfolioPageAR from "../../../../components/ar/versions/socialMedia/portfolioPage/portfolioPage";
+import PortfolioPageAR from "@/components/ar/versions/socialMedia/portfolioPage/portfolioPage";
 
 export default function SocialMediaPortfolioPage() {
   const { language } = useLanguage();
@@ -14,13 +14,13 @@ export default function SocialMediaPortfolioPage() {
   const handleNavigateToSection = (section: string) => {
     switch(section) {
       case "about":
-        window.location.href = "/v/social-media/homepage#about";
+        window.location.href = "/social-media#about";
         break;
-      case "services": 
-        window.location.href = "/v/social-media/homepage#services";
+      case "services":
+        window.location.href = "/social-media#services";
         break;
       case "caseStudy":
-        window.location.href = "/v/social-media/shiftat";
+        window.location.href = "/social-media-shiftat";
         break;
       default:
         break;

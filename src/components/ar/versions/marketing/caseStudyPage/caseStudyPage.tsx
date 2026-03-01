@@ -26,7 +26,7 @@ export default function CaseStudyDetail({ onNavigate }: CaseStudyDetailProps) {
           <div className={styles.navContainer}>
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/v/marketing/homepage" className={styles.logoName}>
+              <Link href="/marketing" className={styles.logoName}>
                 حسام بعكة <span className={styles.cursorBlink}>|</span>
               </Link>
             </div>

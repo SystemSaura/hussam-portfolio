@@ -407,7 +407,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               <span className={styles.flechaVerificationText + " mr-3"}>All copy proven to convert confused visitors into committed customers</span>
-              <Link href="/v/copywriting/homepage" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>
+              <Link href="/copywriting" className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}>
                 Back to Copywriting Home →
               </Link>
             </div>

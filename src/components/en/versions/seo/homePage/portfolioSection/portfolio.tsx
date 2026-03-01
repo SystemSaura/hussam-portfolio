@@ -257,7 +257,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             </svg>
             <span className={styles.flechaVerificationText + " mr-3"}>Complete SEO portfolio available</span>
             <button 
-              onClick={() => window.location.href = '/v/seo/portfolio'}
+              onClick={() => window.location.href = '/seo-portfolio'}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
             >
               View All →

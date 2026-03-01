@@ -257,7 +257,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             </svg>
             <span className={styles.flechaVerificationText + " mr-3"}>More copywriting samples available</span>
             <button 
-              onClick={() => window.location.href = '/v/copywriting/portfolio'}
+              onClick={() => window.location.href = '/copywriting-portfolio'}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
             >
               View All Copy →

@@ -263,7 +263,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             <span className={styles.flechaVerificationText}> ملف الأعمال الكاملة </span>
             <span className="text-gray-400 mx-2">•</span>
             <button 
-              onClick={() => window.location.href = '/v/marketing/portfolio'}
+              onClick={() => window.location.href = '/marketing-portfolio'}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
             >
              اطلع على جميع المشاريع ←

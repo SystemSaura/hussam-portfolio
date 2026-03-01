@@ -264,7 +264,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             <span className={styles.flechaVerificationText + " arabic-body"}>ملف أعمال SEO الكامل متاح</span>
             <span className="text-gray-400 mx-2">•</span>
             <button 
-              onClick={() => window.location.href = '/v/seo/portfolio'}
+              onClick={() => window.location.href = '/seo-portfolio'}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
             >
               شاهد الكل ←

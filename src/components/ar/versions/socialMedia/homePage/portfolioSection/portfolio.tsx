@@ -263,7 +263,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             <span className={styles.flechaVerificationText + " arabic-body"}>ملف الأعمال كاملاً متاح</span>
             <span className="text-gray-400 mx-2">•</span>
             <button 
-              onClick={() => window.location.href = '/v/social-media/portfolio'}
+              onClick={() => window.location.href = '/social-media-portfolio'}
               className={styles.flechaViewAllText + " hover:text-blue-800 transition-colors"}
             >
               شاهد جميع مشاريع التواصل الاجتماعي ←

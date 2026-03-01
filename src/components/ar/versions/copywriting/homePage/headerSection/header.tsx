@@ -23,7 +23,7 @@ export default function Header({ onNavigate, variant = "default" }: HeaderProps)
       <div className="hidden md:flex mx-4 md:mx-20 lg:mx-[85.7266px] h-[50.65px] items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <Link href="/v/copywriting/homepage" className="text-[#001C46] text-lg font-light font-['Work_Sans'] no-underline">
+          <Link href="/copywriting" className="text-[#001C46] text-lg font-light font-['Work_Sans'] no-underline">
             حسام بعكة <span className="text-[#2762F8] animate-pulse">|</span>
           </Link>
         </div>
@@ -52,7 +52,7 @@ export default function Header({ onNavigate, variant = "default" }: HeaderProps)
       <div className="flex md:hidden mx-4 h-[50.65px] items-center justify-between" dir="rtl">
         {/* Logo (Right in RTL) */}
         <div className="flex-shrink-0">
-          <Link href="/v/copywriting/homepage" className="text-[#001C46] text-lg font-light font-['Work_Sans'] no-underline">
+          <Link href="/copywriting" className="text-[#001C46] text-lg font-light font-['Work_Sans'] no-underline">
             حسام بعكة <span className="text-[#2762F8] animate-pulse">|</span>
           </Link>
         </div>

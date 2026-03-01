@@ -14,13 +14,13 @@ export default function CopywritingPortfolioPage() {
   const handleNavigateToSection = (section: string) => {
     switch(section) {
       case "about":
-        window.location.href = "/v/copywriting/homepage#about";
+        window.location.href = "/copywriting#about";
         break;
-      case "services": 
-        window.location.href = "/v/copywriting/homepage#services";
+      case "services":
+        window.location.href = "/copywriting#services";
         break;
       case "caseStudy":
-        window.location.href = "/v/copywriting/shiftat";
+        window.location.href = "/copywriting-shiftat";
         break;
       default:
         // Stay on current page for portfolio

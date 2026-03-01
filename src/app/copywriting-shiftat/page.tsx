@@ -14,13 +14,13 @@ export default function CopywritingShiftatCaseStudy() {
   const handleNavigateToSection = (section: string) => {
     switch(section) {
       case "about":
-        window.location.href = "/v/copywriting/homepage#about";
+        window.location.href = "/copywriting#about";
         break;
       case "portfolio":
-        window.location.href = "/v/copywriting/portfolio";
+        window.location.href = "/copywriting-portfolio";
         break;
-      case "services": 
-        window.location.href = "/v/copywriting/homepage#services";
+      case "services":
+        window.location.href = "/copywriting#services";
         break;
       default:
         // Stay on current page for case study

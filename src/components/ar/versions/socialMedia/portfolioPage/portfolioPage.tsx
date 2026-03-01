@@ -374,7 +374,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
               
               {/* Back Link */}
               <div>
-                <Link href="/v/social-media/homepage" className={styles.flechaViewAllText + " inline-flex items-center hover:text-blue-800 transition-colors arabic-body text-blue-600"}>
+                <Link href="/social-media" className={styles.flechaViewAllText + " inline-flex items-center hover:text-blue-800 transition-colors arabic-body text-blue-600"}>
                   العودة إلى الرئيسية
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />

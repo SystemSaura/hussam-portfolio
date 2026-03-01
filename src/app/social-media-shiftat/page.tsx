@@ -3,10 +3,10 @@
 import { useLanguage } from "@/lib/language-context";
 
 // English Components
-import CaseStudyDetailEN from "../../../../components/en/versions/socialMedia/caseStudyPage/caseStudyPage";
+import CaseStudyDetailEN from "@/components/en/versions/socialMedia/caseStudyPage/caseStudyPage";
 
 // Arabic Components
-import CaseStudyDetailAR from "../../../../components/ar/versions/socialMedia/caseStudyPage/caseStudyPage";
+import CaseStudyDetailAR from "@/components/ar/versions/socialMedia/caseStudyPage/caseStudyPage";
 
 export default function SocialMediaShiftatCaseStudy() {
   const { language } = useLanguage();
@@ -14,13 +14,13 @@ export default function SocialMediaShiftatCaseStudy() {
   const handleNavigateToSection = (section: string) => {
     switch(section) {
       case "about":
-        window.location.href = "/v/social-media/homepage#about";
+        window.location.href = "/social-media#about";
         break;
       case "portfolio":
-        window.location.href = "/v/social-media/portfolio";
+        window.location.href = "/social-media-portfolio";
         break;
-      case "services": 
-        window.location.href = "/v/social-media/homepage#services";
+      case "services":
+        window.location.href = "/social-media#services";
         break;
       default:
         break;
