@@ -1,6 +1,6 @@
 /* CTA Section Styles */
 .flechaSectionHeading {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 34.1024px;
   font-weight: normal;
   color: #001C46;
@@ -13,14 +13,15 @@
 
 .homeHeaderSubheading {
   color: #001C46;
-  font: 34.1024px "Flecha S", sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
+  font-size: 34.1024px;
   font-weight: normal;
   line-height: 1.2;
   margin-bottom: 16px;
 }
 
 .workSansBody {
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 12.7884px;
   color: #001C46;
   line-height: 1.6;
@@ -29,7 +30,8 @@
 .subscribeButton {
   background: #2762F8;
   color: #FFFFFF;
-  font: 10.7991px "Work Sans", sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
+  font-size: 10.7991px;
   padding: 12px 24px;
   border: none;
   border-radius: 9999px;

@@ -23,7 +23,7 @@
   color: white;
   padding: 8px 20px;
   border-radius: 25px;
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
 }
 
 .mainHeading {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 51.1537px;
   font-weight: normal;
   line-height: 1.1;
@@ -46,7 +46,7 @@
 }
 
 .sectionSubtext {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
@@ -104,21 +104,21 @@
 }
 
 .companyName {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
 .companyDescription {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 12px;
 }
 
 .locationBadge {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -143,7 +143,7 @@
 }
 
 .readMoreText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -176,7 +176,7 @@
 }
 
 .resultNumber {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 42px;
   font-weight: bold;
   color: #00FFF7;
@@ -185,7 +185,7 @@
 }
 
 .resultLabel {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
@@ -199,7 +199,7 @@
 }
 
 .descriptionText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 18px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
@@ -223,7 +223,7 @@
 }
 
 .socialLabel {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
@@ -264,7 +264,7 @@
 }
 
 .platformName {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: white;
@@ -272,7 +272,7 @@
 }
 
 .platformMetric {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   color: #00FFF7;
   font-weight: 500;

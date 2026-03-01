@@ -6,7 +6,6 @@ import LanguageToggle from "@/components/shared/languageToggle";
 
 // English Components
 import HeaderEN from "../components/en/versions/marketing/homePage/headerSection/header";
-import HeroEN from "../components/en/versions/marketing/homePage/heroSection/hero";
 import TrustedCompaniesEN from "../components/en/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
 import AboutEN from "../components/en/versions/marketing/homePage/aboutSection/about";
 import ServicesEN from "../components/en/versions/marketing/homePage/servicesSection/services";
@@ -18,7 +17,6 @@ import FooterEN from "../components/en/versions/marketing/homePage/footerSection
 
 // Arabic Components
 import HeaderAR from "../components/ar/versions/marketing/homePage/headerSection/header";
-import HeroAR from "../components/ar/versions/marketing/homePage/heroSection/hero";
 import TrustedCompaniesAR from "../components/ar/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
 import AboutAR from "../components/ar/versions/marketing/homePage/aboutSection/about";
 import ServicesAR from "../components/ar/versions/marketing/homePage/servicesSection/services";
@@ -51,9 +49,8 @@ export default function Home() {
     return (
       <div className="min-h-screen bg-white" dir="rtl">
         <HeaderAR onNavigate={navigationHandlers} />
-        <HeroAR onNavigate={navigationHandlers} />
-        <TrustedCompaniesAR />
         <AboutAR ref={aboutRef} />
+        <TrustedCompaniesAR />
         <ServicesAR ref={servicesRef} />
         <CaseStudyAR ref={caseStudyRef} />
         <PortfolioAR ref={portfolioRef} />
@@ -67,9 +64,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white" dir="ltr">
       <HeaderEN onNavigate={navigationHandlers} />
-      <HeroEN onNavigate={navigationHandlers} />
-      <TrustedCompaniesEN />
       <AboutEN ref={aboutRef} />
+      <TrustedCompaniesEN />
       <ServicesEN ref={servicesRef} />
       <CaseStudyEN ref={caseStudyRef} />
       <PortfolioEN ref={portfolioRef} />

@@ -51,7 +51,7 @@
 
 .homeHeaderSubheading {
   color: #001C46;
-  font-family: 'The Brown', 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 1.3;
@@ -65,7 +65,7 @@
 
 .homeHeaderSubheadingRight {
   color: #001C46;
-  font-family: 'The Brown', 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 34.1024px;
   font-weight: 500;
   line-height: 1.3;
@@ -82,7 +82,7 @@
 
 .homeHeaderText1 {
   color: #001C46;
-  font: 16px "Work Sans", sans-serif;
+  font: 16px var(--font-ibm-plex-arabic), sans-serif;
   line-height: 1.4;
   margin-bottom: 24px;
   /* RTL: Right-align body text */
@@ -162,7 +162,7 @@
   padding: 12px 12px 12px 17.0512px;
   border: 1px solid #E5E7EB;
   border-radius: 9999px;
-  font: 14px "Work Sans", sans-serif;
+  font: 14px var(--font-ibm-plex-arabic), sans-serif;
   margin: 0;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -174,7 +174,7 @@
 .subscribeButton {
   background: #2762F8;
   color: #FFFFFF;
-  font: 10.7991px "Work Sans", sans-serif;
+  font: 10.7991px var(--font-ibm-plex-arabic), sans-serif;
   padding: 12px 24px;
   border: none;
   border-radius: 9999px;
@@ -193,7 +193,7 @@
 .navButtonStrategy {
   background-color: #001C46;
   color: #FFFFFF;
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 11.3675px;
   font-weight: 300;
   padding: 0 17.0512px;
@@ -217,7 +217,7 @@
 
 /* Main title - RTL aligned with The Brown font and improved Arabic typography */
 .flechaHeroTitle {
-  font-family: 'The Brown', 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 90px;
   font-weight: 600;
   color: #001C46;

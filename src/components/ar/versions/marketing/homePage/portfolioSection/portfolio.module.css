@@ -1,6 +1,6 @@
 /* Portfolio Section Styles */
 .flechaSectionHeading {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 34.1024px;
   font-weight: normal;
   color: #001C46;
@@ -8,7 +8,7 @@
 }
 
 .workSansBody {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 12.7884px;
   color: #001C46;
   line-height: 1.6;
@@ -65,7 +65,7 @@
 }
 
 .portfolioCategory {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -126,7 +126,7 @@
 
 /* Fallback logo styling for text-based logos */
 .portfolioLogoText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 11px;
   font-weight: 700;
   color: #374151;
@@ -141,7 +141,7 @@
 }
 
 .portfolioServiceType {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
@@ -150,7 +150,7 @@
 }
 
 .portfolioServiceDetail {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   font-weight: 400;
   opacity: 0.95;
@@ -166,7 +166,7 @@
 }
 
 .portfolioTitle {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #111827;
@@ -195,7 +195,7 @@
 }
 
 .portfolioDescription {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 15px;
   line-height: 1.6;
   color: #6B7280;
@@ -204,7 +204,7 @@
 }
 
 .portfolioButton {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: white;
@@ -281,7 +281,7 @@
 }
 
 .portfolioViewAllButton {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #374151;
@@ -305,14 +305,14 @@
 }
 
 .flechaVerificationText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #374151;
 }
 
 .flechaViewAllText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #2563EB;

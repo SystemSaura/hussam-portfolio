@@ -9,8 +9,8 @@ export default function CTA() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-12 mb-16">
           <h2 className={styles.flechaSectionHeading + " leading-tight arabic-heading"}>
-            <span className={styles.textCustomBlue}>توقف عن التخمين</span><br />
-            في النتائج
+            <span className={styles.textCustomBlue}>توقف</span><br />
+            عن تخمين النتائج
           </h2>
 
           <h2 className={styles.flechaSectionHeading + " leading-tight arabic-heading"}>

@@ -68,7 +68,7 @@
 
 /* Elegant Tab Button Styles - Refined Design */
 .tabButton {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   font-weight: 600;
   padding: 12px 24px;
@@ -107,7 +107,7 @@
 
 /* Typography Matching Homepage Design System */
 .flechaSectionHeading {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 51.1537px;
   font-weight: normal;
   color: #001C46;
@@ -115,34 +115,34 @@
 }
 
 .workSansBody {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 18px;
   color: #001C46;
   line-height: 1.6;
 }
 
 .flechaRatingText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #2563EB;
 }
 
 .flechaProjectsText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   color: #6B7280;
 }
 
 .flechaVerificationText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #374151;
 }
 
 .flechaViewAllText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #2563EB;
@@ -150,7 +150,7 @@
 
 /* Enhanced Category Headers - Matching Services Section Style */
 .categoryHeading {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 34.1024px;
   font-weight: normal;
   color: #001C46;
@@ -223,7 +223,7 @@
 }
 
 .portfolioCategory {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -284,7 +284,7 @@
 
 /* Fallback logo styling for text-based logos - LARGER */
 .portfolioLogoText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 12px;
   font-weight: 700;
   color: #374151;
@@ -299,7 +299,7 @@
 }
 
 .portfolioServiceType {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
@@ -308,7 +308,7 @@
 }
 
 .portfolioServiceDetail {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   font-weight: 400;
   opacity: 0.95;
@@ -324,7 +324,7 @@
 }
 
 .portfolioTitle {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #111827;
@@ -353,7 +353,7 @@
 }
 
 .portfolioDescription {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 15px;
   line-height: 1.6;
   color: #6B7280;
@@ -362,7 +362,7 @@
 }
 
 .portfolioButton {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: white;

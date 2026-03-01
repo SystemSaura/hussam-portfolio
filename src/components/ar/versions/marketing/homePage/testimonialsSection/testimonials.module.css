@@ -1,19 +1,19 @@
 /* Testimonials Section Styles */
 .flechaRatingText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #2563EB;
 }
 
 .flechaProjectsText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   color: #6B7280;
 }
 
 .flechaTestimonialHeading {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 34.1024px;
   font-weight: normal;
   color: #111827;
@@ -21,7 +21,7 @@
 }
 
 .flechaTestimonialDescription {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   color: #6B7280;
   line-height: 1.6;
@@ -60,20 +60,20 @@
   border-radius: 20px;
   font-size: 11px;
   font-weight: 600;
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
 }
 
 .projectType {
   color: #6B7280;
   font-size: 11px;
   font-weight: 600;
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
 
 .testimonialQuoteV2 {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 15px;
   line-height: 1.6;
   color: #374151;
@@ -110,7 +110,7 @@
 }
 
 .clientNameV2 {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
   color: #111827;
   font-weight: 600;
@@ -118,7 +118,7 @@
 }
 
 .clientCompanyV2 {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 13px;
   color: #2762F8;
   font-weight: 500;
@@ -126,7 +126,7 @@
 }
 
 .clientLocationV2 {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 11px;
   color: #6B7280;
   font-weight: 400;
@@ -144,14 +144,14 @@
 }
 
 .flechaVerificationText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #374151;
 }
 
 .flechaViewAllText {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: #2563EB;

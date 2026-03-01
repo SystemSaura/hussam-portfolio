@@ -19,7 +19,7 @@
 }
 
 .servicesMainHeading {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 51.1537px;
   font-weight: normal;
   color: #FFFFFF;
@@ -28,7 +28,7 @@
 }
 
 .servicesMainHeadingAccent {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 51.1537px;
   font-weight: normal;
   color: #00FFF7;
@@ -37,7 +37,7 @@
 }
 
 .servicesNumber {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 30.1024px;
   font-weight: medium;
   color: #50C0FF;
@@ -45,7 +45,7 @@
 }
 
 .servicesTitle {
-  font-family: 'Flecha S', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 22.735px;
   font-weight: bold;
   color: #FFFFFF;
@@ -54,7 +54,7 @@
 }
 
 .servicesDescription {
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 11.3675px;
   font-weight: normal;
   color: #FFFFFF;
@@ -63,7 +63,7 @@
 }
 
 .servicesButton {
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 10.7991px;
   font-weight: normal;
   color: #FFFFFF;
