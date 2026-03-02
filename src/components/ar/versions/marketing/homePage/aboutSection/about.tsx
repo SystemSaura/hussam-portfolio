@@ -4,11 +4,24 @@ import Image from "next/image";
 import { forwardRef } from "react";
 import styles from "./about.module.css";
 
+const logos = [
+  { src: "/logos/shiftat.webp", alt: "Shiftat" },
+  { src: "/logos/empirerealestate.webp", alt: "Empire Real Estate" },
+  { src: "/logos/kapsarc.webp", alt: "KAPSARC" },
+  { src: "/logos/alnahdi.webp", alt: "Al Nahdi", original: true, tall: true },
+  { src: "/logos/saeq.webp", alt: "SAEQ" },
+  { src: "/logos/abudawood.webp", alt: "Abudawood" },
+  { src: "/logos/reviva.webp", alt: "Reviva" },
+  { src: "/logos/ncmh.webp", alt: "NCMH", tall: true },
+  { src: "/logos/rcmc.webp", alt: "RCMC" },
+  { src: "/logos/rotana2.webp", alt: "Rotana", original: true, tall: true },
+];
+
 const About = forwardRef<HTMLElement>((_, ref) => {
   return (
     <section ref={ref} className={styles.bgCustomDarkBlue + " text-white"}>
-      {/* Hero - full viewport */}
-      <div className="min-h-screen flex flex-col items-center justify-center px-10 sm:px-6 lg:px-8 text-center">
+      {/* Hero content */}
+      <div className="flex flex-col items-center justify-center px-10 sm:px-6 lg:px-8 text-center" style={{ minHeight: 'calc(100vh - 180px)' }}>
         <div className="mb-8 sm:mb-10 lg:mb-12">
           <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full mx-auto flex items-center justify-center overflow-hidden">
             <Image
@@ -35,35 +48,24 @@ const About = forwardRef<HTMLElement>((_, ref) => {
         >
           احجز استشارة
         </button>
+      </div>
 
-        {/* Rolling logos */}
-        <div className={styles.marqueeWrapper}>
-          <div className={styles.marqueeTrack}>
-            {[0, 1].map((i) => (
-              <div key={i} className={styles.marqueeGroup} aria-hidden={i === 1 || undefined}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/shiftat.webp" alt="Shiftat" className={styles.marqueeLogo} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/empirerealestate.webp" alt="Empire Real Estate" className={styles.marqueeLogo} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/kapsarc.webp" alt="KAPSARC" className={styles.marqueeLogo} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/alnahdi.webp" alt="Al Nahdi" className={`${styles.marqueeLogo} ${styles.alnahdiLogo}`} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/saeq.webp" alt="SAEQ" className={styles.marqueeLogo} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/abudawood.webp" alt="Abudawood" className={styles.marqueeLogo} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/reviva.webp" alt="Reviva" className={styles.marqueeLogo} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/ncmh.webp" alt="NCMH" className={styles.marqueeLogo} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/rcmc.webp" alt="RCMC" className={styles.marqueeLogo} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logos/rotana2.webp" alt="Rotana" className={`${styles.marqueeLogo} ${styles.rotanaLogo}`} />
-              </div>
-            ))}
-          </div>
+      {/* Rolling logos - OUTSIDE the flex container */}
+      <div className={styles.marqueeWrapper}>
+        <div className={styles.marqueeTrack}>
+          {[0, 1].map((copy) => (
+            <div key={copy} className={styles.marqueeGroup} aria-hidden={copy === 1 || undefined}>
+              {logos.map((logo) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  key={logo.alt}
+                  src={logo.src}
+                  alt={logo.alt}
+                  className={`${styles.marqueeLogo} ${logo.original ? styles.logoOriginal : ''} ${logo.tall ? styles.logoTall : ''}`}
+                />
+              ))}
+            </div>
+          ))}
         </div>
       </div>
 
