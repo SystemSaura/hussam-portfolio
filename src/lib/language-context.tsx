@@ -43,17 +43,27 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     } catch (error) {
       console.log('Could not save language preference');
     }
-    
-    // Update document direction and lang attribute
+
+    // Update document direction, lang attribute, and title
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = lang;
+    document.title = lang === 'ar'
+      ? 'حسام بعكة | خبير تسويق رقمي في الخليج'
+      : 'Hussam Baaka | GCC Marketing Expert';
   };
 
   useEffect(() => {
     if (mounted) {
+      const title = language === 'ar'
+        ? 'حسام بعكة | خبير تسويق رقمي في الخليج'
+        : 'Hussam Baaka | GCC Marketing Expert';
       // Set initial direction and lang
       document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
       document.documentElement.lang = language;
+      document.title = title;
+      // Re-apply after hydration in case Next.js metadata overrides it
+      const timer = setTimeout(() => { document.title = title; }, 100);
+      return () => clearTimeout(timer);
     }
   }, [language, mounted]);
 
