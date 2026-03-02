@@ -1,7 +1,7 @@
 /* Case Study Section - Professional Redesign */
 .caseStudySection {
   padding: 80px 0;
-  background-color: #001C46;
+  background-color: #0F172A;
   color: white;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .highlightText {
-  color: #00FFF7;
+  color: #38BDF8;
 }
 
 .sectionSubtext {
@@ -127,17 +127,17 @@
   align-items: center;
   gap: 12px;
   background: transparent;
-  color: #00FFF7;
+  color: #38BDF8;
   padding: 14px 24px;
   border-radius: 50px;
   transition: all 0.3s ease;
-  border: 2px solid #00FFF7;
+  border: 2px solid #38BDF8;
   box-shadow: 0 4px 20px rgba(0, 255, 247, 0.3);
 }
 
 .readMoreContainer:hover {
-  background: #00FFF7;
-  color: #001C46;
+  background: #38BDF8;
+  color: #0F172A;
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(0, 255, 247, 0.4);
 }
@@ -179,7 +179,7 @@
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 42px;
   font-weight: bold;
-  color: #00FFF7;
+  color: #38BDF8;
   margin-bottom: 12px;
   line-height: 1;
 }
@@ -259,7 +259,7 @@
 
 .platformIcon:hover {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #00FFF7;
+  border-color: #38BDF8;
   transform: translateY(-2px);
 }
 
@@ -274,7 +274,7 @@
 .platformMetric {
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 14px;
-  color: #00FFF7;
+  color: #38BDF8;
   font-weight: 500;
 }
 

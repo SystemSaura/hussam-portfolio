@@ -39,10 +39,10 @@ export default function Footer({ variant = 'default' }: FooterProps) {
             <Link href="/" className={`text-xl font-light arabic-heading ${getTextColor()}`}>حسام بعكة</Link>
           </div>
 
-          <div className="flex items-center gap-6">
-            <Link href="/company/terms" className={`text-sm arabic-body transition-colors ${getLinkColor()}`}>الشروط والأحكام</Link>
-            <Link href="/company/privacy-policy" className={`text-sm arabic-body transition-colors ${getLinkColor()}`}>سياسة الخصوصية</Link>
-            <span className={`text-sm arabic-body ${getTextColor()}`}>شركة سرى ذ.م.م ٢٠٢٥ ©</span>
+          <div className="flex items-baseline gap-6">
+            <Link href="/company/terms" className={`text-sm arabic-body transition-colors leading-none ${getLinkColor()}`}>الشروط والأحكام</Link>
+            <Link href="/company/privacy-policy" className={`text-sm arabic-body transition-colors leading-none ${getLinkColor()}`}>سياسة الخصوصية</Link>
+            <span className={`text-sm arabic-body leading-none ${getTextColor()}`}>شركة سرى ذ.م.م ٢٠٢٥ ©</span>
           </div>
         </div>
       </div>

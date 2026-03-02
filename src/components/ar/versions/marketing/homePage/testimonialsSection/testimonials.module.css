@@ -43,7 +43,7 @@
 .testimonialCardV2:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  border-color: #2762F8;
+  border-color: #0284C7;
 }
 
 .testimonialHeaderV2 {
@@ -120,7 +120,7 @@
 .clientCompanyV2 {
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 13px;
-  color: #2762F8;
+  color: #0284C7;
   font-weight: 500;
   margin-bottom: 2px;
 }

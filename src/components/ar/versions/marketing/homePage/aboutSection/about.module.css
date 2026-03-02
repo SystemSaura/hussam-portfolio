@@ -1,6 +1,6 @@
 /* About Section Styles */
 .bgCustomDarkBlue {
-  background-color: #001C46;
+  background-color: #0F172A;
 }
 
 .flechaHeroTitleAbout {
@@ -22,7 +22,7 @@
 .workSansBodyWhite {
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 16px;
-  color: #E5E7EB;
+  color: #CBD5E1;
   line-height: 1.8;
 }
 
@@ -30,7 +30,7 @@
 .marqueeWrapper {
   width: 100%;
   overflow: hidden;
-  padding: 20px 0;
+  padding: 60px 0;
   direction: ltr;
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);

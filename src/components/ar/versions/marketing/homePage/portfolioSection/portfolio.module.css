@@ -3,14 +3,14 @@
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 34.1024px;
   font-weight: normal;
-  color: #001C46;
+  color: #0F172A;
   line-height: 1.2;
 }
 
 .workSansBody {
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 12.7884px;
-  color: #001C46;
+  color: #0F172A;
   line-height: 1.6;
 }
 
@@ -179,7 +179,7 @@
 }
 
 .portfolioCard:hover .portfolioTitle {
-  color: #2762F8;
+  color: #0284C7;
 }
 
 .portfolioArrow {
@@ -231,7 +231,7 @@
 }
 
 .portfolioButtonDark {
-  background-color: #001C46;
+  background-color: #0F172A;
   border-radius: 25px;
 }
 
@@ -297,9 +297,9 @@
 }
 
 .portfolioViewAllButton:hover {
-  background: #2762F8;
+  background: #0284C7;
   color: white;
-  border-color: #2762F8;
+  border-color: #0284C7;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(39, 98, 248, 0.25);
 }

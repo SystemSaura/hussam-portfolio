@@ -9,18 +9,18 @@ export default function CTA() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-12 mb-16">
           <h2 className={styles.flechaSectionHeading + " leading-tight arabic-heading"}>
-            <span className={styles.textCustomBlue}>توقف</span><br />
-            عن تخمين النتائج
+            <span className={styles.textCustomBlue}>كفى</span><br />
+            تخمينًا للنتائج
           </h2>
 
           <h2 className={styles.flechaSectionHeading + " leading-tight arabic-heading"}>
-            <span className={styles.textCustomBlue}>توقف عن تبرير</span><br />
-            الميزانيات التسويقية
+            <span className={styles.textCustomBlue}>يكفي إضاعة</span><br />
+            لميزانيتك التسويقية
           </h2>
 
           <h2 className={styles.flechaSectionHeading + " leading-tight arabic-heading"}>
-            <span className={styles.textCustomBlue}>ابدأ النمو</span><br />
-            بثقة واضحة
+            <span className={styles.textCustomBlue}>اختر الآن</span><br />
+            نموًّا مدروسًا لأعمالك
           </h2>
         </div>
 
@@ -34,10 +34,8 @@ export default function CTA() {
           />
         </div>
 
-        <h3 className={styles.homeHeaderSubheading + " mb-8 arabic-heading"}>جاهز لنمو يمكن الاعتماد عليه؟</h3>
-
-        <p className={styles.workSansBody + " mb-8 leading-relaxed arabic-body"}>
-          احصل على جلسة مجانية لمدة ٣٠ دقيقة لاكتشاف أهم فرص النمو في شركتك.
+        <p className={styles.homeHeaderSubheading + " mb-8 arabic-heading"}>
+          احجز جلسة مجانية لاكتشاف أهم فرص النمو في شركتك.
         </p>
 
         <div className="max-w-md mx-auto space-y-4">

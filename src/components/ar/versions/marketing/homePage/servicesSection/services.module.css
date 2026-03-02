@@ -1,6 +1,6 @@
 /* Services Section Styles */
 .bgCustomBlue {
-  background-color: #2762F8;
+  background-color: #0284C7;
 }
 
 .servicesContainer {
@@ -31,7 +31,7 @@
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 51.1537px;
   font-weight: normal;
-  color: #00FFF7;
+  color: #0F172A;
   line-height: 1.2;
   text-align: right;
 }
@@ -40,7 +40,7 @@
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 30.1024px;
   font-weight: medium;
-  color: #50C0FF;
+  color: #38BDF8;
   text-align: right;
 }
 
@@ -67,7 +67,7 @@
   font-size: 10.7991px;
   font-weight: normal;
   color: #FFFFFF;
-  background-color: #001C46;
+  background-color: #0F172A;
   border: none;
   border-radius: 9999px;
   padding: 12px 24px;
@@ -76,7 +76,7 @@
 }
 
 .servicesButton:hover {
-  background-color: #002A5C;
+  background-color: #1e293b;
 }
 
 /* RTL Sticky Services Heading Styles */

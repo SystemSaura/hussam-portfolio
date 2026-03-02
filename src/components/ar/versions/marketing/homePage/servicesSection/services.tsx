@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, forwardRef } from "react";
+import { forwardRef, useEffect, useRef, useState } from "react";
 import styles from "./services.module.css";
 
 const Services = forwardRef<HTMLElement>((_, ref) => {
@@ -105,9 +105,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
           <div className="space-y-12">
             <div className={styles.serviceItem}>
               <div className={styles.servicesNumber + " mb-4"}>01</div>
-              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>التسويق الرقمي المتكامل</h3>
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>أضع خطّة تسويق شاملة</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
-                استراتيجيات تسويق رقمي شاملة تجمع بين تحسين محركات البحث، إعلانات جوجل، ووسائل التواصل الاجتماعي. نضمن وصول رسالتك للجمهور المناسب في الوقت المناسب.
+                السؤال الذي يؤرّق معظم أصحاب الأعمال: فيم أستثمر ميزانيّتي التسويقية تحديدا..؟ الخيارات أشبه باللامحدودة. هنا تحديدا تحتاج الخبير.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -119,9 +119,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
             <div className={styles.serviceItem}>
               <div className={styles.servicesNumber + " mb-4"}>02</div>
-              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحسين محركات البحث و صناعةالمحتوى</h3>
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>أساعدك لتتصدّر محرّكات البحث والذكاء الاصطناعي</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
-                تحسين موقعك ليتصدر نتائج البحث في جوجل، مع إنشاء محتوى قيم يجذب عملاءك المستهدفين ويبني سمعة علامتك التجارية كمرجع موثوق في مجالك.
+                العالم تغيّر مع الذكاء الاصطناعي، لكنّ معظم العملاء لا يزالون يبحثون في محركات البحث. تحتاج خطّة توازن بين مكان بحث عملائك الحالي (غوغل) ومكان بحثهم عنك في المستقبل (غوغل، ChatGPT، Perplexity, Claude، Bing..).
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -132,10 +132,10 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
             </div>
 
             <div ref={thirdServiceRef} className={styles.serviceItem}>
-              <div className={styles.servicesNumber + " mb-4"}>03</div>
-              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>إدارة وسائل التواصل الاجتماعي</h3>
+              <div className={styles.servicesNumber + " mb-4"}>02</div>
+              <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>نُدير حضورك على وسائل التواصل الاجتماعي</h3>
               <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
-                بناء مجتمع قوي حول علامتك التجارية على منصات التواصل الاجتماعي، مع محتوى مخصص للثقافة المحلية يحفز التفاعل ويحول المتابعين إلى عملاء.
+                تحتاج حضورا محترما على منصات التواصل الاجتماعي. تحتاج نشر محتوى يرسّخ شركتك في أذهان عملائك المحتملين، وإنشاء قاعدة وفيّة من المتابعين، قد يتحوّل بعضهم يومًا إلى عُملاء. نتكفّل بكلّ ذلك.
               </p>
               <button
                 onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -176,9 +176,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
             <div className="space-y-12">
               <div className={styles.serviceItem}>
                 <div className={styles.servicesNumber + " mb-4"}>01</div>
-                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>التسويق الرقمي المتكامل</h3>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>أضع خطّة تسويق شاملة</h3>
                 <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
-                  استراتيجيات تسويق رقمي شاملة تجمع بين تحسين محركات البحث، إعلانات جوجل، ووسائل التواصل الاجتماعي. نضمن وصول رسالتك للجمهور المناسب في الوقت المناسب.
+                  السؤال الذي يؤرّق معظم أصحاب الأعمال: فيم أستثمر ميزانيّتي التسويقية تحديدا..؟ الخيارات أشبه باللامحدودة. هنا تحديدا تحتاج الخبير.
                 </p>
                 <button
                   onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -190,9 +190,9 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
 
               <div className={styles.serviceItem}>
                 <div className={styles.servicesNumber + " mb-4"}>02</div>
-                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>تحسين محركات البحث والمحتوى</h3>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>أساعدك لتتصدّر محرّكات البحث والذكاء الاصطناعي</h3>
                 <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
-                  تحسين موقعك ليتصدر نتائج البحث في جوجل، مع إنشاء محتوى قيم يجذب عملاءك المستهدفين ويبني سمعة علامتك التجارية كمرجع موثوق في مجالك.
+                  العالم تغيّر مع الذكاء الاصطناعي، لكنّ معظم العملاء لا يزالون يبحثون في محركات البحث. تحتاج خطّة توازن بين مكان بحث عملائك الحالي (غوغل) ومكان بحثهم عنك في المستقبل (غوغل، ChatGPT، Perplexity, Claude، Bing..).
                 </p>
                 <button
                   onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}
@@ -203,10 +203,10 @@ const Services = forwardRef<HTMLElement>((_, ref) => {
               </div>
 
               <div ref={thirdServiceRef} className={styles.serviceItem}>
-                <div className={styles.servicesNumber + " mb-4"}>03</div>
-                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>إدارة وسائل التواصل الاجتماعي</h3>
+                <div className={styles.servicesNumber + " mb-4"}>02</div>
+                <h3 className={styles.servicesTitle + " mb-4 arabic-heading"}>نُدير حضورك على وسائل التواصل الاجتماعي</h3>
                 <p className={styles.servicesDescription + " mb-6 leading-relaxed arabic-body"}>
-                  بناء مجتمع قوي حول علامتك التجارية على منصات التواصل الاجتماعي، مع محتوى مخصص للثقافة المحلية يحفز التفاعل ويحول المتابعين إلى عملاء.
+                  تحتاج حضورا محترما على منصات التواصل الاجتماعي. تحتاج نشر محتوى يرسّخ شركتك في أذهان عملائك المحتملين، وإنشاء قاعدة وفيّة من المتابعين، قد يتحوّل بعضهم يومًا إلى عُملاء. نتكفّل بكلّ ذلك.
                 </p>
                 <button
                   onClick={() => window.open('https://www.upwork.com/freelancers/~01630436400e1bdae3', '_blank')}

@@ -408,6 +408,97 @@ export default function ColorPalettePage() {
           </div>
         </section>
       </div>
+
+      {/* ── Palette Info Bar ──────────────────────────────────────────── */}
+      <div
+        style={{
+          position: "fixed",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          backgroundColor: "rgba(0,0,0,0.85)",
+          backdropFilter: "blur(12px)",
+          borderTop: "1px solid rgba(255,255,255,0.1)",
+          padding: "16px 32px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          zIndex: 50,
+        }}
+        dir="ltr"
+      >
+        {/* Left: Nav arrows + palette name */}
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <button
+            onClick={goPrev}
+            style={{
+              background: "rgba(255,255,255,0.1)",
+              border: "1px solid rgba(255,255,255,0.2)",
+              borderRadius: "6px",
+              color: "#fff",
+              width: "32px",
+              height: "32px",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "14px",
+            }}
+          >
+            &larr;
+          </button>
+          <button
+            onClick={goNext}
+            style={{
+              background: "rgba(255,255,255,0.1)",
+              border: "1px solid rgba(255,255,255,0.2)",
+              borderRadius: "6px",
+              color: "#fff",
+              width: "32px",
+              height: "32px",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "14px",
+            }}
+          >
+            &rarr;
+          </button>
+          <span style={{ color: "#fff", fontSize: "14px", fontWeight: 600, fontFamily: "system-ui, sans-serif" }}>
+            {palette.name}
+          </span>
+          <span style={{ color: "rgba(255,255,255,0.5)", fontSize: "12px", fontFamily: "system-ui, sans-serif" }}>
+            {active + 1}/{palettes.length}
+          </span>
+        </div>
+
+        {/* Right: Color swatches */}
+        <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+          {swatchKeys.map(({ key, label }) => (
+            <div key={key} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+              <div
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  borderRadius: "4px",
+                  backgroundColor: palette[key] as string,
+                  border: "1px solid rgba(255,255,255,0.2)",
+                  transition: "background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+                }}
+              />
+              <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.2 }}>
+                <span style={{ color: "rgba(255,255,255,0.5)", fontSize: "9px", fontFamily: "system-ui, sans-serif", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                  {label}
+                </span>
+                <span style={{ color: "#fff", fontSize: "11px", fontFamily: "ui-monospace, monospace" }}>
+                  {(palette[key] as string).toUpperCase()}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

@@ -2,11 +2,9 @@
 
 import { useRef } from "react";
 import { useLanguage } from "@/lib/language-context";
-import LanguageToggle from "@/components/shared/languageToggle";
 
 // English Components
 import HeaderEN from "../components/en/versions/marketing/homePage/headerSection/header";
-import TrustedCompaniesEN from "../components/en/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
 import AboutEN from "../components/en/versions/marketing/homePage/aboutSection/about";
 import ServicesEN from "../components/en/versions/marketing/homePage/servicesSection/services";
 import CaseStudyEN from "../components/en/versions/marketing/homePage/caseStudySection/caseStudy";
@@ -17,7 +15,6 @@ import FooterEN from "../components/en/versions/marketing/homePage/footerSection
 
 // Arabic Components
 import HeaderAR from "../components/ar/versions/marketing/homePage/headerSection/header";
-import TrustedCompaniesAR from "../components/ar/versions/marketing/homePage/trustedCompaniesSection/trustedCompanies";
 import AboutAR from "../components/ar/versions/marketing/homePage/aboutSection/about";
 import ServicesAR from "../components/ar/versions/marketing/homePage/servicesSection/services";
 import CaseStudyAR from "../components/ar/versions/marketing/homePage/caseStudySection/caseStudy";
@@ -50,7 +47,6 @@ export default function Home() {
       <div className="min-h-screen bg-white" dir="rtl">
         <HeaderAR onNavigate={navigationHandlers} />
         <AboutAR ref={aboutRef} />
-        <TrustedCompaniesAR />
         <ServicesAR ref={servicesRef} />
         <CaseStudyAR ref={caseStudyRef} />
         <PortfolioAR ref={portfolioRef} />
@@ -65,7 +61,6 @@ export default function Home() {
     <div className="min-h-screen bg-white" dir="ltr">
       <HeaderEN onNavigate={navigationHandlers} />
       <AboutEN ref={aboutRef} />
-      <TrustedCompaniesEN />
       <ServicesEN ref={servicesRef} />
       <CaseStudyEN ref={caseStudyRef} />
       <PortfolioEN ref={portfolioRef} />

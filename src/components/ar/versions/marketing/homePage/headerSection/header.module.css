@@ -1,6 +1,6 @@
 /* Header Navigation Styles */
 .navComponent {
-  background-color: #001C46;
+  background-color: #0F172A;
   width: 100%;
   height: 51.15px;
 }
@@ -23,12 +23,12 @@
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: #001C46;
+  color: #0F172A;
   text-transform: none;
 }
 
 .cursorBlink {
-  color: #2762F8;
+  color: #0284C7;
   animation: blink 1s infinite;
 }
 
@@ -52,13 +52,13 @@
 }
 
 .navLoginButton {
-  color: #001C46;
+  color: #0F172A;
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 11.3675px;
   font-weight: 300;
   padding: 0 17.0512px;
   margin: 0px 0.454699px;
-  border: 1px solid #001C46;
+  border: 1px solid #0F172A;
   border-radius: 9999px;
   background-color: transparent;
   cursor: pointer;
@@ -73,7 +73,7 @@
 }
 
 .navButtonStrategy {
-  background-color: #001C46;
+  background-color: #0F172A;
   color: #FFFFFF;
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 11.3675px;
@@ -94,12 +94,12 @@
 
 .navLoginButton:hover {
   background-color: #FFFFFF;
-  color: #2762F8;
-  border-color: #2762F8;
+  color: #0284C7;
+  border-color: #0284C7;
 }
 
 .navButtonStrategy:hover {
-  background-color: #2762F8;
+  background-color: #0284C7;
   color: #FFFFFF;
 }
 

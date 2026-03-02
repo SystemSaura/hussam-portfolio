@@ -3,16 +3,16 @@
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 34.1024px;
   font-weight: normal;
-  color: #001C46;
+  color: #0F172A;
   line-height: 1.2;
 }
 
 .textCustomBlue {
-  color: #2762F8;
+  color: #0284C7;
 }
 
 .homeHeaderSubheading {
-  color: #001C46;
+  color: #0F172A;
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 34.1024px;
   font-weight: normal;
@@ -23,28 +23,30 @@
 .workSansBody {
   font-family: var(--font-ibm-plex-arabic), sans-serif;
   font-size: 12.7884px;
-  color: #001C46;
+  color: #0F172A;
   line-height: 1.6;
 }
 
 .subscribeButton {
-  background: #2762F8;
+  background: #0284C7;
   color: #FFFFFF;
   font-family: var(--font-ibm-plex-arabic), sans-serif;
-  font-size: 10.7991px;
-  padding: 12px 24px;
+  font-size: 18px;
+  padding: 0 48px;
   border: none;
   border-radius: 9999px;
   cursor: pointer;
-  width: 110.31px;
-  height: 36px;
+  height: 56px;
   box-sizing: border-box;
   margin: 0;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribeButton:hover {
-  background: #1E4ED8;
+  background: #0369A1;
 }
 
 /* Mobile responsive */

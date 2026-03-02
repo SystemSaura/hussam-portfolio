@@ -14,7 +14,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
             مشاريع حققت نتائج استثنائية
           </h2>
           <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed arabic-body"}>
-            نماذج حقيقية من مشاريع التسويق التي نفذتها لشركات خليجية رائدة، وحققت نمواً قابلاً للقياس
+            نماذج من مشاريع حققت نتائج استثنائية
           </p>
         </div>
 
@@ -48,13 +48,13 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير استراتيجية محتوى شاملة لمنصة شفتات للتوظيف بالذكاء الاصطناعي، مع التركيز على القيادة الفكرية واتجاهات استقطاب المواهب.
+                تطوير استراتيجية محتوى شاملة لمنصة شفتات للتوظيف بالذكاء الاصطناعي، تشمل المدونة ووسائل التواصل الاجتماعي ونشريات البريد الإلكتروني وإعلانات غوغل.
               </p>
               <button 
                 onClick={() => window.open('https://www.linkedin.com/company/shiftat-sa/', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonBlue}`}
               >
-                شاهد العمل كاملاً
+                شاهد نموذجاً من العمل
               </button>
             </div>
           </div>
@@ -87,13 +87,13 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير استراتيجية محتوى شاملة لمنصة أبحاث كابسارك، لتحسين إمكانية الوصول لرؤى سياسات الطاقة لأصحاب المصلحة.
+                تطوير محتوى عالي الجودة لمنشاة الأبحاث والدراسات كابسارك وتعزيز جودة حضورها الرقمي وكثافته.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonGreen}`}
               >
-                شاهد العمل كاملاً
+                شاهد نموذجاً من العمل
               </button>
             </div>
           </div>
@@ -126,13 +126,13 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                تطوير استراتيجية تسويق B2B احترافية عبر لينكد إن ومحتوى القطاع لأحد أكبر مقدمي الخدمات اللوجستية في الخليج، لترسيخ القيادة الفكرية.
+                تطوير استراتيجية تسويق B2B عبر لينكد إن لأحد أكبر مقدمي الخدمات اللوجستية في الخليج.
               </p>
               <button 
                 onClick={() => window.open('https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonOrange}`}
               >
-                شاهد العمل كاملاً
+                شاهد نموذجاً من العمل
               </button>
             </div>
           </div>
@@ -171,7 +171,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 onClick={() => window.open('https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonPink}`}
               >
-                شاهد العمل كاملاً
+                شاهد نموذجاً من العمل
               </button>
             </div>
           </div>
@@ -210,7 +210,7 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 onClick={() => window.open('https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonTeal}`}
               >
-                شاهد العمل كاملاً
+                شاهد نموذجاً من العمل
               </button>
             </div>
           </div>
@@ -243,13 +243,13 @@ const Portfolio = forwardRef<HTMLElement>((_, ref) => {
                 />
               </h3>
               <p className={styles.portfolioDescription + " arabic-body"}>
-                إعداد ملف تجاري شامل واستراتيجية تموضع سوقي لتوسع سائق عبر أسواق الخليج.
+                إعداد استراتيجية توسّع سوقي لشركة سائق عبر أسواق الخليج، وخاصة السعودية.
               </p>
               <button 
                 onClick={() => window.open('https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link', '_blank')}
                 className={`${styles.portfolioButton} ${styles.portfolioButtonPurple}`}
               >
-                شاهد العمل كاملاً
+                شاهد نموذجاً من العمل
               </button>
             </div>
           </div>

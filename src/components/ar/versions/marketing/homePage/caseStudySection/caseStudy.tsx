@@ -12,8 +12,8 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
         {/* Section Header - Matches Hero typography */}
         <div className={styles.sectionHeader}>
           <h2 className={styles.mainHeading + " arabic-heading"}>
-            كيف حولنا شفتات من منصة ناشئة إلى<br />
-            <span className={styles.highlightText}>المنصة الرائدة للتوظيف الذكي في السعودية</span>
+            كيف حوّلنا شفتات إلى العلامة التجارية الأولى<br />
+            <span className={styles.highlightText}>في مجال التوظيف الذكي داخل السعودية</span>
           </h2>
           <p className={styles.sectionSubtext + " arabic-body"}>
             استراتيجية تسويق رقمي متكاملة حققت نمواً استثنائياً وقابلاً للقياس
@@ -42,7 +42,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
                 </div>
               </div>
               <div className={styles.readMoreContainer}>
-                <span className={styles.readMoreText}>اقرأ دراسة الحالة</span>
+                <span className={styles.readMoreText}>طالع دراسة الحالة</span>
                 <Image
                   src="/arrow-right.svg"
                   alt="سهم"
@@ -77,9 +77,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             {/* Description */}
             <div className={styles.caseDescription}>
               <p className={styles.descriptionText + " arabic-body"}>
-                من خلال استراتيجية تسويق رقمي متكاملة تجمع بين تسويق المحتوى المستهدف، حملات إعلانات جوجل المحسنة، والتسويق عبر البريد الإلكتروني عالي الأداء، 
-                نجحنا في ترسيخ مكانة شفتات كالحل الأمثل للتوظيف بالذكاء الاصطناعي في المملكة. النظام التسويقي الشامل 
-                وجّه العملاء المحتملين عبر كل مرحلة من رحلة الشراء، محققاً نمواً قابلاً للتنبؤ وقيادة في السوق.
+                عبر استراتيجية تسويق متكاملة تجمع بين محتوى عالي الجودة وإعلانات غوغل ونشريات أسبوعية لآلاف العملاء المحتملين، وبناء حضور قوي على منصتيْ X وLinkedIn .. نجحنا في ترسيخ مكانة شفتات كالحل الأمثل للتوظيف بالذكاء الاصطناعي في المملكة.
               </p>
             </div>
 
@@ -87,7 +85,7 @@ const CaseStudy = forwardRef<HTMLElement>((_, ref) => {
             <div className={styles.socialProof}>
               <div className={styles.socialContent}>
                 <div className={styles.socialHeader}>
-                  <span className={styles.socialLabel + " arabic-body"}>نمو الحضور الرقمي</span>
+                  <span className={styles.socialLabel + " arabic-body"}>بناء حضور رقمي متميز</span>
                 </div>
                 <div className={styles.socialShowcase}>
                   <div className={styles.platformDisplay}>
