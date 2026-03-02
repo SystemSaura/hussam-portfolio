@@ -30,7 +30,6 @@ export default function Header({ onNavigate, variant = "default" }: HeaderProps)
 
         {/* Navigation */}
         <nav className="flex items-center space-x-6">
-          <button onClick={onNavigate.about} className="text-gray-300 font-['Work_Sans'] text-[11.3675px] font-light px-2 py-1 hover:text-white transition-colors">About</button>
           <button onClick={onNavigate.portfolio} className="text-gray-300 font-['Work_Sans'] text-[11.3675px] font-light px-2 py-1 hover:text-white transition-colors">Portfolio</button>
           <button onClick={onNavigate.services} className="text-gray-300 font-['Work_Sans'] text-[11.3675px] font-light px-2 py-1 hover:text-white transition-colors">Services</button>
           <button onClick={onNavigate.caseStudy} className="text-gray-300 font-['Work_Sans'] text-[11.3675px] font-light px-2 py-1 hover:text-white transition-colors">Case Study</button>

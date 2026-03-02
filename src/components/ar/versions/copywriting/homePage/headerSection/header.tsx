@@ -30,7 +30,6 @@ export default function Header({ onNavigate, variant = "default" }: HeaderProps)
 
         {/* Navigation - Right to left order for Arabic */}
         <nav className="flex items-center space-x-0 space-x-reverse gap-4">
-          <button onClick={onNavigate.about} className="text-[#222222] font-['Work_Sans'] text-sm font-normal px-2 py-1 hover:text-black transition-colors">نبذة عني</button>
           <button onClick={onNavigate.portfolio} className="text-[#222222] font-['Work_Sans'] text-sm font-normal px-2 py-1 hover:text-black transition-colors">أعمالي</button>
           <button onClick={onNavigate.services} className="text-[#222222] font-['Work_Sans'] text-sm font-normal px-2 py-1 hover:text-black transition-colors">خدماتي</button>
           <button onClick={onNavigate.caseStudy} className="text-[#222222] font-['Work_Sans'] text-sm font-normal px-2 py-1 hover:text-black transition-colors">دراسة حالة</button>

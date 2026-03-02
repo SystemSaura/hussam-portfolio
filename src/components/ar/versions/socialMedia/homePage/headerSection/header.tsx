@@ -30,7 +30,6 @@ export default function Header({ onNavigate, variant = "default" }: HeaderProps)
 
         {/* Navigation - Right to left order for Arabic */}
         <nav className="flex items-center space-x-0 space-x-reverse gap-4">
-          <button onClick={onNavigate.about} className={styles.navLink}>نبذة عني</button>
           <button onClick={onNavigate.portfolio} className={styles.navLink}>أعمالي</button>
           <button onClick={onNavigate.services} className={styles.navLink}>خدماتي</button>
           <button onClick={onNavigate.caseStudy} className={styles.navLink}>دراسة حالة</button>
