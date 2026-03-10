@@ -19,179 +19,110 @@ interface PortfolioPageProps {
 }
 
 export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
-  const [activeTab, setActiveTab] = useState("الكل");
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(false);
-  const tabContainerRef = useRef<HTMLDivElement>(null);
-
-  // Social Media portfolio data in Arabic
-  const portfolioData = {
-    "تسويق المحتوى": [
-      {
-        category: "تقنية الموارد البشرية",
-        logo: "/logos/shiftat.webp",
-        logoText: "شفتات",
-        title: "محتوى سلطة لينكد إن",
-        description: "بنينا محتوى قيادة فكرية وضع شفتات كخبير التوظيف الذكي الأول في السعودية. رؤى يومية يشاركها مديرو الموارد البشرية فعلاً.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
-      },
-      {
-        category: "الرعاية الصحية",
-        logo: "/logos/alnahdi.webp",
-        logoText: "النهدي",
-        title: "نشرة تحقق نتائج",
-        description: "حولنا نصائح صحية مملة إلى محتوى نشرة جذاب. معدل فتح ٦٥٪ لأنها تحل مشاكل حقيقية بدلاً من الترويج للمنتجات.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
-      },
-      {
-        category: "التعليم",
-        logo: "/logos/bonyan.webp",
-        logoText: "بنيان",
-        title: "محتوى تعليمي يبقى عالقاً",
-        description: "أنشأنا محتوى مدونة يريد الأهالي قراءته فعلاً. ركزنا على تحديات تطوير الطلاب وليس تسويق المدرسة.",
-        buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
-      },
-      {
-        category: "الصحة النفسية",
-        logo: "/logos/mindtales.webp",
-        logoText: "مايند تيلز",
-        title: "محتوى صحة نفسية يحدث فرقاً",
-        description: "محتوى صحة نفسية بالعربية والإنجليزية يساعد الناس فعلاً بدلاً من الترويج للخدمات. قصص حقيقية، حلول حقيقية.",
-        buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
-      }
-    ],
-    "تسويق وسائل التواصل الاجتماعي": [
-      {
-        category: "تقنية الموارد البشرية",
-        logo: "/logos/shiftat.webp",
-        logoText: "شفتات",
-        title: "تواصل اجتماعي للشركات يحقق النتائج",
-        description: "نمونا من ٠ إلى ١٢ ألف متابع يهتمون بالتوظيف الذكي. بنينا سلطة على لينكد إن وإكس بمحتوى يشاركه قادة الموارد البشرية وليس يتجاهلونه.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
-      },
-      {
-        category: "اللوجستيات",
-        logo: "/logos/abudawood.webp",
-        logoText: "أبوداود",
-        title: "تموضع سلطة الصناعة",
-        description: "وضعنا رائد الخدمات اللوجستية في الخليج كصوت الابتكار في سلسلة التوريد. استراتيجية لينكد إن تبني الثقة قبل البيع.",
-        buttonColor: "Orange",
-        link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true"
-      },
-      {
-        category: "التعليم",
-        logo: "/logos/downehouse.webp",
-        logoText: "داون هاوس",
-        title: "استراتيجية اجتماعية للقبولات",
-        description: "محتوى اجتماعي يُظهر تميز المدرسة دون مفاخرة. الأهالي يشاركونه لأنه يحل مخاوفهم التعليمية.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/14HO-MTvpGGteiaJG7o3vBMDiIQecnoYM?usp=sharing"
-      },
-      {
-        category: "الفنون",
-        logo: "/logos/jaxdistrict.webp",
-        logoText: "جاكس ديستريكت",
-        title: "محتوى يجمع المجتمع الفني",
-        description: "بنينا مجتمع فنون متفاعل من خلال وسائل التواصل. محتوى يحتفي بالمواهب المحلية ويقود حضور الفعاليات.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1TXrFtUlfxUvZosRY-WTqDlzqF_HVJimE?usp=sharing"
-      },
-      {
-        category: "البيئة",
-        logo: "/logos/reviva.webp",
-        logoText: "ريفيفا",
-        title: "تفاعل موجه بالقضايا",
-        description: "محتوى بيئي يحفز على العمل وليس الوعي فقط. استراتيجية اجتماعية تحول المتابعين إلى دعاة إعادة تدوير.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link"
-      },
-      {
-        category: "النقل",
-        logo: "/logos/makkahbus.webp",
-        logoText: "باص مكة",
-        title: "تواصل الخدمة العامة",
-        description: "جعلنا وسائل التواصل للنقل العام مفيدة فعلاً. تحديثات خدمة وتفاعل مجتمعي يخدم السكان.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
-      }
-    ],
-    "استراتيجية العلامة التجارية": [
-      {
-        category: "العقارات",
-        logo: "/logos/empirerealestate.webp",
-        logoText: "امباير العقارية",
-        title: "تموضع العلامة المتميزة",
-        description: "وضعنا عقارات قطر الفاخرة لمشترين أثرياء. استراتيجية علامة تجذب مستثمرين جديين وليس متصفحين.",
-        buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
-      },
-      {
-        category: "اللوجستيات",
-        logo: "/logos/saeq.webp",
-        logoText: "سائق",
-        title: "استراتيجية التوسع الإقليمي",
-        description: "تموضع علامة تجارية للتوسع اللوجستي في الخليج. استراتيجية تبني الثقة عبر الأسواق قبل عرض الخدمات.",
-        buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
-      },
-      {
-        category: "الفنون",
-        logo: "/logos/alhanoufalhamdan.webp",
-        logoText: "الهنوف الحمدان",
-        title: "تطوير العلامة الشخصية",
-        description: "استراتيجية علامة شخصية لمحترفة فنون. تموضع محفظة أعمال يجذب هواة جمع جديين وفرصاً.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing"
-      }
-    ]
-  };
-
-  const serviceTypes = ["الكل", "تسويق وسائل التواصل الاجتماعي", "تسويق المحتوى", "استراتيجية العلامة التجارية"];
-
-  // Check scroll position and update arrow visibility
-  const checkScrollPosition = () => {
-    if (tabContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = tabContainerRef.current;
-      setShowLeftArrow(scrollLeft > 0);
-      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 1);
+  // Social media marketing projects only
+  const projects = [
+    {
+      category: "تقنية الموارد البشرية",
+      logo: "/logos/shiftat.webp",
+      logoText: "شفتات",
+      title: "تواصل اجتماعي للشركات يحقق النتائج",
+      description: "نمونا من ٠ إلى ١٢ ألف متابع يهتمون بالتوظيف الذكي. بنينا سلطة على لينكد إن وإكس بمحتوى يشاركه قادة الموارد البشرية وليس يتجاهلونه.",
+      buttonColor: "Blue",
+      link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+      externalLinks: [
+        { label: "لينكد إن", url: "https://www.linkedin.com/company/shiftat-sa/" },
+        { label: "الموقع", url: "https://shiftat.sa" }
+      ]
+    },
+    {
+      category: "اللوجستيات",
+      logo: "/logos/abudawood.webp",
+      logoText: "أبوداود",
+      title: "تموضع سلطة الصناعة",
+      description: "وضعنا رائد الخدمات اللوجستية في الخليج كصوت الابتكار في سلسلة التوريد. استراتيجية لينكد إن تبني الثقة قبل البيع.",
+      buttonColor: "Orange",
+      link: "https://drive.google.com/drive/folders/1OW44Melyr3JIr4rYvE8SQFT-hx_QzI48?usp=drive_link",
+      externalLinks: [
+        { label: "لينكد إن", url: "https://www.linkedin.com/company/abudawood-group" },
+        { label: "الموقع", url: "https://www.abudawood.com/" }
+      ]
+    },
+    {
+      category: "التعليم",
+      logo: "/logos/downehouse.webp",
+      logoText: "داون هاوس",
+      title: "استراتيجية اجتماعية للقبولات",
+      description: "محتوى اجتماعي يُظهر تميز المدرسة دون مفاخرة. الأهالي يشاركونه لأنه يحل مخاوفهم التعليمية.",
+      buttonColor: "Green",
+      link: "https://drive.google.com/drive/folders/14HO-MTvpGGteiaJG7o3vBMDiIQecnoYM?usp=sharing",
+      externalLinks: [
+        { label: "انستقرام", url: "https://www.instagram.com/downehouseriyadh/" },
+        { label: "الموقع", url: "https://downehouseriyadh.com/" }
+      ]
+    },
+    {
+      category: "الفنون",
+      logo: "/logos/jaxdistrict.webp",
+      logoText: "جاكس ديستريكت",
+      title: "محتوى يجمع المجتمع الفني",
+      description: "بنينا مجتمع فنون متفاعل من خلال وسائل التواصل. محتوى يحتفي بالمواهب المحلية ويقود حضور الفعاليات.",
+      buttonColor: "Pink",
+      link: "https://drive.google.com/drive/folders/1TXrFtUlfxUvZosRY-WTqDlzqF_HVJimE?usp=sharing",
+      externalLinks: [
+        { label: "انستقرام", url: "https://www.instagram.com/jaxdistrict/" },
+        { label: "الموقع", url: "https://jaxdistrict.com/" }
+      ]
+    },
+    {
+      category: "البيئة",
+      logo: "/logos/reviva.webp",
+      logoText: "ريفيفا",
+      title: "تفاعل موجه بالقضايا",
+      description: "محتوى بيئي يحفز على العمل وليس الوعي فقط. استراتيجية اجتماعية تحول المتابعين إلى دعاة إعادة تدوير.",
+      buttonColor: "Green",
+      link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link",
+      externalLinks: [
+        { label: "لينكد إن", url: "https://www.linkedin.com/company/sircsaudi/" },
+        { label: "الموقع", url: "https://reviva.sa/" }
+      ]
+    },
+    {
+      category: "العقارات",
+      logo: "/logos/estater.webp",
+      logoText: "إستاتر",
+      title: "محتوى مدونة ووسائل تواصل",
+      description: "بنينا حضوراً رقمياً يضع إستاتر كمصدر رئيسي للذكاء العقاري في دول الخليج.",
+      buttonColor: "Purple",
+      link: "",
+      externalLinks: [
+        { label: "انستقرام", url: "https://www.instagram.com/the.real.estater/" },
+        { label: "الموقع", url: "https://estater.com" }
+      ]
     }
-  };
+  ];
 
-  // Scroll functions
-  const scrollLeft = () => {
-    if (tabContainerRef.current) {
-      tabContainerRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+  const getExternalLinkIcon = (label: string) => {
+    switch (label) {
+      case "LinkedIn":
+      case "لينكد إن":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        );
+      case "Instagram":
+      case "انستقرام":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        );
+      case "X":
+      case "إكس":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        );
+      default: // Website / الموقع
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        );
     }
-  };
-
-  const scrollRight = () => {
-    if (tabContainerRef.current) {
-      tabContainerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
-    }
-  };
-
-  // Check scroll position on mount and resize
-  useEffect(() => {
-    checkScrollPosition();
-    
-    const handleResize = () => {
-      checkScrollPosition();
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const getFilteredData = () => {
-    if (activeTab === "الكل") {
-      return portfolioData;
-    }
-    return { [activeTab]: portfolioData[activeTab as keyof typeof portfolioData] };
   };
 
   const getButtonColorClass = (color: string) => {
@@ -218,10 +149,6 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
     }
   };
 
-  const getTotalProjectCount = () => {
-    return Object.values(portfolioData).reduce((total, projects) => total + projects.length, 0);
-  };
-
   return (
     <div className="min-h-screen bg-white" dir="rtl">
       {/* Header with white background */}
@@ -236,130 +163,77 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-50 rounded-full px-4 py-2 mb-4">
               <span className={styles.flechaRatingText + " arabic-body"}>متخصص وسائل التواصل الاجتماعي</span>
-              <span className="text-gray-400 mx-2">•</span>
-              <span className={styles.flechaProjectsText + " arabic-body"}>{getTotalProjectCount()} حملة عالية التأثير</span>
+              <span className="text-gray-400 mx-2">&bull;</span>
+              <span className={styles.flechaProjectsText + " arabic-body"}>{projects.length} حملة عالية التأثير</span>
             </div>
             <h1 className={styles.flechaSectionHeading + " mb-6 arabic-heading"}>
-              {activeTab === "الكل" ? "وسائل تواصل اجتماعي تحرك الأعمال" : activeTab}
+              وسائل تواصل اجتماعي تحرك الأعمال
             </h1>
             <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12 arabic-body"}>
-              {activeTab === "الكل" 
-                ? "توقف عن النشر في الفراغ. هذه الحملات حققت متابعين حقيقيين، تفاعلاً حقيقياً، وعملاء حقيقيين لشركات خليجية. بلا مقاييس وهمية—فقط نتائج مهمة لأرباحك."
-                : `استكشف مشاريع ${activeTab} التي حولت وسائل التواصل من ضوضاء إلى قناة توليد عملاء فعالة.`
-              }
+              توقف عن النشر في الفراغ. هذه الحملات حققت متابعين حقيقيين، تفاعلاً حقيقياً، وعملاء حقيقيين لشركات خليجية. بلا مقاييس وهمية—فقط نتائج مهمة لأرباحك.
             </p>
+          </div>
 
-            {/* Enhanced Tab Bar with scroll indicators */}
-            <div className={styles.tabBarSection}>
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className={styles.tabContainerWrapper}>
-                  {/* Left Arrow */}
-                  {showLeftArrow && (
-                    <button 
-                      onClick={scrollLeft}
-                      className={styles.scrollArrow + " " + styles.scrollArrowLeft}
-                      aria-label="مرر التبويبات لليسار"
-                    >
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </button>
-                  )}
-                  
-                  {/* Tab Container */}
-                  <div 
-                    ref={tabContainerRef}
-                    className={styles.tabContainer}
-                    onScroll={checkScrollPosition}
-                  >
-                    {serviceTypes.map((type) => (
+          {/* Portfolio Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            {projects.map((project, index) => (
+              <div key={index} className={`${styles.portfolioCard} group`}>
+                <div className={`${styles.portfolioHeader} bg-gradient-to-br ${getHeaderColorClass(project.buttonColor)}`}>
+                  <div className={styles.portfolioHeaderContent}>
+                    <div className={styles.portfolioCategory + " arabic-body"}>{project.category}</div>
+                    <div className={styles.portfolioCompanyLogo}>
+                      {project.logo ? (
+                        <img src={project.logo} alt={project.logoText} className={styles.portfolioLogoImg} />
+                      ) : (
+                        <div className={styles.portfolioLogoText + " arabic-body"}>{project.logoText}</div>
+                      )}
+                    </div>
+                  </div>
+                  <div className={styles.portfolioHeaderMain}>
+                    <h4 className={styles.portfolioServiceType + " arabic-heading"}>مشروع {project.category}</h4>
+                    <p className={styles.portfolioServiceDetail + " arabic-body"}>تسويق وسائل التواصل الاجتماعي</p>
+                  </div>
+                </div>
+
+                <div className={styles.portfolioContent}>
+                  <h3 className={styles.portfolioTitle + " arabic-heading"}>
+                    {project.title}
+                    <Image
+                      src="/arrow-right.svg"
+                      alt="سهم"
+                      width={18}
+                      height={18}
+                      className={styles.portfolioArrow}
+                      style={{ transform: 'scaleX(-1)' }}
+                    />
+                  </h3>
+                  <p className={styles.portfolioDescription + " arabic-body"}>
+                    {project.description}
+                  </p>
+                  <div className={styles.portfolioButtons}>
+                    {project.link && (
                       <button
-                        key={type}
-                        onClick={() => setActiveTab(type)}
-                        className={`${styles.tabButton} ${
-                          activeTab === type ? styles.tabButtonActive : styles.tabButtonInactive
-                        } arabic-body`}
+                        onClick={() => window.open(project.link, '_blank')}
+                        className={`${styles.portfolioButton} ${styles.portfolioButtonOutline} arabic-body`}
                       >
-                        {type}
+                      نماذج (داخلي)
+                    </button>
+                    )}
+                    {project.externalLinks.map((extLink, i) => (
+                      <button
+                        key={i}
+                        onClick={() => window.open(extLink.url, '_blank')}
+                        className={`${styles.portfolioButton} ${styles.portfolioIconOnly} ${getButtonColorClass(project.buttonColor)}`}
+                        title={extLink.label}
+                      >
+                        {getExternalLinkIcon(extLink.label)}
                       </button>
                     ))}
                   </div>
-
-                  {/* Right Arrow */}
-                  {showRightArrow && (
-                    <button 
-                      onClick={scrollRight}
-                      className={styles.scrollArrow + " " + styles.scrollArrowRight}
-                      aria-label="مرر التبويبات لليمين"
-                    >
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </button>
-                  )}
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-
-          {/* Portfolio Categories */}
-          {Object.entries(getFilteredData()).map(([categoryName, projects], categoryIndex) => (
-            <div key={categoryName} className="mb-32">
-              {activeTab === "الكل" && (
-                <div className="mt-16 mb-16">
-                  <h2 className={styles.categoryHeading + " arabic-heading"}>{categoryName}</h2>
-                  <div className={styles.categoryDivider}></div>
-                </div>
-              )}
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-                {projects.map((project, index) => (
-                  <div key={`${categoryName}-${index}`} className={`${styles.portfolioCard} group`}>
-                    <div className={`${styles.portfolioHeader} bg-gradient-to-br ${getHeaderColorClass(project.buttonColor)}`}>
-                      <div className={styles.portfolioHeaderContent}>
-                        <div className={styles.portfolioCategory + " arabic-body"}>{project.category}</div>
-                        <div className={styles.portfolioCompanyLogo}>
-                          {project.logo ? (
-                            <img src={project.logo} alt={project.logoText} className={styles.portfolioLogoImg} />
-                          ) : (
-                            <div className={styles.portfolioLogoText + " arabic-body"}>{project.logoText}</div>
-                          )}
-                        </div>
-                      </div>
-                      <div className={styles.portfolioHeaderMain}>
-                        <h4 className={styles.portfolioServiceType + " arabic-heading"}>مشروع {project.category}</h4>
-                        <p className={styles.portfolioServiceDetail + " arabic-body"}>{categoryName}</p>
-                      </div>
-                    </div>
-                    
-                    <div className={styles.portfolioContent}>
-                      <h3 className={styles.portfolioTitle + " arabic-heading"}>
-                        {project.title}
-                        <Image
-                          src="/arrow-right.svg"
-                          alt="سهم"
-                          width={18}
-                          height={18}
-                          className={styles.portfolioArrow}
-                          style={{ transform: 'scaleX(-1)' }}
-                        />
-                      </h3>
-                      <p className={styles.portfolioDescription + " arabic-body"}>
-                        {project.description}
-                      </p>
-                      <button 
-                        onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
-                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""} arabic-body`}
-                        disabled={project.link === "#"}
-                      >
-                        {project.link !== "#" ? "شاهد العمل" : "قريباً"}
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
 
           {/* Portfolio Summary */}
           <div className={`text-center border-t border-gray-200 ${styles.portfolioSummary}`}>
@@ -371,7 +245,7 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                 </svg>
                 <span className={styles.flechaVerificationText + " arabic-body"}>جميع الحملات موثقة ومُتحقق منها</span>
               </div>
-              
+
               {/* Back Link */}
               <div>
                 <Link href="/social-media" className={styles.flechaViewAllText + " inline-flex items-center hover:text-blue-800 transition-colors arabic-body text-blue-600"}>

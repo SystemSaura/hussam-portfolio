@@ -34,7 +34,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Homepage That Stops Bounces Dead",
         description: "Transformed confusing AI jargon into headlines that make HR managers think 'Finally, someone who gets my hiring nightmare.' Result: 60%+ email conversion from visitors who actually understand the value.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://shiftat.sa" }]
       },
       {
         category: "Government Research",
@@ -43,7 +44,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Research Portal That Actually Makes Sense",
         description: "Turned dense energy policy research into clear, actionable insights. Copy that transforms technical complexity into compelling value for decision-makers who need answers, not academic papers.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
+        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.kapsarc.org/" }]
       },
       {
         category: "Real Estate",
@@ -52,7 +54,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Luxury Property Copy That Sells Dreams",
         description: "Sales copy that positions luxury properties as exclusive lifestyle upgrades, not just real estate. Copy that makes Qatar's premium buyers feel like they're missing out if they don't act now.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.empirerealestate.qa/" }]
       },
       {
         category: "Logistics",
@@ -61,7 +64,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "B2B Copy That Cuts Through The Noise",
         description: "Messaging that makes SAEQ the obvious choice for GCC logistics. Copy that differentiates in a commodity market by focusing on what keeps supply chain managers awake at night.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://saeq.com/" }]
       }
     ],
     "Email Copy That Converts": [
@@ -72,7 +76,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Email Sequences That Actually Get Read",
         description: "Subject lines that survive the inbox massacre and email copy that builds relationships instead of triggering unsubscribes. Sequences that guide prospects from curious to convinced.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://shiftat.sa" }]
       },
       {
         category: "Healthcare",
@@ -81,7 +86,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Newsletter Copy That Drives Store Visits",
         description: "Email campaigns that turn health tips into customer action. Copy that builds trust while subtly driving store visits and product sales for Saudi's leading pharmacy chain.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://nahdi.sa/" }]
       },
       {
         category: "Education",
@@ -90,7 +96,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Educational Emails That Enroll Students",
         description: "Email sequences that transform learning methodologies into must-have educational experiences. Copy that makes parents feel like they're failing their kids if they don't enroll.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing",
+        externalLinks: []
       }
     ],
     "Sales Copy That Closes": [
@@ -101,7 +108,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Property Sales Pages That Create FOMO",
         description: "Sales copy that positions luxury properties as once-in-a-lifetime investments. Copy that addresses every objection and makes Qatar's premium buyers feel urgency without desperation.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.empirerealestate.qa/" }]
       },
       {
         category: "Healthcare",
@@ -110,7 +118,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Mental Health Copy That Builds Trust",
         description: "Sensitive sales copy that makes seeking mental health help feel safe and necessary. Copy that handles the stigma while creating urgency around getting help before things get worse.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
+        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.mindtales.me/" }]
       },
       {
         category: "Education",
@@ -119,7 +128,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Educational Program Copy That Enrolls",
         description: "Sales copy that transforms educational features into must-have advantages for students' futures. Copy that makes parents feel like competitive disadvantage is the cost of not enrolling.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1KLbVMaX4Z0jQ1KiDcaKEaszyTjZRHFcu?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1KLbVMaX4Z0jQ1KiDcaKEaszyTjZRHFcu?usp=sharing",
+        externalLinks: []
       }
     ],
     "Brand Messaging": [
@@ -130,7 +140,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Positioning Copy That Dominates Markets",
         description: "Brand messaging that establishes SAEQ as the only logical choice for GCC logistics. Copy that creates market leadership positioning by owning the category conversation.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://saeq.com/" }]
       },
       {
         category: "Arts",
@@ -139,7 +150,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Personal Brand Copy That Attracts Opportunities",
         description: "Personal brand messaging that positions arts professional as the go-to expert. Copy that builds authority and attracts premium opportunities by owning a specific niche.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing",
+        externalLinks: []
       },
       {
         category: "Consultancy",
@@ -148,7 +160,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Consultancy Brand Voice That Builds Credibility",
         description: "Professional brand messaging that establishes unquestionable expertise. Copy that builds credibility and positions authority in both Arabic and English markets.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing",
+        externalLinks: []
       }
     ],
     "Content That Converts": [
@@ -159,7 +172,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "70 Articles That Build Thought Leadership",
         description: "Content copy that positions expertise while engaging diverse audiences. Writing that builds authority through storytelling and keeps readers coming back for more insights.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link",
+        externalLinks: []
       },
       {
         category: "Health",
@@ -168,7 +182,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Mental Health Content That Destigmatizes",
         description: "Educational content that builds trust while encouraging action. Writing that makes mental health conversations feel normal and seeking help feel necessary, not shameful.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
+        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.mindtales.me/" }]
       },
       {
         category: "Various Industries",
@@ -177,7 +192,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Industry-Specific Copy That Resonates",
         description: "Targeted content copy tailored to specific audience pain points. Each piece crafted to make the target buyer think 'This person really understands my industry.'",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link",
+        externalLinks: []
       },
       {
         category: "Health",
@@ -186,7 +202,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Healthcare Content That Builds Authority",
         description: "Educational content that positions rehabilitation expertise while building trust. Writing that makes patients feel confident in choosing the right treatment path.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing",
+        externalLinks: []
       }
     ]
   };
@@ -232,6 +249,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       return portfolioData;
     }
     return { [activeTab]: portfolioData[activeTab as keyof typeof portfolioData] };
+  };
+
+  const getExternalLinkIcon = (label: string) => {
+    switch (label) {
+      case "LinkedIn":
+      case "لينكد إن":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        );
+      case "Instagram":
+      case "انستقرام":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        );
+      default: // Website / الموقع
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        );
+    }
   };
 
   const getButtonColorClass = (color: string) => {
@@ -386,13 +422,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                       <p className={styles.portfolioDescription}>
                         {project.description}
                       </p>
-                      <button 
-                        onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
-                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
-                        disabled={project.link === "#"}
-                      >
-                        {project.link !== "#" ? "View Full Work" : "Coming Soon"}
-                      </button>
+                      <div className={styles.portfolioButtons}>
+                        <button
+                          onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
+                          className={`${styles.portfolioButton} ${styles.portfolioButtonOutline} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
+                          disabled={project.link === "#"}
+                        >
+                          {project.link !== "#" ? "Samples (Internal)" : "Coming Soon"}
+                        </button>
+                        {project.externalLinks.map((extLink, i) => (
+                          <button
+                            key={i}
+                            onClick={() => window.open(extLink.url, '_blank')}
+                            className={`${styles.portfolioButton} ${styles.portfolioIconBtn} ${getButtonColorClass(project.buttonColor)}`}
+                          >
+                            {getExternalLinkIcon(extLink.label)}
+                            {extLink.label}
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 ))}

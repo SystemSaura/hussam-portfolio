@@ -428,6 +428,49 @@
   background: linear-gradient(135deg, #DB2777 0%, #9D174D 100%);
 }
 
+/* Button Group Layout */
+.portfolioButtons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.portfolioButtonOutline {
+  background: transparent !important;
+  border: 1.5px solid #D1D5DB !important;
+  color: #6B7280 !important;
+  box-shadow: none !important;
+  font-size: 12px !important;
+  padding: 8px 12px !important;
+}
+
+.portfolioButtonOutline:hover {
+  border-color: #374151 !important;
+  color: #374151 !important;
+  background: rgba(0, 0, 0, 0.02) !important;
+  box-shadow: none !important;
+  transform: translateY(-1px);
+}
+
+.portfolioIconBtn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  font-size: 12px !important;
+  padding: 8px 12px !important;
+}
+
+.portfolioIconOnly {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px !important;
+  min-width: 34px !important;
+  height: 34px !important;
+  border-radius: 10px !important;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .flechaSectionHeading {

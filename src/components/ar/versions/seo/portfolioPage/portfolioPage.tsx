@@ -34,7 +34,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "مركز محتوى التوظيف الذكي",
         description: "طورنا استراتيجية محتوى شاملة لمحركات البحث تستهدف كلمات صناعة التوظيف المفتاحية، مما أدى إلى ١٥+ ترتيب في الصفحة الأولى ونمو ٢٠٠٪ في الزيارات العضوية من خلال البحث الاستراتيجي للكلمات وتحسين المحتوى.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+        externalLinks: [{ label: "الموقع", url: "https://shiftat.sa" }]
       },
       {
         category: "البحوث الحكومية",
@@ -43,7 +44,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "مركز محتوى سياسات الطاقة المحسّن",
         description: "حسّنا محتوى بوابة الأبحاث لكلمات سياسات الطاقة المفتاحية، مما حسّن الظهور في البحث وإمكانية الوصول للرؤى لأصحاب المصلحة في السياسات من خلال إنشاء محتوى استراتيجي المحسّن.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
+        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://www.kapsarc.org/" }]
       },
       {
         category: "المحتوى الثقافي",
@@ -52,7 +54,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "٧٠ مقال ثقافي محسّن لمحركات البحث",
         description: "طورنا محتوى شامل لمحركات البحث يغطي المواضيع الثقافية مع بحث مستهدف للكلمات المفتاحية وهيكلة محسّنة وتنسيق ملائم للبحث لتحقيق أقصى ظهور ووصول عضوي.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "التعليم",
@@ -61,7 +64,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "استراتيجية مدونة تعليمية محسّنة",
         description: "أنشأنا محتوى تعليمي محسّن لمحركات البحث يستهدف كلمات منهجيات التعلم المفتاحية، مما حسّن الظهور في البحث للموارد التعليمية ومحتوى تطوير الطلاب.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "الصحة النفسية",
@@ -70,7 +74,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "مركز محتوى الصحة النفسية المحسّن",
         description: "طورنا استراتيجية محتوى ثنائية اللغة لمحركات البحث لمواضيع الصحة النفسية، تستهدف كلمات العافية والصحة النفسية المفتاحية بالعربية والإنجليزية لتحقيق أقصى وصول بحثي.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
+        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://www.mindtales.me/" }]
       },
       {
         category: "صناعات متنوعة",
@@ -79,7 +84,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى محسّن متخصص بالصناعة",
         description: "أنشأنا مقالات مستهدفة لمحركات البحث عبر صناعات متعددة، كل منها محسّن لكلمات مفتاحية متخصصة وسلوكيات بحث فريدة لقطاعات سوقية مختلفة.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       }
     ],
     "تحسين المواقع ومحتواها": [
@@ -90,7 +96,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تحسين بوابة الأبحاث لمحركات البحث",
         description: "استراتيجية محتوى موقع شاملة مع تحسين لمحركات البحث لمنصة الأبحاث، تحسن ظهور محرك البحث وإمكانية وصول المستخدم لرؤى سياسات الطاقة.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
+        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://www.kapsarc.org/" }]
       },
       {
         category: "الرعاية الصحية",
@@ -99,7 +106,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تحسين محتوى الرعاية الصحية",
         description: "حسّنا النشرة ومحتوى الموقع لكلمات الرعاية الصحية المفتاحية، مما حسّن ظهور البحث لخدمات الصيدلية واستعلامات البحث المتعلقة بالصحة.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://nahdi.sa/" }]
       },
       {
         category: "التعليم",
@@ -108,7 +116,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى موقع تعليمي محسّن",
         description: "حسّنا محتوى الموقع التعليمي بالإنجليزية والعربية لتحسين محركات البحث للمدارس الدولية، يستهدف استعلامات بحث الآباء والطلاب.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       }
     ],
     "بحث الكلمات المفتاحية والتخطيط": [
@@ -119,7 +128,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "استراتيجية كلمات صناعة التوظيف",
         description: "بحث شامل للكلمات المفتاحية وتخطيط المحتوى لمنصة التوظيف الذكي، تحدد مصطلحات البحث عالية القيمة وفرص المحتوى للنمو العضوي.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+        externalLinks: [{ label: "الموقع", url: "https://shiftat.sa" }]
       },
       {
         category: "اللوجستيات",
@@ -128,7 +138,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "استراتيجية محركات البحث للشركات",
         description: "طورنا بحث الكلمات المفتاحية واستراتيجية محتوى محركات البحث لصناعة اللوجستيات، تستهدف مصطلحات البحث بين الشركات وكلمات سلسلة التوريد المفتاحية لتحسين الظهور.",
         buttonColor: "Orange",
-        link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true"
+        link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true",
+        externalLinks: [{ label: "الموقع", url: "https://www.abudawood.com/" }]
       },
       {
         category: "العقارات",
@@ -137,7 +148,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى العقارات الفاخرة المحسّن",
         description: "محتوى علامة محسّن لمحركات البحث واستراتيجية كلمات مفتاحية لسوق العقارات الفاخرة في قطر، تستهدف مصطلحات البحث للعقارات عالية القيمة.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://www.empirerealestate.qa/" }]
       }
     ],
     "كتابة وتحسين محتوى محركات البحث": [
@@ -148,7 +160,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "دراسة حالة حلول الأمان المحسّنة",
         description: "محتوى دراسة حالة محسّن لمحركات البحث يستهدف كلمات أمان المؤسسات المفتاحية ويعرض الحلول لتحسين ظهور البحث في سوق الأمان بين الشركات.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1aAw4aTUWEWpWn7HMs2ryEXenQ5uISfw4?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1aAw4aTUWEWpWn7HMs2ryEXenQ5uISfw4?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "الحكومة",
@@ -157,7 +170,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تحسين المحتوى الحكومي لمحركات البحث",
         description: "حسّنا محتوى التواصل الحكومي لمحركات البحث، مما حسّن إمكانية الوصول العام وظهور البحث للمعلومات المهمة.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1EJ0ia1IIRMizi8ls4NyobYyZGLD_pPwf?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1EJ0ia1IIRMizi8ls4NyobYyZGLD_pPwf?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "الإعلام والترفيه",
@@ -166,7 +180,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تحسين محتوى الترفيه لمحركات البحث",
         description: "محتوى تسويقي محسّن لمحركات البحث لشركة الإعلام الرائدة، يركز على كلمات صناعة الترفيه المفتاحية وتحسين ظهور العلامة التجارية.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1gVWbXCdlC8H8CeUlRTN56hnWzX4Tb-v-?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1gVWbXCdlC8H8CeUlRTN56hnWzX4Tb-v-?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "الرعاية الصحية",
@@ -175,7 +190,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تحسين محتوى الرعاية الصحية",
         description: "تحسين متخصص لمحركات البحث لتواصل الرعاية الصحية، يستهدف مصطلحات البحث الطبية والمركزة على المرضى لتحسين الظهور الإلكتروني.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1emjBrN00Ai-a_E1cOwgE8KA72kYptv0t?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1emjBrN00Ai-a_E1cOwgE8KA72kYptv0t?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       }
     ],
     "تحسين البحث المحلي والمحتوى الإقليمي": [
@@ -186,7 +202,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "استراتيجية محركات البحث لأسواق الخليج",
         description: "استراتيجية محتوى شاملة لمحركات البحث للتوسع عبر أسواق دول مجلس التعاون الخليجي، تستهدف كلمات اللوجستيات الإقليمية المفتاحية وتحسين البحث المحلي.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link",
+        externalLinks: [{ label: "الموقع", url: "https://saeq.com/" }]
       },
       {
         category: "النقل",
@@ -195,7 +212,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "حملة محركات البحث للنقل المحلي",
         description: "استراتيجية محتوى محلية لمحركات البحث لنقل مكة العام، محسّنة لاستعلامات البحث المحلية والكلمات المفتاحية المركزة على المجتمع.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link",
+        externalLinks: [{ label: "الموقع", url: "https://www.mbco.sa/" }]
       },
       {
         category: "السياحة",
@@ -204,7 +222,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى وجهات السياحة المحسّن",
         description: "محتوى سفر وسياحة محسّن لمحركات البحث يستهدف كلمات مفتاحية خاصة بالوجهات وسلوكيات بحث السفر لتحسين الظهور.",
         buttonColor: "Teal",
-        link: "#"
+        link: "#",
+        externalLinks: [] as { label: string; url: string }[]
       }
     ],
     "تحسين محركات البحث متعدد اللغات": [
@@ -215,7 +234,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محركات البحث ثنائية اللغة للصحة النفسية",
         description: "طورنا استراتيجية ثنائية اللغة لمحركات البحث لمحتوى الصحة النفسية، محسّنة لمصطلحات البحث العربية والإنجليزية لتحقيق أقصى وصول إقليمي.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
+        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://www.mindtales.me/" }]
       },
       {
         category: "التعليم",
@@ -224,7 +244,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محركات البحث التعليمية متعددة اللغات",
         description: "تحسين محتوى ثنائي اللغة لمحركات البحث للمدرسة الدولية يستهدف مصطلحات البحث التعليمية واستعلامات الآباء بالعربية والإنجليزية.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "الاستشارات",
@@ -233,7 +254,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى الأعمال ثنائي اللغة المحسّن",
         description: "محتوى علامة محسّن لمحركات البحث بالعربية والإنجليزية للاستشارات الإدارية، يستهدف مصطلحات البحث التجارية ثنائية اللغة.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       }
     ]
   };
@@ -280,6 +302,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       return portfolioData;
     }
     return { [activeTab]: portfolioData[activeTab as keyof typeof portfolioData] };
+  };
+
+  const getExternalLinkIcon = (label: string) => {
+    switch (label) {
+      case "LinkedIn":
+      case "لينكد إن":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        );
+      case "Instagram":
+      case "انستقرام":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        );
+      default: // Website / الموقع
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        );
+    }
   };
 
   const getButtonColorClass = (color: string) => {
@@ -435,13 +476,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                       <p className={styles.portfolioDescription + " arabic-body"}>
                         {project.description}
                       </p>
-                      <button 
-                        onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
-                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""} arabic-body`}
-                        disabled={project.link === "#"}
-                      >
-                        {project.link !== "#" ? "شاهد العمل" : "قريباً"}
-                      </button>
+                      <div className={styles.portfolioButtons}>
+                        <button
+                          onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
+                          className={`${styles.portfolioButton} ${styles.portfolioButtonOutline} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""} arabic-body`}
+                          disabled={project.link === "#"}
+                        >
+                          {project.link !== "#" ? "نماذج (داخلي)" : "قريباً"}
+                        </button>
+                        {project.externalLinks.map((extLink, i) => (
+                          <button
+                            key={i}
+                            onClick={() => window.open(extLink.url, '_blank')}
+                            className={`${styles.portfolioButton} ${styles.portfolioIconBtn} ${getButtonColorClass(project.buttonColor)} arabic-body`}
+                          >
+                            {getExternalLinkIcon(extLink.label)}
+                            {extLink.label}
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 ))}

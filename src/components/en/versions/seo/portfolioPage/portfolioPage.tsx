@@ -34,7 +34,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "AI Recruitment SEO Content Hub",
         description: "Developed comprehensive SEO content strategy targeting recruitment industry keywords, resulting in 15+ page 1 rankings and 200% organic traffic growth through strategic keyword research and content optimization.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://shiftat.sa" }]
       },
       {
         category: "Government Research",
@@ -43,7 +44,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Energy Policy SEO Content Hub",
         description: "Optimized research portal content for energy policy keywords, improving search visibility and accessibility of insights for policy stakeholders through strategic SEO content creation.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
+        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.kapsarc.org/" }]
       },
       {
         category: "Cultural Content",
@@ -52,7 +54,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "70 SEO-Optimized Cultural Articles",
         description: "Developed extensive SEO content covering cultural topics with targeted keyword research, optimized structure, and search-friendly formatting for maximum visibility and organic reach.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1MrTvvieV9rfqk0i8mj0898MXiQLf0XSa?usp=drive_link",
+        externalLinks: []
       },
       {
         category: "Education",
@@ -61,7 +64,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Educational SEO Blog Strategy",
         description: "Created SEO-optimized educational content targeting learning methodology keywords, improving search visibility for educational resources and student development content.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing",
+        externalLinks: []
       },
       {
         category: "Mental Health",
@@ -70,7 +74,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Mental Health SEO Content Hub",
         description: "Developed bilingual SEO content strategy for mental health topics, targeting wellness and mental health keywords in both Arabic and English for maximum search reach.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
+        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.mindtales.me/" }]
       },
       {
         category: "Various Industries",
@@ -79,7 +84,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Industry-Specific SEO Content",
         description: "Created targeted SEO articles across multiple industries, each optimized for specific niche keywords and search behaviors unique to different market segments.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link",
+        externalLinks: []
       }
     ],
     "Technical SEO & Website Content": [
@@ -90,7 +96,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Research Portal SEO Optimization",
         description: "Comprehensive website content strategy with SEO optimization for research platform, improving search engine visibility and user accessibility of energy policy insights.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1b-WsZu7mEAP1TC9BjoZoLEfnwjGCh4bF?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1b-WsZu7mEAP1TC9BjoZoLEfnwjGCh4bF?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://www.kapsarc.org/" }]
       },
       {
         category: "Healthcare",
@@ -99,7 +106,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Healthcare SEO Content Optimization",
         description: "Optimized newsletter and website content for healthcare keywords, improving search visibility for pharmacy services and health-related search queries.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://nahdi.sa/" }]
       },
       {
         category: "Education",
@@ -108,7 +116,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Educational Website SEO Content",
         description: "Optimized educational website content in both English and Arabic for international school SEO, targeting parent and student search queries.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing",
+        externalLinks: []
       }
     ],
     "Keyword Research & Content Planning": [
@@ -119,7 +128,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Recruitment Industry Keyword Strategy",
         description: "Comprehensive keyword research and content planning for AI recruitment platform, identifying high-value search terms and content opportunities for organic growth.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://shiftat.sa" }]
       },
       {
         category: "Logistics",
@@ -128,7 +138,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "B2B Logistics SEO Strategy",
         description: "Developed keyword research and SEO content strategy for logistics industry, targeting B2B search terms and supply chain keywords for improved visibility.",
         buttonColor: "Orange",
-        link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true"
+        link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true",
+        externalLinks: [{ label: "Website", url: "https://www.abudawood.com/" }]
       },
       {
         category: "Real Estate",
@@ -137,7 +148,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Luxury Property SEO Content",
         description: "SEO-optimized brand content and keyword strategy for luxury real estate market in Qatar, targeting high-value property search terms.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.empirerealestate.qa/" }]
       }
     ],
     "SEO Copywriting & Content Optimization": [
@@ -148,7 +160,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Security Solutions SEO Case Study",
         description: "SEO-optimized case study content targeting enterprise security keywords and showcasing solutions for improved search visibility in B2B security market.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1aAw4aTUWEWpWn7HMs2ryEXenQ5uISfw4?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1aAw4aTUWEWpWn7HMs2ryEXenQ5uISfw4?usp=sharing",
+        externalLinks: []
       },
       {
         category: "Government",
@@ -157,7 +170,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Government SEO Content Optimization",
         description: "Optimized government communications content for search engines, improving public accessibility and search visibility of important information.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1EJ0ia1IIRMizi8ls4NyobYyZGLD_pPwf?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1EJ0ia1IIRMizi8ls4NyobYyZGLD_pPwf?usp=sharing",
+        externalLinks: []
       },
       {
         category: "Media & Entertainment",
@@ -166,7 +180,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Entertainment Content SEO Optimization",
         description: "SEO-optimized marketing content for leading media company, focusing on entertainment industry keywords and brand visibility improvement.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1gVWbXCdlC8H8CeUlRTN56hnWzX4Tb-v-?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1gVWbXCdlC8H8CeUlRTN56hnWzX4Tb-v-?usp=drive_link",
+        externalLinks: []
       },
       {
         category: "Healthcare",
@@ -175,7 +190,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Healthcare SEO Content Optimization",
         description: "Specialized SEO optimization for healthcare communications, targeting medical and patient-focused search terms for improved online visibility.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1emjBrN00Ai-a_E1cOwgE8KA72kYptv0t?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1emjBrN00Ai-a_E1cOwgE8KA72kYptv0t?usp=sharing",
+        externalLinks: []
       }
     ],
     "Local SEO & Regional Content": [
@@ -186,7 +202,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "GCC Market SEO Strategy",
         description: "Comprehensive SEO content strategy for expansion across GCC markets, targeting regional logistics keywords and local search optimization.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://saeq.com/" }]
       },
       {
         category: "Transport",
@@ -195,7 +212,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Local Transport SEO Campaign",
         description: "Local SEO content strategy for Makkah's public transportation, optimizing for local search queries and community-focused keywords.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://www.mbco.sa/" }]
       },
     {
         category: "Tourism",
@@ -204,7 +222,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Tourism Destination SEO Content",
         description: "SEO-optimized travel and tourism content targeting destination-specific keywords and travel search behaviors for improved visibility.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1mBYjvvYbpQGyt6JXmnYf2oPArzQmA7tR?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1mBYjvvYbpQGyt6JXmnYf2oPArzQmA7tR?usp=sharing",
+        externalLinks: []
       }
     ],
     "Multilingual SEO": [
@@ -215,7 +234,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Bilingual Mental Health SEO",
         description: "Developed bilingual SEO strategy for mental health content, optimizing for both Arabic and English search terms to maximize regional reach.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
+        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.mindtales.me/" }]
       },
       {
         category: "Education",
@@ -224,7 +244,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Multilingual Education SEO",
         description: "Bilingual SEO content optimization for international school targeting both Arabic and English educational search terms and parent queries.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing",
+        externalLinks: []
       },
       {
         category: "Consultancy",
@@ -233,7 +254,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Bilingual Business SEO Content",
         description: "SEO-optimized brand content in both Arabic and English for management consultancy, targeting bilingual business search terms.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing",
+        externalLinks: []
       }
     ]
   };
@@ -280,6 +302,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       return portfolioData;
     }
     return { [activeTab]: portfolioData[activeTab as keyof typeof portfolioData] };
+  };
+
+  const getExternalLinkIcon = (label: string) => {
+    switch (label) {
+      case "LinkedIn":
+      case "لينكد إن":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        );
+      case "Instagram":
+      case "انستقرام":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        );
+      default: // Website / الموقع
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        );
+    }
   };
 
   const getButtonColorClass = (color: string) => {
@@ -434,13 +475,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                       <p className={styles.portfolioDescription}>
                         {project.description}
                       </p>
-                      <button 
-                        onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
-                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
-                        disabled={project.link === "#"}
-                      >
-                        {project.link !== "#" ? "View SEO Work" : "Coming Soon"}
-                      </button>
+                      <div className={styles.portfolioButtons}>
+                        <button
+                          onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
+                          className={`${styles.portfolioButton} ${styles.portfolioButtonOutline} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
+                          disabled={project.link === "#"}
+                        >
+                          {project.link !== "#" ? "Samples (Internal)" : "Coming Soon"}
+                        </button>
+                        {project.externalLinks.map((extLink, i) => (
+                          <button
+                            key={i}
+                            onClick={() => window.open(extLink.url, '_blank')}
+                            className={`${styles.portfolioButton} ${styles.portfolioIconBtn} ${getButtonColorClass(project.buttonColor)}`}
+                          >
+                            {getExternalLinkIcon(extLink.label)}
+                            {extLink.label}
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 ))}

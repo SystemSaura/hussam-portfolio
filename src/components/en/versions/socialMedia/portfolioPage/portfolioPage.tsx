@@ -19,180 +19,110 @@ interface PortfolioPageProps {
 }
 
 export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
-  const [activeTab, setActiveTab] = useState("ALL");
-  const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(false);
-  const tabContainerRef = useRef<HTMLDivElement>(null);
-
-  // Focused portfolio data for social media clients
-  const portfolioData = {
-    "Content Marketing": [
-      {
-        category: "HR Technology",
-        logo: "/logos/shiftat.webp",
-        logoText: "SHIFTAT",
-        title: "LinkedIn Authority Content",
-        description: "Built thought leadership content that positioned Shiftat as Saudi Arabia's go-to AI recruitment expert. Daily insights that HR directors actually shared.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
-      },
-      {
-        category: "Healthcare",
-        logo: "/logos/alnahdi.webp",
-        logoText: "AL NAHDI",
-        title: "Newsletter That Converts",
-        description: "Transformed boring health tips into engaging newsletter content. 65% open rates because it solved real problems instead of pushing products.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
-      },
-      {
-        category: "Education",
-        logo: "/logos/bonyan.webp",
-        logoText: "BONYAN",
-        title: "Educational Content That Sticks",
-        description: "Created blog content parents actually wanted to read. Focused on student development challenges, not school marketing.",
-        buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
-      },
-      {
-        category: "Mental Health",
-        logo: "/logos/mindtales.webp",
-        logoText: "MINDTALES",
-        title: "Wellness Content That Matters",
-        description: "Mental health content in Arabic and English that actually helps people instead of just promoting services. Real stories, real solutions.",
-        buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
-      }
-    ],
-    "Social Media Marketing": [
-      {
-        category: "HR Technology",
-        logo: "/logos/shiftat.webp",
-        logoText: "SHIFTAT",
-        title: "B2B Social That Actually Works",
-        description: "Grew from 0 to 12K followers who care about AI recruitment. Built authority on LinkedIn and X with content HR leaders share, not ignore.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
-      },
-      {
-        category: "Logistics",
-        logo: "/logos/abudawood.webp",
-        logoText: "ABUDAWOOD",
-        title: "Industry Authority Positioning",
-        description: "Positioned GCC's logistics leader as the voice of supply chain innovation. LinkedIn strategy that builds trust before selling.",
-        buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1OW44Melyr3JIr4rYvE8SQFT-hx_QzI48?usp=drive_link"
-      },
-      {
-        category: "Education",
-        logo: "/logos/downehouse.webp",
-        logoText: "DOWNE HOUSE",
-        title: "Enrollment-Driven Social Strategy",
-        description: "Social content that shows school excellence without bragging. Parents share it because it solves their education concerns.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/14HO-MTvpGGteiaJG7o3vBMDiIQecnoYM?usp=sharing"
-      },
-      {
-        category: "Arts & Culture",
-        logo: "/logos/jaxdistrict.webp",
-        logoText: "JAX DISTRICT",
-        title: "Community-Building Content",
-        description: "Built engaged arts community through social media. Content that celebrates local talent and drives event attendance.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1TXrFtUlfxUvZosRY-WTqDlzqF_HVJimE?usp=sharing"
-      },
-      {
-        category: "Sustainability",
-        logo: "/logos/reviva.webp",
-        logoText: "REVIVA",
-        title: "Cause-Driven Engagement",
-        description: "Environmental content that motivates action, not just awareness. Social strategy that turns followers into recycling advocates.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link"
-      },
-      {
-        category: "Public Transport",
-        logo: "/logos/makkahbus.webp",
-        logoText: "MAKKAH BUS",
-        title: "Public Service Communication",
-        description: "Made public transportation social media actually useful. Service updates and community engagement that serves residents.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
-      }
-    ],
-    "Brand Strategy": [
-      {
-        category: "Luxury Real Estate",
-        logo: "/logos/empirerealestate.webp",
-        logoText: "EMPIRE REAL ESTATE",
-        title: "Premium Brand Positioning",
-        description: "Positioned Qatar luxury properties for high-net-worth buyers. Brand strategy that attracts serious investors, not browsers.",
-        buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
-      },
-      {
-        category: "GCC Logistics",
-        logo: "/logos/saeq.webp",
-        logoText: "SAEQ",
-        title: "Regional Expansion Strategy",
-        description: "Brand positioning for GCC logistics expansion. Strategy that builds trust across markets before pitching services.",
-        buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
-      },
-      {
-        category: "Personal Brand",
-        logo: "/logos/alhanoufalhamdan.webp",
-        logoText: "ALHANOUF ALHAMDAN",
-        title: "Artist Brand Development",
-        description: "Personal brand strategy for arts professional. Portfolio positioning that attracts serious collectors and opportunities.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing"
-      }
-    ]
-  };
-
-  // Social media focused service types
-  const serviceTypes = ["ALL", "Social Media Marketing", "Content Marketing", "Brand Strategy"];
-
-  // Check scroll position and update arrow visibility
-  const checkScrollPosition = () => {
-    if (tabContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = tabContainerRef.current;
-      setShowLeftArrow(scrollLeft > 0);
-      setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 1);
+  // Social media marketing projects only
+  const projects = [
+    {
+      category: "HR Technology",
+      logo: "/logos/shiftat.webp",
+      logoText: "SHIFTAT",
+      title: "B2B Social That Actually Works",
+      description: "Grew from 0 to 12K followers who care about AI recruitment. Built authority on LinkedIn and X with content HR leaders share, not ignore.",
+      buttonColor: "Blue",
+      link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+      externalLinks: [
+        { label: "LinkedIn", url: "https://www.linkedin.com/company/shiftat-sa/" },
+        { label: "Website", url: "https://shiftat.sa" }
+      ]
+    },
+    {
+      category: "Logistics",
+      logo: "/logos/abudawood.webp",
+      logoText: "ABUDAWOOD",
+      title: "Industry Authority Positioning",
+      description: "Positioned GCC's logistics leader as the voice of supply chain innovation. LinkedIn strategy that builds trust before selling.",
+      buttonColor: "Orange",
+      link: "https://drive.google.com/drive/folders/1OW44Melyr3JIr4rYvE8SQFT-hx_QzI48?usp=drive_link",
+      externalLinks: [
+        { label: "LinkedIn", url: "https://www.linkedin.com/company/abudawood-group" },
+        { label: "Website", url: "https://www.abudawood.com/" }
+      ]
+    },
+    {
+      category: "Education",
+      logo: "/logos/downehouse.webp",
+      logoText: "DOWNE HOUSE",
+      title: "Enrollment-Driven Social Strategy",
+      description: "Social content that shows school excellence without bragging. Parents share it because it solves their education concerns.",
+      buttonColor: "Green",
+      link: "https://drive.google.com/drive/folders/14HO-MTvpGGteiaJG7o3vBMDiIQecnoYM?usp=sharing",
+      externalLinks: [
+        { label: "Instagram", url: "https://www.instagram.com/downehouseriyadh/" },
+        { label: "Website", url: "https://downehouseriyadh.com/" }
+      ]
+    },
+    {
+      category: "Arts & Culture",
+      logo: "/logos/jaxdistrict.webp",
+      logoText: "JAX DISTRICT",
+      title: "Community-Building Content",
+      description: "Built engaged arts community through social media. Content that celebrates local talent and drives event attendance.",
+      buttonColor: "Pink",
+      link: "https://drive.google.com/drive/folders/1TXrFtUlfxUvZosRY-WTqDlzqF_HVJimE?usp=sharing",
+      externalLinks: [
+        { label: "Instagram", url: "https://www.instagram.com/jaxdistrict/" },
+        { label: "Website", url: "https://jaxdistrict.com/" }
+      ]
+    },
+    {
+      category: "Sustainability",
+      logo: "/logos/reviva.webp",
+      logoText: "REVIVA",
+      title: "Cause-Driven Engagement",
+      description: "Environmental content that motivates action, not just awareness. Social strategy that turns followers into recycling advocates.",
+      buttonColor: "Green",
+      link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link",
+      externalLinks: [
+        { label: "LinkedIn", url: "https://www.linkedin.com/company/sircsaudi/" },
+        { label: "Website", url: "https://reviva.sa/" }
+      ]
+    },
+    {
+      category: "Real Estate",
+      logo: "/logos/estater.webp",
+      logoText: "ESTATER",
+      title: "Blog & Social Media Content",
+      description: "Built a social media presence that positions Estater as the go-to source for real estate intelligence across the GCC.",
+      buttonColor: "Purple",
+      link: "",
+      externalLinks: [
+        { label: "Instagram", url: "https://www.instagram.com/the.real.estater/" },
+        { label: "Website", url: "https://estater.com" }
+      ]
     }
-  };
+  ];
 
-  // Scroll functions
-  const scrollLeft = () => {
-    if (tabContainerRef.current) {
-      tabContainerRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+  const getExternalLinkIcon = (label: string) => {
+    switch (label) {
+      case "LinkedIn":
+      case "لينكد إن":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        );
+      case "Instagram":
+      case "انستقرام":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        );
+      case "X":
+      case "إكس":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        );
+      default: // Website / الموقع
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        );
     }
-  };
-
-  const scrollRight = () => {
-    if (tabContainerRef.current) {
-      tabContainerRef.current.scrollBy({ left: 200, behavior: 'smooth' });
-    }
-  };
-
-  // Check scroll position on mount and resize
-  useEffect(() => {
-    checkScrollPosition();
-    
-    const handleResize = () => {
-      checkScrollPosition();
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const getFilteredData = () => {
-    if (activeTab === "ALL") {
-      return portfolioData;
-    }
-    return { [activeTab]: portfolioData[activeTab as keyof typeof portfolioData] };
   };
 
   const getButtonColorClass = (color: string) => {
@@ -219,10 +149,6 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
     }
   };
 
-  const getTotalProjectCount = () => {
-    return Object.values(portfolioData).reduce((total, projects) => total + projects.length, 0);
-  };
-
   return (
     <div className="min-h-screen bg-white">
       {/* Header with white background */}
@@ -233,133 +159,80 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       {/* Main Portfolio Content */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Page Header - Social Media Focused */}
+          {/* Page Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-50 rounded-full px-4 py-2 mb-4">
               <span className={styles.flechaRatingText}>Social Media Specialist</span>
-              <span className="text-gray-400 mx-2">•</span>
-              <span className={styles.flechaProjectsText}>{getTotalProjectCount()} High-Impact Campaigns</span>
+              <span className="text-gray-400 mx-2">&bull;</span>
+              <span className={styles.flechaProjectsText}>{projects.length} High-Impact Campaigns</span>
             </div>
             <h1 className={styles.flechaSectionHeading + " mb-6"}>
-              {activeTab === "ALL" ? "Social Media That Drives Business" : activeTab}
+              Social Media That Drives Business
             </h1>
             <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12"}>
-              {activeTab === "ALL" 
-                ? "Stop posting into the void. These campaigns generated real followers, real engagement, and real leads for GCC businesses. No vanity metrics—just results that matter to your bottom line."
-                : `${activeTab} campaigns that turned social media from cost center into revenue driver.`
-              }
+              Stop posting into the void. These campaigns generated real followers, real engagement, and real leads for GCC businesses. No vanity metrics—just results that matter to your bottom line.
             </p>
+          </div>
 
-            {/* Enhanced Tab Bar */}
-            <div className={styles.tabBarSection}>
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className={styles.tabContainerWrapper}>
-                  {/* Left Arrow */}
-                  {showLeftArrow && (
-                    <button 
-                      onClick={scrollLeft}
-                      className={styles.scrollArrow + " " + styles.scrollArrowLeft}
-                      aria-label="Scroll tabs left"
-                    >
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </button>
-                  )}
-                  
-                  {/* Tab Container */}
-                  <div 
-                    ref={tabContainerRef}
-                    className={styles.tabContainer}
-                    onScroll={checkScrollPosition}
-                  >
-                    {serviceTypes.map((type) => (
+          {/* Portfolio Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            {projects.map((project, index) => (
+              <div key={index} className={`${styles.portfolioCard} group`}>
+                <div className={`${styles.portfolioHeader} bg-gradient-to-br ${getHeaderColorClass(project.buttonColor)}`}>
+                  <div className={styles.portfolioHeaderContent}>
+                    <div className={styles.portfolioCategory}>{project.category}</div>
+                    <div className={styles.portfolioCompanyLogo}>
+                      {project.logo ? (
+                        <img src={project.logo} alt={project.logoText} className={styles.portfolioLogoImg} />
+                      ) : (
+                        <div className={styles.portfolioLogoText}>{project.logoText}</div>
+                      )}
+                    </div>
+                  </div>
+                  <div className={styles.portfolioHeaderMain}>
+                    <h4 className={styles.portfolioServiceType}>{project.category}</h4>
+                    <p className={styles.portfolioServiceDetail}>Social Media Marketing</p>
+                  </div>
+                </div>
+
+                <div className={styles.portfolioContent}>
+                  <h3 className={styles.portfolioTitle}>
+                    {project.title}
+                    <Image
+                      src="/arrow-right.svg"
+                      alt="Arrow"
+                      width={18}
+                      height={18}
+                      className={styles.portfolioArrow}
+                    />
+                  </h3>
+                  <p className={styles.portfolioDescription}>
+                    {project.description}
+                  </p>
+                  <div className={styles.portfolioButtons}>
+                    {project.link && (
                       <button
-                        key={type}
-                        onClick={() => setActiveTab(type)}
-                        className={`${styles.tabButton} ${
-                          activeTab === type ? styles.tabButtonActive : styles.tabButtonInactive
-                        }`}
+                        onClick={() => window.open(project.link, '_blank')}
+                        className={`${styles.portfolioButton} ${styles.portfolioButtonOutline}`}
                       >
-                        {type}
+                        Samples (Internal)
+                      </button>
+                    )}
+                    {project.externalLinks.map((extLink, i) => (
+                      <button
+                        key={i}
+                        onClick={() => window.open(extLink.url, '_blank')}
+                        className={`${styles.portfolioButton} ${styles.portfolioIconOnly} ${getButtonColorClass(project.buttonColor)}`}
+                        title={extLink.label}
+                      >
+                        {getExternalLinkIcon(extLink.label)}
                       </button>
                     ))}
                   </div>
-
-                  {/* Right Arrow */}
-                  {showRightArrow && (
-                    <button 
-                      onClick={scrollRight}
-                      className={styles.scrollArrow + " " + styles.scrollArrowRight}
-                      aria-label="Scroll tabs right"
-                    >
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </button>
-                  )}
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-
-          {/* Portfolio Categories */}
-          {Object.entries(getFilteredData()).map(([categoryName, projects], categoryIndex) => (
-            <div key={categoryName} className="mb-32">
-              {activeTab === "ALL" && (
-                <div className="mt-16 mb-16">
-                  <h2 className={styles.categoryHeading}>{categoryName}</h2>
-                  <div className={styles.categoryDivider}></div>
-                </div>
-              )}
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-                {projects.map((project, index) => (
-                  <div key={`${categoryName}-${index}`} className={`${styles.portfolioCard} group`}>
-                    <div className={`${styles.portfolioHeader} bg-gradient-to-br ${getHeaderColorClass(project.buttonColor)}`}>
-                      <div className={styles.portfolioHeaderContent}>
-                        <div className={styles.portfolioCategory}>{project.category}</div>
-                        <div className={styles.portfolioCompanyLogo}>
-                          {project.logo ? (
-                            <img src={project.logo} alt={project.logoText} className={styles.portfolioLogoImg} />
-                          ) : (
-                            <div className={styles.portfolioLogoText}>{project.logoText}</div>
-                          )}
-                        </div>
-                      </div>
-                      <div className={styles.portfolioHeaderMain}>
-                        <h4 className={styles.portfolioServiceType}>{project.category}</h4>
-                        <p className={styles.portfolioServiceDetail}>{categoryName}</p>
-                      </div>
-                    </div>
-                    
-                    <div className={styles.portfolioContent}>
-                      <h3 className={styles.portfolioTitle}>
-                        {project.title}
-                        <Image
-                          src="/arrow-right.svg"
-                          alt="Arrow"
-                          width={18}
-                          height={18}
-                          className={styles.portfolioArrow}
-                        />
-                      </h3>
-                      <p className={styles.portfolioDescription}>
-                        {project.description}
-                      </p>
-                      <button 
-                        onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
-                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
-                        disabled={project.link === "#"}
-                      >
-                        {project.link !== "#" ? "See Results" : "Coming Soon"}
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
 
           {/* Portfolio Summary */}
           <div className={`text-center border-t border-gray-200 ${styles.portfolioSummary}`}>

@@ -34,7 +34,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى مدونة منصة التوظيف",
         description: "إنشاء استراتيجية محتوى مدونة جذابة لمنصة شفتات للتوظيف بالذكاء الاصطناعي، مع التركيز على رؤى الصناعة والقيادة الفكرية.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+        externalLinks: [{ label: "الموقع", url: "https://shiftat.sa" }]
       },
       {
         category: "ثقافي",
@@ -43,7 +44,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "70 مقالة ثقافية تحليلية",
         description: "تطوير محتوى تحليلي واسع يغطي المواضيع الثقافية والاتجاهات والرؤى لجماهير متنوعة.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1M6bb2AZxHQPHzsk19LUMj1mo3PAMz-YP?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1M6bb2AZxHQPHzsk19LUMj1mo3PAMz-YP?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "قطاعات متنوعة",
@@ -52,7 +54,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "7 مقالات متخصصة",
         description: "إنشاء مقالات مستهدفة عبر صناعات متعددة، كل منها مصممة خصيصاً لاحتياجات الجمهور ومتطلبات السوق.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "التعليم",
@@ -61,7 +64,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى المدونة التعليمية",
         description: "تطوير منشورات مدونة تعليمية جذابة تركز على منهجيات التعلم واستراتيجيات تطوير الطلاب.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "الصحة",
@@ -70,7 +74,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى الصحة النفسية",
         description: "إنشاء محتوى مدونة شامل للصحة النفسية بالعربية والإنجليزية، مع التركيز على التوعية والعافية.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
+        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://www.mindtales.me/" }]
       },
       {
         category: "الرعاية الصحية",
@@ -79,7 +84,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "استراتيجية النشرة الإخبارية ",
         description: "تصميم وكتابة حملات نشرة إخبارية جذابة تركز على النصائح الصحية وترويج المنتجات لسلسلة الصيدليات الرائدة.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://nahdi.sa/" }]
       },
       {
         category: "العقارات",
@@ -88,7 +94,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى تطبيق وموقع العقارات",
         description: "صياغة محتوى شامل لتطبيق وموقع منصة عقارية، مع ضمان تجربة مستخدم واضحة ورسائل مقنعة.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/u/3/folders/1zqgUfZjCYgVbONE2JT667Kesry_5f-mq"
+        link: "https://drive.google.com/drive/u/3/folders/1zqgUfZjCYgVbONE2JT667Kesry_5f-mq",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "الألعاب",
@@ -97,7 +104,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "مقالات مدونة منصة الألعاب",
         description: "تطوير محتوى مدونة جذاب لمنصة ألعاب، مع التركيز على أدلة اللاعبين وأخبار الصناعة والتفاعل المجتمعي.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/1GM-v7MLUpMRjCfCvZTtB8F8f6OeqwmpH?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1GM-v7MLUpMRjCfCvZTtB8F8f6OeqwmpH?usp=drive_link",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "المالية",
@@ -106,7 +114,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى موقع الخدمات المالية",
         description: "إنشاء محتوى موقع احترافي لشركة خدمات مالية، مع التركيز على الثقة والخبرة والحلول المتمحورة حول العميل.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1dtc3yLs7EsB2615iCQ28cBjivReCQbhk?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1dtc3yLs7EsB2615iCQ28cBjivReCQbhk?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "الأغذية والمشروبات",
@@ -115,7 +124,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى موقع لمطعم (عربي وإنجليزي)",
         description: "تطوير محتوى موقع ثنائي اللغة لسلسلة مطاعم، يلتقط جوهر العلامة التجارية وعروض القائمة بالعربية والإنجليزية.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1FSeZ9W5VnNB3az-50URptVguvtthz1Ok?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1FSeZ9W5VnNB3az-50URptVguvtthz1Ok?usp=drive_link",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "الصحة",
@@ -124,72 +134,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى مدونة الرعاية الصحية",
         description: "إنشاء استراتيجية محتوى مدونة شاملة لخدمات إعادة التأهيل، مع التركيز على تعليم المرضى ورؤى العلاج.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing"
-      }
-    ],
-    "التسويق عبر وسائل التواصل الاجتماعي": [
-      {
-        category: "الموارد البشرية",
-        logo: "/logos/shiftat.webp",
-        logoText: "شفتات",
-        title: "منصة التوظيف بالذكاء الاصطناعي",
-        description: "إدارة استراتيجية شاملة لوسائل التواصل الاجتماعي عبر منصات لينكد إن وإكس، وبناء القيادة الفكرية في التوظيف بالذكاء الاصطناعي.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
-      },
-      {
-        category: "اللوجستيات",
-        logo: "/logos/abudawood.webp",
-        logoText: "أبوداود",
-        title: "استراتيجية اللوجستيات الاجتماعية",
-        description: "تطوير استراتيجية محتوى احترافية للينكد إن والصناعة لمقدم الخدمات اللوجستية الرائد في دول الخليج.",
-        buttonColor: "Orange",
-        link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true"
-      },
-      {
-        category: "التعليم",
-        logo: "/logos/downehouse.webp",
-        logoText: "داون هاوس",
-        title: "مؤسسة تعليمية",
-        description: "إنشاء محتوى جذاب لوسائل التواصل الاجتماعي لمؤسسة تعليمية مرموقة، مع التركيز على التميز الأكاديمي وحياة الطلاب.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/14HO-MTvpGGteiaJG7o3vBMDiIQecnoYM?usp=sharing"
-      },
-      {
-        category: "الفنون",
-        logo: "/logos/jaxdistrict.webp",
-        logoText: "جاكس ديسترك",
-        title: "منصة الفنون والثقافة",
-        description: "تطوير حملات إبداعية لوسائل التواصل الاجتماعي تعرض المواهب الفنية والفعاليات الثقافية في المجتمع المحلي.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1TXrFtUlfxUvZosRY-WTqDlzqF_HVJimE?usp=sharing"
-      },
-      {
-        category: "إعادة التدوير",
-        logo: "/logos/reviva.webp",
-        logoText: "ريفيفا",
-        title: "حملة الاستدامة",
-        description: "إنشاء محتوى مؤثر لوسائل التواصل الاجتماعي يروج للوعي البيئي وممارسات إعادة التدوير المستدامة.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link"
-      },
-      {
-        category: "السياحة",
-        logo: "/logos/syahya.webp",
-        logoText: "سياحية",
-        title: "ترويج السياحة",
-        description: "تطوير محتوى جذاب للسفر والسياحة يبرز الوجهات والتجارب الثقافية.",
-        buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1mBYjvvYbpQGyt6JXmnYf2oPArzQmA7tR?usp=sharing"
-      },
-      {
-        category: "النقل",
-        logo: "/logos/makkahbus.webp",
-        logoText: "حافلات مكة",
-        title: "حملة النقل العام",
-        description: "إنشاء استراتيجية شاملة لوسائل التواصل الاجتماعي لنظام النقل العام في مكة، مع التركيز على إشراك المجتمع والتوعية بالخدمات.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       }
     ],
     "استراتيجية العلامة التجارية": [
@@ -200,7 +146,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "علامة العقارات الفاخرة",
         description: "تطوير ملف أعمال تجاري شامل واستراتيجية تموضع لملف أعمال العقارات الفاخرة في قطر.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://www.empirerealestate.qa/" }]
       },
       {
         category: "اللوجستيات",
@@ -209,7 +156,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تموضع علامة اللوجستيات",
         description: "إعداد ملف أعمال تجاري شامل واستراتيجية تموضع سوقي للتوسع عبر أسواق دول مجلس التعاون الخليجي.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link",
+        externalLinks: [{ label: "الموقع", url: "https://saeq.com/" }]
       },
       {
         category: "الاستشارات",
@@ -218,7 +166,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "ملف أعمال العلامة الاستشارية",
         description: "إنشاء هوية علامة تجارية احترافية وتموضع لخدمات الاستشارات الإدارية بالعربية والإنجليزية.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "الفنون",
@@ -227,7 +176,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تطوير العلامة الشخصية",
         description: "تطوير استراتيجية علامة تجارية شخصية شاملة لمحترف الفنون، بما في ذلك ملف الأعمال وتموضع السوق.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "العقارات",
@@ -236,7 +186,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "هوية العلامة العقارية",
         description: "إنشاء ملف أعمال تجاري وتموضع سوقي لخدمات العقارات في الأسواق العربية والإنجليزية.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1ymhNGtgbzt8yK5iu0Rpq2BnAJMYkbmJ-?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ymhNGtgbzt8yK5iu0Rpq2BnAJMYkbmJ-?usp=drive_link",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "قطاعات متنوعة",
@@ -245,7 +196,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "7 ملفات أعمال شركات",
         description: "إنشاء ملفات أعمال تجارية شاملة لشركات عبر صناعات مختلفة، تؤسس تموضع السوق الاحترافي والهوية.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1IR3u27P6q867EFrF2_KEkxsuys08jahX?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1IR3u27P6q867EFrF2_KEkxsuys08jahX?usp=drive_link",
+        externalLinks: [] as { label: string, url: string }[]
       }
     ],
     "الكتابة التقنية": [
@@ -256,7 +208,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "دراسة حالة الأمان",
         description: "تطوير دراسة حالة شاملة تعرض حلول الأمان واستراتيجيات التنفيذ لعملاء المؤسسات.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1aAw4aTUWEWpWn7HMs2ryEXenQ5uISfw4?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1aAw4aTUWEWpWn7HMs2ryEXenQ5uISfw4?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "الجوائز",
@@ -265,7 +218,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تقرير التقدير الصناعي",
         description: "إنشاء تقرير مفصل يوثق الإنجازات والتقدير الصناعي لتطوير ملف الأعمال المهني.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/file/d/1qETT2GSKrcUwk42hCvwKEqgfmfDtG7OJ/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1qETT2GSKrcUwk42hCvwKEqgfmfDtG7OJ/view?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "البحوث الحكومية",
@@ -274,7 +228,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "محتوى بوابة الأبحاث",
         description: "إنشاء استراتيجية محتوى شاملة لمنصة الأبحاث، تحسين إمكانية الوصول لرؤى سياسات الطاقة.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
+        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing",
+        externalLinks: [{ label: "الموقع", url: "https://www.kapsarc.org/" }]
       }
     ],
     "التصميم والإبداع": [
@@ -285,7 +240,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "مشاريع التصميم التعليمية",
         description: "إنشاء حلول تصميم شاملة تشمل عروض المسابقات والمحتوى المرئي للمبادرات التعليمية.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/1KLbVMaX4Z0jQ1KiDcaKEaszyTjZRHFcu?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1KLbVMaX4Z0jQ1KiDcaKEaszyTjZRHFcu?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "التجميل",
@@ -294,7 +250,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تصميم وصف المنتج",
         description: "تطوير أوصاف منتجات مقنعة ومحتوى إبداعي لمنتجات التجميل والعناية بالإنجليزية والعربية.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/12APGejnG0859hhYAujfV5T8aKB0jPKUw?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/12APGejnG0859hhYAujfV5T8aKB0jPKUw?usp=drive_link",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "إعادة التدوير",
@@ -303,7 +260,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "إنشاء نص الفيديو",
         description: "إنشاء نصوص فيديو جذابة لحملات التوعية البيئية وإعادة التدوير، مع التركيز على رسائل الاستدامة.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link",
+        externalLinks: [{ label: "الموقع", url: "https://reviva.sa/" }]
       }
     ],
     "الترجمة والتحرير": [
@@ -314,7 +272,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تحرير المحتوى الحكومي",
         description: "تقديم خدمات تحرير احترافية للاتصالات الحكومية وتطوير محتوى القطاع العام.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1EJ0ia1IIRMizi8ls4NyobYyZGLD_pPwf?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1EJ0ia1IIRMizi8ls4NyobYyZGLD_pPwf?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "التسويق",
@@ -323,7 +282,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تحرير المحتوى التسويقي",
         description: "تحرير وتنقيح المحتوى التسويقي لشركة الإعلام والترفيه الرائدة، مما يضمن اتساق العلامة التجارية.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1gVWbXCdlC8H8CeUlRTN56hnWzX4Tb-v-?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1gVWbXCdlC8H8CeUlRTN56hnWzX4Tb-v-?usp=drive_link",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "الرعاية الصحية",
@@ -332,7 +292,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "تحرير المحتوى الصحي",
         description: "تقديم تحرير متخصص للاتصالات الصحية ومشاريع تطوير المحتوى الطبي.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1emjBrN00Ai-a_E1cOwgE8KA72kYptv0t?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1emjBrN00Ai-a_E1cOwgE8KA72kYptv0t?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       },
       {
         category: "التعليم",
@@ -341,12 +302,13 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "المحتوى التعليمي",
         description: "تحرير محتوى تعليمي شامل بالإنجليزية والعربية لتطوير مناهج المدرسة الدولية.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing",
+        externalLinks: [] as { label: string, url: string }[]
       }
     ]
   };
 
-  const serviceTypes = [" كل الأعمال ", "تسويق المحتوى", "التسويق عبر وسائل التواصل الاجتماعي", "استراتيجية العلامة التجارية", "الكتابة التقنية", "التصميم والإبداع", "الترجمة والتحرير"];
+  const serviceTypes = [" كل الأعمال ", "تسويق المحتوى", "استراتيجية العلامة التجارية", "الكتابة التقنية", "التصميم والإبداع", "الترجمة والتحرير"];
 
   // Check scroll position and update arrow visibility
   const checkScrollPosition = () => {
@@ -387,6 +349,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       return portfolioData;
     }
     return { [activeTab]: portfolioData[activeTab as keyof typeof portfolioData] };
+  };
+
+  const getExternalLinkIcon = (label: string) => {
+    switch (label) {
+      case "LinkedIn":
+      case "لينكد إن":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        );
+      case "Instagram":
+      case "انستقرام":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        );
+      default: // Website / الموقع
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        );
+    }
   };
 
   const getButtonColorClass = (color: string) => {
@@ -551,13 +532,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                       <p className={styles.portfolioDescription + " arabic-body"}>
                         {project.description}
                       </p>
-                      <button 
-                        onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
-                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""} arabic-body`}
-                        disabled={project.link === "#"}
-                      >
-                        {project.link !== "#" ? "اطلع على العمل" : "قريباً"}
-                      </button>
+                      <div className={styles.portfolioButtons}>
+                        <button
+                          onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
+                          className={`${styles.portfolioButton} ${styles.portfolioButtonOutline} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""} arabic-body`}
+                          disabled={project.link === "#"}
+                        >
+                          {project.link !== "#" ? "نماذج (داخلي)" : "قريباً"}
+                        </button>
+                        {project.externalLinks.map((extLink, i) => (
+                          <button
+                            key={i}
+                            onClick={() => window.open(extLink.url, '_blank')}
+                            className={`${styles.portfolioButton} ${styles.portfolioIconBtn} ${getButtonColorClass(project.buttonColor)} arabic-body`}
+                          >
+                            {getExternalLinkIcon(extLink.label)}
+                            {extLink.label}
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 ))}

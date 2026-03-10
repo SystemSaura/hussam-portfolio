@@ -34,7 +34,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Professional Blog Content",
         description: "Created engaging blog content strategy for Shiftat's AI recruitment platform, focusing on industry insights and thought leadership.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://shiftat.sa" }]
       },
       {
         category: "Cultural",
@@ -43,7 +44,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "70 Analytical Cultural Articles",
         description: "Developed extensive analytical content covering cultural topics, trends, and insights for diverse audiences.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1M6bb2AZxHQPHzsk19LUMj1mo3PAMz-YP?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1M6bb2AZxHQPHzsk19LUMj1mo3PAMz-YP?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Various",
@@ -52,7 +54,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "7 Specialized Articles",
         description: "Created targeted articles across multiple industries, each tailored to specific audience needs and market requirements.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1u6uaGYj0iP6H6E_DMeXuVNTVCBwHyUlh?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Education",
@@ -61,7 +64,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Educational Blog Content",
         description: "Developed engaging educational blog posts focusing on learning methodologies and student development strategies.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1LDTLQjH-em-ML0FSL40yXAZzM8Uw9MPt?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Health",
@@ -70,7 +74,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Mental Health Content",
         description: "Created comprehensive mental health blog content in both Arabic and English, focusing on awareness and wellness.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing"
+        link: "https://drive.google.com/drive/folders/13gUT5QgcXH4IodeHxQ7p2KB_ATpRPHjd?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.mindtales.me/" }]
       },
       {
         category: "Healthcare",
@@ -79,7 +84,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Healthcare Newsletter Strategy",
         description: "Designed and wrote engaging newsletter campaigns focusing on health tips and product promotions for leading pharmacy chain.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1N6chNmBHwYBxLdscan04HA1CjZSEc8ML?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://nahdi.sa/" }]
       },
       {
         category: "Real Estate",
@@ -88,7 +94,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Real Estate App & Website Content",
         description: "Crafted comprehensive app microcopies and website content for real estate platform, ensuring clear user experience and compelling messaging.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/u/3/folders/1zqgUfZjCYgVbONE2JT667Kesry_5f-mq"
+        link: "https://drive.google.com/drive/u/3/folders/1zqgUfZjCYgVbONE2JT667Kesry_5f-mq",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Gaming",
@@ -97,7 +104,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Gaming Platform Blog Posts",
         description: "Developed engaging blog content for gaming platform, focusing on player guides, industry news, and community engagement.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/1GM-v7MLUpMRjCfCvZTtB8F8f6OeqwmpH?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1GM-v7MLUpMRjCfCvZTtB8F8f6OeqwmpH?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Finance",
@@ -106,7 +114,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Financial Services Website Content",
         description: "Created professional website content for financial services company, emphasizing trust, expertise, and client-focused solutions.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1dtc3yLs7EsB2615iCQ28cBjivReCQbhk?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1dtc3yLs7EsB2615iCQ28cBjivReCQbhk?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Food & Beverage",
@@ -115,7 +124,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Restaurant Website Content (AR & EN)",
         description: "Developed bilingual website content for restaurant chain, capturing brand essence and menu offerings in both Arabic and English.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1FSeZ9W5VnNB3az-50URptVguvtthz1Ok?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1FSeZ9W5VnNB3az-50URptVguvtthz1Ok?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Health",
@@ -124,72 +134,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Healthcare Blog Content",
         description: "Created comprehensive blog content strategy for rehabilitation services, focusing on patient education and treatment insights.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing"
-      }
-    ],
-    "Social Media Marketing": [
-      {
-        category: "HR Technology",
-        logo: "/logos/shiftat.webp",
-        logoText: "SHIFTAT",
-        title: "AI Recruitment Platform",
-        description: "Managed comprehensive social media strategy across LinkedIn and X platforms, building thought leadership in AI recruitment.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1ElAfxFFWKU1S1gXfZsQ7soWTV29OFmrL?usp=drive_link"
-      },
-      {
-        category: "Logistics",
-        logo: "/logos/abudawood.webp",
-        logoText: "ABUDAWOOD",
-        title: "Logistics Social Strategy",
-        description: "Developed professional LinkedIn and industry content strategy for GCC's leading logistics provider.",
-        buttonColor: "Orange",
-        link: "https://docs.google.com/spreadsheets/d/1vHitoxacrfiaiVLRC1zr5Zb1JfzIdHTj/edit?usp=drive_link&ouid=108184149443351395686&rtpof=true&sd=true"
-      },
-      {
-        category: "Education",
-        logo: "/logos/downehouse.webp",
-        logoText: "DOWNE HOUSE",
-        title: "Educational Institution",
-        description: "Created engaging social media content for prestigious educational institution, focusing on academic excellence and student life.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/14HO-MTvpGGteiaJG7o3vBMDiIQecnoYM?usp=sharing"
-      },
-      {
-        category: "Arts",
-        logo: "/logos/jaxdistrict.webp",
-        logoText: "JAX DISTRICT",
-        title: "Arts & Culture Platform",
-        description: "Developed creative social media campaigns showcasing artistic talent and cultural events in the local community.",
-        buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1TXrFtUlfxUvZosRY-WTqDlzqF_HVJimE?usp=sharing"
-      },
-      {
-        category: "Recycling",
-        logo: "/logos/reviva.webp",
-        logoText: "REVIVA",
-        title: "Sustainability Campaign",
-        description: "Created impactful social media content promoting environmental awareness and sustainable recycling practices.",
-        buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link"
-      },
-      {
-        category: "Tourism",
-        logo: "/logos/syahya.webp",
-        logoText: "SYAHYA",
-        title: "Tourism Promotion",
-        description: "Developed engaging travel and tourism content highlighting destinations and cultural experiences.",
-        buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1mBYjvvYbpQGyt6JXmnYf2oPArzQmA7tR?usp=sharing"
-      },
-      {
-        category: "Transport",
-        logo: "/logos/makkahbus.webp",
-        logoText: "MAKKAH BUS",
-        title: "Public Transportation Campaign",
-        description: "Created comprehensive social media strategy for Makkah's public transportation system, focusing on community engagement and service awareness.",
-        buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1PugWB7ye9naVYdQJn8l6_6pS1gVfChzu?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1F4WrSTr40mf6PTW1_xCyAvRMY6Kx04-D?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       }
     ],
     "Brand Strategy": [
@@ -200,7 +146,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Luxury Property Brand",
         description: "Developed comprehensive brand profile and positioning strategy for luxury property portfolio in Qatar.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1uyDkcHna72VXnfUl00kP9PS42XjA26K_?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.empirerealestate.qa/" }]
       },
       {
         category: "Logistics",
@@ -209,7 +156,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Logistics Brand Positioning",
         description: "Crafted comprehensive brand profile and market positioning strategy for expansion across GCC markets.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/18fE4IrH1FR6ik2XXWXOJos0lz7bMyHh0?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://saeq.com/" }]
       },
       {
         category: "Consultancy",
@@ -218,7 +166,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Consultancy Brand Profile",
         description: "Created professional brand identity and positioning for management consultancy services in both Arabic and English.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1eHA2pjJ7IaJ8AzY0jrUqfmDuh0z_7vfA?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Arts",
@@ -227,7 +176,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Personal Brand Development",
         description: "Developed comprehensive personal brand strategy for arts professional, including portfolio and market positioning.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1ynfAswNhb7MctrCkBZJYmNjCMOdIJU8X?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Real Estate",
@@ -236,7 +186,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Real Estate Brand Identity",
         description: "Created brand profile and market positioning for real estate services in both Arabic and English markets.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/drive/folders/1ymhNGtgbzt8yK5iu0Rpq2BnAJMYkbmJ-?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1ymhNGtgbzt8yK5iu0Rpq2BnAJMYkbmJ-?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Various",
@@ -245,7 +196,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "7 Company Profiles",
         description: "Created comprehensive brand profiles for companies across different industries, establishing professional market positioning and identity.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1IR3u27P6q867EFrF2_KEkxsuys08jahX?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1IR3u27P6q867EFrF2_KEkxsuys08jahX?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       }
     ],
     "Technical Writing": [
@@ -256,7 +208,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Security Case Study",
         description: "Developed comprehensive case study showcasing security solutions and implementation strategies for enterprise clients.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1aAw4aTUWEWpWn7HMs2ryEXenQ5uISfw4?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1aAw4aTUWEWpWn7HMs2ryEXenQ5uISfw4?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Award",
@@ -265,7 +218,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Industry Recognition Report",
         description: "Created detailed report documenting industry achievements and recognition for professional portfolio development.",
         buttonColor: "Orange",
-        link: "https://drive.google.com/file/d/1qETT2GSKrcUwk42hCvwKEqgfmfDtG7OJ/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1qETT2GSKrcUwk42hCvwKEqgfmfDtG7OJ/view?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Government Research",
@@ -274,7 +228,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Research Portal Content",
         description: "Created comprehensive website content strategy for research platform, improving accessibility of energy policy insights.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing"
+        link: "https://drive.google.com/drive/folders/145vK-1CBxdCD7RxYql0SVoixnGym_SzE?usp=sharing",
+        externalLinks: [{ label: "Website", url: "https://www.kapsarc.org/" }]
       }
     ],
     "Design & Creative": [
@@ -285,7 +240,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Educational Design Projects",
         description: "Created comprehensive design solutions including competition presentations and visual content for educational initiatives.",
         buttonColor: "Purple",
-        link: "https://drive.google.com/drive/folders/1KLbVMaX4Z0jQ1KiDcaKEaszyTjZRHFcu?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1KLbVMaX4Z0jQ1KiDcaKEaszyTjZRHFcu?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Esthetics",
@@ -294,7 +250,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Product Description Design",
         description: "Developed compelling product descriptions and creative content for esthetics and beauty products in English and Arabic.",
         buttonColor: "Pink",
-        link: "https://drive.google.com/drive/folders/12APGejnG0859hhYAujfV5T8aKB0jPKUw?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/12APGejnG0859hhYAujfV5T8aKB0jPKUw?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Recycling",
@@ -303,7 +260,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Video Script Creation",
         description: "Created engaging video scripts for environmental and recycling awareness campaigns, focusing on sustainability messaging.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1MIsTVRn7wXAlOfqHV32Ra0Va2BMumXYS?usp=drive_link",
+        externalLinks: [{ label: "Website", url: "https://reviva.sa/" }]
       }
     ],
     "Translation & Editing": [
@@ -314,7 +272,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Government Content Editing",
         description: "Provided professional editing services for government communications and public sector content development.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1EJ0ia1IIRMizi8ls4NyobYyZGLD_pPwf?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1EJ0ia1IIRMizi8ls4NyobYyZGLD_pPwf?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Marketing",
@@ -323,7 +282,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Marketing Content Editing",
         description: "Edited and refined marketing content for leading media and entertainment company, ensuring brand consistency.",
         buttonColor: "Teal",
-        link: "https://drive.google.com/drive/folders/1gVWbXCdlC8H8CeUlRTN56hnWzX4Tb-v-?usp=drive_link"
+        link: "https://drive.google.com/drive/folders/1gVWbXCdlC8H8CeUlRTN56hnWzX4Tb-v-?usp=drive_link",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Healthcare",
@@ -332,7 +292,8 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Healthcare Content Editing",
         description: "Provided specialized editing for healthcare communications and medical content development projects.",
         buttonColor: "Blue",
-        link: "https://drive.google.com/drive/folders/1emjBrN00Ai-a_E1cOwgE8KA72kYptv0t?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1emjBrN00Ai-a_E1cOwgE8KA72kYptv0t?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       },
       {
         category: "Education",
@@ -341,12 +302,13 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
         title: "Educational Content",
         description: "Edited comprehensive educational content in both English and Arabic for international school curriculum development.",
         buttonColor: "Green",
-        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing"
+        link: "https://drive.google.com/drive/folders/1wVUGzktBTHEYNqO7xWiJrj3hNS9pyvG6?usp=sharing",
+        externalLinks: [] as { label: string; url: string }[]
       }
     ]
   };
 
-  const serviceTypes = ["ALL", "Content Marketing", "Social Media Marketing", "Brand Strategy", "Technical Writing", "Design & Creative", "Translation & Editing"];
+  const serviceTypes = ["ALL", "Content Marketing", "Brand Strategy", "Technical Writing", "Design & Creative", "Translation & Editing"];
 
   // Check scroll position and update arrow visibility
   const checkScrollPosition = () => {
@@ -387,6 +349,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
       return portfolioData;
     }
     return { [activeTab]: portfolioData[activeTab as keyof typeof portfolioData] };
+  };
+
+  const getExternalLinkIcon = (label: string) => {
+    switch (label) {
+      case "LinkedIn":
+      case "لينكد إن":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        );
+      case "Instagram":
+      case "انستقرام":
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        );
+      default: // Website / الموقع
+        return (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        );
+    }
   };
 
   const getButtonColorClass = (color: string) => {
@@ -430,16 +411,16 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
           {/* Page Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-50 rounded-full px-4 py-2 mb-4">
-              <span className={styles.flechaRatingText}>Complete Portfolio</span>
+              <span className={styles.flechaRatingText}>Marketing Portfolio</span>
               <span className="text-gray-400 mx-2">•</span>
-              <span className={styles.flechaProjectsText}>{getTotalProjectCount()}+ Projects Delivered</span>
+              <span className={styles.flechaProjectsText}>{getTotalProjectCount()} Projects Delivered</span>
             </div>
             <h1 className={styles.flechaSectionHeading + " mb-6"}>
-              {activeTab === "ALL" ? "Complete Portfolio Showcase" : activeTab}
+              {activeTab === "ALL" ? "Marketing Portfolio Showcase" : activeTab}
             </h1>
             <p className={styles.workSansBody + " text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed mb-12"}>
               {activeTab === "ALL" 
-                ? "Comprehensive collection of marketing projects delivered across diverse industries in the GCC region. Each project represents strategic thinking, creative execution, and measurable results."
+                ? "A curated selection of content marketing, brand strategy, technical writing, design, and translation work delivered across diverse industries in the GCC region. Each project represents strategic thinking, creative execution, and measurable results."
                 : `Explore my ${activeTab.toLowerCase()} projects that delivered measurable results for GCC companies across different industries.`
               }
             </p>
@@ -541,13 +522,25 @@ export default function PortfolioPage({ onNavigate }: PortfolioPageProps) {
                       <p className={styles.portfolioDescription}>
                         {project.description}
                       </p>
-                      <button 
-                        onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
-                        className={`${styles.portfolioButton} ${getButtonColorClass(project.buttonColor)} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
-                        disabled={project.link === "#"}
-                      >
-                        {project.link !== "#" ? "View All" : "Coming Soon"}
-                      </button>
+                      <div className={styles.portfolioButtons}>
+                        <button
+                          onClick={() => project.link !== "#" ? window.open(project.link, '_blank') : null}
+                          className={`${styles.portfolioButton} ${styles.portfolioButtonOutline} ${project.link === "#" ? "opacity-50 cursor-not-allowed" : ""}`}
+                          disabled={project.link === "#"}
+                        >
+                          {project.link !== "#" ? "Samples (Internal)" : "Coming Soon"}
+                        </button>
+                        {project.externalLinks.map((extLink, i) => (
+                          <button
+                            key={i}
+                            onClick={() => window.open(extLink.url, '_blank')}
+                            className={`${styles.portfolioButton} ${styles.portfolioIconBtn} ${getButtonColorClass(project.buttonColor)}`}
+                          >
+                            {getExternalLinkIcon(extLink.label)}
+                            {extLink.label}
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 ))}
