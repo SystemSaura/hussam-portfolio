@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/action-plan/:path*",
+      "destination": "https://sauragency.com/action-plan/:path*"
+    }
+  ]
+}
