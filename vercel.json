@@ -3,6 +3,18 @@
     {
       "source": "/action-plan/:path*",
       "destination": "https://sauragency.com/action-plan/:path*"
+    },
+    {
+      "source": "/photos/:path*",
+      "destination": "https://sauragency.com/photos/:path*"
+    },
+    {
+      "source": "/logos/:path*",
+      "destination": "https://sauragency.com/logos/:path*"
+    },
+    {
+      "source": "/_next/image/:path*",
+      "destination": "https://sauragency.com/_next/image/:path*"
     }
   ]
 }
