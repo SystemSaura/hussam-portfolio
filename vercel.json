@@ -13,8 +13,12 @@
       "destination": "https://sauragency.com/logos/:path*"
     },
     {
-      "source": "/_next/image/:path*",
-      "destination": "https://sauragency.com/_next/image/:path*"
+      "source": "/fonts/:path*",
+      "destination": "https://sauragency.com/fonts/:path*"
+    },
+    {
+      "source": "/_next/image",
+      "destination": "https://sauragency.com/_next/image"
     }
   ]
 }
