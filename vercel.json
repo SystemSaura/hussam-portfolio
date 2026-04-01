@@ -19,6 +19,10 @@
     {
       "source": "/_next/image",
       "destination": "https://sauragency.com/_next/image"
+    },
+    {
+      "source": "/api/contracts",
+      "destination": "https://sauragency.com/api/contracts"
     }
   ]
 }
